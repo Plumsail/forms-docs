@@ -1,0 +1,382 @@
+{%- extends "basic/layout.html" %}
+
+{%- block htmltitle %}
+  {% set script_files = script_files + ["_static/myscript.js"] %}
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/fonts/open-sans/stylesheet.css', 1) }}" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/fonts/source-serif-pro/source-serif-pro.css', 1) }}" />
+  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/bootstrap.min.css', 1) }}" />
+  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/bootstrap-theme.min.css', 1) }}" />
+  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/header.min.css', 1) }}" />
+  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/doc-content.min.css', 1) }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ super() }}
+{%- endblock %}
+
+{%- block extrahead %}
+  {% if theme_touch_icon %}
+  <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}" />
+  {% endif %}
+  {{ super() }}
+{% endblock %}
+
+{% macro homepage() -%}
+  {%- if theme_homepage %}
+    {%- if hasdoc(theme_homepage) %}
+      {{ pathto(theme_homepage) }}
+    {%- else %}
+      {{ theme_homepage }}
+    {%- endif %}
+  {%- else %}
+    {{ pathto(master_doc) }}
+  {%- endif %}
+{%- endmacro %}
+
+{% macro tospage() -%}
+  {%- if theme_tospage %}
+    {%- if hasdoc(theme_tospage) %}
+      {{ pathto(theme_tospage) }}
+    {%- else %}
+      {{ theme_tospage }}
+    {%- endif %}
+  {%- else %}
+    {{ homepage() }}
+  {%- endif %}
+{%- endmacro %}
+
+{% macro projectlink() -%}
+  {%- if theme_projectlink %}
+    {%- if hasdoc(theme_projectlink) %}
+      {{ pathto(theme_projectlink) }}
+    {%- else %}
+      {{ theme_projectlink }}
+    {%- endif %}
+  {%- else %}
+    {{ homepage() }}
+  {%- endif %}
+{%- endmacro %}
+
+{% macro render_relations() -%}
+  {% if prev or next %}
+  <div class="footer-relations">
+    {% if prev %}
+      <div class="pull-left">
+        <a class="btn btn-default" href="{{ prev.link|e }}" title="{{ _('previous chapter')}} (use the left arrow)">{{ prev.title }}</a>
+      </div>
+    {% endif %}
+    {%- if next and next.title != '&lt;no title&gt;' %}
+      <div class="pull-right">
+        <a class="btn btn-default" href="{{ next.link|e }}" title="{{ _('next chapter')}} (use the right arrow)">{{ next.title }}</a>
+      </div>
+    {%- endif %}
+    </div>
+    <div class="clearer"></div>
+  {% endif %}
+{%- endmacro %}
+
+{%- macro guzzle_sidebar() %}
+  <div id="left-column" class="doc-content-sidebar2">
+    <div class="sphinxsidebar">
+      {%- if sidebars != None %}
+        {#- new style sidebar: explicitly include/exclude templates #}
+        {%- for sidebartemplate in sidebars %}
+        {%- include sidebartemplate %}
+        {%- endfor %}
+      {% else %}
+        {% include "searchbox.html" %}
+        {% include "globaltoc.html" %}
+      {%- endif %}
+    </div>
+  </div>
+{%- endmacro %}
+
+{%- block content %}
+
+  {%- if pagename == 'index' and theme_index_template %}
+    {% include theme_index_template %}
+  {%- else %}
+    <div class="container-wrapper">
+        {%- block sidebar1 %}
+            {{ guzzle_sidebar() }}
+        {% endblock %}
+
+        {%- block document_wrapper %}
+            {%- block document %}
+                <div id="right-column">
+                    <header class="header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="header__logo">
+                                        <a href="/"><img src="/wp-content/themes/plumsail/assets/images/logo.svg" alt=""></a>
+                                    </div>
+                                    <nav class="header__menu">
+                                        <ul class="main-menu">
+                                            <li class="main-menu__drop"><a href="#products"><span></span>Products</a></li>
+                                            <ul id="menu-main-menu" class="menu">
+                                                <li class=""><a href="http://forum">Community</a></li>
+                                                <li class=""><a href="/store/">Store</a></li>
+                                                <li class=""><a target="_blank" href="https://medium.com/plumsail">Blog</a></li>
+                                                <li class=""><a href="/partners-and-resellers/">Partners</a></li>
+                                                <li class=""><a href="/contacts-us/">Company</a></li>
+                                            </ul>
+                                        </ul>
+                                    </nav>
+                                    <div class="burger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <!-- mobile menu -->
+                                    <div class="mobile-menu-bg"></div>
+                                    <div class="mobile-menu">
+                                        <div class="mobile-menu__body">
+                                            <div class="mobile-menu__inner">
+                                                <ul class="mobile-menu-list">
+                                                    <li class="mobile-menu-list__sub">
+                                                        <a href="#">Products</a>
+                                                        <ul class="mobile-menu-list-sub">
+                                                            <li>
+                                                                <a href="/sharepoint-helpdesk/"><img src="/wp-content/themes/plumsail/assets/images/help_desk.svg">HelpDesk</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/workflow-action-pack/"><img src="/wp-content/themes/plumsail/assets/images/workflow_action_pack.svg">Workflow
+                                                                    Actions Pack</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/sharepoint-forms-designer/"><img
+                                                                        src="/wp-content/themes/plumsail/assets/images/forms_designer.svg">Forms
+                                                                    Designer</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/sharepoint-dashboard-designer/"><img
+                                                                        src="/wp-content/themes/plumsail/assets/images/dashboard_designer.svg">Dashboard
+                                                                    Designer</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/sharepoint-workflow-scheduler/"><img
+                                                                        src="/wp-content/themes/plumsail/assets/images/workflow_scheduler.svg">Workflow
+                                                                    Scheduler</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/cross-site-lookup-for-sharepoint-2013-and-sharepoint-online-in-office-365/"><img
+                                                                        src="/wp-content/themes/plumsail/assets/images/crosssite_lookup.svg">Cross-site
+                                                                    lookup</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/sharepoint-orgchart/"><img
+                                                                        src="/wp-content/themes/plumsail/assets/images/org_chat.svg">Org
+                                                                    Chart</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <ul id="menu-main-menu-1" class="menu">
+                                                        <li class=""><a href="http://forum">Community</a></li>
+                                                        <li class=""><a href="/store/">Store</a></li>
+                                                        <li class=""><a target="_blank" href="https://medium.com/plumsail">Blog</a>
+                                                        </li>
+                                                        <li class=""><a href="/partners-and-resellers/">Partners</a></li>
+                                                        <li class=""><a href="/contacts-us/">Company</a></li>
+                                                    </ul>
+                                                </ul>
+                                                <ul class="follow-us follow-us--mobile-menu">
+                                                    <li class="follow-us__item follow-us--google"><a href="  http://google.com"
+                                                                                                     target="_blank"></a></li>
+                                                    <li class="follow-us__item follow-us--twitter"><a href=" https://twitter.com"
+                                                                                                      target="_blank"></a></li>
+                                                    <li class="follow-us__item follow-us--facebook"><a
+                                                            href=" https://www.facebook.com" target="_blank"></a></li>
+                                                    <li class="follow-us__item follow-us--linkedin"><a
+                                                            href=" https://www.linkedin.com/" target="_blank"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /mobile menu -->
+                                </div>
+                            </div>
+                        </div>
+                        </header>
+                    <section class="mega-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="mega-menu__cat">
+                                    <div class="mega-menu__cat-cont">
+                                        <div class="mega-subcat mega-subcat--helpdesk">
+                                            <a href="/sharepoint-helpdesk/" class="mega-subcat__title">HelpDesk</a>
+                                            <div class="mega-subcat__links">
+                                                <a href="#">Documentation</a>
+                                                <a href="/sharepoint-helpdesk/store/">Pricing</a>
+                                                <a href="/sharepoint-helpdesk/support/">Support</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu__cat-title">
+                                        Support service
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="mega-menu__cat">
+                                    <div class="mega-menu__cat-cont">
+                                        <div class="mega-subcat mega-subcat--actionspack">
+                                            <a href="/workflow-action-pack/" class="mega-subcat__title">Workflow Actions Pack</a>
+                                            <div class="mega-subcat__links">
+                                                <a href="/docs/workflow-actions-pack/">Documentation</a>
+                                                <a href="/workflow-products-store/">Pricing</a>
+                                                <a href="/workflow-action-pack/support/">Support</a>
+                                            </div>
+                                        </div>
+                                        <div class="mega-subcat mega-subcat--scheduler">
+                                            <a href="/sharepoint-workflow-scheduler/" class="mega-subcat__title">Workflow Scheduler</a>
+                                            <div class="mega-subcat__links">
+                                                <a href="/sharepoint-workflow-scheduler/docs/">Documentation</a>
+                                                <a href="/workflow-products-store/">Pricing</a>
+                                                <a href="/sharepoint-workflow-scheduler/support/">Support</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu__cat-title">
+                                        Workflows
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="mega-menu__cat">
+                                    <div class="mega-menu__cat-cont">
+                                        <div class="mega-subcat mega-subcat--formsdesigner">
+                                            <a href="/sharepoint-forms-designer/" class="mega-subcat__title">Forms Designer</a>
+                                            <div class="mega-subcat__links">
+                                                <a href="https://spform.com/documentation">Documentation</a>
+                                                <a href="https://spform.com/buy">Pricing</a>
+                                                <a href="/sharepoint-forms-designer/support/">Support</a>
+                                            </div>
+                                        </div>
+                                        <div class="mega-subcat mega-subcat--crosssite">
+                                            <a href="/cross-site-lookup-for-sharepoint-2013-and-sharepoint-online-in-office-365/" class="mega-subcat__title">Cross-site lookup</a>
+                                            <div class="mega-subcat__links">
+                                                <a href="https://spform.com/documentation">Documentation</a>
+                                                <a href="https://spform.com/buy">Pricing</a>
+                                                <a href="/cross-site-lookup-for-sharepoint-2013-and-sharepoint-online-in-office-365/support/">Support</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu__cat-title">
+                                        Forms
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="mega-menu__cat">
+                                    <div class="mega-menu__cat-cont">
+                                        <div class="mega-subcat mega-subcat--dashboard">
+                                            <a href="/sharepoint-dashboard-designer/" class="mega-subcat__title">Dashboard Designer</a>
+                                            <div class="mega-subcat__links">
+                                                <a href="/sharepoint-dashboard-designer/dashboard-designer-documentation/">Documentation</a>
+                                                <a href="/sharepoint-dashboard-designer/store/">Pricing</a>
+                                                <a href="/sharepoint-dashboard-designer/support/">Support</a>
+                                            </div>
+                                        </div>
+                                        <div class="mega-subcat mega-subcat--org">
+                                            <a href="/sharepoint-orgchart/" class="mega-subcat__title">Org Chart</a>
+                                            <div class="mega-subcat__links">
+                                                <a href="/sharepoint-orgchart/docs/">Documentation</a>
+                                                <a href="/sharepoint-orgchart/store/">Pricing</a>
+                                                <a href="/sharepoint-orgchart/support/">Support</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu__cat-title">
+                                        Visualization
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                    {% block breadcrumbs %}
+                        <section class="breadcrumb">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="/sharepoint-helpdesk/">HelpDesk</a>
+                                        <span>›</span>
+                                        <a href="{{ pathto(master_doc) }}">Docs</a>
+                                        <span>›</span>
+                                        {% for doc in parents %}
+                                        <a href="{{ doc.link|e }}">{{ doc.title }}</a>
+                                        {% endfor %}
+                                        {{ title }}
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    {% endblock %}
+                    <div class="document clearer container doc-content2">
+                        {% block body %} {% endblock %}
+                    </div>
+                    {%- block bottom_rel_links %}
+                        {{ render_relations() }}
+                    {%- endblock %}
+                    <div class="clearfix"></div>
+                </div>
+                {%- block comments -%}
+                    {% if theme_disqus_comments_shortname %}
+                        <div class="container comment-container">
+                            {% include "comments.html" %}
+                        </div>
+                    {% endif %}
+                {%- endblock %}
+            {%- endblock %}
+        {%- endblock %}
+    </div>
+  {%- endif %}
+{%- endblock %}
+
+{%- block footer %}
+    <script type="text/javascript">
+      $("#mobile-toggle a").click(function () {
+        $("#left-column").toggle();
+      });
+    </script>
+    <script type="text/javascript" src="{{ pathto('_static/js/bootstrap.js', 1)}}"></script>
+    <script type="text/javascript" src="{{ pathto('_static/js/main.min.js', 1)}}"></script>
+    {%- block footer_wrapper %}
+        <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="footer__menu">
+          <ul id="menu-footer-menu" class="menu"><li class=""><a href="#products">Products</a></li>
+            <li class=""><a href="http://forum">Community</a></li>
+            <li class=""><a href="/store/">Store</a></li>
+            <li class=""><a target="_blank" href="https://medium.com/plumsail">Blog</a></li>
+            <li class=""><a href="/partners-and-resellers/">Partners</a></li>
+            <li class=""><a href="/contacts-us/">Company</a></li>
+          </ul>
+        </nav>
+        <div class="footer__copyright">
+          © 2011 - 2017 Plumsail. All rights reserved | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/refund-policy/">Refund policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    {%- endblock %}
+    {%- block ga %}
+        {%- if theme_google_analytics_account %}
+            <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ theme_google_analytics_account }}']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+        {%- endif %}
+    {%- endblock %}
+{%- endblock %}
