@@ -1,5 +1,2 @@
-.idea/
-/build/
-/_themes/
-helpdesk.log
-workflow-actions-pack.log
+#exclude build
+/build

@@ -14,10 +14,10 @@ All documentation articles
 .. container:: pl-left-column
 
    .. toctree::
-      :caption: General 
+      :caption: Introduction to Plumsail Forms
       :name: generaltoc
       :maxdepth: 1
 
-      other/Licensing
+      intro_plumsail/ResponsiveUI
 
 .. container:: pl-right-column
