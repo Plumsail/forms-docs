@@ -13,11 +13,34 @@ All documentation articles
 
 .. container:: pl-left-column
 
-   .. toctree::
-      :caption: Introduction to Plumsail Forms
-      :name: generaltoc
-      :maxdepth: 1
+      .. toctree::
+            :caption: Getting started
+            :maxdepth: 1
 
-      intro_plumsail/ResponsiveUI
+            introduction
+            introductionSP
+            installation
+      
+      .. toctree::
+            :caption: Designer
+            :maxdepth: 2
+
+            designer/containers
+
+      .. toctree::
+            :caption: JavaScript framework 
+            :maxdepth: 2
 
 .. container:: pl-right-column
+
+      .. toctree::
+            :caption: General
+            :name: generaltoc
+            :maxdepth: 2
+
+            general/roadmap
+            general/version-history
+
+      .. toctree::
+            :caption: How-to
+            :maxdepth: 2
