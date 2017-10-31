@@ -225,7 +225,11 @@ Button
 -------------------------------------------------------------
 Button control allows you to add buttons to your forms. Can be used to execute JavaScript on click.
 
-Bootstrap classes can be used to give different buttons unique look.
+Bootstrap classes can be used to give different buttons unique look. You can |location_link|.
+
+.. |location_link| raw:: html
+
+   <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_css_buttons.asp" target="_blank">read more here</a>
 
 .. image:: ../images/designer/controls/Buttons.png
    :alt: Buttons

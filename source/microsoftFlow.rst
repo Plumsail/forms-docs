@@ -3,19 +3,25 @@ Microsoft Flow
 
 About Microsoft Flow
 -------------------------------------------------------------
-`Microsoft Flow <https://flow.microsoft.com/en-us/>`_ allows you to integrate various apps and services by creating 
+|Flow| allows you to integrate various apps and services by creating 
 automatic workflows between them to collect data, synchronize files, receive notifications and much more.
+
+.. |Flow| raw:: html
+
+   <a href="https://flow.microsoft.com/en-us/" target="_blank">Microsoft Flow</a>
 
 Plumsail Forms can be utilized with Microsoft Flow in a variety of ways. 
 All the data submitted with Plumsail Forms goes through Microsoft Flow and only you can decide what to do with it. 
-You can email clients' requests from your site to your Helpdesk, you can create or update Sharepoint items from outside Sharepoint 
+You can email clients' requests from your site to your Helpdesk, you can create or update SharePoint items from outside SharePoint 
 and practically anything else you can think of.
 
-Additionally, Sharepoint forms can also be handled by Microsoft Flow upon submission, allowing you more freedom than regular Workflows ever could.
+Additionally, SharePoint forms can also be handled by Microsoft Flow upon submission, allowing you more freedom than regular Workflows ever could.
 
 Creating custom connector
 -------------------------------------------------------------
-First step in configuring Microsoft Flow is to create custom connector to handle Plumsail Forms.
+First step in configuring Microsoft Flow is to create custom connector to handle Plumsail Forms. 
+
+You can do it through Office365 or by going to |Flow| homepage.
 
 When you open Office365, go to Microsoft Flow page:
 
@@ -49,7 +55,7 @@ It should look like this:
 
 Next you can customize the look of the connector with the icon and background. 
 
-You can download our icon here and we recommend to use it with white background **#ffffff**
+You can download our icon :download:`here </images/icons/FormsIcon.png>` and we recommend to use it with white background **#ffffff**
 
 Nothing else need to be changed on this page:
 

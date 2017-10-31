@@ -101,9 +101,9 @@ Instead of tabs, it uses sections, each represented with horizontal line which y
 .. image:: ../images/designer/containers/Accordion.png
    :alt: Accordion
 
-Tabs properties
+Accordion properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Tabs container has following settings:
+Every Accordion container has following settings:
 
 SETTINGS
 
@@ -121,4 +121,4 @@ LAYOUT
     *   - Mode
         - Single - only one section is always open. SingleCollapsable - only one section can be open, but it can also be closed. Multiple means that Multiple sections can be open and all can be closed.
     *   - Expanded
-        - Allows you to choose section that will be expanded by default. Leave it empty if you don't want any section to be expanded.
+        - Allows you to choose sections that will be expanded by default. Leave it empty if you don't want any section to be expanded. Can select multiple sections if Multiple mode is selected, e.g. *0,1,2*

@@ -23,21 +23,21 @@ These events can be executed from JavaScript editor for Plumsail Forms:
         - This event is executed as soon as the form is created
         - fd.created((r) => { alert('created'); console.log(r); });
     *   - **beforeRender()**
-        - This event is executed before the form starts rendering, not for Sharepoint
+        - This event is executed before the form starts rendering, not for SharePoint
         - fd.beforeRender((r) => { alert('beforeRender'); console.log(r) });
     *   - **rendered()**
-        - This event is executed before the form starts rendering, not for Sharepoint
+        - This event is executed before the form starts rendering, not for SharePoint
         - fd.rendered((r) => { alert('rendered'); console.log(r); });
     *   - **beforeSave()**
-        - This event is executed before the form gets saved, not for Sharepoint
+        - This event is executed before the form gets saved, not for SharePoint
         - fd.beforeSave((r) => { alert('beforeSave'); console.log(r) });
     *   - **saved()**
-        - This event is executed as soon as the form is saved, not for Sharepoint
+        - This event is executed as soon as the form is saved, not for SharePoint
         - fd.saved((r) => { alert('saved'); console.log(r); });
 
-Modern Sharepoint Forms Events
+Modern SharePoint Forms Events
 **************************************************
-These events can be executed from JavaScript editor for Modern Sharepoint Forms:
+These events can be executed from JavaScript editor for Modern SharePoint Forms:
 
 .. list-table::
     :header-rows: 1
@@ -53,14 +53,14 @@ These events can be executed from JavaScript editor for Modern Sharepoint Forms:
         - This event is executed as soon as the form is created
         - fd.created((r) => { alert('created'); console.log(r); });
     *   - **spBeforeRender()**
-        - This event is executed before the Sharepoint form starts rendering
+        - This event is executed before the SharePoint form starts rendering
         - fd.spBeforeRender((r) => { alert('spBeforeRender'); console.log(r) });
     *   - **spRendered()**
-        - This event is executed before the Sharepoint form starts rendering
+        - This event is executed before the SharePoint form starts rendering
         - fd.spRendered((r) => { alert('rendered'); console.log(r); });
     *   - **spBeforeSave()**
-        - This event is executed before the Sharepoint form gets saved
+        - This event is executed before the SharePoint form gets saved
         - fd.spBeforeSave((r) => { alert('spBeforeSave'); console.log(r) });
     *   - **spSaved()**
-        - This event is executed as soon as the Sharepoint form is saved
+        - This event is executed as soon as the SharePoint form is saved
         - fd.spSaved((r) => { alert('spSaved'); console.log(r); });

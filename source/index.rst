@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-All documentation articles
+Documentation
 =================================================
 
 .. toctree::
@@ -25,7 +25,7 @@ All documentation articles
       .. toctree::
             :caption: General
             :name: generaltoc
-            :maxdepth: 2
+            :maxdepth: 1
 
             general/roadmap
             general/version-history
