@@ -1,6 +1,11 @@
 Containers
 ==================================================
+
+General Info
+-------------------------------------------------------------
 Containers are elements that contain other elements inside of them. Containers can contain any elements inside, including other containers.
+
+All containers are taken from Bootstrap and are fully responsive.
 
 
 Grid
@@ -33,6 +38,28 @@ Every element within a Grid has following properties:
     *   - Style
         - Allows you to give custom style settings to the grid cell. Works as a style attribute of an HTML tag, doesn't require any selectors to work.
 
+Grid properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every Grid container has following settings:
+
+LAYOUT
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Stacked
+        - Allows you choose at what screen size items get stacked: Never, Small, Medium, Large. Small by default
+    *   - Width
+        - Set the Width of the container. Can only be set if Width Unit is either Pixel or Percent.
+    *   - Width Unit
+        - Width Unit to customize witdth of the grid, by default Grid Width uses Parent Grid Width property, but can be further customized if Unit is set to either Pixel or Percent.
+    *   - CSS Class
+        - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
+    *   - Style
+        - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
+
+
+
 Tabs
 -------------------------------------------------------------
 Tabs allow you to separate content with tabs. You can use it for the whole form or just for a part of it.
@@ -44,19 +71,54 @@ You can change position of tabs in LAYOUT: Orientation and choose between Top, L
 .. image:: ../images/designer/containers/Tabs.png
    :alt: Tabs
 
+Tabs properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every Tabs container has following settings:
+
+SETTINGS
+
+.. list-table::
+    :widths: 10 40
+        
+    *   - InternalName
+        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+
+LAYOUT
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Orientation
+        - Choose between Top, Left or Bottom position of tabs.
+
+
 Accordion
 -------------------------------------------------------------
 Accordion gives you another way to separate your content into parts, but slightly differently from tabs.
 
 Instead of tabs, it uses sections, each represented with horizontal line which you can give title to. 
 
-While Accordions are more limited in terms of layout, they also give you more options for interacting with them.
-
-In LAYOUT: Mode you can select either Single, SingleCollapsable or Multiple which affects how Sections are opened.
-
-Single means that similar to tabs, one section must always be open. SingleCollapsable means that only one section can be open, but it can also be closed, so none will be open. Multiple means that Multiple sections can be open.
-
-LAYOUT: Expanded setting allows you to choose section that will be expanded by default. Leave it empty if you don't want any section to be expanded.
-
 .. image:: ../images/designer/containers/Accordion.png
    :alt: Accordion
+
+Tabs properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every Tabs container has following settings:
+
+SETTINGS
+
+.. list-table::
+    :widths: 10 40
+        
+    *   - InternalName
+        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+
+LAYOUT
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Mode
+        - Single - only one section is always open. SingleCollapsable - only one section can be open, but it can also be closed. Multiple means that Multiple sections can be open and all can be closed.
+    *   - Expanded
+        - Allows you to choose section that will be expanded by default. Leave it empty if you don't want any section to be expanded.

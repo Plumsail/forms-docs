@@ -11,7 +11,7 @@ Plumsail Forms are built using `Bootstrap v4.0.0 <https://getbootstrap.com/>`_ a
 
 This is achived by using Bootstrap's grids which are used by default on every form. Plumsail Forms give you full control over layout of the elements on the form.
 
-
+You can read more about new containers and their properties :doc:`here </designer/containers>`.
 
 Publish anywhere and post data to anywhere 
 --------------------------------------------------

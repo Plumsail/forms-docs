@@ -20,18 +20,7 @@ All documentation articles
             introduction
             introductionSP
             installation
-      
-      .. toctree::
-            :caption: Designer
-            :maxdepth: 2
-
-            designer/containers
-
-      .. toctree::
-            :caption: JavaScript framework 
-            :maxdepth: 2
-
-.. container:: pl-right-column
+            microsoftFlow
 
       .. toctree::
             :caption: General
@@ -43,4 +32,25 @@ All documentation articles
 
       .. toctree::
             :caption: How-to
-            :maxdepth: 2
+            :maxdepth: 1
+
+            how-to/email
+
+.. container:: pl-right-column
+
+      .. toctree::
+            :caption: Designer
+            :maxdepth: 1
+
+            designer/containers
+            designer/controls
+            designer/fields
+            designer/fieldsSP
+
+      .. toctree::
+            :caption: JavaScript framework 
+            :maxdepth: 1
+
+            javascript/general
+            javascript/manager
+            javascript/fields
