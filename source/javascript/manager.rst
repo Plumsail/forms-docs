@@ -64,6 +64,8 @@ These events can be executed from JavaScript editor for Plumsail Forms:
     *   -   **rendered()**
         -   Occurs after mounting the vue-component to DOM.
 
+            **Best place to run your JavaScript** since all elements are already built and rendered.
+
             **vue** passed as an argument to the function is a Vue instance of the form. 
             
             It is also available from fd variable this way: *fd._vue*

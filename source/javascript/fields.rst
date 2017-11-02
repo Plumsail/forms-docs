@@ -1,6 +1,21 @@
 Methods
 ==================================================
 
+General info
+--------------------------------------------------
+Here you can find methods that can be used on fields and controls that you have on your form. 
+
+Insert them into JavaScript editor or inside OnClick setting for buttons and links.
+
+*Internal Name* is the property that is used to identify specific fields and apply methods to them. *Internal Name* is unique for every field.
+
+**Important!** Methods shouldn't be used on their own, they must be executed inside events 
+like **rendered()** or **beforeSave()** in order to actually access the fields or controls that you target.
+
+If you just add methods on their own or inside wrong event in JavaScript editor,
+they will not have access to the specified fields or controls, or will execute at the wrong time.
+Read more about different events in :doc:`Manager section </javascript/manager>`.
+
 Fields
 --------------------------------------------------
 
