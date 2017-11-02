@@ -84,18 +84,76 @@ Finally, click Create Connector on the next page:
 .. image:: /images/flow/6_CreateConnector.png
    :alt: Last click
 
-Authorization
+Creating Flow
 -------------------------------------------------------------
 
-Now custom connector has been added, but you need to complete authorization to make it work.
+Now custom connector has been added and you can start creating Flows with it.
 
-Go back to Custom Connectors page where you now have Plumsail Forms and click big **+** sign right to it.
+Go to My Flows and click *Create from blank*:
 
-It will open Authentication pop up where you need to Sign in to your Plumsail account. It must be the same account where you store all your forms.
-
-.. image:: /images/flow/7_CreateConnection.png
-   :alt: Create connection
+.. image:: /images/flow/8_MyFlows.png
+   :alt: My Flows
 
 |
 
-Now you can create custom flows and utilize Plumsail Forms to their full advantage.
+On the next page, click *Search hundreds of connectors and triggers*:
+
+.. image:: /images/flow/9_Search.png
+   :alt: Search
+
+|
+
+Search for *Plumsail* and add *Plumsail Forms - Form is submitted* trigger:
+
+.. image:: /images/flow/10_FormSubmittedTrigger.png
+   :alt: Plumsail Forms - Form is submitted trigger
+
+|
+
+If this is your first Flow, at this point you'll need to **Sign in to** |Plumsail Account| from Flow, so you can start using your forms inside the Flow.
+
+.. |Plumsail Account| raw:: html
+
+   <a href="https://auth.plumsail.com/account/login" target="_blank"><b>Plumsail Account</b></a>
+
+**Important!** You can only bind Flows to the forms that are stored in your Plumsail Account!
+
+.. image:: /images/flow/11_Authorization.png
+   :alt: Sign in to Plumsail Account
+
+|
+
+Now, you'll need to add the ID of the Form you want to track. You can enter ID of the form you already created or create and save a new form in the designer.
+
+Form ID can be found and copied in **General Settings** in the Designer.
+
+.. image:: /images/flow/11_FormID.png
+   :alt: Form ID
+
+|
+
+After adding the trigger, search for *JSON* and add *Data Operations - Parse JSON* action to actually parse data received from the submitted form:
+
+.. image:: /images/flow/12_ParseJSON.png
+   :alt: Parse JSON
+
+|
+
+Here you will need to open the designer and the form that you want to track with the Flow. Save it and after saving, 
+open **General Settings** and copy the *Form Schema*:
+
+.. image:: /images/flow/13_FormSchema.png
+   :alt: Form Schema
+
+|
+
+In *Parse JSON* action click *Content* and select **Body** in menu on the right. Insert copied *Form Schema* into *Schema* field:
+
+.. image:: /images/flow/14_ParseJSONContent.png
+   :alt: Form Schema
+
+|
+
+That's it, after this action you can do pretty much anything with submitted data.
+
+Check out our How-to documentation on examples of using Flow. For example, for :doc:`sending an email </how-to/email>`.

@@ -42,6 +42,7 @@ Documentation
             :caption: Designer
             :maxdepth: 1
 
+            designer/ribbonActions
             designer/containers
             designer/controls
             designer/fields
