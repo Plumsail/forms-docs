@@ -24,7 +24,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
         
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.beforeCreate(function(vueConfig) {
                 console.log('beforeCreate');
@@ -38,7 +38,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
             
             It is also available from fd variable this way: *fd._vue*
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.created(function(vue) {
                 console.log('created');
@@ -54,7 +54,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.beforeRender(function(vue) {
                 console.log('beforeRender');
@@ -68,7 +68,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
             
             It is also available from fd variable this way: *fd._vue*
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.rendered(function(vue) {
                 console.log('rendered');
@@ -82,7 +82,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
             
             Keys are internal names of form fields, Values - user's input. Ex.:
 
-            .. code-block:: guess
+            .. code-block:: javascript
 
                 {
                     Field1: 'text'
@@ -95,7 +95,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.beforeSave(function(data) {
                 console.log('beforeSave');
@@ -104,7 +104,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
           *Asynchronous:*
 
-          .. code-block:: guess
+          .. code-block:: javascript
 
             fd.beforeSave(function(data) {
             return new Promise(function(resolve) {
@@ -122,7 +122,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             Can be used to display confirmation message after the form is saved or perform some other actions.
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.saved(function() {
                 console.log('saved');
@@ -149,7 +149,7 @@ These events can be executed from JavaScript editor for Modern SharePoint Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
         
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.beforeCreate(function(vueConfig) {
                 console.log('beforeCreate');
@@ -163,7 +163,7 @@ These events can be executed from JavaScript editor for Modern SharePoint Forms:
             
             It is also available from fd variable this way: *fd._vue*
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.created(function(vue) {
                 console.log('created');
@@ -179,7 +179,7 @@ These events can be executed from JavaScript editor for Modern SharePoint Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.spBeforeRender(function(vue) {
                 console.log('beforeRender');
@@ -193,7 +193,7 @@ These events can be executed from JavaScript editor for Modern SharePoint Forms:
             
             It is also available from fd variable this way: *fd._vue*
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.spRendered(function(vue) {
                 console.log('rendered');
@@ -207,7 +207,7 @@ These events can be executed from JavaScript editor for Modern SharePoint Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.spBeforeSave(function(spForm) {
                 console.log('spBeforeSave');
@@ -227,7 +227,7 @@ These events can be executed from JavaScript editor for Modern SharePoint Forms:
             
             This object can be changed.
 
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.spSaved(function(result) {
                 console.log('spSaved');
@@ -256,7 +256,7 @@ Use **rendered()** event for Plumsail forms and **spRendered()** event for Share
 
             If the field does not match the criteria, the form will not submit.
         
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.rendered(function(){
                 fd.field('Numeric0').validators.push({
@@ -285,7 +285,7 @@ Use **rendered()** event for Plumsail forms and **spRendered()** event for Share
 
             If the fields do not match these criterias, the form will not submit.
         
-        - .. code-block:: guess
+        - .. code-block:: javascript
 
             fd.rendered(function(){
                 fd.validators.push({

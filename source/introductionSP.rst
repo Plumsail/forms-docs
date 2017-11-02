@@ -1,6 +1,24 @@
 Introduction to Modern SharePoint Forms
 ==================================================
 
+General information
+--------------------------------------------------
+Modern SharePoint Forms allow you to design beautiful modern responsive forms for SharePoint Online Modern pages.
+
+In order to use Modern SharePoint Forms, you only need **Forms Designer License**, nothing else.
+
+Additionally, when user submits the form in SharePoint, you can also use it with |Flow| which can then be used for variety of purposes -
+create new items in another list, send an email, save files to document library and much more.
+
+But in order to use Modern SharePoint Forms in conjuction with Microsoft Flow you will also need to purchase **subscription to** |plumsail-account|.
+
+You will also get access to :doc:`Plumsail Forms </introduction>` which will allow you to publish custom forms(not from SharePoint) 
+to any page on the web and use submitted data with Microsoft Flow. Read more about using Microsoft Flow :doc:`here </microsoftFlow>`.
+
+.. |plumsail-account| raw:: html
+
+   <a href="https://auth.plumsail.com/account/login" target="_blank"><b>Plumsail account</b></a>
+
 Responsive UI
 --------------------------------------------------
 Just like Plumsail Forms, Modern SharePoint forms are built using |Bootstrap| and |Vue|.
