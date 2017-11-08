@@ -35,6 +35,7 @@ Documentation
             :maxdepth: 1
 
             how-to/email
+            how-to/item
 
 .. container:: pl-right-column
 

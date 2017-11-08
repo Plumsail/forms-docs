@@ -1,4 +1,4 @@
-Send an email on form submission
+Send an email with Microsoft Flow
 ==================================================
 
 Description
@@ -7,7 +7,7 @@ Description
 One of the basic functionalities you can add to your form is to send an email once the form is submitted. 
 It can be used in variety of cases - to receive feedback from the clients, to get latest update from your employees and just to get some information in general.
 
-In this example, we will design the form for customers to report their problems and use Flow to send submitted information 
+In this example, we will design a form for customers to report their problems and use Flow to send submitted information 
 to our company's |location_link|.
 
 .. |location_link| raw:: html
@@ -24,7 +24,7 @@ Don't forget to include the Submit button, so the form can be actually submitted
 Here's the simple form designed to receive customers feedback on Forms Designer problems:
 
 .. image:: ../images/how-to/email/1_DesignForm.png
-   :alt: MultilineTextBox
+   :alt: Design Form
 
 |
 

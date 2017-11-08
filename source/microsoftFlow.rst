@@ -59,9 +59,13 @@ It should look like this:
 
 Next you can customize the look of the connector with the icon and background. 
 
-You can download our icon :download:`here </images/icons/FormsIcon.png>` and we recommend to use it with white background **#ffffff**
+You can download our icon |Icon| and we recommend to use it with white background **#ffffff**
 
 Nothing else need to be changed on this page:
+
+.. |Icon| raw:: html
+
+   <a href="https://forms.plumsail.com/images/connector.png" target="_blank">here</a>
 
 .. image:: /images/flow/4_AdjustIcon.png
    :alt: Adjust Icon
