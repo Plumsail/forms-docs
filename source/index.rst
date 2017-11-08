@@ -36,6 +36,7 @@ Documentation
 
             how-to/email
             how-to/item
+            how-to/file
 
 .. container:: pl-right-column
 

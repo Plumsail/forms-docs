@@ -16,7 +16,7 @@ so you know what fields you will need on your form rather than another way aroun
 
 I will design simple list with three extra Single line plain text columns:
 
-.. image:: ../images/how-to/email/0_CreateList.png
+.. image:: ../images/how-to/item/0_CreateList.png
    :alt: Create List
 
 |
@@ -27,14 +27,23 @@ but you'll need to Submit Data to Flow in General Settings.
 
 I've designed this simple form:
 
-.. image:: ../images/how-to/email/1_DesignForm.png
+.. image:: ../images/how-to/item/1_DesignForm.png
    :alt: Design Form
+
+|
+
+Once you design and save the form, you will see **General Settings** button pop up on top. This section contains important information you'll need to use while setting up the Flow:
+
+.. image:: ../images/how-to/item/General.png
+   :alt: General Settings
 
 |
 
 Now, after the form is saved, it is time to configure Flow.
 
-Configure the Flow
+**Important!** If you add changes the form, you first need to save it and only after saving the information in General Settings will update.
+
+Configure the Flow - First steps
 --------------------------------------------------
 
 First, open Microsoft Flow page and go to My Flows:
@@ -88,9 +97,12 @@ Don't forget to save the form first, if you've added some changes, that will upd
 
 |
 
+Configure the Flow - Create item in SharePoint
+--------------------------------------------------
+
 We'll use Microsoft's *SharePoint - Create item* action to create an item in a list. Select it:
 
-.. image:: ../images/how-to/file/2_SharePointCreateItem.png
+.. image:: ../images/how-to/item/2_SharePointCreateItem.png
    :alt: SharePoint - Create item
 
 |
@@ -100,7 +112,7 @@ select *Enter custom value* in dropdown menu and type in or copy and paste your 
 
 You will also need to select List in List Name field:
 
-.. image:: ../images/how-to/file/3_SiteAddressEnterCustomValue.png
+.. image:: ../images/how-to/item/3_SiteAddressEnterCustomValue.png
    :alt: Site Address and List Name
 
 |
@@ -118,7 +130,7 @@ It's not a bad option and might be useful in some situations, but if you have lo
 Here, I will use Expression of Workflow Definition Language to combine every value from the array into single string.
 In menu on the right, instead of clicking on the field, click Expression and type in **join()**:
 
-.. image:: ../images/how-to/file/4_Expression.png
+.. image:: ../images/how-to/item/4_Expression.png
    :alt: Site Address and List Name
 
 |
@@ -129,14 +141,14 @@ You can also add a delimiter between each string, I've added **', '** as a delim
 
 Here is the result:
 
-.. image:: ../images/how-to/file/5_Join.png
+.. image:: ../images/how-to/item/5_Join.png
    :alt: Join Expression
 
 |
 
 Final result should look like this:
 
-.. image:: ../images/how-to/file/6_Final.png
+.. image:: ../images/how-to/item/6_Final.png
    :alt: Final
 
 |
@@ -147,14 +159,14 @@ Final Result
 --------------------------------------------------
 Make sure that the Flow is active and open Form preview. I've filled mine with example data and clicked *Submit*:
 
-.. image:: ../images/how-to/file/7_ExampleForm.png
+.. image:: ../images/how-to/item/7_ExampleForm.png
    :alt: Example Form
 
 |
 
 Once the Form is submitted and processed with Flow, which can take some time, depending on how complex your form is, I get this result:
 
-.. image:: ../images/how-to/file/8_Result.png
+.. image:: ../images/how-to/item/8_Result.png
    :alt: Result
 
 |

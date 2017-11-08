@@ -37,7 +37,7 @@ Once you design and save the form, you will see **General Settings** button pop 
 
 **Important!** If you add changes the form, you first need to save it and only after saving the information in General Settings will update.
 
-Configure the Flow
+Configure the Flow - First steps
 --------------------------------------------------
 
 First, open Microsoft Flow page and go to My Flows:
@@ -90,6 +90,9 @@ Don't forget to save the form first, if you've added some changes, that will upd
    :alt: Add Content and Schema from General Settings
 
 |
+
+Configure the Flow - Send an email
+--------------------------------------------------
 
 We'll use Microsoft's *Office 365 Outlook - Send an email* action to send an email. Select it:
 
