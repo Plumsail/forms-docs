@@ -104,7 +104,7 @@ First, you need to search for *HTTP* and select **HTTP - HTTP** action to downlo
 
 |
 
-In the opened window select GET in Method dropdown field and add **url** to the Uri field. 
+In the opened window select GET in *Method* dropdown field and add **url** to the *Uri* field. 
 This will automatically transform this action into repeating one which will be performed for each file in Attachments.
 
 It should look like this as a result:
@@ -122,7 +122,7 @@ Click *Add an action* when you fill in the data. You will now need to search for
 |
 
 It should still be the same step, so in this next window you can fill the following data - your Site address, Document Library you want to create file in,
-File name - file from parsed JSON, File Content - Body from HTTP request:
+File name - select purple file value from parsed JSON, File Content - Body from HTTP request:
 
 .. image:: ../images/how-to/file/5_SharePoint_CreateFile.png
    :alt: SharePoint - Create file

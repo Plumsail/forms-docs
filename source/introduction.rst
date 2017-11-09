@@ -7,14 +7,11 @@ Plumsail Forms allow you to design and publish elegant and highly customizable f
 
 When user submits the form, data is handled by |Flow| and you can use for any of your needs - in conjuction with SharePoint or without it.
 
-In order to use Plumsail Forms with Microsoft you will only need to purchase **subscription to** |plumsail-account|.
+In order to use Plumsail Forms with Microsoft you will only need to purchase **Plumsail License** for Forms.
 
 If you are interested in using Modern SharePoint Forms, you will also need **Forms Designer License**. 
 Read more about Modern SharePoint Forms :doc:`here </introductionSP>`.
 
-.. |plumsail-account| raw:: html
-
-   <a href="https://auth.plumsail.com/account/login" target="_blank"><b>Plumsail account</b></a>
 
 Responsive UI
 --------------------------------------------------

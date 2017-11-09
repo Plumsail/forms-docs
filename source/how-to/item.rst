@@ -174,3 +174,59 @@ Once the Form is submitted and processed with Flow, which can take some time, de
 This example is simple, but you've seen how an item can be added to the list and how to convert array of strings into one string.
 This can be used in combination with any other Flow, for example, you can also :doc:`send an email after form is submitted </how-to/email>` and item is created.
 
+Adding attachments to created items
+--------------------------------------------------
+Another thing you can do is to upload attachments to newly created items. Make sure to include Attachments field on your form before creating the Flow:
+
+.. image:: ../images/how-to/item/attachments/1_AttachmentsField.png
+   :alt: Attachments field
+
+|
+
+When you add all the actions previously described, click *+ New Step", search for *HTTP* and select **HTTP - HTTP** action:
+
+.. image:: ../images/how-to/file/2_HTTP.png
+   :alt: HTTP Search
+
+|
+
+Next, select GET in *Method* dropdown field and add **url** to the *Uri* field. 
+This will automatically transform this action into repeating one which will be performed for each file in Attachments.
+
+It should look like this as a result:
+
+.. image:: ../images/how-to/item/attachments/2_HTTPGet.png
+   :alt: HTTP Get and URL
+
+|
+
+Do not click *+ New Step"! Click *Add an action* instead, search for *SharePoint Attachment* and select **SharePoint - Add attachment** action:
+
+.. image:: ../images/how-to/item/attachments/3_SharePointAddAttachmentSearch.png
+   :alt: SharePoint attachment search
+
+|
+
+It should still be the same step, so in this next window you can fill the following data - your Site address, List name - select the same as before,
+File name - select purple file value file from parsed JSON, File Content - select green Body from HTTP request:
+
+.. image:: ../images/how-to/item/attachments/4_SharePointAddAttachment.png
+   :alt: SharePoint - Add attachment
+
+|
+
+Now, the Flow is ready and can be saved. Click *Save Flow* and **Done**. 
+
+We can test how the Flow works with Form Preview:
+
+.. image:: ../images/how-to/item/attachments/5_ExampleForm.png
+   :alt: Example form
+
+|
+
+And here are the attachments added to SharePoint via the Flow:
+
+.. image:: ../images/how-to/item/attachments/6_Result.png
+   :alt: Result
+
+|
