@@ -132,10 +132,10 @@ a:hover, a:focus {
 .main-menu li a:hover span:before,
 .main-menu li a:hover span:after,
 .main-menu li a:hover span{
-    background: #2196F3;
+    background: #ee8400;
 }
 .breadcrumb a:hover,
 .main-menu li a:hover,
 .mega-subcat__links a:hover{
-    color: #2196F3;
+    color: #ee8400;
 }
