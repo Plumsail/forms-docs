@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/header.min.css', 1) }}" />
   <link rel="stylesheet" type="text/css" href="{{ pathto('_static/css/doc-content.min.css', 1) }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/wp-content/themes/plumsail/assets/images/favicon.ico"
+  type="image/x-icon">
+
   {{ super() }}
 {%- endblock %}
 
@@ -91,7 +94,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="header__logo">
-                                            <a href="http://plumsail.com"><img src="/wp-content/themes/plumsail/assets/images/logo.svg" alt=""></a>
+                                            <a href="/"><img src="/wp-content/themes/plumsail/assets/images/logo.svg" alt=""></a>
                                     </div>
                                     <nav class="header__menu">
                                         <ul class="main-menu">
@@ -272,8 +275,8 @@
                                                 <div class="mega-subcat mega-subcat--forms">
                                                     <a href="/forms/" class="mega-subcat__title">Forms</a>
                                                     <div class="mega-subcat__links">
-                                                        <a href="#" target="_blank">Documentation</a>
-                                                        <a href="#" target="_blank">Pricing</a>
+                                                        <a href="#" target="/docs/forms/">Documentation</a>
+                                                        <a href="#" target="/forms/store/">Pricing</a>
                                                         <a href="/sharepoint-forms-designer/support/">Support</a>
                                                     </div>
                                                 </div>
@@ -332,7 +335,7 @@
                         <section class="breadcrumb">
                             <div class="row">
                                 <div class="col-12"  style="padding-left:10px;">
-                                    <a href="/SharePoint-helpdesk/">Forms</a>
+                                    <a href="/forms/">Forms</a>
                                     <span>›</span>
                                     <a href="{{ pathto(master_doc) }}">Docs</a>
                                     <span>›</span>
@@ -347,15 +350,8 @@
                     <div class="document clearer container doc-content2">
                         {% block body %} {% endblock %}
                     </div>
-                    <div class="clearfix"></div>
+                    <div class="clearfix" style="padding-bottom: 50px;"></div>
                 </div>
-                {%- block comments -%}
-                    {% if theme_disqus_comments_shortname %}
-                        <div class="container comment-container">
-                            {% include "comments.html" %}
-                        </div>
-                    {% endif %}
-                {%- endblock %}
             {%- endblock %}
         {%- endblock %}
     </div>
@@ -377,11 +373,11 @@
       <div class="col-12">
         <nav class="footer__menu">
           <ul id="menu-footer-menu" class="menu"><li class=""><a href="#products">Products</a></li>
-            <li class=""><a href="http://forum">Community</a></li>
+            <li class=""><a target="_blank" href="https://community.plumsail.com">Community</a></li>
             <li class=""><a href="/store/">Store</a></li>
             <li class=""><a target="_blank" href="https://medium.com/plumsail">Blog</a></li>
             <li class=""><a href="/partners-and-resellers/">Partners</a></li>
-            <li class=""><a href="/contacts-us/">Company</a></li>
+            <li class=""><a href="/company/">Company</a></li>
           </ul>
         </nav>
         <div class="footer__copyright">

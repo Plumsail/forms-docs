@@ -20,6 +20,7 @@ Documentation
             introduction
             introductionSP
             installation
+            licensing
             microsoftFlow
 
       .. toctree::
