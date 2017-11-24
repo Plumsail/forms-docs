@@ -35,7 +35,7 @@ For testing purposes, you can just change user agent in your browser to see a di
 and click Toggle device toolbar icon next to Inspector which will allow you to change the device and see how the form is displayed on other devices.
 
 .. image:: /images/designer/ribbon-actions/ToggleDeviceToolbar.png
-   :alt: Layouts icons
+   :alt: Toggle Device Toolbar
 
 |
 Similar functionality is present in almost all modern browsers.
@@ -45,8 +45,7 @@ Export and Import
 You can export currently selected form by pressing Export button. It will allow you to save the form as a file on your computer.
 
 .. image:: /images/designer/ribbon-actions/ExportImport.png
-   :alt: Layouts icons
-
+   :alt: Export and Import
 |
 
 This can be used in variety of situations, especially if you need to design a number of similar forms. 
