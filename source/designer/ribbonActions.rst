@@ -20,7 +20,7 @@ the icon of the device you want to design form for, customize the form and click
 The red cross under the icon of the device indicates that the form is registered. Click on it to remove the specific form. 
 There will be a confirmation prompt to avoid potential misclicks: 
 
-.. image:: /images/designer/ribbon-actions/layouts.png
+.. image:: /images/designer/ribbon-actions/Layouts.png
    :alt: Layouts icons
 
 |
