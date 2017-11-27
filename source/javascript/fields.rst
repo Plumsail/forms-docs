@@ -1,9 +1,9 @@
-Methods
+Fields
 ==================================================
 
 General info
 --------------------------------------------------
-Here you can find methods that can be used on fields and controls that you have on your form. 
+Here you can find properties of the fields that you have on your form and methods that can be used on them. 
 
 Insert them into JavaScript editor or inside OnClick setting for buttons and links.
 
@@ -19,15 +19,15 @@ Read more about different events in :doc:`Manager section </javascript/manager>`
 Fields
 --------------------------------------------------
 
-General methods
+Properties
 **************************************************
-These methods are applicable to most fields:
+Most fields have these properties:
 
 .. list-table::
     :header-rows: 1
     :widths: 10 20 20
-        
-    *   -   Method
+
+    *   -   Property
         -   Description
         -   Examples
     *   -   **field(FieldName).title**
@@ -76,12 +76,7 @@ These methods are applicable to most fields:
 
                 fd.field('TextBox').disabled;
                 fd.field('TextBox').disabled = true;
-    *   -   **field(FieldName).clear**
-        -   Clears the field.
-        - .. code-block:: javascript
-
-                fd.field('TextBox').clear();
-
+    
     *   -   **field(FieldName).placeholder**
         -   Get or set placeholder for a field.
 
@@ -94,12 +89,30 @@ These methods are applicable to most fields:
     *   -   **field(FieldName).widget**
         -   Returns jquery-object lying under the Vue-component. 
         
-            Usually it's a |kendo-widget|.
+            Usually it's a kendo component.
         - .. code-block:: javascript
 
                 fd.field('TextBox').widget;
 
-    *   -   **field(FieldName).$on**
+Methods
+**************************************************
+These methods are applicable to most fields:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Method
+        -   Description
+        -   Examples
+    
+    *   -   **field(FieldName).clear()**
+        -   Clears the field.
+        - .. code-block:: javascript
+
+                fd.field('TextBox').clear();
+
+    *   -   **field(FieldName).$on()**
         -   Tracks when specific events happens to a field. 
             
             By default only has **change** event which triggers when field value is changed.
@@ -108,9 +121,3 @@ These methods are applicable to most fields:
                 fd.field('TextBox').$on('change', function(value) {
                     alert('New value: ' + value);
                 })
-
-
-
-.. |kendo-widget| raw:: html
-
-    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/widget" target="_blank">Kendo Widget</a>

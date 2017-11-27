@@ -3,7 +3,13 @@ Manager
 
 fd global variable
 --------------------------------------------------
-**fd** is a Forms designer manager global variable. Whenever you want to use custom methods on the form, you need to call the manager first. 
+**fd** is a Forms designer manager variable. Whenever you want to use custom methods on the form, you need to call the manager first. 
+
+ **fd** is not global and only accesible from within the form, e.g. from JavaScript editor. 
+
+ It is accesible globally in Form Preview, so you can run tests from browser's console.
+
+ Otherwise, it will not be accesible globally on the page, so you can include several forms on one page and not worry about their scripts conflicting at all.
 
 Plumsail Forms Events
 --------------------------------------------------
@@ -266,7 +272,7 @@ Use **rendered()** event for Plumsail forms and **spRendered()** event for Share
                     error: '',
                     validate: function(value) {
                         if (value <= 0) {
-                            this.error = 'Value must by grater than 0';
+                            this.error = 'Value must by greater than 0';
                             return false;
                         }
                         
@@ -302,4 +308,93 @@ Use **rendered()** event for Plumsail forms and **spRendered()** event for Share
                 });
             });
 
+fd methods
+--------------------------------------------------
+These methods can be applied to **fd**:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Method
+        -   Description
+        -   Examples
+    *   -   **fd.save()**
+        -   Saves the form.
+        - .. code-block:: javascript
+
+                fd.save();
+                
+    *   -   **fd.data()**
+        -   Gathers data from all fields on the form. Can be used to get or set multiple values at the same time.
+        - .. code-block:: javascript
+
+                fd.data();
+                fd.data({Field1: value1, Field2: value2});
+
+    *   -   **fd.clear()**
+        -   Clears the form.
+        - .. code-block:: javascript
+
+                fd.clear();
+
+fd properties
+--------------------------------------------------
+**fd** has the following properties:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+
+    *   -   Property
+        -   Description
+        -   Examples
+    *   -   **fd.culture**
+        -   Returns the name of the current culture, e.g. "en-US"
+        - .. code-block:: javascript
+
+                fd.culture;
+
+    *   -   **fd.formId**
+        -   Returns ID of the form.
+        - .. code-block:: javascript
+
+                fd.formId;
+    *   -   **fd.isFilesUploadingInProgress**
+        -   Returns true if files are currently uploaded as attachments, returns false otherwise.
+        - .. code-block:: javascript
+
+                fd.isFilesUploadingInProgress;
+
+    *   -   **fd.isValid**
+        -   Checks if form is valid or not. 
+            
+            Each time the property is called, it runs a method to check if all validators validate succesfully, both Field and Form validators.
+
+            Returns *true* on success. Otherwise, returns *false* and error messages get displayed.
+        - .. code-block:: javascript
+
+                fd.isValid;
+
+    *   -   **fd.validators**
+        -   Returns an array of form validators, can be used to add new ones.
+        - .. code-block:: javascript
+
+                fd.validators;
+                fd.validators.push({
+                    name: 'MyCustomValidator',
+                    error: "Age must be 18 or over.",
+                    validate: function(value) {
+                        if (fd.field('Age').value < 18)
+                            return false;
+                            
+                        return true;
+                    }
+                });
+
+    *   -   **fd._vue**
+        -   Returns VueJS component of the form, so you can examine or modify it.
+        - .. code-block:: javascript
+
+                fd._vue;
     
