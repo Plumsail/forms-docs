@@ -1,7 +1,7 @@
 Manager
 ==================================================
 
-fd global variable
+Intro
 --------------------------------------------------
 **fd** is a Forms designer manager variable. Whenever you want to use custom methods on the form, you need to call the manager first. 
 
@@ -11,7 +11,7 @@ fd global variable
 
  Otherwise, it will not be accesible globally on the page, so you can include several forms on one page and not worry about their scripts conflicting at all.
 
-Plumsail Forms Events
+Events
 --------------------------------------------------
 These events can be executed from JavaScript editor for Plumsail Forms:
 
@@ -60,6 +60,10 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
+            *Note:* This event is exclusive to Plumsail Forms. 
+            
+            For SharePoint Forms, use **spBeforeRender()**.
+
         - .. code-block:: javascript
 
             fd.beforeRender(function(vue) {
@@ -67,6 +71,26 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                 console.log(vue);
             });
 
+    *   -   **spBeforeRender()**
+        -   Occurs before mounting the vue-component to DOM.
+
+            **vue** passed as an argument to the function is a Vue instance of the form. 
+            
+            It is also available from fd variable this way: *fd._vue*
+
+            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
+
+            *Note:* This event is exclusive to SharePoint Forms. 
+            
+            For Plumsail Forms, use **beforeRender()**.
+
+        - .. code-block:: javascript
+
+            fd.spBeforeRender(function(vue) {
+                console.log('beforeRender');
+                console.log(vue);
+            });
+    
     *   -   **rendered()**
         -   Occurs after mounting the vue-component to DOM.
 
@@ -76,9 +100,46 @@ These events can be executed from JavaScript editor for Plumsail Forms:
             
             It is also available from fd variable this way: *fd._vue*
 
+            *Note:* This event is exclusive to Plumsail Forms. 
+            
+            For SharePoint Forms, use **spRendered()**.
+
         - .. code-block:: javascript
 
             fd.rendered(function(vue) {
+                console.log('rendered');
+                console.log(vue);
+            });
+
+            fd.rendered(function(){
+                fd.validators.push({
+                    name: 'MyCustomValidator',
+                    error: "'To' must be greater than 'From'.",
+                    validate: function(value) {
+                        if (fd.field('From').value >= fd.field('To').value)
+                            return false;
+                            
+                        return true;
+                    }
+                });
+            });
+
+    *   -   **spRendered()**
+        -   Occurs after mounting the vue-component to DOM.
+
+            **Best place to run your JavaScript** since all elements are already built and rendered.
+
+            **vue** passed as an argument to the function is a Vue instance of the form. 
+            
+            It is also available from fd variable this way: *fd._vue*
+
+            *Note:* This event is exclusive to SharePoint Forms. 
+            
+            For Plumsail Forms, use **rendered()**.
+
+        - .. code-block:: javascript
+
+            fd.spRendered(function(vue) {
                 console.log('rendered');
                 console.log(vue);
             });
@@ -103,6 +164,10 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
+            *Note:* This event is exclusive to Plumsail Forms. 
+            
+            For SharePoint Forms, use **spBeforeSave()**.
+
         - .. code-block:: javascript
 
             fd.beforeSave(function(data) {
@@ -125,89 +190,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                 }); 
             });
 
-    *   -   **saved()**
-        -   Occurs after the data is sent to the Flow.
-
-            Can be used to display confirmation message after the form is saved or perform some other actions.
-
-        - .. code-block:: javascript
-
-            fd.saved(function() {
-                console.log('saved');
-            });
-
-    
-
-Modern SharePoint Forms Events
---------------------------------------------------
-These events can be executed from JavaScript editor for Modern SharePoint Forms:
-
-.. list-table::
-    :header-rows: 1
-    :widths: 6 22 22
-
-    *   - Event
-        - Description
-        - Example
-    *   -   **beforeCreate()**
-        -   Occurs prior to form creation.
-        
-            **vueConfig** passed as an argument to the function is a configuration of the main vue-component. You can register your own child components.
-            You can read more about it |vueConfig|.
-
-            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
-        
-        - .. code-block:: javascript
-
-            fd.beforeCreate(function(vueConfig) {
-                console.log('beforeCreate');
-                console.log(vueConfig);
-            });
-
-    *   -   **created()**
-        -   Occurs as soon as the form is created.
-
-            **vue** passed as an argument to the function is a Vue instance of the form. 
-            
-            It is also available from fd variable this way: *fd._vue*
-
-        - .. code-block:: javascript
-
-            fd.created(function(vue) {
-                console.log('created');
-                console.log(vue);
-            });
-
-    *   -   **spBeforeRender()**
-        -   Occurs before mounting the vue-component to DOM.
-
-            **vue** passed as an argument to the function is a Vue instance of the form. 
-            
-            It is also available from fd variable this way: *fd._vue*
-
-            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
-
-        - .. code-block:: javascript
-
-            fd.spBeforeRender(function(vue) {
-                console.log('beforeRender');
-                console.log(vue);
-            });
-
-    *   -   **spRendered()**
-        -   Occurs after mounting the vue-component to DOM.
-
-            **vue** passed as an argument to the function is a Vue instance of the form. 
-            
-            It is also available from fd variable this way: *fd._vue*
-
-        - .. code-block:: javascript
-
-            fd.spRendered(function(vue) {
-                console.log('rendered');
-                console.log(vue);
-            });
-
     *   -  **spBeforeSave()**
         -   Occurs before submitting the form.
 
@@ -215,11 +197,31 @@ These events can be executed from JavaScript editor for Modern SharePoint Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
+            *Note:* This event is exclusive to SharePoint Forms. 
+            
+            For Plumsail Forms, use **beforeSave()**.
+
         - .. code-block:: javascript
 
             fd.spBeforeSave(function(spForm) {
                 console.log('spBeforeSave');
                 console.log(spForm);
+            });
+
+
+    *   -   **saved()**
+        -   Occurs after the data is sent to the Flow.
+
+            Can be used to display confirmation message after the form is saved or perform some other actions.
+
+            *Note:* This event is exclusive to Plumsail Forms. 
+            
+            For SharePoint Forms, use **spSaved()**.
+
+        - .. code-block:: javascript
+
+            fd.saved(function() {
+                console.log('saved');
             });
 
     *   - **spSaved()**
@@ -235,80 +237,22 @@ These events can be executed from JavaScript editor for Modern SharePoint Forms:
             
             This object can be changed.
 
+            *Note:* This event is exclusive to SharePoint Forms. 
+            
+            For Plumsail Forms, use **saved()**.
+
         - .. code-block:: javascript
 
             fd.spSaved(function(result) {
                 console.log('spSaved');
                 console.log(result);
             });
-
+    
 .. |vueConfig| raw:: html
 
     <a href="https://vuejs.org/v2/guide/instance.html" target="_blank">here</a>
 
-Validators
---------------------------------------------------
-You can also write and include your own custom Form and Field Validators for Modern Forms.
-
-Use **rendered()** event for Plumsail forms and **spRendered()** event for SharePoint forms to add custom validators.
-
-.. list-table::
-    :header-rows: 1
-    :widths: 6 22 22
-        
-    *   -   Validator
-        -   Description
-        -   Example
-    *   -   **Field Validator**
-        -   Simple validator for one field, only checks if specific field matches certain criteria or not.
-
-            If the field does not match the criteria, the form will not submit.
-        
-        - .. code-block:: javascript
-
-            fd.rendered(function(){
-                fd.field('Numeric0').validators.push({
-                    name: 'MyCustomValidator',
-                    error: '',
-                    validate: function(value) {
-                        if (value <= 0) {
-                            this.error = 'Value must by greater than 0';
-                            return false;
-                        }
-                        
-                        if (value > 2000) {
-                            this.error = 'Value must be less than 2000';
-                            return false;
-                        }
-                        
-                        return true;
-                    }
-                });
-            });
-    
-    *   -   **Form Validator**
-        -   More complex validator for several fields, checks that different fields have appropriate values.
-
-            For example, you want certain options to be only available if the user's age is above 18 or some other criteria.
-
-            If the fields do not match these criterias, the form will not submit.
-        
-        - .. code-block:: javascript
-
-            fd.rendered(function(){
-                fd.validators.push({
-                    name: 'MyCustomValidator',
-                    error: "'To' must be greater than 'From'.",
-                    validate: function(value) {
-                        if (fd.field('From').value >= fd.field('To').value)
-                            return false;
-                            
-                        return true;
-                    }
-                });
-            });
-
-fd methods
+Methods
 --------------------------------------------------
 These methods can be applied to **fd**:
 
@@ -338,7 +282,7 @@ These methods can be applied to **fd**:
 
                 fd.clear();
 
-fd properties
+Properties
 --------------------------------------------------
 **fd** has the following properties:
 
@@ -350,42 +294,60 @@ fd properties
         -   Description
         -   Examples
     *   -   **fd.culture**
-        -   Returns the name of the current culture, e.g. "en-US"
+
+        -   Returns the name of the current culture.
+
         - .. code-block:: javascript
 
-                fd.culture;
+                fd.culture; //"en-US"
 
     *   -   **fd.formId**
         -   Returns ID of the form.
         - .. code-block:: javascript
 
-                fd.formId;
+                fd.formId; //"b5257750-2483-4bea-ac1a-79ad7c670756"
+
     *   -   **fd.isFilesUploadingInProgress**
-        -   Returns true if files are currently uploaded as attachments, returns false otherwise.
+
+        -   Returns *true* if files are currently uploaded as attachments, returns *false* otherwise.
+
         - .. code-block:: javascript
 
                 fd.isFilesUploadingInProgress;
 
     *   -   **fd.isValid**
+
         -   Checks if form is valid or not. 
             
             Each time the property is called, it runs a method to check if all validators validate succesfully, both Field and Form validators.
 
             Returns *true* on success. Otherwise, returns *false* and error messages get displayed.
+
         - .. code-block:: javascript
 
                 fd.isValid;
 
     *   -   **fd.validators**
+    
         -   Returns an array of form validators, can be used to add new ones.
+            These are more complex validators than Field Validators and are used for several fields, to check that different fields have appropriate values.
+
+            For example, you want certain options to be only available if the user's age is above 18 or some other criteria.
+
+            If the fields do not match these criterias, the form will not submit.
+
+            Use **rendered()** event for Plumsail forms and **spRendered()** event for SharePoint forms to add custom validators.
+
         - .. code-block:: javascript
 
                 fd.validators;
+
                 fd.validators.push({
                     name: 'MyCustomValidator',
-                    error: "Age must be 18 or over.",
+                    error: "Age must be 18 or over in order to subscribe",
                     validate: function(value) {
-                        if (fd.field('Age').value < 18)
+                        if (fd.field('Age').value < 18 
+                        && fd.field('PaymentModel').value == 'Subscription')
                             return false;
                             
                         return true;
@@ -393,7 +355,9 @@ fd properties
                 });
 
     *   -   **fd._vue**
-        -   Returns VueJS component of the form, so you can examine or modify it.
+
+        -   Returns **VueJS** component of the form, so you can examine or modify it.
+
         - .. code-block:: javascript
 
                 fd._vue;
