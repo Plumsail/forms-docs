@@ -7,13 +7,13 @@ Here you can find properties of the fields that you have on your form and method
 
 Insert them into JavaScript editor or inside OnClick setting for buttons and links.
 
-*Internal Name* is the property that is used to identify specific fields and apply methods to them. *Internal Name* is unique for every field.
+*Internal Name* is the property that is used to identify specific fields and apply methods to them. *Internal Name* is unique for every element on the form.
 
 **Important!** These events, methods and properties shouldn't be used on their own, they must be executed inside events 
 like **rendered()** or **beforeSave()** in order to actually access the fields or controls that you target.
 
 If you just add these scripts on their own or inside wrong event in JavaScript editor,
-they will not have access to the specified fields or controls, or will execute at the wrong time.
+they will not have access to the specified fields, or will execute at the wrong time.
 Read more about different events in :doc:`Manager section </javascript/manager>`.
 
 Events
@@ -27,7 +27,7 @@ Events
         -   Description
         -   Examples
 
-    *   -   **field(internalName).$on()**
+    *   -   **$on()**
         -   Tracks when specific events happens to a field. 
             
             By default only has **change** event which triggers when field value is changed.
@@ -49,13 +49,13 @@ These methods are applicable to most fields:
         -   Description
         -   Examples
     
-    *   -   **field(internalName).clear()**
+    *   -   **clear()**
         -   Clears the field.
         - .. code-block:: javascript
 
                 fd.field('TextBox').clear();
 
-    *   -   **field(internalName).validate()**
+    *   -   **validate()**
         -   Checks to see if field is valid or not. If not, returns false, highlights field and adds error message under it.
         - .. code-block:: javascript
 
@@ -72,14 +72,14 @@ Most fields have these properties:
     *   -   Property
         -   Description
         -   Examples
-    *   -   **field(internalName).disabled**
+    *   -   **disabled**
         -   Returns true if the field is disabled, allows to disable a field, making it essentially Read-only.
         - .. code-block:: javascript
 
                 fd.field('TextBox').disabled;
                 fd.field('TextBox').disabled = true;
     
-    *   -   **field(internalName).placeholder**
+    *   -   **placeholder**
         -   Get or set placeholder for a field.
 
             Only works for fields that have Placeholder property.
@@ -88,7 +88,7 @@ Most fields have these properties:
                 fd.field('TextBox').placeholder;
                 fd.field('TextBox').placeholder = 'Confirm Password';
 
-    *   -   **field(internalName).required**
+    *   -   **required**
         -   Returns true if the field is required. 
         
             For SharePoint fields only adds or removes asterisk near the title. 
@@ -101,14 +101,14 @@ Most fields have these properties:
                 fd.field('TextBox').required = true;
                 fd.field('TextBox').required = false;
 
-    *   -   **field(internalName).title**
+    *   -   **title**
         -   Allows to get or set field's title.
         - .. code-block:: javascript
 
                 fd.field('TextBox').title;
                 fd.field('TextBox').title = 'New Title';
 
-    *   -   **field(internalName).validators**
+    *   -   **validators**
         -   Returns an array of field validators, can be used to add new ones.
 
             These include simple validators for one field, that only check if specific field matches certain criteria or not.
@@ -138,7 +138,7 @@ Most fields have these properties:
                     }
                 });
 
-    *   -   **field(internalName).value**
+    *   -   **value**
         -   Allows to get or set field's value.
 
             *Plumsail fields* and their value types:
@@ -158,7 +158,7 @@ Most fields have these properties:
                 fd.field('Date').value = new Date();
                 fd.field('Numeric').value = 100;
 
-    *   -   **field(internalName).widget**
+    *   -   **widget**
         -   Returns jquery-object lying under the Vue-component. 
         
             Usually it's a kendo component.
