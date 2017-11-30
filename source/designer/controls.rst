@@ -270,3 +270,43 @@ but you can also add your custom code or customize the Submit control just like 
 
 .. image:: ../images/designer/controls/Submit.png
    :alt: Submit
+
+.. _designer-captcha:
+
+Captcha
+-------------------------------------------------------------
+Captcha allows you to protect your forms from being submitted by bots and thus putting extra pressure on your Flows and polluting your data.
+A must have if you want to publish your form on a public website. 
+
+Our captcha is based on Google's ReCAPTCHA, so you will need to get a SiteKey from |SiteKey| before you can use it.
+
+.. image:: ../images/designer/controls/Captcha.png
+   :alt: Captcha
+
+Captcha properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every Captcha control has following settings:
+
+SETTINGS
+
+.. list-table::
+    :widths: 10 40
+        
+    *   - InternalName
+        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+    *   - SiteKey
+        - Your public key for the ReCAPTCHA. Get it |SiteKey|. 
+
+LAYOUT
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Size
+        - Allows you to select between Normal and Compact size for the Captcha.
+    *   - Theme
+        - Allows you to select between Light and Dark theme to better suit your form.
+
+.. |SiteKey| raw:: html
+
+   <a href="https://developers.google.com/recaptcha/intro" target="_blank">here</a>
