@@ -15,52 +15,6 @@ like **rendered()** or **beforeSave()** in order to actually access the fields o
 If you just add these scripts on their own or inside wrong event in JavaScript editor,
 they will not have access to the specified fields, or will execute at the wrong time.
 Read more about different events in :doc:`Manager section </javascript/manager>`.
-
-Events
---------------------------------------------------
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 20 20
-        
-    *   -   Event
-        -   Description
-        -   Examples
-
-    *   -   **$on()**
-        -   Tracks when specific events happens to a field. 
-            
-            By default only has **change** event which triggers when field value is changed.
-        - .. code-block:: javascript
-
-                fd.field('TextBox').$on('change', function(value) {
-                    alert('New value: ' + value);
-                })
-
-Methods
---------------------------------------------------
-These methods are applicable to most fields:
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 20 20
-        
-    *   -   Method
-        -   Description
-        -   Examples
-    
-    *   -   **clear()**
-        -   Clears the field.
-        - .. code-block:: javascript
-
-                fd.field('TextBox').clear();
-
-    *   -   **validate()**
-        -   Checks to see if field is valid or not. If not, returns false, highlights field and adds error message under it.
-        - .. code-block:: javascript
-
-                fd.field("TextBox").validate();
-
 Properties
 --------------------------------------------------
 Most fields have these properties:
@@ -165,3 +119,47 @@ Most fields have these properties:
         - .. code-block:: javascript
 
                 fd.field('TextBox').widget;
+
+Methods
+--------------------------------------------------
+These methods are applicable to most fields:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Method
+        -   Description
+        -   Examples
+    
+    *   -   **clear()**
+        -   Clears the field.
+        - .. code-block:: javascript
+
+                fd.field('TextBox').clear();
+
+    *   -   **validate()**
+        -   Checks to see if field is valid or not. If not, returns false, highlights field and adds error message under it.
+        - .. code-block:: javascript
+
+                fd.field("TextBox").validate();
+
+Events
+--------------------------------------------------
+Fields use $on() method to track the events happening to them. 
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Event
+        -   Description
+        -   Examples
+
+    *   -   **'change'**
+        -   Triggers when field value is changed.
+        - .. code-block:: javascript
+
+                fd.field('TextBox').$on('change', function(value) {
+                    alert('New value: ' + value);
+                });

@@ -64,6 +64,7 @@ Properties of the Submit control.
 
                 fd.control('Button1').text;
                 fd.control('Button1').text = 'New text for button';
+
     *   -   **onclick**
         -   Property that holds JavaScript that is executed when submit button is clicked.
         - .. code-block:: javascript
@@ -78,6 +79,7 @@ Properties of the Submit control.
                 fd.control('Button1').disabled;
                 fd.control('Button1').disabled = true;
                 fd.control('Button1').disabled = false;
+                
     *   -   **isSaving**
         -   Property that checks if form submission is in process.
         - .. code-block:: javascript

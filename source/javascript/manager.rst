@@ -11,6 +11,116 @@ Intro
 
  Otherwise, it will not be accesible globally on the page, so you can include several forms on one page and not worry about their scripts conflicting at all.
 
+Properties
+--------------------------------------------------
+**fd** has the following properties:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+
+    *   -   Property
+        -   Description
+        -   Examples
+    *   -   **fd.culture**
+
+        -   Returns the name of the current culture.
+
+        - .. code-block:: javascript
+
+                fd.culture; //"en-US"
+
+    *   -   **fd.formId**
+        -   Returns ID of the form.
+        - .. code-block:: javascript
+
+                fd.formId; //"b5257750-2483-4bea-ac1a-79ad7c670756"
+
+    *   -   **fd.isFilesUploadingInProgress**
+
+        -   Returns *true* if files are currently uploaded as attachments, returns *false* otherwise.
+
+        - .. code-block:: javascript
+
+                fd.isFilesUploadingInProgress;
+
+    *   -   **fd.isValid**
+
+        -   Checks if form is valid or not. 
+            
+            Each time the property is called, it runs a method to check if all validators validate succesfully, both Field and Form validators.
+
+            Returns *true* on success. Otherwise, returns *false* and error messages get displayed.
+
+        - .. code-block:: javascript
+
+                fd.isValid;
+
+    *   -   **fd.validators**
+    
+        -   Returns an array of form validators, can be used to add new ones.
+            These are more complex validators than Field Validators and are used for several fields, to check that different fields have appropriate values.
+
+            For example, you want certain options to be only available if the user's age is above 18 or some other criteria.
+
+            If the fields do not match these criterias, the form will not submit.
+
+            Use **rendered()** event for Plumsail forms and **spRendered()** event for SharePoint forms to add custom validators.
+
+        - .. code-block:: javascript
+
+                fd.validators;
+
+                fd.validators.push({
+                    name: 'MyCustomValidator',
+                    error: "Age must be 18 or over in order to subscribe",
+                    validate: function(value) {
+                        if (fd.field('Age').value < 18 
+                        && fd.field('PaymentModel').value == 'Subscription')
+                            return false;
+                            
+                        return true;
+                    }
+                });
+
+    *   -   **fd._vue**
+
+        -   Returns **VueJS** component of the form, so you can examine or modify it.
+
+        - .. code-block:: javascript
+
+                fd._vue;
+
+Methods
+--------------------------------------------------
+These methods can be applied to **fd**:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Method
+        -   Description
+        -   Examples
+    *   -   **fd.save()**
+        -   Saves the form.
+        - .. code-block:: javascript
+
+                fd.save();
+                
+    *   -   **fd.data()**
+        -   Gathers data from all fields on the form. Can be used to get or set multiple values at the same time.
+        - .. code-block:: javascript
+
+                fd.data();
+                fd.data({Field1: value1, Field2: value2});
+
+    *   -   **fd.clear()**
+        -   Clears the form.
+        - .. code-block:: javascript
+
+                fd.clear();
+
 Events
 --------------------------------------------------
 These events can be executed from JavaScript editor for Plumsail Forms:
@@ -251,114 +361,3 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 .. |vueConfig| raw:: html
 
     <a href="https://vuejs.org/v2/guide/instance.html" target="_blank">here</a>
-
-Methods
---------------------------------------------------
-These methods can be applied to **fd**:
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 20 20
-        
-    *   -   Method
-        -   Description
-        -   Examples
-    *   -   **fd.save()**
-        -   Saves the form.
-        - .. code-block:: javascript
-
-                fd.save();
-                
-    *   -   **fd.data()**
-        -   Gathers data from all fields on the form. Can be used to get or set multiple values at the same time.
-        - .. code-block:: javascript
-
-                fd.data();
-                fd.data({Field1: value1, Field2: value2});
-
-    *   -   **fd.clear()**
-        -   Clears the form.
-        - .. code-block:: javascript
-
-                fd.clear();
-
-Properties
---------------------------------------------------
-**fd** has the following properties:
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 20 20
-
-    *   -   Property
-        -   Description
-        -   Examples
-    *   -   **fd.culture**
-
-        -   Returns the name of the current culture.
-
-        - .. code-block:: javascript
-
-                fd.culture; //"en-US"
-
-    *   -   **fd.formId**
-        -   Returns ID of the form.
-        - .. code-block:: javascript
-
-                fd.formId; //"b5257750-2483-4bea-ac1a-79ad7c670756"
-
-    *   -   **fd.isFilesUploadingInProgress**
-
-        -   Returns *true* if files are currently uploaded as attachments, returns *false* otherwise.
-
-        - .. code-block:: javascript
-
-                fd.isFilesUploadingInProgress;
-
-    *   -   **fd.isValid**
-
-        -   Checks if form is valid or not. 
-            
-            Each time the property is called, it runs a method to check if all validators validate succesfully, both Field and Form validators.
-
-            Returns *true* on success. Otherwise, returns *false* and error messages get displayed.
-
-        - .. code-block:: javascript
-
-                fd.isValid;
-
-    *   -   **fd.validators**
-    
-        -   Returns an array of form validators, can be used to add new ones.
-            These are more complex validators than Field Validators and are used for several fields, to check that different fields have appropriate values.
-
-            For example, you want certain options to be only available if the user's age is above 18 or some other criteria.
-
-            If the fields do not match these criterias, the form will not submit.
-
-            Use **rendered()** event for Plumsail forms and **spRendered()** event for SharePoint forms to add custom validators.
-
-        - .. code-block:: javascript
-
-                fd.validators;
-
-                fd.validators.push({
-                    name: 'MyCustomValidator',
-                    error: "Age must be 18 or over in order to subscribe",
-                    validate: function(value) {
-                        if (fd.field('Age').value < 18 
-                        && fd.field('PaymentModel').value == 'Subscription')
-                            return false;
-                            
-                        return true;
-                    }
-                });
-
-    *   -   **fd._vue**
-
-        -   Returns **VueJS** component of the form, so you can examine or modify it.
-
-        - .. code-block:: javascript
-
-                fd._vue;
-    
