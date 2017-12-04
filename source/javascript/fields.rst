@@ -15,6 +15,7 @@ like **rendered()** or **beforeSave()** in order to actually access the fields o
 If you just add these scripts on their own or inside wrong event in JavaScript editor,
 they will not have access to the specified fields, or will execute at the wrong time.
 Read more about different events in :doc:`Manager section </javascript/manager>`.
+
 Properties
 --------------------------------------------------
 Most fields have these properties:
@@ -146,7 +147,7 @@ These methods are applicable to most fields:
 
 Events
 --------------------------------------------------
-Fields use $on() method to track the events happening to them. 
+Fields use **$on()** method to track the events happening to them. 
 
 .. list-table::
     :header-rows: 1
@@ -156,7 +157,7 @@ Fields use $on() method to track the events happening to them.
         -   Description
         -   Examples
 
-    *   -   **'change'**
+    *   -   **change**
         -   Triggers when field value is changed.
         - .. code-block:: javascript
 
