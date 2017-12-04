@@ -17,9 +17,9 @@ and practically anything else you can think of.
 
 Additionally, SharePoint forms can also be handled by Microsoft Flow upon submission, allowing you more freedom than regular Workflows ever could.
 
-**You need to have Plumsail License for Forms in order to utilize Microsoft Flow with your forms!**
+**You need to have Plumsail License for Forms in order to utilize our custom MS Flow Connector with your forms.**
 
-*That includes SharePoint forms, if you want to submit data to Flow.*
+*That includes SharePoint forms, if you want to submit data to Flow using Plumsail Forms connector.*
 
 Creating custom connector
 -------------------------------------------------------------
