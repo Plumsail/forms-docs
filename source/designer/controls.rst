@@ -17,7 +17,7 @@ Even though it's a plain text control, you can still format the text and apply s
 
 Plain Text properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Plain Text control has following settings:
+Every Plain Text control has the following settings:
 
 SETTINGS
 
@@ -53,7 +53,7 @@ Unlike Plain Text control, Rich Text control comes with an editor which allows y
 
 Rich Text properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Plain Text control has following settings:
+Every Plain Text control has the following settings:
 
 SETTINGS
 
@@ -84,7 +84,7 @@ Image control allows you to add images to your forms. Image can either be used a
 
 Image properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Image control has following settings:
+Every Image control has the following settings:
 
 SETTINGS
 
@@ -102,9 +102,9 @@ IMAGE
     *   - Source
         - Specify the URL of an image here.
     *   - Height
-        - Set the Height of the image.
+        - Allows you to set the Height of the image.
     *   - Width
-        - Set the Width of the image.
+        - Allows you to set the Width of the image.
     *   - Alt
         - Specify an alternate text for an image here.
     *   - CSS Class
@@ -133,7 +133,7 @@ Hyperlink control allows you to add hyperlinks to your forms. Can be used to red
 
 Hyperlink properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Hyperlink control has following settings:
+Every Hyperlink control has the following settings:
 
 SETTINGS
 
@@ -170,7 +170,7 @@ HTML control allows you to add absolutely any HTML code to your forms. Can be us
 
 HTML properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every HTML control has following settings:
+Every HTML control has the following settings:
 
 LAYOUT
 
@@ -192,7 +192,7 @@ The data is stored in the session state, once the browser is closed, it is purge
 
 Ink Sketch properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Ink Sketch control has following settings:
+Every Ink Sketch control has the following settings:
 
 SETTINGS
 
@@ -210,11 +210,11 @@ LAYOUT
     *   - Readonly
         - If True, prevents users from being able to change content manually.
     *   - Height
-        - Set the Height of the control.
+        - Allows you to set the Height of the control.
     *   - Width
-        - Set the Width of the control.
+        - Allows you to set the Width of the control.
     *   - Ink Color
-        - Sets the color of drawing done by the user.
+        - Allows you to set the color of drawing done by the user.
     *   - CSS Class
         - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
@@ -236,7 +236,7 @@ Bootstrap classes can be used to give different buttons unique look. You can |lo
 
 Button properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Button control has following settings:
+Every Button control has the following settings:
 
 SETTINGS
 
@@ -256,7 +256,7 @@ LAYOUT
     *   - Text
         - Allows you to type in or copy in the exact text the button will display on the form.
     *   - Width
-        - Set the Width of the button.
+        - Allows you to set the Width of the button.
     *   - CSS Class
         - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
@@ -280,12 +280,14 @@ A must have if you want to publish your form on a public website.
 
 Our captcha is based on Google's ReCAPTCHA, so you will need to get a SiteKey from |SiteKey| before you can use it.
 
+*Note: Captcha is available in Forms starting with version 1.0.2*
+
 .. image:: ../images/designer/controls/Captcha.png
    :alt: Captcha
 
 Captcha properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Captcha control has following settings:
+Every Captcha control has the following settings:
 
 SETTINGS
 
@@ -310,3 +312,62 @@ LAYOUT
 .. |SiteKey| raw:: html
 
    <a href="https://developers.google.com/recaptcha/intro" target="_blank">here</a>
+
+.. _designer-datatable:
+
+DataTable
+-------------------------------------------------------------
+DataTable is a control which allows you to add dynamic table to your forms.
+You can set up how many columns the table has and their type, and the users will be able to add entries to this table.
+
+Most configuration for DataTable can be done by editing individual column settings. To add a new column, simply click on the plus symbol:
+
+.. image:: ../images/designer/controls/DataTableColumn.png
+   :alt: Add column to DataTable
+
+|
+
+DataTable can be easily submitted to MS Flow and you can use its data as you see fit including creation of HTML tables or SharePoint items.
+
+*Note: DataTable is available in Forms starting with version 1.0.3*
+
+.. image:: ../images/designer/controls/DataTable.png
+   :alt: DataTable
+
+DataTable properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every DataTable control has the following settings:
+
+SETTINGS
+
+.. list-table::
+    :widths: 10 40
+        
+    *   - InternalName
+        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+
+DataTable Column properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every DataTable Column has the following settings:
+
+SETTINGS
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Title
+        - Allows to set the title of the column.
+    *   - Type
+        - Allows to select the type of the data for the column - can be either String, Number, Boolean or Date.
+    *   - Required
+        - Allows to set the column as mandatory for the record to be added.
+    *   - InternalName
+        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+
+LAYOUT
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Width
+        - Allows you to set the Width of the column.

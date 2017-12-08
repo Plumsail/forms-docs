@@ -170,10 +170,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
-            *Note:* This event is exclusive to Plumsail Forms. 
-            
-            For SharePoint Forms, use **spBeforeRender()**.
-
         - .. code-block:: javascript
 
             fd.beforeRender(function(vue) {
@@ -190,7 +186,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
-            *Note:* This event is exclusive to SharePoint Forms. 
+            *Note:* This event is exclusive to SharePoint Forms and occurs after **beforeRender()**. 
             
             For Plumsail Forms, use **beforeRender()**.
 
@@ -209,10 +205,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
             **vue** passed as an argument to the function is a Vue instance of the form. 
             
             It is also available from fd variable this way: *fd._vue*
-
-            *Note:* This event is exclusive to Plumsail Forms. 
-            
-            For SharePoint Forms, use **spRendered()**.
 
         - .. code-block:: javascript
 
@@ -243,7 +235,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
             
             It is also available from fd variable this way: *fd._vue*
 
-            *Note:* This event is exclusive to SharePoint Forms. 
+            *Note:* This event is exclusive to SharePoint Forms and occurs after **rendered()**. 
             
             For Plumsail Forms, use **rendered()**.
 
@@ -307,7 +299,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
-            *Note:* This event is exclusive to SharePoint Forms. 
+            *Note:* This event is exclusive to SharePoint Forms and occurs after **beforeSave()**.
             
             For Plumsail Forms, use **beforeSave()**.
 
@@ -323,10 +315,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
         -   Occurs after the data is sent to the Flow.
 
             Can be used to display confirmation message after the form is saved or perform some other actions.
-
-            *Note:* This event is exclusive to Plumsail Forms. 
-            
-            For SharePoint Forms, use **spSaved()**.
 
         - .. code-block:: javascript
 

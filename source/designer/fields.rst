@@ -96,7 +96,7 @@ DropDown field gives user a choice which is displayed in a dropdown menu.
 
 DropDown unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-DropDown field has following unique settings:
+DropDown field has the following unique settings:
 
 CONTROL
 
@@ -117,7 +117,7 @@ Toggle field gives user a choice between Yes or No. By default has False value.
 
 Toggle unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Toggle field has following unique settings:
+Toggle field has the following unique settings:
 
 CONTROL
 
@@ -138,7 +138,7 @@ Checkboxes field gives user a choice which is presented as a number of checkboxe
 
 Checkboxes unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Checkboxes field has following unique settings:
+Checkboxes field has the following unique settings:
 
 CONTROL
 
@@ -159,7 +159,7 @@ Radios field gives user a choice which is presented as a number of radio buttons
 
 Radios unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Radios field has following unique settings:
+Radios field has the following unique settings:
 
 CONTROL
 
@@ -195,7 +195,7 @@ Possible to drag and drop multiple files at once.
 
 Attachments unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Attachments field has following unique settings:
+Attachments field has the following unique settings:
 
 SETTINGS
 

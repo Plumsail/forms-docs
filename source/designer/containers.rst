@@ -19,7 +19,7 @@ So, despite Parent grid only having 12 options for Width property, you can adjus
 
 Parent Grid properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every element within a Grid has following properties:
+Every element within a Grid has the following properties:
 
 .. list-table::
     :header-rows: 1
@@ -40,7 +40,7 @@ Every element within a Grid has following properties:
 
 Grid properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Grid container has following settings:
+Every Grid container has the following settings:
 
 LAYOUT
 
@@ -73,7 +73,7 @@ You can change position of tabs in LAYOUT: Orientation and choose between Top, L
 
 Tabs properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Tabs container has following settings:
+Every Tabs container has the following settings:
 
 SETTINGS
 
@@ -103,7 +103,7 @@ Instead of tabs, it uses sections, each represented with horizontal line which y
 
 Accordion properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Accordion container has following settings:
+Every Accordion container has the following settings:
 
 SETTINGS
 
