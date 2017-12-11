@@ -38,6 +38,7 @@ Table of contents
             how-to/email
             how-to/item
             how-to/file
+            how-to/conditional-fields
 
 .. container:: pl-right-column
 

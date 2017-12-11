@@ -70,6 +70,8 @@ Most fields have these properties:
 
             If the field does not match the criteria, the form will not submit.
 
+            *Note: Field validators will only work with Plumsail fields as all validation for SharePoint fields is configured via List Settings.*
+
             Use **rendered()** event for Plumsail forms and **spRendered()** event for SharePoint forms to add custom validators.
         - .. code-block:: javascript
 

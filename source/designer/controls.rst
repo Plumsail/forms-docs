@@ -100,13 +100,13 @@ IMAGE
     :widths: 10 40
 
     *   - Source
-        - Specify the URL of an image here.
+        - Allows you to specify the URL of an image here.
     *   - Height
         - Allows you to set the Height of the image.
     *   - Width
         - Allows you to set the Width of the image.
     *   - Alt
-        - Specify an alternate text for an image here.
+        - Allows you to specify an alternate text for an image here.
     *   - CSS Class
         - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
@@ -147,7 +147,7 @@ SETTINGS
     *   - Target
         - Specify where to open the linked document. _blank will open in a new tab.
     *   - OnClick
-        - Add JavaScript to execute when link is clicked. If no link is used, add event.preventDefault(); prior to your JS.
+        - Allows you to add JavaScript to execute when link is clicked. If no link is used, add event.preventDefault(); prior to your JS.
 
 LAYOUT
 
@@ -178,7 +178,7 @@ LAYOUT
     :widths: 10 40
 
     *   - Content
-        - Specify HTML contents here.
+        - Allows you to specify HTML contents here.
 
 Ink Sketch
 -------------------------------------------------------------
