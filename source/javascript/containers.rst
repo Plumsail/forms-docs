@@ -17,6 +17,8 @@ If you just add these scripts on their own or inside wrong event in JavaScript e
 they will not have access to the specified containers, or will execute at the wrong time.
 Read more about different events in :doc:`Manager section </javascript/manager>`.
 
+For more use cases, check out :doc:`our manual </how-to/conditional-containers>` on how-to adjust containers dynamically on your form.
+
 Accordion
 --------------------------------------------------
 Properties of the Accordion container.

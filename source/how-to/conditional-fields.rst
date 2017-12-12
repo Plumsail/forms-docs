@@ -1,12 +1,12 @@
-Manipulate fields dynamically in SharePoint Forms
+Manipulate fields dynamically
 ==================================================
 
 Description
 --------------------------------------------------
 
 In this article you can find examples of how to use JavaScript to make 
-your SharePoint forms more interactive by hiding, disabling and making fields mandatory based on certain conditions.
-These will be simple and popular cases which you can easily replicate even on Plumsail forms as functionality is fairly similar.
+your forms more interactive by hiding, disabling and making fields mandatory based on certain conditions.
+These will be simple and popular cases realized mostly with SharePoint forms which you can easily replicate even on Plumsail forms as functionality is fairly similar.
 You can also mix and match these examples to achieve the results you are looking for.
 
 In order to access fields in JavaScript, you'll need use **fd.field()** method of which expects an internal name of a field you want to retrieve.
@@ -23,7 +23,7 @@ In any case, you can check the internal name property of the field in the design
 Read more about different field properties :doc:`here </designer/fields>`.
 
 Another thing to be aware of is that you shouldn't simply place JavaScript inside the editor on its own, it must be executed inside **fd** events 
-like **spRendered()** or **spBeforeSave()** in order to actually access the fields or controls that you target.
+like **rendered()** or **beforeSave()** in order to actually access the fields or controls that you target.
 
 If you just add these scripts on their own or inside wrong event in JavaScript editor,
 they will not have access to the specified fields, or will execute at the wrong time.
@@ -44,7 +44,8 @@ Please note, that while SharePoint Online Modern UI doesn't support Tasks lists,
 In order to implement this functionality, we place the following code into JavaScript editor inside the designer:
 
 .. code-block:: javascript
-
+    
+    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         function setPercentComplete() {
@@ -52,10 +53,10 @@ In order to implement this functionality, we place the following code into JavaS
                 // Setting the Percent Complete to 100
                 fd.field('PercentComplete').value = '100';
             
-                // Getting JQuery-object of the field and disable it
+                // Setting field PercentComplete to read-only state
                 fd.field('PercentComplete').disabled = true;
             } else {
-                // Getting JQuery-object of the field and enable it
+                // Setting field PercentComplete to read-only state
                 fd.field('PercentComplete').disabled = false;
             }
         }
@@ -91,6 +92,7 @@ Here is the code:
 
 .. code-block:: javascript
 
+    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         function hideOrShowDueDate() {
@@ -117,17 +119,19 @@ The easiest would be to give same CSS class to all fields that need to be hidden
 
 .. code-block:: javascript
 
+    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         $('.field-to-hide').hide();
 
     });
 
-Another alternative would be to place all fields inside a Container, for instance, inside a Grid and give this grid its own CSS class **grid-to-hide**.
+Another alternative would be to place all fields inside a Container, for instance, inside a Grid, and give this grid its own CSS class **grid-to-hide**.
 Then also use JQuery to hide the container:
 
 .. code-block:: javascript
 
+    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         $('.grid-to-hide').hide();
@@ -156,29 +160,31 @@ Here is the code:
 .. code-block:: javascript
 
         fd.validators.push({
-            name: 'DueDateValidator',
-            error: "Error text will change dynamically",
-            validate: function(value) {
-                if (fd.field('StartDate').value) {
+        name: 'DueDateValidator',
+        error: "Error text will change dynamically",
+        validate: function(value) {
+            if (fd.field('StartDate').value) {
                     var startDate = fd.field('StartDate').value;
-                    //initiating max End Date
+                    var endDate = fd.field('DueDate').value;
+                    
+                //initiating max End Date
                     var maxEndDate = new Date();
                     //setting max end date to 28 days more than start date
                     maxEndDate.setDate(startDate.getDate() + 28);
 
-                    if (fd.field('StartDate').value && !fd.field('DueDate').value){
+                if (!endDate){
                         this.error = "Start Date is chosen, choose a Due Date";
                         return false;
-                    } else if (fd.field('DueDate').value < fd.field('StartDate').value){
+                    } else if (endDate < startDate){
                         this.error = "Due Date can't be before the Start Date";
                         return false;
-                    } else if (fd.field('DueDate').value > maxEndDate){
+                    } else if (endDate > maxEndDate){
                         this.error = "Due Date can't be more than 4 weeks away from the Start Date";
                         return false;
                     }
                 }
-                                   
-                return true;
+
+            return true;
             }
         });
 
@@ -196,6 +202,7 @@ For that, we can slightly modify code from the last section:
 
 .. code-block:: javascript
 
+    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         function setDueDate() {
@@ -215,34 +222,63 @@ For that, we can slightly modify code from the last section:
 
     });
 
-Modify SharePoint field with Button control
+Prepopulate fields on Form load
 --------------------------------------------------
-Button and Hyperlink controls have an OnClick property which holds JavaScript code which is executed when the control is clicked.
+This functionality is fairly simple.
 
-We will use Button control to add option to automatically populate Signed by Person field on our form with the current user.
+Since we've already been working with Dates, let's define Start Date as soon as the form loads:
 
-By default the field is disabled and can only be populated with JavaScript.
-
-.. image:: ../images/how-to/conditional/4_Sign.png
-   :alt: Signed
+.. image:: ../images/how-to/conditional/9_SetStartDateOnLoad.png
+   :alt: Start Date is set on load - Due Date sets automatically
 
 |
 
-Here is the code placed in JavaScript editor to disable Signed by field:
+Here's the code:
 
 .. code-block:: javascript
 
-    fd.spRendered(function() {
-
-        fd.field('Signed_x0020_by').disabled = true;
-
+    //use fd.rendered(function() { for Plumsail Forms instead
+    fd.spRendered(function(vue) {
+            fd.field('StartDate').value = new Date();
     });
 
-And this is JavaScript placed inside Button's OnClick property:
+If we keep our code from the previous section, *change* event will automatically react and 
+set Due Date to two weeks after today as it will react to all changes to Start Date, not just direct user input.
+
+Modify fields with Button control
+--------------------------------------------------
+Button and Hyperlink controls have an OnClick property which holds JavaScript code which is executed when the control is clicked.
+
+This can be used for variety of purposes and you don't need to include JavaScript inside **fd** events 
+as by the time the button has loaded, other fields have already loaded as well.
+
+In our example, we will do something slightly less orthodox as I want to demonstrate how you can tie an async request to another API using JavaScript.
+
+We will use Plumsail Form as an example to automatically fill in information about client on the click of the button. 
+
+
+|ipinfo.io| API will help us determine person's location and IP.
+
+.. |ipinfo.io| raw:: html
+
+   <a href="https://ipinfo.io/" target="_blank">ipinfo.io</a>
+
+That's what our form will look like filled out:
+
+.. image:: ../images/how-to/conditional/10_ButtonIP.png
+   :alt: Button fills out Location and IP
+
+|
+
+Here is the code placed inside my button's OnClick property:
 
 .. code-block:: javascript
 
-    fd.field('Signed_x0020_by').value = _spPageContextInfo.userLoginName;
+    $.get("https://ipinfo.io", function (response) {
+	    fd.field('Location').value = response.city + ", " + response.region;
+	    fd.field('IP').value = response.ip;
+    }, "jsonp");
+
 
 Get values on display forms
 --------------------------------------------------

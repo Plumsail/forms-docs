@@ -39,6 +39,7 @@ Table of contents
             how-to/item
             how-to/file
             how-to/conditional-fields
+            how-to/conditional-containers
 
 .. container:: pl-right-column
 

@@ -16,6 +16,8 @@ If you just add these scripts on their own or inside wrong event in JavaScript e
 they will not have access to the specified fields, or will execute at the wrong time.
 Read more about different events in :doc:`Manager section </javascript/manager>`.
 
+For more use cases, check out :doc:`our manual </how-to/conditional-fields>` on how-to adjust fields dynamically on your form.
+
 Properties
 --------------------------------------------------
 Most fields have these properties:
