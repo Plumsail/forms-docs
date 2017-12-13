@@ -1,4 +1,4 @@
-Create dynamic forms with JavaScript
+Manipulate tabs and accordions with JavaScript
 ==================================================
 
 Description

@@ -167,12 +167,12 @@ Here is the code:
                     var startDate = fd.field('StartDate').value;
                     var endDate = fd.field('DueDate').value;
                     
-                //initiating max End Date
+                	//initiating max End Date
                     var maxEndDate = new Date();
                     //setting max end date to 28 days more than start date
                     maxEndDate.setDate(startDate.getDate() + 28);
 
-                if (!endDate){
+                	if (!endDate){
                         this.error = "Start Date is chosen, choose a Due Date";
                         return false;
                     } else if (endDate < startDate){
