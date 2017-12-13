@@ -160,31 +160,29 @@ Here is the code:
 .. code-block:: javascript
 
         fd.validators.push({
-        name: 'DueDateValidator',
-        error: "Error text will change dynamically",
-        validate: function(value) {
-            if (fd.field('StartDate').value) {
-                    var startDate = fd.field('StartDate').value;
-                    var endDate = fd.field('DueDate').value;
-                    
-                	//initiating max End Date
-                    var maxEndDate = new Date();
-                    //setting max end date to 28 days more than start date
-                    maxEndDate.setDate(startDate.getDate() + 28);
+	        name: 'DueDateValidator',
+	        error: "Error text will change dynamically",
+	        validate: function(value) {
+	            if (fd.field('StartDate').value) {
+	                    var startDate = fd.field('StartDate').value;
+	                    var endDate = fd.field('DueDate').value;
+	                    //initiating max End Date
+	                    var maxEndDate = new Date();
+	                    //setting max end date to 28 days more than start date
+	                    maxEndDate.setDate(startDate.getDate() + 28);
+	                    if (!endDate){
+	                        this.error = "Start Date is chosen, choose a Due Date";
+	                        return false;
+	                    } else if (endDate < startDate){
+	                        this.error = "Due Date can't be before the Start Date";
+	                        return false;
+	                    } else if (endDate > maxEndDate){
+	                        this.error = "Due Date can't be more than 4 weeks away from the Start Date";
+	                        return false;
+	                    }
+	                }
 
-                	if (!endDate){
-                        this.error = "Start Date is chosen, choose a Due Date";
-                        return false;
-                    } else if (endDate < startDate){
-                        this.error = "Due Date can't be before the Start Date";
-                        return false;
-                    } else if (endDate > maxEndDate){
-                        this.error = "Due Date can't be more than 4 weeks away from the Start Date";
-                        return false;
-                    }
-                }
-
-            return true;
+	            return true;
             }
         });
 
