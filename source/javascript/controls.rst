@@ -3,7 +3,7 @@ Controls
 
 Intro
 --------------------------------------------------
-Here you can find properties of various controls that you can have on your form. 
+Here you can find properties, methods and events of various controls that you can have on your form. 
 
 Insert them into JavaScript editor or inside OnClick setting for buttons and links.
 
@@ -73,10 +73,10 @@ Properties of the Submit control.
                 fd.control('Button1').onclick = 'fd.save();';
 
     *   -   **disabled**
-        -   Property that specifies if submit button is clickable or not, can be used to disable submit button on some conditions.
+        -   Property that specifies if submit button is clickable or not, can be used to disable submit button.
         - .. code-block:: javascript
 
-                fd.control('Button1').disabled;
+                fd.control('Button1').disabled; //returns true or false
                 fd.control('Button1').disabled = true;
                 fd.control('Button1').disabled = false;
                 
@@ -287,3 +287,208 @@ Properties of the Ink Sketch control.
                 fd.control('Signature0').inkColor = "#0000FF" 
                 fd.control('Signature0').inkColor = "rgb(0,0,0)"
 
+DataTable
+--------------------------------------------------
+Properties, methods and events of the DataTable control.
+
+Properties
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Name
+        -   Description
+        -   Examples
+    
+    *   -   **disabled**
+        -   Property that defines if DataTable is editable or not, can be used to disable or enable user input into DataTable.
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').disabled;
+                fd.control('DataTable1').disabled = true;
+                fd.control('DataTable1').disabled = false;
+    
+    *   -   **columns**
+        -   Property that holds all the columns that the DataTable has. 
+        
+            Returns an array of |Kendo UI Grid columns|.
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').columns; // returns an array
+
+                //get the InternalName of the column (can't set!):
+                fd.control('DataTable1').columns[0].field; 
+
+                //get the title of the column (can't set!):
+                fd.control('DataTable1').columns[0].title; 
+
+                //set column to readonly state:
+                fd.control('DataTable1').columns[0].editable = 
+                function(){return false}; 
+
+                //set column back to editable state:
+                fd.control('DataTable1').columns[0].editable = 
+                function(){return true}; 
+
+                //check if column is editable, returns true or false:
+                fd.control('DataTable1').columns[0].editable; 
+            
+    *   -   **value**
+        -   Property that holds all the records that the DataTable has. 
+            
+            Returns an array of objects where each has values matching Internal Column name and their respective value in the DataTable.
+            
+            Can be used to get information about existing records or create new records.
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').value; // returns an array
+                
+                // copy the first record to the end of the table
+                var firstRecord = fd.control('DataTable1').value[0];
+                fd.control('DataTable1').value.push(firstRecord); 
+    
+    *   -   **widget**
+        -   Property that holds |kendoGrid widget| for the DataTable.
+            
+            Can be used to retrieve it, but not to modify it.
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').widget;
+
+Methods
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Name
+        -   Description
+        -   Examples
+    
+    *   -   **addValidator(validator)**
+        -   Method that allows you to add DataTable validators for the whole table.
+
+            Accepts validator vue component as a parameter.
+
+            Inside validator, use **value** to access an array of records inside the DataTable.
+
+            This allows you not only to check individual columns and compare their values,
+            but to limit amount of records or set minimum amount, etc.
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').addValidator({
+                    error: 'Error message',
+                    validate: function(value) {
+                        if (value.length == 0) {
+                            this.error = 
+                            "Add at least one record to the table";
+                            return false;
+                        }
+                       
+                        if (value.length > 10) {
+                            this.error = 
+                            "Don't add more than 10 records to the table";
+                            return false;
+                        }
+                       
+                        return true;
+                    }
+                });
+
+    *   -   **addColumnValidator('columnName', validator)**
+        -   Method that allows you to add DataTable Column validators for the specific column in a table.
+
+            Users cannot switch focus to other columns until this one is validated.
+
+            Accepts validator vue component as a parameter.
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').addColumnValidator('Column1', {
+                    error: 'Error message',
+                    validate: function(value) {
+                        if (value <= 0) {
+                            this.error = 'Value must by greater than 0';
+                            return false;
+                        }
+                       
+                        if (value > 100) {
+                            this.error = 'Value must be less than 100';
+                            return false;
+                        }
+                       
+                        return true;
+                    }
+                });
+
+Events
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Name
+        -   Description
+        -   Examples
+    
+    *   -   **change**
+        -   Fired when the user applies any changes to the table, including adding, deleting or changing records.
+
+            Inside the function, use **value** to access an array of records inside the DataTable.
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').$on('change',
+                    function(value) {
+                        console.log(value); // DataTable's value 
+                        alert('DataTable changed');
+                    });
+    
+    *   -   **beforeEdit**
+        -   Fired when the user try to edit or create a data item, before the editor is created. 
+            Can be used for preventing the editing depending on custom logic.
+
+            Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-beforeEdit
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').$on('beforeEdit',
+                    function(e) {
+                        console.log(e.model); // log info about record
+                        alert('About to edit');
+                    });
+
+    *   -   **edit**
+        -   Fired when the user edits or creates a data item.
+
+            Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-edit
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').$on('beforeEdit',
+                    function(e) {
+                        console.log(e.model); // log info about record
+                        alert('Editing');
+                    });
+
+    *   -   **remove**
+        -   Fired when the user clicks the "destroy" command button and delete operation is confirmed in the confirmation window, 
+            if the cancel button in the window is clicked the event will not be fired.
+
+            Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-remove
+        - .. code-block:: javascript
+
+                fd.control('DataTable1').$on('remove',
+                    function(e) {
+                        console.log(e.model); // log info about record
+                        alert('Removed');
+                    });
+                    
+
+.. |Kendo UI Grid columns| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#fields-columns" target="_blank">Kendo UI Grid columns</a>
+
+.. |kendoGrid widget| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid widget</a>
