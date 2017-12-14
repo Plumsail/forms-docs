@@ -34,7 +34,7 @@ Prepopulate field and disable/enable it based on condition
 In this example, we will use SharePoint Tasks list to set the Percent Complete to 100% 
 and disable it when the user turns the Status field into Completed:
 
-.. image:: ../images/how-to/conditional/2_Completed100%.png
+.. image:: ../images/how-to/conditional/2_Completed.png
    :alt: Status:Completed - 100%
 
 |
