@@ -302,38 +302,30 @@ Properties
         -   Description
         -   Examples
     
-    *   -   **disabled**
-        -   Property that defines if DataTable is editable or not, can be used to disable or enable user input into DataTable.
-        - .. code-block:: javascript
-
-                fd.control('DataTable1').disabled;
-                fd.control('DataTable1').disabled = true;
-                fd.control('DataTable1').disabled = false;
-    
     *   -   **columns**
         -   Property that holds all the columns that the DataTable has. 
         
             Returns an array of |Kendo UI Grid columns|.
         - .. code-block:: javascript
 
-                fd.control('DataTable1').columns; // returns an array
+                fd.control('DataTable0').columns; // returns an array
 
                 //get the InternalName of the column (can't set!):
-                fd.control('DataTable1').columns[0].field; 
+                fd.control('DataTable0').columns[0].field; 
 
                 //get the title of the column (can't set!):
-                fd.control('DataTable1').columns[0].title; 
+                fd.control('DataTable0').columns[0].title; 
 
                 //set column to readonly state:
-                fd.control('DataTable1').columns[0].editable = 
+                fd.control('DataTable0').columns[0].editable = 
                 function(){return false}; 
 
                 //set column back to editable state:
-                fd.control('DataTable1').columns[0].editable = 
+                fd.control('DataTable0').columns[0].editable = 
                 function(){return true}; 
 
                 //check if column is editable, returns true or false:
-                fd.control('DataTable1').columns[0].editable; 
+                fd.control('DataTable0').columns[0].editable; 
             
     *   -   **value**
         -   Property that holds all the records that the DataTable has. 
@@ -343,11 +335,11 @@ Properties
             Can be used to get information about existing records or create new records.
         - .. code-block:: javascript
 
-                fd.control('DataTable1').value; // returns an array
+                fd.control('DataTable0').value; // returns an array
                 
-                // copy the first record to the end of the table
-                var firstRecord = fd.control('DataTable1').value[0];
-                fd.control('DataTable1').value.push(firstRecord); 
+                // add new record to the DataTable using column's InternalNames:
+                var record = {Date: new Date(), Description: "New Description 2", Cost: 250 };
+                fd.control('DataTable0').value.push(record); 
     
     *   -   **widget**
         -   Property that holds |kendoGrid widget| for the DataTable.
@@ -355,7 +347,7 @@ Properties
             Can be used to retrieve it, but not to modify it.
         - .. code-block:: javascript
 
-                fd.control('DataTable1').widget;
+                fd.control('DataTable0').widget;
 
 Methods
 **************************************************
@@ -371,7 +363,7 @@ Methods
     *   -   **addValidator(validator)**
         -   Method that allows you to add DataTable validators for the whole table.
 
-            Accepts validator vue component as a parameter.
+            Accepts validator object as a parameter.
 
             Inside validator, use **value** to access an array of records inside the DataTable.
 
@@ -379,7 +371,7 @@ Methods
             but to limit amount of records or set minimum amount, etc.
         - .. code-block:: javascript
 
-                fd.control('DataTable1').addValidator({
+                fd.control('DataTable0').addValidator({
                     error: 'Error message',
                     validate: function(value) {
                         if (value.length == 0) {
@@ -403,10 +395,10 @@ Methods
 
             Users cannot switch focus to other columns until this one is validated.
 
-            Accepts validator vue component as a parameter.
+            Accepts InternalName of the column string and validator object as its parameters.
         - .. code-block:: javascript
 
-                fd.control('DataTable1').addColumnValidator('Column1', {
+                fd.control('DataTable0').addColumnValidator('Column1', {
                     error: 'Error message',
                     validate: function(value) {
                         if (value <= 0) {
@@ -440,7 +432,7 @@ Events
             Inside the function, use **value** to access an array of records inside the DataTable.
         - .. code-block:: javascript
 
-                fd.control('DataTable1').$on('change',
+                fd.control('DataTable0').$on('change',
                     function(value) {
                         console.log(value); // DataTable's value 
                         alert('DataTable changed');
@@ -453,7 +445,7 @@ Events
             Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-beforeEdit
         - .. code-block:: javascript
 
-                fd.control('DataTable1').$on('beforeEdit',
+                fd.control('DataTable0').$on('beforeEdit',
                     function(e) {
                         console.log(e.model); // log info about record
                         alert('About to edit');
@@ -465,7 +457,7 @@ Events
             Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-edit
         - .. code-block:: javascript
 
-                fd.control('DataTable1').$on('beforeEdit',
+                fd.control('DataTable0').$on('beforeEdit',
                     function(e) {
                         console.log(e.model); // log info about record
                         alert('Editing');
@@ -478,7 +470,7 @@ Events
             Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-remove
         - .. code-block:: javascript
 
-                fd.control('DataTable1').$on('remove',
+                fd.control('DataTable0').$on('remove',
                     function(e) {
                         console.log(e.model); // log info about record
                         alert('Removed');
