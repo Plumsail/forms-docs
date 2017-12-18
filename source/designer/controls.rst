@@ -317,7 +317,8 @@ LAYOUT
 
 DataTable
 -------------------------------------------------------------
-DataTable is a control which allows you to add dynamic table to your forms.
+DataTable is a control which allows you to add dynamic table to your forms. This control is based on |kendoGrid|.
+
 You can set up how many columns the table has and their type, and the users will be able to add entries to this table.
 
 Most configuration for DataTable can be done by editing individual column settings. To add a new column, simply click on the plus symbol:
@@ -371,3 +372,7 @@ LAYOUT
 
     *   - Width
         - Allows you to set the Width of the column.
+
+.. |kendoGrid| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid</a>
