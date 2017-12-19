@@ -82,7 +82,7 @@ And finally Refresh URL: **https://auth.plumsail.com/connect/token**
 
 Everything else leave as it is:
 
-.. image:: /images/flow/5_OAuth.png
+.. image:: /images/flow/5_OAuthFixed.png
    :alt: OAuth
 
 |
