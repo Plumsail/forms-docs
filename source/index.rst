@@ -40,6 +40,7 @@ Table of contents
             how-to/file
             how-to/conditional-fields
             how-to/conditional-containers
+            how-to/data-table-flow
 
 .. container:: pl-right-column
 

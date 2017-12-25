@@ -35,14 +35,14 @@ Form's Logic
 --------------------------------------------------
 So, what JavaScript logic do we need? First, we need to make sure that all fields are set correctly and that the form is signed.
 
-First we set all fields as mandatory, as none of them are optional. This can be done in the designer by selecting a field and changing SETTINGS -> Required to True:
+First we set all fields as mandatory, as none of them are optional. This can be done in the designer by selecting a field and changing SETTINGS  → Required to True:
 
 .. image:: ../images/how-to/data-table-flow/1_Field_Required.png
    :alt: Name field is set as Required
 
 |
 
-We can also do the same with DataTable columns by selecting the column and also changing SETTINGS -> Required to True:
+We can also do the same with DataTable columns by selecting the column and also changing SETTINGS  →  Required to True:
 
 .. image:: ../images/how-to/data-table-flow/1_Column_Required.png
    :alt: Description column is set as Required
@@ -73,7 +73,7 @@ Now, let's add both these validators to our form with this code:
     fd.rendered(function(){
         fd.validators.push({
             name: 'DateValidator',
-            error: '"To" must be greater or the same as "From".',
+            error: '"To" must be greater or the same as "From"',
             validate: function(value) {
                 if (fd.field('From').value >= fd.field('To').value)
                     return false;
@@ -114,10 +114,10 @@ This can be done with JavaScript, which will add inside fd.rendered() event func
         fd.field("Total").disabled = true;
 
         fd.control('ExpensesTable').$on('change',
-            function() {
+            function(value) {
                 var total = 0;
-                for (var i = 0; i < fd.control('ExpensesTable').value.length; i++){
-                    total += parseInt(fd.control('ExpensesTable').value[i].Cost);
+                for (var i = 0; i < value.length; i++){
+                    total += parseInt(value[i].Cost);
                 }
                 //Total field is a Text field, so I can add a dollar symbol to it:
                 fd.field("Total").value = '$' + total;
@@ -126,15 +126,13 @@ This can be done with JavaScript, which will add inside fd.rendered() event func
 
 Now that we are done with Form configuration, it's time to set up our Flow.
 
+.. _flow-html-table:
+
 Microsoft Flow using HTML Table
 --------------------------------------------------
 In this example we will first create HTML Template from the submitted data and then transform HTML into PDF and send it via Email.
 
 We will use |Plumsail Actions| to create HTML with template which would use submitted data, then convert this HTML into PDF.
-
-.. |Plumsail Actions| raw:: html
-
-   <a href="https://plumsail.com/actions/" target="_blank">Plumsail Actions</a>
 
 If you haven't read our introduction to using MS Flow with Plumsail Forms, you can find information on how to add our custom connector :doc:`here </microsoftFlow>`.
 
@@ -144,14 +142,14 @@ Once you set up the basics of the Flow for our Form, including Form submission t
 
 | 
 
-First, let's convert our DataTable into HTML Table. Search for HTML Table and select Data Operations - Create HTML table action:
+First, let's convert our DataTable into HTML Table. Search for HTML Table and select *Data Operations - Create HTML table* action:
 
 .. image:: ../images/how-to/data-table-flow/2_HTML_Table_Search.png
    :alt: Search for HTML Table and select Data Operations - Create HTML table
 
 | 
 
-Here, we pass ExpensesTable in From field, I also open Advanced options and select Include headers - Yes:
+Here, we pass ExpensesTable in From field, I also open Advanced options and select *Include headers* - Yes:
 
 .. image:: ../images/how-to/data-table-flow/3_HTML_Table.png
    :alt: HTML Table set up
@@ -278,7 +276,7 @@ Now we place Result HTML from the last action inside Source HTML field:
 Send an email with PDF attachment
 --------------------------------------------------
 
-We'll use Microsoft's *Office 365 Outlook - Send an email* action to send an email. SeaSelect it:
+We'll use Microsoft's *Office 365 Outlook - Send an email* action to send an email. Select it:
 
 .. image:: ../images/how-to/email/10_SendAnEmail.png
    :alt: Send an email
@@ -298,3 +296,36 @@ Now, when we run the Flow, I receive an email with this PDF:
    :alt: Final PDF
 
 |
+
+Summary
+--------------------------------------------------
+In conclusion, I just wanted to bring your attention on how easy it is to transform any Plumsail Form submitted to Flow into PDF with |Plumsail Actions|.
+
+Just follow three easy steps - submit form to Flow and parse JSON, transform data to HTML template and transform HTML template to PDF.
+
+You can read more about the first step in our :ref:`creating-flow` article.
+
+Trasnforming to HTML is also an easy step with Plumsail Actions, read more about it here - |Create HTML|. 
+
+You can even include any custom layout in HTML template, for example, your company's logo in the header of template and extra information in the footer:
+
+.. image:: ../images/how-to/data-table-flow/10_html-and-pdf-result.png
+   :alt: PDF result from HTML
+
+|
+
+Finally, transforming to PDF couldn't be easier and just done in one easy step, where you take output HTML and transform it directly to PDF.
+
+It's described fully in |Create PDF| article.
+
+.. |Plumsail Actions| raw:: html
+
+   <a href="https://plumsail.com/actions/" target="_blank">Plumsail Actions</a>
+
+.. |Create HTML| raw:: html
+
+   <a href="https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/create-html-from-template.html" target="_blank">Create HTML document from template</a>
+
+.. |Create PDF| raw:: html
+
+   <a href="https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/create-pdf-from-html-template.html" target="_blank">Create PDF from HTML template</a>
