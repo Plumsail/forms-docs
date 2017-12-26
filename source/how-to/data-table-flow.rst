@@ -31,6 +31,8 @@ With this form we can compose a PDF file and send it for the approval.
 
 But first, let's work on our form's logic to make sure that all fields are set correctly on our form.
 
+.. _data-table-form:
+
 Form's Logic
 --------------------------------------------------
 So, what JavaScript logic do we need? First, we need to make sure that all fields are set correctly and that the form is signed.
@@ -216,7 +218,7 @@ Then add format as the second parameter so it looks like this and click OK:
 
 .. code-block:: javascript
 
-    formatDateTime(body('Parse_JSON')?['From'], 'dd/MM/yyyy')
+    formatDateTime(body('Parse_JSON')?['From'], 'MM/dd/yyyy')
 
 This is our final version of Template Data:
 
@@ -272,6 +274,8 @@ Now we place Result HTML from the last action inside Source HTML field:
    :alt: Plumsail Documents - Convert HTML to PDF
 
 | 
+
+.. _email-pdf-attachment:
 
 Send an email with PDF attachment
 --------------------------------------------------
