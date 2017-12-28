@@ -216,7 +216,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
             fd.rendered(function(){
                 fd.validators.push({
                     name: 'MyCustomValidator',
-                    error: "'To' must be greater than 'From'.",
+                    error: '"To" must be greater or the same as "From".',
                     validate: function(value) {
                         if (fd.field('From').value >= fd.field('To').value)
                             return false;

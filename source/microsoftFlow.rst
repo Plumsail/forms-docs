@@ -92,6 +92,8 @@ Finally, click Create Connector on the next page:
 .. image:: /images/flow/6_CreateConnector.png
    :alt: Last click
 
+.. _creating-flow:
+
 Creating Flow
 -------------------------------------------------------------
 
