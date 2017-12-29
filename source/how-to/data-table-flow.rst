@@ -1,5 +1,5 @@
-Convert form with DataTable into PDF and send for approval
-===========================================================
+Convert form with Data Table into PDF and send for approval
+============================================================
 
 Description
 --------------------------------------------------
@@ -128,27 +128,6 @@ This can be done with JavaScript, which will add inside fd.rendered() event func
 
 Now that we are done with Form configuration, it's time to set up our Flow.
 
-Fixing time zones for Dates
-****************************************
-One issue that you may face with the dates in Flow is time zone offset. 
-
-Dates in Microsoft Flow are in Universal Time (aka, UTC or GMT) by default, but Plumsail Forms dates are in your local time which could lead to unexpected results.
-
-These differences can be solved by adjusting dates before submission with JavaScript in **fd.beforeSave()** event.
-
-In our case, we can make sure that dates are correct with the following code:
-
-.. code-block:: javascript
-
-    fd.beforeSave(function(data) {
-        data.From = new Date(data.From.getTime() 
-            - data.From.getTimezoneOffset() * 60000);
-        data.To = new Date(data.To.getTime() 
-            - data.To.getTimezoneOffset() * 60000);
-    });
-
-.. _flow-html-table:
-
 Microsoft Flow using HTML Table
 --------------------------------------------------
 In this example we will first create HTML Template from the submitted data and then transform HTML into PDF and send it via Email.
@@ -176,6 +155,8 @@ Here, we pass ExpensesTable in From field, I also open Advanced options and sele
    :alt: HTML Table set up
 
 | 
+
+.. _plumsail-actions-flow:
 
 Plumsail Actions in MS Flow for DataTable
 --------------------------------------------------
