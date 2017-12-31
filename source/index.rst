@@ -40,6 +40,8 @@ Table of contents
             how-to/file
             how-to/conditional-fields
             how-to/conditional-containers
+            how-to/data-table-flow
+            how-to/data-table-convert-html
 
 .. container:: pl-right-column
 
