@@ -337,7 +337,7 @@ Properties
 
                 fd.control('DataTable0').value; // returns an array
                 
-                // add new record to the DataTable using column's InternalNames:
+                // add new record to the DataTable using columns' InternalNames:
                 var record = {Date: new Date(), Text: "New Text", Cost: 250 };
                 fd.control('DataTable0').value.push(record); 
     

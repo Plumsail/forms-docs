@@ -1,6 +1,10 @@
 Format Data Table in an HTML-template before converting into PDF
-===========================================================
+=================================================================
 This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Actions|.
+
+It's an additional example of using Plumsail Forms data with Plumsail Actions, so it can be used like described in :doc:`the previous article </how-to/data-table-flow>`.
+
+In here, we will also show you how you can format data inside Data Table with HTML-template for columns such as date.
 
 Setting up the form
 --------------------------------------------------
@@ -11,66 +15,11 @@ It's still the same Expense Reimbursement Form, we just need to add Date column 
 .. image:: ../images/how-to/data-table-convert-html/1_Add_Date.png
    :alt: Add Date column to Expenses table
 
-|
-
-Fixing time zones for Dates
-****************************************
-One issue that you may face with the dates in Flow is time zone offset. 
-
-Dates in Microsoft Flow are in Universal Time (aka, UTC or GMT) by default, but Plumsail Forms dates are in your local time which could lead to unexpected results.
-
-These differences can be solved by adjusting dates before submission with JavaScript in **fd.beforeSave()** event.
-
-In our case, we can make sure that dates are correct with the following code, including dates in our expenses table:
-
-.. code-block:: javascript
-
-    fd.beforeSave(function(data) {
-        data.From = new Date(data.From.getTime() 
-            - data.From.getTimezoneOffset() * 60000);
-        data.To = new Date(data.To.getTime() 
-            - data.To.getTimezoneOffset() * 60000);
-        for (var i = 0; i < data.ExpensesTable.length; i++){
-		    var date = data.ExpensesTable[i].Date;
-		    data.ExpensesTable[i].Date = new Date(date.getTime() 
-			    - date.getTimezoneOffset() * 60000);
-	    }
-    });
-
-
 Microsoft Flow using HTML template functionality
 --------------------------------------------------
 This will show you how you can set up MS Flow with DataTable without converting it to HTML table first.
 
-In this example, we will also use |Plumsail Actions| to create HTML with template which would use submitted data, 
-then convert this HTML into PDF, and we will rely on Plumsail Actions even more.
-
-If you haven't read our introduction to using MS Flow with Plumsail Forms, you can find information on how to add our custom connector :doc:`here </microsoftFlow>`.
-
-Plumsail Actions
-************************************************
-
-For us to create HTML template from our Form, we don't even need to include *Data Operations - Parse JSON* Action, but you can include it if you plan to use individual fields anywhere else in your Flow.
-
-All we need is to subscribe to the submission of the correct form with Plumsail Forms trigger by copying Form ID inside *Form is submitted* trigger:
-
-.. image:: /images/flow/11_FormID.png
-   :alt: Form ID
-
-|
-
-We will use Plumsail Actions connector straight away, which you can read about setting up |Plumsail Actions connector|. 
-
-You can either create Custom connector or use MS Flow Premium connector, 
-but you will need to have an API key from |Plumsail Account| in both cases.
-
-.. |Plumsail Account| raw:: html
-
-   <a href="https://auth.plumsail.com/account/login" target="_blank">Plumsail Account</a>
-
-.. |Plumsail Actions connector| raw:: html
-
-   <a href="https://plumsail.com/docs/actions/v1.x/getting-started/use-from-flow.html" target="_blank">here</a>
+Read more about adding Plumsail Actions connector in this section - :ref:`plumsail-actions-flow`.
 
 Once the connector is set up, search for HTML Template and select *Plumsail Documents - Create HTML from template*:
 
@@ -211,9 +160,38 @@ Place Result HTML from the last action inside Source HTML field:
 
 Read more on how to receive this PDF via email in :ref:`email-pdf-attachment` section.
 
-And here's PDF that I've received from Flow after all the configurations:
+And here's PDF that I receive from Flow:
 
 .. image:: ../images/how-to/data-table-convert-html/4_PDF.png
    :alt: Final PDF
 
 | 
+
+Fixing time zones for Dates
+-------------------------------
+One issue that you may face with the dates in Flow is time zone offset. 
+
+Dates in Microsoft Flow are in Universal Time (aka, UTC or GMT) by default, but Plumsail Forms dates are in your local time which could lead to unexpected results.
+
+These differences can be resolved by adjusting dates before submission with JavaScript in **fd.beforeSave()** event.
+
+In our case, we can make sure that dates are correct with the following code, including dates in our expenses table:
+
+.. code-block:: javascript
+
+    fd.beforeSave(function(data) {
+        //convert From field to appropriate 12:00 AM Time UTC:
+        data.From = new Date(data.From.getTime() 
+            - data.From.getTimezoneOffset() * 60000);
+            
+        //convert To field to appropriate 12:00 AM Time UTC:
+        data.To = new Date(data.To.getTime() 
+            - data.To.getTimezoneOffset() * 60000);
+
+        //convert Date column to appropriate 12:00 AM Time UTC:
+        for (var i = 0; i < data.ExpensesTable.length; i++){
+		    var date = data.ExpensesTable[i].Date;
+		    data.ExpensesTable[i].Date = new Date(date.getTime() 
+			    - date.getTimezoneOffset() * 60000);
+	}
+    });

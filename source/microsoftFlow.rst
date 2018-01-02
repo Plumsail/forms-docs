@@ -78,11 +78,11 @@ Client ID: **3d8caf5f-2f67-4b4a-9a81-2ee61709220f**
 
 Client Secret: **yMAbxuJGw2497Q3D9aXQKNjH5UghBSyH**
 
-And finally Refresh URL: **https://auth.plumsail.com/connect/revocation**
+And finally Refresh URL: **https://auth.plumsail.com/connect/token**
 
 Everything else leave as it is:
 
-.. image:: /images/flow/5_OAuth.png
+.. image:: /images/flow/5_OAuthFixed.png
    :alt: OAuth
 
 |
