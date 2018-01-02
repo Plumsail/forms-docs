@@ -1,13 +1,6 @@
-Convert DataTable into HTML template
+Format Data Table in an HTML-template before converting into PDF
 ===========================================================
 This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Actions|.
-
-You can simply convert DataTable into HTML table with *Data Operations - Create HTML table* actions in MS Flow, 
-this step is described in :ref:`flow-html-table` article. 
-
-But this operation comes with limitation, primarily, you can't affect values stored in the table and the way they are displayed.
-
-For example, you can't convert dates to a more readable format or add a dollar sign to number columns. In this article, we will do just that.
 
 Setting up the form
 --------------------------------------------------
@@ -19,39 +12,6 @@ It's still the same Expense Reimbursement Form, we just need to add Date column 
    :alt: Add Date column to Expenses table
 
 |
-
-Now, this can be it, but we can go one step beyond and ensure that dates included in the table will be in the range between our *From* and *To* date fields:
-
-.. image:: ../images/how-to/data-table-convert-html/2_Error.png
-   :alt: Expense Dates must be between To and From
-
-|
-
-This is an optional step, but it can be easily achieved by adding this code to our fd.rendered() event:
-
-.. code-block:: javascript
-
-    fd.rendered(function(){
-        //... all the previous code
-        
-        fd.control('ExpensesTable').addValidator({
-            error: 'Expenses should be in the period between From and To',
-            validate: function(value) {
-                for (var i = 0; i < value.length; i++){
-                    if (value[i].Date <= fd.field('From').value) {
-                        return false;
-                    }
-                    else if (value[i].Date >= fd.field('To').value) {
-                        return false;
-                    }			
-                }
-                
-                return true;
-            }
-        });
-    });
-
-Now we can start working on our Flow.
 
 Fixing time zones for Dates
 ****************************************
@@ -251,7 +211,7 @@ Place Result HTML from the last action inside Source HTML field:
 
 Read more on how to receive this PDF via email in :ref:`email-pdf-attachment` section.
 
-And here's PDF that I receive from Flow:
+And here's PDF that I've received from Flow after all the configurations:
 
 .. image:: ../images/how-to/data-table-convert-html/4_PDF.png
    :alt: Final PDF
