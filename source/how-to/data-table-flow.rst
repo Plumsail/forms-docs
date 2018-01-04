@@ -115,17 +115,17 @@ This can be done with JavaScript, which will add inside fd.rendered() event func
         
         fd.field("Total").disabled = true;
 
-        fd.control('ExpensesTable').$on('change',
-            function(value) {
-                if (value){
-                  var total = 0;
-                  for (var i = 0; i < value.length; i++){
-                      total += parseInt(value[i].Cost);
-                  }
+        fd.control('ExpensesTable').$on('change', function(value) {
+            var total = 0;
+            if(value){
+                for (var i = 0; i < value.length; i++){
+                    total += parseInt(value[i].Cost);
                 }
-                //Total field is a Text field, so I can add a dollar symbol to it:
-                fd.field("Total").value = '$' + total;
-            });
+            }
+            
+            // Total field is a Text field, so I can add a dollar symbol to it:
+            fd.field("Total").value = '$' + total;
+        });
     });
 
 Now that we are done with Form configuration, it's time to set up our Flow.
