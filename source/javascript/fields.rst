@@ -168,3 +168,20 @@ Fields use **$on()** method to track the events happening to them.
                 fd.field('TextBox').$on('change', function(value) {
                     alert('New value: ' + value);
                 });
+    *   -   **ready**
+        -   Triggers when the field is initialized and is ready to be used in scripts. **Only available for People picker and Content Type SharePoint fields!**
+        - .. code-block:: javascript
+
+                fd.spRendered(function() {
+                    fd.field('User').$on('ready',function(field) {
+                        console.log(field.value);
+                        // or
+                        console.log(fd.field('User').value);
+                    });
+
+                    fd.field('ContentType').$on('ready',function(field) {
+                        console.log(field.value);
+                        // or
+                        console.log(fd.field('ContentType').value);
+                    });
+                });

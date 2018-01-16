@@ -359,7 +359,7 @@ SETTINGS
     *   - Title
         - Allows to set the title of the column.
     *   - Type
-        - Allows to select the type of the data for the column - can be either String, Number, Boolean or Date.
+        - Allows to select the type of the data for the column - can be either String, Number, Boolean, Date or Dropdown.
     *   - Required
         - Allows to set the column as mandatory for the record to be added.
     *   - InternalName
