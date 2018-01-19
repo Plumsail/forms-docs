@@ -28,6 +28,7 @@ Single Line of Text
     *   -   **Get**
         - .. code-block:: javascript
 
+                //returns a string of text
                 fd.field('SingleLine').value;
 
     *   -   **Set**
@@ -53,6 +54,7 @@ Multiline Text Field
     *   -   **Get**
         - .. code-block:: javascript
 
+                //returns a string of text with formatting
                 fd.field('MultipleLines').value;
 
     *   -   **Set**
@@ -77,6 +79,7 @@ Choice Single - Dropdown or Radio
     *   -   **Get**
         - .. code-block:: javascript
 
+                //returns selected choice as a string
                 fd.field('ChoiceSingle').value;
 
     *   -   **Set**
@@ -199,16 +202,13 @@ Lookup
     :widths: 10 80    
         
 
-    *   -   **Get ID**
+    *   -   **Get**
         - .. code-block:: javascript
 
-                // returns ID of the selected element:
+                // returns an ID of the selected element:
                 fd.field('Lookup').value; 
 
-    *   -   **Get Text**
-        - .. code-block:: javascript
-
-                // returns selected element as string:
+                // returns the selected element as a string:
                 fd.field('Lookup').selected.LookupValue; 
 
     *   -   **Set**
@@ -231,31 +231,16 @@ Multi Lookup
     :widths: 10 80    
         
 
-    *   -   **Get All Text**
+    *   -   **Get**
         - .. code-block:: javascript
 
-                var selected = fd.field('LookupMulti').selected;
-                var s = '';
-                for (var i = 0; i < selected.length; i++) {
-                    s += selected[i].LookupValue + '; ';
-                }
-                alert(s);
+                //returns an array of the selected IDs
+                fd.field('LookupMulti').value;
 
-    *   -   **Get First Text**
-        - .. code-block:: javascript
+                //returns an ID of the first selected
+                fd.field('LookupMulti').value[0];
 
-                // returns first selected element as string:
-                fd.field('LookupMulti').selected[0].LookupValue; 
-
-    *   -   **Get Second Text**
-        - .. code-block:: javascript
-
-                // returns second selected element as string:
-                fd.field('LookupMulti').selected[1].LookupValue;
-
-    *   -   **Get all IDs**
-        - .. code-block:: javascript
-
+                //returns all values as string of IDs
                 var selectedIDs = fd.field('LookupMulti').value;
                 var s = '';
                 for (var i = 0; i < selectedIDs.length; i++) {
@@ -263,10 +248,19 @@ Multi Lookup
                 }
                 alert(s);
 
-    *   -   **Get first ID**
-        - .. code-block:: javascript
+                // returns first selected element as text:
+                fd.field('LookupMulti').selected[0].LookupValue; 
 
-                fd.field('LookupMulti').value[0];
+                // returns second selected element as text:
+                fd.field('LookupMulti').selected[1].LookupValue;
+
+                //returns all values as a text string
+                var selected = fd.field('LookupMulti').selected;
+                var s = '';
+                for (var i = 0; i < selected.length; i++) {
+                    s += selected[i].LookupValue + '; ';
+                }
+                alert(s);
 
     *   -   **Set**
         - .. code-block:: javascript
@@ -319,10 +313,20 @@ Add **$on('ready',function(){})** event if you want to run these methods when pa
     :widths: 10 80    
         
 
-    *   -   **Get All Names**
+    *   -   **Get**
         - .. code-block:: javascript
 
-                //will run once the field is initialized:
+                //returns an array of objects
+                fd.field('Persons').value;
+
+                //returns email of the first selected user
+                fd.field('Persons').value[0].EntityData.Email;
+
+                //returns display name of the first selected user
+                fd.field('Persons').value[0].DisplayText
+
+                //will run once the field is initialized
+                //returns all names as a string
                 fd.field('Persons').$on('ready',function(field) {
                     var people = fd.field('Persons').value;
                     var s = '';
@@ -331,11 +335,6 @@ Add **$on('ready',function(){})** event if you want to run these methods when pa
                     }
                     alert(s);
                 });
-
-    *   -   **Get Email from First User**
-        - .. code-block:: javascript
-
-                fd.field('Persons').value[0].EntityData.Email;
 
     *   -   **Set**
         - .. code-block:: javascript
@@ -354,6 +353,93 @@ Add **$on('ready',function(){})** event if you want to run these methods when pa
                     var s = '';
                     for (var i = 0; i < people.length; i++) {
                         s += people[i].DisplayText + '; ';
+                    }
+                    alert('New value: ' + s);
+                });
+
+Managed Metadata (Taxonomy) Single
+**************************************************
+
+.. list-table::
+    :widths: 10 80    
+        
+
+    *   -   **Get**
+        - .. code-block:: javascript
+
+                // returns an array of objects
+                fd.field('Taxonomy').value;
+
+                // returns the name of the selected option
+                fd.field('Taxonomy').value.Name; 
+
+                // returns the ID of the selected option
+                fd.field('Taxonomy').value.Id; 
+
+    *   -   **Set**
+        - .. code-block:: javascript
+
+                //set element with the an object:
+                fd.field('Taxonomy').value = { 
+                    Id: "ac68fff3-2826-48f1-8d24-3fadad9533f0", 
+                    Name: "Test1"
+                };
+
+    *   -   **OnChange**
+        - .. code-block:: javascript
+
+                fd.field('Taxonomy').$on('change', function(value) {
+                    alert('New value: ' + value.Name);
+                });
+
+Managed Metadata (Taxonomy) Multiple
+**************************************************
+
+.. list-table::
+    :widths: 10 80    
+        
+
+    *   -   **Get**
+        - .. code-block:: javascript
+
+                // returns an object
+                fd.field('TaxonomyMulti').value;
+
+                // returns the name of the first selected option
+                fd.field('TaxonomyMulti').value[0].Name; 
+
+                // returns the ID of the first selected option
+                fd.field('TaxonomyMulti').value[0].Id; 
+
+                //returns all selected options as a text string
+                var terms = fd.field('TaxonomyMulti').value;
+                var s = '';
+                for (var i = 0; i < terms.length; i++) {
+                    s += terms[i].Name + '; ';
+                }
+                alert(s);
+
+    *   -   **Set**
+        - .. code-block:: javascript
+
+                //set element with the an array:
+                fd.field('TaxonomyMulti').value = [{ 
+                    Id: "ac68fff3-2826-48f1-8d24-3fadad9533f0", 
+                    Name: "Term1"
+                },
+                {
+                    Id: "53e1c22e-bfc4-4172-81ff-806415606837",
+                    Name: "Term2"
+                }];
+
+    *   -   **OnChange**
+        - .. code-block:: javascript
+
+                fd.field('TaxonomyMulti').$on('change', function(value) {
+                    var terms = value;
+                    var s = '';
+                    for (var i = 0; i < terms.length; i++) {
+                        s += terms[i].Name + '; ';
                     }
                     alert('New value: ' + s);
                 });
