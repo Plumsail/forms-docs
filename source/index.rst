@@ -63,3 +63,4 @@ Table of contents
             javascript/containers
             javascript/controls
             javascript/fields
+            javascript/fields-sp
