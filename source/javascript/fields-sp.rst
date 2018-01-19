@@ -367,7 +367,7 @@ Managed Metadata (Taxonomy) Single
     *   -   **Get**
         - .. code-block:: javascript
 
-                // returns an array of objects
+                // returns an object
                 fd.field('Taxonomy').value;
 
                 // returns the name of the selected option
@@ -402,7 +402,7 @@ Managed Metadata (Taxonomy) Multiple
     *   -   **Get**
         - .. code-block:: javascript
 
-                // returns an object
+                // returns an array of objects
                 fd.field('TaxonomyMulti').value;
 
                 // returns the name of the first selected option
