@@ -3,9 +3,9 @@ Redirect user after form submission in SharePoint
 
 Description
 --------------------------------------------------
-Working with SharePoint, it's often important to guide users through the process of creating, editing and even viewing of Items and documents. You may want to redirect users to some page on the site or a different form, perhaps in another or the same list. How can this be done?
+Working with SharePoint, it's often important to guide users through the process of creating, editing and even of viewing items and documents. You may want to redirect users to some page on the site or a different form. How can this be done?
 
-Nothing could be simpler actually. With the use of the **spSaved()** event, it can be done with very little code. Read more about different events in our :ref:`js-events` section.
+Nothing could be simpler actually as you will find in this article. With the use of the **spSaved()** event, it can be done with very little code. Read more about different events in our :ref:`js-events` section.
 
 Redirect to any page
 --------------------------------------------------
