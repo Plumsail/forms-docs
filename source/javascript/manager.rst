@@ -121,6 +121,8 @@ These methods can be applied to **fd**:
 
                 fd.clear();
 
+.. _js-events:
+
 Events
 --------------------------------------------------
 These events can be executed from JavaScript editor for Plumsail Forms:
