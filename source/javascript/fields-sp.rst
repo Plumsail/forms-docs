@@ -19,7 +19,7 @@ they will not have access to the specified fields, or will execute at the wrong 
 Read more about different events in :doc:`Manager section </javascript/manager>`.
 
 Single Line of Text
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80  
@@ -45,7 +45,7 @@ Single Line of Text
 
 
 Multiline Text Field
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
@@ -70,7 +70,7 @@ Multiline Text Field
                 });
                 
 Choice Single - Dropdown or Radio
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
@@ -95,7 +95,7 @@ Choice Single - Dropdown or Radio
                 });
 
 Choice Multiple - Checkboxes
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
@@ -121,7 +121,7 @@ Choice Multiple - Checkboxes
                 });
 
 Number/Currency
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
@@ -146,7 +146,7 @@ Number/Currency
                 });
 
 Date
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 90
@@ -171,7 +171,7 @@ Date
                 });
 
 DateTime
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
@@ -196,7 +196,7 @@ DateTime
                 });
 
 Lookup
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
@@ -225,7 +225,7 @@ Lookup
                 });
 
 Multi Lookup
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
@@ -277,7 +277,7 @@ Multi Lookup
 
 
 Boolean - Yes/No
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
@@ -306,7 +306,7 @@ Boolean - Yes/No
                 });
 
 People Picker
-**************************************************
+--------------------------------------------------
 Add **$on('ready',function(){})** event if you want to run these methods when page loads:
 
 .. list-table::
@@ -358,7 +358,7 @@ Add **$on('ready',function(){})** event if you want to run these methods when pa
                 });
 
 Managed Metadata (Taxonomy) Single
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
@@ -393,7 +393,7 @@ Managed Metadata (Taxonomy) Single
                 });
 
 Managed Metadata (Taxonomy) Multiple
-**************************************************
+--------------------------------------------------
 
 .. list-table::
     :widths: 10 80    
