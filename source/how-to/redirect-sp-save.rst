@@ -18,7 +18,7 @@ Just add this code to JavaScript editor and it will automatically redirect users
     fd.spSaved(function(result) {
                     //simply replace this URL with yours:
                     result.RedirectUrl = 
-                    "https://domain.sharepoint.com/sites/sitename/SitePages/ThankYou.aspx";
+                        "https://domain.sharepoint.com/sites/sitename/SitePages/ThankYou.aspx";
                 });
 
 Redirect to New Form
@@ -32,10 +32,11 @@ This code redirects users to the New Form and can work from both New Form and Ed
     fd.spSaved(function(result) {
         var listId = fd.spFormCtx.ListAttributes.Id;
 
+        //replace "https://domain.sharepoint.com/sites/sitename/subsite" with path to your site
         //PageType=8 means New Form, no itemId is required
         result.RedirectUrl = 
-        "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx?PageType=8&ListId="
-         + listId;
+            "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx?PageType=8&ListId="
+            + listId;
     });
 
 Redirect to Edit Form
@@ -50,10 +51,11 @@ This code will do just that:
         var listId = fd.spFormCtx.ListAttributes.Id;
         var itemId = result.Id;
 
+        //replace "https://domain.sharepoint.com/sites/sitename/subsite" with path to your site
         //PageType=6 means Edit Form
         result.RedirectUrl = 
-        "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx?PageType=6&ListId=" 
-        + listId + "&ID=" + itemId;
+            "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx?PageType=6&ListId=" 
+            + listId + "&ID=" + itemId;
     });
 
 Redirect to Display Form
@@ -68,8 +70,9 @@ Here's how it can be done:
         var listId = fd.spFormCtx.ListAttributes.Id
         var itemId = result.Id;
 
+        //replace "https://domain.sharepoint.com/sites/sitename/subsite" with path to your site
         //PageType=4 means Display Form
         result.RedirectUrl = 
-        "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx?PageType=4&ListId="
-         + listId + "&ID=" + itemId;
+            "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx?PageType=4&ListId="
+            + listId + "&ID=" + itemId;
     });
