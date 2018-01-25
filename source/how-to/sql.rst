@@ -12,7 +12,7 @@ This information will then be handled by MS Flow and new record would be added t
 
 .. |Partnership Form| raw:: html
 
-   <a href="https://auth.plumsail.com/account/login" target="_blank">actual form</a>
+   <a href="https://plumsail.com/partners-and-resellers/become-a-partner/" target="_blank">actual form</a>
 
 
 Form creation and submission
