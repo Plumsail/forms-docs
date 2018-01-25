@@ -1,4 +1,4 @@
-Insert SQL Server records from Form
+Insert SQL Server records from web forms
 ==================================================
 
 Description
@@ -7,12 +7,9 @@ There are many actions available in Microsoft Flow, including SQL Server actions
 It's very easy to handle form submissions and add or update records in your database.
 
 In this example, we will create a Partnership Request form for our company Plumsail, 
-which anyone who is interested in partnership can fill, very similar to an |Partnership Form|. 
+which anyone who is interested in partnership can fill. 
+
 This information will then be handled by MS Flow and new record would be added to SQL Server Database.
-
-.. |Partnership Form| raw:: html
-
-   <a href="https://plumsail.com/partners-and-resellers/become-a-partner/" target="_blank">actual form</a>
 
 
 Form creation and submission
