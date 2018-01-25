@@ -457,14 +457,14 @@ Events
             Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-edit
         - .. code-block:: javascript
 
-                fd.control('DataTable0').$on('beforeEdit',
+                fd.control('DataTable0').$on('edit',
                     function(e) {
                         console.log(e.model); // log info about record
                         alert('Editing');
                     });
 
     *   -   **remove**
-        -   Fired when the user clicks the "destroy" command button and delete operation is confirmed in the confirmation window, 
+        -   Fired when the user clicks the "delete" command button and delete operation is confirmed in the confirmation window, 
             if the cancel button in the window is clicked the event will not be fired.
 
             Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-remove
