@@ -43,6 +43,7 @@ Table of contents
             how-to/data-table-flow
             how-to/data-table-convert-html
             how-to/redirect-sp-save
+            how-to/sql
 
 .. container:: pl-right-column
 
