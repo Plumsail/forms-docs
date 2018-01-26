@@ -1,5 +1,5 @@
-Creating a web form with Data Table and saving it into a SharePoint list 
-=========================================================================
+Creating a web form with Data Table and saving data into SharePoint lists
+===========================================================================
 
 Description
 --------------------------------------------------
