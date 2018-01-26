@@ -1,5 +1,5 @@
-Creating a form with Data Table and saving it into a SharePoint list 
-============================================================
+Creating a web form with Data Table and saving it into a SharePoint list 
+=========================================================================
 
 Description
 --------------------------------------------------
@@ -43,41 +43,39 @@ Here's the code:
         fd.control('RequestedItemsTable').columns[3].editable =
             function(){return false};
 
-        //variable to make sure that JS changes are ignored
-        var privateChange = false;
-
         fd.control('RequestedItemsTable').$on('change', function(value) {
-            //if change is by JS do nothing
-            if (privateChange) return;
-
             //variable to count Order Total
             var orderTotal = 0;
-            
+
             //if there are records in the table
+            var isTableModified = false;
             if(value){
                 //go through each one by one
                 for (var i = 0; i < value.length; i++){
                     //if this record has Amount and Price
                     if(value[i].Amount && value[i].Price){
                         //set Total to their product
-                        value[i].Total = value[i].Amount * value[i].Price;
+                        var cost = value[i].Amount * value[i].Price;
+                        
+                        if (value[i].Total != cost) {
+                            value[i].Total = cost;
+                            isTableModified = true;
+                        }
                     }
-                    
+
                     //add Total to the Order Total
                     orderTotal += parseInt(value[i].Total);
                 }
             }
-            
+
             //here we make our change to the table
-            privateChange = true;
-            fd.control('RequestedItemsTable').value = value;
-            privateChange = false;
+            if (isTableModified) {
+                fd.control('RequestedItemsTable').value = value;
+            }
 
             //we set Order Total field to sum of Totals
             fd.field('OrderTotal').value = orderTotal;
-            
         });
-        
     });
 
 We can also add some other rules and validators to our form, but for this example it should be enough. Next, we need to create and configure SharePoint Lists to store this data.
