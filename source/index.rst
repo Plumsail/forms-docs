@@ -42,6 +42,7 @@ Table of contents
             how-to/conditional-containers
             how-to/data-table-flow
             how-to/data-table-convert-html
+            how-to/data-table-to-sp
             how-to/redirect-sp-save
             how-to/sql
 
