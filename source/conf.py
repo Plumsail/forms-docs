@@ -141,13 +141,13 @@ extensions.append("guzzle_sphinx_theme")
 # Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
     # Set the name of the project to appear in the sidebar
-    "project_nav_name": "Workflow Actions Pack",
+    "project_nav_name": "Plumsail Forms",
      # Set your Disqus short name to enable comments
     "disqus_comments_shortname": "plumsail",
 
     # Set you GA account ID to enable tracking
     "google_analytics_account": "UA-36215023-2",
-    "base_url": "https://plumsail.com/docs/workflow-actions-pack/" #for sitemap
+    "base_url": "https://plumsail.com/docs/forms/" #for sitemap
 }
 #-----
 
