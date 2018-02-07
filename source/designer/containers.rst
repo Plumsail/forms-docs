@@ -1,6 +1,10 @@
 Containers
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 General Info
 -------------------------------------------------------------
 Containers are elements that contain other elements inside of them. Containers can contain any elements inside, including other containers.

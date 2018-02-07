@@ -1,6 +1,10 @@
 Controls
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+    
 General Info
 -------------------------------------------------------------
 Controls are elements designed to give you more control over your forms. They allow you to customize the look of the form and add interactivity to it. 

@@ -1,6 +1,10 @@
 Licensing
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 General Information
 --------------------------------------------------
 **Plumsail Forms** consists of two products which require two separate licenses. Depending on your needs, you can purchase just one or both at the same time.

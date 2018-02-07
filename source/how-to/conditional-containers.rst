@@ -1,6 +1,10 @@
 Manipulate tabs and accordions with JavaScript
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 Description
 --------------------------------------------------
 In this article you can find examples of how to use JavaScript to make 

@@ -1,6 +1,10 @@
 Microsoft Flow
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 About Microsoft Flow
 -------------------------------------------------------------
 |Flow| allows you to integrate various apps and services by creating 

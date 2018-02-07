@@ -1,6 +1,10 @@
 Redirect user after form submission in SharePoint
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Description
 --------------------------------------------------
 Working with SharePoint, it's often important to guide users through the process of creating, editing and even of viewing items and documents. You may want to redirect users to some page on the site or a different form. How can this be done?

@@ -1,6 +1,10 @@
 Create an item in SharePoint List
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Description
 --------------------------------------------------
 One of the simplest and very practical use cases for Plumsail Forms might be adding items to SharePoint Lists.

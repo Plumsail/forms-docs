@@ -1,6 +1,10 @@
 Introduction to Modern SharePoint Forms
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 General information
 --------------------------------------------------
 Modern SharePoint Forms allow you to design beautiful modern responsive forms for SharePoint Online Modern pages.

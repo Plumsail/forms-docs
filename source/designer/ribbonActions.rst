@@ -1,6 +1,10 @@
 Ribbon Actions
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 Layouts - PC, Tablet or Phone
 --------------------------------------------------
 Modern Plumsail Forms are built to be responsive. On top of utilizing |Bootstrap| for its elements, Forms can also be specifically designed for different devices.

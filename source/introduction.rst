@@ -1,6 +1,10 @@
 Introduction to Plumsail Forms
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 General information
 --------------------------------------------------
 Plumsail Forms allow you to design and publish elegant and highly customizable forms to any page on the web.

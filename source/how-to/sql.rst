@@ -1,6 +1,10 @@
 Insert SQL Server records from web forms
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Description
 --------------------------------------------------
 There are many actions available in Microsoft Flow, including SQL Server actions. 

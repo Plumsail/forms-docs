@@ -1,6 +1,10 @@
 SharePoint Fields
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 Intro
 --------------------------------------------------
 In this section you will find how to get information from SharePoint fields, how to set their value, how to detect changes in SharePoint fields and much more using JavaScript.

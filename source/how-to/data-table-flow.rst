@@ -1,6 +1,10 @@
 Convert form with Data Table into PDF and send for approval
 ============================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Description
 --------------------------------------------------
 

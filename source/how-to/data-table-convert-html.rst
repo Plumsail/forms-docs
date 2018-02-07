@@ -1,5 +1,12 @@
 Format Data Table in an HTML-template before converting into PDF
 =================================================================
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
+Description
+--------------------------------------------------
 This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Actions|.
 
 It's an additional example of using Plumsail Forms data with Plumsail Actions, so it can be used like described in :doc:`the previous article </how-to/data-table-flow>`.

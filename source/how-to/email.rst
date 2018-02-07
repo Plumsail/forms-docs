@@ -1,6 +1,10 @@
 Send an email with Microsoft Flow
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Description
 --------------------------------------------------
 

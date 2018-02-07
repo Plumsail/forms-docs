@@ -1,6 +1,10 @@
 Manipulate fields dynamically
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 Description
 --------------------------------------------------
 

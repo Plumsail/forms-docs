@@ -1,6 +1,10 @@
 Installation
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 Sign in to Plumsail Account
 --------------------------------------------------
 

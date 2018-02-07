@@ -1,6 +1,10 @@
 Manager
 ==================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Intro
 --------------------------------------------------
 **fd** is a Forms designer manager variable. Whenever you want to use custom methods on the form, you need to call the manager first. 
