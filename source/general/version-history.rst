@@ -3,7 +3,7 @@ Version history
 
 v1.0.5
 --------------------------------------------------
-Added List or Library control - allows editing items or documents in related SharePoint Lists or Document Libraries
+Added :ref:`designer-listorlibrary` control - allows editing items or documents in related SharePoint Lists or Document Libraries
 
 Fixed default width of titles for vertically-oriented fields
 
@@ -15,7 +15,7 @@ Other minor bug fixes
 
 v1.0.4
 --------------------------------------------------
-Added a drop-down column type to Data Tables
+Added a drop-down column type to DataTable
 
 Improved JS-framework: added *'ready'* event to User and Content Type SharePoint fields, *'disabled'* property to Data Tables
 

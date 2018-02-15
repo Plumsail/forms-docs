@@ -380,3 +380,39 @@ LAYOUT
 .. |kendoGrid| raw:: html
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid</a>
+
+.. _designer-listorlibrary:
+
+List or Library
+-------------------------------------------------------------
+List or Library is a control which allows you to view, edit, add or delete items or documents to related SharePoint List or Document Library from within the form.
+
+This control is extremely powerful and versatile - it supports filtering, selecting root folder, uploading multiple documents at once and much more.
+
+*Note: List or Library is available in Forms starting with version 1.0.5*
+
+.. image:: ../images/designer/controls/ListOrLibrary.png
+   :alt: List or Library control
+
+List or Library properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every List or Library control has the following settings:
+
+SETTINGS
+
+.. list-table::
+    :widths: 10 40
+
+    *   - DataSource
+        - This setting allows you to select which List or Library will be used as Source, which View will be shown on the form.
+          
+          It also includes **Lookup Field** - if Source List has Lookup list to form's list, items will be automatically filtered by it. 
+          
+          Newly created items will get automatically assigned with the current item ID in this Lookup. New Form needs to be saved first.
+
+    *   - InternalName
+        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+    *   - Readonly
+        - Prevents user from being able to add new items, edit or delete existing ones.
+    *   - RootFolder
+        - Type in the name of the folder inside List or Library and user will only be able to see its contents inside the control.
