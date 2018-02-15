@@ -4,9 +4,9 @@ Roadmap
 Features in development
 --------------------------------------------------
 
-Related items
+Form Routing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Possibility to show other lists on SharePoint forms, add new items to the linked list or delete existing ones.
+Add possibility to define rules for automatic Form redirection - different forms for different users or situations
 
 Export SharePoint forms to PDF
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
