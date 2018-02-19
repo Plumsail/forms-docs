@@ -25,83 +25,21 @@ Additionally, SharePoint forms can also be handled by Microsoft Flow upon submis
 
 *That includes SharePoint forms, if you want to submit data to Flow using Plumsail Forms connector.*
 
-Creating custom connector
+Using Microsoft Flow Plumsail Forms Connector
 -------------------------------------------------------------
-First step in configuring Microsoft Flow is to create custom connector to handle Plumsail Forms. 
+|Plumsail Forms connector| has been added to Microsoft Flow and now allows you to receive form submissions without creating a custom connector.
 
-You can do it through Office365 or by going to |Flow| homepage.
+Our connector is not Premium, so everyone with access to MS Flow will have access to Plumsail Forms connector.
 
-When you open Office365, go to Microsoft Flow page:
+.. image:: /images/flow/15_Connector.png
+   :alt: My Flows
 
-.. image:: /images/flow/0_Flow.png
-   :alt: Flow
+.. |Plumsail Forms connector| raw:: html
 
-|
-
-When the page opens, click the cog in the upper right corner and select *Custom Connectors* from dropdown menu:
-
-.. image:: /images/flow/1_CustomConnectors.png
-   :alt: Custom Connectors
-
-|
-
-Now, you'll need to click *+ Create custom connector* and select *Import an OpenAPI from URL* in the dropdown menu:
-
-.. image:: /images/flow/2_CreateCustomConnector.png
-   :alt: Create custom connector
-
-|
-
-Give this custom connector name **Plumsail Forms** and copy this URL for the OpenAPI **https://forms.plumsail.com/swagger/v1/swagger.json**
-
-It should look like this:
-
-.. image:: /images/flow/3_CreateCustomConnectorWindow.png
-   :alt: Input Name and URL
-
-|
-
-Next you can customize the look of the connector with the icon and background. 
-
-You can download our icon |Icon| and we recommend to use it with white background **#ffffff**
-
-Nothing else need to be changed on this page:
-
-.. |Icon| raw:: html
-
-   <a href="https://forms.plumsail.com/images/connector.png" target="_blank">here</a>
-
-.. image:: /images/flow/4_AdjustIcon.png
-   :alt: Adjust Icon
-
-|
-
-Next page you need to fill in several things.
-
-Client ID: **3d8caf5f-2f67-4b4a-9a81-2ee61709220f**
-
-Client Secret: **yMAbxuJGw2497Q3D9aXQKNjH5UghBSyH**
-
-And finally Refresh URL: **https://auth.plumsail.com/connect/token**
-
-Everything else leave as it is:
-
-.. image:: /images/flow/5_OAuthFixed.png
-   :alt: OAuth
-
-|
-
-Finally, click Create Connector on the next page:
-
-.. image:: /images/flow/6_CreateConnector.png
-   :alt: Last click
-
-.. _creating-flow:
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_plumsailforms/plumsail-forms/" target="_blank"><b>Plumsail Forms connector</b></a>
 
 Creating Flow
 -------------------------------------------------------------
-
-Now custom connector has been added and you can start creating Flows with it.
 
 Go to My Flows and click *Create from blank*:
 
@@ -119,7 +57,7 @@ On the next page, click *Search hundreds of connectors and triggers*:
 
 Search for *Plumsail* and add *Plumsail Forms - Form is submitted* trigger:
 
-.. image:: /images/flow/10_FormSubmittedTrigger.png
+.. image:: /images/flow/10_FormSubmittedTriggerNew.png
    :alt: Plumsail Forms - Form is submitted trigger
 
 |
@@ -132,7 +70,7 @@ If this is your first Flow, at this point you'll need to **Sign in to** |Plumsai
 
 **Important!** You can only bind Flows to the forms that are stored in your Plumsail Account!
 
-.. image:: /images/flow/11_Authorization.png
+.. image:: /images/flow/11_AuthorizationNew.png
    :alt: Sign in to Plumsail Account
 
 |
@@ -141,14 +79,14 @@ Now, you'll need to add the ID of the Form you want to track. You can enter ID o
 
 Form ID can be found and copied in **General Settings** in the Designer.
 
-.. image:: /images/flow/11_FormID.png
+.. image:: /images/flow/11_FormIDNew.png
    :alt: Form ID
 
 |
 
 After adding the trigger, search for *JSON* and add *Data Operations - Parse JSON* action to actually parse data received from the submitted form:
 
-.. image:: /images/flow/12_ParseJSON.png
+.. image:: /images/flow/12_ParseJSONNew.png
    :alt: Parse JSON
 
 |
@@ -163,7 +101,7 @@ open **General Settings** and copy the *Form Schema*:
 
 In *Parse JSON* action click *Content* and select **Body** in menu on the right. Insert copied *Form Schema* into *Schema* field:
 
-.. image:: /images/flow/14_ParseJSONContent.png
+.. image:: /images/flow/14_ParseJSONContentNew.png
    :alt: Form Schema
 
 |
