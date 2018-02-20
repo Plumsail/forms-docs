@@ -485,6 +485,177 @@ Events
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#fields-columns" target="_blank">Kendo UI Grid columns</a>
 
+List or Library
+--------------------------------------------------
+Properties, methods and events of the List or Library control.
+
+Properties
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Name
+        -   Description
+        -   Examples
+    
+    *   -   **filter**
+        -   Property that holds CAML filtering for the control. 
+            Empty by default, contains filter value if you choose Lookup Field in Data Source Editor.
+
+            Can also be used to apply filtering. Changes are applied dynamically to the control.
+        
+        - .. code-block:: javascript
+
+                fd.control('SPDataTable0').filter; // returns CAML string
+
+                //return only items where Title is "Test"
+                fd.control('SPDataTable0').filter = 
+                    "<Eq><FieldRef Name='Title'/><Value Type='Text'>Test</Value></Eq>";
+            
+    *   -   **readonly**
+        -   Property that specifies if the user can add new items/documents to the control, edit or delete existing items/documents. 
+            
+            Takes and returns only *true* and *false* values.
+        - .. code-block:: javascript
+
+                fd.control('SPDataTable0').readonly;
+                fd.control('SPDataTable0').readonly = true;
+                fd.control('SPDataTable0').readonly = false;
+
+    *   -   **baseRootFolder**
+        -   Property that specifies starting folder for the control. User cannot go higher than this folder. 
+            
+        - .. code-block:: javascript
+
+                fd.control('SPDataTable0').baseRootFolder;
+                //set root as Base Folder:
+                fd.control('SPDataTable0').baseRootFolder = '';
+                //set folder as Base Folder:
+                fd.control('SPDataTable0').baseRootFolder = "Folder1"
+
+    *   -   **rootFolder**
+        -   Property that specifies current folder for the control. 
+            
+        - .. code-block:: javascript
+
+                fd.control('SPDataTable0').rootFolder;
+                //set root as Current Folder:
+                fd.control('SPDataTable0').rootFolder = '';
+                //set Folder1 as Current Folder:
+                fd.control('SPDataTable0').rootFolder = "Folder1"
+
+    *   -   **addNewItemText**
+        -   Property that holds "Add new item" text, useful for localizations.
+            
+        - .. code-block:: javascript
+
+                fd.control('SPDataTable0').addNewItemText // "Add new item" by default
+                fd.control('SPDataTable0').addNewItemText = "New text"
+    
+    *   -   **uploadText**
+        -   Property that holds "Upload" text, useful for localizations.
+            
+        - .. code-block:: javascript
+
+                fd.control('SPDataTable0').uploadText // "Upload" by default
+                fd.control('SPDataTable0').uploadText = "New text"
+    
+    *   -   **uploadingText**
+        -   Property that holds "Uploading..." text, useful for localizations.
+            
+        - .. code-block:: javascript
+
+                fd.control('SPDataTable0').uploadingText // "Uploading..." by default
+                fd.control('SPDataTable0').uploadingText = "New text"
+    
+    *   -   **dialogOptions**
+        -   Property that holds dialog options object which specifies width and height of the dialog window.
+            
+        - .. code-block:: javascript
+
+                fd.control('SPDataTable0').dialogOptions.height; //returns height
+                fd.control('SPDataTable0').dialogOptions.width //returns width
+
+                //set width and height:
+                fd.control('SPDataTable0').dialogOptions = {
+                        width: 1280,
+                        height: 720
+                    }
+    
+    *   -   **widget**
+        -   Property that holds |kendoGrid widget| for the control.
+            
+            Can be used to retrieve it, but not to modify.
+        - .. code-block:: javascript
+
+                fd.control('SPDataTable0').widget;
+
+Events
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 20 20
+        
+    *   -   Name
+        -   Description
+        -   Examples
+    
+    *   -   **filesUploaded**
+        -   Fired when the user uploads files to Document Library via List or Library control.
+
+            **itemIds** is an array of IDs of uploaded files.
+        - .. code-block:: javascript
+
+                //log all uploaded files to console
+                fd.control('SPDataTable0').$on('filesUploaded',
+                    function(itemIds) {
+                        itemIds.forEach(function(item) {
+                            console.log(item);
+                        });
+                    });
+    
+    *   -   **ready**
+        -   Triggers when the control is initialized and is ready to be used in scripts. 
+        - .. code-block:: javascript
+
+                fd.spRendered(function() {
+                    fd.control('SPDataTable0').$on('ready', function(dt) { 
+                        //dt parameter is the same as fd.control('SPDataTable0')
+                        console.log('SPDataTable0 is initialized');
+                    });
+                });
+
+    *   -   **beforeItemsAttach**
+        -   Fired when saving New Form that has items in Library or List control, that will be tied to the parent via lookup field.
+
+            Function contains parameter object with the following properties:
+
+            **itemIds** is an array of IDs of uploaded files.
+
+            **lookupField** is a Lookup field on children items, that binds them to parent.
+
+            **parentItemId** is an ID of the newly saved Parent item
+        - .. code-block:: javascript
+
+                //give an alert message when saving New Form
+                fd.control('SPDataTable0').beforeItemsAttach(function(e) {
+                    return new Promise(function(resolve) {
+                        var ids = '';
+                        var message = 'Item(s): ' + e.itemIds.join();
+                        message += ' attached to Parent with ID: ' + e.parentItemId;
+                        message += ' via Lookup: ' + e.lookupField;
+
+                        alert(message);
+
+                        //once resolved, the form will save:
+                        resolve();
+                    })
+                });
+    
+
 .. |kendoGrid widget| raw:: html
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid widget</a>

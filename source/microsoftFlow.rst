@@ -23,20 +23,7 @@ Additionally, SharePoint forms can also be handled by Microsoft Flow upon submis
 
 **You need to have Plumsail License for Forms in order to utilize our MS Flow Connector with your forms.**
 
-*That includes SharePoint forms, if you want to submit data to Flow using Plumsail Forms connector.*
-
-Using Microsoft Flow Plumsail Forms Connector
--------------------------------------------------------------
-|Plumsail Forms connector| has been added to Microsoft Flow and now allows you to receive form submissions without creating a custom connector.
-
-Our connector is not Premium, so everyone with access to MS Flow will have access to Plumsail Forms connector.
-
-.. image:: /images/flow/15_Connector.png
-   :alt: My Flows
-
-.. |Plumsail Forms connector| raw:: html
-
-   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_plumsailforms/plumsail-forms/" target="_blank"><b>Plumsail Forms connector</b></a>
+**That also applies to Plumsail Forms for SharePoint, if you want to submit data to Flow using Plumsail Forms connector.**
 
 Creating Flow
 -------------------------------------------------------------
@@ -55,7 +42,7 @@ On the next page, click *Search hundreds of connectors and triggers*:
 
 |
 
-Search for *Plumsail* and add *Plumsail Forms - Form is submitted* trigger:
+Search for *Plumsail Forms* and add *Plumsail Forms - Form is submitted* trigger:
 
 .. image:: /images/flow/10_FormSubmittedTriggerNew.png
    :alt: Plumsail Forms - Form is submitted trigger

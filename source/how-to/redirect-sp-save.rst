@@ -20,10 +20,10 @@ Just add this code to JavaScript editor and it will automatically redirect users
 .. code-block:: javascript
 
     fd.spSaved(function(result) {
-                    //simply replace this URL with yours:
-                    result.RedirectUrl = 
-                        "https://domain.sharepoint.com/sites/sitename/SitePages/ThankYou.aspx";
-                });
+        //simply replace this URL with yours:
+        result.RedirectUrl = 
+            "https://domain.sharepoint.com/sites/sitename/SitePages/ThankYou.aspx";
+    });
 
 Redirect to New Form
 --------------------------------------------------
