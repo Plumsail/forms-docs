@@ -284,8 +284,6 @@ A must have if you want to publish your form on a public website.
 
 Our captcha is based on Google's ReCAPTCHA, so you will need to get a SiteKey from |SiteKey| before you can use it.
 
-*Note: Captcha is available in Forms starting with version 1.0.2*
-
 .. image:: ../images/designer/controls/Captcha.png
    :alt: Captcha
 
@@ -333,8 +331,6 @@ Most configuration for DataTable can be done by editing individual column settin
 |
 
 DataTable can be easily submitted to MS Flow and you can use its data as you see fit including creation of HTML tables or SharePoint items.
-
-*Note: DataTable is available in Forms starting with version 1.0.3*
 
 .. image:: ../images/designer/controls/DataTable.png
    :alt: DataTable
@@ -385,11 +381,11 @@ LAYOUT
 
 List or Library
 -------------------------------------------------------------
+*This control is only available in Plumsail Forms for SharePoint*
+
 List or Library is a control which allows you to view, edit, add or delete items or documents to related SharePoint List or Document Library from within the form.
 
 This control is extremely powerful and versatile - it supports filtering, selecting root folder, uploading multiple documents at once and much more.
-
-*Note: List or Library is available in Forms starting with version 1.0.5*
 
 .. image:: ../images/designer/controls/ListOrLibrary.png
    :alt: List or Library control

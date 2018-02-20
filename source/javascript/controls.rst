@@ -571,7 +571,7 @@ Properties
                 fd.control('SPDataTable0').uploadingText = "New text"
     
     *   -   **dialogOptions**
-        -   Property that holds dialog options object which specifies width and height of the dialog window.
+        -   |Kendo UI Window| configuration. Holds dialog window options, such as width and height.
             
         - .. code-block:: javascript
 
@@ -580,9 +580,9 @@ Properties
 
                 //set width and height:
                 fd.control('SPDataTable0').dialogOptions = {
-                        width: 1280,
-                        height: 720
-                    }
+                    width: 1280,
+                    height: 720
+                }
     
     *   -   **widget**
         -   Property that holds |kendoGrid widget| for the control.
@@ -637,7 +637,10 @@ Events
 
             **lookupField** is a Lookup field on children items, that binds them to parent.
 
-            **parentItemId** is an ID of the newly saved Parent item
+            **parentItemId** is an ID of the newly saved Parent item.
+
+            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
+
         - .. code-block:: javascript
 
                 //give an alert message when saving New Form
@@ -659,3 +662,7 @@ Events
 .. |kendoGrid widget| raw:: html
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid widget</a>
+
+.. |Kendo UI Window| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/window#configuration" target="_blank">Kendo UI Window</a>
