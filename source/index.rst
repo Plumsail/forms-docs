@@ -45,6 +45,7 @@ Table of contents
             how-to/data-table-to-sp
             how-to/redirect-sp-save
             how-to/sql
+            how-to/child-parent-form
 
 .. container:: pl-right-column
 
