@@ -9,10 +9,12 @@ Description
 --------------------------------------------------
 This article will describe how you can use :ref:`designer-listorlibrary` control from the form to create Child elements and bind them to Parent.
 
-What this essentially means, you can add new items or documents from the form straight into related list or library, 
-and automatically attach them to current item with a lookup.
+This means that you can add new Items or Documents from the Form straight into related SharePoint List or Document Library, 
+and automatically attach them to the current Item or Document with a Lookup. When you open this Item again, you will only see bound elements in List or Library control. 
 
-With **List or Library** control this is very easy to do, just follow the steps described in this article.
+This can serve as alternative to attachments or to create complex relationships between items. 
+
+With **List or Library** control this is very easy to do, just follow the steps described below.
 
 Bind children to parent
 --------------------------------------------------
