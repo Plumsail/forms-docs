@@ -18,14 +18,8 @@ With **List or Library** control this is very easy to do, just follow the steps 
 
 Bind children to parent
 --------------------------------------------------
-First, create Lists that you want to use as Parent List and Children List. You can use Lists or Document Libraries for this.
-
-.. image:: ../images/how-to/child-parent-form/lists.png
-   :alt: Parent and Children Lists
-
-|
-
-In the Children List/Library create a Lookup column and select *Get information from:* Parent List. You can choose any field to display such Title or ID.
+| First, create Lists that you want to use as Parent List and Children List. You can use Lists or Document Libraries for this.
+| In the Children List/Library create a Lookup column and select *Get information from:* Parent List. You can choose any field to display such as Title or ID.
 
 .. image:: ../images/how-to/child-parent-form/lookup.png
    :alt: Parent and Children Lists
@@ -53,9 +47,13 @@ This will ensure that when you open Parent Edit or Display Form, you will only s
 Connecting Child to Parent happens automatically, in Edit and Display forms it happens straight away, but in New Form, 
 you must first save Parent and then added items will be tied to Parent. All this happens automatically without any additional configuration.
 
-Uploaded documents also get connected to Parent via Lookup, so this functionality is the same for both Lists and Libraries.
-
 .. image:: ../images/how-to/child-parent-form/result.png
    :alt: Parent Form with Children
 
 |
+
+You can upload multiple documents at once - either drag and drop them or select multiple on your machine.
+Uploaded documents also get connected to Parent via Lookup, so this functionality is the same for both Lists and Libraries.
+
+.. image:: ../images/how-to/child-parent-form/docs.png
+   :alt: Parent Form with Uploaded Documents

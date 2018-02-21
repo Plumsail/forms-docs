@@ -32,24 +32,6 @@ Table of contents
             general/version-history
 
       .. toctree::
-            :caption: How-to
-            :maxdepth: 1
-
-            how-to/email
-            how-to/item
-            how-to/file
-            how-to/conditional-fields
-            how-to/conditional-containers
-            how-to/data-table-flow
-            how-to/data-table-convert-html
-            how-to/data-table-to-sp
-            how-to/redirect-sp-save
-            how-to/sql
-            how-to/child-parent-form
-
-.. container:: pl-right-column
-
-      .. toctree::
             :caption: Designer
             :maxdepth: 1
 
@@ -68,3 +50,15 @@ Table of contents
             javascript/controls
             javascript/fields
             javascript/fields-sp
+      
+
+.. container:: pl-right-column
+      
+      .. toctree::
+            :caption: How-to
+            :maxdepth: 2
+
+            how-to/simple-cases-flow
+            how-to/dynamic-forms-js
+            how-to/data-table-section
+            how-to/list-or-library-section
