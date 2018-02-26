@@ -64,7 +64,7 @@ You can also filter List or Library dynamically. For example, you have Search fi
         }
 
         //filter List or Library with new value when Search field changes
-        fd.field('Search').$on('change', function(value) {
+        fd.field('Search').$on('change', function() {
             filterDT();
         });
 
@@ -152,22 +152,24 @@ If you have Min and Max fields on your form, this can be easily done with the fo
         }
 
         //filter List or Library with new value when Min field changes
-        fd.field('Min').$on('change', function(value) {
+        fd.field('Min').$on('change', function() {
             filterDT();
         });
 
         //filter List or Library with new value when Max field changes
-        fd.field('Max').$on('change', function(value) {
+        fd.field('Max').$on('change', function() {
             filterDT();
         });
 
         function filterDT(){
-             var filter = "<And>"
-            //lesser or equal than Max value
-            filter += "<Leq><FieldRef Name='Value'/><Value Type='Integer'>" + fd.field('Max').value + "</Value></Leq>";
+            var filter = "<And>"
+
             //greater or equal than Min value
             filter += "<Geq><FieldRef Name='Value'/><Value Type='Integer'>" + fd.field('Min').value + "</Value></Geq>";
+            //lesser or equal than Max value
+            filter += "<Leq><FieldRef Name='Value'/><Value Type='Integer'>" + fd.field('Max').value + "</Value></Leq>";
             filter += "</And>"
+
             //apply filtering
             dt.filter = filter;
         }
@@ -192,12 +194,12 @@ You can do it with the following code:
         }
 
         //filter List or Library with new value when From field changes
-        fd.field('From').$on('change', function(value) {
+        fd.field('From').$on('change', function() {
             filterDT();
         });
 
         //filter List or Library with new value when To field changes
-        fd.field('To').$on('change', function(value) {
+        fd.field('To').$on('change', function() {
             filterDT();
         });
 
@@ -208,12 +210,12 @@ You can do it with the following code:
             var toDate = fd.field('To').value.toISOString();
             var fromDate = fd.field('From').value.toISOString();
 
-            //strictly lesser than To value
-            filter += "<Lt><FieldRef Name='Created'/><Value Type='DateTime'>" + toDate + "</Value></Lt>";
             //strictly greater than From value
             filter += "<Gt><FieldRef Name='Created'/><Value Type='DateTime'>" + fromDate + "</Value></Gt>";
+            //strictly lesser than To value
+            filter += "<Lt><FieldRef Name='Created'/><Value Type='DateTime'>" + toDate + "</Value></Lt>";
             filter += "</And>"
-            
+
             //apply filtering
             dt.filter = filter;
         }
