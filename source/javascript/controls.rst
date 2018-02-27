@@ -485,9 +485,11 @@ Events
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#fields-columns" target="_blank">Kendo UI Grid columns</a>
 
+.. _javascript-listorlibrary:
+
 List or Library
 --------------------------------------------------
-Properties, methods and events of the List or Library control.
+Properties and events of the List or Library control.
 
 Properties
 **************************************************

@@ -186,9 +186,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
     *   -   **spBeforeRender()**
         -   Occurs before mounting the vue-component to DOM.
 
-            **vue** passed as an argument to the function is a Vue instance of the form. 
-            
-            It is also available from fd variable this way: *fd._vue*
+            **сtx** passed as an argument to the function is a SharePoint form context. 
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
@@ -198,9 +196,9 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
         - .. code-block:: javascript
 
-            fd.spBeforeRender(function(vue) {
-                console.log('beforeRender');
-                console.log(vue);
+            fd.spBeforeRender(function(ctx) {
+                console.log('spBeforeRender');
+                console.log(ctx);
             });
     
     *   -   **rendered()**

@@ -16,6 +16,8 @@ Users can go into subfolders of Root Folder, but they cannot go higher than Root
 This can be useful when you want to separate items by folders or when working with Document sets, for example.
 Root Folder can also be used in conjuction with both CAML and Lookup filtering.
 
+Read more about properties and events in :ref:`javascript-listorlibrary` JavaScript documentation.
+
 *Important note!* You cannot create new folders with List or Library control, it only uses existing folders. If you need to create New Folder, use MS Flow instead.
 
 Set Root Folder
@@ -30,7 +32,7 @@ and only want to display contents of the folder with the name matching current i
 
 .. code-block:: javascript
 
-    fd.spBeforeRender(function() {
+    fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
         if (dt.widget) {
             setRootFolder();
@@ -62,6 +64,7 @@ Now, add List or Library control to the Form and the following code to the JavaS
 
 .. code-block:: javascript
 
+    //use spBeforeRender event to get access to the SharePoint form context
     fd.spBeforeRender(function(ctx) {
         var dt = fd.control('SPDataTable0');
         if (dt.widget) {
@@ -89,7 +92,7 @@ With this code we can make Root Folder automatically change when Category field 
 
 .. code-block:: javascript
 
-    fd.spBeforeRender(function(ctx) {
+    fd.spRendered(function(ctx) {
         var dt = fd.control('SPDataTable0');
 
         //set root folder when the form loads

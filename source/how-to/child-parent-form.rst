@@ -1,5 +1,5 @@
-Create and bind Child elements on Modern SharePoint Forms
-============================================================
+Create and bind associated items or documents on Modern SharePoint Forms
+=========================================================================
 
 .. contents:: Contents:
  :local:

@@ -21,7 +21,9 @@ What you need to know, is that CAML filtering is applied when you attach Childre
 but you can configure it to anything you like. If you already have filtering by Lookup applied, 
 you'll need to modify the query instead of replacing it, otherwise the filtering will be lost.
 
-I will provide several examples of filtering which you can copy or modify according to your needs.
+Read more about properties and events in :ref:`javascript-listorlibrary` JavaScript documentation.
+
+In this article you will find several examples of filtering which you can copy or modify according to your needs.
 
 Filter by one field
 --------------------------------------------------
@@ -31,7 +33,7 @@ This can be done with the following code when List or Library control loads:
 
 .. code-block:: javascript
 
-    fd.spBeforeRender(function() {
+    fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
         if (dt.widget) {
             filterDT();
@@ -53,7 +55,7 @@ You can also filter List or Library dynamically. For example, you have Search fi
 
 .. code-block:: javascript
 
-    fd.spBeforeRender(function() {
+    fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
         if (dt.widget) {
             filterDT();
@@ -69,7 +71,8 @@ You can also filter List or Library dynamically. For example, you have Search fi
         });
 
         function filterDT(){
-            dt.filter = "<Contains><FieldRef Name='Title'/><Value Type='Text'>" + fd.field('Search').value + "</Value></Contains>";
+            dt.filter = "<Contains><FieldRef Name='Title'/><Value Type='Text'>" 
+                + fd.field('Search').value + "</Value></Contains>";
         }
     });
 
@@ -80,7 +83,7 @@ Filtering by two fields is also easy, you just need to include them both in the 
 
 .. code-block:: javascript
 
-    fd.spBeforeRender(function() {
+    fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
         if (dt.widget) {
             filterDT();
@@ -111,7 +114,7 @@ It's easy, you just need to retrieve the old value first:
 
 .. code-block:: javascript
 
-    fd.spBeforeRender(function() {
+    fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
         if (dt.widget) {
             filterDT();
@@ -141,7 +144,7 @@ If you have Min and Max fields on your form, this can be easily done with the fo
 
 .. code-block:: javascript
 
-    fd.spBeforeRender(function() {
+    fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
         if (dt.widget) {
             filterDT();
@@ -183,7 +186,7 @@ You can do it with the following code:
 
 .. code-block:: javascript
 
-    fd.spBeforeRender(function() {
+    fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
         if (dt.widget) {
             filterDT();
