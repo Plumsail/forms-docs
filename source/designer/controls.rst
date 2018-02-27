@@ -402,7 +402,7 @@ SETTINGS
     *   - DataSource
         - This setting allows you to select which List or Library will be used as Source, which View will be shown on the form.
           
-          It also includes **Lookup Field** - if Source List has Lookup list to form's list, items will be automatically filtered by it. 
+          It also includes **Lookup Field** - if Source List has a lookup field to Parent list, items will automatically be filtered by it. 
           
           Newly created items will get automatically assigned with the current item ID in this Lookup. New Form needs to be saved first.
 
