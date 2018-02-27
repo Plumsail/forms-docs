@@ -9,7 +9,7 @@ Sign in to Plumsail Account
 --------------------------------------------------
 
 Plumsail Account
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Plumsail Forms product uses our new service called Plumsail Account. Using Plumsail Account you can manage your licenses - for both SharePoint and Plumsail Forms, 
 and copy widgets of your forms to publish them to any page on the web, not limited to SharePoint sites.
@@ -34,7 +34,7 @@ You can log in by going to the |location_link2| and entering your login and pass
 
 
 Download designer and start designing forms
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You can download Forms Designer from your Plumsail Account in Forms Section on the Intro tab. 
 
 When you open the Designer, select Plumsail instead of SharePoint unless you are specifically designing a form for SharePoint list or library.
@@ -45,7 +45,7 @@ Plumsail Forms for SharePoint
 --------------------------------------------------
 
 Bind your SharePoint tenant to your Account
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In order to bind your SharePoint tenant to Plumsail account, you need to have permissions of tenant administrator. 
 This is only necessary for installation and we are not storing or using your credentials in any way, only to get permission for installation.
 
@@ -78,7 +78,7 @@ We do not store your information, it's only necessary for the installation.
 Once you've added SharePoint license to your domain, you will be able to use Plumsail Forms for your lists and document libraries after completing the next step.
 
 Install app package to your tenant
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Last thing you need to do, to include Plumsail Forms on your SharePoint sites, 
 is to install Form Web Part package to your app catalog. You can download the package from the Intro section of your Plumsail Account area. 
 
@@ -93,7 +93,7 @@ To do it properly, follow `instruction from Microsoft <https://support.office.co
 Once the app is added and distributed to all the sites and SharePoint domain added to Licenses section in Plumsail account, you can use Designer to design modern forms for any list or library in your domain.
 
 Download designer and start designing forms for SharePoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Once you've added your SharePoint license to your Plumsail Account and distributed app across your sites using app catalog, 
 it is time to download Forms Designer and start using it. You can download Forms Designer from your Plumsail Account in Forms Section on the Intro tab.
 

@@ -42,6 +42,7 @@ and click Toggle device toolbar icon next to Inspector which will allow you to c
    :alt: Toggle Device Toolbar
 
 |
+
 Similar functionality is present in almost all modern browsers.
 
 Export and Import
@@ -50,6 +51,7 @@ You can export currently selected form by pressing Export button. It will allow 
 
 .. image:: /images/designer/ribbon-actions/ExportImport.png
    :alt: Export and Import
+   
 |
 
 This can be used in variety of situations, especially if you need to design a number of similar forms. 

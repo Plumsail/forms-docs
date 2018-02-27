@@ -507,6 +507,7 @@ Properties
             Empty by default, contains filter value if you choose Lookup Field in Data Source Editor.
 
             Can also be used to apply filtering. Changes are applied dynamically to the control.
+            Read more and see examples in :doc:`CAML Filter article </how-to/caml-filter>`.
         
         - .. code-block:: javascript
 
@@ -528,6 +529,9 @@ Properties
 
     *   -   **baseRootFolder**
         -   Property that specifies starting folder for the control. User cannot go higher than this folder. 
+
+            Read more and see examples in :doc:`Root Folder article </how-to/root-folder>`.
+
             
         - .. code-block:: javascript
 
@@ -538,7 +542,9 @@ Properties
                 fd.control('SPDataTable0').baseRootFolder = "Folder1"
 
     *   -   **rootFolder**
-        -   Property that specifies current folder for the control. 
+        -   Property that specifies current folder for the control. Can be changed dynamically.
+
+            Read more and see examples in :doc:`Root Folder article </how-to/root-folder>`.
             
         - .. code-block:: javascript
 
