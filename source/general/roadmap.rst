@@ -1,13 +1,17 @@
 Roadmap
-==================================================
+=======================================================
 
 Features in development
---------------------------------------------------
+-------------------------------------------------------
+
+Themes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Theme support for public web forms.
 
 Form Routing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Add possibility to define rules for automatic Form redirection - different forms for different users or situations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Custom routing between form sets for SharePoint forms.
 
 Export SharePoint forms to PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Get PDF version of your SharePoint forms.
