@@ -18,9 +18,9 @@ or automatically redirect users from certain SharePoint groups to a specific For
 .. image:: ../images/designer/form-sets/1-UI.png
    :alt: Form Sets UI
 
-You can select currently active Form Set in an upper right corner, in the drop down.
+You can select currently active Form Set in an upper right corner, in the drop-down.
 
-Default Form Set is what all users see if they are not redirected to another Form Set staight way.
+Default Form Set is what all users see if they are not redirected to another Form Set straight way.
 
 You can add new Form Set by clicking **+** sign next to the currently selected Form Set. Clicking Pen Icon allows you to edit properties of the currently selected Form Set.
 Trash bin icon allows you to delete the Form Set.
@@ -34,7 +34,7 @@ When you create a Form Set, straight away, you can configure automatic routing f
 .. image:: ../images/designer/form-sets/2-FormSetsConfig.png
    :alt: Form Sets Configuration
 
-* Name - name of the Form Set, can be anything you want, just makes it easier to find among all the Form Sets.
+* Name - the name of the Form Set, can be anything you want, just makes it easier to find among all the Form Sets.
 * Order - determines the order in which to open Form Sets if conditions are met. The lower the Order value, the higher the priority for Form Set to open.
 * Open forms when a user belongs... - select all groups user must belong to in order to be redirected. **Note!** Must select something in order for redirection to work.
-* Excluding the selected groups - will not redirect the user that belongs the previously picked groups, if the user also belongs to one of the groups selected here.
+* Excluding the selected groups - will not redirect the user that belongs to the previously picked groups, if the user also belongs to one of the groups selected here.
