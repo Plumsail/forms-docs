@@ -36,6 +36,7 @@ Table of contents
             :maxdepth: 1
 
             designer/ribbonActions
+            designer/form-sets
             designer/containers
             designer/controls
             designer/fields

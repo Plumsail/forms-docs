@@ -1,6 +1,12 @@
 Version history
 ==================================================
 
+v1.0.7
+--------------------------------------------------
+Added automatic routing to SharePoint Form Sets based on the user's groups.
+
+Added theme support for SharePoint Forms.
+
 v1.0.5
 --------------------------------------------------
 Added :ref:`designer-listorlibrary` control - allows editing items or documents in related SharePoint Lists or Document Libraries
