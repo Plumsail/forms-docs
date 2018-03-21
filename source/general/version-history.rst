@@ -3,7 +3,7 @@ Version history
 
 v1.0.7
 --------------------------------------------------
-Added automatic routing to SharePoint Form Sets based on the user's groups.
+Added automatic routing to SharePoint :doc:`Form Sets </designer/form-sets>` based on the user's groups.
 
 Added theme support for SharePoint Forms.
 
