@@ -37,6 +37,7 @@ Table of contents
 
             designer/ribbonActions
             designer/form-sets
+            designer/themes
             designer/containers
             designer/controls
             designer/fields
