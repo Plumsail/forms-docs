@@ -8,3 +8,4 @@ Simple Cases with MS Flow
     ./item
     ./file
     ./sql
+    ./excel-single-row
