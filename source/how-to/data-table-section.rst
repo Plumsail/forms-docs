@@ -7,3 +7,4 @@ Data Tables and MS Flow
     ./data-table-flow
     ./data-table-convert-html
     ./data-table-to-sp
+    ./excel-datatable
