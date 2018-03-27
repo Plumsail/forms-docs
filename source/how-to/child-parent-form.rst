@@ -52,7 +52,7 @@ you must first save Parent and then added items will be tied to Parent. All this
 
 |
 
-You can upload multiple documents at once - either drag and drop them or select multiple on your machine.
+You can upload multiple documents at once - simply select multiple files on your machine.
 Uploaded documents also get connected to Parent via Lookup, so this functionality is the same for both Lists and Libraries.
 
 .. image:: ../images/how-to/child-parent-form/docs.png
