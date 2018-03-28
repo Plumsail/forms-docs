@@ -38,3 +38,70 @@ When you create a Form Set, straight away, you can configure automatic routing f
 * Order - determines the order in which to open Form Sets if conditions are met. The lower the Order value, the higher the priority for Form Set to open.
 * Open forms when a user belongs... - select all groups user must belong to in order to be redirected. **Note!** Must select something in order for redirection to work.
 * Excluding the selected groups - will not redirect the user that belongs to the previously picked groups, if the user also belongs to one of the groups selected here.
+
+.. _designer-customrouting:
+
+Custom routing based on conditions
+-------------------------------------------------------------
+You are not limited to checking current user's group membership, using custom routing you can use any conditions to redirect users to specific form.
+
+Custom routing always takes priority over group routing. So, if conditions are satisfied, users will get redirected to the custom form all the time, 
+even if they belong to certain groups.
+
+To add custom routing conditions, click *Routing* button:
+
+.. image:: ../images/designer/form-sets/3-Routing.png
+   :alt: Form Routing button
+
+Custom routing uses JavaScript for conditions and redirection, as well as SharePoint Patterns & Practices (PnP) |JavaScript Core Library|.
+
+This library contains a fluent API for working with the full SharePoint REST API, allowing you to easily get any necessary information from SharePoint.
+
+.. |JavaScript Core Library| raw:: html
+
+   <a href="https://sharepoint.github.io/PnP-JS-Core/" target="_blank">JavaScript Core Library</a>
+
+The code in custom routing must return either server-relative or absolute URL, or ID of a form set. It can also Promise that is resolved with URL or form set ID. 
+The URL or the ID will be used to redirect user either to specific Form Set or address.
+
+If the code returns nothing or throws an error, default routing is applied.
+
+Examples
+**************
+Redirect to a certain form set if 'AssignedTo' field equals the current user:
+
+.. code-block:: javascript
+
+    //check if Item already exists, will return true for Edit and Display Form
+    if (item) {
+        //first, get the current user
+        var user;
+        // return promise
+        return web.currentUser.get()
+            .then(function(u) {
+                user = u;
+                return item.get();
+            })
+            .then(function(item) {
+                //then compare User ID to ID of the user in the AssignedTo field
+                if (user.Id == item.AssignedToId) {
+                    return '31fb1f41-63f3-48ff-a1c2-18b4e7f7c3e7';
+                }
+            });
+    }
+
+Redirect to a certain form set if 'Status' field equals 'Solved':
+
+.. code-block:: javascript
+
+    //check if Item already exists, will return true for Edit and Display Form
+    if (item) {
+        // return promise
+        return item.get()
+            .then(function (item) {
+                //if Item's Status is Solved, redirect
+                if (item.Status == 'Solved') {
+                    return '31fb1f41-63f3-48ff-a1c2-18b4e7f7c3e7'
+                }
+            });
+    }
