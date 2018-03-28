@@ -61,7 +61,7 @@ This library contains a fluent API for working with the full SharePoint REST API
 
    <a href="https://sharepoint.github.io/PnP-JS-Core/" target="_blank">JavaScript Core Library</a>
 
-The code in custom routing must return either server-relative or absolute URL, or ID of a form set. It can also Promise that is resolved with URL or form set ID. 
+The code in custom routing must return either server-relative or absolute URL, or ID of a form set. It can also return Promise that is resolved with URL or form set ID. 
 The URL or the ID will be used to redirect user either to specific Form Set or address.
 
 If the code returns nothing or throws an error, default routing is applied.
@@ -76,7 +76,7 @@ Redirect to a certain form set if 'AssignedTo' field equals the current user:
     if (item) {
         //first, get the current user
         var user;
-        // return promise
+        // return Promise
         return web.currentUser.get()
             .then(function(u) {
                 user = u;
@@ -96,7 +96,7 @@ Redirect to a certain form set if 'Status' field equals 'Solved':
 
     //check if Item already exists, will return true for Edit and Display Form
     if (item) {
-        // return promise
+        // return Promise
         return item.get()
             .then(function (item) {
                 //if Item's Status is Solved, redirect
