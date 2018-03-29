@@ -12,20 +12,19 @@ Form Sets allow you to design additional forms for SharePoint List or Library.
 By default, each List only has three forms - New, Edit and Display. 
 Each additional Form Set allows you to add three more forms - also New, Edit and Display, but a Form Set doesn't have to contain all three forms, it can be just one or two.
 
-You can have as many Form Sets as necessary. You can also either manually redirect users to a Form Set with JavaScript 
-or automatically redirect users from certain SharePoint groups to a specific Form Set.
+- :ref:`designer-grouprouting` can be used to redirect users who belong to selected groups to a specific Form Set.
+- :ref:`designer-customrouting` can be used to apply more complex logic prior to redirection, for example, check item's field values or user's properties.
 
 .. image:: ../images/designer/form-sets/1-UI.png
    :alt: Form Sets UI
 
 You can select currently active Form Set in an upper right corner, in the drop-down.
+Default Form Set is what all users see if they are not redirected.
 
-Default Form Set is what all users see if they are not redirected to another Form Set straight way.
+Add new Form Set by clicking **+** sign next to the currently selected Form Set. Clicking Pen Icon allows you to edit properties of the currently selected Form Set.
+Trash bin icon allows you to delete a Form Set. After creating a Form Set, do not forget to save every form you plan to use or it might be missing.
 
-You can add new Form Set by clicking **+** sign next to the currently selected Form Set. Clicking Pen Icon allows you to edit properties of the currently selected Form Set.
-Trash bin icon allows you to delete the Form Set.
-
-After creating a Form Set, do not forget to save every form you plan to use or it might be missing.
+.. _designer-grouprouting:
 
 Automatic routing based on SharePoint group membership
 -------------------------------------------------------------
@@ -44,13 +43,11 @@ When you create a Form Set, straight away, you can configure automatic routing f
 Custom routing
 -------------------------------------------------------------
 You are not limited to checking current user's group membership, using custom routing you can use any logic to redirect users to specific form.
-
 With custom routing, you can check current item's field values, user's properties, such as title or department, 
 or any other information from SharePoint. Based on this information, you can redirect users to different Form Sets or URLs.
 
-Custom routing always takes priority over group routing. So, if your custom code returns Id of a form set, 
+Custom routing always takes priority over group routing. So, if your custom code returns ID of a Form Set, 
 users will get redirected to the corresponding URL or Form Set all the time, even if they do not belong to the selected groups for this Form Set.
-
 Custom routing is configured for all Forms and Form Sets of the current Content Type. Each Content Type has its own custom routing configuration.
 
 To add custom routing conditions, click *Routing* button:
@@ -78,7 +75,8 @@ Some predefined variables accessible from your code:
     -   **list** - current List from pnp
     -   **item** - current Item from pnp or null for a New form
 
-The code in custom routing must return either server-relative or absolute URL, or ID of a form set. It can also return Promise that is resolved with URL or form set ID. 
+The code in custom routing must return either server-relative or absolute URL, or ID of a Form Set. 
+It can also return Promise that is resolved with URL or Form Set ID. 
 The URL or the ID will be used to redirect user either to specific Form Set or address.
 
 Form Set ID can be found in the lower left corner of the designer:
@@ -90,7 +88,7 @@ If the code returns nothing or throws an error, default routing is applied.
 
 Examples
 **************
-Redirect to a certain form set if 'AssignedTo' field equals the current user:
+Redirect to a certain Form Set if 'AssignedTo' field equals the current user:
 
 .. code-block:: javascript
 
@@ -113,7 +111,7 @@ Redirect to a certain form set if 'AssignedTo' field equals the current user:
             });
     }
 
-Redirect to a certain form set if 'Status' field equals 'Solved':
+Redirect to a certain Form Set if 'Status' field equals 'Solved':
 
 .. code-block:: javascript
 
