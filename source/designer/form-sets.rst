@@ -51,6 +51,8 @@ or any other information from SharePoint. Based on this information, you can red
 Custom routing always takes priority over group routing. So, if your custom code returns Id of a form set, 
 users will get redirected to the corresponding URL or Form Set all the time, even if they do not belong to the selected groups for this Form Set.
 
+Custom routing is configured for all Forms and Form Sets of the current Content Type. Each Content Type has its own custom routing configuration.
+
 To add custom routing conditions, click *Routing* button:
 
 .. image:: ../images/designer/form-sets/3-Routing.png
@@ -59,8 +61,6 @@ To add custom routing conditions, click *Routing* button:
 Custom routing is based on JavaScript with SharePoint Patterns & Practices (PnP) |JavaScript Core Library| and 
 several predefined variables describing the current context. PnP library contains a fluent API for working with the full SharePoint REST API, 
 allowing you to easily get any necessary information from SharePoint.
-
-Custom routing is configured for all Forms and Form Sets of the current Content Type. Each Content Type has its own custom routing configuration.
 
 .. |JavaScript Core Library| raw:: html
 
