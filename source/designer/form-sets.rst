@@ -45,20 +45,22 @@ Custom routing
 -------------------------------------------------------------
 You are not limited to checking current user's group membership, using custom routing you can use any logic to redirect users to specific form.
 
-Witch custom routing, you can check current item's fields, for example ID or Author fields, you can also check user's attributes, such as role or department,
-or you can get any other available information from SharePoint. Based on this information, you can redirect user to a different Form Set or URL.
+With custom routing, you can check current item's field values, user's properties, such as title or department, 
+or any other information from SharePoint. Based on this information, you can redirect users to different Form Sets or URLs.
 
 Custom routing always takes priority over group routing. So, if your custom code returns Id of a form set, 
-users will get redirected to the corresponding form all the time, even if they do belong to certain groups.
+users will get redirected to the corresponding URL or Form Set all the time, even if they do not belong to the selected groups for this Form Set.
 
 To add custom routing conditions, click *Routing* button:
 
 .. image:: ../images/designer/form-sets/3-Routing.png
    :alt: Form Routing button
 
-Custom routing uses JavaScript for conditions and redirection, as well as SharePoint Patterns & Practices (PnP) |JavaScript Core Library|.
+Custom routing is based on JavaScript with SharePoint Patterns & Practices (PnP) |JavaScript Core Library| and 
+several predefined variables describing the current context. PnP library contains a fluent API for working with the full SharePoint REST API, 
+allowing you to easily get any necessary information from SharePoint.
 
-This library contains a fluent API for working with the full SharePoint REST API, allowing you to easily get any necessary information from SharePoint.
+Custom routing is configured for all Forms and Form Sets of the current Content Type. Each Content Type has its own custom routing configuration.
 
 .. |JavaScript Core Library| raw:: html
 
@@ -67,9 +69,10 @@ This library contains a fluent API for working with the full SharePoint REST API
 Some predefined variables accessible from your code:
 
     -   **webUrl** - URL of the current site
+    -   **formUrl** - URL of the current form
     -   **listId** - ID of the current list
     -   **itemId** - ID of the current item
-    
+    -   **contentType** - name of the Content Type
     -   **pnp** - pnp JS library instance
     -   **web** - current Web from pnp 
     -   **list** - current List from pnp
@@ -84,8 +87,6 @@ Form Set ID can be found in the lower left corner of the designer:
    :alt: Form Set ID
 
 If the code returns nothing or throws an error, default routing is applied.
-
-**Important!** Custom routing is configured for all Forms and Form Sets of the current Content Type. Each Content Type has its own custom routing configuration.
 
 Examples
 **************
@@ -106,6 +107,7 @@ Redirect to a certain form set if 'AssignedTo' field equals the current user:
             .then(function(item) {
                 //then compare User ID to ID of the user in the AssignedTo field
                 if (user.Id == item.AssignedToId) {
+                    //return ID of a Form Set
                     return '31fb1f41-63f3-48ff-a1c2-18b4e7f7c3e7';
                 }
             });
@@ -122,6 +124,7 @@ Redirect to a certain form set if 'Status' field equals 'Solved':
             .then(function (item) {
                 //if Item's Status is Solved, redirect
                 if (item.Status == 'Solved') {
+                    //return ID of a Form Set
                     return '31fb1f41-63f3-48ff-a1c2-18b4e7f7c3e7'
                 }
             });
