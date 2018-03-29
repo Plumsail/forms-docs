@@ -15,7 +15,9 @@ Each additional Form Set allows you to add three more forms - also New, Edit and
 - :ref:`designer-grouprouting` can be used to redirect users who belong to selected groups to a specific Form Set.
 - :ref:`designer-customrouting` can be used to apply more complex logic prior to redirection, for example, check item's field values or user's properties.
 
-.. image:: ../images/designer/form-sets/1-UI.png
+|pic1|
+
+.. |pic1| image:: ../images/designer/form-sets/1-UI.png
    :alt: Form Sets UI
 
 You can select currently active Form Set in an upper right corner, in the drop-down.
@@ -30,7 +32,9 @@ Automatic routing based on SharePoint group membership
 -------------------------------------------------------------
 When you create a Form Set, straight away, you can configure automatic routing for the members of certain groups:
 
-.. image:: ../images/designer/form-sets/2-FormSetsConfig.png
+|pic2|
+
+.. |pic2| image:: ../images/designer/form-sets/2-FormSetsConfig.png
    :alt: Form Sets Configuration
 
 * Name - the name of the Form Set, can be anything you want, just makes it easier to find among all the Form Sets.
@@ -52,7 +56,9 @@ Custom routing is configured for all Forms and Form Sets of the current Content 
 
 To add custom routing conditions, click *Routing* button:
 
-.. image:: ../images/designer/form-sets/3-Routing.png
+|pic3|
+
+.. |pic3| image:: ../images/designer/form-sets/3-Routing.png
    :alt: Form Routing button
 
 Custom routing is based on JavaScript with SharePoint Patterns & Practices (PnP) |JavaScript Core Library| and 
@@ -81,7 +87,9 @@ The URL or the ID will be used to redirect user either to specific Form Set or a
 
 Form Set ID can be found in the lower left corner of the designer:
 
-.. image:: ../images/designer/form-sets/4-FormSetID.png
+|pic4|
+
+.. |pic4| image:: ../images/designer/form-sets/4-FormSetID.png
    :alt: Form Set ID
 
 If the code returns nothing or throws an error, default routing is applied.
