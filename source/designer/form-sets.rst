@@ -41,12 +41,15 @@ When you create a Form Set, straight away, you can configure automatic routing f
 
 .. _designer-customrouting:
 
-Custom routing based on conditions
+Custom routing
 -------------------------------------------------------------
-You are not limited to checking current user's group membership, using custom routing you can use any conditions to redirect users to specific form.
+You are not limited to checking current user's group membership, using custom routing you can use any logic to redirect users to specific form.
 
-Custom routing always takes priority over group routing. So, if conditions are satisfied, users will get redirected to the custom form all the time, 
-even if they belong to certain groups.
+Witch custom routing, you can check current item's fields, for example ID or Author fields, you can also check user's attributes, such as role or department,
+or you can get any other available information from SharePoint. Based on this information, you can redirect user to a different Form Set or URL.
+
+Custom routing always takes priority over group routing. So, if your custom code returns Id of a form set, 
+users will get redirected to the corresponding form all the time, even if they do belong to certain groups.
 
 To add custom routing conditions, click *Routing* button:
 
@@ -61,10 +64,28 @@ This library contains a fluent API for working with the full SharePoint REST API
 
    <a href="https://sharepoint.github.io/PnP-JS-Core/" target="_blank">JavaScript Core Library</a>
 
+Some predefined variables accessible from your code:
+
+    -   **webUrl** - URL of the current site
+    -   **listId** - ID of the current list
+    -   **itemId** - ID of the current item
+    
+    -   **pnp** - pnp JS library instance
+    -   **web** - current Web from pnp 
+    -   **list** - current List from pnp
+    -   **item** - current Item from pnp or null for a New form
+
 The code in custom routing must return either server-relative or absolute URL, or ID of a form set. It can also return Promise that is resolved with URL or form set ID. 
 The URL or the ID will be used to redirect user either to specific Form Set or address.
 
+Form Set ID can be found in the lower left corner of the designer:
+
+.. image:: ../images/designer/form-sets/4-FormSetID.png
+   :alt: Form Set ID
+
 If the code returns nothing or throws an error, default routing is applied.
+
+**Important!** Custom routing is configured for all Forms and Form Sets of the current Content Type. Each Content Type has its own custom routing configuration.
 
 Examples
 **************
