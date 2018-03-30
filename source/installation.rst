@@ -1,4 +1,4 @@
-Installation for Web Forms
+Installation
 ==================================================
 
 .. contents:: Contents:
@@ -7,8 +7,8 @@ Installation for Web Forms
 
 First step - Register a Plumsail Account
 --------------------------------------------------
-Plumsail Forms product uses our new service called Plumsail Account. Using Plumsail Account you can manage your licenses - for both SharePoint and Plumsail Forms, 
-and it also stores all your Public Web Forms. All Public Web Forms created by you are tied to your Plumsail Account, as well as your subscription plan.
+Plumsail Forms product uses our new service called Plumsail Account. Using Plumsail Account you can manage your licenses - for both Modern SharePoint and Public Web Forms, 
+and it also stores all your Public Web Forms. All Public Web Forms created by you are tied to your Plumsail Account.
 
 Plumsail Account is a new service we've recently implemented, so even if you were our client for a long time, you still need to register to get an Account. 
 

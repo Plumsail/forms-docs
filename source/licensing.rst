@@ -1,4 +1,4 @@
-Licensing  (Public Web Forms)
+Public Forms Licensing  
 ==================================================
 
 .. contents:: Contents:

@@ -1,4 +1,4 @@
-Introduction to Modern SharePoint Forms
+Introduction
 ==================================================
 
 .. contents:: Contents:
@@ -7,6 +7,15 @@ Introduction to Modern SharePoint Forms
  
 General information
 --------------------------------------------------
+Plumsail Forms allows you to design beautiful modern responsive forms for SharePoint Modern UI.
+
+Modern UI
+--------------------------------------------------
+
+Fully customizable, yet simple to use
+--------------------------------------------------
+
+
 Modern SharePoint Forms allow you to design beautiful modern responsive forms for SharePoint Online Modern pages.
 
 In order to use Modern SharePoint Forms, you only need **Forms Designer License**, nothing else.
@@ -38,7 +47,7 @@ Publishing forms to SharePoint pages
 
 When saved, SharePoint Form will automatically replace default form for the List or Document Library. 
 
-Differences between Plumsail Forms and classic Forms Designer
+Custom forms for Classic UI
 -------------------------------------------------------------
 
 Modern SharePoint Forms will only work with Modern SharePoint pages.

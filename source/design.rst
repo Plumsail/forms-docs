@@ -1,4 +1,4 @@
-Design and publish Public Web Forms
+Designing and publishing forms
 ====================================
 
 .. contents:: Contents:

@@ -1,4 +1,4 @@
-Licensing (Modern SP Forms)
+SharePoint Forms Licensing
 ==================================================
 
 .. contents:: Contents:

@@ -1,4 +1,4 @@
-Introduction to Public Web Forms
+Introduction
 ==================================================
 
 .. contents:: Contents:
@@ -22,11 +22,11 @@ such as Data Table which allows users to fill out an Excel-like table, or Ink Sk
 We also support Attachments, so your users can even upload files through the form.
 
 More than that, the forms are responsive and scale well for all screen sizes. 
-You can also easily customize phone and tablet layouts to make them even more accessible to users of mobile devices.
+You can also easily customize phone and tablet layouts to make them even more accessible to users on mobile devices.
 Custom containers such as Tabs and Accordions allow you to logically separate form into parts.
 
 Finally, our JavaScript API will allow you to do even the most complex actions and calculations with the form.
-Automatically calculate field values, such as Total value for all products or Due Date, validate field values before submission,
+Automatically calculate field values, such as Total Value or Due Date, validate field values before submission,
 customize, hide or show certain elements on the form depending on your needs and much more.
 
 Plumsail Forms are built using |Bootstrap| and |Vue| and as such are very light, responsive and easy to customize, 
