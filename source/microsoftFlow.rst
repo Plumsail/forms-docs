@@ -1,4 +1,4 @@
-Microsoft Flow
+Handling data in Microsoft Flow
 ==================================================
 
 .. contents:: Contents:
@@ -21,8 +21,7 @@ and practically anything else you can think of.
 
 Additionally, SharePoint forms can also be handled by Microsoft Flow upon submission, allowing you more freedom than regular Workflows ever could.
 
-**You need to have a valid license of Plumsail Forms in order to utilize our MS Flow Connector with your forms. 
-That also applies to Plumsail Forms for SharePoint, if you want to submit data to Flow using Plumsail Forms connector.**
+**The amount of data that can be handled by Plumsail Forms connector depends on your current plan of Plumsail Forms subscription.**
 
 .. _creating-flow:
 

@@ -1,4 +1,4 @@
-Licensing  (Public Web Forms)
+Licensing (Modern SP Forms)
 ==================================================
 
 .. contents:: Contents:

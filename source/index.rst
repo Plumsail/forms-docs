@@ -15,13 +15,10 @@ Table of contents
 
       .. toctree::
             :caption: Getting started
-            :maxdepth: 1
+            :maxdepth: 2
 
-            introduction
-            introductionSP
-            installation
-            licensing
-            microsoftFlow
+            start-public
+            start-sp
 
       .. toctree::
             :caption: General
