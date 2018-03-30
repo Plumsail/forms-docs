@@ -1,5 +1,5 @@
-Modern SharePoint Forms
-===========================
+SharePoint Forms for Modern UI
+===============================
 
 .. toctree::
     :maxdepth: 1
