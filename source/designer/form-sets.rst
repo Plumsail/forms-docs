@@ -85,7 +85,7 @@ The code in custom routing must return either server-relative or absolute URL, o
 It can also return Promise that is resolved with URL or Form Set ID. 
 The URL or the ID will be used to redirect user either to specific Form Set or address.
 
-Form Set ID can be found in the lower left corner of the designer:
+Form Set ID can be found in the lower left corner of the designer, it can be selected and copied:
 
 |pic4|
 
