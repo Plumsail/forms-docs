@@ -7,6 +7,5 @@ Public Web Forms
     ./introduction
     ./installation
     ./design
-    ./publish
     ./microsoftFlow
     ./licensing

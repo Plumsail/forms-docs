@@ -8,58 +8,43 @@ Introduction
 General information
 --------------------------------------------------
 Plumsail Forms allows you to design beautiful modern responsive forms for SharePoint Modern UI.
+These forms will work for SharePoint Lists and Libraries allowing you to replace New, Edit and Display
+forms, to fully customize them, add interactivity to them and much more.
 
 Modern UI
 --------------------------------------------------
+In SharePoint Online, Modern UI was introduced by Microsoft to keep the user experience fresh and
+bring convenience that was missing in the classic UI. For example, Modern UI is faster, it's 
+responsive and works well with mobile devices.
+
+Here's how Modern UI(left) compares to the Classic UI(right):
+
+|pic1| |pic2|
+
+.. |pic1| image:: ./images/startSP/modernUI.png
+   :alt: SharePoint Modern UI
+   :width: 49%
+
+.. |pic2| image:: ./images/startSP/classicUI.png
+   :alt: SharePoint Classic UI
+   :width: 49%
+
+Currently, Modern UI is only supported in SharePoint Online and can be switched to Classic UI at any point. Modern UI does not only affect the visual presentation of SharePoint, it also changes some of SharePoint's functionality, thus it requires a different approach when it comes to customization.
+
+Plumsail Forms are specifically designed to work with Modern UI. All forms are build with Modern UI in mind, they are fast, responsive and have few limitations to their complexity. But you can use Plumsail Forms with Classic UI as well, for example, for Lists which are not yet supported by Modern UI, such as Tasks List - but all the forms will open in Modern UI, no matter what settings you have currently set.
+
+**Note!** If you are interested in customizing SharePoint Forms for Classic UI - check out our Forms Designer product. It has similar functionality and allows you to design complex custom forms for Classic UI in just a few minutes. It also works well for SharePoint 2013/2016. We still fully support Forms Designer, even after release of Plumsail Forms, it will remain essential to us and many of our clients for a long time to come.
 
 Fully customizable, yet simple to use
 --------------------------------------------------
+Plumsail Forms offers a large range of customization when it comes to designing forms. First of all,
+designing a form is extremely easy. Fields and controls can be just dragged and dropped inside the form. Then, you can use containers such as Tabs and Accordions to separate different parts. 
 
+Finally, all elements inside the form are placed on a Bootstrap Grid which allows you to easily position elements in relation to each other and ensure they scale well with all screen sizes.
+In regards to scaling, Plumsail Forms also offers an easy way to customize forms for tablets and phones, ensuring that mobile users get the best experience.
 
-Modern SharePoint Forms allow you to design beautiful modern responsive forms for SharePoint Online Modern pages.
+SharePoint themes are supported and Forms' elements will adjust their colors according the current theme. Further customization is available with custom CSS and JavaScript. With our powerful JavaScript API you'll be able to check field values on the form, dynamically adjust forms' content, validate submissions and much more.
 
-In order to use Modern SharePoint Forms, you only need **Forms Designer License**, nothing else.
+Various custom controls are available for use on the form, such as Ink Sketch that allows users to leave signatures or drawings, for example, mark details on top of an image. Another interesting control is List or Library that allows users to see contents of another SharePoint List or Library, filter its contents and add items or upload documents to it. That is very useful for adding Children elements and binding them to parent element, the process that happens automatically with correct configuration, no code required.
 
-Additionally, when user submits the form in SharePoint, you can also use it with |Flow| which can then be used for variety of purposes -
-create new items in another list, send an email, save files to document library and much more.
-
-But in order to use Modern SharePoint Forms in conjuction with Microsoft Flow you will also need to purchase  **Plumsail License** for Forms.
-
-You will also get access to :doc:`Plumsail Forms </introduction>` which will allow you to publish custom forms(not from SharePoint) 
-to any page on the web and use submitted data with Microsoft Flow. Read more about using Microsoft Flow :doc:`here </microsoftFlow>`.
-
-Responsive UI
---------------------------------------------------
-Just like Plumsail Forms, Modern SharePoint forms are built using |Bootstrap| and |Vue|.
-
-Finally, you are able to design modern, responsive and fully customizable forms for SharePoint in just a few clicks.
-
-.. |Bootstrap| raw:: html
-
-   <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>
-
-.. |Vue| raw:: html
-
-   <a href="https://vuejs.org/" target="_blank">Vue.js 2</a>
-
-Publishing forms to SharePoint pages
---------------------------------------------------
-
-When saved, SharePoint Form will automatically replace default form for the List or Document Library. 
-
-Custom forms for Classic UI
--------------------------------------------------------------
-
-Modern SharePoint Forms will only work with Modern SharePoint pages.
-
-There are many other differences between classic Forms Designer and Modern SharePoint Forms, not limited to use of Bootstrap or Responsive layout. 
-
-First of all, Modern Forms use |Vue| which you can utilize to your advantage with custom scripts. JQuery is still available too.
-
-How the fields are handled has also changed, you are no longer limited to the default SharePoint fields from the list, but you can also add your own. 
-
-With Modern SharePoint Forms after saving an item, you also can send data using |Flow|, which you then can use to populate other lists or do anything else with it, it's up to you.
-
-.. |Flow| raw:: html
-
-   <a href="https://flow.microsoft.com/en-us/" target="_blank">Microsoft Flow</a>
+Last, but not least, you get the ability to create more than one form for a list. In fact, you can create different forms for users from different groups and automatically redirect users to the correct form. Noth only that, but you can write custom rules for redirection, based on item's values and/or user's properties, and make sure that you provide the appropriate form in all circumstances.

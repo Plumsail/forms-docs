@@ -9,9 +9,6 @@ Open the designer
 --------------------------------------------------
 First of all, you need to make sure that you've registered a Plumsail Account, downloaded and installed the designer application to your PC.
 
-When you launch the application, it sometimes will offer you to update to the latest version, if a new update was released.
-We do recommend you to update the app as often as possible in order to ensure that you are getting the most stable version and all the latest features.
-
 The app launches with the following window:
 
 |pic1|
