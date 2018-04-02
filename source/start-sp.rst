@@ -4,7 +4,7 @@ SharePoint Forms for Modern UI
 .. toctree::
     :maxdepth: 1
 
-    ./introductionSP
-    ./installationSP
-    ./designSP
-    ./licensingSP
+    ./introduction-sp
+    ./installation-sp
+    ./design-sp
+    ./licensing-sp

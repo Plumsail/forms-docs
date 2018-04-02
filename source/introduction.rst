@@ -53,13 +53,6 @@ For starters, you can Send an email with Outlook, or create Items in SharePoint 
 add records to SQL server, or Excel file, or Google Sheets. Much more is possible and we'll continue updating our documentation to include more 
 interesting cases which you would be able to incorporate in your Flows.
 
-Licensing
---------------------------------------------------
-Public Web Forms are a subscription based service and we offer a multitude of plans depending on your needs which you can find more about in this section.
-
-We are also offering a limited free plan, to test out our product, which is severely limited in amount of submissions it can handle, but otherwise you can
-use absolutely for free for any amount of time.
-
 .. |Bootstrap| raw:: html
 
    <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>

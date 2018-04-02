@@ -7,10 +7,8 @@ Installation
 
 First step - Register a Plumsail Account
 --------------------------------------------------
-Plumsail Forms product uses our new service called Plumsail Account. Using Plumsail Account you can manage your licenses - for both Modern SharePoint and Public Web Forms, 
+Plumsail Forms product uses our service called Plumsail Account. Using Plumsail Account you can manage your licenses - for both Modern SharePoint and Public Web Forms, 
 and it also stores all your Public Web Forms. 
-
-Plumsail Account is a new service we've recently implemented, so even if you were our client for a long time, you still need to register to get an Account. 
 
 Register
 **************************************************
@@ -74,12 +72,14 @@ To do it properly, follow `instruction from Microsoft <https://support.office.co
 .. |pic4| image:: /images/appcatalog/UploadForms.png
    :alt: App Catalog
 
-Once the app is added and distributed to all the sites and SharePoint domain added to Licenses section in Plumsail account, you can use Designer to design modern forms for any list or library in your domain.
+Once the app is added and distributed to all the sites and SharePoint domain added to Licenses section in Plumsail account, 
+you can use Designer to design modern forms for any list or library in your domain.
+
+There are no downsides to distributing the app to all sites - it simply gives you an ability to replace any form, 
+but it won't replace any forms that you haven't edited and saved yourself. If you change your mind about a particular form,
+you can always reset it to default as well.
 
 Download designer and start designing forms for SharePoint
 ***********************************************************
 Once you've added your SharePoint license to your Plumsail Account and distributed app across your sites using app catalog, 
 it is time to download Forms Designer and start using it. You can download Forms Designer from your Plumsail Account in Forms Section on the Intro tab.
-
-Simply choose SharePoint in Forms Designer during sign in, enter your site and credentials, and start working on the forms.
-Saved forms will automatically replace default forms on your site.
