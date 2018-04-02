@@ -32,7 +32,7 @@ Table of contents
             :caption: Designer
             :maxdepth: 1
 
-            designer/ribbonActions
+            designer/ribbon-actions
             designer/form-sets
             designer/themes
             designer/containers

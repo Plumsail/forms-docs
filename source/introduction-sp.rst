@@ -43,25 +43,35 @@ It has similar functionality and allows you to design complex custom forms for C
 It also works well for SharePoint 2013/2016. We still fully support Forms Designer, even after release of Plumsail Forms, 
 it will remain essential to us and many of our clients for a long time to come.
 
+.. |Forms Designer| raw:: html
+
+   <a href="https://spform.com/" target="_blank">Forms Designer</a>
+
 Fully customizable, yet simple to use
 --------------------------------------------------
 Plumsail Forms offers a large range of customization when it comes to designing forms. First of all,
 designing a form is extremely easy. Fields and controls can be just dragged and dropped inside the form. 
 Then, you can use containers such as Tabs and Accordions to separate different parts. 
 
-Finally, all elements inside the form are placed on a Bootstrap Grid which allows you to easily position elements in relation to each other 
-and ensure they scale well with all screen sizes. In regards to scaling, Plumsail Forms also offers an easy way to customize forms for tablets 
-and phones, ensuring that mobile users get the best experience.
+Finally, all elements inside the form are placed on a |Bootstrap Grid| which allows you to easily position elements in relation to each other 
+and ensure they scale well with all screen sizes. In regards to scaling, Plumsail Forms also offers an easy way to :ref:`customize forms for tablets 
+and phones <designer-layouts>`, ensuring that mobile users get the best experience.
 
-SharePoint themes are supported and Forms' elements will adjust their colors according the current theme. Further customization is available with custom CSS 
-and JavaScript. With our powerful JavaScript API you'll be able to check field values on the form, dynamically adjust forms' content, validate submissions 
+.. |Bootstrap Grid| raw:: html
+
+   <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">Bootstrap Grid</a>
+
+SharePoint :doc:`themes are supported </designer/themes>` and Forms' elements will adjust their colors according the current theme. Further customization is available with custom CSS 
+and JavaScript. With our powerful :doc:`JavaScript API </javascript/general>` you'll be able to check field values on the form, dynamically adjust forms' content, validate submissions 
 and much more.
 
-Various custom controls are available for use on the form, such as Ink Sketch that allows users to leave signatures or drawings, 
-for example, mark details on top of an image. Another interesting control is List or Library that allows users to see contents of 
-another SharePoint List or Library, filter its contents and add items or upload documents to it. That is very useful for adding Children elements 
-and binding them to parent element, the process that happens automatically with correct configuration, no code required.
+Various custom controls are available for use on the form, such as :ref:`Ink Sketch <designer-inksketch>` that allows users to leave 
+signatures or drawings, for example, mark details on top of an image. Another interesting control is :ref:`List or Library <designer-listorlibrary>` 
+that allows users to see contents of another SharePoint List or Library, filter its contents and add items or upload documents to it. That is very useful 
+for adding Children elements and binding them to parent element, the process that happens automatically with correct configuration, no code required.
 
 Last, but not least, you get the ability to create more than one form for a list. In fact, you can create different forms for users from different groups 
 and automatically redirect users to the correct form. Not only that, but you can write custom rules for redirection, based on item's values 
 and/or user's properties, and make sure that you provide the appropriate form in all circumstances.
+
+Find out how to install the product :doc:`here </installation-sp>`.

@@ -7,7 +7,15 @@ Designing and publishing forms
 
 Open the designer
 --------------------------------------------------
-First of all, you need to make sure that you've registered a Plumsail Account, downloaded and installed the designer application to your PC.
+First of all, you need to make sure that you've registered a |Plumsail Account|, downloaded and installed |the designer application| to your PC.
+
+.. |Plumsail Account| raw:: html
+
+   <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>
+
+.. |the designer application| raw:: html
+
+   <a href="https://account.plumsail.com/forms/intro" target="_blank">the designer application</a>
 
 The app launches with the following window:
 
@@ -34,8 +42,9 @@ Then you can adjust individual settings for each field, control or container by 
 .. |pic3| image:: ./images/start/field-settings.png
    :alt: Field settings
 
-Designer section of our documentation much more about each field, control and container, and their properties that you can modify.
-Finally, there is also a section on Ribbon buttons that explains how you can work with mobile layouts, apply custom JavaScript and CSS to the form.
+Designer section of our documentation much more about each :doc:`Field </designer/fields>`, 
+:doc:`Control </designer/controls>` and :doc:`Container </designer/containers>`, and their properties that you can modify.
+Finally, there is also a section on :doc:`Ribbon buttons </designer/ribbon-actions>` that explains how you can work with mobile layouts, apply custom JavaScript and CSS to the form.
 
 |pic4|
 

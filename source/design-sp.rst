@@ -8,8 +8,16 @@ Designing SharePoint forms
 
 Open the designer
 **************************************************
-First of all, you need to make sure that you've registered a Plumsail Account, downloaded and installed the designer application to your PC.
-Don't forget to follow all the steps in the SharePoint installation instruction, upload package to your App Catalog and share it with all the sites.
+First of all, you need to make sure that you've registered a |Plumsail Account|, downloaded and installed |the designer application| to your PC.
+Don't forget to follow all the steps in the :doc:`SharePoint installation instruction </installation-sp>`, upload package to your App Catalog and share it with all the sites.
+
+.. |Plumsail Account| raw:: html
+
+   <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>
+
+.. |the designer application| raw:: html
+
+   <a href="https://account.plumsail.com/forms/intro" target="_blank">the designer application</a>
 
 The app launches with the following window:
 
@@ -55,24 +63,28 @@ In the designer, on the left, you have Containers, Controls and Fields that you 
 .. |pic3| image:: /images/startSP/elements.png
    :alt: Containers, Controls and Fields
 
-Adding them to the form is easy, just drag and drop the desired elements to the form. You can change individualy configuration of each Field, 
-Control and Container by selecting it with a click and then adjusting its properties in menu on the right:
+Adding them to the form is easy, just drag and drop the desired elements to the form. You can change individualy configuration of each :doc:`Field </designer/fields>`, 
+:doc:`Control </designer/controls>` and :doc:`Container </designer/containers>` by selecting it with a click and then adjusting its properties in menu on the right:
 
 |pic4|
 
 .. |pic4| image:: /images/startSP/settings.png
    :alt: Field's Properties
 
-By default, each element is placed inside a Grid, which is based on Bootstrap Grid. By adjusting PARENT GRID properties of each element, 
+By default, each element is placed inside a :ref:`designer-grid`, which is based on |Bootstrap Grid|. By adjusting PARENT GRID properties of each element, 
 you adjust element's layout in regards to all other elements.
+
+.. |Bootstrap Grid| raw:: html
+
+   <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">Bootstrap Grid</a>
 
 **Note!** We do not recommend adding Common Fields to SharePoint forms unless you know what exactly you want to do with them. By default, only SharePoint Fields
 store data when Item is saved, Common Fields lose all the data. If you want, you can use Common fields to perform some calculations on the form or 
-submit certain data to MS Flow using **Plumsail Forms** connector.
+submit certain data to MS Flow using :doc:`Plumsail Forms </microsoft-flow>` connector.
 
 Mobile Layouts
 -------------------------------------------------
-You can customize layout for mobile devices by selecting device type in the Ribbon. Clicking red **X** under the layout will delete it:
+You can customize :ref:`layout for mobile devices <designer-layouts>` by selecting device type in the Ribbon. Clicking red **X** under the layout will delete it:
 
 |mobile|
 
@@ -108,7 +120,8 @@ replace with the current one:
    :alt: Save multiple forms
 
 Be extra careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them, for example.
-Because of that, and other potentially risky situations, we recommend backing up forms that are important to you, by using Export feature of the designer:
+Because of that, and other potentially risky situations, we recommend backing up forms that are important to you, 
+by using :ref:`Export feature <designer-export>` of the designer:
 
 |pic8|
 
@@ -128,28 +141,29 @@ Don't forget that you can give each element a class and then use it in CSS edito
 .. |editors| image:: /images/startSP/editors.png
    :alt: JavaScript and CSS editors
 
-Another thing that you can alter on any form is JavaScript and with our rich JavaScript API there is a lot that can be done with it.
+Another thing that you can alter on any form is JavaScript and with our rich :doc:`JavaScript API </javascript/general>` there is a lot that can be done with it.
 
 Please, make sure that you are familiar with the events present in JavaScript API as these events need to be used in order to get access to all forms elements.
 In this section you can check out the practical examples of using JavaScript API to make forms more dynamic.
 
 Form Sets
 --------------------------------------------------
-You are not limited to three Forms per Content Type. In fact, you can create many sets of forms as necessary. Add a new one by clicking the **+ sign**:
+You are not limited to three Forms per Content Type. In fact, you can create many :doc:`Form Sets </designer/form-sets>` as necessary.
+Add a new one by clicking the **+ sign**:
 
 |pic9|
 
 .. |pic9| image:: /images/startSP/addFormSet.png
    :alt: Add a Form Set
 
-A common use for Form Sets is to provide unique forms for members of certain groups and that can be easily configured in the menu when you create a new Form Set:
+Сommon use for Form Sets is to provide unique :ref:`forms for members of certain groups <designer-grouprouting>`, that can be easily configured in the menu when you create a new Form Set:
 
 |pic10|
 
 .. |pic10| image:: /images/designer/form-sets/2-FormSetsConfig.png
    :alt: Form Sets Group Configuration
 
-But you are not limited to it. In fact, you can leave it empty and instead use custom routing to redirect users to the appropriate form based on other conditions,
+But you are not limited to it. In fact, you can leave it empty and instead use :ref:`designer-customrouting` to redirect users to the appropriate form based on other conditions,
 such as field values on the form or user's properties:
 
 |pic11|
@@ -159,7 +173,7 @@ such as field values on the form or user's properties:
 
 Related Items/Documents
 --------------------------------------------------
-List or Library control allows you to show another SharePoint List or Library within the form. 
+:ref:`designer-listorlibrary` control allows you to show another SharePoint List or Library within the form. 
 It also allows users to add new items, change or delete existing ones, directly from the current form.
 
 |pic12|
@@ -167,9 +181,9 @@ It also allows users to add new items, change or delete existing ones, directly 
 .. |pic12| image:: /images/how-to/child-parent-form/result.png
    :alt: Parent Form with Children
 
-What is even more impressive - it allows to create Parent/Child relationship between items in one list and items in another list very easily, 
+What is even more impressive - it allows to :doc:`create Parent/Child relationship </how-to/child-parent-form>` between items in one list and items in another list very easily, 
 without any code required. Find out how it's done in this article.
 
-You also need to be aware that List or Library supports various means of filtering. For example, you can set Root Folder property either manually or 
-with a script, and it will ensure that users can only see contents of this root folder and cannot see items higher in the hierarchy. CAML filtering 
-is also supported and can also be used to filter shown items by their field values, and it can be done dynamically as well.
+You also need to be aware that List or Library supports various means of filtering. For example, you can :doc:`set Root Folder property </how-to/root-folder>` 
+either manually or with a script, and it will ensure that users can only see contents of this root folder and cannot see items higher in the hierarchy. 
+:doc:`CAML filtering </how-to/caml-filter>` is also supported and can also be used to filter shown items by their field values, and it can be done dynamically as well.

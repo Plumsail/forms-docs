@@ -47,4 +47,4 @@ Download and install the app, the process is very simple. Press *Run* and follow
 .. |pic2| image:: ./images/start/run-installer.png
    :alt: Run the installer
 
-After that, you can start designing your own custom forms. Find more about how to design Public Web Forms with the designer in this article.
+After that, you can start designing your own custom forms. Find more about how to design Public Web Forms with the designer in :doc:`this article </design>`.

@@ -65,6 +65,11 @@ Install app package to your tenant
 Last thing you need to do, to include Plumsail Forms on your SharePoint sites, 
 is to install Form Web Part package to your app catalog. You can download the package from the Intro section of your Plumsail Account area. 
 
+|download|
+
+.. |download| image:: /images/startSP/download.png
+   :alt: Download package
+
 To do it properly, follow `instruction from Microsoft <https://support.office.com/en-us/article/Use-the-App-Catalog-to-make-custom-business-apps-available-for-your-SharePoint-Online-environment-0b6ab336-8b83-423f-a06b-bcc52861cba0>`_.
 
 |pic4|
@@ -82,4 +87,15 @@ you can always reset it to default as well.
 Download designer and start designing forms for SharePoint
 ***********************************************************
 Once you've added your SharePoint license to your Plumsail Account and distributed app across your sites using app catalog, 
-it is time to download Forms Designer and start using it. You can download Forms Designer from your Plumsail Account in Forms Section on the Intro tab.
+it is time to download Forms Designer and start using it. You can download Forms Designer from your Plumsail Account in Forms Section in the |Intro tab|.
+
+|pic5|
+
+.. |pic5| image:: /images/startSP/install.png
+   :alt: Install Forms Designer
+
+.. |Intro tab| raw:: html
+
+   <a href="https://account.plumsail.com/forms/intro" target="_blank">Intro tab</a>
+
+Find more about how to design Modern SharePoint Forms with the designer in :doc:`this article </design-sp>`.

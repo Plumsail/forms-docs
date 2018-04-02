@@ -5,6 +5,8 @@ Ribbon Actions
  :local:
  :depth: 1
 
+.. _designer-layouts:
+
 Layouts - PC, Tablet or Phone
 --------------------------------------------------
 Modern Plumsail Forms are built to be responsive. On top of utilizing |Bootstrap| for its elements, Forms can also be specifically designed for different devices.
@@ -44,6 +46,8 @@ and click Toggle device toolbar icon next to Inspector which will allow you to c
 |
 
 Similar functionality is present in almost all modern browsers.
+
+.. _designer-export:
 
 Export and Import
 --------------------------------------------------

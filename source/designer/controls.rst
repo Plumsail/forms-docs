@@ -194,6 +194,8 @@ The data is stored in the session state, once the browser is closed, it is purge
 .. image:: ../images/designer/controls/InkSketch.png
    :alt: Ink Sketch
 
+.. _designer-inksketch:
+
 Ink Sketch properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Ink Sketch control has the following settings:

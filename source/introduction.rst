@@ -9,7 +9,11 @@ General information
 --------------------------------------------------
 Plumsail Forms allow you to design and publish elegant, responsive and highly customizable forms to any web page by simply adding an HTML widget to it. 
 When user submits the form, all data is handled by |Flow| which opens an ocean of possibilities for its use.
-The data is collected from anonymous users and can be protected with reCAPTCHA to prevent Spam submissions.
+The data is collected from anonymous users and can be protected with |reCAPTCHA| to prevent Spam submissions.
+
+.. |reCAPTCHA| raw:: html
+
+   <a href="https://www.google.com/recaptcha" target="_blank">reCAPTCHA</a>
 
 If you are looking for a way to easily design custom forms and apply complex logic to them, but at the same time allow anonymous users to submit data, 
 which you can then add to SharePoint Lists, Excel documents, Google sheets or SQL database, and do much more with it, then Plumsail Forms is for you.
@@ -49,9 +53,12 @@ Data Submitted to Flow
 So, the forms are submitted to Flow, but what can be done with the data? The amount of actions is constantly growing, so we won't be able to
 cover all the use cases even if we tried, but our documentation contains some of the most popular examples.
 
-For starters, you can Send an email with Outlook, or create Items in SharePoint List, upload files to SharePoint Library (or Box, or Dropbox, etc.),
-add records to SQL server, or Excel file, or Google Sheets. Much more is possible and we'll continue updating our documentation to include more 
+For starters, you can :doc:`Send an email with Outlook </how-to/email>`, or :doc:`create Items in SharePoint List </how-to/item>`, 
+:doc:`upload files to SharePoint Library </how-to/file>` (or Box, or Dropbox, etc.), :doc:`add records to SQL server </how-to/sql>`, 
+:doc:`or Excel file, or Google Sheets </how-to/excel-single-row>`. Much more is possible and we'll continue updating our documentation to include more 
 interesting cases which you would be able to incorporate in your Flows.
+
+Find out how to install the product :doc:`here </installation>`.
 
 .. |Bootstrap| raw:: html
 
