@@ -106,4 +106,4 @@ After copying the widget, simply insert it as HTML to your page and the form wil
 .. |pic10| image:: ./images/start/form-published.png
    :alt: Public Web Form Published
 
-Now, to actually work with received data, please, check out our :doc:`Handling data in Microsoft Flow </microsoftFlow>` article.
+Now, to actually work with received data, please, check out our :doc:`Handling data in Microsoft Flow </microsoft-flow>` article.
