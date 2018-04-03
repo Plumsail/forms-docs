@@ -140,9 +140,9 @@ In this example we will first create HTML Template from the submitted data and t
 
 We will use |Plumsail Actions| to create HTML with template which would use submitted data, then convert this HTML into PDF.
 
-If you haven't read our introduction to using MS Flow with Plumsail Forms, you can find information on how to add our custom connector :doc:`here </microsoftFlow>`.
+If you haven't read our introduction to using MS Flow with Plumsail Forms, you can find information on how to add our custom connector :doc:`here </microsoft-flow>`.
 
-You can also find information about how to subscribe to Form submission in this article - :ref:`creating-flow`.
+You can also find information about how to subscribe to Form submission in the :ref:`creating-flow` section.
 
 Once you set up the basics of the Flow for our Form, including Form submission trigger and JSON Parse action, we can start working on our HTML.
 

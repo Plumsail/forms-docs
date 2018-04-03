@@ -34,7 +34,7 @@ Automatically calculate field values, such as Total Value or Due Date, validate 
 customize, hide or show certain elements on the form depending on your needs and much more.
 
 Plumsail Forms are built using |Bootstrap| and |Vue| and as such are very light, responsive and easy to customize, 
-while offering an enormous potential for customization. Read more about designing your first form here.
+while offering an enormous potential for customization. Read more about designing your first form :doc:`here </design>`.
 
 Publish anywhere
 --------------------------------------------------

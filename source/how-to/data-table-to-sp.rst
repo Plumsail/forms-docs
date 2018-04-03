@@ -108,9 +108,9 @@ MS Flow
 --------------------------------------------------
 We will use Flow to first create an Order and then add each record as an item to Order Items.
 
-If you haven't read our introduction to using MS Flow with Plumsail Forms, you can find information on how to add our custom connector :doc:`here </microsoftFlow>`.
+If you haven't read our introduction to using MS Flow with Plumsail Forms, you can find information on how to add our custom connector :doc:`here </microsoft-flow>`.
 
-You can also find information about how to subscribe to Form submission in this article - :ref:`creating-flow`.
+You can also find information about how to subscribe to Form submission in the :ref:`creating-flow` section.
 
 Once you've subscribed and parsed JSON from the Form, click **Add an action** and search for *SharePoint*. 
 We'll need to add *SharePoint - Create Item*, select our Orders list and fill in all the columns with Form fields, like this:
