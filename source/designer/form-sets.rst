@@ -94,9 +94,47 @@ Form Set ID can be found in the lower left corner of the designer, it can be sel
 
 If the code returns nothing or throws an error, default routing is applied.
 
-Examples
-**************
-Redirect to a certain Form Set if 'AssignedTo' field equals the current user:
+Routing Examples
+-------------------------------------------------------------
+
+Check item's field
+**********************************************
+Redirect to a certain Form Set if 'Status' field equals 'Solved':
+
+.. code-block:: javascript
+
+    //check if Item already exists, will return true for Edit and Display Form
+    if (item) {
+        // return Promise
+        return item.get()
+            .then(function (item) {
+                //if Item's Status is Solved, redirect
+                if (item.Status == 'Solved') {
+                    //return ID of a Form Set
+                    return '31fb1f41-63f3-48ff-a1c2-18b4e7f7c3e7'
+                }
+            });
+    }
+
+Check user's property
+**********************************************
+Redirect to a certain Form Set if User's Department is 'Fire Safety':
+
+.. code-block:: javascript
+
+    //get properties of the current user
+    return pnp.sp.profiles.myProperties.get().then(function(result) {
+        var props = result.UserProfileProperties;
+        //if there is a property with Key: Department and Value: Fire Safety
+        if (props.some(function(p){ return p.Key === 'Department' && p.Value === 'Fire Safety'})) {
+            //return ID of a Form Set
+            return '8720f859-7cca-4c51-8548-7a28f271d6a8';
+        }
+    });
+
+Check item's Person field
+**********************************************
+Redirect to a certain Form Set if 'AssignedTo' Person field equals the current user:
 
 .. code-block:: javascript
 
@@ -119,19 +157,27 @@ Redirect to a certain Form Set if 'AssignedTo' field equals the current user:
             });
     }
 
-Redirect to a certain Form Set if 'Status' field equals 'Solved':
+Check item's multiple selection Person field
+**********************************************
+Redirect to a certain Form Set if 'People' multiple selection Person field contains the current user:
 
 .. code-block:: javascript
 
     //check if Item already exists, will return true for Edit and Display Form
     if (item) {
+        //first, get the current user
+        var user;
         // return Promise
-        return item.get()
-            .then(function (item) {
-                //if Item's Status is Solved, redirect
-                if (item.Status == 'Solved') {
+        return web.currentUser.get()
+            .then(function(u) {
+                user = u;
+                return item.get();
+            })
+            .then(function(item) {
+                //if field People contains current user's ID
+                if(item.PeopleId && item.PeopleId.indexOf(user.Id) >= 0){
                     //return ID of a Form Set
-                    return '31fb1f41-63f3-48ff-a1c2-18b4e7f7c3e7'
+                    return '8720f859-7cca-4c51-8548-7a28f271d6a8';
                 }
             });
     }
