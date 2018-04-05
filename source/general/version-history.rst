@@ -1,6 +1,10 @@
 Version history
 ==================================================
 
+v1.1.0
+--------------------------------------------------
+Added :ref:`theme support for Public Web Forms<designer-publicthemes>`.
+
 v1.0.9
 --------------------------------------------------
 Added advanced :ref:`designer-customrouting` to Modern SharePoint Forms.

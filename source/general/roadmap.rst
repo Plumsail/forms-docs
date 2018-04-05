@@ -4,9 +4,13 @@ Roadmap
 Features in development
 -------------------------------------------------------
 
-Themes
+Advanced Lookup fields
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Theme support for public web forms.
+Add support of large lists in lookup columns and support of Cross-site Lookup for SharePoint forms
+
+Enhanced Multiline Textboxes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Support of multiline textboxes with 'Append Changes to Existing Text' for SharePoint forms
 
 Export SharePoint forms to PDF
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
