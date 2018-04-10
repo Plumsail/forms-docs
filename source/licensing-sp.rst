@@ -8,7 +8,8 @@ with custom made forms that are built to work with Modern SharePoint pages.
 
  *While offering similar functionality, the products are quite different in how they are built and function.*
 
-You **do not need an additional license** if you do not plan on using our custom connector to submit data to Microsoft Flow.
+If you plan to submit SharePoint form to Flow and handle it with Plumsail Forms connector, 
+you also need to have a :doc:`Public Web Forms license </licensing>` or use a free plan.
 
 **SharePoint Forms for Modern UI License** is a perpetual license per Office 365 tenant and it also includes **30 days Trial** period.
 
