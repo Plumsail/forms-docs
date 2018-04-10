@@ -38,10 +38,10 @@ responsive and have few limitations to their complexity. But you can use Plumsai
 for Lists which are not yet supported by Modern UI, such as Tasks List - but all the forms will open in Modern UI, 
 no matter what settings you have currently set.
 
-**Note!** If you are interested in customizing SharePoint Forms for Classic UI - check out our Forms Designer product. 
-It has similar functionality and allows you to design complex custom forms for Classic UI in just a few minutes. 
-It also works well for SharePoint 2013/2016. We still fully support Forms Designer, even after release of Plumsail Forms, 
-it will remain essential to us and many of our clients for a long time to come.
+  If you are interested in customizing SharePoint Forms for Classic UI - check out our |Forms Designer| product. 
+  It has similar functionality and allows you to design complex custom forms for Classic UI in just a few minutes. 
+  It also works well for SharePoint 2013/2016. We still fully support Forms Designer, even after release of Plumsail Forms, 
+  it will remain essential to us and many of our clients for a long time to come.
 
 .. |Forms Designer| raw:: html
 
