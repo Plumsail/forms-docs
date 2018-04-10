@@ -19,7 +19,7 @@ Only the free Scooter plan comes with commercial branding by Plumsail, that incl
 Commercial plans include **no branding**. Once a commercial plan is purchased, the branding is removed.
 
 Each plan works as a subscription and a free Scooter plan is the default one. 
-If you pay for the a Pickup, Van or a Truck subscription, but do not prolong it after the paid period ends, you get back on the Scooter.
+If you pay for a Pickup, a Van or a Truck subscription, but do not prolong it after the paid period ends, you get back on the Scooter.
 Scooter plan is **always free**.
 
 Submissions
