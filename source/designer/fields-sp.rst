@@ -21,6 +21,9 @@ Lookup
 -------------------------------------------------------------
 Lookup field has received several new features, all of which can be configured in the designer.
 
+Now, users can use search bar to filter the selection in the lookup field. 
+There's also an option to add new items to the source list, if the item wasn't found - this could be turned on/off.
+
 Lookup unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lookup field has the following unique settings:
@@ -35,6 +38,11 @@ SETTINGS
     *   - Add New
         - Allows users to add new values to the source list of the Lookup. User must enter value that doesn't exist yet, then there will be an option to add new item.
     *   - Extra Fields
-        - Select fields from the list that also need to be loaded. By default, only ID and 'Display Field' are retrieved. Extra fields can accessed with JavaScript.
+        - Select fields from the list that also need to be loaded. By default, only ID and 'Display Field' are retrieved. Extra fields can accessed with JavaScript. When adding Lookup fields in Extra Fields setting, do not forget to format them like this: **Category/ID**, **Category/Title**.
     *   - Expand
-        - When adding Lookup fields in Extra Fields setting, do not forget to format them like this: **Category/ID**, **Category/Title**. In the Expand setting you need to enter the Lookup field that you are getting in Extra Fields, such as: **Category**.
+        - In the Expand setting you need to enter the Lookup field that you are getting in Extra Fields, such as: **Category**. Read more |REST|.
+
+
+.. |REST| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests#select-fields-to-return/" target="_blank">here</a>
