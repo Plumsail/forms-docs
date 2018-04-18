@@ -1,6 +1,10 @@
 Version history
 ==================================================
 
+v1.1.3
+--------------------------------------------------
+SharePoint :ref:`designer-lookup` field has received an upgrade.
+
 v1.1.0
 --------------------------------------------------
 Added :ref:`theme support for Public Web Forms<designer-publicthemes>`.

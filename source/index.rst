@@ -38,6 +38,7 @@ Table of contents
             designer/containers
             designer/controls
             designer/fields
+            designer/fields-sp
 
       .. toctree::
             :caption: JavaScript framework 
