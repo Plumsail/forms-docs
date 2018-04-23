@@ -35,7 +35,7 @@ I add the following lines to it, it will retrieve the fields that I need:
 .. code-block:: javascript
 
     Description
-    Cost
+    Price
     Image
     Category/Id
     Category/Title
@@ -73,7 +73,7 @@ In this example, I will use string withing JavaScript editor to define template 
         template += '<p сlass="lookup-title"> #: data.LookupValue # </p>';
         template += '<p сlass="lookup-desc"> #: data.Category ? data.Category.Title : "" #';
         template += '#: data.Description ? " - " + data.Description : "" #</p>';
-        template += '<p сlass="lookup-cost"> #: data.Cost ? "$" + data.Cost : "" # </p>';
+        template += '<p сlass="lookup-price"> #: data.Price ? "$" + data.Price : "" # </p>';
         template += '</span>';
         fd.field('Lookup').widgetOptions = {
             template: template,
