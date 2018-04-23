@@ -42,9 +42,9 @@ I add the following lines to it, it will retrieve the fields that I need:
 
 Now, once these fields are added, I will also need to use Expand property to get access to the Category field:
 
-|pic1|
+|pic2|
 
-.. |pic1| image:: ../images/how-to/lookup-view/expand.png
+.. |pic2| image:: ../images/how-to/lookup-view/expand.png
    :alt: Expand
 
 Here, I just need to add Internal Names of the fields that need to Expand, in this case:
