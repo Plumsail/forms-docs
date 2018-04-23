@@ -24,6 +24,11 @@ Lookup field has received several new features, all of which can be configured i
 Now, users can use search bar to filter the selection in the lookup field. 
 There's also an option to add new items to the source list, if the item wasn't found - this could be turned on/off.
 
+|example|
+
+.. |example| image:: ../images/how-to/lookup-view/lookup.png
+   :alt: Example Lookup
+
 Lookup unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lookup field has the following unique settings:

@@ -62,3 +62,4 @@ Table of contents
             how-to/dynamic-forms-js
             how-to/data-table-section
             how-to/list-or-library-section
+            how-to/lookup-section
