@@ -20,7 +20,7 @@ In this article, we will show you an example with several fields displayed at on
 
 Getting extra fields
 --------------------------------------------------
-By default, the Lookup only gets the value of the field. In my case, I want to get *Description* text field, *Price* currency field, 
+By default, the Lookup only gets Id and Display column of the source list. In my case, I want to get *Description* text field, *Price* currency field, 
 *Image* URL/Picture field and *Category* Lookup field.
 
 In order to do that, I need to edit Extra Fields property of the Lookup SETTINGS:
@@ -56,7 +56,8 @@ Here, I just need to add Internal Names of the fields that need to Expand, in th
 View configuration
 --------------------------------------------------
 Now, that this is available, we'll need to customize lookup's template in order to display retrieved fields. 
-Lookup's template is based on |Kendo UI Combobox's Template| and can be customized either with string or with HTML.
+Lookup's template is based on |Kendo UI Combobox's Template|. 
+Please note that you can store the template in a separate script element inserted with an HTML-control and retrieve it in your code.
 
 .. |Kendo UI Combobox's Template| raw:: html
 

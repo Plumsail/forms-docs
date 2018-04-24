@@ -1,4 +1,4 @@
-Cascading Lookups
+Cascading Lookups (Filtering)
 ==================================================
 
 .. contents:: Contents:
@@ -9,9 +9,10 @@ Description
 --------------------------------------------------
 With a little bit of JavaScript code, you can now easily configure Cascading Lookup fields. 
 
-What does that mean? Just to be clear, I am talking about Lookup fields where choosing value in one field, limits available choice in the other field.
+What does that mean? Just to be clear, I am talking about Lookup fields where choosing value in one field, limits available choice in the other field. 
+Lookup filtering can be applied with any data, including values of other fields on the form, not limited to other lookups.
 
-Example that I will show you in this list will include Categories and Products, so that the user can only see and choose Products belonging to the selected Category.
+In this example, however, I will show you two Lookup fields on one form - Category and Product, so that the user can only see and choose Products belonging to the selected Category.
 
 Setting up Lists
 --------------------------------------------------
@@ -56,7 +57,7 @@ I will also need to use Expand property to get access to the Category field in t
 
 |pic5|
 
-.. |pic5| image:: ../images/how-to/lookup-view/expand.png
+.. |pic5| image:: ../images/how-to/lookup-cascading/expand.png
    :alt: Expand
 
 Here, I just need to add Internal Name of the Lookup field, simple enough:
@@ -74,21 +75,25 @@ Last but not least, we use JavaScript in order to apply filtering:
 
     fd.spRendered(function() {
         function filterLookup(v){
+            // getting the selected Category (0 if nothing is selected).
             var categoryId = 0;
             if (v) {
-                categoryId = isNaN(v) ? v.LookupId : v;
+            categoryId = isNaN(v) ? v.LookupId : v;
             }
-            
+
             if (categoryId) {
+                // setting filtration
                 fd.field('Product').filter = 'Category/Id eq ' + categoryId;
-                
+
+                // if a Product from another Category is already selected, reset the Product
                 if (fd.field('Product').value && fd.field('Product').value.Category.Id != categoryId) {
                     fd.field('Product').value = null;
                 }
             } else {
+                // resetting the filtration
                 fd.field('Product').filter = null;
             }
-            
+
             fd.field('Product').widget.dataSource.read();
         }
         
@@ -100,6 +105,15 @@ Last but not least, we use JavaScript in order to apply filtering:
             filterLookup(value);
         });
     });
+
+fd.field('FieldName').filter property is an OData $filter query. You can include all kinds of conditions in this query and combine them with **and/or** operators.
+
+Read more about OData $filter query |here|.
+
+.. |here| raw:: html
+
+   <a href="http://www.odata.org/documentation/odata-version-2-0/uri-conventions/#FilterSystemQueryOption" target="_blank">here</a>
+
 
 Result
 --------------------------------------------------
