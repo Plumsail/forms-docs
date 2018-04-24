@@ -79,7 +79,7 @@ After adding the trigger, search for *JSON* and add *Data Operations - Parse JSO
 |
 
 Here you will need to open the designer and the form that you want to track with the Flow. Save it and after saving, 
-open **Flow Settings Settings** and copy the *Form Schema*:
+open **Flow Settings** and copy the *Form Schema*:
 
 .. image:: /images/flow/13_FormSchema.png
    :alt: Form Schema

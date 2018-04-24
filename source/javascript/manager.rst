@@ -94,6 +94,36 @@ Properties
         - .. code-block:: javascript
 
                 fd._vue;
+    
+    *   -   **fd.pdfFileName**
+
+        -   Specifies name of the exported PDF file.
+
+            *This property is only available for* **SharePoint Forms** 
+
+        - .. code-block:: javascript
+
+                fd.pdfFileName = "My_PDF_File";
+    
+    *   -   **fd.pdfOptions**
+
+        -   Specifies various options for exported PDF file, such as paper size, margin, orientation, etc.
+
+            More info about all the options |PDF options|.
+
+            *This property is only available for* **SharePoint Forms**
+
+        - .. code-block:: javascript
+
+                fd.pdfOptions = {
+                    paperSize: 'A4',
+                    landscape: true,
+                    multiPage: true
+                };
+
+.. |PDF options| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/framework/drawing/pdf-output#configuration-PDF" target="_blank">here</a>
 
 Methods
 --------------------------------------------------
@@ -349,6 +379,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                 console.log('spSaved');
                 console.log(result);
             });
+    
     
 .. |vueConfig| raw:: html
 
