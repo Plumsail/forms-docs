@@ -64,7 +64,7 @@ If this is your first Flow, at this point you'll need to **Sign in to** |Plumsai
 
 Now, you'll need to add the ID of the Form you want to track. You can enter ID of the form you already created or create and save a new form in the designer.
 
-Form ID can be found and copied in **General Settings** in the Designer.
+Form ID can be found and copied in **Flow Settings** in the Designer.
 
 .. image:: /images/flow/11_FormIDNew.png
    :alt: Form ID
@@ -79,7 +79,7 @@ After adding the trigger, search for *JSON* and add *Data Operations - Parse JSO
 |
 
 Here you will need to open the designer and the form that you want to track with the Flow. Save it and after saving, 
-open **General Settings** and copy the *Form Schema*:
+open **Flow Settings Settings** and copy the *Form Schema*:
 
 .. image:: /images/flow/13_FormSchema.png
    :alt: Form Schema

@@ -61,12 +61,12 @@ You are always be able to open, edit or delete your saved forms in the upper rig
 
 Publish the form
 --------------------------------------------------
-Once you save the form, you'll see two additional buttons on the Ribbon - *General* and *Preview*:
+Once you save the form, you'll see two additional buttons on the Ribbon - *Flow* and *Preview*:
 
 |pic6|
 
 .. |pic6| image:: ./images/start/general-preview.png
-   :alt: General and Preview
+   :alt: Flow and Preview
 
 Preview allows you to see how your form will look in the browser. It will look different from its presentation in the designer, 
 so make sure that you like the final result before publishing:
@@ -79,12 +79,12 @@ so make sure that you like the final result before publishing:
 When you are satisfied with how your form looks on all the layouts and screen sizes (you can just resize browser's window to see how the form scales),
 you can finally publish the form. For that, you need to copy the widget with FormID to the HTML code of the page where you want to publish it.
 
-The widget can be found in General Settings in the designer where you can copy it to clipboard:
+The widget can be found in Flow Settings in the designer where you can copy it to clipboard:
 
 |pic8|
 
 .. |pic8| image:: ./images/start/general-widget.png
-   :alt: Form Widget in General Settings
+   :alt: Form Widget in Flow Settings
 
 You can also copy form's widget from Plumsail Account Forms section in |Forms subsection| where all your forms are stored. 
 
