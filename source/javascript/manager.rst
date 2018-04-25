@@ -62,7 +62,7 @@ Properties
 
     *   -   **fd.validators**
     
-        -   Returns an array of form validators, can be used to add new ones.
+        -   Get an array of form validators, can be used to add new ones.
             These are more complex validators than Field Validators and are used for several fields, to check that different fields have appropriate values.
 
             For example, you want certain options to be only available if the user's age is above 18 or some other criteria.
@@ -89,7 +89,7 @@ Properties
 
     *   -   **fd._vue**
 
-        -   Returns **VueJS** component of the form, so you can examine or modify it.
+        -   Get **VueJS** component of the form, so you can examine or modify it.
 
         - .. code-block:: javascript
 
@@ -97,13 +97,19 @@ Properties
     
     *   -   **fd.pdfFileName**
 
-        -   Specifies name of the exported PDF file.
+        -   Get or set the name of the exported PDF file.
 
             *This property is only available for* **SharePoint Forms** 
 
         - .. code-block:: javascript
-
+                
+                //set file name to "My_PDF_File"
                 fd.pdfFileName = "My_PDF_File";
+
+                //set file name to current item's Title
+                fd.spRendered(function() {
+                    fd.pdfFileName = fd.field('Title').value;    
+                });
     
     *   -   **fd.pdfOptions**
 

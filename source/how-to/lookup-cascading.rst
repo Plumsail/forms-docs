@@ -31,6 +31,13 @@ In our case, Products List has a Lookup to Categories List:
 .. |pic2| image:: ../images/how-to/lookup-cascading/products.png
    :alt: Products List
 
+Finally, you need a third List to create form for. It should include 2 Lookup fields: 1 to Categories List and 1 to Products List.
+
+|pic2.5|
+
+.. |pic2.5| image:: ../images/how-to/lookup-cascading/orders.png
+   :alt: Orders List
+
 Form Configuration
 --------------------------------------------------
 I've created a simple Product Order form:
@@ -112,7 +119,7 @@ Read more about OData $filter query |here|.
 
 .. |here| raw:: html
 
-   <a href="http://www.odata.org/documentation/odata-version-2-0/uri-conventions/#FilterSystemQueryOption" target="_blank">here</a>
+   <a href="https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests" target="_blank">here</a>
 
 
 Result
