@@ -204,39 +204,26 @@ Lookup
 
 .. list-table::
     :widths: 10 80    
-        
 
-    *   -   **Get**
+    *   -   Property
+        -   Description
+        -   Examples
+    *   -   **value**
+        -   Allows to get or set selected value. Return an object for Single Choice Lookup, returns an array of objects for Multiple Choice Lookups. Can be set with IDs.
         - .. code-block:: javascript
+
+                //SINGLE CHOICE LOOKUP
 
                 // returns an ID of the selected element:
                 fd.field('Lookup').value; 
 
                 // returns the selected element as a string:
-                fd.field('Lookup').selected.LookupValue; 
+                fd.field('Lookup').selected.LookupValue;
 
-    *   -   **Set**
-        - .. code-block:: javascript
+                // select element with the ID:
+                fd.field('Lookup').value = 5;
 
-                //set element with the ID:
-                fd.field('Lookup').value = 1
-
-    *   -   **OnChange**
-        - .. code-block:: javascript
-
-                fd.field('Lookup').$on('change', function(value) {
-                    alert('New value: ' + value);
-                });
-
-Multi Lookup
---------------------------------------------------
-
-.. list-table::
-    :widths: 10 80    
-        
-
-    *   -   **Get**
-        - .. code-block:: javascript
+                //MULTI CHOICE LOOKUP
 
                 //returns an array of the selected IDs
                 fd.field('LookupMulti').value;
@@ -244,7 +231,13 @@ Multi Lookup
                 //returns an ID of the first selected
                 fd.field('LookupMulti').value[0];
 
-                //returns all values as string of IDs
+                // returns first selected element as text:
+                fd.field('LookupMulti').value[0].LookupValue; 
+
+                //set with an array of IDs:
+                fd.field('LookupMulti').value = ["2", "3", "4"];
+
+                //alerts all values as string of IDs
                 var selectedIDs = fd.field('LookupMulti').value;
                 var s = '';
                 for (var i = 0; i < selectedIDs.length; i++) {
@@ -252,32 +245,23 @@ Multi Lookup
                 }
                 alert(s);
 
-                // returns first selected element as text:
-                fd.field('LookupMulti').selected[0].LookupValue; 
-
-                // returns second selected element as text:
-                fd.field('LookupMulti').selected[1].LookupValue;
-
-                //returns all values as a text string
-                var selected = fd.field('LookupMulti').selected;
+                //alerts all values as a text string
+                var selected = fd.field('LookupMulti').value;
                 var s = '';
                 for (var i = 0; i < selected.length; i++) {
                     s += selected[i].LookupValue + '; ';
                 }
                 alert(s);
 
-    *   -   **Set**
+    
+    *   -   **placeholder**
+        -   Get or set placeholder for a field.
+
+            Only works for fields that have Placeholder property.
         - .. code-block:: javascript
 
-                //set with an array of IDs:
-                fd.field('LookupMulti').value = ["2", "3", "4"];
-
-    *   -   **OnChange**
-        - .. code-block:: javascript
-
-                fd.field('LookupMulti').$on('change', function(value) {
-                    alert('New value: ' + value);
-                });
+                fd.field('TextBox').placeholder;
+                fd.field('TextBox').placeholder = 'Confirm Password';
 
 
 Boolean - Yes/No
