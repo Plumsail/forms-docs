@@ -269,17 +269,26 @@ Lookup
 
     *   -   **addNewText**
         -   Get or set text for adding new element, useful for localization. Appears if search is unsuccessful.
+
+            Must be set before the field is rendered.
         - .. code-block:: javascript
 
-                fd.field('Lookup').addNewText;
-                fd.field('Lookup').addNewText = "Ajouter un nouvel élément";
+                fd.spBeforeRender(function() {
+                    fd.field('Lookup').addNewText = "Ajouter un nouvel élément";
+                });
+                
 
     *   -   **noDataText**
         -   Get or set text when no items are found, useful for localization. Appears if search is unsuccessful.
+
+            Must be set before the field is rendered.
         - .. code-block:: javascript
 
-                fd.field('Lookup').addNewText;
-                fd.field('Lookup').addNewText = "Datos no encontrados. ¿Quieres agregar un nuevo elemento - '#: instance.filterInput.val() #'?";
+                fd.spBeforeRender(function() {
+                    fd.field('Lookup').noDataText = 
+                        "Не найдено. Добавить элемент - '#: instance.filterInput.val() #'?";
+                });
+                
 
     *   -   **title**
         -   Get or set the title of the field.
@@ -327,7 +336,9 @@ Lookup
     *   -   **widget**
         -   Returns jquery-object lying under the Vue-component. 
         
-            For Single choice Lookup it is |LookupKendo| and for Multiple Choice it is |LookupKendoMulti|.
+            For Single choice Lookup it is |LookupKendo|. 
+            
+            For Multiple Choice Lookup it is |LookupKendoMulti|.
         - .. code-block:: javascript
 
                 fd.field('Lookup').widget;
@@ -335,24 +346,36 @@ Lookup
     *   -   **widgetOptions**
         -   Get or set configuration options for the lookup. Must be set before the fields render, cannot be changed afterwards.
         
-            Read more about Single Choice Lookup configuration |OptionsLookupSingle|, Multiple Choice Lookup configuration |OptionsLookupMultiple|.
+            Read more about Single Choice Lookup configuration |OptionsLookupSingle|. 
+            
+            Multiple Choice Lookup configuration |OptionsLookupMultiple|.
         - .. code-block:: javascript
 
                 fd.spBeforeRender(function() {
-                    //display Extra Lookup Field Category Title for both selected value and options 
+                    //display Extra Field Category if it is available for selected value and options 
                     fd.field('Lookup').widgetOptions = {
-                        template: '#: data.LookupValue # (#: data.Category ? data.Category.Title : "none" #)',
-                        valueTemplate: '#: data.LookupValue # (#: data.Category ? data.Category.Title : "none" #)'
+                        template: '#: data.LookupValue # #: data.Category ? "-" + data.Category : "" #',
+                        valueTemplate: '#: data.LookupValue # #: data.Category ? "-" + data.Category : "" #'
                     }
                 });
 
     *   -   **dialogOptions**
-        -   Get or set text for adding new element, useful for localization. Appears if search is unsuccessful.
+        -   |Kendo UI Window| configuration. Holds dialog window options when adding new items, such as width and height.
         - .. code-block:: javascript
 
-                fd.field('Lookup').addNewText;
-                fd.field('Lookup').addNewText = "Ajouter un nouvel élément";
+                fd.control('SPDataTable0').dialogOptions.height; //returns height
+                fd.control('SPDataTable0').dialogOptions.width //returns width
 
+                //set width and height:
+                fd.control('SPDataTable0').dialogOptions = {
+                    width: 1280,
+                    height: 720
+                }
+
+
+.. |Kendo UI Window| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/window#configuration" target="_blank">Kendo UI Window</a>
 
 .. |LookupKendo| raw:: html
 

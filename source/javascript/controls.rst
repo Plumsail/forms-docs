@@ -579,7 +579,7 @@ Properties
                 fd.control('SPDataTable0').uploadingText = "New text"
     
     *   -   **dialogOptions**
-        -   |Kendo UI Window| configuration. Holds dialog window options, such as width and height.
+        -   |Kendo UI Window| configuration. Holds dialog window options when adding new items, such as width and height.
             
         - .. code-block:: javascript
 
