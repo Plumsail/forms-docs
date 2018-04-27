@@ -327,7 +327,9 @@ Lookup
                 fd.field('Lookup').extraFields = ["Cost", "Image", "Category/Id", "Category/Title"];
         
     *   -   **filter**
-        -   Get or set filter query for the lookup, which will filter the results. Read more about OData $filter query |OData Filter|. 
+        -   Get or set filter query for the lookup, which will filter the results. 
+        
+            Read more about OData $filter query |OData Filter|. 
         - .. code-block:: javascript
 
                 fd.field('Lookup').filter;
