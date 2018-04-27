@@ -338,9 +338,9 @@ Lookup
     *   -   **widget**
         -   Returns jquery-object lying under the Vue-component. 
         
-            For Single choice Lookup it is |LookupKendo|. 
+            For Single choice Lookup it is |LookupKendo| widget. 
             
-            For Multiple Choice Lookup it is |LookupKendoMulti|.
+            For Multiple Choice Lookup it is |LookupKendoMulti| widget.
         - .. code-block:: javascript
 
                 fd.field('Lookup').widget;
