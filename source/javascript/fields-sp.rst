@@ -362,7 +362,9 @@ Lookup
                 });
 
     *   -   **dialogOptions**
-        -   |Kendo UI Window| configuration. Holds dialog window options when adding new items, such as width and height.
+        -   |Kendo UI Window| configuration. 
+        
+            Holds dialog window options when adding new items, such as width and height.
         - .. code-block:: javascript
 
                 fd.control('SPDataTable0').dialogOptions.height; //returns height
