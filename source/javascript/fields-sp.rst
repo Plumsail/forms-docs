@@ -333,7 +333,7 @@ Lookup
         - .. code-block:: javascript
 
                 fd.field('Lookup').filter;
-                fd.field('Lookup').filter = 'Country eq ' + fd.field('Country').value;
+                fd.field('Lookup').filter = "Country eq '" + fd.field("Country").value + "'";
 
     *   -   **widget**
         -   Returns jquery-object lying under the Vue-component. 
