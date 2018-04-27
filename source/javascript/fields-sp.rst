@@ -203,13 +203,19 @@ Lookup
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 80    
+    :header-rows: 1
+    :widths: 10 20 20
 
     *   -   Property
         -   Description
         -   Examples
     *   -   **value**
-        -   Allows to get or set selected value. Return an object for Single Choice Lookup, returns an array of objects for Multiple Choice Lookups. Can be set with IDs.
+        -   Allows to get or set selected value. 
+            
+            Returns an object for Single Choice Lookup, returns an array of objects for Multiple Choice Lookups. 
+
+            Can be set with Item ID or an array of item IDs for Multiple Choice Lookups.
+
         - .. code-block:: javascript
 
                 //SINGLE CHOICE LOOKUP
@@ -237,7 +243,7 @@ Lookup
                 //set with an array of IDs:
                 fd.field('LookupMulti').value = ["2", "3", "4"];
 
-                //alerts all values as string of IDs
+                //alerts all values as a string of IDs
                 var selectedIDs = fd.field('LookupMulti').value;
                 var s = '';
                 for (var i = 0; i < selectedIDs.length; i++) {
@@ -253,15 +259,120 @@ Lookup
                 }
                 alert(s);
 
-    
-    *   -   **placeholder**
-        -   Get or set placeholder for a field.
-
-            Only works for fields that have Placeholder property.
+    *   -   **ready**
+        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
         - .. code-block:: javascript
 
-                fd.field('TextBox').placeholder;
-                fd.field('TextBox').placeholder = 'Confirm Password';
+                fd.field('Lookup').ready().then(function(field) {
+                    console.log(field.value.LookupValue);
+                });
+
+    *   -   **addNewText**
+        -   Get or set text for adding new element, useful for localization. Appears if search is unsuccessful.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').addNewText;
+                fd.field('Lookup').addNewText = "Ajouter un nouvel élément";
+
+    *   -   **noDataText**
+        -   Get or set text when no items are found, useful for localization. Appears if search is unsuccessful.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').addNewText;
+                fd.field('Lookup').addNewText = "Datos no encontrados. ¿Quieres agregar un nuevo elemento - '#: instance.filterInput.val() #'?";
+
+    *   -   **title**
+        -   Get or set the title of the field.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').title;
+                fd.field('Lookup').title = "Super Lookup";
+    
+    *   -   **operator**
+        -   Get or set search operator. Can search for elements that either start with entered text or contain it.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').operator;
+                fd.field('Lookup').operator = "startsWith";
+                fd.field('Lookup').operator = "contains";
+
+    *   -   **disabled**
+        -   Check if field is disabled, or set field to disabled or editable state.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').disabled;
+                fd.field('Lookup').disabled = true;
+                fd.field('Lookup').disabled = false;
+
+    *   -   **readonly**
+        -   Check if field is readonly. Cannot be changed.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').readonly;
+
+    *   -   **extraFields**
+        -   Get or set Extra Fields to retrieve from the source list. Returns an array.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').extraFields;
+                fd.field('Lookup').extraFields = ["Cost", "Image", "Category/Id", "Category/Title"];
+        
+    *   -   **filter**
+        -   Get or set filter query for the lookup, which will filter the results. Read more about OData $filter query |OData Filter|. 
+        - .. code-block:: javascript
+
+                fd.field('Lookup').filter;
+                fd.field('Lookup').filter = 'Country eq ' + fd.field('Country').value;
+
+    *   -   **widget**
+        -   Returns jquery-object lying under the Vue-component. 
+        
+            For Single choice Lookup it is |LookupKendo| and for Multiple Choice it is |LookupKendoMulti|.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').widget;
+
+    *   -   **widgetOptions**
+        -   Get or set configuration options for the lookup. Must be set before the fields render, cannot be changed afterwards.
+        
+            Read more about Single Choice Lookup configuration |OptionsLookupSingle|, Multiple Choice Lookup configuration |OptionsLookupMultiple|.
+        - .. code-block:: javascript
+
+                fd.spBeforeRender(function() {
+                    //display Extra Lookup Field Category Title for both selected value and options 
+                    fd.field('Lookup').widgetOptions = {
+                        template: '#: data.LookupValue # (#: data.Category ? data.Category.Title : "none" #)',
+                        valueTemplate: '#: data.LookupValue # (#: data.Category ? data.Category.Title : "none" #)'
+                    }
+                });
+
+    *   -   **dialogOptions**
+        -   Get or set text for adding new element, useful for localization. Appears if search is unsuccessful.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').addNewText;
+                fd.field('Lookup').addNewText = "Ajouter un nouvel élément";
+
+
+.. |LookupKendo| raw:: html
+
+   <a href="https://demos.telerik.com/kendo-ui/dropdownlist/index" target="_blank">DropDownList</a>
+
+.. |LookupKendoMulti| raw:: html
+
+   <a href="https://demos.telerik.com/kendo-ui/multiselect/index" target="_blank">MultiSelect</a>
+
+.. |OptionsLookupSingle| raw:: html
+
+   <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/dropdownlist" target="_blank">here</a>
+
+.. |OptionsLookupMultiple| raw:: html
+
+   <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect" target="_blank">here</a>
+
+.. |OData Filter| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests" target="_blank">here</a>
 
 
 Boolean - Yes/No

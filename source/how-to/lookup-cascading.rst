@@ -91,11 +91,6 @@ Last but not least, we use JavaScript in order to apply filtering:
             if (categoryId) {
                 // setting filtration
                 fd.field('Product').filter = 'Category/Id eq ' + categoryId;
-
-                // if a Product from another Category is already selected, reset the Product
-                if (fd.field('Product').value && fd.field('Product').value.Category.Id != categoryId) {
-                    fd.field('Product').value = null;
-                }
             } else {
                 // resetting the filtration
                 fd.field('Product').filter = null;
@@ -110,12 +105,13 @@ Last but not least, we use JavaScript in order to apply filtering:
         //filter Products when Category changes
         fd.field('Category').$on('change', function(value){
             filterLookup(value);
+            fd.field('Product').value = null;
         });
     });
 
 fd.field('FieldName').filter property is an OData $filter query. You can include all kinds of conditions in this query and combine them with **and/or** operators.
 
-Read more about OData $filter query |here|.
+Read more about OData query |here|.
 
 .. |here| raw:: html
 
