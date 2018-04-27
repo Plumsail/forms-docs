@@ -354,10 +354,10 @@ Lookup
         - .. code-block:: javascript
 
                 fd.spBeforeRender(function() {
-                    //display Extra Field Category if it is available for selected value and options 
+                    //display Extra Field Price, if it is available, for the selected value and options 
                     fd.field('Lookup').widgetOptions = {
-                        template: '#: data.LookupValue # #: data.Category ? "-" + data.Category : "" #',
-                        valueTemplate: '#: data.LookupValue # #: data.Category ? "-" + data.Category : "" #'
+                        template: '#: data.LookupValue # #: data.Price ? " - $" + data.Price : "" #',
+                        valueTemplate: '#: data.LookupValue # #: data.Price ? " - $" + data.Price : "" #'
                     }
                 });
 
