@@ -199,7 +199,7 @@ DateTime
                     alert('New value: ' + value);
                 });
 
-Lookup
+Lookup/LookupMulti
 --------------------------------------------------
 
 .. list-table::
@@ -224,7 +224,7 @@ Lookup
                 fd.field('Lookup').value; 
 
                 // returns the selected element as a string:
-                fd.field('Lookup').selected.LookupValue;
+                fd.field('Lookup').value.LookupValue;
 
                 // select element with the ID:
                 fd.field('Lookup').value = 5;
@@ -244,10 +244,10 @@ Lookup
                 fd.field('LookupMulti').value = ["2", "3", "4"];
 
                 //alerts all values as a string of IDs
-                var selectedIDs = fd.field('LookupMulti').value;
+                var selected = fd.field('LookupMulti').value;
                 var s = '';
-                for (var i = 0; i < selectedIDs.length; i++) {
-                    s += selectedIDs[i] + '; ';
+                for (var i = 0; i < selected.length; i++) {
+                    s += selected[i].ID + '; ';
                 }
                 alert(s);
 
@@ -324,7 +324,14 @@ Lookup
         - .. code-block:: javascript
 
                 fd.field('Lookup').extraFields;
-                fd.field('Lookup').extraFields = ["Cost", "Image", "Category/Id", "Category/Title"];
+                fd.field('Lookup').extraFields = ["Category/Id", "Category/Title"];
+
+    *   -   **expandFields**
+        -   Get or set Expand Fields (need for all Lookups) to retrieve extra data. Returns an array.
+        - .. code-block:: javascript
+
+                fd.field('Lookup').extraFields;
+                fd.field('Lookup').extraFields = ["Category"];
         
     *   -   **filter**
         -   Get or set filter query for the lookup, which will filter the results. 
@@ -354,10 +361,11 @@ Lookup
         - .. code-block:: javascript
 
                 fd.spBeforeRender(function() {
-                    //display Extra Field Price, if it is available, for the selected value and options 
+                    //display Extra Field Price, if it is available 
+                    var tmp = '#: data.LookupValue # #: data.Price ? " $" + data.Price : "" #';
                     fd.field('Lookup').widgetOptions = {
-                        template: '#: data.LookupValue # #: data.Price ? " - $" + data.Price : "" #',
-                        valueTemplate: '#: data.LookupValue # #: data.Price ? " - $" + data.Price : "" #'
+                        template: tmp,
+                        valueTemplate: tmp
                     }
                 });
 
