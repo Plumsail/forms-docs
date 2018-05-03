@@ -20,72 +20,51 @@ Forms Manager allows you to manage modern SharePoint Forms for a specific Conten
 It takes three arguments as parameters: Client Context for SharePoint Site with valid Site Owner credentials, 
 the ID of the List, and the ID of the Content Type as a string.
 
-Here's an example of FormsManager initialization:
-
 .. code-block:: c#
 
-    using FormsDesigner.Data;
-    using Microsoft.SharePoint.Client;
-    using System;
-    using System.Linq;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using System.Security;
-    using System.Threading.Tasks;
-    using System.Xml.Linq;
-       
-    namespace ProvisionApp
-    {
-        class Program
-        {
-            static void Main()
-            {
-                // SharePoint login and password for the site:
-                var login = "your-login@your-domain.onmicrosoft.com";W
+    var forms = new FormsDesigner.SharePoint.FormsManager(ClientContext ctx, Guid listId, string contenTypeId);
 
-                Console.WriteLine("Please enter the password:");
-                var passwordString = Console.ReadLine();
-                var password = GetSecureString(passwordString);
+.. list-table::
+    :header-rows: 1
+    :widths: 10 10 20
 
-                // URL of the site:
-                var webUrl = "https://your-domain.sharepoint.com/sites/your-site";
+    *   -   Parameter
+        -   Description
+        -   Example
 
-                using (var ctx = new ClientContext(webUrl))
-                {
-                    ctx.Credentials = new SharePointOnlineCredentials(login, password);
+    *   -   **ClientContext ctx**
+        -   Client context for the site that you try to access with Full Control Credentials.
+        - .. code-block:: c#
 
-                    // List:
-                    var list = ctx.Web.Lists.GetByTitle("MyList");
-                    var cts = list.ContentTypes;
+                var login = "login@domain.onmicrosoft.com";
+                var password = GetSecureString("qwerty");
 
-                    ctx.Load(list);
-                    ctx.Load(cts);
-                    ctx.ExecuteQuery();
+                var webUrl = "https://domain.sharepoint.com/sites/site";
+                var ctx = new ClientContext(webUrl);
+                ctx.Credentials = new SharePointOnlineCredentials(login, password);
+                
+    *   -   **Guid listId**
+        -   Guid with ID of the list that you try to access.
+        - .. code-block:: c#
 
-                    // Content Type:
-                    var contenType = cts.FirstOrDefault(ct => ct.Name == "Item");
+                var list = ctx.Web.Lists.GetByTitle("MyList");
 
-                    //FormsManager created:
-                    var forms = new FormsDesigner.SharePoint.FormsManager(ctx, list.Id, contenType.Id.ToString());
+                ctx.Load(list);
+                ctx.ExecuteQuery();
 
-                    /*
-                        the rest of the code goes here...
-                    */
-                }
-            }
+                var listId = list.Id;
+    
+    *   -   **string contenTypeId**
+        -   String with the Content Type Id
+        - .. code-block:: c#
 
-            private static SecureString GetSecureString(string s)
-            {
-                SecureString result = new SecureString();
-                foreach (char c in s.ToCharArray())
-                {
-                    result.AppendChar(c);
-                }
+                var cts = list.ContentTypes;
 
-                return result;
-            }
-        }
-    }
+                ctx.Load(cts);
+                ctx.ExecuteQuery();
+
+                var contenType = cts.FirstOrDefault(ct => ct.Name == "Item");
+
 
 FormsManager Methods
 -------------------------------------------------------------
@@ -104,31 +83,21 @@ Forms Manager has a number of public methods to work with the forms.
             Takes 4 arguments - ID of the Form Set(empty Guid for Default), type of the form, layout of the form and the compiled form.
         - .. code-block:: c#
 
-                // Load your XFDS-files:
-                var layoutNew = XDocument.Load("c:\\provision\\Item_New.xfds");
-                var layoutEdit = XDocument.Load("c:\\provision\\Item_Edit.xfds");
-                var layoutDisplay = XDocument.Load("c:\\provision\\Item_Display.xfds");
+                var layout = XDocument.Load("c:\\provision\\Item_New.xfds");
 
-                Task.Run(async () =>
-                {
-                    var compFormNew = await CompileForm(layoutNew);
-                    var compFormEdit = await CompileForm(layoutEdit);
-                    var compFormDisplay = await CompileForm(layoutDisplay);
+                var comp = await CompileForm(layout);
 
-                    var typeNew = FormsDesigner.Data.SharePoint.FormTypes.New;
-                    var typeEdit = FormsDesigner.Data.SharePoint.FormTypes.Edit;
-                    var typeDisplay = FormsDesigner.Data.SharePoint.FormTypes.Display;
+                var New = FormsDesigner.Data.SharePoint.FormTypes.New;
+                var Edit = FormsDesigner.Data.SharePoint.FormTypes.Edit;
+                var Display = FormsDesigner.Data.SharePoint.FormTypes.Display;
 
-                    forms.GenerateForms(Guid.Empty, typeNew, layoutNew, compFormNew);
-                    forms.GenerateForms(Guid.Empty, typeEdit, layoutEdit, compFormEdit);
-                    forms.GenerateForms(Guid.Empty, typeDisplay, layoutDisplay, compFormDisplay);
-                }).Wait();
+                forms.GenerateForms(Guid.Empty, New | Edit | Display, layout, comp);
                 
     *   -   **GetFormSets()**
         -   Allows to get form sets for the List. Returns FormSetSettings.
         - .. code-block:: c#
 
-                forms.GetFormSets;
+                forms.GetFormSets();
 
     *   -   **GetLayout(Guid formSetId, FormTypes formType)**
         -   Allows to get specified form's layout from the List for the form set. Can be used instead of exported file.
@@ -157,5 +126,5 @@ Forms Manager has a number of public methods to work with the forms.
         -   Allows to use FormSetSettings to create a structure for Form Sets in the List. Still need to generate forms after.
         - .. code-block:: c#
 
-                var settings = formsOldSite.GetFormSets
+                var settings = formsOldSite.GetFormSets();
                 formsNewSite.SetFormSets(settings);

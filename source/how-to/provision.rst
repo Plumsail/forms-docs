@@ -13,7 +13,7 @@ but this takes time - to open each form and to import it.
 
 This article will help you provision Form from one site to another programmatically, using Visual Studio and our NuGet package. 
 First of all, you do need both Lists to be identical, perhaps deployed programmatically, otherwise this method won't work as intended. 
-Second of all, forms do need to be exported first. This is the recommended practice in any case, to store backup forms in case of emergency.
+Second of all, forms need to be exported first - this is not mandatory and you can retrieve forms from the old site. 
 
 Export the form
 --------------------------------------------------
@@ -33,7 +33,7 @@ Then select folder where it will be stored:
 
 Create application and install NuGet package
 --------------------------------------------------
-Now, run the Visual Studio. Make sure that you have .NET Framework v.4.5.2 or higher installed. In the Visual Studio, create a new Project and select 
+Now, run the Visual Studio. Make sure that you have *.NET Framework v.4.5.2* or higher installed. In the Visual Studio, create a new Project and select 
 Console App (.NET Framework):
 
 |pic3|
@@ -74,11 +74,14 @@ Once the package and its dependencies have installed, go to Program.cs and repla
             {
                 // ENTER YOUR SHAREPOINT LOGIN FOR THE NEW SITE:
                 var login = "your-login@your-domain.onmicrosoft.com";
-
-                Console.WriteLine("Please enter the password:");
-                var passwordString = Console.ReadLine();
-                var password = GetSecureString(passwordString);
-
+                // YOUR PASSWORD:
+                var password = GetSecureString("qwerty");
+                // TITLE OF THE LIST:
+                var listTitle = "LookupTest";
+                // NAME OF THE CONTENT TYPE:
+                var contentType = "Item";
+                // PATH TO THE EXPORTED FORM:
+                var formPath = "c:\\provision\\Item_Edit.xfds";
                 // URL OF THE NEW SITE:
                 var webUrl = "https://your-domain.sharepoint.com/sites/your-site";
 
@@ -86,43 +89,48 @@ Once the package and its dependencies have installed, go to Program.cs and repla
                 {
                     ctx.Credentials = new SharePointOnlineCredentials(login, password);
 
-                    // SPECIFY A LIST WHICH FORM YOU WANT TO REPLACE:
-                    var list = ctx.Web.Lists.GetByTitle("MyList");
+                    // Specify a list which form you want to replace
+                    var list = ctx.Web.Lists.GetByTitle(listTitle);
                     var cts = list.ContentTypes;
 
                     ctx.Load(list);
                     ctx.Load(cts);
                     ctx.ExecuteQuery();
 
-                    // SPECIFY A CONTENT TYPE WHICH FORM YOU WANT TO REPLACE:
-                    var contenType = cts.FirstOrDefault(ct => ct.Name == "Item");
+                    // Specify a content type which form you want to replace
+                    var contenType = cts.FirstOrDefault(ct => ct.Name == contentType);
 
-                    var forms = new FormsDesigner.SharePoint.FormsManager(ctx, list.Id, contenType.Id.ToString());
+                    var forms = new FormsDesigner.SharePoint.FormsManager(
+                        ctx, list.Id, contenType.Id.ToString()
+                    );
 
-                    // LOAD YOUR XFDS-FILE (EXPORTED FORM):
-                    var layout = XDocument.Load("c:\\provision\\Item_Edit.xfds");
+                    var fss = forms.GetFormSets();
 
-                    Task.Run(async () =>
-                    {
-                        var compiledForm = await CompileForm(layout);
+                    var layout = XDocument.Load(formPath);
 
-                        // THE FORM WILL REPLACE A DEFAULT EDIT FORM IN THE TARGET LIST:
-                        forms.GenerateForms(Guid.Empty, FormsDesigner.Data.SharePoint.FormTypes.Edit, layout, compiledForm);
-                    }).Wait();
+                    var comp = CompileForm(layout);
+
+                    var New = FormsDesigner.Data.SharePoint.FormTypes.New;
+
+                    // THE FORM WILL REPLACE A DEFAULT NEW FORM IN THE TARGET LIST:
+                    forms.GenerateForms(Guid.Empty, New, layout, comp);
 
                 }
             }
 
-            private static async Task<CompiledForm> CompileForm(XDocument layout)
+             private static CompiledForm CompileForm(XDocument layout)
             {
                 HttpClient httpClient = new HttpClient();
                 httpClient.BaseAddress = new Uri("https://forms.plumsail.com/");
                 httpClient.DefaultRequestHeaders.Accept.Clear();
-                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                httpClient.DefaultRequestHeaders.Accept.Add(
+                    new MediaTypeWithQualityHeaderValue("application/json")
+                );
 
-                var response = await httpClient.PostAsJsonAsync($"api/sharepoint", layout);
+                var response = 
+                    httpClient.PostAsJsonAsync($"api/sharepoint", layout).Result;
                 response.EnsureSuccessStatusCode();
-                return await response.Content.ReadAsAsync<CompiledForm>();
+                return response.Content.ReadAsAsync<CompiledForm>().Result;
             }
 
             private static SecureString GetSecureString(string s)
@@ -132,7 +140,6 @@ Once the package and its dependencies have installed, go to Program.cs and repla
                 {
                     result.AppendChar(c);
                 }
-
                 return result;
             }
         }
@@ -141,9 +148,8 @@ Once the package and its dependencies have installed, go to Program.cs and repla
 
 Run the app
 --------------------------------------------------
-After saving the file, run the app. It will ask you for your password and after you input it, it will run and generate form for the List on the new site.
+After saving the file, run the app. Congratulations, you've successfully provisioned your first form!
 
-|pic5|
-
-.. |pic5| image:: ../images/how-to/provision/success.png
-   :alt: Executed Successfully
+The example shown in this article is very basic and requires you to export the form first, 
+while technically you can retrieve form's layouts and form sets settings from the original site.
+To learn more about various methods available to FormsManager in :doc:`this article </designer/provision>`.
