@@ -182,7 +182,7 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
 
             **Title** - string title of the form set.
 
-            **Id** - guid formSetId, can be used with **GenerateForms**, **GetLayout**, etc. 
+            **Id** - guid formSetId, can be used with *GenerateForms()*, *GetLayout()*, etc. 
         - .. code-block:: c#
 
                 var fss = forms.GetFormSets();
