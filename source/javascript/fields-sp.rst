@@ -26,22 +26,35 @@ Single Line of Text
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 80  
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Property
+        -   Description/Examples
         
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
 
-    *   -   **Get**
-        - .. code-block:: javascript
+            *Examples:*
+            
+            .. code-block:: javascript
 
-                //returns a string of text
+                //returns string
                 fd.field('SingleLine').value;
-
-    *   -   **Set**
-        - .. code-block:: javascript
-
                 fd.field('SingleLine').value = "New Text";
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
+
+            **change** - triggers when field value is changed.
+            
+            |
+
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('SingleLine').$on('change', function(value) {
                     alert('New value: ' + value);
@@ -52,22 +65,35 @@ Multiline Text Field
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 80    
-        
+    :header-rows: 1
+    :widths: 10 30
 
-    *   -   **Get**
-        - .. code-block:: javascript
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 //returns a string of text with formatting
                 fd.field('MultipleLines').value;
-
-    *   -   **Set**
-        - .. code-block:: javascript
-
                 fd.field('MultipleLines').value = "New Text";
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
+
+            **change** - triggers when field value is changed.
+            
+            |
+
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('MultipleLines').$on('change', function(value) {
                     alert('New value: ' + value);
@@ -77,22 +103,35 @@ Choice Single - Dropdown or Radio
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 80    
-        
+    :header-rows: 1
+    :widths: 10 30
 
-    *   -   **Get**
-        - .. code-block:: javascript
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 //returns selected choice as a string
                 fd.field('ChoiceSingle').value;
-
-    *   -   **Set**
-        - .. code-block:: javascript
-
                 fd.field('ChoiceSingle').value = "Enter Choice #2";
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
+
+            **change** - triggers when field value is changed.
+            
+            |
+
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('ChoiceSingle').$on('change', function(value) {
                     alert('New value: ' + value);
@@ -102,23 +141,35 @@ Choice Multiple - Checkboxes
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 80    
-        
+    :header-rows: 1
+    :widths: 10 30
 
-    *   -   **Get**
-        - .. code-block:: javascript
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 // returns an array of choices:
                 fd.field('ChoiceMultiple').value; 
+                fd.field('ChoiceMultiple').value = ["Enter Choice #1", "Enter Choice #2"];
 
-    *   -   **Set**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
 
-                fd.field('ChoiceMultiple').value 
-                = ["Enter Choice #1", "Enter Choice #2"];
+            **change** - triggers when field value is changed.
+            
+            |
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('ChoiceMultiple').$on('change', function(value) {
                     alert('New value: ' + value);
@@ -128,22 +179,35 @@ Number/Currency
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 80    
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Property
+        -   Description/Examples
         
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
 
-    *   -   **Get**
-        - .. code-block:: javascript
+            *Examples:*
+            
+            .. code-block:: javascript
 
-            // returns number as a string:
-            fd.field('Number').value; 
+                // returns number as a string:
+                fd.field('Number').value; 
+                fd.field('Number').value = "256";
 
-    *   -   **Set**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
 
-            fd.field('Number').value = "256";
+            **change** - triggers when field value is changed.
+            
+            |
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('Number').$on('change', function(value) {
                     alert('New value: ' + value);
@@ -153,22 +217,35 @@ Date
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 90
-        
+    :header-rows: 1
+    :widths: 10 30
 
-    *   -   **Get**
-        - .. code-block:: javascript
+    *   -   Property
+        -   Description/Examples
+
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 // returns Date object:
                 fd.field('Date').value; 
-
-    *   -   **Set**
-        - .. code-block:: javascript
-
                 fd.field('Date').value = new Date();
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
+
+            **change** - triggers when field value is changed.
+            
+            |
+
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('Date').$on('change', function(value) {
                     alert('New value: ' + value.toLocaleDateString());
@@ -178,22 +255,35 @@ DateTime
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 80    
-        
+    :header-rows: 1
+    :widths: 10 30
 
-    *   -   **Get**
-        - .. code-block:: javascript
+    *   -   Property
+        -   Description/Examples
+
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 // returns Date object:
                 fd.field('DateTime').value; 
-
-    *   -   **Set**
-        - .. code-block:: javascript
-
                 fd.field('DateTime').value = new Date().setHours(13, 31, 0);
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
+
+            **change** - triggers when field value is changed.
+            
+            |
+
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('Date').$on('change', function(value) {
                     alert('New value: ' + value);
@@ -204,19 +294,23 @@ Lookup/LookupMulti
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
 
     *   -   Property
-        -   Description
-        -   Examples
+        -   Description/Examples
+        
     *   -   **value**
         -   Allows to get or set selected value. 
             
             Returns an object for Single Choice Lookup, returns an array of objects for Multiple Choice Lookups. 
 
             Can be set with Item ID or an array of item IDs for Multiple Choice Lookups.
+            
+            |
 
-        - .. code-block:: javascript
+            *Example:*
+            
+            .. code-block:: javascript
 
                 //SINGLE CHOICE LOOKUP
 
@@ -261,7 +355,12 @@ Lookup/LookupMulti
 
     *   -   **ready**
         -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('Lookup').ready().then(function(field) {
                     console.log(field.value.LookupValue);
@@ -271,7 +370,12 @@ Lookup/LookupMulti
         -   Get or set text for adding new element, useful for localization. Appears if search is unsuccessful.
 
             Must be set before the field is rendered.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.spBeforeRender(function() {
                     fd.field('Lookup').addNewText = "Ajouter un nouvel élément";
@@ -282,7 +386,12 @@ Lookup/LookupMulti
         -   Get or set text when no items are found, useful for localization. Appears if search is unsuccessful.
 
             Must be set before the field is rendered.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.spBeforeRender(function() {
                     fd.field('Lookup').noDataText = 
@@ -292,14 +401,24 @@ Lookup/LookupMulti
 
     *   -   **title**
         -   Get or set the title of the field.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('Lookup').title;
                 fd.field('Lookup').title = "Super Lookup";
     
     *   -   **operator**
         -   Get or set search operator. Can search for elements that either start with entered text or contain it.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('Lookup').operator;
                 fd.field('Lookup').operator = "startsWith";
@@ -307,7 +426,12 @@ Lookup/LookupMulti
 
     *   -   **disabled**
         -   Check if field is disabled, or set field to disabled or editable state.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('Lookup').disabled;
                 fd.field('Lookup').disabled = true;
@@ -315,20 +439,35 @@ Lookup/LookupMulti
 
     *   -   **readonly**
         -   Check if field is readonly. Cannot be changed.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('Lookup').readonly;
 
     *   -   **extraFields**
         -   Get or set Extra Fields to retrieve from the source list. Returns an array.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('Lookup').extraFields;
                 fd.field('Lookup').extraFields = ["Category/Id", "Category/Title"];
 
     *   -   **expandFields**
         -   Get or set Expand Fields (need for all Lookups) to retrieve extra data. Returns an array.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('Lookup').extraFields;
                 fd.field('Lookup').extraFields = ["Category"];
@@ -337,7 +476,12 @@ Lookup/LookupMulti
         -   Get or set filter query for the lookup, which will filter the results. 
         
             Read more about OData $filter query |OData Filter|. 
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('Lookup').filter;
                 fd.field('Lookup').filter = "Country eq '" + fd.field("Country").value + "'";
@@ -348,7 +492,12 @@ Lookup/LookupMulti
             For Single choice Lookup it is |LookupKendo| widget. 
             
             For Multiple Choice Lookup it is |LookupKendoMulti| widget.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('Lookup').widget;
 
@@ -358,7 +507,12 @@ Lookup/LookupMulti
             Read more about Single Choice Lookup configuration |OptionsLookupSingle|. 
             
             Multiple Choice Lookup configuration |OptionsLookupMultiple|.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.spBeforeRender(function() {
                     //display Extra Field Price, if it is available 
@@ -373,7 +527,12 @@ Lookup/LookupMulti
         -   |Kendo UI Window| configuration. 
         
             Holds dialog window options when adding new items, such as width and height.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').dialogOptions.height; //returns height
                 fd.control('SPDataTable0').dialogOptions.width //returns width
@@ -414,17 +573,23 @@ Boolean - Yes/No
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 80    
-        
+    :header-rows: 1
+    :widths: 10 30
 
-    *   -   **Get**
-        - .. code-block:: javascript
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 // returns true or false:
                 fd.field('Boolean').value; 
-
-    *   -   **Set**
-        - .. code-block:: javascript
 
                 // can set with true/false:
                 fd.field('Boolean').value = false;
@@ -432,8 +597,16 @@ Boolean - Yes/No
                 // can set with 0/1:
                 fd.field('Boolean').value = 1; 
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
+
+            **change** - triggers when field value is changed.
+            
+            |
+
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('Boolean').$on('change', function(value) {
                     alert('New value: ' + value);
@@ -441,14 +614,22 @@ Boolean - Yes/No
 
 People Picker
 --------------------------------------------------
-Add **$on('ready',function(){})** event if you want to run these methods when page loads:
 
 .. list-table::
-    :widths: 10 80    
-        
+    :header-rows: 1
+    :widths: 10 30
 
-    *   -   **Get**
-        - .. code-block:: javascript
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 //returns an array of objects
                 fd.field('Persons').value;
@@ -459,10 +640,25 @@ Add **$on('ready',function(){})** event if you want to run these methods when pa
                 //returns display name of the first selected user
                 fd.field('Persons').value[0].DisplayText
 
+                // assign value by a display name
+                fd.field('Persons').value = "John Smith";
+
+                // or by an e-mail:
+                fd.field('Persons').value = "john.smith@mail.com";
+    
+    *   -   **ready**
+        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
                 //will run once the field is initialized
                 //returns all names as a string
-                fd.field('Persons').$on('ready',function(field) {
-                    var people = fd.field('Persons').value;
+                fd.field('Persons').ready().then(function(field) {
+                    var people = field.value;
                     var s = '';
                     for (var i = 0; i < people.length; i++) {
                         s += people[i].DisplayText + '; ';
@@ -470,17 +666,17 @@ Add **$on('ready',function(){})** event if you want to run these methods when pa
                     alert(s);
                 });
 
-    *   -   **Set**
-        - .. code-block:: javascript
 
-                // assign value by a display name
-                fd.field('Persons').value = "John Smith";
+    *   -   **$on()**
+        -   Triggers on event.
 
-                // or by an e-mail:
-                fd.field('Persons').value = "john.smith@mail.com";
+            **change** - triggers when field value is changed.
+            
+            |
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('Persons').$on('change', function(value) {
                     var people = value;
@@ -495,11 +691,20 @@ Managed Metadata (Taxonomy) Single
 --------------------------------------------------
 
 .. list-table::
-    :widths: 10 80    
-        
+    :header-rows: 1
+    :widths: 10 30
 
-    *   -   **Get**
-        - .. code-block:: javascript
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 // returns an object
                 fd.field('Taxonomy').value;
@@ -510,17 +715,22 @@ Managed Metadata (Taxonomy) Single
                 // returns the ID of the selected option
                 fd.field('Taxonomy').value.Id; 
 
-    *   -   **Set**
-        - .. code-block:: javascript
-
                 //set element with the an object:
                 fd.field('Taxonomy').value = { 
                     Id: "ac68fff3-2826-48f1-8d24-3fadad9533f0", 
                     Name: "Test1"
                 };
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
+
+            **change** - triggers when field value is changed.
+            
+            |
+
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('Taxonomy').$on('change', function(value) {
                     alert('New value: ' + value.Name);
@@ -529,12 +739,22 @@ Managed Metadata (Taxonomy) Single
 Managed Metadata (Taxonomy) Multiple
 --------------------------------------------------
 
-.. list-table::
-    :widths: 10 80    
-        
 
-    *   -   **Get**
-        - .. code-block:: javascript
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Property
+        -   Description/Examples
+
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 // returns an array of objects
                 fd.field('TaxonomyMulti').value;
@@ -553,9 +773,6 @@ Managed Metadata (Taxonomy) Multiple
                 }
                 alert(s);
 
-    *   -   **Set**
-        - .. code-block:: javascript
-
                 //set element with the an array:
                 fd.field('TaxonomyMulti').value = [{ 
                     Id: "ac68fff3-2826-48f1-8d24-3fadad9533f0", 
@@ -566,8 +783,16 @@ Managed Metadata (Taxonomy) Multiple
                     Name: "Term2"
                 }];
 
-    *   -   **OnChange**
-        - .. code-block:: javascript
+    *   -   **$on()**
+        -   Triggers on event.
+
+            **change** - triggers when field value is changed.
+            
+            |
+
+            *Examples:*
+
+            .. code-block:: javascript
 
                 fd.field('TaxonomyMulti').$on('change', function(value) {
                     var terms = value;
@@ -576,4 +801,44 @@ Managed Metadata (Taxonomy) Multiple
                         s += terms[i].Name + '; ';
                     }
                     alert('New value: ' + s);
+                });
+
+Content Type
+--------------------------------------------------
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //returns string with Content Type ID
+                fd.field('ContentType').value;
+
+                //will redirect to the page with the form for the Content Type:
+                fd.field('ContentType').value = "0x0100EF07682335C8DD4BBF2D7D82C74F52D1"
+
+    *   -   **ready**
+        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.field('ContentType').ready().then(function(field) {
+                    console.log(field.value);
+                    // or
+                    console.log(fd.field('ContentType').value);
                 });

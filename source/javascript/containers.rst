@@ -29,11 +29,10 @@ Properties of the Accordion container.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
 
     *   -   **mode**
         -   Property that holds value for the current mode of Accordion.
@@ -41,7 +40,12 @@ Properties of the Accordion container.
             Returns values "One", "ZeroOrOne" and "ZeroOrMultiple".
 
             Can also be used to set mode, but is not applied dynamically, so best used with Accordion Panel's toggle() method.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.container('Accordion0').mode;
                 
@@ -53,8 +57,12 @@ Properties of the Accordion container.
     *   -   **$children**
         -   Property that holds an array of all the panels inside the Accordion.
             Most commonly used to get panels and their methods, but can also be used to add new panels.
-        
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.container('Accordion0').$children;
 
@@ -64,18 +72,21 @@ Properties and methods of Accordion panels which can be accessed through **$chil
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
 
     *   -   **header**
         -   Property that holds the header for the panel.
 
             Can be used to get and set its value.
+            
+            |
 
-        - .. code-block:: javascript
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.container('Accordion0').$children[0].header;
                 fd.container('Accordion0').$children[1].header = 'New Header';
@@ -84,8 +95,12 @@ Properties and methods of Accordion panels which can be accessed through **$chil
         -   Property that checks if the panel is open or not.
 
             Can also be used to open or close a panel ignoring the current mode of the Accordion.
+            
+            |
 
-        - .. code-block:: javascript
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.container('Accordion0').$children[0].open;
                 fd.container('Accordion0').$children[1].open = true;
@@ -98,8 +113,12 @@ Properties and methods of Accordion panels which can be accessed through **$chil
 
             Works well with changing Mode of the Accordion, as it updates the state of Accordion to the new Mode.
             Usually doesn't need extra conditions in this case.
-        
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
                 
                 var accordion = fd.container('Accordion0');
 
@@ -122,17 +141,20 @@ Properties and methods of the Tab Control container.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **tabs**
         -   Property that holds an array with all the tabs.
             Can be used to get existing tabs or add new ones.
+            
+            |
 
-        - .. code-block:: javascript
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.container('Tab0').tabs;
                 
@@ -140,8 +162,12 @@ Properties and methods of the Tab Control container.
         -   Property that holds the position of currently opened tab in the array of tabs. 
 
             **Important!** Do not use for changing the current tab, only for getting it.
+            
+            |
 
-        - .. code-block:: javascript
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.container('Tab0').currentTab;
 
@@ -150,26 +176,46 @@ Properties and methods of the Tab Control container.
 
             Returns current value and also can be used to change orientation dynamically.
             Accepts values 'top', 'left', 'bottom' and even 'right'.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.container('Tab0').orientation;
                 fd.container('Tab0').orientation = 'left';
     
     *   -   **nextTab()**
         -   Method that selects next tab as active.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.container('Tab0').nextTab();
 
     *   -   **previousTab()**
         -   Method that selects previous tab as active.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.container('Tab0').previousTab();
 
     *   -   **setTab(int tabIndex)**
         -   Method that selects tab as active.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 //set first tab as active
                 fd.container('Tab0').setTab(0);

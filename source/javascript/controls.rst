@@ -26,15 +26,19 @@ Properties of the Button control.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **text**
         -   Property that holds text for the button.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Button0').text;
 
@@ -43,7 +47,12 @@ Properties of the Button control.
 
     *   -   **onclick**
         -   Property that holds JavaScript that is executed when button is clicked.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Button0').onclick;
 
@@ -56,29 +65,43 @@ Properties of the Submit control.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **text**
         -   Property that holds text for the submit button.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Button1').text;
                 fd.control('Button1').text = 'New text for button';
 
     *   -   **onclick**
         -   Property that holds JavaScript that is executed when submit button is clicked.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Button1').onclick;
                 fd.control('Button1').onclick = 'fd.save();';
 
     *   -   **disabled**
         -   Property that specifies if submit button is clickable or not, can be used to disable submit button.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Button1').disabled; //returns true or false
                 fd.control('Button1').disabled = true;
@@ -86,13 +109,23 @@ Properties of the Submit control.
                 
     *   -   **isSaving**
         -   Property that checks if form submission is in process.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Button1').isSaving;
 
     *   -   **savingText**
         -   Property that holds text that is displayed on form submission.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Button1').savingText;
                 fd.control('Button1').savingText = 
@@ -104,15 +137,19 @@ Properties of the Hyperlink control.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
 
     *   -   **text**
         -   Property that holds text for the control.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Hyperlink0').text;
                 fd.control('Hyperlink0').text = 
@@ -124,7 +161,12 @@ Properties of the Hyperlink control.
             The target attribute specifies where to open the linked document.
 
             Most common use is to open linked document in a new tab by setting target to "_blank"
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Hyperlink0').target;
                 fd.control('Hyperlink0').target = '_blank';
@@ -133,15 +175,24 @@ Properties of the Hyperlink control.
         -   Property that holds href for the link.
 
             The href attribute specifies the link's destination.
+            
+            |
 
-        - .. code-block:: javascript
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Hyperlink0').href;
                 fd.control('Hyperlink0').href = 'https://plumsail.com/';
 
     *   -   **onclick**
         -   Property that holds JavaScript that is executed when link is clicked.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Hyperlink0').onclick;
                 fd.control('Hyperlink0').onclick = 
@@ -153,11 +204,10 @@ Properties of the Image control.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **target**
         -   Property that holds target attribute for the image, used when image works as Hyperlink.
@@ -165,7 +215,12 @@ Properties of the Image control.
             The target attribute specifies where to open the linked document.
 
             Most common use is to open linked document in a new tab by setting target to "_blank"
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Image0').target;
                 fd.control('Image0').target = '_blank';
@@ -174,22 +229,36 @@ Properties of the Image control.
         -   Property that holds href for the link placed on the image.
 
             The href attribute specifies the link's destination.
+            
+            |
 
-        - .. code-block:: javascript
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Image0').href;
                 fd.control('Image0').href = 'https://plumsail.com/';
 
     *   -   **width**
         -   Property that specifies the width of the image.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Image0').width;
                 fd.control('Image0').width = '256';
 
     *   -   **height**
         -   Property that specifies the height of the image.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Image0').height;
                 fd.control('Image0').height = '512';
@@ -198,7 +267,12 @@ Properties of the Image control.
         -   Property that specifies the source of the image.
 
             Source attribute specifies the URL of the image and allows you to link any image to your form.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Image0').source;
                 fd.control('Image0').source = 
@@ -206,7 +280,12 @@ Properties of the Image control.
 
     *   -   **alt**
         -   Property that specifies an alternate text for an image, if the image cannot be displayed.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Image0').alt;
                 fd.control('Image0').alt = 
@@ -214,7 +293,12 @@ Properties of the Image control.
 
     *   -   **onclick**
         -   Property that holds JavaScript that is executed when link is clicked.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Image0').onclick;
                 fd.control('Image0').onclick = 
@@ -226,15 +310,19 @@ Properties of the Plain Text control.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **text**
         -   Property that holds text for the Plain Text control.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Text0').text;
                 fd.control('Text0').text = 'New text for text control';
@@ -245,37 +333,56 @@ Properties of the Ink Sketch control.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **value**
         -   Property that holds value of the Ink Sketch control in text.
             Can be copied, stored and set, for example.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 var signature = fd.control('Signature0').value;
                 fd.control('Signature1').value = 'signature';
 
     *   -   **width**
         -   Property that specifies the width of the ink sketch canvas.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Signature0').width;
                 fd.control('Signature0').width = '128';
 
     *   -   **height**
         -   Property that specifies the height of the ink sketch canvas.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Signature0').height;
                 fd.control('Signature0').height = '256';
     
     *   -   **readonly**
         -   Property that specifies if user can draw on canvas or not. Takes and returns only *true* and *false* values.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Signature0').readonly;
                 fd.control('Signature0').readonly = true;
@@ -283,7 +390,12 @@ Properties of the Ink Sketch control.
     
     *   -   **inkColor**
         -   Property that specifies color of the drawn lines. Can be used to change color dynamically.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('Signature0').inkColor;
                 fd.control('Signature0').inkColor = "red"
@@ -300,17 +412,21 @@ Properties
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **columns**
         -   Property that holds all the columns that the DataTable has. 
         
             Returns an array of |Kendo UI Grid columns|.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('DataTable0').columns; // returns an array
 
@@ -337,7 +453,12 @@ Properties
             Returns an array of objects where each has values matching Internal Column name and their respective value in the DataTable.
             
             Can be used to get information about existing records or create new records.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('DataTable0').value; // returns an array
                 
@@ -349,7 +470,12 @@ Properties
         -   Property that holds |kendoGrid widget| for the DataTable.
             
             Can be used to retrieve it, but not to modify it.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.control('DataTable0').widget;
 
@@ -358,11 +484,10 @@ Methods
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **addValidator(validator)**
         -   Method that allows you to add DataTable validators for the whole table.
@@ -373,7 +498,12 @@ Methods
 
             This allows you not only to check individual columns and compare their values,
             but to limit amount of records or set minimum amount, etc.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.control('DataTable0').addValidator({
                     error: 'Error message',
@@ -400,7 +530,12 @@ Methods
             Users cannot switch focus to other columns until this one is validated.
 
             Accepts InternalName of the column string and validator object as its parameters.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.control('DataTable0').addColumnValidator('Column1', {
                     error: 'Error message',
@@ -424,17 +559,21 @@ Events
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **change**
         -   Fired when the user applies any changes to the table, including adding, deleting or changing records.
 
             Inside the function, use **value** to access an array of records inside the DataTable.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.control('DataTable0').$on('change',
                     function(value) {
@@ -447,7 +586,12 @@ Events
             Can be used for preventing the editing depending on custom logic.
 
             Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-beforeEdit
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.control('DataTable0').$on('beforeEdit',
                     function(e) {
@@ -459,7 +603,12 @@ Events
         -   Fired when the user edits or creates a data item.
 
             Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-edit
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.control('DataTable0').$on('edit',
                     function(e) {
@@ -472,7 +621,12 @@ Events
             if the cancel button in the window is clicked the event will not be fired.
 
             Read more here - https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-remove
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.control('DataTable0').$on('remove',
                     function(e) {
@@ -496,11 +650,10 @@ Properties
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **filter**
         -   Property that holds CAML filtering for the control. 
@@ -508,8 +661,12 @@ Properties
 
             Can also be used to apply filtering. Changes are applied dynamically to the control.
             Read more and see examples in :doc:`CAML Filter article </how-to/caml-filter>`.
-        
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').filter; // returns CAML string
 
@@ -521,7 +678,12 @@ Properties
         -   Property that specifies if the user can add new items/documents to the control, edit or delete existing items/documents. 
             
             Takes and returns only *true* and *false* values.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').readonly;
                 fd.control('SPDataTable0').readonly = true;
@@ -531,9 +693,12 @@ Properties
         -   Property that specifies starting folder for the control. User cannot go higher than this folder. 
 
             Read more and see examples in :doc:`Root Folder article </how-to/root-folder>`.
-
             
-        - .. code-block:: javascript
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').baseRootFolder;
                 //set root as Base Folder:
@@ -546,7 +711,11 @@ Properties
 
             Read more and see examples in :doc:`Root Folder article </how-to/root-folder>`.
             
-        - .. code-block:: javascript
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').rootFolder;
                 //set root as Current Folder:
@@ -557,7 +726,11 @@ Properties
     *   -   **addNewItemText**
         -   Property that holds "Add new item" text, useful for localizations.
             
-        - .. code-block:: javascript
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').addNewItemText // "Add new item" by default
                 fd.control('SPDataTable0').addNewItemText = "New text"
@@ -565,7 +738,11 @@ Properties
     *   -   **uploadText**
         -   Property that holds "Upload" text, useful for localizations.
             
-        - .. code-block:: javascript
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').uploadText // "Upload" by default
                 fd.control('SPDataTable0').uploadText = "New text"
@@ -573,7 +750,11 @@ Properties
     *   -   **uploadingText**
         -   Property that holds "Uploading..." text, useful for localizations.
             
-        - .. code-block:: javascript
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').uploadingText // "Uploading..." by default
                 fd.control('SPDataTable0').uploadingText = "New text"
@@ -581,7 +762,11 @@ Properties
     *   -   **dialogOptions**
         -   |Kendo UI Window| configuration. Holds dialog window options when adding new items, such as width and height.
             
-        - .. code-block:: javascript
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').dialogOptions.height; //returns height
                 fd.control('SPDataTable0').dialogOptions.width //returns width
@@ -596,7 +781,12 @@ Properties
         -   Property that holds |kendoGrid widget| for the control.
             
             Can be used to retrieve it, but not to modify.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.control('SPDataTable0').widget;
 
@@ -605,17 +795,21 @@ Events
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Name
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **filesUploaded**
         -   Fired when the user uploads files to Document Library via List or Library control.
 
             **itemIds** is an array of IDs of uploaded files.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 //log all uploaded files to console
                 fd.control('SPDataTable0').$on('filesUploaded',
@@ -626,11 +820,16 @@ Events
                     });
     
     *   -   **ready**
-        -   Triggers when the control is initialized and is ready to be used in scripts. 
-        - .. code-block:: javascript
+        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.spRendered(function() {
-                    fd.control('SPDataTable0').$on('ready', function(dt) { 
+                    fd.field('SPDataTable0').ready().then(function(dt) { 
                         //dt parameter is the same as fd.control('SPDataTable0')
                         console.log('SPDataTable0 is initialized');
                     });
@@ -648,8 +847,12 @@ Events
             **parentItemId** is an ID of the newly saved Parent item.
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
+            
+            |
 
-        - .. code-block:: javascript
+            *Example:*
+            
+            .. code-block:: javascript
 
                 //give an alert message when saving New Form
                 fd.control('SPDataTable0').beforeItemsAttach(function(e) {

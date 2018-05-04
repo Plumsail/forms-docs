@@ -28,14 +28,18 @@ Most fields have these properties:
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
 
     *   -   Property
-        -   Description
-        -   Examples
+        -   Description/Examples
     *   -   **disabled**
         -   Returns true if the field is disabled, allows to disable a field, making it essentially Read-only.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.field('TextBox').disabled;
                 fd.field('TextBox').disabled = true;
@@ -44,7 +48,12 @@ Most fields have these properties:
         -   Get or set placeholder for a field.
 
             Only works for fields that have Placeholder property.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.field('TextBox').placeholder;
                 fd.field('TextBox').placeholder = 'Confirm Password';
@@ -55,8 +64,12 @@ Most fields have these properties:
             For SharePoint fields only adds or removes asterisk near the title. 
             
             For Plumsail fields it also adds validation.
+            
+            |
 
-        - .. code-block:: javascript
+            *Examples:*
+            
+            .. code-block:: javascript
                 
                 fd.field('TextBox').required;
                 fd.field('TextBox').required = true;
@@ -64,7 +77,12 @@ Most fields have these properties:
 
     *   -   **title**
         -   Allows to get or set field's title.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.field('TextBox').title;
                 fd.field('TextBox').title = 'New Title';
@@ -79,7 +97,12 @@ Most fields have these properties:
             *Note: Field validators will only work with Plumsail fields as all validation for SharePoint fields is configured via List Settings.*
 
             Use **rendered()** event for Plumsail forms and **spRendered()** event for SharePoint forms to add custom validators.
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.field('Numeric').validators;
         
@@ -113,7 +136,12 @@ Most fields have these properties:
             * Date, DateTime – Date
 
             * Numeric – number
-        - .. code-block:: javascript
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
 
                 fd.field('TextBox').value;
                 fd.field('TextBox').value = 'Hello, world!';
@@ -125,7 +153,12 @@ Most fields have these properties:
         -   Returns jquery-object lying under the Vue-component. 
         
             Usually it's a kendo component.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('TextBox').widget;
 
@@ -135,55 +168,74 @@ These methods are applicable to most fields:
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Method
-        -   Description
-        -   Examples
+        -   Description/Examples
     
     *   -   **clear()**
         -   Clears the field.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('TextBox').clear();
 
     *   -   **validate()**
         -   Checks to see if field is valid or not. If not, returns false, highlights field and adds error message under it.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field("TextBox").validate();
 
 Events
 --------------------------------------------------
-Fields use **$on()** method to track the events happening to them. 
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 20 20
+    :widths: 10 30
         
     *   -   Event
-        -   Description
-        -   Examples
+        -   Description/Examples
 
     *   -   **change**
         -   Triggers when field value is changed.
-        - .. code-block:: javascript
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.field('TextBox').$on('change', function(value) {
                     alert('New value: ' + value);
                 });
     *   -   **ready**
-        -   Triggers when the field is initialized and is ready to be used in scripts. **Only available for People picker and Content Type SharePoint fields!**
-        - .. code-block:: javascript
+        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
+        
+            **Only available for List or Library control, People picker, Lookup and Content Type SharePoint fields!**
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
 
                 fd.spRendered(function() {
-                    fd.field('User').$on('ready',function(field) {
+                    fd.field('User').ready().then(function(field) {
                         console.log(field.value);
                         // or
                         console.log(fd.field('User').value);
                     });
 
-                    fd.field('ContentType').$on('ready',function(field) {
+                    fd.field('ContentType').ready().then(function(field) {
                         console.log(field.value);
                         // or
                         console.log(fd.field('ContentType').value);
