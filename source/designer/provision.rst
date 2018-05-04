@@ -8,6 +8,7 @@ SP Forms Provision
 General Info
 -------------------------------------------------------------
 It is possible to provision forms programmatically using **Plumsail.Forms.Provision** |NuGet package|. 
+
 Find an example of how it can be used in our article - :doc:`Provision Modern UI SharePoint Form</how-to/provision>`.
 
 
@@ -17,67 +18,89 @@ Find an example of how it can be used in our article - :doc:`Provision Modern UI
 
 FormsManager
 -------------------------------------------------------------
-Forms Manager allows you to manage modern SharePoint Forms for a specific Content Type in the specific List. 
-It takes three arguments as parameters: Client Context for SharePoint Site with valid Site Owner credentials, 
-the ID of the List, and the ID of the Content Type as a string.
+
 
 .. code-block:: c#
 
-    var forms = new FormsDesigner.SharePoint.FormsManager(ClientContext ctx, Guid listId, string contenTypeId);
+    var forms = new FormsDesigner.SharePoint.FormsManager(ClientContext ctx, Guid listId, string contentTypeId);
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 10 20
+    :widths: 10 30
 
-    *   -   Parameter
-        -   Description
-        -   Example
+    *   -   Constructor
+        -   Description/Examples
 
-    *   -   **ClientContext ctx**
-        -   Client context for the site that you try to access with Full Control Credentials.
-        - .. code-block:: c#
+    *   -   **FormsManager(ClientContext ctx, Guid listId, string contenTypeId);**
+        -   Forms Manager allows you to manage modern SharePoint Forms for a specific Content Type in the specific List. 
+            It takes three arguments as parameters: Client Context for SharePoint Site with valid Site Owner credentials, 
+            the ID of the List, and the ID of the Content Type as a string.
 
-                var login = "login@domain.onmicrosoft.com";
-                var password = GetSecureString("qwerty");
+            **ctx** - client context for the site that you try to access, with Full Control Credentials.
 
-                var webUrl = "https://domain.sharepoint.com/sites/site";
-                var ctx = new ClientContext(webUrl);
-                ctx.Credentials = new SharePointOnlineCredentials(login, password);
-                
-    *   -   **Guid listId**
-        -   Guid with ID of the list that you try to access.
-        - .. code-block:: c#
+            **listId** - guid with ID of the list that you try to access.
 
-                var list = ctx.Web.Lists.GetByTitle("MyList");
+            **contentTypeId** - string with the Content Type Id.
+            
+            |
 
-                ctx.Load(list);
-                ctx.ExecuteQuery();
+            *Example:*
+            
+            .. code-block:: c#
 
-                var listId = list.Id;
-    
-    *   -   **string contenTypeId**
-        -   String with the Content Type Id
-        - .. code-block:: c#
+                static void Main()
+                {
+                    // SharePoint Login:
+                    var login = "your-login@your-domain.onmicrosoft.com";
+                    // Login's Password:
+                    var password = GetSecureString("qwerty");
+                    // List Title:
+                    var listTitle = "LookupTest";
+                    // Content Type Name:
+                    var contentType = "Item";
+                    // Path to the exported form:
+                    var formPath = "c:\\provision\\Item_Edit.xfds";
+                    // URL of the site:
+                    var webUrl = "https://your-domain.sharepoint.com/sites/your-site";
 
-                var cts = list.ContentTypes;
+                    using (var ctx = new ClientContext(webUrl))
+                    {
+                        ctx.Credentials = new SharePointOnlineCredentials(login, password);
 
-                ctx.Load(cts);
-                ctx.ExecuteQuery();
+                        var list = ctx.Web.Lists.GetByTitle(listTitle);
+                        var cts = list.ContentTypes;
 
-                var contenType = cts.FirstOrDefault(ct => ct.Name == "Item");
+                        ctx.Load(list);
+                        ctx.Load(cts);
+                        ctx.ExecuteQuery();
+
+                        var cType = cts.FirstOrDefault(ct => ct.Name == contentType);
+
+                        var forms = new FormsDesigner.SharePoint.FormsManager(ctx, list.Id, cType.Id.ToString());
+                    }
+                }
+
+
+                private static SecureString GetSecureString(string s)
+                {
+                    SecureString result = new SecureString();
+                    foreach (char c in s.ToCharArray())
+                    {
+                        result.AppendChar(c);
+                    }
+                    return result;
+                }
 
 
 FormsManager Methods
 -------------------------------------------------------------
-Forms Manager has a number of public methods to work with the forms.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 10 20
+    :widths: 10 30
 
     *   -   Method
-        -   Description
-        -   Examples
+        -   Description/Examples   
     *   -   **GenerateForms(Guid formSetId, FormTypes formTypes, XDocument layout, CompiledForm compiledForm)**
         -   Generates specified (New, Edit or Display) form for the specific Form Set. 
             
@@ -90,7 +113,12 @@ Forms Manager has a number of public methods to work with the forms.
             **layout** - layout of the form, XDocument from .xfds file.
 
             **compiledForm** - compiled form.
-        - .. code-block:: c#
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: c#
 
                 var layout = XDocument.Load("c:\\provision\\Item_New.xfds");
 
@@ -104,7 +132,12 @@ Forms Manager has a number of public methods to work with the forms.
                 
     *   -   **GetFormSets()**
         -   Allows to get form sets for the List. Returns FormSetSettings.
-        - .. code-block:: c#
+
+            |
+
+            *Example:*
+            
+            .. code-block:: c#
 
                 var settings = forms.GetFormSets();
 
@@ -116,7 +149,12 @@ Forms Manager has a number of public methods to work with the forms.
             **formSetId** - ID of the Form Set(empty Guid for Default).
 
             **formTypes** - type of the form (can only be one).
-        - .. code-block:: c#
+            
+            |
+
+            *Example:*
+
+            .. code-block:: c#
                 
                 var new = FormsDesigner.Data.SharePoint.FormTypes.New;
                 var edit = FormsDesigner.Data.SharePoint.FormTypes.Edit;
@@ -134,7 +172,12 @@ Forms Manager has a number of public methods to work with the forms.
             **formSetId** - ID of the Form Set(empty Guid for Default).
 
             **formTypes** - type of the form (can be several types separated by *|*).
-        - .. code-block:: c#
+            
+            |
+
+            *Example:*
+
+            .. code-block:: c#
 
                 var new = FormsDesigner.Data.SharePoint.FormTypes.New;
                 // reset the default New Form:
@@ -146,7 +189,12 @@ Forms Manager has a number of public methods to work with the forms.
             Takes 1 arguments: 
             
             **settings** - settings for routing, including rules and logic.
-        - .. code-block:: c#
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: c#
 
                 var settings = formsOldSite.GetFormSets();
                 formsNewSite.SetFormSets(settings);
@@ -154,25 +202,30 @@ Forms Manager has a number of public methods to work with the forms.
 FormSetSettings
 -------------------------------------------------------------
 FormSetSettings can be retrieved with **GetFormSets()** and set with **SetFormSets(FormSetSettings)**. 
+
 These settings contain code for :ref:`designer-customrouting`, as well as information about Form Sets, including groups used for redirection.
 
 .. list-table::
     :header-rows: 1
-    :widths: 10 10 20
+    :widths: 10 30
 
     *   -   Properties
-        -   Description
-        -   Examples
+        -   Description/Examples
     *   -   **CustomRouting**
-        -   Contains string with logic for custom routing. Can be used to get and set. 
-        - .. code-block:: c#
+        -   Contains string with logic for custom routing. Can be used to get and set.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: c#
 
                 var fss = forms.GetFormSets();
                 var routing = fss.CustomRouting;
     *   -   **FormSets**
         -   Contains IEnumerable of Form Sets. Can be used to get and set. 
 
-            Returned Form Sets contain:
+            Returned Form Set class contains:
 
             **ExcludedGroupIds** - IEnumerable of excl. group IDs (ints).
 
@@ -182,8 +235,13 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
 
             **Title** - string title of the form set.
 
-            **Id** - guid formSetId, can be used with *GenerateForms()*, *GetLayout()*, etc. 
-        - .. code-block:: c#
+            **Id** - guid formSetId, can be used with *GenerateForms()*, *GetLayout()*, etc.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: c#
 
                 var fss = forms.GetFormSets();
                 var sets = fss.FormSets;
