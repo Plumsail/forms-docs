@@ -8,6 +8,7 @@ SP Forms Provision
 General Info
 -------------------------------------------------------------
 It is possible to provision forms programmatically using **Plumsail.Forms.Provision** |NuGet package|. 
+Find an example of how it can be used in our article - :doc:`Provision Modern UI SharePoint Form</how-to/provision>`.
 
 
 .. |NuGet package| raw:: html
@@ -80,51 +81,118 @@ Forms Manager has a number of public methods to work with the forms.
     *   -   **GenerateForms(Guid formSetId, FormTypes formTypes, XDocument layout, CompiledForm compiledForm)**
         -   Generates specified (New, Edit or Display) form for the specific Form Set. 
             
-            Takes 4 arguments - ID of the Form Set(empty Guid for Default), type of the form, layout of the form and the compiled form.
+            Takes 4 arguments: 
+            
+            **formSetId** - ID of the Form Set(empty Guid for Default).
+
+            **formTypes** - type of the form (can be several types separated by *|*).
+
+            **layout** - layout of the form, XDocument from .xfds file.
+
+            **compiledForm** - compiled form.
         - .. code-block:: c#
 
                 var layout = XDocument.Load("c:\\provision\\Item_New.xfds");
 
-                var comp = await CompileForm(layout);
+                var comp = CompileForm(layout);
 
-                var New = FormsDesigner.Data.SharePoint.FormTypes.New;
-                var Edit = FormsDesigner.Data.SharePoint.FormTypes.Edit;
-                var Display = FormsDesigner.Data.SharePoint.FormTypes.Display;
+                var new = FormsDesigner.Data.SharePoint.FormTypes.New;
+                var edit = FormsDesigner.Data.SharePoint.FormTypes.Edit;
+                var display = FormsDesigner.Data.SharePoint.FormTypes.Display;
 
-                forms.GenerateForms(Guid.Empty, New | Edit | Display, layout, comp);
+                forms.GenerateForms(Guid.Empty, new | edit | display, layout, comp);
                 
     *   -   **GetFormSets()**
         -   Allows to get form sets for the List. Returns FormSetSettings.
         - .. code-block:: c#
 
-                forms.GetFormSets();
+                var settings = forms.GetFormSets();
 
     *   -   **GetLayout(Guid formSetId, FormTypes formType)**
         -   Allows to get specified form's layout from the List for the form set. Can be used instead of exported file.
+
+            Takes 2 arguments:
+
+            **formSetId** - ID of the Form Set(empty Guid for Default).
+
+            **formTypes** - type of the form (can only be one).
         - .. code-block:: c#
                 
-                var typeNew = FormsDesigner.Data.SharePoint.FormTypes.New;
-                var typeEdit = FormsDesigner.Data.SharePoint.FormTypes.Edit;
-                var typeDisplay = FormsDesigner.Data.SharePoint.FormTypes.Display;
+                var new = FormsDesigner.Data.SharePoint.FormTypes.New;
+                var edit = FormsDesigner.Data.SharePoint.FormTypes.Edit;
+                var display = FormsDesigner.Data.SharePoint.FormTypes.Display;
 
-                var layoutNew = forms.GetLayout(Guid.Empty, typeNew);
-                var layoutEdit = forms.GetLayout(Guid.Empty, typeEdit);
-                var layoutDisplay = forms.GetLayout(Guid.Empty, typeDisplay);
+                var layoutNew = forms.GetLayout(Guid.Empty, new);
+                var layoutEdit = forms.GetLayout(Guid.Empty, edit);
+                var layoutDisplay = forms.GetLayout(Guid.Empty, display);
                 
     *   -   **ResetForms(Guid formSetId, FormTypes formType)**
         -   Allows to reset the specified form for the specific form set in the List to the default.
+        
+            Takes 2 arguments: 
+            
+            **formSetId** - ID of the Form Set(empty Guid for Default).
+
+            **formTypes** - type of the form (can be several types separated by *|*).
         - .. code-block:: c#
 
-                Task.Run(async () =>
-                {
-                    var typeNew = FormsDesigner.Data.SharePoint.FormTypes.New;
-                    // reset the default New Form:
-                    forms.ResetForms(Guid.Empty, typeNew);
-                }).Wait();
+                var new = FormsDesigner.Data.SharePoint.FormTypes.New;
+                // reset the default New Form:
+                forms.ResetForms(Guid.Empty, new);
     
     *   -   **SetFormSets(FormSetSettings settings)**
         -   Allows to use FormSetSettings to create a structure for Form Sets in the List. Still need to generate forms after.
+
+            Takes 1 arguments: 
+            
+            **settings** - settings for routing, including rules and logic.
         - .. code-block:: c#
 
                 var settings = formsOldSite.GetFormSets();
                 formsNewSite.SetFormSets(settings);
+
+FormSetSettings
+-------------------------------------------------------------
+FormSetSettings can be retrieved with **GetFormSets()** and set with **SetFormSets(FormSetSettings)**. 
+These settings contain code for :ref:`designer-customrouting`, as well as information about Form Sets, including groups used for redirection.
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 10 20
+
+    *   -   Properties
+        -   Description
+        -   Examples
+    *   -   **CustomRouting**
+        -   Contains string with logic for custom routing. Can be used to get and set. 
+        - .. code-block:: c#
+
+                var fss = forms.GetFormSets();
+                var routing = fss.CustomRouting;
+    *   -   **FormSets**
+        -   Contains IEnumerable of Form Sets. Can be used to get and set. 
+
+            Returned Form Sets contain:
+
+            **ExcludedGroupIds** - IEnumerable of excl. group IDs (ints).
+
+            **IncludedGroupIds** - IEnumerable of incl. group IDs (ints).
+
+            **Order** - int order of the form set.
+
+            **Title** - string title of the form set.
+
+            **Id** - guid formSetId, can be used with **GenerateForms**, **GetLayout**, etc. 
+        - .. code-block:: c#
+
+                var fss = forms.GetFormSets();
+                var sets = fss.FormSets;
+
+                foreach (var Set in sets)
+                {
+                    var exclude = Set.ExcludedGroupIds;
+                    var include = Set.IncludedGroupIds;
+                    var order = Set.Order;
+                    var title = Set.Title;
+                    var guid = Set.Id;
+                }

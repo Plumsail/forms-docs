@@ -39,6 +39,7 @@ Table of contents
             designer/controls
             designer/fields
             designer/fields-sp
+            designer/provision
 
       .. toctree::
             :caption: JavaScript framework 
@@ -63,3 +64,4 @@ Table of contents
             how-to/data-table-section
             how-to/list-or-library-section
             how-to/lookup-section
+            how-to/other
