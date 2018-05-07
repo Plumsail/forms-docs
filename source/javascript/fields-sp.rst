@@ -45,10 +45,9 @@ Single Line of Text
                 fd.field('SingleLine').value;
                 fd.field('SingleLine').value = "New Text";
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
             
             |
 
@@ -84,14 +83,14 @@ Multiline Text Field
                 fd.field('MultipleLines').value;
                 fd.field('MultipleLines').value = "New Text";
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
@@ -122,14 +121,14 @@ Choice Single - Dropdown or Radio
                 fd.field('ChoiceSingle').value;
                 fd.field('ChoiceSingle').value = "Enter Choice #2";
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
@@ -160,14 +159,14 @@ Choice Multiple - Checkboxes
                 fd.field('ChoiceMultiple').value; 
                 fd.field('ChoiceMultiple').value = ["Enter Choice #1", "Enter Choice #2"];
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
@@ -198,14 +197,14 @@ Number/Currency
                 fd.field('Number').value; 
                 fd.field('Number').value = "256";
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
@@ -236,14 +235,14 @@ Date
                 fd.field('Date').value; 
                 fd.field('Date').value = new Date();
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
@@ -274,14 +273,14 @@ DateTime
                 fd.field('DateTime').value; 
                 fd.field('DateTime').value = new Date().setHours(13, 31, 0);
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
@@ -364,6 +363,20 @@ Lookup/LookupMulti
 
                 fd.field('Lookup').ready().then(function(field) {
                     console.log(field.value.LookupValue);
+                });
+    
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
+
+            
+            |
+
+            *Example:*
+
+            .. code-block:: javascript
+
+                fd.field('Lookup').$on('change', function(value) {
+                    alert('New value: ' + value.LookupValue));
                 });
 
     *   -   **addNewText**
@@ -597,14 +610,14 @@ Boolean - Yes/No
                 // can set with 0/1:
                 fd.field('Boolean').value = 1; 
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
@@ -667,14 +680,14 @@ People Picker
                 });
 
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
@@ -721,14 +734,14 @@ Managed Metadata (Taxonomy) Single
                     Name: "Test1"
                 };
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
@@ -783,14 +796,14 @@ Managed Metadata (Taxonomy) Multiple
                     Name: "Term2"
                 }];
 
-    *   -   **$on()**
-        -   Triggers on event.
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
 
-            **change** - triggers when field value is changed.
+           
             
             |
 
-            *Examples:*
+            *Example:*
 
             .. code-block:: javascript
 
