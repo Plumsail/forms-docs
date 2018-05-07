@@ -19,11 +19,6 @@ Find an example of how it can be used in our article - :doc:`Provision Modern UI
 FormsManager
 -------------------------------------------------------------
 
-
-.. code-block:: c#
-
-    var forms = new FormsDesigner.SharePoint.FormsManager(ClientContext ctx, Guid listId, string contentTypeId);
-
 .. list-table::
     :header-rows: 1
     :widths: 10 30
@@ -38,7 +33,7 @@ FormsManager
 
             **ctx** - client context for the site that you try to access, with Full Control Credentials.
 
-            **listId** - guid with ID of the list that you try to access.
+            **listId** - ID of the list that you try to access.
 
             **contentTypeId** - string with the Content Type Id.
             
@@ -75,8 +70,10 @@ FormsManager
                         ctx.ExecuteQuery();
 
                         var cType = cts.FirstOrDefault(ct => ct.Name == contentType);
+                        var cId = cType.Id.ToString();
 
-                        var forms = new FormsDesigner.SharePoint.FormsManager(ctx, list.Id, cType.Id.ToString());
+                        var forms = 
+                            new FormsDesigner.SharePoint.FormsManager(ctx, list.Id, cId);
                     }
                 }
 
@@ -108,7 +105,7 @@ FormsManager Methods
             
             **formSetId** - ID of the Form Set(empty Guid for Default).
 
-            **formTypes** - type of the form (can be several types separated by *|*).
+            **formTypes** - Flags indicating one or more form types.
 
             **layout** - layout of the form, XDocument from .xfds file.
 
@@ -131,7 +128,7 @@ FormsManager Methods
                 forms.GenerateForms(Guid.Empty, new | edit | display, layout, comp);
                 
     *   -   **GetFormSets()**
-        -   Allows to get form sets for the List. Returns FormSetSettings.
+        -   Allows to get form sets for the List. Returns :ref:`designer-formsetsettings`.
 
             |
 
@@ -142,13 +139,14 @@ FormsManager Methods
                 var settings = forms.GetFormSets();
 
     *   -   **GetLayout(Guid formSetId, FormTypes formType)**
-        -   Allows to get specified form's layout from the List for the form set. Can be used instead of exported file.
+        -   Allows to get specified form's layout from the List for the form set. The layout can be used with *GenerateForms()* method, 
+            instead of getting layout fromexported file.
 
             Takes 2 arguments:
 
             **formSetId** - ID of the Form Set(empty Guid for Default).
 
-            **formTypes** - type of the form (can only be one).
+            **formTypes** - a Flag indicating one form type.
             
             |
 
@@ -171,7 +169,7 @@ FormsManager Methods
             
             **formSetId** - ID of the Form Set(empty Guid for Default).
 
-            **formTypes** - type of the form (can be several types separated by *|*).
+            **formTypes** - Flags indicating one or more form types.
             
             |
 
@@ -198,6 +196,8 @@ FormsManager Methods
 
                 var settings = formsOldSite.GetFormSets();
                 formsNewSite.SetFormSets(settings);
+
+.. _designer-formsetsettings:
 
 FormSetSettings
 -------------------------------------------------------------

@@ -128,7 +128,7 @@ Once the package and its dependencies have installed, go to Program.cs and repla
                 );
 
                 var response = 
-                    httpClient.PostAsJsonAsync($"api/sharepoint", layout).Result;
+                    httpClient.PostAsJsonAsync("api/sharepoint", layout).Result;
                 response.EnsureSuccessStatusCode();
                 return response.Content.ReadAsAsync<CompiledForm>().Result;
             }
