@@ -42,8 +42,7 @@ Properties of the Button control.
 
                 fd.control('Button0').text;
 
-                fd.control('Button0').text = 
-                'New text for button';
+                fd.control('Button0').text = 'New text for button';
 
     *   -   **onclick**
         -   Property that holds JavaScript that is executed when button is clicked.
@@ -56,8 +55,7 @@ Properties of the Button control.
 
                 fd.control('Button0').onclick;
 
-                fd.control('Button0').onclick = 
-                'alert("Button is clicked!")';
+                fd.control('Button0').onclick = 'alert("Button is clicked!")';
 
 Submit
 --------------------------------------------------
@@ -128,8 +126,7 @@ Properties of the Submit control.
             .. code-block:: javascript
 
                 fd.control('Button1').savingText;
-                fd.control('Button1').savingText = 
-                'Collecting the data...';
+                fd.control('Button1').savingText = 'Collecting the data...';
 
 Hyperlink
 --------------------------------------------------
@@ -152,8 +149,7 @@ Properties of the Hyperlink control.
             .. code-block:: javascript
 
                 fd.control('Hyperlink0').text;
-                fd.control('Hyperlink0').text = 
-                'New text for hyperlink';
+                fd.control('Hyperlink0').text = 'New text for hyperlink';
 
     *   -   **target**
         -   Property that holds target attribute for the link.
@@ -195,8 +191,7 @@ Properties of the Hyperlink control.
             .. code-block:: javascript
 
                 fd.control('Hyperlink0').onclick;
-                fd.control('Hyperlink0').onclick = 
-                'alert("Hyperlink is clicked!")';
+                fd.control('Hyperlink0').onclick = 'alert("Hyperlink is clicked!")';
 
 Image
 --------------------------------------------------
@@ -275,8 +270,7 @@ Properties of the Image control.
             .. code-block:: javascript
 
                 fd.control('Image0').source;
-                fd.control('Image0').source = 
-                'https://images.com/my-image.png';
+                fd.control('Image0').source = 'https://images.com/my-image.png';
 
     *   -   **alt**
         -   Property that specifies an alternate text for an image, if the image cannot be displayed.
@@ -288,8 +282,7 @@ Properties of the Image control.
             .. code-block:: javascript
 
                 fd.control('Image0').alt;
-                fd.control('Image0').alt = 
-                'This picture is awesome, if only you could see it!';
+                fd.control('Image0').alt = 'This picture is awesome, if only you could see it!';
 
     *   -   **onclick**
         -   Property that holds JavaScript that is executed when link is clicked.
@@ -301,8 +294,7 @@ Properties of the Image control.
             .. code-block:: javascript
 
                 fd.control('Image0').onclick;
-                fd.control('Image0').onclick = 
-                'alert("Hyperlink is clicked!")';
+                fd.control('Image0').onclick = 'alert("Hyperlink is clicked!")';
 
 Plain Text
 --------------------------------------------------
@@ -437,12 +429,10 @@ Properties
                 fd.control('DataTable0').columns[0].title; 
 
                 //set column to readonly state:
-                fd.control('DataTable0').columns[0].editable = 
-                function(){return false}; 
+                fd.control('DataTable0').columns[0].editable = function(){return false}; 
 
                 //set column back to editable state:
-                fd.control('DataTable0').columns[0].editable = 
-                function(){return true}; 
+                fd.control('DataTable0').columns[0].editable = function(){return true}; 
 
                 //check if column is editable, returns true or false:
                 fd.control('DataTable0').columns[0].editable; 
@@ -509,14 +499,12 @@ Methods
                     error: 'Error message',
                     validate: function(value) {
                         if (value.length == 0) {
-                            this.error = 
-                            "Add at least one record to the table";
+                            this.error = "Add at least one record to the table";
                             return false;
                         }
                        
                         if (value.length > 10) {
-                            this.error = 
-                            "Don't add more than 10 records to the table";
+                            this.error = "Don't add more than 10 records to the table";
                             return false;
                         }
                        

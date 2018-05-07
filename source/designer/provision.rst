@@ -9,6 +9,8 @@ General Info
 -------------------------------------------------------------
 It is possible to provision forms programmatically using **Plumsail.Forms.Provision** |NuGet package|. 
 
+In order to use the package, you need to have *.NET Framework v.4.5.2* or higher installed.
+
 Find an example of how it can be used in our article - :doc:`Provision Modern UI SharePoint Form</how-to/provision>`.
 
 
