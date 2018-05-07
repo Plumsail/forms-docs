@@ -65,6 +65,7 @@ Once the package and its dependencies have installed, go to Program.cs and repla
     using System.Security;
     using System.Threading.Tasks;
     using System.Xml.Linq;
+    using FormsDesigner.SharePoint;
     using FormsDesigner.Data.SharePoint;
 
     namespace ProvisionApp
@@ -99,11 +100,9 @@ Once the package and its dependencies have installed, go to Program.cs and repla
                     ctx.ExecuteQuery();
 
                     // Specify a content type which form you want to replace
-                    var contenType = cts.FirstOrDefault(ct => ct.Name == contentType);
+                    var cType = cts.FirstOrDefault(ct => ct.Name == contentType);
 
-                    var forms = new FormsDesigner.SharePoint.FormsManager(
-                        ctx, list.Id, contenType.Id.ToString()
-                    );
+                    var forms = new FormsManager(ctx, list.Id, cType.Id.ToString());
 
                     var layout = XDocument.Load(formPath);
 

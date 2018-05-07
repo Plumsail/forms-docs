@@ -72,10 +72,9 @@ FormsManager
                         var cType = cts.FirstOrDefault(ct => ct.Name == contentType);
                         var cId = cType.Id.ToString();
 
-                        var forms = 
-                            new FormsDesigner.SharePoint.FormsManager(ctx, list.Id, cId);
+                        var forms = new FormsManager(ctx, list.Id, cId);
 
-                        //use FormsManager methods here
+                        //use FormsManager methods here...
                     }
                 }
 
