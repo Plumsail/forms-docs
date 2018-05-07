@@ -65,6 +65,7 @@ Once the package and its dependencies have installed, go to Program.cs and repla
     using System.Security;
     using System.Threading.Tasks;
     using System.Xml.Linq;
+    using FormsDesigner.Data.SharePoint;
 
     namespace ProvisionApp
     {
@@ -81,7 +82,7 @@ Once the package and its dependencies have installed, go to Program.cs and repla
                 // NAME OF THE CONTENT TYPE:
                 var contentType = "Item";
                 // PATH TO THE EXPORTED FORM:
-                var formPath = "c:\\provision\\Item_Edit.xfds";
+                var formPath = "c:\\provision\\Item_New.xfds";
                 // URL OF THE NEW SITE:
                 var webUrl = "https://your-domain.sharepoint.com/sites/your-site";
 
@@ -104,16 +105,12 @@ Once the package and its dependencies have installed, go to Program.cs and repla
                         ctx, list.Id, contenType.Id.ToString()
                     );
 
-                    var fss = forms.GetFormSets();
-
                     var layout = XDocument.Load(formPath);
 
                     var comp = CompileForm(layout);
 
-                    var New = FormsDesigner.Data.SharePoint.FormTypes.New;
-
                     // THE FORM WILL REPLACE A DEFAULT NEW FORM IN THE TARGET LIST:
-                    forms.GenerateForms(Guid.Empty, New, layout, comp);
+                    forms.GenerateForms(Guid.Empty, FormTypes.New, layout, comp);
 
                 }
             }

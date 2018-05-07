@@ -55,8 +55,6 @@ FormsManager
                     var listTitle = "LookupTest";
                     // Content Type Name:
                     var contentType = "Item";
-                    // Path to the exported form:
-                    var formPath = "c:\\provision\\Item_Edit.xfds";
                     // URL of the site:
                     var webUrl = "https://your-domain.sharepoint.com/sites/your-site";
 
@@ -76,6 +74,8 @@ FormsManager
 
                         var forms = 
                             new FormsDesigner.SharePoint.FormsManager(ctx, list.Id, cId);
+
+                        //use FormsManager methods here
                     }
                 }
 
@@ -121,13 +121,13 @@ FormsManager Methods
 
                 var layout = XDocument.Load("c:\\provision\\Item_New.xfds");
 
-                var comp = CompileForm(layout);
+                var compiledForm = CompileForm(layout);
 
-                var new = FormsDesigner.Data.SharePoint.FormTypes.New;
-                var edit = FormsDesigner.Data.SharePoint.FormTypes.Edit;
-                var display = FormsDesigner.Data.SharePoint.FormTypes.Display;
-
-                forms.GenerateForms(Guid.Empty, new | edit | display, layout, comp);
+                forms.GenerateForms(
+                        Guid.Empty, 
+                        FormTypes.New | FormTypes.Edit | FormTypes.Display, 
+                        layout, 
+                        compiledForm);
                 
     *   -   **GetFormSets()**
         -   Allows to get form sets for the List. Returns :ref:`designer-formsetsettings`.
@@ -156,13 +156,9 @@ FormsManager Methods
 
             .. code-block:: c#
                 
-                var new = FormsDesigner.Data.SharePoint.FormTypes.New;
-                var edit = FormsDesigner.Data.SharePoint.FormTypes.Edit;
-                var display = FormsDesigner.Data.SharePoint.FormTypes.Display;
-
-                var layoutNew = forms.GetLayout(Guid.Empty, new);
-                var layoutEdit = forms.GetLayout(Guid.Empty, edit);
-                var layoutDisplay = forms.GetLayout(Guid.Empty, display);
+                var layoutNew = forms.GetLayout(Guid.Empty, FormTypes.New);
+                var layoutEdit = forms.GetLayout(Guid.Empty, FormTypes.Edit);
+                var layoutDisplay = forms.GetLayout(Guid.Empty, FormTypes.Display);
                 
     *   -   **ResetForms(Guid formSetId, FormTypes formType)**
         -   Allows to reset the specified form for the specific form set in the List to the default.
@@ -179,9 +175,8 @@ FormsManager Methods
 
             .. code-block:: c#
 
-                var new = FormsDesigner.Data.SharePoint.FormTypes.New;
                 // reset the default New Form:
-                forms.ResetForms(Guid.Empty, new);
+                forms.ResetForms(Guid.Empty, FormTypes.New);
     
     *   -   **SetFormSets(FormSetSettings settings)**
         -   Allows to use FormSetSettings to create a structure for Form Sets in the List. Still need to generate forms after.
