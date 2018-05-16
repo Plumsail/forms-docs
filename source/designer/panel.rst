@@ -18,7 +18,7 @@ It's configured in the designer, in the new Form Panel section:
 .. image:: ../images/designer/panel/Menu.png
    :alt: Form Panel configuration menu
 
-Here, you can select which forms do you want to be opened in the panel, as well as the size of the panel. 
+Here, you can select which forms you want to be opened in the panel, as well as the size of the panel. 
 After first configuration, please, **re-save** the forms that you want to open in the panel.
 
 **Important!** There is a slight delay between the time when a user opens the list and when the script loads completely for panel forms, so if the users open a form too quickly, 
