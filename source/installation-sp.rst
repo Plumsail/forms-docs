@@ -60,6 +60,8 @@ We do not store your information, it's only necessary for the installation.
 
 Once you've added SharePoint license to your domain, you will be able to use Plumsail Forms for your lists and document libraries after completing the next step.
 
+.. _install-app-package:
+
 Install app package to your tenant
 **************************************************
 Last thing you need to do, to include Plumsail Forms on your SharePoint sites, 

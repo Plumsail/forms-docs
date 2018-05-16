@@ -1,4 +1,4 @@
-SP Forms Provision
+SharePoint Forms Provision
 =========================================
 
 .. contents:: Contents:

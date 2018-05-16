@@ -3,6 +3,10 @@ Version history
 
 v1.1.4
 --------------------------------------------------
+:doc:`SharePoint Form Panel </designer/panel>` functionality added.
+
+v1.1.4
+--------------------------------------------------
 Added Export to PDF button.
 
 DataTable has received :ref:`a new property <designer-datatable-properties>` - New Line(Top or Bottom).

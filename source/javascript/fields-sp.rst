@@ -364,20 +364,6 @@ Lookup/LookupMulti
                 fd.field('Lookup').ready().then(function(field) {
                     console.log(field.value.LookupValue);
                 });
-    
-    *   -   **$on('change')**
-        -   Triggers on 'change' event.
-
-            
-            |
-
-            *Example:*
-
-            .. code-block:: javascript
-
-                fd.field('Lookup').$on('change', function(value) {
-                    alert('New value: ' + value.LookupValue));
-                });
 
     *   -   **addNewText**
         -   Get or set text for adding new element, useful for localization. Appears if search is unsuccessful.
@@ -555,6 +541,19 @@ Lookup/LookupMulti
                     width: 1280,
                     height: 720
                 }
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
+
+            
+            |
+
+            *Example:*
+
+            .. code-block:: javascript
+
+                fd.field('Lookup').$on('change', function(value) {
+                    alert('New value: ' + value.LookupValue));
+                });
 
 
 .. |Kendo UI Window| raw:: html

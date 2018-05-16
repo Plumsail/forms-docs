@@ -40,6 +40,7 @@ Table of contents
             designer/fields
             designer/fields-sp
             designer/provision
+            designer/panel
 
       .. toctree::
             :caption: JavaScript framework 

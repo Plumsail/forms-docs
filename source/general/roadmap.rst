@@ -4,10 +4,8 @@ Roadmap
 Features in development
 -------------------------------------------------------
 
-Advanced Lookup fields
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Add support of large lists in lookup columns and support of Cross-site Lookup for SharePoint forms
+- Saving DataTable, Ink Sketch fields to SharePoint
 
-Export SharePoint forms to PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Get PDF version of your SharePoint forms.
+- An ability to reorganize tabs and and accordion sections within their containers
+
+- Add support of MFA in SharePoint login form
