@@ -1,7 +1,11 @@
 Version history
 ==================================================
 
-v1.1.4
+v1.1.6
+--------------------------------------------------
+Ink Sketch and Data Table controls can now be saved to a hidden SharePoint field.
+
+v1.1.5
 --------------------------------------------------
 :doc:`SharePoint Form Panel </designer/panel>` functionality added.
 

@@ -207,6 +207,10 @@ SETTINGS
         
     *   - InternalName
         - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+    *   - SaveTo
+        - Select or create a new hidden field in the current SharePoint List or Library to save Ink Sketch data to.
+        
+          Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
 
 LAYOUT
 
@@ -352,6 +356,10 @@ SETTINGS
         - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
     *   - New Line
         - Allows to select where the new line will be added - at the Top or at the Bottom of the table.
+    *   - SaveTo
+        - Select or create a new hidden field in the current SharePoint List or Library to save DataTable data to.
+        
+          Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
 
 DataTable Column properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
