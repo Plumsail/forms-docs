@@ -19,7 +19,7 @@ Select an Ink Sketch or a DataTable control and you'll see SaveTo property:
 .. image:: ../images/how-to/save-table-signature/SaveTo.png
    :alt: SaveTo property
 
-*If the form was created with an older version of Forms, simply delete the field and add it again.*
+*If the form was created with an older version of Forms, simply delete the control and add it again.*
 
 Inside the dropdown you can select one of existing hidden fields to store data to (it must be a Multiline Text field to work) or create a new field:
 

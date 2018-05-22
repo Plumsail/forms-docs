@@ -211,6 +211,8 @@ SETTINGS
         - Select or create a new hidden field in the current SharePoint List or Library to save Ink Sketch data to.
         
           Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
+          
+          *Note:* This setting is exclusive to SharePoint Forms. 
 
 LAYOUT
 
@@ -360,6 +362,8 @@ SETTINGS
         - Select or create a new hidden field in the current SharePoint List or Library to save DataTable data to.
         
           Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
+
+          *Note:* This setting is exclusive to SharePoint Forms. 
 
 DataTable Column properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
