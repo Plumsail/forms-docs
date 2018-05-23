@@ -283,11 +283,11 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
                 {
                     Display = FormPanelSettings()
                     {
-                        Size = FormsDesigner.Data.SharePoint.FormPanelSize.Medium
+                        Size = FormPanelSize.Medium
                     },
                     Edit = FormPanelSettings()
                     {
-                        Size = FormsDesigner.Data.SharePoint.FormPanelSize.Large
+                        Size = FormPanelSize.Large
                     },
                     New = null
                 };
