@@ -218,6 +218,7 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
 
                 var fss = forms.GetFormSets();
                 var routing = fss.CustomRouting;
+
     *   -   **FormSets**
         -   Contains IEnumerable of Form Sets. Can be used to get and set. 
 
@@ -250,3 +251,54 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
                     var title = Set.Title;
                     var guid = Set.Id;
                 }
+    *   -   **AddListViewCommands**
+        -   Contains boolean that determines if the Form Set uses List View Commands (Form Panel). Can be used to get and set.
+
+            If set to false, neither **Panel** nor **CustomListViewCode** properties will work.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: c#
+
+                var fss = forms.GetFormSets();
+                fss.AddListViewCommands = true;
+            
+    *   -   **Panel**
+        -   Contains object that determines which forms will open in a panel and at what size. Can be used to get and set.
+
+            **New**, **Edit** and **Display** are all properties that specify each form's settings. 
+
+            If not specified - specific form is automatically sent to null, and not shown in a panel.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: c#
+
+                var fss = forms.GetFormSets();
+                fss.Panel = FormTypePanelSettings()
+                {
+                    Display = FormPanelSettings()
+                    {
+                        Size = FormsDesigner.Data.SharePoint.FormPanelSize.Medium
+                    },
+                    Edit = FormPanelSettings()
+                    {
+                        Size = FormsDesigner.Data.SharePoint.FormPanelSize.Large
+                    },
+                    New = null
+                };
+    *   -   **CustomListViewCode**
+        -   Contains string with custom code for List View Commands. Can be used to get and set.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: c#
+
+                var fss = forms.GetFormSets();
+                ffs.CustomListViewCode = "alert('Form Panels active')";
