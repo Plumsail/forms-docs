@@ -252,7 +252,7 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
                     var guid = Set.Id;
                 }
     *   -   **AddListViewCommands**
-        -   Contains boolean that determines if the Form Set uses List View Commands (Form Panel). Can be used to get and set.
+        -   Contains boolean that determines if Form Commands (Form Panel) are loaded in the list views. Can be used to get and set.
 
             If set to false, neither **Panel** nor **CustomListViewCode** properties will work.
             
@@ -270,7 +270,7 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
 
             **New**, **Edit** and **Display** are all properties that specify each form's settings. 
 
-            If not specified - specific form is automatically sent to null, and not shown in a panel.
+            If not specified - specific form is automatically set to null, and not shown in a panel.
             
             |
 
