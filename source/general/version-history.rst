@@ -5,7 +5,7 @@ v.1.1.7
 --------------------------------------------------
 Forms now support Native Office 365 authentication.
 
-Tabs and Accordion Panels can now be dragged-n-dropped in the designer - inside the container to switch places, 
+Tabs and Accordion Panels can now be dragged-and-dropped in the designer - inside the container to switch places, 
 to another container of the same type or even outside on the form to create a new container.
 
 v1.1.6
