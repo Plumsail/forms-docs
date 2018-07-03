@@ -1,6 +1,13 @@
 Version history
 ==================================================
 
+v.1.1.7
+--------------------------------------------------
+Forms now support Native Office 365 authentication.
+
+Tabs and Accordion Panels can now be dragged-n-dropped in the designer - inside the container to switch places, 
+to another container of the same type or even outside on the form to create a new container.
+
 v1.1.6
 --------------------------------------------------
 Ink Sketch and Data Table controls can now be saved to a hidden SharePoint field.
@@ -37,34 +44,34 @@ Added :doc:`theme support </designer/themes>` for Modern SharePoint Forms.
 
 v1.0.5
 --------------------------------------------------
-Added :ref:`designer-listorlibrary` control - allows editing items or documents in related SharePoint Lists or Document Libraries
+Added :ref:`designer-listorlibrary` control - allows editing items or documents in related SharePoint Lists or Document Libraries.
 
-Fixed default width of titles for vertically-oriented fields
+Fixed default width of titles for vertically-oriented fields.
 
-Fixed activation of Site Pages feature
+Fixed activation of Site Pages feature.
 
-Fixed .NET framework prerequisites check
+Fixed .NET framework prerequisites check.
 
-Other minor bug fixes
+Other minor bug fixes.
 
 v1.0.4
 --------------------------------------------------
-Added a drop-down column type to DataTable
+Added a drop-down column type to DataTable.
 
-Improved JS-framework: added *'ready'* event to User and Content Type SharePoint fields, *'disabled'* property to Data Tables
+Improved JS-framework: added *'ready'* event to User and Content Type SharePoint fields, *'disabled'* property to Data Tables.
 
-Minor bug fixes
+Minor bug fixes.
 
 v1.0.3
 --------------------------------------------------
-:ref:`designer-datatable` is added
+:ref:`designer-datatable` is added.
 
-Minor bugfixes
+Minor bugfixes.
 
 v1.0.2
 --------------------------------------------------
-:ref:`designer-captcha` is added
+:ref:`designer-captcha` is added.
 
 v1.0.1
 --------------------------------------------------
-Initial release
+Initial release.
