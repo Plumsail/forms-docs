@@ -399,7 +399,7 @@ LAYOUT
 
 Likert scale
 -------------------------------------------------------------
-Likert scale is a control which allows you to gather detailed feedback from the user. This control is based on |kendoNumericTextBox|.
+Likert scale is a control which allows you to gather detailed feedback from the user.
 
 You can set up as many questions as you want in the Likert scale, as well as choose the available answer options.
 
@@ -435,10 +435,6 @@ SETTINGS
           Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
 
           *Note:* This setting is exclusive to SharePoint Forms. 
-
-.. |kendoNumericTextBox| raw:: html
-
-    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/numerictextbox" target="_blank">kendo NumericTextBox</a>
 
 .. _designer-listorlibrary:
 

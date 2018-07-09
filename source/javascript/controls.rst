@@ -394,6 +394,144 @@ Properties of the Ink Sketch control.
                 fd.control('Signature0').inkColor = "#0F0"
                 fd.control('Signature0').inkColor = "#0000FF" 
                 fd.control('Signature0').inkColor = "rgb(0,0,0)"
+    *   -   **_signaturePad**
+        -   Property that holds additional properties of the Ink Sketch control.
+
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //clear Ink Sketch control:
+                fd.control('Signature0').value = '';
+                var canvas = fd.control('Signature0')._signaturePad._canvas;
+                var context = fd.control('Signature0')._signaturePad._ctx;
+                context.clearRect(0, 0, canvas.width, canvas.height);
+
+Likert scale
+--------------------------------------------------
+Properties, methods and events of the Likert scale control.
+
+Properties
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+    
+    *   -   **answers**
+        -   Property that holds all the answers for the Likert Scale/
+        
+            Returns an array of strings. Can also be used to set available answers dynamically.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('LikertScale0').answers; // returns an array
+
+                fd.control('LikertScale0').answers = ["Very Poor", "Poor", "Okay", "Good", "Superb", "Awesome"];
+
+    *   -   **questions**
+        -   Property that holds all the questions for the Likert Scale.
+        
+            Returns an array of strings. Can also be used to set available questions dynamically.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('LikertScale0').questions; // returns an array
+
+                fd.control('LikertScale0').questions = ["Cleanliness", "Comfort", "Facilities", "Awesomeness"];
+
+    *   -   **showConnectedLines**
+        -   Property that determines if connected lines are shown between question answers or not.
+        
+            Returns a boolean. Can also be used to hide/show lines dynamically.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('LikertScale0').showConnectedLines; // returns true/false
+
+                fd.control('LikertScale0').showConnectedLines = false; // hides lines
+                fd.control('LikertScale0').showConnectedLines = true; // shows lines
+
+    *   -   **value**
+        -   Property that holds all the user's answers to the questions.
+        
+            Returns an array of strings. Can also be used to set value dynamically.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('LikertScale0').value; // returns an array
+
+                fd.control('LikertScale0').value = ["Good", "Okay", "Good", "Superb", "Awesome"];
+    
+    *   -   **numericOptions**
+        -   Property that holds |kendoNumericTextBox| configuration for the Likert scale number fields, if Type is set to Number.
+            
+            Can be used for adding additional customization.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('LikertScale0').numericOptions = {
+                    min: 0,
+                    max: 100,
+                    decimals: 0,
+                    format: "#"
+                }
+    
+Events
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+    
+    *   -   **change**
+        -   Fired when the user applies any changes to the Likert scale.
+
+            Inside the function, use **value** to access an array of records inside the DataTable.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('LikertScale0').$on('change',
+                    function(value) {
+                        console.log(value); // Likert scale's answers 
+                        alert('Likert scale changed');
+                    });
+
+.. |kendoNumericTextBox| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid widget</a>
 
 DataTable
 --------------------------------------------------
