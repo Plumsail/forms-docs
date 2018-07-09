@@ -395,6 +395,51 @@ LAYOUT
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid</a>
 
+.. _designer-likert:
+
+Likert scale
+-------------------------------------------------------------
+Likert scale is a control which allows you to gather detailed feedback from the user. This control is based on |kendoNumericTextBox|.
+
+You can set up as many questions as you want in the Likert scale, as well as choose the available answer options.
+
+Likert scale can be easily submitted to MS Flow or stored in a hidden field in a SharePoint List.
+
+.. image:: ../images/designer/controls/LikertScale.png
+   :alt: Likert scale
+
+.. _designer-datatable-properties:
+
+Likert scale properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every Likert scale control has the following settings:
+
+SETTINGS
+
+.. list-table::
+    :widths: 10 40
+        
+    *   - InternalName
+        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+    *   - Questions
+        - Enter how many questions the Likert scale will have - each question starts form a new line.
+    *   - Answers
+        - Select labels for available answers. Each one adds an additional answer to the control.
+    *   - Type
+        - Select type of answers user can input into the scale. The types include: Radio, Checkbox, String, Number, Dropdown.
+    *   - Items
+        - Select available choices in the dropdown answers. Only available if Type is set to Dropdown.
+    *   - SaveTo
+        - Select or create a new hidden field in the current SharePoint List or Library to save Likert scale data to.
+        
+          Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
+
+          *Note:* This setting is exclusive to SharePoint Forms. 
+
+.. |kendoNumericTextBox| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/numerictextbox" target="_blank">kendo NumericTextBox</a>
+
 .. _designer-listorlibrary:
 
 List or Library

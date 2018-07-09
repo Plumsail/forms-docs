@@ -1,6 +1,10 @@
 Version history
 ==================================================
 
+v.1.1.8
+--------------------------------------------------
+:ref:`designer-likert` control has been added.
+
 v.1.1.7
 --------------------------------------------------
 Forms now support Native Office 365 authentication.
