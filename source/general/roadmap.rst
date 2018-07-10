@@ -4,8 +4,12 @@ Roadmap
 Features in development
 -------------------------------------------------------
 
-- Saving DataTable, Ink Sketch fields to SharePoint
+- More validation options for text boxes
 
-- An ability to reorganize tabs and and accordion sections within their containers
+- Masked text box
 
-- Add support of MFA in SharePoint login form
+- Wizard control
+
+- Zapier integration
+
+- Improvement of List or Library control
