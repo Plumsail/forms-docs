@@ -472,7 +472,9 @@ Properties
     *   -   **value**
         -   Property that holds all the user's answers to the questions.
         
-            Returns an array of strings. Can also be used to set value dynamically.
+            Returns an array of answers. If type is Radio, value is an array of strings. For other types, it's an array of arrays.
+
+            Can also be used to set value dynamically.
             
             |
 
@@ -482,7 +484,22 @@ Properties
 
                 fd.control('LikertScale0').value; // returns an array
 
+                //clear all answers
+                fd.control('LikertScale0').value = 0;
+
+                //set Radio Type Likert scale value
                 fd.control('LikertScale0').value = ["Good", "Okay", "Good", "Superb", "Awesome"];
+
+                //set Checkbox/String/Dropdown Type Likert scale value
+                fd.control('LikertScale0').value = [
+                    ["Okay", "Cool"],
+                    ["Cool", "Very Cool"],
+                    ["Very Cool", "Amazing"],
+                    ["Superb", "Awesome"]
+                ];
+
+                //set Number Type Likert scale value
+                fd.control('LikertScale0').value = [[0, 1],[0, 0],[0, 1],[0, 1]];
     
     *   -   **numericOptions**
         -   Property that holds |kendoNumericTextBox| configuration for the Likert scale number fields, if Type is set to Number.
@@ -515,7 +532,7 @@ Events
     *   -   **change**
         -   Fired when the user applies any changes to the Likert scale.
 
-            Inside the function, use **value** to access an array of records inside the DataTable.
+            Inside the function, use **value** to access an array of answers inside the Likert scale.
             
             |
 
