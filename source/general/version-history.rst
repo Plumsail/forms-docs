@@ -1,6 +1,16 @@
 Version history
 ==================================================
 
+v.1.1.9
+--------------------------------------------------
+Masked TextBox field added.
+
+Additional validation options for regular text boxes: e-mail, phone, numbers etc.
+
+Wizard container has been added.
+
+Several bug fixes.
+
 v.1.1.8
 --------------------------------------------------
 :ref:`designer-likert` control has been added.
