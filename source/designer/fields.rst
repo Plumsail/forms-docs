@@ -77,6 +77,56 @@ TextBox is the basic text input field. It doesn't support multiple lines of text
 .. image:: ../images/designer/fields/TextBox.png
    :alt: TextBox
 
+TextBox unique properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TextBox field has the following unique settings:
+
+PATTERN
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Type
+        - Select the Type of the Textbox, this will automatically apply a pattern to it. Several types are available, such as Email, Phone, Numeric, etc. This will determine what type of text can be input, and will give field a validator to make sure that the input is correct. You can alter any of the settings, this will automatically switch Type to Custom.
+    *   - Pattern
+        - A regex pattern which the field has to follow. You can either input your own, or select one of the available Types and it will be automatically set for you.
+    *   - Flags
+        - Regex flags, more on that |Regex flags|.
+    *   - Error
+        - The error message shown when the input text doesn't match the pattern.
+
+.. |Regex flags| raw:: html
+
+   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters" target="_blank">here</a>
+
+MaskedTextBox
+-------------------------------------------------------------
+MaskedTextBox is similar to a regular TextBox, but you can restrict what the user can input. It's not validation, user simply won't be able to enter any text that doesn't match the mask.
+
+.. image:: ../images/designer/fields/MaskedTextBox.png
+   :alt: MaskedTextBox
+
+MaskedTextBox unique properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MaskedTextBox field has the following unique settings:
+
+CONTROL
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Mask
+        - The mask that will restrict user from inputting anything that doesn't match it. 
+
+          For more information and examples, please, checkout |KendoUI MaskedTextBox|.
+
+
+
+.. |KendoUI MaskedTextBox| raw:: html
+
+   <a href="https://demos.telerik.com/kendo-ui/maskedtextbox/index" target="_blank">KendoUI MaskedTextBox</a>
+
+
 Numeric
 -------------------------------------------------------------
 Numeric is the basic number input field.

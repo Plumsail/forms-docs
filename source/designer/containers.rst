@@ -22,7 +22,7 @@ one grid within another and then can lay out elements within second grid, which 
 
 So, despite Parent grid only having 12 options for Width property, you can adjust your layout precisely by using multiple grid containers.
 
-Parent Grid properties
+Parent Grid's properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every element within a Grid has the following properties:
 
@@ -43,7 +43,7 @@ Every element within a Grid has the following properties:
     *   - Style
         - Allows you to give custom style settings to the grid cell. Works as a style attribute of an HTML tag, doesn't require any selectors to work.
 
-Grid properties
+Grid's properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Grid container has the following settings:
 
@@ -76,7 +76,7 @@ You can change position of tabs in LAYOUT: Orientation and choose between Top, L
 .. image:: ../images/designer/containers/Tabs.png
    :alt: Tabs
 
-Tabs properties
+Tabs' properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Tabs container has the following settings:
 
@@ -101,12 +101,12 @@ Accordion
 -------------------------------------------------------------
 Accordion gives you another way to separate your content into parts, but slightly differently from tabs.
 
-Instead of tabs, it uses sections, each represented with horizontal line which you can give title to. 
+Instead of tabs, it uses panels, each represented with horizontal line which you can give title to. 
 
 .. image:: ../images/designer/containers/Accordion.png
    :alt: Accordion
 
-Accordion properties
+Accordion's properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Accordion container has the following settings:
 
@@ -124,6 +124,38 @@ LAYOUT
     :widths: 10 40
 
     *   - Mode
-        - Single - only one section is always open. SingleCollapsable - only one section can be open, but it can also be closed. Multiple means that Multiple sections can be open and all can be closed.
+        - Single - only one panel is always open. SingleCollapsable - only one panel can be open, but it can also be closed. Multiple means that Multiple panels can be open and all can be closed.
     *   - Expanded
-        - Allows you to choose sections that will be expanded by default. Leave it empty if you don't want any section to be expanded. Can select multiple sections if Multiple mode is selected, e.g. *0,1,2*
+        - Allows you to choose panels that will be expanded by default. Leave it empty if you don't want any panel to be expanded. Can select multiple panels if Multiple mode is selected, e.g. *0,1,2*
+
+Wizard
+-------------------------------------------------------------
+Wizard container is different from all other containers. It's designed to force users fill out
+the information as they go, one section at a time. 
+
+Before the user can open the next one, the previous one must be validated.
+
+.. image:: ../images/designer/containers/Wizard.png
+   :alt: Wizard
+
+Wizard's properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every Wizard container has the following settings:
+
+SETTINGS
+
+.. list-table::
+    :widths: 10 40
+        
+    *   - InternalName
+        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+    *   - Shape
+        - Setting that allows you to change presentation of the Wizard container.
+    *   - OnFinish
+        - A script which will run when the user presses the Finish button in the last section. Submits the form by default.
+    *   - Next Text
+        - Property that holds the text of the Next button.
+    *   - Back Text
+        - Property that holds the text of the Back button.
+    *   - Finish Text
+        - Property that holds the text of the Finish button.
