@@ -162,6 +162,22 @@ Most fields have these properties:
 
                 fd.field('TextBox').widget;
 
+MaskedTextBox Unique Properties
+--------------------------------------------------
+These properties are only applicable to MaskedTextBox field:
+
+    *   -   **mask**
+        -   Property that holds the Mask for the MaskedTextBox field, can be used to get it or set it.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.field('MaskedTextBox0').mask;
+                fd.field('MaskedTextBox0').mask = "(999) 000-0000";
+
 Methods
 --------------------------------------------------
 These methods are applicable to most fields:

@@ -223,3 +223,97 @@ Properties and methods of the Tab Control container.
                 fd.container('Tab0').setTab(
                     fd.container('Tab0').tabs.length -1
                 );
+
+Wizard
+--------------------------------------------------
+Properties of the Wizard container.
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+
+    *   -   **backText**
+        -   Property that holds text of the Back button, can be used to get it or set it.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.container('Wizard0').backText;
+                fd.container('Wizard0').backText = 'Return';
+
+    *   -   **finishText**
+        -   Property that holds text of the Finish button, can be used to get it or set it.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.container('Wizard0').finishText;
+                fd.container('Wizard0').finishText = 'Submit';
+
+    *   -   **nextText**
+        -   Property that holds text of the Next button, can be used to get it or set it.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.container('Wizard0').nextText;
+                fd.container('Wizard0').nextText = 'Forward';
+    *   -   **shape**
+        -   Property that holds the Shape of the UI icons, can be used to get it or set it.
+
+            If the value set is incorrect, shape reverts to Circle.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.container('Wizard0').shape;
+                fd.container('Wizard0').shape = 'circle';
+                fd.container('Wizard0').shape = 'square';
+                fd.container('Wizard0').shape = 'tab';
+
+    *   -   **steps**
+        -   Property that holds an array of the titles for each step, can be used to get it or set them.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.container('Wizard0').steps;
+                fd.container('Wizard0').steps = ['Step 1', 'Step 2', 'Step 3'];
+
+    *   -   **icons**
+        -   Property that holds an array of |Microsoft Fabric Icons| for each step, can be used to get it or set them.
+
+            By default each step is represented by a number, but this can be changed.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.container('Wizard0').icons;
+                fd.container('Wizard0').icons = ['BoxCheckmarkSolid', 'BoxAdditionSolid', 'BranchSearch'];
+
+|Microsoft Fabric Icons|
+
+.. |Microsoft Fabric Icons| raw:: html
+
+    <a href="https://developer.microsoft.com/en-us/fabric#/styles/icons" target="_blank">Microsoft Fabric Icons</a>
