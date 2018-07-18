@@ -27,6 +27,8 @@ Table of contents
 
             general/roadmap
             general/version-history
+            general/data-security
+            general/privacy-policy
 
       .. toctree::
             :caption: Designer
