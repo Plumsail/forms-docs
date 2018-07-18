@@ -31,7 +31,7 @@ only SharePoint Online domain name (for SharePoint License) and |Plumsail Accoun
 After installing Plumsail Forms, the only data that we are gathering from you is application logs from the system.
 
 The data submitted with Public Web Forms is not stored on our servers, but goes directly to Microsoft Flow.
-The attachments are stored in Microsoft Azure, |encrypted at REST|. For the paid plans, storage can be cleared at any point inside the |Plumsail Account|.
+The attachments are stored in Microsoft Azure Storage, |encrypted at REST|. For the paid plans, storage can be cleared at any point inside the |Plumsail Account|.
 
 Whenever your data is in transit between you and us, everything is encrypted and sent using HTTPS. Data at rest is encrypted using |AES 256| bit standards (one of the strongest block ciphers available) 
 with keys managed by Azure Storage Service Encryption. Data in transit is encrypted with SSL/TLS protocols.
