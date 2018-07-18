@@ -131,7 +131,7 @@ LAYOUT
 Wizard
 -------------------------------------------------------------
 Wizard container is different from all other containers. It's designed to force users fill out
-the information as they go, one section at a time. 
+the information as they go, one step at a time. 
 
 Before the user can open the next one, the previous one must be validated.
 
@@ -152,7 +152,7 @@ SETTINGS
     *   - Shape
         - Setting that allows you to change presentation of the Wizard container.
     *   - OnFinish
-        - A script which will run when the user presses the Finish button in the last section. Submits the form by default.
+        - A script which will run when the user presses the Finish button in the last step. Submits the form by default.
     *   - Next Text
         - Property that holds the text of the Next button.
     *   - Back Text
