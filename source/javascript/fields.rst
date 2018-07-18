@@ -170,6 +170,9 @@ These properties are only applicable to MaskedTextBox field:
     :header-rows: 1
     :widths: 10 30
 
+    *   -   Property
+        -   Description/Examples
+        
     *   -   **mask**
         -   Property that holds the Mask for the MaskedTextBox field, can be used to get it or set it.
             
