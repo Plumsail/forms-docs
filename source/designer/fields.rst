@@ -99,6 +99,8 @@ PATTERN
 
    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters" target="_blank">here</a>
 
+.. _designer-maskedtextbox:
+
 MaskedTextBox
 -------------------------------------------------------------
 MaskedTextBox is similar to a regular TextBox, but you can restrict what the user can input. It's not validation, user simply won't be able to enter any text that doesn't match the mask.

@@ -3,11 +3,11 @@ Version history
 
 v1.1.9
 --------------------------------------------------
-Masked TextBox field added.
+:ref:`designer-maskedtextbox` field added.
 
 Additional validation options for regular text boxes: e-mail, phone, numbers etc.
 
-Wizard container has been added.
+:ref:`designer-wizard` container has been added.
 
 Several bug fixes.
 

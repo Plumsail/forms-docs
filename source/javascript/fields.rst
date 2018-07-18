@@ -166,6 +166,10 @@ MaskedTextBox Unique Properties
 --------------------------------------------------
 These properties are only applicable to MaskedTextBox field:
 
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+
     *   -   **mask**
         -   Property that holds the Mask for the MaskedTextBox field, can be used to get it or set it.
             

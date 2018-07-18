@@ -128,6 +128,8 @@ LAYOUT
     *   - Expanded
         - Allows you to choose panels that will be expanded by default. Leave it empty if you don't want any panel to be expanded. Can select multiple panels if Multiple mode is selected, e.g. *0,1,2*
 
+.. _designer-wizard:
+
 Wizard
 -------------------------------------------------------------
 Wizard container is different from all other containers. It's designed to force users fill out
