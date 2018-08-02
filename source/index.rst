@@ -24,9 +24,10 @@ Table of contents
             :caption: General
             :name: generaltoc
             :maxdepth: 1
-
+            
             general/roadmap
             general/version-history
+            YouTube Channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
             general/data-security
             general/privacy-policy
 
