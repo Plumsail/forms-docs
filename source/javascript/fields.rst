@@ -175,6 +175,32 @@ These properties are only applicable to MaskedTextBox field:
         
     *   -   **mask**
         -   Property that holds the Mask for the MaskedTextBox field, can be used to get it or set it.
+
+            The following mask rules are supported:
+
+            0 - Digit. Accepts any digit between 0 and 9.
+
+            9 - Digit or space. Accepts any digit between 0 and 9, plus space.
+
+            # - Digit or space. Like 9 rule, but allows also (+) and (-) signs.
+
+            L - Letter. Restricts input to letters a-z and A-Z. This rule is equivalent to [a-zA-Z] in regular expressions.
+
+            ? - Letter or space. Restricts input to letters a-z and A-Z. This rule is equivalent to [a-zA-Z] in regular expressions.
+
+            & - Character. Accepts any character. The rule is equivalent to \S in regular expressions.
+
+            C - Character or space. Accepts any character. The rule is equivalent to . in regular expressions.
+
+            A - Alphanumeric. Accepts letters and digits only.
+
+            a - Alphanumeric or space. Accepts letters, digits and space only.
+
+            . - Decimal placeholder. The decimal separator will be gotten from the current culture.
+
+            , - Thousands placeholder. The display character will be gotten from the current culture.
+
+            $ - Currency symbol. The display character will be gotten from the current culture.
             
             |
 
@@ -184,6 +210,12 @@ These properties are only applicable to MaskedTextBox field:
 
                 fd.field('MaskedTextBox0').mask;
                 fd.field('MaskedTextBox0').mask = "(999) 000-0000";
+
+            For more examples, please, checkout |KendoUI MaskedTextBox|.
+
+.. |KendoUI MaskedTextBox| raw:: html
+
+               <a href="https://demos.telerik.com/kendo-ui/maskedtextbox/index" target="_blank">KendoUI MaskedTextBox</a>
 
 Methods
 --------------------------------------------------

@@ -312,8 +312,6 @@ Properties of the Wizard container.
                 fd.container('Wizard0').icons;
                 fd.container('Wizard0').icons = ['BoxCheckmarkSolid', 'BoxAdditionSolid', 'BranchSearch'];
 
-|Microsoft Fabric Icons|
-
 .. |Microsoft Fabric Icons| raw:: html
 
     <a href="https://developer.microsoft.com/en-us/fabric#/styles/icons" target="_blank">Microsoft Fabric Icons</a>
