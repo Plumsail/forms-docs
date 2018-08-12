@@ -65,7 +65,9 @@ If this is your first Zap, at this point you'll need to **Sign in to** |Plumsail
 
    <a href="https://auth.plumsail.com/account/login" target="_blank"><b>Plumsail Account</b></a>
 
-**Important!** You can only bind Flows to the forms that are stored in your Plumsail Account!
+**Important!** You can only bind Zaps to the forms that are stored in your Plumsail Account!
+
+|
 
 Now, you just need to select the form that you want to use in the dropdown menu, no copying ID or Form Schema is required, it's all done automatically, but loading all the forms can take time, please, remain patient and soon all the forms from your account would be loaded and you'll be able to select the correct one:
 
