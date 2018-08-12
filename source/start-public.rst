@@ -8,4 +8,5 @@ Public Web Forms
     ./installation
     ./design
     ./microsoft-flow
+    ./zapier
     ./licensing
