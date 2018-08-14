@@ -1,6 +1,12 @@
 Version history
 ==================================================
 
+v1.2.0
+--------------------------------------------------
+Added :doc:`Zapier integration </zapier>`
+
+Added ability to :doc:`customize toolbar and buttons</javascript/toolbar>`.
+
 v1.1.9
 --------------------------------------------------
 :ref:`designer-maskedtextbox` field added.
@@ -34,7 +40,7 @@ v1.1.4
 --------------------------------------------------
 Added Export to PDF button.
 
-DataTable has received :ref:`a new property <designer-datatable-properties>` - New Line(Top or Bottom).
+DataTable has received :ref:`a new property<designer-datatable>` - New Line(Top or Bottom).
 
 Minor bug fixes.
 
