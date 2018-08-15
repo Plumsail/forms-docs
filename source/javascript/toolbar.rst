@@ -9,6 +9,8 @@ Intro
 --------------------------------------------------
 **fd.toolbar** can be used to customize form's toolbar.
 
+*Note:* This property is exclusive to SharePoint Forms.
+
 Properties
 --------------------------------------------------
 
@@ -27,10 +29,13 @@ Properties
             
             .. code-block:: javascript
 
-                fd.toolbar.closeButtonText = 'Exit';
-                fd.toolbar.editButtonText = 'Modify';
-                fd.toolbar.saveButtonText = 'Submit';
-                fd.toolbar.savingButtonText = 'Processing...';
+
+                fd.spRendered(function(){ 
+                    fd.toolbar.closeButtonText = 'Exit';
+                    fd.toolbar.editButtonText = 'Modify';
+                    fd.toolbar.saveButtonText = 'Submit';
+                    fd.toolbar.savingButtonText = 'Processing...';
+                });
                 
 
     *   -   **fd.toolbar.buttons**
@@ -60,38 +65,40 @@ Properties
             
             .. code-block:: javascript
                 
-                //set button's class
-                fd.toolbar.buttons[1].class  = 'btn-danger';
-                //or
-                fd.toolbar.buttons[1].class  = {'btn-danger': true};
+                fd.spRendered(function(){ 
+                    //set button's class
+                    fd.toolbar.buttons[1].class  = 'btn-danger';
+                    //or
+                    fd.toolbar.buttons[1].class  = {'btn-danger': true};
 
-                //change click function
-                fd.toolbar.buttons[1].click = function(){
-                    if (confirm('Are you sure you want to exit the form?')) {
-                        fd.close();
-                    } 
-                }
-
-                //disable save button
-                fd.toolbar.buttons[0].disabled = true;
-
-                //set button's icon
-                fd.toolbar.buttons[0].icon = "Save";
-
-                //set button's style (hide a button)
-                fd.toolbar.buttons[0].style = "display: none;";
-
-                //set button's text
-                fd.toolbar.buttons[0].text = "Submit";
-                
-                //add new button
-                fd.toolbar.buttons.push({
-                    icon: 'Flow',
-                    class: 'btn-outline-primary',
-                    text: 'Send for approval',
-                    click: function() {
-                        alert('Clicked!');
+                    //change click function
+                    fd.toolbar.buttons[1].click = function(){
+                        if (confirm('Are you sure you want to exit the form?')) {
+                            fd.close();
+                        } 
                     }
+
+                    //disable save button
+                    fd.toolbar.buttons[0].disabled = true;
+
+                    //set button's icon
+                    fd.toolbar.buttons[0].icon = "Save";
+
+                    //set button's style (hide a button)
+                    fd.toolbar.buttons[0].style = "display: none;";
+
+                    //set button's text
+                    fd.toolbar.buttons[0].text = "Submit";
+                    
+                    //add new button
+                    fd.toolbar.buttons.push({
+                        icon: 'Flow',
+                        class: 'btn-outline-primary',
+                        text: 'Send for approval',
+                        click: function() {
+                            alert('Clicked!');
+                        }
+                    });
                 });
 
 .. |Microsoft Fabric Icons| raw:: html
