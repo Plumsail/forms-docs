@@ -972,7 +972,7 @@ Events
             .. code-block:: javascript
 
                 fd.spRendered(function() {
-                    fd.field('SPDataTable0').ready().then(function(dt) { 
+                    fd.control('SPDataTable0').ready().then(function(dt) { 
                         //dt parameter is the same as fd.control('SPDataTable0')
                         console.log('SPDataTable0 is initialized');
                     });
