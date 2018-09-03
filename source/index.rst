@@ -69,4 +69,5 @@ Table of contents
             how-to/data-table-section
             how-to/list-or-library-section
             how-to/lookup-section
+            how-to/zapier
             how-to/other
