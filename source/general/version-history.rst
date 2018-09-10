@@ -1,6 +1,18 @@
 Version history
 ==================================================
 
+v1.2.1
+--------------------------------------------------
+Updated date and time picker for SharePoint forms
+
+Toggle button for SharePoint Yes/No field
+
+Added more responsiveness to Date and Numeric controls
+
+Support of uploading large files with the List or Library control
+
+Fixed an issue with attaching files with special characters in file names, e.g. ampersands, to SharePoint Forms
+
 v1.2.0
 --------------------------------------------------
 Added :doc:`Zapier integration </zapier>`
