@@ -35,6 +35,9 @@ I've created Orders spreadsheet in my Google account:
 
 You should use the first row to add names to each column. Don't forget to name your worksheet appropriately as well, where you want results to be stored.
 
+Zapier
+--------------------------------------------------
+
 Now, you can create new custom Zap, by following this instruction - :ref:`creating-zap`.
 
 After completing the setup for your form, search for *Google Sheets* the Google Sheets App:

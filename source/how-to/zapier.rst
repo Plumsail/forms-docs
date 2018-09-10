@@ -5,3 +5,4 @@ Zapier Integration
     :maxdepth: 1
 
     ./zapier-googlesheets
+    ./zapier-email
