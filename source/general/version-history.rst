@@ -1,6 +1,14 @@
 Version history
 ==================================================
 
+v1.2.2
+--------------------------------------------------
+Descriptions now will display for all SharePoint fields
+
+Fixed issues with IE11 support
+
+Fixed minor styling issues
+
 v1.2.1
 --------------------------------------------------
 Updated date and time picker for SharePoint forms
