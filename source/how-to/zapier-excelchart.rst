@@ -139,7 +139,7 @@ Name and activate the Zap!
 .. |pic15| image:: ../images/how-to/zapier-excelchart/15_name.png
    :alt: Name and activate the Zap
 
-This is it. Now, whenever somebody submits the Zap, it will automatically be added as a row to Excel, and the Chart will update.
+This is it. Now, whenever somebody submits the form, data will automatically be added as a row to Excel, and the Chart will update in real time.
 
 |gif|
 
