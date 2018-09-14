@@ -38,7 +38,7 @@ You should use the first row to add names to each column. Don't forget to name y
 Zapier
 --------------------------------------------------
 
-Now, you can create new custom Zap, by following this instruction - :ref:`creating-zap`.
+Now, you can create a new custom Zap, by following this instruction - :ref:`creating-zap`.
 
 After completing the setup for your form, search for *Google Sheets* the Google Sheets App:
 
