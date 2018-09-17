@@ -9,7 +9,7 @@ Description
 --------------------------------------------------
 This article will show you how you can use our forms, Zapier and Excel file to gather information from anonymous submissions and build charts with it.
 
-We'll use Customer Feedback Form which you can download from out templates |Customer Feedback Form|.
+We'll use Customer Feedback Form which you can download from our templates |Customer Feedback Form|.
 
 .. |Customer Feedback Form| raw:: html
 
@@ -57,7 +57,7 @@ For this, I've simply used Excel formulas for each column, which count the amoun
     =COUNTIF(Table1[Product Delivery],"Poor")
     =COUNTIF(Table1[Product Delivery],"Very Poor")
 
-Finally, after adding some test data, I build a column chart with the following configuration:
+Finally, after adding some test data, I've built a column chart with the following configuration:
 
 |pic5|
 
@@ -143,5 +143,5 @@ This is it. Now, whenever somebody submits the form, data will automatically be 
 
 |gif|
 
-.. |gif| image:: ../images/how-to/zapier-excelchart/ZapExcelFin.gif
+.. |gif| image:: ../images/how-to/zapier-excelchart/ZapierExcelProject.gif
    :alt: Form to Excel Gif
