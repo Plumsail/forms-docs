@@ -143,5 +143,5 @@ This is it. Now, whenever somebody submits the form, data will automatically be 
 
 |gif|
 
-.. |gif| image:: ../images/how-to/zapier-excelchart/ZapierExcelGif.gif
+.. |gif| image:: ../images/how-to/zapier-excelchart/ZapierExcelFinalGif.gif
    :alt: Form to Excel Gif
