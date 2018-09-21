@@ -422,6 +422,22 @@ Lookup/LookupMulti
                 fd.field('Lookup').operator;
                 fd.field('Lookup').operator = "startsWith";
                 fd.field('Lookup').operator = "contains";
+                
+    *   -   **orderBy**
+        -   Set $orderby Query Option. Allows to sort the results by one or multiple fields.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.field('Lookup').orderBy = 'Title';
+                fd.field('Lookup').orderBy = { field: 'Title', desc: true };
+                fd.field('Lookup').operator = [
+                    { field: 'FirstChoice', desc: true },
+                    { field: 'Title', desc: false }
+                ];
 
     *   -   **disabled**
         -   Check if field is disabled, or set field to disabled or editable state.
