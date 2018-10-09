@@ -1,5 +1,5 @@
-Save Ink Sketch, DataTable, and Likert scale controls to hidden SharePoint fields
-=====================================================================================
+Save Ink Sketch, DataTable, and Likert scale controls to SharePoint fields + List View Rendering
+=================================================================================================
 
 .. contents:: Contents:
  :local:
