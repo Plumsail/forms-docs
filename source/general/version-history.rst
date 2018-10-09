@@ -1,6 +1,32 @@
 Version history
 ==================================================
 
+v1.2.2
+--------------------------------------------------
+Descriptions now will display for all SharePoint fields
+
+Fixed issues with IE11 support
+
+Fixed minor styling issues
+
+v1.2.1
+--------------------------------------------------
+Updated date and time picker for SharePoint forms
+
+Toggle button for SharePoint Yes/No field
+
+Added more responsiveness to Date and Numeric controls
+
+Support of uploading large files with the List or Library control
+
+Fixed an issue with attaching files with special characters in file names, e.g. ampersands, to SharePoint Forms
+
+v1.2.0
+--------------------------------------------------
+Added :doc:`Zapier integration </zapier>`
+
+Added ability to :doc:`customize toolbar and buttons</javascript/toolbar>`.
+
 v1.1.9
 --------------------------------------------------
 :ref:`designer-maskedtextbox` field added.
@@ -34,7 +60,7 @@ v1.1.4
 --------------------------------------------------
 Added Export to PDF button.
 
-DataTable has received :ref:`a new property <designer-datatable-properties>` - New Line(Top or Bottom).
+DataTable has received :ref:`a new property<designer-datatable>` - New Line(Top or Bottom).
 
 Minor bug fixes.
 

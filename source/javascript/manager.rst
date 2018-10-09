@@ -118,7 +118,7 @@ Properties
             .. code-block:: javascript
 
                 fd._vue;
-    
+
     *   -   **fd.pdfFileName**
 
         -   Get or set the name of the exported PDF file.
@@ -138,7 +138,7 @@ Properties
                 fd.spRendered(function() {
                     fd.pdfFileName = fd.field('Title').value;    
                 });
-    
+
     *   -   **fd.pdfOptions**
 
         -   Specifies various options for exported PDF file, such as paper size, margin, orientation, etc.
@@ -162,6 +162,7 @@ Properties
 .. |PDF options| raw:: html
 
     <a href="https://docs.telerik.com/kendo-ui/framework/drawing/pdf-output#configuration-PDF" target="_blank">here</a>
+
 
 Methods
 --------------------------------------------------

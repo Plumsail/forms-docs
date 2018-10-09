@@ -71,28 +71,6 @@ Form ID can be found and copied in **Flow Settings** in the Designer.
 
 |
 
-After adding the trigger, search for *JSON* and add *Data Operations - Parse JSON* action to actually parse data received from the submitted form:
-
-.. image:: /images/flow/12_ParseJSONNew.png
-   :alt: Parse JSON
-
-|
-
-Here you will need to open the designer and the form that you want to track with the Flow. Save it and after saving, 
-open **Flow Settings** and copy the *Form Schema*:
-
-.. image:: /images/flow/13_FormSchema.png
-   :alt: Form Schema
-
-|
-
-In *Parse JSON* action click *Content* and select **Body** in menu on the right. Insert copied *Form Schema* into *Schema* field:
-
-.. image:: /images/flow/14_ParseJSONContentNew.png
-   :alt: Form Schema
-
-|
-
-That's it, after this action you can do pretty much anything with submitted data.
+That's it, after this action you can do pretty much anything with submitted data - it's parsed and ready to be used.
 
 Check out our How-to documentation on examples of using Flow. For example, for :doc:`sending an email </how-to/email>`.

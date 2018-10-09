@@ -75,28 +75,14 @@ Search for *Plumsail* and you'll find the right one - *Plumsail Forms - Form is 
 
 |
 
-Next, you need to fill in Form ID. It can be found in **General Settings** in the designer. Click *Add an action* when you fill in the ID:
+Next, you need to fill in Form ID. It can be found in **Flow Settings** in the designer. 
 
 .. image:: ../images/how-to/email/7_AddID.png
    :alt: Add ID from General Settings
 
 |
 
-We need to somehow parse JSON received from form submission to use it in email. 
-Search for *JSON* and you'll find the action that you need - *Data Operations - Parse JSON*. Add it:
-
-.. image:: ../images/how-to/email/8_JSON.png
-   :alt: Parse JSON
-
-|
-
-Here, you'll need to click on *Content* field and select Body from menu on the right. Next, go to **General settings** in the designer and copy form's schema.
-Don't forget to save the form first, if you've added some changes, that will update the schema. Copy the schema and click *Add an action*:
-
-.. image:: ../images/how-to/email/9_ContentAndSchema.png
-   :alt: Add Content and Schema from General Settings
-
-|
+Click *Add an action* after you fill in the ID.
 
 Configure the Flow - Create file in SharePoint
 --------------------------------------------------

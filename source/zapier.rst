@@ -49,7 +49,7 @@ Search for *Plumsail Forms* and add the latest version of the app:
 
 |pic3|
 
-.. |pic3| image:: /images/zapier/search-forms.png
+.. |pic3| image:: /images/zapier/search-plumsail-forms.png
    :alt: Search for Plumsail Forms
 
 Select *New Submission* of a form as a Trigger and click Continue:
@@ -76,7 +76,7 @@ Now, you just need to select the form that you want to use in the dropdown menu,
 .. |pic5| image:: /images/zapier/select-form.png
    :alt: Select a Form
 
-In the next step, you can just click *Pull in Samples* (you can skip the step, but will still need to select a sample):
+In the next step, you can just click *Pull in Samples* (this will let the app know what fields are present on the form):
 
 |pic6|
 

@@ -51,6 +51,7 @@ Table of contents
 
             javascript/general
             javascript/manager
+            javascript/toolbar
             javascript/containers
             javascript/controls
             javascript/fields
@@ -68,4 +69,5 @@ Table of contents
             how-to/data-table-section
             how-to/list-or-library-section
             how-to/lookup-section
+            how-to/zapier
             how-to/other

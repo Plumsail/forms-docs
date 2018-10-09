@@ -343,8 +343,6 @@ DataTable can be easily submitted to MS Flow and you can use its data as you see
 .. image:: ../images/designer/controls/DataTable.png
    :alt: DataTable
 
-.. _designer-datatable-properties:
-
 DataTable properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every DataTable control has the following settings:
