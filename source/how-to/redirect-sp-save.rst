@@ -62,6 +62,18 @@ This code will do just that:
             + listId + "&ID=" + itemId;
     });
 
+Prevent redirection on save
+--------------------------------------------------
+For Edit Form, it is possible to use code which will prevent redirection on save, so you can save the form and continue working.
+
+*Please, do not use for New Form! Redirect to Edit Form instead!*
+
+.. code-block:: javascript
+
+    fd.spSaved(function(result) {
+        result.RedirectUrl = null;
+    });
+
 Redirect to Display Form
 --------------------------------------------------
 Finally, you can also redirect users to the Display Form, from both the New Form and the Edit Form.
