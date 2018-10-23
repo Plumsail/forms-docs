@@ -133,12 +133,24 @@ Properties
                     vue.lang.PlumsailForm_Submission_Success = 'Thank you!';
                 });
 
-                fd._vue.lang.Failure_General = "An error has occured. Please check the browser console (F12).";
-                fd._vue.lang.Failure_ItemNotFound = "An item was not found. It may have been deleted or renamed by another user.";
-                fd._vue.lang.PlumsailForm_CorrectErrors = "Please correct the errors below:";
-                fd._vue.lang.PlumsailForm_Submission_Error = "An error has occured while saving the form. Please check the console (F12).";
-                fd._vue.lang.PlumsailForm_Submission_Success = "The form has been submitted successfully.";
-                fd._vue.lang.RequiredValidator_Error = "This field is required.";
+                fd._vue.lang.Failure_General = 
+                    "An error has occured. Please check the browser console (F12).";
+
+                fd._vue.lang.Failure_ItemNotFound = 
+                    "An item was not found. It may have been deleted or renamed by another user.";
+
+                fd._vue.lang.PlumsailForm_CorrectErrors = 
+                    "Please correct the errors below:";
+
+                fd._vue.lang.PlumsailForm_Submission_Error = 
+                    "An error has occured while saving the form. Please check the console (F12).";
+
+                fd._vue.lang.PlumsailForm_Submission_Success = 
+                    "The form has been submitted successfully.";
+
+                fd._vue.lang.RequiredValidator_Error = 
+                    "This field is required.";
+                    
                 fd._vue.lang.SPDataTable_AddNewItem = "Add new item";
                 fd._vue.lang.SPDataTable_ListNotFoundError = "List does not exist.";
                 fd._vue.lang.SPDataTable_Upload = "Upload";
