@@ -376,7 +376,9 @@ These events can be executed from JavaScript editor for Plumsail Forms:
     *   -   **spRendered()**
         -   Occurs after mounting the vue-component to DOM.
 
-            **Best place to run your JavaScript** since all elements are already built and rendered.
+            **Best place to run your JavaScript** since all elements are already built and rendered. 
+            
+            It's also here that fields with *ready* event should be executed inside.
 
             **vue** passed as an argument to the function is a Vue instance of the form. 
             
