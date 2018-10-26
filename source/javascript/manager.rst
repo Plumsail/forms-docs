@@ -123,7 +123,7 @@ Properties
 
         -   Property that stores all language constants, can be used to set text for localization.
 
-            It's best to use **created** event to set these values;
+            *It's best to use* **created** *event to set these values.*
             
             |
 
