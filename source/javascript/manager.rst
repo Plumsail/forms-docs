@@ -122,6 +122,8 @@ Properties
     *   -   **fd._vue.lang**
 
         -   Property that stores all language constants, can be used to set text for localization.
+
+            It's best to use **created** event to set these values;
             
             |
 
@@ -129,10 +131,12 @@ Properties
             
             .. code-block:: javascript
 
+                //example of setting language constant in created event
                 fd.created(function(vue) {
                     vue.lang.PlumsailForm_Submission_Success = 'Thank you!';
                 });
 
+                //All default values:
                 fd._vue.lang.Failure_General = 
                     "An error has occured. Please check the browser console (F12).";
 
