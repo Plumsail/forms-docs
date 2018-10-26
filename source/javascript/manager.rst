@@ -253,6 +253,29 @@ These methods can be applied to **fd**:
 
                 fd.clear();
 
+    *   -   **fd.exportToPDF(fileName, options)**
+        -   Exports current form to PDF file, and starts file download.
+
+            **fileName** passed as an argument to the function is a string with the name of the created file.
+
+            **options** passed as an argument to the function is a JavaScript object that specifies various options for created PDF file, such as paper size, margin, orientation, etc.
+
+            More info about all the options |PDF options|.
+
+            *This method is only available for* **SharePoint Forms**
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.exportToPDF('contacts-form', {
+                    paperSize: 'A4',
+                    landscape: false,
+                    multiPage: true
+                });
+
 .. _js-events:
 
 Events
