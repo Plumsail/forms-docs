@@ -337,6 +337,8 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Best place to run your JavaScript** since all elements are already built and rendered.
 
+            You can also use this event for fields that have custom **ready** event available.
+
             **vue** passed as an argument to the function is a Vue instance of the form. 
             
             It is also available from fd variable this way: *fd._vue*
@@ -354,6 +356,16 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                 fd.spRendered(function(vue) {
                     console.log('rendered');
                     console.log(vue);
+                });
+
+                fd.spRendered(function() {
+                    //simple fields are available
+                    fd.field('Title').value = "New Title";
+
+                    //can use ready event for complex fields
+                    fd.field('Lookup').ready().then(function(field) {
+                        console.log(field.value.LookupValue);
+                    });
                 });
 
     *   - **beforeSave()**
