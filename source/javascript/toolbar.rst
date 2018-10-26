@@ -19,24 +19,7 @@ Properties
 
     *   -   **fd.toolbar**
 
-        -   Property that holds all the parameters for the toolbar with the Save and Close buttons.
-
-            Can be used to get or set button text, for example.
-
-            |
-
-            *Examples:*
-            
-            .. code-block:: javascript
-
-
-                fd.spRendered(function(){ 
-                    fd.toolbar.closeButtonText = 'Exit';
-                    fd.toolbar.editButtonText = 'Modify';
-                    fd.toolbar.saveButtonText = 'Submit';
-                    fd.toolbar.savingButtonText = 'Processing...';
-                });
-                
+        -   Property that holds all the parameters for the toolbar.                
 
     *   -   **fd.toolbar.buttons**
 
