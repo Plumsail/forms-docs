@@ -261,8 +261,6 @@ These methods can be applied to **fd**:
             **options** passed as an argument to the function is a JavaScript object that specifies various options for created PDF file, such as paper size, margin, orientation, etc.
 
             More info about all the options |PDF options|.
-
-            *This method is only available for* **SharePoint Forms**
             
             |
 
