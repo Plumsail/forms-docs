@@ -122,6 +122,8 @@ Properties
     *   -   **fd._vue.lang**
 
         -   Property that stores all language constants, can be used to set text for localization.
+
+            *It's best to use* **created** *event to set these values.*
             
             |
 
@@ -129,10 +131,12 @@ Properties
             
             .. code-block:: javascript
 
+                //example of setting language constant in created event
                 fd.created(function(vue) {
                     vue.lang.PlumsailForm_Submission_Success = 'Thank you!';
                 });
 
+                //All default values:
                 fd._vue.lang.Failure_General = 
                     "An error has occured. Please check the browser console (F12).";
 
@@ -248,6 +252,27 @@ These methods can be applied to **fd**:
             .. code-block:: javascript
 
                 fd.clear();
+
+    *   -   **fd.exportToPDF(fileName, options)**
+        -   Exports current form to PDF file, and starts file download.
+
+            **fileName** passed as an argument to the function is a string with the name of the created file.
+
+            **options** passed as an argument to the function is a JavaScript object that specifies various options for created PDF file, such as paper size, margin, orientation, etc.
+
+            More info about all the options |PDF options|.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.exportToPDF('contacts-form', {
+                    paperSize: 'A4',
+                    landscape: false,
+                    multiPage: true
+                });
 
 .. _js-events:
 
@@ -380,6 +405,8 @@ These events can be executed from JavaScript editor for Plumsail Forms:
             
             It's also here that fields with *ready* event should be executed inside.
 
+            You can also use this event for fields that have custom **ready** event available.
+
             **vue** passed as an argument to the function is a Vue instance of the form. 
             
             It is also available from fd variable this way: *fd._vue*
@@ -397,6 +424,16 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                 fd.spRendered(function(vue) {
                     console.log('rendered');
                     console.log(vue);
+                });
+
+                fd.spRendered(function() {
+                    //simple fields are available
+                    fd.field('Title').value = "New Title";
+
+                    //can use ready event for complex fields
+                    fd.field('Lookup').ready().then(function(field) {
+                        console.log(field.value.LookupValue);
+                    });
                 });
 
     *   - **beforeSave()**
