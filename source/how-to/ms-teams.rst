@@ -96,5 +96,5 @@ Next, in Lists, select the List that you've customized the forms for:
 
 Now you have a List View with custom forms in a panel, which you can configure exactly as you need:
 
-.. image:: ../images/how-to/ms-teams/PublicFormTab.png
+.. image:: ../images/how-to/ms-teams/SharePointFormTab.png
    :alt: SharePoint Form Panel in MS Teams
