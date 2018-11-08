@@ -49,6 +49,11 @@ It's a very standard scenario to have a long vertical form, which needs to be se
 
 If you have a form that doesn't fit on one screen like this:
 
+|VerticalSP|
+
+.. |VerticalSP| image:: ../images/how-to/export-pdf/VerticalFormSP.png
+   :alt: Vertical form in SharePoint
+
 Simply add the following code to JS editor on the form:
 
 .. code-block:: javascript
@@ -69,6 +74,11 @@ And you'll get the result like this:
 One page horizontal form
 --------------------------------------------------
 If the form you have is rather wide and needs to be printed in one page, like this invoice form, for instance:
+
+|HorizontalSP|
+
+.. |HorizontalSP| image:: ../images/how-to/export-pdf/HorizontalFormSP.png
+   :alt: Horizontal form in SharePoint
 
 You can add code similar to this:
 
