@@ -111,6 +111,95 @@ And here's the result:
 .. |Horizontal| image:: ../images/how-to/export-pdf/HorizontalForm.png
    :alt: Horizontal form exported to PDF
 
+Display all tabs on exported PDF
+--------------------------------------------------
+If you are using Tabs container, you would probably want to display all tabs at once on the exported document, and this can be achieved with the use of CSS.
+
+For example, I have a three tab form:
+
+|SharePointTabs|
+
+.. |SharePointTabs| image:: ../images/how-to/export-pdf/SharePointTabs.png
+   :alt: SharePoint Form with Tabs
+
+
+Since we are going to hide tabs themselves, it would be a good idea to add Plain Text control title to each tab and give it a common CSS class, 
+so they'll only be shown on the exported PDF, for example, I gave each title **tab-title** CSS class:
+
+|TabTitleClass|
+
+.. |TabTitleClass| image:: ../images/how-to/export-pdf/TabTitleClass.png
+   :alt: Plain Text Tab Title with CSS class
+
+Next, I add the following CSS to CSS editor:
+
+.. code-block:: css
+
+                /* show tab contents for all tabs */
+                .k-pdf-export .tabset .tab-content div.tab-pane.fade { 
+                  display: block !important;
+                  opacity: 1 !important;
+                }
+
+                /* hide tab navigation bar */
+                .k-pdf-export .tabset ul.nav.nav-tabs{
+                  display: none !important;
+                }
+
+                /* hide tab titles by default */
+                .tab-title{
+                  display: none;
+                }
+
+                /* show tab titles when exporting */
+                .k-pdf-export .tab-title{
+                  display: block;
+                }
+
+And then, after exporting to PDF, we get this:
+
+|TabsPDF|
+
+.. |TabsPDF| image:: ../images/how-to/export-pdf/TabsPDF.png
+   :alt: Tabs displayed after export to PDF
+
+Display all Accordion panels on exported PDF
+--------------------------------------------------
+Just like Tabs, Accordion panels could be expanded with appropriate CSS styles. Of course, you could also expand Accordion panels by selecting **Mode: Multiple** for the Accordion, 
+and then opening all the panels manually, but you could also use CSS to do automatically show all panels on PDF.
+
+An example form with an Accordion:
+
+|SharePointAccordion|
+
+.. |SharePointAccordion| image:: ../images/how-to/export-pdf/SharePointAccordion.png
+   :alt: SharePoint Form with an Accordion
+
+To expand Accordion, we can use the following CSS:
+
+.. code-block:: css
+
+                /* show contents for all Accordion panels */
+                .k-pdf-export .accordion .card-block{
+                  display: block !important;
+                  height: auto !important;
+                }
+
+                /* gray out all navigation links */
+                .k-pdf-export .accordion>.card>.card-header>.nav-link {
+                  background-color: #fff;
+                  color: #55595c;
+                }
+
+
+And get the following result:
+
+|AccordionPDF|
+
+.. |AccordionPDF| image:: ../images/how-to/export-pdf/AccordionPDF.png
+   :alt: Accordion panels displayed after export to PDF
+
+
 Export to PDF script
 --------------------------------------------------
 The script for exporting the form is very simple, and you can run it anywhere. 
@@ -147,7 +236,7 @@ Another option is to export PDF each time the form is submitted. You'll need to 
 .. |pic3| image:: ../images/how-to/export-pdf/JSEditor.png
    :alt: JS Editor in Plumsail Forms
 
-For Public Web Forms, this can be done by adding the following code to the JS editor of the designer:
+For **Public Web Forms**, this can be done by adding the following code to the JS editor of the designer:
 
 .. code-block:: javascript
 
@@ -155,7 +244,7 @@ For Public Web Forms, this can be done by adding the following code to the JS ed
         fd.exportToPDF("exported-after-submission");
     });
 
-For SharePoint Forms, use the following code instead:
+For **SharePoint Forms**, use the following code instead:
 
 .. code-block:: javascript
 
