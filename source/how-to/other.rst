@@ -8,3 +8,4 @@ Other
     ./save-table-signature
     ./export-pdf
     ./ms-teams
+    ./newform-page
