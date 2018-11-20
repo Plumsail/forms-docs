@@ -25,6 +25,20 @@ Properties
 
     *   -   Property
         -   Description/Examples
+
+    *   -   **fd.itemId**
+        -   Returns ID of the current SharePoint item as string, on Edit or Display form. 
+
+            *Only works with* **SharePoint Forms**.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.itemId; //"1"
+
     *   -   **fd.culture**
 
         -   Returns the name of the current culture.
