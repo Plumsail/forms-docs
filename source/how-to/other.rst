@@ -6,3 +6,6 @@ Other
 
     ./provision
     ./save-table-signature
+    ./export-pdf
+    ./ms-teams
+    ./newform-page

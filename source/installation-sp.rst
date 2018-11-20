@@ -31,8 +31,9 @@ Plumsail Forms for SharePoint
 
 Bind your SharePoint tenant to your Account
 **************************************************
-In order to bind your SharePoint tenant to Plumsail account, you need to have permissions of tenant administrator. 
-This is only necessary for installation and we are not storing or using your credentials in any way, only to get permission for installation.
+In order to bind your SharePoint tenant to Plumsail account, you need to have permissions of **tenant administrator**. 
+
+*This is only necessary for installation and we are not storing or using your credentials in any way, only to get permission for the installation.*
 
 Once you sign in to Plumsail Account, you'll need to go to Forms section. 
 
@@ -41,24 +42,23 @@ Once you sign in to Plumsail Account, you'll need to go to Forms section.
 .. |pic1| image:: /images/SPlicense/PlumsailAccount.png
    :alt: Plumsail Account
 
-Select Licenses tab and add your SharePoint domain to SharePoint Licenses:
+Select Licenses tab and add your SharePoint domain to SharePoint Licenses.
 
+You'll need to complete authorization and give permissions to the app, here is where you need a **tenant administrator** account. 
+
+It's only necessary for this step:
 
 |pic2|
 
 .. |pic2| image:: /images/SPlicense/AddLicense.png
    :alt: Forms Licenses
 
-You'll need to complete authorization and give permissions to the app, here is where you need a tenant administrator account. 
-
-We do not store your information, it's only necessary for the installation. 
+Once you've added SharePoint license to your domain, you will be able to use Plumsail Forms for your lists and document libraries after completing the next step.
 
 |pic3|
 
 .. |pic3| image:: /images/SPlicense/LicenseAdded.png
    :alt: Domain Added
-
-Once you've added SharePoint license to your domain, you will be able to use Plumsail Forms for your lists and document libraries after completing the next step.
 
 .. _install-app-package:
 
