@@ -65,6 +65,7 @@ Table of contents
             :maxdepth: 2
 
             how-to/simple-cases-flow
+            how-to/power-apps
             how-to/dynamic-forms-js
             how-to/data-table-section
             how-to/list-or-library-section
