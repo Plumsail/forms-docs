@@ -946,7 +946,7 @@ Events
     *   -   **change**
         -   Fired when the user applies any changes to the List or Library.
 
-            Adding items, uploading documents, deleting or editing item/document's properties from List or Library dialog all counts as change.
+            Adding items, uploading documents, deleting them, or editing item/document's properties from List or Library dialog all counts as change.
             
             |
 
