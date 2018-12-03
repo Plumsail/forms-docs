@@ -942,6 +942,22 @@ Events
         
     *   -   Name
         -   Description/Examples
+
+    *   -   **change**
+        -   Fired when the user applies any changes to the List or Library.
+
+            Adding items, uploading documents, deleting or editing item/document's properties from List or Library dialog all counts as change.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').$on('change',
+                    function() {
+                        alert('List or Library changed');
+                    });
     
     *   -   **filesUploaded**
         -   Fired when the user uploads files to Document Library via List or Library control.
