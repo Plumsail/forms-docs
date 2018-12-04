@@ -1,6 +1,17 @@
 Version history
 ==================================================
 
+v1.3.1
+--------------------------------------------------
+Added ability to open forms in :doc:`Dialog Mode </javascript/dialog>`
+
+Reworked field controls
+
+Added option to set Ink Sketch and DataTable controls to ReadOnly mode,
+if their data is saved to SharePoint field
+
+Optimized performance
+
 v1.2.2
 --------------------------------------------------
 Descriptions now will display for all SharePoint fields
