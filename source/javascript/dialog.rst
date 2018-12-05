@@ -42,7 +42,7 @@ These methods are applicable to most fields:
             
             .. code-block:: javascript
 
-                Dialog.open("https://mycompany.sharepoint.com/sites/mysite/SitePages/PlumsailForms/MyList/Item/NewForm.aspx", 
+                Dialog.open("https://mycompany.sharepoint.com/sites/mysite/_layouts/15/listform.aspx?PageType=8&ListId=" + listId, 
                     { args: 'something' }, function(hasSaved) {
                     if(hasSaved){
                         alert('Form in dialog has saved and closed.');
@@ -51,6 +51,9 @@ These methods are applicable to most fields:
                         alert('Dialog form was closed without saving!');
                     }          
                 });
+
+            Read more about generation of form URLs :doc:`here</how-to/link-to-form>`.
+        
     *   -   **getArgs()**
         -   Get arguments passed to a dialog.
 
@@ -67,7 +70,7 @@ These methods are applicable to most fields:
             .. code-block:: javascript
 
                 //code for Parent Form to pass New Title
-                Dialog.open("https://mycompany.sharepoint.com/sites/mysite/SitePages/PlumsailForms/MyList/Item/NewForm.aspx", 
+                Dialog.open("https://mycompany.sharepoint.com/sites/mysite/_layouts/15/listform.aspx?PageType=8&ListId=" + listId, 
                     { passedTitle: 'New Title' });
 
                 //code for Child Form to retrieve New Title
@@ -78,6 +81,8 @@ These methods are applicable to most fields:
                         fd.field("Title").value = Dialog.getArgs().passedTitle;
                     }
                 });
+
+            Read more about generation of form URLs :doc:`here</how-to/link-to-form>`.
 
     *   -   **close(bool, args)**
         -   Close dialog form.
@@ -94,8 +99,8 @@ These methods are applicable to most fields:
             
             .. code-block:: javascript
 
-                //code for Parent Form to show Item ID in alert
-                Dialog.open("https://mycompany.sharepoint.com/sites/mysite/SitePages/PlumsailForms/MyList/Item/NewForm.aspx", 
+                //code for Parent Form to show created Item ID in alert
+                Dialog.open("https://mycompany.sharepoint.com/sites/mysite/_layouts/15/listform.aspx?PageType=8&ListId=" + listId, 
                     { args: 'something' }, function(hasSaved, returnedArgs) {
                     if(hasSaved){
                         alert('Form in dialog has been saved. New Item ID: ' + returnedArgs.ID);
@@ -112,3 +117,5 @@ These methods are applicable to most fields:
                         Dialog.close(true, {ID: result.Id });
                     }
                 });
+
+            Read more about generation of form URLs :doc:`here</how-to/link-to-form>`.
