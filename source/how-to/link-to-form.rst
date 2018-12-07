@@ -24,7 +24,8 @@ The structure of the URL is fairly simple:
 
     var url = "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx?PageType=" + pageTypeNumber + "&ListId=" + listId + "&ID=" + itemId
 
-* **pageTypeNumber** is a type of the form that you want to open: 
+* **pageTypeNumber**
+    -   a type of the form that you want to open: 
     -   **8** is New Form
     -   **6** is Edit Form 
     -   **4** is Display Form
@@ -46,7 +47,7 @@ Use the following code to build link while on a form:
 
 .. code-block:: javascript
 
-    var url = "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx";
+    var url = "https://domain.sharepoint.com/sites/site/_layouts/15/listform.aspx";
     //current item's Edit Form URL:
     var params = {
         PageType: 6,
@@ -55,5 +56,7 @@ Use the following code to build link while on a form:
     }
 
     url += "?" + $.param(params);
+    console.log(url);
+    Dialog.open(url);
 
 Now, you don't have to get all these values with JavaScript, some, if not all, can be prepopulated depending on your scenario.
