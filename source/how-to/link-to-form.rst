@@ -24,13 +24,16 @@ The structure of the URL is fairly simple:
 
     var url = "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx?PageType=" + pageTypeNumber + "&ListId=" + listId + "&ID=" + itemId
 
-* **pageTypeNumber** is a type of the form that you want to open: **8** is New Form, **6** is Edit Form, and **4** is Display Form.
+* **pageTypeNumber** is a type of the form that you want to open: 
+    -   **8** is New Form
+    -   **6** is Edit Form 
+    -   **4** is Display Form
 
-* **listId** is the ID of the List or Document Library to open, which can be copied from the URL:
+* **listId** is the ID of the List or Document Library to open, which can be copied from the URL of List/Library settings page:
 
 |pic1|
 
-.. |pic1| image:: ../images/how-to/link-to-form/ListID.png
+.. |pic1| image:: ../images/how-to/link-to-form/ListSettingsID.png
    :alt: List ID
 
 * **itemID** is the ID of the Item or Document to open.
@@ -39,24 +42,18 @@ Buidling link with JavaScript
 --------------------------------------------------
 A link can also be built with JavaScript and can be used in variety of situations. To :doc:`redirect user after form submission</how-to/redirect-sp-save>` to the next form, or to :doc:`open form in dialog</javascript/dialog>`, for example.
 
-Use the following code to build link fully while on a form:
+Use the following code to build link while on a form:
 
 .. code-block:: javascript
 
-    var siteURL = _spPageContextInfo.siteAbsoluteUrl + "/";
-    var layoutsURL = _spPageContextInfo.layoutsUrl;
-    var listForm = "/listform.aspx?PageType=";
+    var url = "https://domain.sharepoint.com/sites/sitename/subsite/_layouts/15/listform.aspx";
+    //current item's Edit Form URL:
+    var params = {
+        PageType: 6,
+        ListId: fd.spFormCtx.ListAttributes.Id,
+        ID: fd.itemId
+    }
 
-    //use 4, 6 or 8 here for Display, Edit or New Form:
-    var pageTypeNumber = 6;
-
-    //retrieves List ID of the List which form is currently open
-    var listId = "&ListId=" + fd.spFormCtx.ListAttributes.Id;
-
-    //need to find a way to get ID of the item
-    //this would retrieve ID of the currently opened item
-    var itemId = "&ID=" + fd.itemId;
-
-    var URL = siteURL + layoutsURL + listForm + pageTypeNumber + listId + itemId;
+    url += "?" + $.param(params);
 
 Now, you don't have to get all these values with JavaScript, some, if not all, can be prepopulated depending on your scenario.
