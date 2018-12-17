@@ -100,7 +100,10 @@ Last but not least, we use JavaScript in order to apply filtering:
         }
         
         //filter Products when form opens
-        filterLookup(fd.field('Category').value);
+        fd.field('Category').ready().then(function(field) {
+            filterLookup(field.value);
+        });
+        
         
         //filter Products when Category changes
         fd.field('Category').$on('change', function(value){

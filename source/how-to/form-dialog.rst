@@ -9,7 +9,7 @@ Description
 --------------------------------------------------
 It is now possible to open any custom Plumsail SharePoint Form in dialog, from another Plumsail SharePoint Form, and this can be used in variety of cases.
 
-For example, you can open a form to file a report right from the main form of the project, even if the actual form is located in another Site Collection, 
+For example, you can open a form in dialog and copy some data from parent form into it, even if the actual form is located in another Site Collection, 
 without a need to redirect users to the form. Alternatively, you can open Display or Edit form of a lookup field in a dialog, right from the current form.
 
 JS API also allows you to pass parameters to the form that's opened in dialog, and to retrieve these parameters when the form actually opens. 
@@ -30,6 +30,8 @@ I can simply add a button to open this list's form in dialog, and get Descriptio
     //?PageType=8 - will open a New Form
     Dialog.open("https://domain.sharepoint.com/sites/AnotherGroupSite/_layouts/15/listform.aspx?PageType=8&ListId=%7B3b3c9b7b-41ec-43aa-9607-6d5c993bcfd2%7D",
     { Description: fd.field("Description").value });
+
+*Note: read more about generation of form URLs* :doc:`here</how-to/link-to-form>`.
 
 Then, I add the following code to the form that opens, to get the argument and set its own Description field:
 
@@ -78,11 +80,13 @@ Next, just add a button near Lookup field, which will execute the following code
     var lookupID = fd.field('Project').value.LookupId;
     if(lookupID){
         //?PageType=4 - will open a Display Form
-        Dialog.open("https://sharikov.sharepoint.com/sites/dev/_layouts/15/listform.aspx?PageType=4&ListId=%7Bcf08de1a-d6f1-4aae-b329-cf029e014f6d%7D&ID=" + lookupID,{});
+        Dialog.open("https://domain.sharepoint.com/sites/SiteName/_layouts/15/listform.aspx?PageType=4&ListId=%7Bcf08de1a-d6f1-4aae-b329-cf029e014f6d%7D&ID=" + lookupID,{});
     }
     else{
         alert("No project selected");
     }
+
+*Note: read more about generation of form URLs* :doc:`here</how-to/link-to-form>`.
 
 And here's the button on the form:
 
