@@ -83,19 +83,19 @@ SharePoint variables
         -   Description/Examples
 
     *   -   **Dialog**
-    -   :doc:`Dialog </javascript/dialog>` can be used to open any other form in dialog, pass parameters to it, detect if it was saved or not, and pass parameters back.
+        -   :doc:`Dialog </javascript/dialog>` can be used to open any other form in dialog, pass parameters to it, detect if it was saved or not, and pass parameters back.
         
-        |
+            |
 
-        *Example:*
-        
-        .. code-block:: javascript
+            *Example:*
+            
+            .. code-block:: javascript
 
-            //make Dialog available in browser's console
-            window.Dialog = Dialog;
+                //make Dialog available in browser's console
+                window.Dialog = Dialog;
 
-            //open form in dialog
-            Dialog.open('{Form URL}', { args: 'something' });
+                //open form in dialog
+                Dialog.open('{Form URL}', { args: 'something' });
 
     *   -   **pnp**
         -   |pnpjs library| for SharePoint REST services (within current site).
