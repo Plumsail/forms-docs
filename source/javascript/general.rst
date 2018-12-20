@@ -7,7 +7,7 @@ Modern Forms are highly customizable and it's JavaScript which allows you to go 
 
 Bootstrap and custom styles can make your form look great on any screen and device, but JavaScript can add often much needed interactivity to the form.
 
-Modern Forms are built with Vue.js and comes with JQuery and pnp-js Library.
+Modern Forms are built with Vue.js and comes with JQuery. On SharePoint forms, pnp-js library can be used to additional data from SharePoint.
 
     - You can find general information about JavaScripts used on the form in the :doc:`Manager section </javascript/manager>`.
 
@@ -20,6 +20,9 @@ Modern Forms are built with Vue.js and comes with JQuery and pnp-js Library.
 
 Available framework variables
 --------------------------------------------------
+
+Common variables (SharePoint and Public)
+**************************************************
 
 .. list-table::
     :header-rows: 1
@@ -51,21 +54,6 @@ Available framework variables
                     });
                 });
 
-    *   -   **Dialog**
-        -   :doc:`Dialog </javascript/dialog>` can be used to open any other form in dialog, pass parameters to it, detect if it was saved or not, and pass parameters back.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                //make Dialog available in browser's console
-                window.Dialog = Dialog;
-
-                //open form in dialog
-                Dialog.open('{Form URL}', { args: 'something' });
-
     *   -   **$**
         -   |jQuery library| which can be used for a variety of things, to apply styles dynamically to the form, hide and show fields and much more.
             
@@ -83,6 +71,31 @@ Available framework variables
 
                 //make fields with CSS class visible
                 $('.field-to-hide').css('visibility', 'visible');
+
+SharePoint variables
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Variable
+        -   Description/Examples
+
+    *   -   **Dialog**
+    -   :doc:`Dialog </javascript/dialog>` can be used to open any other form in dialog, pass parameters to it, detect if it was saved or not, and pass parameters back.
+        
+        |
+
+        *Example:*
+        
+        .. code-block:: javascript
+
+            //make Dialog available in browser's console
+            window.Dialog = Dialog;
+
+            //open form in dialog
+            Dialog.open('{Form URL}', { args: 'something' });
 
     *   -   **pnp**
         -   |pnpjs library| for SharePoint REST services (within current site).
