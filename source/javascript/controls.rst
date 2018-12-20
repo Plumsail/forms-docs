@@ -933,6 +933,28 @@ Properties
 
                 fd.control('SPDataTable0').widget;
 
+Methods
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+
+    *   -   **refresh()**
+        -   Refreshes List or Library control. If any items or documents were changed, the data presented in List or Library will be updated.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').refresh();
+
+
 Events
 **************************************************
 
