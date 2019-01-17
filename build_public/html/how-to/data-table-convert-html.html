@@ -1,0 +1,643 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Format Data Table in an HTML-template before converting into PDF &mdash; Plumsail Forms </title>
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="../_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/header.min.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/doc-content.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/wp-content/themes/plumsail/assets/images/favicon.ico"
+  type="image/x-icon">
+
+  
+    <title>Format Data Table in an HTML-template before converting into PDF &#8212; Forms 1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/theme_overrides_guzzle.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Creating a web form with Data Table and saving data into SharePoint lists" href="data-table-to-sp.html" />
+    <link rel="prev" title="Convert form with Data Table into PDF and send for approval" href="data-table-flow.html" />
+  
+   
+
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="data-table-to-sp.html" title="Creating a web form with Data Table and saving data into SharePoint lists"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="data-table-flow.html" title="Convert form with Data Table into PDF and send for approval"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data-table-section.html" accesskey="U">Data Tables and MS Flow</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+            
+  <div id="left-column" class="doc-content-sidebar2">
+    <div class="sphinxsidebar">
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="../search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+        
+<div class="sidebar-block">  
+  <div class="sidebar-toc">
+    
+    
+      <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Table of contents</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../start-public.html">Public Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start-sp.html">SharePoint Forms for Modern UI</a></li>
+</ul>
+<p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/roadmap.html">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/version-history.html">Version history</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A">YouTube Channel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/data-security.html">Data protection and security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/privacy-policy.html">Forms Privacy Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../designer/ribbon-actions.html">Ribbon Actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../designer/form-sets.html">Form Sets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../designer/themes.html">Themes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../designer/containers.html">Containers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../designer/controls.html">Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../designer/fields.html">Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../designer/fields-sp.html">SharePoint Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../designer/provision.html">SharePoint Forms Provision</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../designer/panel.html">SharePoint Form Panel</a></li>
+</ul>
+<p class="caption"><span class="caption-text">JavaScript framework</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/general.html">JavaScript Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/manager.html">Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/toolbar.html">Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/containers.html">Containers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/controls.html">Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/fields.html">Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/fields-sp.html">SharePoint Fields</a></li>
+</ul>
+<p class="caption"><span class="caption-text">How-to</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="simple-cases-flow.html">Simple Cases with MS Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="power-apps.html">PowerApps Comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic-forms-js.html">Dynamic Forms with the use of JavaScript</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="data-table-section.html">Data Tables and MS Flow</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="data-table-flow.html">Convert form with Data Table into PDF and send for approval</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Format Data Table in an HTML-template before converting into PDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-table-to-sp.html">Creating a web form with Data Table and saving data into SharePoint lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="excel-datatable.html">Use table to add rows to Excel (Office365) or Google Sheet from Public Web Form</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="list-or-library-section.html">List or Library configurations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lookup-section.html">Advanced lookup settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zapier.html">Zapier Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">Other</a></li>
+</ul>
+
+    
+  </div>
+</div>
+    </div>
+  </div>
+        
+                <div id="right-column">
+                    <header class="header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="header__logo">
+                                            <a href="/"><img src="/wp-content/themes/plumsail/assets/images/logo.svg" alt=""></a>
+                                    </div>
+                                    <nav class="header__menu">
+                                        <ul class="main-menu">
+                                            <li class="main-menu__drop"><a href="#products"><span></span>Products</a></li>
+                                            <ul id="menu-main-menu" class="menu"><li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a target="_blank" href="https://community.plumsail.com">Community</a></li>
+                                                <li id="menu-item-20706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20706"><a href="/store/">Store</a></li>
+                                                <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a target="_blank" href="https://medium.com/plumsail">Blog</a></li>
+                                                <li id="menu-item-20708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20708"><a href="/partners-and-resellers/">Partners</a></li>
+                                                <li id="menu-item-20707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20707"><a href="/company/">Company</a></li>
+                                            </ul>                    
+                                        </ul>
+                                    </nav>
+                                    <div class="burger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>                            
+                                    <!-- mobile menu -->
+                                    <div class="mobile-menu-bg"></div>
+                                    <div class="mobile-menu">
+                                        <div class="mobile-menu__body">
+                                            <div class="mobile-menu__inner">
+                                                <ul class="mobile-menu-list">
+                                                    <li class="mobile-menu-list__sub">
+                                                        <a href="#">Products</a>
+                                                        <ul class="mobile-menu-list-sub">
+                                                            <li>
+                                                                <a href="/sharepoint-helpdesk/"><img
+                                                                            src="/wp-content/themes/plumsail/assets/images/help_desk.svg">HelpDesk</a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="/documents/"><img src="/wp-content/themes/plumsail/assets/images/documents.svg">Documents</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/actions/"><img
+                                                                            src="/wp-content/themes/plumsail/assets/images/actions.svg">Actions</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/workflow-actions-pack/"><img
+                                                                            src="/wp-content/themes/plumsail/assets/images/workflow_action_pack.svg">Workflow
+                                                                    Actions Pack</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/forms/"><img
+                                                                            src="/wp-content/themes/plumsail/assets/images/forms.svg">Forms</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/sharepoint-forms-designer/"><img
+                                                                            src="/wp-content/themes/plumsail/assets/images/forms_designer.svg">Forms
+                                                                    Designer</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/sharepoint-dashboard-designer/"><img
+                                                                            src="/wp-content/themes/plumsail/assets/images/dashboard_designer.svg">Dashboard
+                                                                    Designer</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/sharepoint-workflow-scheduler/"><img
+                                                                            src="/wp-content/themes/plumsail/assets/images/workflow_scheduler.svg">Workflow
+                                                                    Scheduler</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/cross-site-lookup/"><img
+                                                                            src="/wp-content/themes/plumsail/assets/images/crosssite_lookup.svg">Cross-site
+                                                                    lookup</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/sharepoint-orgchart/"><img
+                                                                            src="/wp-content/themes/plumsail/assets/images/org_chat.svg">Org
+                                                                    Chart</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <ul id="menu-main-menu-1" class="menu">
+                                                        <li class=''><a target="_blank" href="https://community.plumsail.com">Community</a></li>
+                                                        <li class=''><a href="/store/">Store</a></li>
+                                                        <li class=''><a target="_blank" href="https://medium.com/plumsail">Blog</a></li>
+                                                        <li class=''><a href="/partners-and-resellers/">Partners</a></li>
+                                                        <li class=''><a href="/company/">Company</a></li>
+                                                    </ul>                            
+                                                </ul>
+                                                <ul class="follow-us follow-us--mobile-menu">
+                                                    <li class="follow-us__item follow-us--google">
+                                                        <a href="https://plus.google.com/b/112093525198664117371/+PlumsailSharePointTeam?hl=ru" target="_blank">
+                                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                                                <path fill="#000000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z"/>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li class="follow-us__item follow-us--twitter">
+                                                        <a href="https://twitter.com/plumsail_sp" target="_blank">
+                                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                                                <path fill="#000000"
+                                                                      d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"/>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li class="follow-us__item follow-us--facebook">
+                                                        <a href="https://www.facebook.com/Plumsail/?notif_t=page_admin&amp;notif_id=1482313956804883" target="_blank">
+                                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                                                <path fill="#000000"
+                                                                      d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"/>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li class="follow-us__item follow-us--linkedin">
+                                                        <a href="https://www.linkedin.com/company/plumsail?trk=top_nav_home" target="_blank">
+                                                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                                                <path fill="#000000"
+                                                                      d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"/>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /mobile menu -->
+                                </div>
+                            </div>
+                        </div>
+                        </header>
+                        <section class="mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="mega-menu__cat">
+                                            <div class="mega-menu__cat-cont">
+                                                <div class="mega-subcat mega-subcat--helpdesk">
+                                                    <a href="/sharepoint-helpdesk/" class="mega-subcat__title">HelpDesk</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="/docs/help-desk-o365/v1.x/">Documentation</a>
+                                                        <a href="/sharepoint-helpdesk/store/">Pricing</a>
+                                                        <a href="/sharepoint-helpdesk/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mega-menu__cat-title">
+                                                Support service
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mega-menu__cat">
+                                            <div class="mega-menu__cat-cont">
+                                                <div class="mega-subcat mega-subcat--documents">
+                                                    <a href="/documents/" class="mega-subcat__title">Documents</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="/docs/documents/v1.x/">Documentation</a>
+                                                        <a href="/documents/store/">Pricing</a>
+                                                        <a href="/documents/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-subcat mega-subcat--actions">
+                                                    <a href="/actions/" class="mega-subcat__title">Actions</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="/docs/actions/v1.x/">Documentation</a>
+                                                        <a href="/actions/store/">Pricing</a>
+                                                        <a href="/actions/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-subcat mega-subcat--actionspack">
+                                                    <a href="/workflow-actions-pack/" class="mega-subcat__title">Workflow Actions
+                                                        Pack</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="/docs/workflow-actions-pack/">Documentation</a>
+                                                        <a href="/workflow-actions-pack/store/">Pricing</a>
+                                                        <a href="/workflow-actions-pack/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-subcat mega-subcat--scheduler">
+                                                    <a href="/sharepoint-workflow-scheduler/" class="mega-subcat__title">Workflow
+                                                        Scheduler</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="/sharepoint-workflow-scheduler/docs/">Documentation</a>
+                                                        <a href="/workflow-actions-pack/store/">Pricing</a>
+                                                        <a href="/sharepoint-workflow-scheduler/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mega-menu__cat-title">
+                                                Workflows
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mega-menu__cat">
+                                            <div class="mega-menu__cat-cont">
+                                                <div class="mega-subcat mega-subcat--forms">
+                                                    <a href="/forms/" class="mega-subcat__title">Forms</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="/docs/forms/">Documentation</a>
+                                                        <a href="/forms/store/">Pricing</a>
+                                                        <a href="/forms/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-subcat mega-subcat--formsdesigner">
+                                                    <a href="/sharepoint-forms-designer/" class="mega-subcat__title">Forms Designer</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="https://spform.com/documentation" target="_blank">Documentation</a>
+                                                        <a href="https://spform.com/buy" target="_blank">Pricing</a>
+                                                        <a href="/sharepoint-forms-designer/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-subcat mega-subcat--crosssite">
+                                                    <a href="/cross-site-lookup/" class="mega-subcat__title">Cross-site lookup</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="https://spform.com/documentation" target="_blank">Documentation</a>
+                                                        <a href="https://spform.com/buy" target="_blank">Pricing</a>
+                                                        <a href="/cross-site-lookup/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mega-menu__cat-title">
+                                                Forms
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mega-menu__cat">
+                                            <div class="mega-menu__cat-cont">
+                                                <div class="mega-subcat mega-subcat--dashboard">
+                                                    <a href="/sharepoint-dashboard-designer/" class="mega-subcat__title">Dashboard
+                                                        Designer</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="/sharepoint-dashboard-designer/documentation/">Documentation</a>
+                                                        <a href="/sharepoint-dashboard-designer/store/">Pricing</a>
+                                                        <a href="/sharepoint-dashboard-designer/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-subcat mega-subcat--org">
+                                                    <a href="/sharepoint-orgchart/" class="mega-subcat__title">Org Chart</a>
+                                                    <div class="mega-subcat__links">
+                                                        <a href="/sharepoint-orgchart/docs/">Documentation</a>
+                                                        <a href="/sharepoint-orgchart/store/">Pricing</a>
+                                                        <a href="/sharepoint-orgchart/support/">Support</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mega-menu__cat-title">
+                                                Visualization
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>                        
+                    
+                        <section class="breadcrumb">
+                            <div class="row">
+                                <div class="col-12"  style="padding-left:10px;">
+                                    <a href="/forms/">Forms</a>
+                                    <span>›</span>
+                                    <a href="../index.html">Documentation</a>
+                                    <span>›</span>
+                                    
+                                    <a href="data-table-section.html">Data Tables and MS Flow</a>
+                                    
+                                    Format Data Table in an HTML-template before converting into PDF
+                                </div>
+                            </div>
+                        </section>
+                    
+                    <div class="document clearer container doc-content2">
+                        
+  <div class="section" id="format-data-table-in-an-html-template-before-converting-into-pdf">
+<h1>Format Data Table in an HTML-template before converting into PDF<a class="headerlink" href="#format-data-table-in-an-html-template-before-converting-into-pdf" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<p class="topic-title first">Contents:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#description" id="id1">Description</a></li>
+<li><a class="reference internal" href="#setting-up-the-form" id="id2">Setting up the form</a></li>
+<li><a class="reference internal" href="#microsoft-flow-using-html-template-functionality" id="id3">Microsoft Flow using HTML template functionality</a></li>
+<li><a class="reference internal" href="#fixing-time-zones-for-dates" id="id4">Fixing time zones for Dates</a></li>
+</ul>
+</div>
+<div class="section" id="description">
+<h2><a class="toc-backref" href="#id1">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This article will describe how you can convert <a class="reference internal" href="../designer/controls.html#designer-datatable"><span class="std std-ref">DataTable</span></a> into HTML template with <a href="https://plumsail.com/actions/" target="_blank">Plumsail Actions</a>.</p>
+<p>It’s an additional example of using Plumsail Forms data with Plumsail Actions, so it can be used like described in <a class="reference internal" href="data-table-flow.html"><span class="doc">the previous article</span></a>.</p>
+<p>In here, we will also show you how you can format data inside Data Table with HTML-template for columns such as date.</p>
+</div>
+<div class="section" id="setting-up-the-form">
+<h2><a class="toc-backref" href="#id2">Setting up the form</a><a class="headerlink" href="#setting-up-the-form" title="Permalink to this headline">¶</a></h2>
+<p>We will use the same form that we used in the previous article - <a class="reference internal" href="data-table-flow.html#data-table-form"><span class="std std-ref">Form’s Logic</span></a>.</p>
+<p>It’s still the same Expense Reimbursement Form, we just need to add Date column to our Expenses table and set its type to Date:</p>
+<img alt="Add Date column to Expenses table" src="../_images/1_Add_Date.png" />
+</div>
+<div class="section" id="microsoft-flow-using-html-template-functionality">
+<h2><a class="toc-backref" href="#id3">Microsoft Flow using HTML template functionality</a><a class="headerlink" href="#microsoft-flow-using-html-template-functionality" title="Permalink to this headline">¶</a></h2>
+<p>This will show you how you can set up MS Flow with DataTable without converting it to HTML table first.</p>
+<p>Read more about adding Plumsail Actions connector in this section - <a class="reference internal" href="data-table-flow.html#plumsail-actions-flow"><span class="std std-ref">Plumsail Actions in MS Flow for DataTable</span></a>.</p>
+<p>Once the connector is set up, search for HTML Template and select <em>Plumsail Documents - Create HTML from template</em>:</p>
+<img alt="Search for HTML Template and select Plumsail Documents - Create HTML from template" src="../_images/4_Plumsail_Documents_Search.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Once the action is added, we need to fill in both <em>Source HTML</em> and <em>Template Data</em>.</p>
+<p>Since <em>Source HTML</em> uses <em>Template Data</em> quite extensively, it’s best to first define <em>Template Data</em>.</p>
+<p><em>Template Data</em> needs to be composed as a JavaScript object where we include all our data, in our case - just the form.</p>
+<p>First, I’ll create very basic structure for our object:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;Form&quot;</span><span class="o">:</span> <span class="nx">INSERT</span> <span class="nx">FORM</span> <span class="nx">HERE</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Now, we can insert Form Body inside “Form”:</p>
+<img alt="HTML Template data with Form" src="../_images/3_HTML_Template_Form.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>And that’s it! We don’t need anything else in the template as we can access all our data from the submitted form.</p>
+<p>Now we can write Source HTML and use our Template data to populate it. We can also include style with it by either linking HTML to CSS file or just include style tag inside Source HTML.
+Even JavaScript can be included and it will be executed unless it’s asynchronous.</p>
+<p>Here’s an HTML that I’ve used:</p>
+<div class="highlight-HTML"><div class="highlight"><pre><span></span><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Expense Reimbursement Request<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+        <span class="nt">body</span> <span class="p">{</span><span class="k">font-family</span><span class="p">:</span><span class="n">Arial</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;}</span>
+        <span class="nt">table</span> <span class="p">{</span><span class="k">border-collapse</span><span class="p">:</span> <span class="kc">collapse</span><span class="p">;</span> <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="p">}</span>
+        <span class="nt">table</span><span class="o">,</span> <span class="nt">th</span><span class="o">,</span> <span class="nt">td</span> <span class="p">{</span><span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">slategray</span><span class="p">;</span> <span class="k">margin</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;}</span>
+        <span class="p">.</span><span class="nc">signature</span> <span class="p">{</span> <span class="k">display</span><span class="p">:</span> <span class="kc">inline</span><span class="p">;</span> <span class="k">width</span><span class="p">:</span> <span class="mi">30</span><span class="kt">%</span> <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Expense Reimbursement Request<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Name: {{Form.Name}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Department: {{Form.Department}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Business Purpose: {{Form.Purpose}}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>From: {{Form.From:d}} To: {{Form.To:d}} <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Table of expenses:<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Description<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Category<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Cost<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Date<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    {{#each Form.ExpensesTable}}
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{Description}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{Category}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>${{Cost}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{Date:d}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    {{/each}}
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Total: {{Form.Total}}<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;signature&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Signature:<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;{{Form.Signature}}&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>As you can see, there are several interesting things I’ve used here. First of all, I’ve formatted the dates like this:</p>
+<div class="highlight-HTML"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>From: {{Form.From:d}} To: {{Form.To:d}} <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Adding <strong>:d</strong> after date will automatically convert any date to American Short Date format <em>MM/dd/yyyy</em>.</p>
+<p>Plumsail Actions HTML Template engine is based on <a href="https://github.com/jehugaleahsa/mustache-sharp" target="_blank">mustache#</a> and provides the same formatting based on <a href="https://msdn.microsoft.com/en-us/library/system.string.format.aspx" target="_blank">String.Format</a>.</p>
+<p>Another thing of interest is iteration through each item in ExpensesTable:</p>
+<div class="highlight-HTML"><div class="highlight"><pre><span></span>{{#each Form.ExpensesTable}}
+<span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{Description}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{Category}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>${{Cost}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{Date:d}}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+{{/each}}
+</pre></div>
+</div>
+<p>Since ExpensesTable is passed as an array of objects, it’s really easy to do, and then I can also access various columns inside {{#each}}{{/each}}.</p>
+<p>As you can see, I’ve formatted the dates and added a dollar sign before cost, to make result more readable and easier to understand.</p>
+<ul>
+<li><p class="first"><strong>Note:</strong> <em>While formatting with String.Format is very easy, it happens on the server and the server automatically converts everything to en-US culture</em>.</p>
+<p><em>If you want to format your values to a different culture, you can either do it ouside HTML Template engine or use JavaScript which is also executed when HTML template is created</em>.</p>
+</li>
+</ul>
+<p>Now we can convert result HTML into PDF. Search for Plumsail Documents and select <em>Plumsail Documents - Convert HTML to PDF</em>:</p>
+<img alt="Search for Plumsail Documents and select Plumsail Documents - Convert HTML to PDF" src="../_images/6_Plumsail_Documents_Search2.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Place Result HTML from the last action inside Source HTML field:</p>
+<img alt="Plumsail Documents - Convert HTML to PDF" src="../_images/7_Plumsail_Convert_HTML_to_PDF.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Read more on how to receive this PDF via email in <a class="reference internal" href="data-table-flow.html#email-pdf-attachment"><span class="std std-ref">Send an email with PDF attachment</span></a> section.</p>
+<p>And here’s PDF that I receive from Flow:</p>
+<img alt="Final PDF" src="../_images/4_PDF.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="fixing-time-zones-for-dates">
+<h2><a class="toc-backref" href="#id4">Fixing time zones for Dates</a><a class="headerlink" href="#fixing-time-zones-for-dates" title="Permalink to this headline">¶</a></h2>
+<p>One issue that you may face with the dates in Flow is time zone offset.</p>
+<p>Dates in Microsoft Flow are in Universal Time (aka, UTC or GMT) by default, but Plumsail Forms dates are in your local time which could lead to unexpected results.</p>
+<p>These differences can be resolved by adjusting dates before submission with JavaScript in <strong>fd.beforeSave()</strong> event.</p>
+<p>In our case, we can make sure that dates are correct with the following code, including dates in our expenses table:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">fd</span><span class="p">.</span><span class="nx">beforeSave</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//convert From field to appropriate 12:00 AM Time UTC:</span>
+    <span class="nx">data</span><span class="p">.</span><span class="nx">From</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">From</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span>
+        <span class="o">-</span> <span class="nx">data</span><span class="p">.</span><span class="nx">From</span><span class="p">.</span><span class="nx">getTimezoneOffset</span><span class="p">()</span> <span class="o">*</span> <span class="mi">60000</span><span class="p">);</span>
+
+    <span class="c1">//convert To field to appropriate 12:00 AM Time UTC:</span>
+    <span class="nx">data</span><span class="p">.</span><span class="nx">To</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">To</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span>
+        <span class="o">-</span> <span class="nx">data</span><span class="p">.</span><span class="nx">To</span><span class="p">.</span><span class="nx">getTimezoneOffset</span><span class="p">()</span> <span class="o">*</span> <span class="mi">60000</span><span class="p">);</span>
+
+    <span class="c1">//convert Date column to appropriate 12:00 AM Time UTC:</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">ExpensesTable</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+                <span class="kd">var</span> <span class="nx">date</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">ExpensesTable</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nb">Date</span><span class="p">;</span>
+                <span class="nx">data</span><span class="p">.</span><span class="nx">ExpensesTable</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nb">Date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span>
+                        <span class="o">-</span> <span class="nx">date</span><span class="p">.</span><span class="nx">getTimezoneOffset</span><span class="p">()</span> <span class="o">*</span> <span class="mi">60000</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+                    </div>
+                    <div class="clearfix" style="padding-bottom: 50px;"></div>
+                </div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="data-table-to-sp.html" title="Creating a web form with Data Table and saving data into SharePoint lists"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="data-table-flow.html" title="Convert form with Data Table into PDF and send for approval"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data-table-section.html" >Data Tables and MS Flow</a> &#187;</li> 
+      </ul>
+    </div>
+    <script type="text/javascript">
+      $("#mobile-toggle a").click(function () {
+        $("#left-column").toggle();
+      });
+    </script>
+    <script type="text/javascript" src="../_static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../_static/js/main.min.js"></script>
+        <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="footer__menu">
+          <ul id="menu-footer-menu" class="menu"><li class=""><a href="#products">Products</a></li>
+            <li class=""><a target="_blank" href="https://community.plumsail.com">Community</a></li>
+            <li class=""><a href="/store/">Store</a></li>
+            <li class=""><a target="_blank" href="https://medium.com/plumsail">Blog</a></li>
+            <li class=""><a href="/partners-and-resellers/">Partners</a></li>
+            <li class=""><a href="/company/">Company</a></li>
+          </ul>
+        </nav>
+        <div class="footer__copyright">
+          © 2011 - 2018 Plumsail. All rights reserved | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/refund-policy/">Refund policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+            <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36215023-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
