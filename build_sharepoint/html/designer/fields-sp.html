@@ -1,10 +1,11 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
   
   <title>SharePoint Fields &mdash; Plumsail Forms </title>
   <!-- Licensed under the Apache 2.0 License -->
@@ -20,32 +21,32 @@
   type="image/x-icon">
 
   
-    <title>SharePoint Fields &#8212; Forms 1.0 documentation</title>
+    <title>SharePoint Fields &mdash; Forms 1.0 documentation</title>
+    
     <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/theme_overrides_guzzle.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
         VERSION:     '1.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Forms 1.0 documentation" href="../index.html" />
     <link rel="next" title="SharePoint Forms Provision" href="provision.html" />
     <link rel="prev" title="Fields" href="fields.html" />
   
    
 
   </head>
-  <body>
+  <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -58,7 +59,7 @@
         <li class="right" >
           <a href="fields.html" title="Fields"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="container-wrapper">
@@ -85,12 +86,14 @@
     
     
       <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Table of contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">SharePoint Forms for Modern UI</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../start-public.html">Public Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../start-sp.html">SharePoint Forms for Modern UI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction-sp.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation-sp.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design-sp.html">Designing SharePoint forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licensing-sp.html">SharePoint Forms Licensing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">General</span></p>
 <ul>
@@ -121,6 +124,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../javascript/general.html">JavaScript Intro</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/manager.html">Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/toolbar.html">Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/dialog.html">Dialog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/containers.html">Containers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/controls.html">Controls</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/fields.html">Fields</a></li>
@@ -128,13 +132,9 @@
 </ul>
 <p class="caption"><span class="caption-text">How-to</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/simple-cases-flow.html">Simple Cases with MS Flow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/power-apps.html">PowerApps Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/dynamic-forms-js.html">Dynamic Forms with the use of JavaScript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/data-table-section.html">Data Tables and MS Flow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/list-or-library-section.html">List or Library configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/lookup-section.html">Advanced lookup settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/zapier.html">Zapier Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/other.html">Other</a></li>
 </ul>
 
@@ -427,7 +427,7 @@
 <h2><a class="toc-backref" href="#id1">General Info</a><a class="headerlink" href="#general-info" title="Permalink to this headline">¶</a></h2>
 <p>SharePoint fields are based on the columns of the SharePoint List or Library that you connect to.
 These fields, when added to the form, are automatically connected to the List and will retrieve data from the List, as well as automatically submit user input on save.</p>
-<p>It’s recommended to only use SharePoint fields on SharePoint forms unless you want to handle data from the Common fields with JavaScript or Flow.
+<p>It's recommended to only use SharePoint fields on SharePoint forms unless you want to handle data from the Common fields with JavaScript or Flow.
 This section contains information about settings for fields that are unique to SharePoint.</p>
 <p>For general information about field properties, check out the <a class="reference internal" href="fields.html"><span class="doc">Fields</span></a> section.</p>
 </div>
@@ -435,13 +435,13 @@ This section contains information about settings for fields that are unique to S
 <span id="designer-lookup"></span><h2><a class="toc-backref" href="#id2">Lookup</a><a class="headerlink" href="#lookup" title="Permalink to this headline">¶</a></h2>
 <p>Lookup field has received several new features, all of which can be configured in the designer.</p>
 <p>Now, users can use search bar to filter the selection in the lookup field.
-There’s also an option to add new items to the source list, if the item wasn’t found - this could be turned on/off.</p>
+There's also an option to add new items to the source list, if the item wasn't found - this could be turned on/off.</p>
 <p><img alt="Example Lookup" src="../_images/lookup.png" /></p>
 <div class="section" id="lookup-unique-properties">
 <h3>Lookup unique properties<a class="headerlink" href="#lookup-unique-properties" title="Permalink to this headline">¶</a></h3>
 <p>Lookup field has the following unique settings:</p>
 <p>SETTINGS</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -451,10 +451,10 @@ There’s also an option to add new items to the source list, if the item wasn�
 <td>Determines how the search is handled by the lookup. Has two options: StartsWith - only show items that start with the entered value, Contains - show all items that contain the entered value.</td>
 </tr>
 <tr class="row-even"><td>Add New</td>
-<td>Allows users to add new values to the source list of the Lookup. User must enter value that doesn’t exist yet, then there will be an option to add new item.</td>
+<td>Allows users to add new values to the source list of the Lookup. User must enter value that doesn't exist yet, then there will be an option to add new item.</td>
 </tr>
 <tr class="row-odd"><td>Extra Fields</td>
-<td>Select fields from the list that also need to be loaded. By default, only ID and ‘Display Field’ are retrieved. Extra fields can accessed with JavaScript. When adding Lookup fields in Extra Fields setting, do not forget to format them like this: <strong>Category/ID</strong>, <strong>Category/Title</strong>. Uses OData <em>$select</em> query option - read more <a href="https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests#select-fields-to-return/" target="_blank">here</a>.</td>
+<td>Select fields from the list that also need to be loaded. By default, only ID and 'Display Field' are retrieved. Extra fields can accessed with JavaScript. When adding Lookup fields in Extra Fields setting, do not forget to format them like this: <strong>Category/ID</strong>, <strong>Category/Title</strong>. Uses OData <em>$select</em> query option - read more <a href="https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests#select-fields-to-return/" target="_blank">here</a>.</td>
 </tr>
 <tr class="row-even"><td>Expand</td>
 <td>In the Expand setting you need to enter the Lookup field that you are getting in Extra Fields, such as: <strong>Category</strong>. Uses OData <em>$expand</em> query option.</td>
@@ -482,7 +482,7 @@ There’s also an option to add new items to the source list, if the item wasn�
         <li class="right" >
           <a href="fields.html" title="Fields"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <script type="text/javascript">

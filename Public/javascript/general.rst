@@ -17,3 +17,57 @@ Modern Forms are built with Vue.js and also support JQuery.
     - Finally, check out our How-to section for practical examples of JavaScript use, 
       such as :doc:`Manipulate fields </how-to/conditional-containers>` 
       and :doc:`Manipulate containers </how-to/conditional-containers>` articles.
+
+Available framework variables
+--------------------------------------------------
+
+Common variables (SharePoint and Public)
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Variable
+        -   Description/Examples
+        
+    *   -   **fd**
+        -   :doc:`JavaScript manager </javascript/manager>` used in most operations with the form. Allows access to all events, controls, fields, validators and data on the form.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                //make fd available in browser's console
+                window.fd = fd;
+
+                //call SharePoint form rendered event
+                fd.spRendered(function() {
+                    //simple fields are available
+                    fd.field('Title').value = "New Title";
+
+                    //can use ready event for complex fields
+                    fd.field('Lookup').ready().then(function(field) {
+                        console.log(field.value.LookupValue);
+                    });
+                });
+
+    *   -   **$**
+        -   |jQuery library| which can be used for a variety of things, to apply styles dynamically to the form, hide and show fields and much more.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                //make jQuery available in browser's console
+                window.$ = $;
+
+                //hide fields with CSS class
+                $('.field-to-hide').css('visibility', 'hidden');
+
+                //make fields with CSS class visible
+                $('.field-to-hide').css('visibility', 'visible');

@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Table of contents
+Public Web Forms
 =================================================
 
 .. toctree::
@@ -15,10 +15,14 @@ Table of contents
 
       .. toctree::
             :caption: Getting started
-            :maxdepth: 2
+            :maxdepth: 1
 
-            start-public
-            start-sp
+            ./introduction
+            ./installation
+            ./design
+            ./microsoft-flow
+            ./zapier
+            ./licensing
 
       .. toctree::
             :caption: General
@@ -36,14 +40,10 @@ Table of contents
             :maxdepth: 1
 
             designer/ribbon-actions
-            designer/form-sets
             designer/themes
             designer/containers
             designer/controls
             designer/fields
-            designer/fields-sp
-            designer/provision
-            designer/panel
 
       .. toctree::
             :caption: JavaScript framework 
@@ -55,7 +55,6 @@ Table of contents
             javascript/containers
             javascript/controls
             javascript/fields
-            javascript/fields-sp
       
 
 .. container:: pl-right-column
@@ -65,10 +64,7 @@ Table of contents
             :maxdepth: 2
 
             how-to/simple-cases-flow
-            how-to/power-apps
             how-to/dynamic-forms-js
             how-to/data-table-section
-            how-to/list-or-library-section
-            how-to/lookup-section
             how-to/zapier
             how-to/other

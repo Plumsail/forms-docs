@@ -1,10 +1,11 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
   
   <title>JavaScript Intro &mdash; Plumsail Forms </title>
   <!-- Licensed under the Apache 2.0 License -->
@@ -20,32 +21,32 @@
   type="image/x-icon">
 
   
-    <title>JavaScript Intro &#8212; Forms 1.0 documentation</title>
+    <title>JavaScript Intro &mdash; Forms 1.0 documentation</title>
+    
     <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/theme_overrides_guzzle.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
         VERSION:     '1.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Forms 1.0 documentation" href="../index.html" />
     <link rel="next" title="Manager" href="manager.html" />
     <link rel="prev" title="SharePoint Form Panel" href="../designer/panel.html" />
   
    
 
   </head>
-  <body>
+  <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -58,7 +59,7 @@
         <li class="right" >
           <a href="../designer/panel.html" title="SharePoint Form Panel"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="container-wrapper">
@@ -85,12 +86,14 @@
     
     
       <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Table of contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">SharePoint Forms for Modern UI</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../start-public.html">Public Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../start-sp.html">SharePoint Forms for Modern UI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction-sp.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation-sp.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design-sp.html">Designing SharePoint forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licensing-sp.html">SharePoint Forms Licensing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">General</span></p>
 <ul>
@@ -116,10 +119,12 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">JavaScript Intro</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#limitless-possibilities">Limitless possibilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#available-framework-variables">Available framework variables</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="manager.html">Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="toolbar.html">Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dialog.html">Dialog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="containers.html">Containers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="controls.html">Controls</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fields.html">Fields</a></li>
@@ -127,13 +132,9 @@
 </ul>
 <p class="caption"><span class="caption-text">How-to</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/simple-cases-flow.html">Simple Cases with MS Flow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/power-apps.html">PowerApps Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/dynamic-forms-js.html">Dynamic Forms with the use of JavaScript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/data-table-section.html">Data Tables and MS Flow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/list-or-library-section.html">List or Library configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/lookup-section.html">Advanced lookup settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/zapier.html">Zapier Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/other.html">Other</a></li>
 </ul>
 
@@ -417,9 +418,9 @@
 <h1>JavaScript Intro<a class="headerlink" href="#javascript-intro" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="limitless-possibilities">
 <h2>Limitless possibilities<a class="headerlink" href="#limitless-possibilities" title="Permalink to this headline">¶</a></h2>
-<p>Modern Forms are highly customizable and it’s JavaScript which allows you to go above and beyond any limitations you might face.</p>
+<p>Modern Forms are highly customizable and it's JavaScript which allows you to go above and beyond any limitations you might face.</p>
 <p>Bootstrap and custom styles can make your form look great on any screen and device, but JavaScript can add often much needed interactivity to the form.</p>
-<p>Modern Forms are built with Vue.js and also support JQuery.</p>
+<p>Modern Forms are built with Vue.js and comes with JQuery. On SharePoint forms, pnp-js library can be used to additional data from SharePoint.</p>
 <blockquote>
 <div><ul class="simple">
 <li>You can find general information about JavaScripts used on the form in the <a class="reference internal" href="manager.html"><span class="doc">Manager section</span></a>.</li>
@@ -430,6 +431,139 @@ such as <a class="reference internal" href="../how-to/conditional-containers.htm
 and <a class="reference internal" href="../how-to/conditional-containers.html"><span class="doc">Manipulate containers</span></a> articles.</li>
 </ul>
 </div></blockquote>
+</div>
+<div class="section" id="available-framework-variables">
+<h2>Available framework variables<a class="headerlink" href="#available-framework-variables" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="common-variables-sharepoint-and-public">
+<h3>Common variables (SharePoint and Public)<a class="headerlink" href="#common-variables-sharepoint-and-public" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given table table-bordered">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Variable</th>
+<th class="head">Description/Examples</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>fd</strong></td>
+<td><p class="first"><a class="reference internal" href="manager.html"><span class="doc">JavaScript manager</span></a> used in most operations with the form. Allows access to all events, controls, fields, validators and data on the form.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Example:</em></p>
+<div class="last highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//make fd available in browser&#39;s console</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">fd</span> <span class="o">=</span> <span class="nx">fd</span><span class="p">;</span>
+
+<span class="c1">//call SharePoint form rendered event</span>
+<span class="nx">fd</span><span class="p">.</span><span class="nx">spRendered</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//simple fields are available</span>
+    <span class="nx">fd</span><span class="p">.</span><span class="nx">field</span><span class="p">(</span><span class="s1">&#39;Title&#39;</span><span class="p">).</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&quot;New Title&quot;</span><span class="p">;</span>
+
+    <span class="c1">//can use ready event for complex fields</span>
+    <span class="nx">fd</span><span class="p">.</span><span class="nx">field</span><span class="p">(</span><span class="s1">&#39;Lookup&#39;</span><span class="p">).</span><span class="nx">ready</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">field</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">field</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">LookupValue</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><strong>$</strong></td>
+<td><p class="first"><a href="https://jquery.com" target="_blank">jQuery library</a> which can be used for a variety of things, to apply styles dynamically to the form, hide and show fields and much more.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Example:</em></p>
+<div class="last highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//make jQuery available in browser&#39;s console</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">$</span> <span class="o">=</span> <span class="nx">$</span><span class="p">;</span>
+
+<span class="c1">//hide fields with CSS class</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.field-to-hide&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;visibility&#39;</span><span class="p">,</span> <span class="s1">&#39;hidden&#39;</span><span class="p">);</span>
+
+<span class="c1">//make fields with CSS class visible</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.field-to-hide&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;visibility&#39;</span><span class="p">,</span> <span class="s1">&#39;visible&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sharepoint-variables">
+<h3>SharePoint variables<a class="headerlink" href="#sharepoint-variables" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given table table-bordered">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-even"><th class="head">Variable</th>
+<th class="head">Description/Examples</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Dialog</strong></td>
+<td><p class="first"><a class="reference internal" href="dialog.html"><span class="doc">Dialog</span></a> can be used to open any other form in dialog, pass parameters to it, detect if it was saved or not, and pass parameters back.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Example:</em></p>
+<div class="last highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//make Dialog available in browser&#39;s console</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">Dialog</span> <span class="o">=</span> <span class="nx">Dialog</span><span class="p">;</span>
+
+<span class="c1">//open form in dialog</span>
+<span class="nx">Dialog</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;{Form URL}&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">args</span><span class="o">:</span> <span class="s1">&#39;something&#39;</span> <span class="p">});</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><strong>pnp</strong></td>
+<td><p class="first"><a href="https://github.com/pnp/pnpjs/blob/dev/packages/sp/docs/index.md" target="_blank">pnpjs library</a> for SharePoint REST services (within current site).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Example:</em></p>
+<div class="last highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//make pnp-js available in browser&#39;s console</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">pnp</span> <span class="o">=</span> <span class="nx">pnp</span><span class="p">;</span>
+
+<span class="c1">//get current Web:</span>
+<span class="kd">var</span> <span class="nx">web</span> <span class="o">=</span> <span class="nx">pnp</span><span class="p">.</span><span class="nx">sp</span><span class="p">.</span><span class="nx">web</span><span class="p">;</span>
+
+<span class="c1">//get current Site:</span>
+<span class="kd">var</span> <span class="nx">site</span> <span class="o">=</span> <span class="nx">pnp</span><span class="p">.</span><span class="nx">sp</span><span class="p">.</span><span class="nx">Site</span><span class="p">;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><strong>Web</strong></td>
+<td><p class="first">Allows to create <a href="https://pnp.github.io/pnpjs/documentation/getting-started/#create-web-instances-directly" target="_blank">Web</a> instances directly using with the URL to use as a base.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Example:</em></p>
+<div class="last highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//make Web available in browser&#39;s console</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">Web</span> <span class="o">=</span> <span class="nx">Web</span><span class="p">;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><strong>Site</strong></td>
+<td><p class="first">Allows to create Site instances directly using with the URL to use as a base.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Example:</em></p>
+<div class="last highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//make Site available in browser&#39;s console</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">Site</span> <span class="o">=</span> <span class="nx">Site</span><span class="p">;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 
@@ -450,7 +584,7 @@ and <a class="reference internal" href="../how-to/conditional-containers.html"><
         <li class="right" >
           <a href="../designer/panel.html" title="SharePoint Form Panel"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <script type="text/javascript">

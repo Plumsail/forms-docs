@@ -1,10 +1,11 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
   
   <title>Form Sets &mdash; Plumsail Forms </title>
   <!-- Licensed under the Apache 2.0 License -->
@@ -20,32 +21,32 @@
   type="image/x-icon">
 
   
-    <title>Form Sets &#8212; Forms 1.0 documentation</title>
+    <title>Form Sets &mdash; Forms 1.0 documentation</title>
+    
     <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/theme_overrides_guzzle.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
         VERSION:     '1.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Forms 1.0 documentation" href="../index.html" />
     <link rel="next" title="Themes" href="themes.html" />
     <link rel="prev" title="Ribbon Actions" href="ribbon-actions.html" />
   
    
 
   </head>
-  <body>
+  <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -58,7 +59,7 @@
         <li class="right" >
           <a href="ribbon-actions.html" title="Ribbon Actions"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="container-wrapper">
@@ -85,12 +86,14 @@
     
     
       <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Table of contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">SharePoint Forms for Modern UI</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../start-public.html">Public Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../start-sp.html">SharePoint Forms for Modern UI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction-sp.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation-sp.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design-sp.html">Designing SharePoint forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licensing-sp.html">SharePoint Forms Licensing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">General</span></p>
 <ul>
@@ -123,6 +126,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../javascript/general.html">JavaScript Intro</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/manager.html">Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/toolbar.html">Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/dialog.html">Dialog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/containers.html">Containers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/controls.html">Controls</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/fields.html">Fields</a></li>
@@ -130,13 +134,9 @@
 </ul>
 <p class="caption"><span class="caption-text">How-to</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/simple-cases-flow.html">Simple Cases with MS Flow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/power-apps.html">PowerApps Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/dynamic-forms-js.html">Dynamic Forms with the use of JavaScript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/data-table-section.html">Data Tables and MS Flow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/list-or-library-section.html">List or Library configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/lookup-section.html">Advanced lookup settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/zapier.html">Zapier Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/other.html">Other</a></li>
 </ul>
 
@@ -431,10 +431,10 @@
 <h2><a class="toc-backref" href="#id1">General Info</a><a class="headerlink" href="#general-info" title="Permalink to this headline">¶</a></h2>
 <p>Form Sets allow you to design additional forms for SharePoint List or Library.</p>
 <p>By default, each List only has three forms - New, Edit and Display.
-Each additional Form Set allows you to add three more forms - also New, Edit and Display, but a Form Set doesn’t have to contain all three forms, it can be just one or two.</p>
+Each additional Form Set allows you to add three more forms - also New, Edit and Display, but a Form Set doesn't have to contain all three forms, it can be just one or two.</p>
 <ul class="simple">
 <li><a class="reference internal" href="#designer-grouprouting"><span class="std std-ref">Automatic routing based on SharePoint group membership</span></a> can be used to redirect users who belong to selected groups to a specific Form Set.</li>
-<li><a class="reference internal" href="#designer-customrouting"><span class="std std-ref">Custom routing</span></a> can be used to apply more complex logic prior to redirection, for example, check item’s field values or user’s properties.</li>
+<li><a class="reference internal" href="#designer-customrouting"><span class="std std-ref">Custom routing</span></a> can be used to apply more complex logic prior to redirection, for example, check item's field values or user's properties.</li>
 </ul>
 <p><img alt="Form Sets UI" src="../_images/1-UI.png" /></p>
 <p>You can select currently active Form Set in an upper right corner, in the drop-down.
@@ -449,14 +449,14 @@ Trash bin icon allows you to delete a Form Set. After creating a Form Set, do no
 <ul class="simple">
 <li>Name - the name of the Form Set, can be anything you want, just makes it easier to find among all the Form Sets.</li>
 <li>Order - determines the order in which to open Form Sets if conditions are met. The lower the Order value, the higher the priority for Form Set to open.</li>
-<li>Open forms when a user belongs… - select all groups user must belong to in order to be redirected. <strong>Note!</strong> Must select something in order for redirection to work.</li>
+<li>Open forms when a user belongs... - select all groups user must belong to in order to be redirected. <strong>Note!</strong> Must select something in order for redirection to work.</li>
 <li>Excluding the selected groups - will not redirect the user that belongs to the previously picked groups, if the user also belongs to one of the groups selected here.</li>
 </ul>
 </div>
 <div class="section" id="custom-routing">
 <span id="designer-customrouting"></span><h2><a class="toc-backref" href="#id3">Custom routing</a><a class="headerlink" href="#custom-routing" title="Permalink to this headline">¶</a></h2>
-<p>You are not limited to checking current user’s group membership, using custom routing you can use any logic to redirect users to specific form.
-With custom routing, you can check current item’s field values, user’s properties, such as title or department,
+<p>You are not limited to checking current user's group membership, using custom routing you can use any logic to redirect users to specific form.
+With custom routing, you can check current item's field values, user's properties, such as title or department,
 or any other information from SharePoint. Based on this information, you can redirect users to different Form Sets or URLs.</p>
 <p>Custom routing always takes priority over group routing. So, if your custom code returns ID of a Form Set,
 users will get redirected to the corresponding URL or Form Set all the time, even if they do not belong to the selected groups for this Form Set.
@@ -490,8 +490,8 @@ The URL or the ID will be used to redirect user either to specific Form Set or a
 <div class="section" id="routing-examples">
 <h2><a class="toc-backref" href="#id4">Routing examples</a><a class="headerlink" href="#routing-examples" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="check-item-s-field">
-<h3>Check item’s field<a class="headerlink" href="#check-item-s-field" title="Permalink to this headline">¶</a></h3>
-<p>Redirect to a certain Form Set if ‘Status’ field equals ‘Solved’:</p>
+<h3>Check item's field<a class="headerlink" href="#check-item-s-field" title="Permalink to this headline">¶</a></h3>
+<p>Redirect to a certain Form Set if 'Status' field equals 'Solved':</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//check if Item already exists, will return true for Edit and Display Form</span>
 <span class="k">if</span> <span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// return Promise</span>
@@ -508,8 +508,8 @@ The URL or the ID will be used to redirect user either to specific Form Set or a
 </div>
 </div>
 <div class="section" id="check-user-s-property">
-<h3>Check user’s property<a class="headerlink" href="#check-user-s-property" title="Permalink to this headline">¶</a></h3>
-<p>Redirect to a certain Form Set if User’s Department is ‘Fire Safety’:</p>
+<h3>Check user's property<a class="headerlink" href="#check-user-s-property" title="Permalink to this headline">¶</a></h3>
+<p>Redirect to a certain Form Set if User's Department is 'Fire Safety':</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//get properties of the current user</span>
 <span class="k">return</span> <span class="nx">pnp</span><span class="p">.</span><span class="nx">sp</span><span class="p">.</span><span class="nx">profiles</span><span class="p">.</span><span class="nx">myProperties</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">props</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">UserProfileProperties</span><span class="p">;</span>
@@ -523,8 +523,8 @@ The URL or the ID will be used to redirect user either to specific Form Set or a
 </div>
 </div>
 <div class="section" id="check-item-s-person-field">
-<h3>Check item’s Person field<a class="headerlink" href="#check-item-s-person-field" title="Permalink to this headline">¶</a></h3>
-<p>Redirect to a certain Form Set if ‘AssignedTo’ Person field equals the current user:</p>
+<h3>Check item's Person field<a class="headerlink" href="#check-item-s-person-field" title="Permalink to this headline">¶</a></h3>
+<p>Redirect to a certain Form Set if 'AssignedTo' Person field equals the current user:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//check if Item already exists, will return true for Edit and Display Form</span>
 <span class="k">if</span> <span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">//first, get the current user</span>
@@ -547,8 +547,8 @@ The URL or the ID will be used to redirect user either to specific Form Set or a
 </div>
 </div>
 <div class="section" id="check-item-s-multiple-selection-person-field">
-<h3>Check item’s multiple selection Person field<a class="headerlink" href="#check-item-s-multiple-selection-person-field" title="Permalink to this headline">¶</a></h3>
-<p>Redirect to a certain Form Set if ‘People’ multiple selection Person field contains the current user:</p>
+<h3>Check item's multiple selection Person field<a class="headerlink" href="#check-item-s-multiple-selection-person-field" title="Permalink to this headline">¶</a></h3>
+<p>Redirect to a certain Form Set if 'People' multiple selection Person field contains the current user:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//check if Item already exists, will return true for Edit and Display Form</span>
 <span class="k">if</span> <span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">//first, get the current user</span>
@@ -590,7 +590,7 @@ The URL or the ID will be used to redirect user either to specific Form Set or a
         <li class="right" >
           <a href="ribbon-actions.html" title="Ribbon Actions"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <script type="text/javascript">

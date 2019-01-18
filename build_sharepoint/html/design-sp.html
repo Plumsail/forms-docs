@@ -1,10 +1,11 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
   
   <title>Designing SharePoint forms &mdash; Plumsail Forms </title>
   <!-- Licensed under the Apache 2.0 License -->
@@ -20,32 +21,32 @@
   type="image/x-icon">
 
   
-    <title>Designing SharePoint forms &#8212; Forms 1.0 documentation</title>
+    <title>Designing SharePoint forms &mdash; Forms 1.0 documentation</title>
+    
     <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/theme_overrides_guzzle.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '1.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Forms 1.0 documentation" href="index.html" />
     <link rel="next" title="SharePoint Forms Licensing" href="licensing-sp.html" />
     <link rel="prev" title="Installation" href="installation-sp.html" />
   
    
 
   </head>
-  <body>
+  <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -58,8 +59,7 @@
         <li class="right" >
           <a href="installation-sp.html" title="Installation"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Forms 1.0 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="start-sp.html" accesskey="U">SharePoint Forms for Modern UI</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="container-wrapper">
@@ -86,18 +86,21 @@
     
     
       <ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Table of contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">SharePoint Forms for Modern UI</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting started</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="start-public.html">Public Web Forms</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="start-sp.html">SharePoint Forms for Modern UI</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="introduction-sp.html">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation-sp.html">Installation</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Designing SharePoint forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="licensing-sp.html">SharePoint Forms Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction-sp.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation-sp.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Designing SharePoint forms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#open-the-designer">Open the designer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-edit-and-display-forms">New, Edit and Display forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basics-of-form-design">Basics of form design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#saving-a-form">Saving a form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-functionality">Advanced functionality</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="licensing-sp.html">SharePoint Forms Licensing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">General</span></p>
 <ul>
@@ -124,6 +127,7 @@
 <li class="toctree-l1"><a class="reference internal" href="javascript/general.html">JavaScript Intro</a></li>
 <li class="toctree-l1"><a class="reference internal" href="javascript/manager.html">Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="javascript/toolbar.html">Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript/dialog.html">Dialog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="javascript/containers.html">Containers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="javascript/controls.html">Controls</a></li>
 <li class="toctree-l1"><a class="reference internal" href="javascript/fields.html">Fields</a></li>
@@ -131,13 +135,9 @@
 </ul>
 <p class="caption"><span class="caption-text">How-to</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="how-to/simple-cases-flow.html">Simple Cases with MS Flow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="how-to/power-apps.html">PowerApps Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="how-to/dynamic-forms-js.html">Dynamic Forms with the use of JavaScript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="how-to/data-table-section.html">Data Tables and MS Flow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="how-to/list-or-library-section.html">List or Library configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="how-to/lookup-section.html">Advanced lookup settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="how-to/zapier.html">Zapier Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="how-to/other.html">Other</a></li>
 </ul>
 
@@ -410,8 +410,6 @@
                                     <a href="index.html">Documentation</a>
                                     <span>›</span>
                                     
-                                    <a href="start-sp.html">SharePoint Forms for Modern UI</a>
-                                    
                                     Designing SharePoint forms
                                 </div>
                             </div>
@@ -433,11 +431,11 @@
 </div>
 <div class="section" id="open-the-designer">
 <h2><a class="toc-backref" href="#id1">Open the designer</a><a class="headerlink" href="#open-the-designer" title="Permalink to this headline">¶</a></h2>
-<p>First of all, you need to make sure that you’ve registered a <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>, downloaded and installed <a href="https://account.plumsail.com/forms/intro" target="_blank">the designer application</a> to your PC.
-Don’t forget to follow all the steps in the <a class="reference internal" href="installation-sp.html"><span class="doc">SharePoint installation instruction</span></a>, upload package to your App Catalog and share it with all the sites.</p>
+<p>First of all, you need to make sure that you've registered a <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>, downloaded and installed <a href="https://account.plumsail.com/forms/intro" target="_blank">the designer application</a> to your PC.
+Don't forget to follow all the steps in the <a class="reference internal" href="installation-sp.html"><span class="doc">SharePoint installation instruction</span></a>, upload package to your App Catalog and share it with all the sites.</p>
 <p>The app launches with the following window:</p>
 <p><img alt="Sign In" src="_images/signIn.png" /></p>
-<p>Simply choose SharePoint in Forms Designer during sign in, enter your site’s URL and Site Owner credentials, select a List or a Library
+<p>Simply choose SharePoint in Forms Designer during sign in, enter your site's URL and Site Owner credentials, select a List or a Library
 forms for which you want to modify and start working on the forms. Saved forms will automatically replace default forms on your site.</p>
 </div>
 <div class="section" id="new-edit-and-display-forms">
@@ -464,10 +462,10 @@ forms for which you want to modify and start working on the forms. Saved forms w
 <a class="reference internal" href="designer/controls.html"><span class="doc">Control</span></a> and <a class="reference internal" href="designer/containers.html"><span class="doc">Container</span></a> by selecting it with a click and then adjusting its properties in menu on the right:</p>
 <p><img alt="Field's Properties" src="_images/settings.png" /></p>
 <p>By default, each element is placed inside a <a class="reference internal" href="designer/containers.html#designer-grid"><span class="std std-ref">Grid</span></a>, which is based on <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">Bootstrap Grid</a>. By adjusting PARENT GRID properties of each element,
-you adjust element’s layout in regards to all other elements.</p>
+you adjust element's layout in regards to all other elements.</p>
 <p><strong>Note!</strong> We do not recommend adding Common Fields to SharePoint forms unless you know what exactly you want to do with them. By default, only SharePoint Fields
 store data when Item is saved, Common Fields lose all the data. If you want, you can use Common fields to perform some calculations on the form or
-submit certain data to MS Flow using <a class="reference internal" href="microsoft-flow.html"><span class="doc">Plumsail Forms</span></a> connector.</p>
+submit certain data to MS Flow using <span class="xref doc">Plumsail Forms</span> connector.</p>
 <div class="section" id="mobile-layouts">
 <h3>Mobile Layouts<a class="headerlink" href="#mobile-layouts" title="Permalink to this headline">¶</a></h3>
 <p>You can customize <a class="reference internal" href="designer/ribbon-actions.html#designer-layouts"><span class="std std-ref">layout for mobile devices</span></a> by selecting device type in the Ribbon. Clicking red <strong>X</strong> under the layout will delete it:</p>
@@ -476,16 +474,16 @@ submit certain data to MS Flow using <a class="reference internal" href="microso
 </div>
 <div class="section" id="saving-a-form">
 <h2><a class="toc-backref" href="#id4">Saving a form</a><a class="headerlink" href="#saving-a-form" title="Permalink to this headline">¶</a></h2>
-<p>Saving a form is easy - just click the Save button. Once the button is pressed, it gets grayed out and you’ll see a message that says that the form is saving:</p>
+<p>Saving a form is easy - just click the Save button. Once the button is pressed, it gets grayed out and you'll see a message that says that the form is saving:</p>
 <p><a class="reference internal" href="_images/saving.png"><img alt="Saving a form" src="_images/saving.png" style="width: 80%;" /></a></p>
 <p>Please, <strong>wait until the process is complete</strong>. Meanwhile, you can continue working in the designer, but if you want to see the results in SharePoint,
 you need to wait until you see <em>Layout has been successfully saved</em> message:</p>
 <p><a class="reference internal" href="_images/saved.png"><img alt="Form is saved" src="_images/saved.png" style="width: 80%;" /></a></p>
 <p>Finally, you are also able to save multiple forms at once if you want them to share functionality. For example, if the form has no custom logic,
-it’s often easier to save New, Edit and Display form at the same time. Just click the arrow symbol on the Save button and select which forms you want to
+it's often easier to save New, Edit and Display form at the same time. Just click the arrow symbol on the Save button and select which forms you want to
 replace with the current one:</p>
 <p><img alt="Save multiple forms" src="_images/save3.png" /></p>
-<p>Be extra careful when saving more than one form, it’s easy to forget that two forms might have different JavaScript attached to them, for example.
+<p>Be extra careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them, for example.
 Because of that, and other potentially risky situations, we recommend backing up forms that are important to you,
 by using <a class="reference internal" href="designer/ribbon-actions.html#designer-export"><span class="std std-ref">Export feature</span></a> of the designer:</p>
 <p><img alt="Export and Import buttons" src="_images/ExportImport.png" /></p>
@@ -495,7 +493,7 @@ by using <a class="reference internal" href="designer/ribbon-actions.html#design
 <div class="section" id="css-and-javascript">
 <h3>CSS and JavaScript<a class="headerlink" href="#css-and-javascript" title="Permalink to this headline">¶</a></h3>
 <p>If you want to change the appearance of elements on the form, you can either edit Style property of the elements or apply custom styles with CSS editor.
-Don’t forget that you can give each element a class and then use it in CSS editor to apply styles by class.</p>
+Don't forget that you can give each element a class and then use it in CSS editor to apply styles by class.</p>
 <p><img alt="JavaScript and CSS editors" src="_images/editors.png" /></p>
 <p>Another thing that you can alter on any form is JavaScript and with our rich <a class="reference internal" href="javascript/general.html"><span class="doc">JavaScript API</span></a> there is a lot that can be done with it.</p>
 <p>Please, make sure that you are familiar with the events present in JavaScript API as these events need to be used in order to get access to all forms elements.
@@ -509,7 +507,7 @@ Add a new one by clicking the <strong>+ sign</strong>:</p>
 <p>Сommon use for Form Sets is to provide unique <a class="reference internal" href="designer/form-sets.html#designer-grouprouting"><span class="std std-ref">forms for members of certain groups</span></a>, that can be easily configured in the menu when you create a new Form Set:</p>
 <p><img alt="Form Sets Group Configuration" src="_images/2-FormSetsConfig.png" /></p>
 <p>But you are not limited to it. In fact, you can leave it empty and instead use <a class="reference internal" href="designer/form-sets.html#designer-customrouting"><span class="std std-ref">Custom routing</span></a> to redirect users to the appropriate form based on other conditions,
-such as field values on the form or user’s properties:</p>
+such as field values on the form or user's properties:</p>
 <p><img alt="Form Routing button" src="_images/3-Routing.png" /></p>
 </div>
 <div class="section" id="related-items-documents">
@@ -518,7 +516,7 @@ such as field values on the form or user’s properties:</p>
 It also allows users to add new items, change or delete existing ones, directly from the current form.</p>
 <p><img alt="Parent Form with Children" src="_images/result.png" /></p>
 <p>What is even more impressive - it allows to <a class="reference internal" href="how-to/child-parent-form.html"><span class="doc">create Parent/Child relationship</span></a> between items in one list and items in another list very easily,
-without any code required. Find out how it’s done in this article.</p>
+without any code required. Find out how it's done in this article.</p>
 <p>You also need to be aware that List or Library supports various means of filtering. For example, you can <a class="reference internal" href="how-to/root-folder.html"><span class="doc">set Root Folder property</span></a>
 either manually or with a script, and it will ensure that users can only see contents of this root folder and cannot see items higher in the hierarchy.
 <a class="reference internal" href="how-to/caml-filter.html"><span class="doc">CAML filtering</span></a> is also supported and can also be used to filter shown items by their field values, and it can be done dynamically as well.</p>
@@ -543,8 +541,7 @@ either manually or with a script, and it will ensure that users can only see con
         <li class="right" >
           <a href="installation-sp.html" title="Installation"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Forms 1.0 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="start-sp.html" >SharePoint Forms for Modern UI</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <script type="text/javascript">

@@ -1,10 +1,11 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
   
   <title>Manager &mdash; Plumsail Forms </title>
   <!-- Licensed under the Apache 2.0 License -->
@@ -20,32 +21,32 @@
   type="image/x-icon">
 
   
-    <title>Manager &#8212; Forms 1.0 documentation</title>
+    <title>Manager &mdash; Forms 1.0 documentation</title>
+    
     <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/theme_overrides_guzzle.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
         VERSION:     '1.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Forms 1.0 documentation" href="../index.html" />
     <link rel="next" title="Toolbar" href="toolbar.html" />
     <link rel="prev" title="JavaScript Intro" href="general.html" />
   
    
 
   </head>
-  <body>
+  <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -58,7 +59,7 @@
         <li class="right" >
           <a href="general.html" title="JavaScript Intro"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="container-wrapper">
@@ -85,12 +86,14 @@
     
     
       <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Table of contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">SharePoint Forms for Modern UI</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../start-public.html">Public Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../start-sp.html">SharePoint Forms for Modern UI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction-sp.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation-sp.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design-sp.html">Designing SharePoint forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licensing-sp.html">SharePoint Forms Licensing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">General</span></p>
 <ul>
@@ -123,6 +126,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="toolbar.html">Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dialog.html">Dialog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="containers.html">Containers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="controls.html">Controls</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fields.html">Fields</a></li>
@@ -130,13 +134,9 @@
 </ul>
 <p class="caption"><span class="caption-text">How-to</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/simple-cases-flow.html">Simple Cases with MS Flow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/power-apps.html">PowerApps Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/dynamic-forms-js.html">Dynamic Forms with the use of JavaScript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/data-table-section.html">Data Tables and MS Flow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/list-or-library-section.html">List or Library configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/lookup-section.html">Advanced lookup settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/zapier.html">Zapier Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/other.html">Other</a></li>
 </ul>
 
@@ -432,14 +432,14 @@
 <p><strong>fd</strong> is a Forms designer manager variable. Whenever you want to use custom methods on the form, you need to call the manager first.</p>
 <blockquote>
 <div><p><strong>fd</strong> is not global and only accesible from within the form, e.g. from JavaScript editor.</p>
-<p>It is accesible globally in Form Preview, so you can run tests from browser’s console.</p>
+<p>It is accesible globally in Form Preview, so you can run tests from browser's console.</p>
 <p>Otherwise, it will not be accesible globally on the page, so you can include several forms on one page and not worry about their scripts conflicting at all.</p>
 </div></blockquote>
 </div>
 <div class="section" id="properties">
 <h2><a class="toc-backref" href="#id2">Properties</a><a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
 <p><strong>fd</strong> has the following properties:</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -511,7 +511,7 @@
 <tr class="row-odd"><td><strong>fd.validators</strong></td>
 <td><p class="first">Get an array of form validators, can be used to add new ones.
 These are more complex validators than Field Validators and are used for several fields, to check that different fields have appropriate values.</p>
-<p>For example, you want certain options to be only available if the user’s age is above 18 or some other criteria.</p>
+<p>For example, you want certain options to be only available if the user's age is above 18 or some other criteria.</p>
 <p>If the fields do not match these criterias, the form will not submit.</p>
 <p>Use <strong>rendered()</strong> event for Plumsail forms and <strong>spRendered()</strong> event for SharePoint forms to add custom validators.</p>
 <div class="line-block">
@@ -548,7 +548,7 @@ These are more complex validators than Field Validators and are used for several
 </tr>
 <tr class="row-odd"><td><strong>fd._vue.lang</strong></td>
 <td><p class="first">Property that stores all language constants, can be used to set text for localization.</p>
-<p><em>It’s best to use</em> <strong>created</strong> <em>event to set these values.</em></p>
+<p><em>It's best to use</em> <strong>created</strong> <em>event to set these values.</em></p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -630,18 +630,18 @@ These are more complex validators than Field Validators and are used for several
 <div class="section" id="methods">
 <h2><a class="toc-backref" href="#id3">Methods</a><a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <p>These methods can be applied to <strong>fd</strong>:</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Method</th>
+<tr class="row-even"><th class="head">Method</th>
 <th class="head">Description/Examples</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>fd.save()</strong></td>
+<tr class="row-odd"><td><strong>fd.save()</strong></td>
 <td><p class="first">Saves the form.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -652,7 +652,7 @@ These are more complex validators than Field Validators and are used for several
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>fd.data()</strong></td>
+<tr class="row-even"><td><strong>fd.data()</strong></td>
 <td><p class="first">Gathers data from all fields on the form. Can be used to get or set multiple values at the same time.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -664,7 +664,7 @@ These are more complex validators than Field Validators and are used for several
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>fd.clear()</strong></td>
+<tr class="row-odd"><td><strong>fd.clear()</strong></td>
 <td><p class="first">Clears the form.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -675,7 +675,7 @@ These are more complex validators than Field Validators and are used for several
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>fd.exportToPDF(fileName, options)</strong></td>
+<tr class="row-even"><td><strong>fd.exportToPDF(fileName, options)</strong></td>
 <td><p class="first">Exports current form to PDF file, and starts file download.</p>
 <p><strong>fileName</strong> passed as an argument to the function is a string with the name of the created file.</p>
 <p><strong>options</strong> passed as an argument to the function is a JavaScript object that specifies various options for created PDF file, such as paper size, margin, orientation, etc.</p>
@@ -699,7 +699,7 @@ These are more complex validators than Field Validators and are used for several
 <div class="section" id="events">
 <span id="js-events"></span><h2><a class="toc-backref" href="#id4">Events</a><a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
 <p>These events can be executed from JavaScript editor for Plumsail Forms:</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -811,7 +811,7 @@ You can read more about it <a href="https://vuejs.org/v2/guide/instance.html" ta
 <tr class="row-odd"><td><strong>spRendered()</strong></td>
 <td><p class="first">Occurs after mounting the vue-component to DOM.</p>
 <p><strong>Best place to run your JavaScript</strong> since all elements are already built and rendered.</p>
-<p>It’s also here that fields with <em>ready</em> event should be executed inside.</p>
+<p>It's also here that fields with <em>ready</em> event should be executed inside.</p>
 <p>You can also use this event for fields that have custom <strong>ready</strong> event available.</p>
 <p><strong>vue</strong> passed as an argument to the function is a Vue instance of the form.</p>
 <p>It is also available from fd variable this way: <em>fd._vue</em></p>
@@ -841,15 +841,15 @@ You can read more about it <a href="https://vuejs.org/v2/guide/instance.html" ta
 </tr>
 <tr class="row-even"><td><strong>beforeSave()</strong></td>
 <td><p class="first">Occurs before submitting the form.</p>
-<p><strong>data</strong> passed as an argument to the function is an object representing user’s input.</p>
-<p>Keys are internal names of form fields, Values - user’s input. Ex.:</p>
+<p><strong>data</strong> passed as an argument to the function is an object representing user's input.</p>
+<p>Keys are internal names of form fields, Values - user's input. Ex.:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nx">Field1</span><span class="o">:</span> <span class="s1">&#39;text&#39;</span>
     <span class="nx">DateTime1</span><span class="o">:</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">&#39;2017-01-01&#39;</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>Here, you can process form’s data with code by yourself instead of sending it to the Flow.</p>
+<p>Here, you can process form's data with code by yourself instead of sending it to the Flow.</p>
 <p>For instance, you can send data directly to your web service or modify it somehow before it is processed by the Flow.</p>
 <p><strong>Asynchronous event!</strong>  Can return a Promise and the corresponding operation will not continue until the promise is resolved.</p>
 <p><em>Note:</em> This event is exclusive to Plumsail Forms.</p>
@@ -954,7 +954,7 @@ You can read more about it <a href="https://vuejs.org/v2/guide/instance.html" ta
         <li class="right" >
           <a href="general.html" title="JavaScript Intro"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <script type="text/javascript">

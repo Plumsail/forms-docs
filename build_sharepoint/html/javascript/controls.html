@@ -1,10 +1,11 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
   
   <title>Controls &mdash; Plumsail Forms </title>
   <!-- Licensed under the Apache 2.0 License -->
@@ -20,32 +21,32 @@
   type="image/x-icon">
 
   
-    <title>Controls &#8212; Forms 1.0 documentation</title>
+    <title>Controls &mdash; Forms 1.0 documentation</title>
+    
     <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/theme_overrides_guzzle.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
         VERSION:     '1.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Forms 1.0 documentation" href="../index.html" />
     <link rel="next" title="Fields" href="fields.html" />
     <link rel="prev" title="Containers" href="containers.html" />
   
    
 
   </head>
-  <body>
+  <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -58,7 +59,7 @@
         <li class="right" >
           <a href="containers.html" title="Containers"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="container-wrapper">
@@ -85,12 +86,14 @@
     
     
       <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Table of contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">SharePoint Forms for Modern UI</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../start-public.html">Public Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../start-sp.html">SharePoint Forms for Modern UI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction-sp.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation-sp.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design-sp.html">Designing SharePoint forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licensing-sp.html">SharePoint Forms Licensing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">General</span></p>
 <ul>
@@ -117,6 +120,7 @@
 <li class="toctree-l1"><a class="reference internal" href="general.html">JavaScript Intro</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manager.html">Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="toolbar.html">Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dialog.html">Dialog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="containers.html">Containers</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Controls</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#intro">Intro</a></li>
@@ -136,13 +140,9 @@
 </ul>
 <p class="caption"><span class="caption-text">How-to</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/simple-cases-flow.html">Simple Cases with MS Flow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/power-apps.html">PowerApps Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/dynamic-forms-js.html">Dynamic Forms with the use of JavaScript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/data-table-section.html">Data Tables and MS Flow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/list-or-library-section.html">List or Library configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/lookup-section.html">Advanced lookup settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/zapier.html">Zapier Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/other.html">Other</a></li>
 </ul>
 
@@ -427,33 +427,33 @@
 <div class="contents local topic" id="contents">
 <p class="topic-title first">Contents:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#intro" id="id5">Intro</a></li>
-<li><a class="reference internal" href="#button" id="id6">Button</a></li>
-<li><a class="reference internal" href="#submit" id="id7">Submit</a></li>
-<li><a class="reference internal" href="#hyperlink" id="id8">Hyperlink</a></li>
-<li><a class="reference internal" href="#image" id="id9">Image</a></li>
-<li><a class="reference internal" href="#plain-text" id="id10">Plain Text</a></li>
-<li><a class="reference internal" href="#ink-sketch" id="id11">Ink Sketch</a></li>
-<li><a class="reference internal" href="#likert-scale" id="id12">Likert scale</a></li>
-<li><a class="reference internal" href="#datatable" id="id13">DataTable</a></li>
-<li><a class="reference internal" href="#list-or-library" id="id14">List or Library</a></li>
+<li><a class="reference internal" href="#intro" id="id6">Intro</a></li>
+<li><a class="reference internal" href="#button" id="id7">Button</a></li>
+<li><a class="reference internal" href="#submit" id="id8">Submit</a></li>
+<li><a class="reference internal" href="#hyperlink" id="id9">Hyperlink</a></li>
+<li><a class="reference internal" href="#image" id="id10">Image</a></li>
+<li><a class="reference internal" href="#plain-text" id="id11">Plain Text</a></li>
+<li><a class="reference internal" href="#ink-sketch" id="id12">Ink Sketch</a></li>
+<li><a class="reference internal" href="#likert-scale" id="id13">Likert scale</a></li>
+<li><a class="reference internal" href="#datatable" id="id14">DataTable</a></li>
+<li><a class="reference internal" href="#list-or-library" id="id15">List or Library</a></li>
 </ul>
 </div>
 <div class="section" id="intro">
-<h2><a class="toc-backref" href="#id5">Intro</a><a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Intro</a><a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h2>
 <p>Here you can find properties, methods and events of various controls that you can have on your form.</p>
 <p>Insert them into JavaScript editor or inside OnClick setting for buttons and links.</p>
 <p><em>Internal Name</em> is the property that is used to identify specific controls and apply methods to them. <em>Internal Name</em> is unique for every element on the form.</p>
-<p><strong>Important!</strong> These events, methods and properties shouldn’t be used on their own, they must be executed inside events
+<p><strong>Important!</strong> These events, methods and properties shouldn't be used on their own, they must be executed inside events
 like <strong>rendered()</strong> or <strong>beforeSave()</strong> in order to actually access the fields or controls that you target.</p>
 <p>If you just add these scripts on their own or inside wrong event in JavaScript editor,
 they will not have access to the specified controls, or will execute at the wrong time.
 Read more about different events in <a class="reference internal" href="manager.html"><span class="doc">Manager section</span></a>.</p>
 </div>
 <div class="section" id="button">
-<h2><a class="toc-backref" href="#id6">Button</a><a class="headerlink" href="#button" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Button</a><a class="headerlink" href="#button" title="Permalink to this headline">¶</a></h2>
 <p>Properties of the Button control.</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -494,20 +494,20 @@ Read more about different events in <a class="reference internal" href="manager.
 </table>
 </div>
 <div class="section" id="submit">
-<h2><a class="toc-backref" href="#id7">Submit</a><a class="headerlink" href="#submit" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Submit</a><a class="headerlink" href="#submit" title="Permalink to this headline">¶</a></h2>
 <p>Properties of the Submit control.</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
+<tr class="row-even"><th class="head">Name</th>
 <th class="head">Description/Examples</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>text</strong></td>
+<tr class="row-odd"><td><strong>text</strong></td>
 <td><p class="first">Property that holds text for the submit button.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -519,7 +519,7 @@ Read more about different events in <a class="reference internal" href="manager.
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>onclick</strong></td>
+<tr class="row-even"><td><strong>onclick</strong></td>
 <td><p class="first">Property that holds JavaScript that is executed when submit button is clicked.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -531,7 +531,7 @@ Read more about different events in <a class="reference internal" href="manager.
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>disabled</strong></td>
+<tr class="row-odd"><td><strong>disabled</strong></td>
 <td><p class="first">Property that specifies if submit button is clickable or not, can be used to disable submit button.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -544,7 +544,7 @@ Read more about different events in <a class="reference internal" href="manager.
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>isSaving</strong></td>
+<tr class="row-even"><td><strong>isSaving</strong></td>
 <td><p class="first">Property that checks if form submission is in process.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -555,7 +555,7 @@ Read more about different events in <a class="reference internal" href="manager.
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>savingText</strong></td>
+<tr class="row-odd"><td><strong>savingText</strong></td>
 <td><p class="first">Property that holds text that is displayed on form submission.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -571,20 +571,20 @@ Read more about different events in <a class="reference internal" href="manager.
 </table>
 </div>
 <div class="section" id="hyperlink">
-<h2><a class="toc-backref" href="#id8">Hyperlink</a><a class="headerlink" href="#hyperlink" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Hyperlink</a><a class="headerlink" href="#hyperlink" title="Permalink to this headline">¶</a></h2>
 <p>Properties of the Hyperlink control.</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
+<tr class="row-even"><th class="head">Name</th>
 <th class="head">Description/Examples</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>text</strong></td>
+<tr class="row-odd"><td><strong>text</strong></td>
 <td><p class="first">Property that holds text for the control.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -596,10 +596,10 @@ Read more about different events in <a class="reference internal" href="manager.
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>target</strong></td>
+<tr class="row-even"><td><strong>target</strong></td>
 <td><p class="first">Property that holds target attribute for the link.</p>
 <p>The target attribute specifies where to open the linked document.</p>
-<p>Most common use is to open linked document in a new tab by setting target to “_blank”</p>
+<p>Most common use is to open linked document in a new tab by setting target to &quot;_blank&quot;</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -610,9 +610,9 @@ Read more about different events in <a class="reference internal" href="manager.
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>href</strong></td>
+<tr class="row-odd"><td><strong>href</strong></td>
 <td><p class="first">Property that holds href for the link.</p>
-<p>The href attribute specifies the link’s destination.</p>
+<p>The href attribute specifies the link's destination.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -623,7 +623,7 @@ Read more about different events in <a class="reference internal" href="manager.
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>onclick</strong></td>
+<tr class="row-even"><td><strong>onclick</strong></td>
 <td><p class="first">Property that holds JavaScript that is executed when link is clicked.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -639,9 +639,9 @@ Read more about different events in <a class="reference internal" href="manager.
 </table>
 </div>
 <div class="section" id="image">
-<h2><a class="toc-backref" href="#id9">Image</a><a class="headerlink" href="#image" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Image</a><a class="headerlink" href="#image" title="Permalink to this headline">¶</a></h2>
 <p>Properties of the Image control.</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -655,7 +655,7 @@ Read more about different events in <a class="reference internal" href="manager.
 <tr class="row-even"><td><strong>target</strong></td>
 <td><p class="first">Property that holds target attribute for the image, used when image works as Hyperlink.</p>
 <p>The target attribute specifies where to open the linked document.</p>
-<p>Most common use is to open linked document in a new tab by setting target to “_blank”</p>
+<p>Most common use is to open linked document in a new tab by setting target to &quot;_blank&quot;</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -668,7 +668,7 @@ Read more about different events in <a class="reference internal" href="manager.
 </tr>
 <tr class="row-odd"><td><strong>href</strong></td>
 <td><p class="first">Property that holds href for the link placed on the image.</p>
-<p>The href attribute specifies the link’s destination.</p>
+<p>The href attribute specifies the link's destination.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -744,9 +744,9 @@ Read more about different events in <a class="reference internal" href="manager.
 </table>
 </div>
 <div class="section" id="plain-text">
-<h2><a class="toc-backref" href="#id10">Plain Text</a><a class="headerlink" href="#plain-text" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Plain Text</a><a class="headerlink" href="#plain-text" title="Permalink to this headline">¶</a></h2>
 <p>Properties of the Plain Text control.</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -773,9 +773,9 @@ Read more about different events in <a class="reference internal" href="manager.
 </table>
 </div>
 <div class="section" id="ink-sketch">
-<h2><a class="toc-backref" href="#id11">Ink Sketch</a><a class="headerlink" href="#ink-sketch" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Ink Sketch</a><a class="headerlink" href="#ink-sketch" title="Permalink to this headline">¶</a></h2>
 <p>Properties of the Ink Sketch control.</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -870,22 +870,22 @@ Can be copied, stored and set, for example.</p>
 </table>
 </div>
 <div class="section" id="likert-scale">
-<h2><a class="toc-backref" href="#id12">Likert scale</a><a class="headerlink" href="#likert-scale" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Likert scale</a><a class="headerlink" href="#likert-scale" title="Permalink to this headline">¶</a></h2>
 <p>Properties, methods and events of the Likert scale control.</p>
 <div class="section" id="properties">
 <h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
+<tr class="row-even"><th class="head">Name</th>
 <th class="head">Description/Examples</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>answers</strong></td>
+<tr class="row-odd"><td><strong>answers</strong></td>
 <td><p class="first">Property that holds all the answers for the Likert Scale/</p>
 <p>Returns an array of strings. Can also be used to set available answers dynamically.</p>
 <div class="line-block">
@@ -899,7 +899,7 @@ Can be copied, stored and set, for example.</p>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>questions</strong></td>
+<tr class="row-even"><td><strong>questions</strong></td>
 <td><p class="first">Property that holds all the questions for the Likert Scale.</p>
 <p>Returns an array of strings. Can also be used to set available questions dynamically.</p>
 <div class="line-block">
@@ -913,7 +913,7 @@ Can be copied, stored and set, for example.</p>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>showConnectedLines</strong></td>
+<tr class="row-odd"><td><strong>showConnectedLines</strong></td>
 <td><p class="first">Property that determines if connected lines are shown between question answers or not.</p>
 <p>Returns a boolean. Can also be used to hide/show lines dynamically.</p>
 <div class="line-block">
@@ -928,9 +928,9 @@ Can be copied, stored and set, for example.</p>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>value</strong></td>
-<td><p class="first">Property that holds all the user’s answers to the questions.</p>
-<p>Returns an array of answers. If type is Radio, value is an array of strings. For other types, it’s an array of arrays.</p>
+<tr class="row-even"><td><strong>value</strong></td>
+<td><p class="first">Property that holds all the user's answers to the questions.</p>
+<p>Returns an array of answers. If type is Radio, value is an array of strings. For other types, it's an array of arrays.</p>
 <p>Can also be used to set value dynamically.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -958,7 +958,7 @@ Can be copied, stored and set, for example.</p>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>numericOptions</strong></td>
+<tr class="row-odd"><td><strong>numericOptions</strong></td>
 <td><p class="first">Property that holds <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid widget</a> configuration for the Likert scale number fields, if Type is set to Number.</p>
 <p>Can be used for adding additional customization.</p>
 <div class="line-block">
@@ -980,18 +980,18 @@ Can be copied, stored and set, for example.</p>
 </div>
 <div class="section" id="events">
 <h3>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
+<tr class="row-even"><th class="head">Name</th>
 <th class="head">Description/Examples</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>change</strong></td>
+<tr class="row-odd"><td><strong>change</strong></td>
 <td><p class="first">Fired when the user applies any changes to the Likert scale.</p>
 <p>Inside the function, use <strong>value</strong> to access an array of answers inside the Likert scale.</p>
 <div class="line-block">
@@ -1012,22 +1012,22 @@ Can be copied, stored and set, for example.</p>
 </div>
 </div>
 <div class="section" id="datatable">
-<h2><a class="toc-backref" href="#id13">DataTable</a><a class="headerlink" href="#datatable" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">DataTable</a><a class="headerlink" href="#datatable" title="Permalink to this headline">¶</a></h2>
 <p>Properties, methods and events of the DataTable control.</p>
 <div class="section" id="id1">
 <h3>Properties<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
+<tr class="row-even"><th class="head">Name</th>
 <th class="head">Description/Examples</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>columns</strong></td>
+<tr class="row-odd"><td><strong>columns</strong></td>
 <td><p class="first">Property that holds all the columns that the DataTable has.</p>
 <p>Returns an array of <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#fields-columns" target="_blank">Kendo UI Grid columns</a>.</p>
 <div class="line-block">
@@ -1054,7 +1054,7 @@ Can be copied, stored and set, for example.</p>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>value</strong></td>
+<tr class="row-even"><td><strong>value</strong></td>
 <td><p class="first">Property that holds all the records that the DataTable has.</p>
 <p>Returns an array of objects where each has values matching Internal Column name and their respective value in the DataTable.</p>
 <p>Can be used to get information about existing records or create new records.</p>
@@ -1071,7 +1071,7 @@ Can be copied, stored and set, for example.</p>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>widget</strong></td>
+<tr class="row-odd"><td><strong>widget</strong></td>
 <td><p class="first">Property that holds <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid widget</a> for the DataTable.</p>
 <p>Can be used to retrieve it, but not to modify it.</p>
 <div class="line-block">
@@ -1088,18 +1088,18 @@ Can be copied, stored and set, for example.</p>
 </div>
 <div class="section" id="methods">
 <h3>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
+<tr class="row-even"><th class="head">Name</th>
 <th class="head">Description/Examples</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>addValidator(validator)</strong></td>
+<tr class="row-odd"><td><strong>addValidator(validator)</strong></td>
 <td><p class="first">Method that allows you to add DataTable validators for the whole table.</p>
 <p>Accepts validator object as a parameter.</p>
 <p>Inside validator, use <strong>value</strong> to access an array of records inside the DataTable.</p>
@@ -1129,7 +1129,7 @@ but to limit amount of records or set minimum amount, etc.</p>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>addColumnValidator(‘columnName’, validator)</strong></td>
+<tr class="row-even"><td><strong>addColumnValidator('columnName', validator)</strong></td>
 <td><p class="first">Method that allows you to add DataTable Column validators for the specific column in a table.</p>
 <p>Users cannot switch focus to other columns until this one is validated.</p>
 <p>Accepts InternalName of the column string and validator object as its parameters.</p>
@@ -1162,7 +1162,7 @@ but to limit amount of records or set minimum amount, etc.</p>
 </div>
 <div class="section" id="id2">
 <h3>Events<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -1223,7 +1223,7 @@ Can be used for preventing the editing depending on custom logic.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><strong>remove</strong></td>
-<td><p class="first">Fired when the user clicks the “delete” command button and delete operation is confirmed in the confirmation window,
+<td><p class="first">Fired when the user clicks the &quot;delete&quot; command button and delete operation is confirmed in the confirmation window,
 if the cancel button in the window is clicked the event will not be fired.</p>
 <p>Read more here - <a class="reference external" href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-remove">https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#events-remove</a></p>
 <div class="line-block">
@@ -1244,22 +1244,22 @@ if the cancel button in the window is clicked the event will not be fired.</p>
 </div>
 </div>
 <div class="section" id="list-or-library">
-<span id="javascript-listorlibrary"></span><h2><a class="toc-backref" href="#id14">List or Library</a><a class="headerlink" href="#list-or-library" title="Permalink to this headline">¶</a></h2>
+<span id="javascript-listorlibrary"></span><h2><a class="toc-backref" href="#id15">List or Library</a><a class="headerlink" href="#list-or-library" title="Permalink to this headline">¶</a></h2>
 <p>Properties and events of the List or Library control.</p>
 <div class="section" id="id3">
 <h3>Properties<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
+<tr class="row-even"><th class="head">Name</th>
 <th class="head">Description/Examples</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>filter</strong></td>
+<tr class="row-odd"><td><strong>filter</strong></td>
 <td><p class="first">Property that holds CAML filtering for the control.
 Empty by default, contains filter value if you choose Lookup Field in Data Source Editor.</p>
 <p>Can also be used to apply filtering. Changes are applied dynamically to the control.
@@ -1277,7 +1277,7 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>readonly</strong></td>
+<tr class="row-even"><td><strong>readonly</strong></td>
 <td><p class="first">Property that specifies if the user can add new items/documents to the control, edit or delete existing items/documents.</p>
 <p>Takes and returns only <em>true</em> and <em>false</em> values.</p>
 <div class="line-block">
@@ -1291,7 +1291,7 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>baseRootFolder</strong></td>
+<tr class="row-odd"><td><strong>baseRootFolder</strong></td>
 <td><p class="first">Property that specifies starting folder for the control. User cannot go higher than this folder.</p>
 <p>Read more and see examples in <a class="reference internal" href="../how-to/root-folder.html"><span class="doc">Root Folder article</span></a>.</p>
 <div class="line-block">
@@ -1307,7 +1307,7 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>rootFolder</strong></td>
+<tr class="row-even"><td><strong>rootFolder</strong></td>
 <td><p class="first">Property that specifies current folder for the control. Can be changed dynamically.</p>
 <p>Read more and see examples in <a class="reference internal" href="../how-to/root-folder.html"><span class="doc">Root Folder article</span></a>.</p>
 <div class="line-block">
@@ -1323,8 +1323,8 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>addNewItemText</strong></td>
-<td><p class="first">Property that holds “Add new item” text, useful for localizations.</p>
+<tr class="row-odd"><td><strong>addNewItemText</strong></td>
+<td><p class="first">Property that holds &quot;Add new item&quot; text, useful for localizations.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -1335,8 +1335,8 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>uploadText</strong></td>
-<td><p class="first">Property that holds “Upload” text, useful for localizations.</p>
+<tr class="row-even"><td><strong>uploadText</strong></td>
+<td><p class="first">Property that holds &quot;Upload&quot; text, useful for localizations.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -1347,8 +1347,8 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>uploadingText</strong></td>
-<td><p class="first">Property that holds “Uploading…” text, useful for localizations.</p>
+<tr class="row-odd"><td><strong>uploadingText</strong></td>
+<td><p class="first">Property that holds &quot;Uploading...&quot; text, useful for localizations.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -1359,7 +1359,7 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><strong>dialogOptions</strong></td>
+<tr class="row-even"><td><strong>dialogOptions</strong></td>
 <td><p class="first"><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/window#configuration" target="_blank">Kendo UI Window</a> configuration. Holds dialog window options when adding new items, such as width and height.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1377,7 +1377,7 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><strong>widget</strong></td>
+<tr class="row-odd"><td><strong>widget</strong></td>
 <td><p class="first">Property that holds <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid widget</a> for the control.</p>
 <p>Can be used to retrieve it, but not to modify.</p>
 <div class="line-block">
@@ -1393,18 +1393,60 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
 </table>
 </div>
 <div class="section" id="id4">
-<h3>Events<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils">
+<h3>Methods<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Name</th>
+<tr class="row-even"><th class="head">Name</th>
 <th class="head">Description/Examples</th>
 </tr>
 </thead>
 <tbody valign="top">
+<tr class="row-odd"><td><strong>refresh()</strong></td>
+<td><p class="first">Refreshes List or Library control. If any items or documents were changed, the data presented in List or Library will be updated.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Example:</em></p>
+<div class="last highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">fd</span><span class="p">.</span><span class="nx">control</span><span class="p">(</span><span class="s1">&#39;SPDataTable0&#39;</span><span class="p">).</span><span class="nx">refresh</span><span class="p">();</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h3>Events<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given table table-bordered">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-even"><th class="head">Name</th>
+<th class="head">Description/Examples</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>change</strong></td>
+<td><p class="first">Fired when the user applies any changes to the List or Library.</p>
+<p>Adding items, uploading documents, deleting them, or editing item/document's properties from List or Library dialog all counts as change.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Example:</em></p>
+<div class="last highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">fd</span><span class="p">.</span><span class="nx">control</span><span class="p">(</span><span class="s1">&#39;SPDataTable0&#39;</span><span class="p">).</span><span class="nx">$on</span><span class="p">(</span><span class="s1">&#39;change&#39;</span><span class="p">,</span>
+    <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;List or Library changed&#39;</span><span class="p">);</span>
+    <span class="p">});</span>
+</pre></div>
+</div>
+</td>
+</tr>
 <tr class="row-even"><td><strong>filesUploaded</strong></td>
 <td><p class="first">Fired when the user uploads files to Document Library via List or Library control.</p>
 <p><strong>itemIds</strong> is an array of IDs of uploaded files.</p>
@@ -1491,7 +1533,7 @@ Read more and see examples in <a class="reference internal" href="../how-to/caml
         <li class="right" >
           <a href="containers.html" title="Containers"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <script type="text/javascript">

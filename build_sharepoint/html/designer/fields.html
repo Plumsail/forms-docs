@@ -1,10 +1,11 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
   
   <title>Fields &mdash; Plumsail Forms </title>
   <!-- Licensed under the Apache 2.0 License -->
@@ -20,32 +21,32 @@
   type="image/x-icon">
 
   
-    <title>Fields &#8212; Forms 1.0 documentation</title>
+    <title>Fields &mdash; Forms 1.0 documentation</title>
+    
     <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/theme_overrides_guzzle.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
         VERSION:     '1.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Forms 1.0 documentation" href="../index.html" />
     <link rel="next" title="SharePoint Fields" href="fields-sp.html" />
     <link rel="prev" title="Controls" href="controls.html" />
   
    
 
   </head>
-  <body>
+  <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -58,7 +59,7 @@
         <li class="right" >
           <a href="controls.html" title="Controls"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="container-wrapper">
@@ -85,12 +86,14 @@
     
     
       <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Table of contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">SharePoint Forms for Modern UI</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../start-public.html">Public Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../start-sp.html">SharePoint Forms for Modern UI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction-sp.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation-sp.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design-sp.html">Designing SharePoint forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licensing-sp.html">SharePoint Forms Licensing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">General</span></p>
 <ul>
@@ -131,6 +134,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../javascript/general.html">JavaScript Intro</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/manager.html">Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/toolbar.html">Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/dialog.html">Dialog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/containers.html">Containers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/controls.html">Controls</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/fields.html">Fields</a></li>
@@ -138,13 +142,9 @@
 </ul>
 <p class="caption"><span class="caption-text">How-to</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/simple-cases-flow.html">Simple Cases with MS Flow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/power-apps.html">PowerApps Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/dynamic-forms-js.html">Dynamic Forms with the use of JavaScript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/data-table-section.html">Data Tables and MS Flow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/list-or-library-section.html">List or Library configurations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/lookup-section.html">Advanced lookup settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how-to/zapier.html">Zapier Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to/other.html">Other</a></li>
 </ul>
 
@@ -446,19 +446,19 @@
 <div class="section" id="general-info">
 <h2><a class="toc-backref" href="#id1">General Info</a><a class="headerlink" href="#general-info" title="Permalink to this headline">¶</a></h2>
 <p>Fields are primary input elements on the Form.
-Fields are being filled by the user and store their data in user’s session storage and once the form is submitter, their contents are handled by Microsoft Flow.</p>
+Fields are being filled by the user and store their data in user's session storage and once the form is submitter, their contents are handled by Microsoft Flow.</p>
 <div class="section" id="basic-properties">
 <h3>Basic properties<a class="headerlink" href="#basic-properties" title="Permalink to this headline">¶</a></h3>
 <p>Most fields have following settings:</p>
 <p>SETTINGS</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>InternalName</td>
-<td>Setting utilized by many elements. InternalName is similar to ID, it’s a unique identifier for the element.</td>
+<td>Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.</td>
 </tr>
 <tr class="row-even"><td>Required</td>
 <td>Select if the field is required to submit the form or not.</td>
@@ -475,61 +475,61 @@ Fields are being filled by the user and store their data in user’s session sto
 </tbody>
 </table>
 <p>TITLE</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>Text</td>
+<tr class="row-even"><td>Text</td>
 <td>Select the displayed title for the field.</td>
 </tr>
-<tr class="row-even"><td>Visible</td>
+<tr class="row-odd"><td>Visible</td>
 <td>Select if the title is visible or not.</td>
 </tr>
-<tr class="row-odd"><td>Width</td>
+<tr class="row-even"><td>Width</td>
 <td>Select the width of the title.</td>
 </tr>
-<tr class="row-even"><td>FontSize</td>
+<tr class="row-odd"><td>FontSize</td>
 <td>Select font size of the title.</td>
 </tr>
-<tr class="row-odd"><td>FontColor</td>
+<tr class="row-even"><td>FontColor</td>
 <td>Select font color of the title. Can be either selected or manually entered.</td>
 </tr>
-<tr class="row-even"><td>FontStyle</td>
+<tr class="row-odd"><td>FontStyle</td>
 <td>Select if the title is in italics or not.</td>
 </tr>
-<tr class="row-odd"><td>FontWeight</td>
+<tr class="row-even"><td>FontWeight</td>
 <td>Select if the title is bold or not.</td>
 </tr>
-<tr class="row-even"><td>Wrap</td>
+<tr class="row-odd"><td>Wrap</td>
 <td>Select if the title will wrap if it has not enough space or not.</td>
 </tr>
 </tbody>
 </table>
 <p>CONTROL</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>Width</td>
+<tr class="row-even"><td>Width</td>
 <td>Allows you to set the width of the input field manually. Only takes number in pixels, no additional symbols required.</td>
 </tr>
-<tr class="row-even"><td>Placeholder</td>
+<tr class="row-odd"><td>Placeholder</td>
 <td>Allows you to set placeholder value for the text input. Can be used as an example for the users.</td>
 </tr>
-<tr class="row-odd"><td>FontSize</td>
+<tr class="row-even"><td>FontSize</td>
 <td>Select font size for the input.</td>
 </tr>
-<tr class="row-even"><td>FontColor</td>
+<tr class="row-odd"><td>FontColor</td>
 <td>Select font color for the input. Can be either selected or manually entered.</td>
 </tr>
-<tr class="row-odd"><td>FontStyle</td>
+<tr class="row-even"><td>FontStyle</td>
 <td>Select if the input is in italics or not.</td>
 </tr>
-<tr class="row-even"><td>FontWeight</td>
+<tr class="row-odd"><td>FontWeight</td>
 <td>Select if the input is bold or not.</td>
 </tr>
 </tbody>
@@ -538,29 +538,29 @@ Fields are being filled by the user and store their data in user’s session sto
 </div>
 <div class="section" id="textbox">
 <h2><a class="toc-backref" href="#id2">TextBox</a><a class="headerlink" href="#textbox" title="Permalink to this headline">¶</a></h2>
-<p>TextBox is the basic text input field. It doesn’t support multiple lines of text and doesn’t include an editor, but it’s well-suited for short and simple inputs.</p>
+<p>TextBox is the basic text input field. It doesn't support multiple lines of text and doesn't include an editor, but it's well-suited for short and simple inputs.</p>
 <img alt="TextBox" src="../_images/TextBox.png" />
 <div class="section" id="textbox-unique-properties">
 <h3>TextBox unique properties<a class="headerlink" href="#textbox-unique-properties" title="Permalink to this headline">¶</a></h3>
 <p>TextBox field has the following unique settings:</p>
 <p>PATTERN</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>Type</td>
+<tr class="row-even"><td>Type</td>
 <td>Select the Type of the Textbox, this will automatically apply a pattern to it. Several types are available, such as Email, Phone, Numeric, etc. This will determine what type of text can be input, and will give field a validator to make sure that the input is correct. You can alter any of the settings, this will automatically switch Type to Custom.</td>
 </tr>
-<tr class="row-even"><td>Pattern</td>
+<tr class="row-odd"><td>Pattern</td>
 <td>A regex pattern which the field has to follow. You can either input your own, or select one of the available Types and it will be automatically set for you.</td>
 </tr>
-<tr class="row-odd"><td>Flags</td>
+<tr class="row-even"><td>Flags</td>
 <td>Regex flags, more on that <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters" target="_blank">here</a>.</td>
 </tr>
-<tr class="row-even"><td>Error</td>
-<td>The error message shown when the input text doesn’t match the pattern.</td>
+<tr class="row-odd"><td>Error</td>
+<td>The error message shown when the input text doesn't match the pattern.</td>
 </tr>
 </tbody>
 </table>
@@ -568,19 +568,19 @@ Fields are being filled by the user and store their data in user’s session sto
 </div>
 <div class="section" id="maskedtextbox">
 <span id="designer-maskedtextbox"></span><h2><a class="toc-backref" href="#id3">MaskedTextBox</a><a class="headerlink" href="#maskedtextbox" title="Permalink to this headline">¶</a></h2>
-<p>MaskedTextBox is similar to a regular TextBox, but you can restrict what the user can input. It’s not validation, user simply won’t be able to enter any text that doesn’t match the mask.</p>
+<p>MaskedTextBox is similar to a regular TextBox, but you can restrict what the user can input. It's not validation, user simply won't be able to enter any text that doesn't match the mask.</p>
 <img alt="MaskedTextBox" src="../_images/MaskedTextBox.png" />
 <div class="section" id="maskedtextbox-unique-properties">
 <h3>MaskedTextBox unique properties<a class="headerlink" href="#maskedtextbox-unique-properties" title="Permalink to this headline">¶</a></h3>
 <p>MaskedTextBox field has the following unique settings:</p>
 <p>CONTROL</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><strong>mask</strong></td>
+<tr class="row-even"><td><strong>mask</strong></td>
 <td><p class="first">Specifies the input mask. The following mask rules are supported:</p>
 <p>0 - Digit. Accepts any digit between 0 and 9.</p>
 <p>9 - Digit or space. Accepts any digit between 0 and 9, plus space.</p>
@@ -619,7 +619,7 @@ Fields are being filled by the user and store their data in user’s session sto
 <h3>DropDown unique properties<a class="headerlink" href="#dropdown-unique-properties" title="Permalink to this headline">¶</a></h3>
 <p>DropDown field has the following unique settings:</p>
 <p>CONTROL</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -643,7 +643,7 @@ Fields are being filled by the user and store their data in user’s session sto
 <h3>Toggle unique properties<a class="headerlink" href="#toggle-unique-properties" title="Permalink to this headline">¶</a></h3>
 <p>Toggle field has the following unique settings:</p>
 <p>CONTROL</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -667,7 +667,7 @@ Fields are being filled by the user and store their data in user’s session sto
 <h3>Checkboxes unique properties<a class="headerlink" href="#checkboxes-unique-properties" title="Permalink to this headline">¶</a></h3>
 <p>Checkboxes field has the following unique settings:</p>
 <p>CONTROL</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -691,7 +691,7 @@ Fields are being filled by the user and store their data in user’s session sto
 <h3>Radios unique properties<a class="headerlink" href="#radios-unique-properties" title="Permalink to this headline">¶</a></h3>
 <p>Radios field has the following unique settings:</p>
 <p>CONTROL</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -719,14 +719,14 @@ Fields are being filled by the user and store their data in user’s session sto
 </div>
 <div class="section" id="attachments">
 <h2><a class="toc-backref" href="#id12">Attachments</a><a class="headerlink" href="#attachments" title="Permalink to this headline">¶</a></h2>
-<p>Attachments field allows users to attach files to the form. It’s possible to do it by either uploading files manually or dragging and dropping them into the field.
+<p>Attachments field allows users to attach files to the form. It's possible to do it by either uploading files manually or dragging and dropping them into the field.
 Possible to drag and drop multiple files at once.</p>
 <img alt="Attachments" src="../_images/Attachments.png" />
 <div class="section" id="attachments-unique-properties">
 <h3>Attachments unique properties<a class="headerlink" href="#attachments-unique-properties" title="Permalink to this headline">¶</a></h3>
 <p>Attachments field has the following unique settings:</p>
 <p>SETTINGS</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given table table-bordered">
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -761,7 +761,7 @@ Possible to drag and drop multiple files at once.</p>
         <li class="right" >
           <a href="controls.html" title="Controls"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Forms 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <script type="text/javascript">
