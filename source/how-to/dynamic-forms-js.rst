@@ -7,3 +7,5 @@ Dynamic Forms with the use of JavaScript
     ./conditional-fields
     ./conditional-containers
     ./redirect-sp-save
+    ./link-to-form
+    ./form-dialog

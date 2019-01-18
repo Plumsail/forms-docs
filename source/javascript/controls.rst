@@ -933,6 +933,28 @@ Properties
 
                 fd.control('SPDataTable0').widget;
 
+Methods
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+
+    *   -   **refresh()**
+        -   Refreshes List or Library control. If any items or documents were changed, the data presented in List or Library will be updated.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').refresh();
+
+
 Events
 **************************************************
 
@@ -942,6 +964,22 @@ Events
         
     *   -   Name
         -   Description/Examples
+
+    *   -   **change**
+        -   Fired when the user applies any changes to the List or Library.
+
+            Adding items, uploading documents, deleting them, or editing item/document's properties from List or Library dialog all counts as change.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').$on('change',
+                    function() {
+                        alert('List or Library changed');
+                    });
     
     *   -   **filesUploaded**
         -   Fired when the user uploads files to Document Library via List or Library control.

@@ -52,6 +52,7 @@ Table of contents
             javascript/general
             javascript/manager
             javascript/toolbar
+            javascript/dialog
             javascript/containers
             javascript/controls
             javascript/fields

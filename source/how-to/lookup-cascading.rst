@@ -81,31 +81,36 @@ Last but not least, we use JavaScript in order to apply filtering:
 .. code-block:: javascript
 
     fd.spRendered(function() {
-        function filterLookup(v){
-            // getting the selected Category (0 if nothing is selected).
-            var categoryId = 0;
-            if (v) {
-            categoryId = isNaN(v) ? v.LookupId : v;
-            }
+        fd.field('Product').ready().then(function() {
+            function filterLookup(v){
+                // getting the selected Category (0 if nothing is selected).
+                var categoryId = 0;
+                if (v) {
+                categoryId = isNaN(v) ? v.LookupId : v;
+                }
 
-            if (categoryId) {
-                // setting filtration
-                fd.field('Product').filter = 'Category/Id eq ' + categoryId;
-            } else {
-                // resetting the filtration
-                fd.field('Product').filter = null;
-            }
+                if (categoryId) {
+                    // setting filtration
+                    fd.field('Product').filter = 'Category/Id eq ' + categoryId;
+                } else {
+                    // resetting the filtration
+                    fd.field('Product').filter = null;
+                }
 
-            fd.field('Product').widget.dataSource.read();
-        }
-        
-        //filter Products when form opens
-        filterLookup(fd.field('Category').value);
-        
-        //filter Products when Category changes
-        fd.field('Category').$on('change', function(value){
-            filterLookup(value);
-            fd.field('Product').value = null;
+                fd.field('Product').widget.dataSource.read();
+            }
+            
+            //filter Products when form opens
+            fd.field('Category').ready().then(function(field) {
+                filterLookup(field.value);
+            });
+            
+            
+            //filter Products when Category changes
+            fd.field('Category').$on('change', function(value){
+                filterLookup(value);
+                fd.field('Product').value = null;
+            });
         });
     });
 

@@ -314,7 +314,7 @@ Lookup/LookupMulti
                 //SINGLE CHOICE LOOKUP
 
                 // returns an ID of the selected element:
-                fd.field('Lookup').value; 
+                fd.field('Lookup').value.LookupId; 
 
                 // returns the selected element as a string:
                 fd.field('Lookup').value.LookupValue;
