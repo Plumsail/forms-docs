@@ -16,6 +16,8 @@ the URL would lose its parameters, such as Item ID, preventing the form from ope
 In this article, we're going to show you how you can create general URLs, which would only specify what List and what Item you want to open, 
 thus allowing for routing to take place, plus avoiding the lose of parameters during authentication.
 
+We will also show you how you can create specific URLs to the forms, including Form Sets, which will bypass Microsoft's authentication and keep all the parameters.
+
 Universal URL
 --------------------------------------------------
 Universal URL will lead users not to a particular form, but will open an appropriate form for the user. It will use all the :doc:`Routing rules </designer/form-sets>` set for the List, 
