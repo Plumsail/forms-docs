@@ -33,7 +33,7 @@ To update to package *v.1.0.5.0* or later, you will also need to re-save all the
 
 Update from v.1.0.5.0
 ---------------------------------------------------
-If you are updating from *v.1.0.5.0* to *v.1.0.6.0* or later, you wouldn't need to re-save all the forms, but in order to get full functionality and fix any issues with the forms opening in IE, you will need to go to the site, or multiple sites, where you use Plumsail Forms, go to Site Pages/Plumsail Forms and find and delete **redirect.aspx**.
+If you are updating from *v.1.0.5.0* to *v.1.0.6.0* or later, you wouldn't need to re-save all the forms, but in order to get full functionality and fix any issues with the forms opening in IE, you will need to go to the site, or multiple sites, where you use Plumsail Forms, go to Site contents -> Site Pages/PlumsailForms and find and delete **redirect.aspx**.
 
 |pic2|
 
