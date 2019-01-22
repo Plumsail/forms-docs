@@ -70,7 +70,7 @@ Now, you don't have to get all these values with JavaScript, some, if not all, c
 
 Specific URL
 --------------------------------------------------
-Specific URL will open a particular form, unlike Universal URL, so you can specify every little detail, including a Form Set. 
+Specific URL will open a particular form, unlike Universal URL, so you can specify every little detail, including a Form Set.
 
 .. important:: This URL will only work if you've :doc:`updated the app package </general/update-package>` to v.1.0.6.0 and saved form in Forms application v1.3.2 or higher
 
@@ -78,13 +78,15 @@ The structure of the speicific URL is this:
 
 .. code-block:: javascript
 
-    var url = "https://domain.sharepoint.com/sites/sitename/subsite/SitePages/PlumsailForms/ListName/ContentType/FormType.aspx?item=" + itemId + "&rf=" + rootFolder + "&source=" + sourceURL
+    var url = "https://domain.sharepoint.com/sites/sitename/subsite/SitePages/PlumsailForms/ListName/ContentType/FormType.aspx?item=" + itemId + "&ct=" + contentTypeId + "&rf=" + rootFolder + "&source=" + sourceURL
 
-* **itemId** is the ID of the Item or Document to open.
+* **itemId** is the ID of the Item or Document to open. This parameter is the only one that is required for Edit and Display Forms.
 
-* **rootFolder** is only used for New Form, and can specify folder where new Item will be created.
+* **contentTypeId** is the ID of the Content Type with which the item will be saved after form submission. Optional.
 
-* **sourceURL** is the URL where the user will be redirected after the form is closed.
+* **rootFolder** is only used for New Form, and can specify folder where new Item will be created. Optional.
+
+* **sourceURL** is the URL where the user will be redirected after the form is closed. Optional.
 
 You can find all the forms stored in Site contents -> Site Pages/PlumsailForms in the folders with List names.
 
