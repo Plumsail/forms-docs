@@ -1,6 +1,16 @@
 Version history
 ==================================================
 
+v1.3.2
+--------------------------------------------------
+SharePoint Fields **ID**, **Created By**, **Created**, **Modified By**, **Modified** can be added to the form, just like any other fields.
+
+Plain Text and Rich Text controls now support display of SharePoint Fields, for example: *Current item #[ID] has been created by [Author]*. Simply place field's [Internal Name] in square brackets.
+
+Simplified URL generation for SharePoint Forms, now :ref:`using query string<link-specific>` for parameters, instead of the hash. Allows linking to specific Form Sets and fixes issues with linking forms in IE. Need to :doc:`update the app package </general/update-package>` for the URL generation to update.
+
+Various bug fixes
+
 v1.3.1
 --------------------------------------------------
 Added ability to open forms in :doc:`Dialog Mode </javascript/dialog>`
