@@ -78,9 +78,9 @@ you adjust element's layout in regards to all other elements.
 
    <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">Bootstrap Grid</a>
 
-**Note!** We do not recommend adding Common Fields to SharePoint forms unless you know what exactly you want to do with them. By default, only SharePoint Fields
-store data when Item is saved, Common Fields lose all the data. If you want, you can use Common fields to perform some calculations on the form or 
-submit certain data to MS Flow using :doc:`Plumsail Forms </microsoft-flow>` connector.
+.. note::   We do not recommend adding Common Fields to SharePoint forms unless you know what exactly you want to do with them. By default, only SharePoint Fields
+            store data when Item is saved, Common Fields lose all the data. If you want, you can use Common fields to perform some calculations on the form or 
+            submit certain data to MS Flow using :doc:`Plumsail Forms </microsoft-flow>` connector.
 
 Mobile Layouts
 -------------------------------------------------
@@ -101,6 +101,8 @@ Saving a form is easy - just click the Save button. Once the button is pressed, 
    :alt: Saving a form
    :width: 80%
 
+|
+
 Please, **wait until the process is complete**. Meanwhile, you can continue working in the designer, but if you want to see the results in SharePoint, 
 you need to wait until you see *Layout has been successfully saved* message:
 
@@ -110,6 +112,8 @@ you need to wait until you see *Layout has been successfully saved* message:
    :alt: Form is saved
    :width: 80%
 
+|
+
 Finally, you are also able to save multiple forms at once if you want them to share functionality. For example, if the form has no custom logic, 
 it's often easier to save New, Edit and Display form at the same time. Just click the arrow symbol on the Save button and select which forms you want to
 replace with the current one:
@@ -118,6 +122,8 @@ replace with the current one:
 
 .. |pic7| image:: /images/startSP/save3.png
    :alt: Save multiple forms
+
+|
 
 Be extra careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them, for example.
 Because of that, and other potentially risky situations, we recommend backing up forms that are important to you, 
@@ -140,6 +146,8 @@ Don't forget that you can give each element a class and then use it in CSS edito
 
 .. |editors| image:: /images/startSP/editors.png
    :alt: JavaScript and CSS editors
+
+|
 
 Another thing that you can alter on any form is JavaScript and with our rich :doc:`JavaScript API </javascript/general>` there is a lot that can be done with it.
 

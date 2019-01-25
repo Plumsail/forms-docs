@@ -9,8 +9,6 @@ Intro
 --------------------------------------------------
 **fd.toolbar** can be used to customize form's toolbar.
 
-*Note:* This property is exclusive to SharePoint Forms.
-
 Properties
 --------------------------------------------------
 

@@ -16,7 +16,7 @@ You can register by filling out |location_link|.
 
 .. |location_link| raw:: html
 
-   <a href="https://auth.plumsail.com/account/register?ReturnUrl=http://account.plumsail.com/" target="_blank">this small form here</a>
+   <a href="https://auth.plumsail.com/account/register?ReturnUrl=http://account.plumsail.com/" target="_blank">Plumsail Account registration form</a>
 
 Sign in
 **************************************************
@@ -24,7 +24,7 @@ You can log in by going to the |location_link2| and entering your login and pass
 
 .. |location_link2| raw:: html
 
-   <a href="https://auth.plumsail.com/account/login" target="_blank">following page</a>
+   <a href="https://auth.plumsail.com/account/login" target="_blank">Plumsail Account login page</a>
 
 Plumsail Forms for SharePoint 
 --------------------------------------------------
@@ -33,7 +33,7 @@ Bind your SharePoint tenant to your Account
 **************************************************
 In order to bind your SharePoint tenant to Plumsail account, you need to have permissions of **tenant administrator**. 
 
-*This is only necessary for installation and we are not storing or using your credentials in any way, only to get permission for the installation.*
+.. note:: This is only necessary for installation and we are not storing or using your credentials in any way, only to get permission for the installation.
 
 Once you sign in to Plumsail Account, you'll need to go to Forms section. 
 
@@ -72,7 +72,7 @@ is to install Form Web Part package to your app catalog. You can download the pa
 .. |download| image:: /images/startSP/download.png
    :alt: Download package
 
-To do it properly, follow `instruction from Microsoft <https://support.office.com/en-us/article/Use-the-App-Catalog-to-make-custom-business-apps-available-for-your-SharePoint-Online-environment-0b6ab336-8b83-423f-a06b-bcc52861cba0>`_.
+To do it properly, follow `App Catalog instruction from Microsoft <https://support.office.com/en-us/article/Use-the-App-Catalog-to-make-custom-business-apps-available-for-your-SharePoint-Online-environment-0b6ab336-8b83-423f-a06b-bcc52861cba0>`_.
 
 |pic4|
 
@@ -89,15 +89,15 @@ you can always reset it to default as well.
 Download designer and start designing forms for SharePoint
 ***********************************************************
 Once you've added your SharePoint license to your Plumsail Account and distributed app across your sites using app catalog, 
-it is time to download Forms Designer and start using it. You can download Forms Designer from your Plumsail Account in Forms Section in the |Intro tab|.
+it is time to download Forms Designer and start using it. You can |download| from your Plumsail Account in Forms Section in the Intro tab.
 
 |pic5|
 
 .. |pic5| image:: /images/startSP/install.png
    :alt: Install Forms Designer
 
-.. |Intro tab| raw:: html
+.. |download| raw:: html
 
-   <a href="https://account.plumsail.com/forms/intro" target="_blank">Intro tab</a>
+   <a href="https://account.plumsail.com/forms/intro" target="_blank">download the designer app</a>
 
-Find more about how to design Modern SharePoint Forms with the designer in :doc:`this article </design-sp>`.
+Find more about :doc:`how to design Modern SharePoint Forms with the designer </design-sp>`.

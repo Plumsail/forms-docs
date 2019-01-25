@@ -211,8 +211,6 @@ SETTINGS
         - Select or create a new hidden field in the current SharePoint List or Library to save Ink Sketch data to.
         
           Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
-          
-          *Note:* This setting is exclusive to SharePoint Forms. 
 
 LAYOUT
 
@@ -361,8 +359,6 @@ SETTINGS
         
           Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
 
-          *Note:* This setting is exclusive to SharePoint Forms. 
-
 DataTable Column properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every DataTable Column has the following settings:
@@ -432,14 +428,10 @@ SETTINGS
         
           Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
 
-          *Note:* This setting is exclusive to SharePoint Forms. 
-
 .. _designer-listorlibrary:
 
 List or Library
 -------------------------------------------------------------
-*This control is only available in Plumsail Forms for SharePoint*
-
 List or Library is a control which allows you to view, edit, add or delete items or documents to related SharePoint List or Document Library from within the form.
 
 This control is extremely powerful and versatile - it supports filtering, selecting root folder, uploading multiple documents at once and much more.

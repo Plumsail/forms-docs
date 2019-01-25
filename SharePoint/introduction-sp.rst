@@ -11,6 +11,14 @@ Plumsail Forms allows you to design beautiful modern responsive forms for ShareP
 These forms will work for SharePoint Lists and Libraries allowing you to replace New, Edit and Display
 forms, to fully customize them, add interactivity to them and much more.
 
+      .. toctree::
+            :caption: First Steps
+            :maxdepth: 1
+
+            ./installation-sp
+            ./design-sp
+            ./licensing-sp
+
 Modern UI
 --------------------------------------------------
 In SharePoint Online, Modern UI was introduced by Microsoft to keep the user experience fresh and
@@ -38,10 +46,10 @@ responsive and have few limitations to their complexity. But you can use Plumsai
 for Lists which are not yet supported by Modern UI, such as Tasks List - but all the forms will open in Modern UI, 
 no matter what settings you have currently set.
 
-  If you are interested in customizing SharePoint Forms for Classic UI - check out our |Forms Designer| product. 
-  It has similar functionality and allows you to design complex custom forms for Classic UI in just a few minutes. 
-  It also works well for SharePoint 2013/2016. We still fully support Forms Designer, even after release of Plumsail Forms, 
-  it will remain essential to us and many of our clients for a long time to come.
+.. note:: If you are interested in customizing SharePoint Forms for Classic UI - check out our |Forms Designer| product. 
+          It has similar functionality and allows you to design complex custom forms for Classic UI in just a few minutes. 
+          It also works well for SharePoint 2013/2016. We still fully support Forms Designer, even after release of Plumsail Forms, 
+          it will remain essential to us and many of our clients for a long time to come.
 
 .. |Forms Designer| raw:: html
 
@@ -74,4 +82,4 @@ Last, but not least, you get the ability to create more than one form for a list
 and automatically redirect users to the correct form. Not only that, but you can write custom rules for redirection, based on item's values 
 and/or user's properties, and make sure that you provide the appropriate form in all circumstances.
 
-Find out how to install the product :doc:`here </installation-sp>`.
+Find out :doc:`how to install the product </installation-sp>`.

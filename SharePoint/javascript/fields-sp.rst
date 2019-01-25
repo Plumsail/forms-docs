@@ -9,18 +9,18 @@ Intro
 --------------------------------------------------
 In this section you will find how to get information from SharePoint fields, how to set their value, how to detect changes in SharePoint fields and much more using JavaScript.
 
-A lot of properties and events are shared between :doc:`Plumsail Fields </javascript/fields>` and SharePoint fields, but some things are unique to SharePoint fields.
+A lot of properties and events are shared between :doc:`Common Fields </javascript/fields>` and SharePoint fields, but some things are unique to SharePoint fields.
 
 Here you can find the most complete information on SharePoint fields.
 
 *Internal Name* is the property that is used to identify specific fields and apply methods to them. *Internal Name* is unique for every element on the form.
 
-**Important!** These events, methods and properties shouldn't be used on their own, they must be executed inside events 
-like **spRendered()** or **spBeforeSave()** in order to actually access the fields or controls that you target.
+.. important::  These events, methods and properties shouldn't be used on their own, they must be executed inside events 
+                like **spRendered()** or **spBeforeSave()** in order to actually access the fields or controls that you target.
 
-If you just add these scripts on their own or inside wrong event in JavaScript editor,
-they will not have access to the specified fields, or will execute at the wrong time.
-Read more about different events in :doc:`Manager section </javascript/manager>`.
+                If you just add these scripts on their own or inside wrong event in JavaScript editor,
+                they will not have access to the specified fields, or will execute at the wrong time.
+                Read more about different events in :doc:`Manager section </javascript/manager>`.
 
 Single Line of Text
 --------------------------------------------------

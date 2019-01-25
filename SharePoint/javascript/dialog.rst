@@ -10,8 +10,6 @@ Intro
 **Dialog** can be used to open other forms in dialog from a parent form. Can open multiple dialogs at the same time, but only the last one will be active.
 Can also open forms in dialog from other forms opened in dialog.
 
-*Note:* This property is exclusive to SharePoint Forms.
-
 Methods
 --------------------------------------------------
 These methods are applicable to most fields:

@@ -26,24 +26,23 @@ the icon of the device you want to design form for, customize the form and click
 The red cross under the icon of the device indicates that the form is registered. Click on it to remove the specific form. 
 There will be a confirmation prompt to avoid potential misclicks: 
 
-.. image:: /images/designer/ribbon-actions/Layouts.png
+|pic1|
+
+.. |pic1| image:: ../images/designer/ribbon-actions/Layouts.png
    :alt: Layouts icons
 
-|
-
-**Important!** Make sure that the fields present on different layouts have the same internal names 
-and the same type to avoid errors on submission in Microsoft Flow. These can be different fields with the same name as long as the type is the same, for example, 
-Textbox and MultilineTextBox.
+.. important::  Make sure that the fields present on different layouts have the same internal names and the same type to avoid errors on submission in Microsoft Flow. These can be different fields with the same name as long as the type is the same, for example, Textbox and MultilineTextBox.
 
 Testing Forms
 **************************************************
 For testing purposes, you can just change user agent in your browser to see a different form. For example, when using Google Chrome you can open Developers tools
 and click Toggle device toolbar icon next to Inspector which will allow you to change the device and see how the form is displayed on other devices.
 
-.. image:: /images/designer/ribbon-actions/ToggleDeviceToolbar.png
+|pic2|
+
+.. |pic2| image:: ../images/designer/ribbon-actions/ToggleDeviceToolbar.png
    :alt: Toggle Device Toolbar
 
-|
 
 Similar functionality is present in almost all modern browsers.
 
@@ -53,10 +52,10 @@ Export and Import
 --------------------------------------------------
 You can export currently selected form by pressing Export button. It will allow you to save the form as a file on your computer.
 
-.. image:: /images/designer/ribbon-actions/ExportImport.png
+|pic3|
+
+.. |pic3| image:: ../images/designer/ribbon-actions/ExportImport.png
    :alt: Export and Import
-   
-|
 
 This can be used in variety of situations, especially if you need to design a number of similar forms. 
 
@@ -65,33 +64,21 @@ so if somebody changes the form later, it would be possible to restore it quickl
 
 Finally, you can import forms from the exported files, either yours or somebody else's, by pressing the Import button and selecting the form to import.
 
-General Settings and Preview
---------------------------------------------------
-These two buttons appear on the ribbon only after you've saved the form. They also differ for Plumsail forms and SharePoint forms, as SharePoint forms get different General Settings and no Form Preview.
+Flow, Routing and Form Panel
+-------------------------------------------------
+These three buttons offer extra functionality to SharePoint form.
 
-.. image:: /images/designer/ribbon-actions/GenSettingsPreview.png
-   :alt: General Settings and Preview
+|pic4|
 
-|
+.. |pic4| image:: ../images/designer/ribbon-actions/FlowRoutingPanel.png
+   :alt: Flow, Routing and Form Panel
 
-**General Settings for Plumsail forms** section contains important information for Flow configuration, including Form ID and Form Schema,
-as well as the widget that you can copy to insert form to a webpage for Plumsail Forms.
 
-You can select if you want to submit form to Flow which needs to be checked if you want to use the form with Microsoft Flow and it is turned on by default.
-You still need to configure the Flow to actually do something with the submitted data.
+Flow button opens Flow settings, you can also select if you want to submit form to Flow which needs to be checked if you want to use the form with Microsoft Flow, 
+but it is turned off by default. You still need to configure the Flow to actually do something with the submitted data.
 
-Be careful with Form Schema when updating the form, it only changes after the form has been saved.
-
-.. image:: /images/designer/ribbon-actions/GeneralSettings.png
-   :alt: General Settings for Plumsail forms
-
-|
-
-**General Settings for SharePoint forms** contain no widget as the form can only be opened from the SharePoint list or library.
-
-Here, you can also select if you want to submit form to Flow which needs to be checked if you want to use the form with Microsoft Flow, 
-but it is turned off by default.
-You still need to configure the Flow to actually do something with the submitted data.
+This Flow submission is handled by Plumsail Forms connector, and allows you to collect data not only from SharePoint fields, but also from Controls and Common Fields. 
+If you are interested in SharePoint fields only, you can use Microsoft's SharePoint connector and not submit the form itself to Flow.
 
 You can also generate, edit or copy Form ID for SharePoint forms. 
 This allows you to give the same ID to multiple forms, so that Flow handles submission from more than one form.
@@ -100,16 +87,31 @@ You still need to make sure that fields have the same internal names.
 This can be useful if you want to handle submission of both New and Edit Form through Microsoft Flow, so you don't have to create different Flows for it.
 But make sure that Form IDs are different for your forms if you only want to handle one form with specific Flow.
 
-Finally, Form Schema is also available for SharePoint forms and it also updates on Save, so don't forget to Save prior to copying it.
+Finally, there is Form Schema is available for SharePoint forms and it only updates on Save, so don't forget to Save prior to copying it.
 
-.. image:: /images/designer/ribbon-actions/GeneralSettingsSP.png
-   :alt: General Settings for SharePoint forms
+|pic5|
 
-|
+.. |pic5| image:: ../images/designer/ribbon-actions/FlowSettingsSP.png
+   :alt: Flow Settings for SharePoint Forms
 
-**Preview** button allows you to quickly open Plumsail Forms in your default browser:
+This schema is used when creating Flow with Plumsail Forms connector to parse JSON:
 
-.. image:: /images/designer/ribbon-actions/FormPreview.png
-   :alt: Form Preview
+|pic6|
 
-|
+.. |pic6| image:: ../images/flow/14_ParseJSONContent.png
+   :alt: Parse JSON with Form Schema
+
+**Routing** button allows you to configure automatic redirection to a correct Form Set, based on some rules. Find out more about in our :doc:`Form Sets article </designer/panel>`.
+
+|pic7|
+
+.. |pic7| image:: ../images/designer/ribbon-actions/Routing.png
+   :alt: Routing settings
+
+**Form Panel** button allows to configure how the forms are opened in browser - taking up whole screen or only in the panel. 
+It also allows running custom scripts in Modern List View. More about it in our :doc:`Form Panel article </designer/panel>`.
+
+|pic8|
+
+.. |pic8| image:: ../images/designer/ribbon-actions/Panel.png
+   :alt: Form Panel settings
