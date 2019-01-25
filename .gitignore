@@ -1,4 +1,4 @@
 #exclude build
 /build
-/build_public
-/build_sharepoint
+/forms-web
+/forms-sp
