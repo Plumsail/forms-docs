@@ -36,7 +36,14 @@ forms for which you want to modify and start working on the forms. Saved forms w
 
 SharePoint On-Premises
 ---------------------------------------------------
-For SharePoint Online app launches with the following window:
+You can launch the designer app from desktop or use **Design Forms** button in the ribbon (make sure to activate Site Collection feature first):
+
+|ribbonButton|
+
+.. |ribbonButton| image:: /images/startSP/runFormsFromRibbon.png
+   :alt: Run Forms from Ribbon
+
+For SharePoint On-Premises app launches with the following window:
 
 |designer2019|
 

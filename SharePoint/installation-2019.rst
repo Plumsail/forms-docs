@@ -5,7 +5,7 @@ SharePoint 2019 Installation (On-Premises)
  :local:
  :depth: 1
 
-First steps
+Install Farm Solution
 ------------------------------------------------------------
 |Download setup file| and run it on one of the servers in your Sharepoint 2019 farm as Farm Administrator. Follow wizard steps.
 
@@ -20,17 +20,6 @@ Make sure that Plumsail Forms feature is activated at the site collection level 
 .. |pic1| image:: /images/startSP/plumsailFormsFeature.png
    :alt: Plumsail Forms feature
 
-|Create an App Catalog| for the target web application: go to Central Administration → Apps → Manage App Catalog:
-
-|pic2|
-
-.. |pic2| image:: /images/startSP/createAppCatalog.png
-   :alt: Create App Catalog
-
-.. |Create an App Catalog| raw:: html
-
-   <a href="https://docs.microsoft.com/en-us/sharepoint/administration/manage-the-app-catalog" target="_blank">Create an App Catalog</a>
-
 Then go to any of the lists on the Site Collection where you've activated Plumsail Forms feature, open List View in Modern UI and click Design Forms button:
 
 |pic3|
@@ -42,7 +31,18 @@ To complete installation, follow the instruction steps described there.
 
 Upload package to App Catalog
 ------------------------------------------------------------
-First thing you'll need to do, if you've created the App Catalog already, is download the app package by clicking on the link:
+|Create an App Catalog| for the target web application: go to Central Administration → Apps → Manage App Catalog:
+
+|pic2|
+
+.. |pic2| image:: /images/startSP/createAppCatalog.png
+   :alt: Create App Catalog
+
+.. |Create an App Catalog| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/sharepoint/administration/manage-the-app-catalog" target="_blank">Create an App Catalog</a>
+
+Next thing you'll need to do, if you've created the App Catalog already, is download the app package by clicking on the link:
 
 |pic4|
 
