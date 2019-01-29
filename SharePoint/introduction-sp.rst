@@ -16,12 +16,13 @@ forms, to fully customize them, add interactivity to them and much more.
             :maxdepth: 1
 
             ./installation-sp
+            ./installation-2019
             ./design-sp
             ./licensing-sp
 
 Modern UI
 --------------------------------------------------
-In SharePoint Online, Modern UI was introduced by Microsoft to keep the user experience fresh and
+In SharePoint Online and SharePoint 2019, Modern UI was introduced by Microsoft to keep the user experience fresh and
 bring convenience that was missing in the classic UI. For example, Modern UI is faster, it's 
 responsive and works well with mobile devices.
 
@@ -37,7 +38,7 @@ Here's how Modern UI(left) compares to the Classic UI(right):
    :alt: SharePoint Classic UI
    :width: 49%
 
-Currently, Modern UI is only supported in SharePoint Online and can be switched to Classic UI at any point. 
+Currently, Modern UI is supported in SharePoint Online and SharePoint 2019 and can be switched to Classic UI at any point. 
 Modern UI does not only affect the visual presentation of SharePoint, it also changes some of SharePoint's functionality, 
 thus it requires a different approach when it comes to customization.
 
@@ -48,7 +49,7 @@ no matter what settings you have currently set.
 
 .. note:: If you are interested in customizing SharePoint Forms for Classic UI - check out our |Forms Designer| product. 
           It has similar functionality and allows you to design complex custom forms for Classic UI in just a few minutes. 
-          It also works well for SharePoint 2013/2016. We still fully support Forms Designer, even after release of Plumsail Forms, 
+          It also works well for SharePoint 2013/2016/2019 (Classic UI). We still fully support Forms Designer, even after release of Plumsail Forms, 
           it will remain essential to us and many of our clients for a long time to come.
 
 .. |Forms Designer| raw:: html
@@ -82,4 +83,4 @@ Last, but not least, you get the ability to create more than one form for a list
 and automatically redirect users to the correct form. Not only that, but you can write custom rules for redirection, based on item's values 
 and/or user's properties, and make sure that you provide the appropriate form in all circumstances.
 
-Find out :doc:`how to install the product </installation-sp>`.
+Find out :doc:`how to install the product for Office365 </installation-sp>` or :doc:`how to install the product for SharePoint 2019 </installation-2019>`.

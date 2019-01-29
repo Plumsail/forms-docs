@@ -8,8 +8,11 @@ Designing SharePoint forms
 
 Open the designer
 **************************************************
-First of all, you need to make sure that you've registered a |Plumsail Account|, downloaded and installed |the designer application| to your PC.
-Don't forget to follow all the steps in the :doc:`SharePoint installation instruction </installation-sp>`, upload package to your App Catalog and share it with all the sites.
+First of all, you need to make sure that you've downloaded and installed |the designer application| to your PC.
+
+Don't forget to follow all the steps in the :doc:`SharePoint installation instruction (Office365) </installation-sp>` 
+or :doc:`SharePoint installation instruction (SharePoint 2019) </installation-2019>`, 
+upload package to your App Catalog and share it with all the sites.
 
 .. |Plumsail Account| raw:: html
 
@@ -19,15 +22,41 @@ Don't forget to follow all the steps in the :doc:`SharePoint installation instru
 
    <a href="https://account.plumsail.com/forms/intro" target="_blank">the designer application</a>
 
-The app launches with the following window:
+SharePoint Online
+---------------------------------------------------
+For SharePoint Online app launches with the following window:
 
 |pic1|
 
 .. |pic1| image:: /images/startSP/signIn.png
-   :alt: Sign In
+   :alt: Sign In SharePoint Online
 
 Simply choose SharePoint in Forms Designer during sign in, enter your site's URL and Site Owner credentials, select a List or a Library 
 forms for which you want to modify and start working on the forms. Saved forms will automatically replace default forms on your site.
+
+SharePoint On-Premises
+---------------------------------------------------
+For SharePoint Online app launches with the following window:
+
+|designer2019|
+
+.. |designer2019| image:: /images/startSP/launch2019.png
+   :alt: Sign In SharePoint 2019
+
+Enter the exact URL of the site that you want to customize list for. Unless your Windows desktop login is the same as your SharePoint login, you'll need to
+remove the mark from **Login as current user** and use your SharePoint credentials instead:
+
+|login2019|
+
+.. |login2019| image:: /images/startSP/loginNotCurrent.png
+   :alt: Sign In not as Windows user
+
+Depending on the type of authentication you have on your site, you might need to try different types:
+
+|authentication|
+
+.. |authentication| image:: /images/startSP/authentication.png
+   :alt: Select authentication
 
 New, Edit and Display forms
 **************************************************

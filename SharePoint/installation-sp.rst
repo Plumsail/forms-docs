@@ -1,4 +1,4 @@
-Installation
+SharePoint Online Installation (Office365)
 ==================================================
 
 .. contents:: Contents:
@@ -26,7 +26,7 @@ You can log in by going to the |location_link2| and entering your login and pass
 
    <a href="https://auth.plumsail.com/account/login" target="_blank">Plumsail Account login page</a>
 
-Plumsail Forms for SharePoint 
+Plumsail Forms for SharePoint Online
 --------------------------------------------------
 
 Bind your SharePoint tenant to your Account
@@ -65,7 +65,7 @@ Once you've added SharePoint license to your domain, you will be able to use Plu
 Install app package to your tenant
 **************************************************
 Last thing you need to do, to include Plumsail Forms on your SharePoint sites, 
-is to install Form Web Part package to your app catalog. You can download the package from the Intro section of your Plumsail Account area. 
+is to install Form Web Part package to your App Catalog. You can download the package from the Intro section of your Plumsail Account area. 
 
 |download|
 
@@ -88,7 +88,7 @@ you can always reset it to default as well.
 
 Download designer and start designing forms for SharePoint
 ***********************************************************
-Once you've added your SharePoint license to your Plumsail Account and distributed app across your sites using app catalog, 
+Once you've added your SharePoint license to your Plumsail Account and distributed app across your sites using App Catalog, 
 it is time to download Forms Designer and start using it. You can |download| from your Plumsail Account in Forms Section in the Intro tab.
 
 |pic5|

@@ -19,6 +19,7 @@ SharePoint Forms for Modern UI
 
             ./introduction-sp
             ./installation-sp
+            ./installation-2019
             ./design-sp
             ./licensing-sp
 
