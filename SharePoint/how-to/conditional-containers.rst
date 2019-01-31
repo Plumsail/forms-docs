@@ -33,7 +33,6 @@ Let's disable Resolved tab and make it's only enabled when the field Status has 
 
 .. code-block:: javascript
 
-    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         function enableOrDisableResolvedTab() {
@@ -99,7 +98,6 @@ Let's disable Resolved section and make it's only enabled when the field Status 
 
 .. code-block:: javascript
 
-    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         function enableOrDisableResolvedSection() {

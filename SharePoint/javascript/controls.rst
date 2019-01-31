@@ -14,7 +14,7 @@ Insert them into JavaScript editor or inside OnClick setting for buttons and lin
 *Internal Name* is the property that is used to identify specific controls and apply methods to them. *Internal Name* is unique for every element on the form.
 
 .. important::  These events, methods and properties shouldn't be used on their own, they must be executed inside events 
-                like **rendered()** or **beforeSave()** in order to actually access the fields or controls that you target.
+                like **spRendered()** or **spBeforeSave()** in order to actually access the fields or controls that you target.
 
                 If you just add these scripts on their own or inside wrong event in JavaScript editor,
                 they will not have access to the specified controls, or will execute at the wrong time.

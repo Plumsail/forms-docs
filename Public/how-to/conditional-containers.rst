@@ -8,7 +8,7 @@ Manipulate tabs and accordions with JavaScript
 Description
 --------------------------------------------------
 In this article you can find examples of how to use JavaScript to make 
-your SharePoint forms more interactive by hiding, showing and modifying containers, particularly Tab Control and Accordion.
+your forms more interactive by hiding, showing and modifying containers, particularly Tab Control and Accordion.
 
 This article will include some simple and easy to understand cases which can then be used as templates for your forms.
 
@@ -33,7 +33,6 @@ Let's disable Resolved tab and make it's only enabled when the field Status has 
 
 .. code-block:: javascript
 
-    //use fd.spRendered(function() { for SharePoint Forms instead
     fd.rendered(function() {
 
         function enableOrDisableResolvedTab() {
@@ -99,7 +98,6 @@ Let's disable Resolved section and make it's only enabled when the field Status 
 
 .. code-block:: javascript
 
-    //use fd.spRendered(function() { for SharePoint Forms instead
     fd.rendered(function() {
 
         function enableOrDisableResolvedSection() {

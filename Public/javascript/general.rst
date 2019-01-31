@@ -11,8 +11,7 @@ Modern Forms are built with Vue.js and also support JQuery.
 
     - You can find general information about JavaScripts used on the form in the :doc:`Manager section </javascript/manager>`.
 
-    - :doc:`Containers </javascript/containers>`, :doc:`Controls </javascript/controls>`, :doc:`Fields </javascript/fields>`, 
-      and :doc:`SharePoint Fields </javascript/fields-sp>` sections provide detailed explaination of JS properties, methods and events for these elements.
+    - :doc:`Containers </javascript/containers>`, :doc:`Controls </javascript/controls>`, :doc:`Fields </javascript/fields>` sections provide detailed explaination of JS properties, methods and events for these elements.
 
     - Finally, check out our How-to section for practical examples of JavaScript use, 
       such as :doc:`Manipulate fields </how-to/conditional-containers>` 
@@ -20,9 +19,6 @@ Modern Forms are built with Vue.js and also support JQuery.
 
 Available framework variables
 --------------------------------------------------
-
-Common variables (SharePoint and Public)
-**************************************************
 
 .. list-table::
     :header-rows: 1
@@ -43,15 +39,10 @@ Common variables (SharePoint and Public)
                 //make fd available in browser's console
                 window.fd = fd;
 
-                //call SharePoint form rendered event
-                fd.spRendered(function() {
-                    //simple fields are available
+                //call form rendered event
+                fd.rendered(function() {
+                    //fields are available to get/set
                     fd.field('Title').value = "New Title";
-
-                    //can use ready event for complex fields
-                    fd.field('Lookup').ready().then(function(field) {
-                        console.log(field.value.LookupValue);
-                    });
                 });
 
     *   -   **$**

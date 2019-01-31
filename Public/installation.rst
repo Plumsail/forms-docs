@@ -7,7 +7,7 @@ Installation
 
 First step - Register a Plumsail Account
 --------------------------------------------------
-Plumsail Forms product uses our service called Plumsail Account. Using Plumsail Account you can manage your licenses - for both Modern SharePoint and Public Web Forms, 
+Plumsail Forms product uses our service called Plumsail Account. Using Plumsail Account you can manage your license, 
 and it also stores all your Public Web Forms. All Public Web Forms created by you are tied to your Plumsail Account.
 
 Register

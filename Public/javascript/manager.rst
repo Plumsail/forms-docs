@@ -26,19 +26,6 @@ Properties
     *   -   Property
         -   Description/Examples
 
-    *   -   **fd.itemId**
-        -   Returns ID of the current SharePoint item as string, on Edit or Display form. 
-
-            *Only works with* **SharePoint Forms**.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.itemId; //"1"
-
     *   -   **fd.culture**
 
         -   Returns the name of the current culture.
@@ -99,7 +86,7 @@ Properties
 
             If the fields do not match these criterias, the form will not submit.
 
-            Use **rendered()** event for Plumsail forms and **spRendered()** event for SharePoint forms to add custom validators.
+            Use **rendered()** event to add custom validators.
             
             |
 
@@ -168,59 +155,6 @@ Properties
 
                 fd._vue.lang.RequiredValidator_Error = 
                     "This field is required.";
-                    
-                fd._vue.lang.SPDataTable_AddNewItem = "Add new item";
-                fd._vue.lang.SPDataTable_ListNotFoundError = "List does not exist.";
-                fd._vue.lang.SPDataTable_Upload = "Upload";
-                fd._vue.lang.SPDataTable_Uploading = "Uploading...";
-                fd._vue.lang.SPFormToolbar_Close = "Close";
-                fd._vue.lang.SPFormToolbar_Edit = "Edit";
-                fd._vue.lang.SPFormToolbar_Save = "Save";
-                fd._vue.lang.SPFormToolbar_Saving = "Saving...";
-
-    *   -   **fd.pdfFileName**
-
-        -   Get or set the name of the exported PDF file.
-
-            *This property is only available for* **SharePoint Forms** 
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-                
-                //set file name to "My_PDF_File"
-                fd.pdfFileName = "My_PDF_File";
-
-                //set file name to current item's Title
-                fd.spRendered(function() {
-                    fd.pdfFileName = fd.field('Title').value;    
-                });
-
-    *   -   **fd.pdfOptions**
-
-        -   Specifies various options for exported PDF file, such as paper size, margin, orientation, etc.
-
-            More info about all the options |PDF options|.
-
-            *This property is only available for* **SharePoint Forms**
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.pdfOptions = {
-                    paperSize: 'A4',
-                    landscape: true,
-                    multiPage: true
-                };
-
-.. |PDF options| raw:: html
-
-    <a href="https://docs.telerik.com/kendo-ui/framework/drawing/pdf-output#configuration-PDF" target="_blank">here</a>
 
 
 Methods
@@ -410,10 +344,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
-            *Note:* This event is exclusive to Plumsail Forms. 
-            
-            For SharePoint Forms, use **spBeforeSave()**.
-            
             |
 
             *Examples:*
@@ -439,29 +369,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                             })
                     }); 
                 });
-
-    *   -  **spBeforeSave()**
-        -   Occurs before submitting the form.
-
-            **spForm** passed as an argument to the function is a SharePoint client form.
-
-            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
-
-            *Note:* This event is exclusive to SharePoint Forms and occurs after **beforeSave()**.
-            
-            For Plumsail Forms, use **beforeSave()**.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.spBeforeSave(function(spForm) {
-                    console.log('spBeforeSave');
-                    console.log(spForm);
-                });
-
 
     *   -   **saved()**
         -   Occurs after the data is sent to the Flow.

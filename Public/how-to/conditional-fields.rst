@@ -10,11 +10,10 @@ Description
 
 In this article you can find examples of how to use JavaScript to make 
 your forms more interactive by hiding, disabling and making fields mandatory based on certain conditions.
-These will be simple and popular cases realized mostly with SharePoint forms which you can easily replicate even on Plumsail forms as functionality is fairly similar.
 You can also mix and match these examples to achieve the results you are looking for.
 
 In order to access fields in JavaScript, you'll need use **fd.field()** method of which expects an internal name of a field you want to retrieve.
-Both Plumsail fields and SharePoint fields have internal name property which is unique for every field on the form. 
+All fields have internal name property which is unique for every field on the form. 
 Find more about using JavaScript on fields :doc:`here </javascript/fields>`.
 
 .. image:: ../images/how-to/conditional/1_InternalName.png
@@ -22,7 +21,6 @@ Find more about using JavaScript on fields :doc:`here </javascript/fields>`.
 
 |
 
-You can give custom name to Plumsail fields, but SharePoint fields have their own names given by SharePoint. 
 In any case, you can check the internal name property of the field in the designer when you select the field.
 Read more about different field properties :doc:`here </designer/fields>`.
 
@@ -35,7 +33,7 @@ Read more about different events in :doc:`Manager section </javascript/manager>`
 
 Prepopulate field and disable/enable it based on condition
 -----------------------------------------------------------
-In this example, we will use SharePoint Tasks list to set the Percent Complete to 100% 
+In this example, we will use Tasks form to set the Percent Complete to 100% 
 and disable it when the user turns the Status field into Completed:
 
 .. image:: ../images/how-to/conditional/2_Completed.png
@@ -43,13 +41,10 @@ and disable it when the user turns the Status field into Completed:
 
 |
 
-Please note, that while SharePoint Online Modern UI doesn't support Tasks lists, our SharePoint Forms will work just fine.
-
 In order to implement this functionality, we place the following code into JavaScript editor inside the designer:
 
 .. code-block:: javascript
     
-    ///use fd.spRendered(function() { for SharePoint Forms instead
     fd.rendered(function() {
 
         function setPercentComplete() {
@@ -96,7 +91,6 @@ Here is the code:
 
 .. code-block:: javascript
 
-    //use fd.spRendered(function() { for SharePoint Forms instead
     fd.rendered(function() {
 
         function hideOrShowDueDate() {
@@ -123,7 +117,6 @@ The easiest would be to give same CSS class to all fields that need to be hidden
 
 .. code-block:: javascript
 
-    //use fd.spRendered(function() { for SharePoint Forms instead
     fd.rendered(function() {
 
         $('.field-to-hide').hide();
@@ -135,7 +128,6 @@ Then also use JQuery to hide the container:
 
 .. code-block:: javascript
 
-    //use fd.spRendered(function() { for SharePoint Forms instead
     fd.rendered(function() {
 
         $('.grid-to-hide').hide();
@@ -145,8 +137,6 @@ Then also use JQuery to hide the container:
 Require field based on condition
 --------------------------------------------------
 In order to make certain fields required based on condition, you need to add custom Form validator to your form.
-
-Field validators will only work with Plumsail fields as all validation for SharePoint fields is configured via List Settings.
 
 For example, for our task list, we can write a validator to make sure that if the Start Date is set, 
 the Due Date must be set to a later date, but not more than 4 weeks.
@@ -204,7 +194,6 @@ For that, we can slightly modify code from the last section:
 
 .. code-block:: javascript
 
-    //use fd.spRendered(function() { for SharePoint Forms instead
     fd.rendered(function() {
 
         function setDueDate() {
@@ -239,7 +228,6 @@ Here's the code:
 
 .. code-block:: javascript
 
-    //use fd.spRendered(function() { for SharePoint Forms instead
     fd.rendered(function() {
             fd.field('StartDate').value = new Date();
     });
@@ -280,16 +268,3 @@ Here is the code placed inside my button's OnClick property:
 	    fd.field('Location').value = response.city + ", " + response.region;
 	    fd.field('IP').value = response.ip;
     }, "jsonp");
-
-
-Get values on display forms
---------------------------------------------------
-Last thing I want to focus your attention on is differences between display and edit or new forms. 
-Display forms don’t contain controls, so you can retrieve only the text representation of field values like you see them on a form. 
-The samples above work on new and edit forms only. 
-
-You should use the following syntax to obtain a text representation of values on a display form:
-
-.. code-block:: javascript
-
-    fd.field('Status').$el.innerText

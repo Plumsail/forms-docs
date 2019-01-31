@@ -311,6 +311,24 @@ Properties of the Wizard container.
 
                 fd.container('Wizard0').icons;
                 fd.container('Wizard0').icons = ['BoxCheckmarkSolid', 'BoxAdditionSolid', 'BranchSearch'];
+                
+    *   -   **$on("update:startIndex")**
+        -   Triggers on when user switches between steps
+
+            
+            |
+
+            *Example:*
+
+            .. code-block:: javascript
+
+                //if on step 0, go directly to 2, skipping step 1
+                fd.container("Wizard0").widget.$on("update:startIndex", function() {
+                    if (fd.container("Wizard0").widget.activeTabIndex == 0){
+                        window.setTimeout(function() {
+                            fd.container("Wizard0").widget.navigateToTab(2)}, 100)
+                    }
+                })
 
 .. |Microsoft Fabric Icons| raw:: html
 

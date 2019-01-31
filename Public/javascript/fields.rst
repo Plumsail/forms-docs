@@ -61,9 +61,7 @@ Most fields have these properties:
     *   -   **required**
         -   Returns true if the field is required. 
         
-            For SharePoint fields only adds or removes asterisk near the title. 
-            
-            For Plumsail fields it also adds validation.
+            Allows setting fields to be required.
             
             |
 
@@ -93,8 +91,6 @@ Most fields have these properties:
             These include simple validators for one field, that only check if specific field matches certain criteria or not.
 
             If the field does not match the criteria, the form will not submit.
-
-            Use **rendered()** event for Plumsail forms and **spRendered()** event for SharePoint forms to add custom validators.
             
             |
 
@@ -269,28 +265,4 @@ Events
 
                 fd.field('TextBox').$on('change', function(value) {
                     alert('New value: ' + value);
-                });
-    *   -   **ready**
-        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
-        
-            **Only available for List or Library control, People picker, Lookup and Content Type SharePoint fields!**
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.spRendered(function() {
-                    fd.field('User').ready().then(function(field) {
-                        console.log(field.value);
-                        // or
-                        console.log(fd.field('User').value);
-                    });
-
-                    fd.field('ContentType').ready().then(function(field) {
-                        console.log(field.value);
-                        // or
-                        console.log(fd.field('ContentType').value);
-                    });
                 });

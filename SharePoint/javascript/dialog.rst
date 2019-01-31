@@ -21,7 +21,7 @@ These methods are applicable to most fields:
     *   -   Method
         -   Description/Examples
     
-    *   -   **open(url, arguments, callback(bool, args))**
+    *   -   **open(url, arguments, callback(bool, args), options)**
         -   Opens form in dialog.
 
             **url** - url to open in dialog (only works for URLs on the same domain).
@@ -33,6 +33,8 @@ These methods are applicable to most fields:
             * *bool* - returns true if the form in dialog was saved, 
             
             * *args* - JS object which can be used to pass arguments from the closing form (need to use **Dialog.close(bool, args)**).
+
+            **options** - JS object which specifies dialog window options.
             
             |
 
@@ -48,7 +50,7 @@ These methods are applicable to most fields:
                     else{
                         alert('Dialog form was closed without saving!');
                     }          
-                });
+                }, { width: 600, height: 600  });
 
             Read more about generation of form URLs :doc:`here</how-to/link-to-form>`.
         

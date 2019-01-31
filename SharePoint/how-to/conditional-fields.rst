@@ -49,7 +49,6 @@ In order to implement this functionality, we place the following code into JavaS
 
 .. code-block:: javascript
     
-    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         function setPercentComplete() {
@@ -96,7 +95,6 @@ Here is the code:
 
 .. code-block:: javascript
 
-    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         function hideOrShowDueDate() {
@@ -123,7 +121,6 @@ The easiest would be to give same CSS class to all fields that need to be hidden
 
 .. code-block:: javascript
 
-    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         $('.field-to-hide').hide();
@@ -135,7 +132,6 @@ Then also use JQuery to hide the container:
 
 .. code-block:: javascript
 
-    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         $('.grid-to-hide').hide();
@@ -204,7 +200,6 @@ For that, we can slightly modify code from the last section:
 
 .. code-block:: javascript
 
-    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function() {
 
         function setDueDate() {
@@ -239,7 +234,6 @@ Here's the code:
 
 .. code-block:: javascript
 
-    //use fd.rendered(function() { for Plumsail Forms instead
     fd.spRendered(function(vue) {
             fd.field('StartDate').value = new Date();
     });
@@ -288,8 +282,8 @@ Last thing I want to focus your attention on is differences between display and 
 Display forms don’t contain controls, so you can retrieve only the text representation of field values like you see them on a form. 
 The samples above work on new and edit forms only. 
 
-You should use the following syntax to obtain a text representation of values on a display form:
+You can access fields' data from fd.data() using field's Internal Names, like this:
 
 .. code-block:: javascript
 
-    fd.field('Status').$el.innerText
+    var title = fd.data().Title;
