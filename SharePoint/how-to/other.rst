@@ -9,4 +9,5 @@ Other
     ./save-table-signature
     ./export-pdf
     ./ms-teams
+    ./right-left
     ./newform-page
