@@ -15,8 +15,8 @@ All you need to do, actually, is to open JS code editor:
 
 |pic1|
 
-.. |pic1| image:: ../images/how-to/right-left/JS.png
-   :alt: JavaScript editor
+.. |pic1| image:: ../images/how-to/export-pdf/JSEditor.png
+   :alt: JS Editor in Plumsail Forms
 
 Insert the following code:
 
