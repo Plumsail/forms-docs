@@ -436,8 +436,24 @@ List or Library is a control which allows you to view, edit, add or delete items
 
 This control is extremely powerful and versatile - it supports filtering, selecting root folder, uploading multiple documents at once and much more.
 
-.. image:: ../images/designer/controls/ListOrLibrary.png
+|listorlibrary|
+
+.. |listorlibrary| image:: ../images/designer/controls/ListOrLibrary.png
    :alt: List or Library control
+
+Default editing mod allows to open items in dialog:
+
+|dialog|
+
+.. |dialog| image:: ../images/designer/controls/ListOrLibraryDialog.png
+   :alt: Dialog editing
+
+Alternative editing mode allows inline editing on the form:
+
+|inline|
+
+.. |inline| image:: ../images/designer/controls/ListOrLibraryInline.png
+   :alt: Inline editing
 
 List or Library properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -459,5 +475,7 @@ SETTINGS
         - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
     *   - Readonly
         - Prevents user from being able to add new items, edit or delete existing ones.
+    *   - Editing
+        - Choose between Dialog and Inline editing. The formet launches dialog to create new and modify existing items, and the latter allows you to do it right on the form.
     *   - RootFolder
         - Type in the name of the folder inside List or Library and user will only be able to see its contents inside the control.
