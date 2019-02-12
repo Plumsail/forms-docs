@@ -486,11 +486,13 @@ Lookup/LookupMulti
 
                 fd.field('Lookup').extraFields;
                 fd.field('Lookup').extraFields = ["Category"];
-        
+
     *   -   **filter**
         -   Get or set filter query for the lookup, which will filter the results. 
-        
-            Read more about OData $filter query |OData Filter|. 
+
+            Can also hold a function which is executed when user inputs text into the search box to modify search behavior.
+
+            Read more about OData $filter query |OData Filter|.
             
             |
 
@@ -499,35 +501,10 @@ Lookup/LookupMulti
             .. code-block:: javascript
 
                 fd.field('Lookup').filter;
+                //example filtering by one field
                 fd.field('Lookup').filter = "Country eq '" + fd.field("Country").value + "'";
 
-    *   -   **widget**
-        -   Returns jquery-object lying under the Vue-component. 
-        
-            For Single choice Lookup it is |LookupKendo| widget. 
-            
-            For Multiple Choice Lookup it is |LookupKendoMulti| widget.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.field('Lookup').widget;
-
-    *   -   **filter**
-        -   Holds a function which is executed when user inputs text into the search box.
-        
-            Can be used to modify search behavior.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                //search by two fields at once - Title and Category
+                //or search by two fields at once - Title and Category
                 fd.field('Lookup').filter = function(filter) {
                     return filter
                         ? "substringof('" + encodeURIComponent(filter) + "', Title) or substringof('" + encodeURIComponent(filter) + "', Category)"
@@ -553,6 +530,21 @@ Lookup/LookupMulti
 
                 fd.field('Lookup').useCustomFilterOnly = true;
 
+    *   -   **widget**
+        -   Returns jquery-object lying under the Vue-component. 
+        
+            For Single choice Lookup it is |LookupKendo| widget. 
+            
+            For Multiple Choice Lookup it is |LookupKendoMulti| widget.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.field('Lookup').widget;
+    
     *   -   **widgetOptions**
         -   Get or set configuration options for the lookup. Must be set before the fields render, cannot be changed afterwards.
         
