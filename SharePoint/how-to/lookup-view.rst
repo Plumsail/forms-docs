@@ -69,12 +69,12 @@ In this example, I will use string withing JavaScript editor to define template 
 
     fd.spBeforeRender(function() {
         var template = '';
-        template += '# if (data.Image) { # <img src="#= data.Image.Url #" width="170" height="90" сlass="lookup-image" /> # } #';
-        template += '<span сlass="lookup-col">';
-        template += '<p сlass="lookup-title"> #: data.LookupValue # </p>';
-        template += '<p сlass="lookup-desc"> #: data.Category ? data.Category.Title : "" #';
+        template += '# if (data.Image) { # <img src="#= data.Image.Url #" width="170" height="90" class="lookup-image" /> # } #';
+        template += '<span class="lookup-col">';
+        template += '<p class="lookup-title"> #: data.LookupValue # </p>';
+        template += '<p class="lookup-desc"> #: data.Category ? data.Category.Title : "" #';
         template += '#: data.Description ? " - " + data.Description : "" #</p>';
-        template += '<p сlass="lookup-price"> #: data.Price ? "$" + data.Price : "" # </p>';
+        template += '<p class="lookup-price"> #: data.Price ? "$" + data.Price : "" # </p>';
         template += '</span>';
         fd.field('Lookup').widgetOptions = {
             template: template,
