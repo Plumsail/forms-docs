@@ -516,6 +516,43 @@ Lookup/LookupMulti
 
                 fd.field('Lookup').widget;
 
+    *   -   **filter**
+        -   Holds a function which is executed when user inputs text into the search box.
+        
+            Can be used to modify search behavior.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                //search by two fields at once - Title and Category
+                fd.field('Lookup').filter = function(filter) {
+                    return filter
+                        ? "substringof('" + encodeURIComponent(filter) + "', Title) or substringof('" + encodeURIComponent(filter) + "', Category)"
+                        : '';
+                }
+                fd.field('Lookup').useCustomFilterOnly = true;
+
+    *   -   **useCustomFilterOnly**
+        -   Property which determines to use only custom filtering specified in **filter** or add default filtering on search.
+        
+            Default filtering searches via the selected field, and uses operator specified in SETTINGS or with **operator** property:
+
+            |operator|
+
+            .. |operator| image:: ../images/designer/fields/LookupOperator.png
+                :alt: Lookup operator
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.field('Lookup').useCustomFilterOnly = true;
+
     *   -   **widgetOptions**
         -   Get or set configuration options for the lookup. Must be set before the fields render, cannot be changed afterwards.
         
