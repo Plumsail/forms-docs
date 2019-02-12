@@ -93,8 +93,8 @@ Finally, with the added classes, I add the following CSS inside CSS Editor:
 
 .. code-block:: CSS
 
-    .lookup .k-dropdown .k-dropdown-wrap .k-input{
-        height: auto;
+    .k-dropdown .k-dropdown-wrap .k-input{
+        height: auto !important;
     }
 
     .lookup-col{
