@@ -360,7 +360,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
     *   -   **spBeforeRender()**
         -   Occurs before mounting the vue-component to DOM.
 
-            **сtx** passed as an argument to the function is a SharePoint form context. 
+            **ctx** passed as an argument to the function is a SharePoint form context. 
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 

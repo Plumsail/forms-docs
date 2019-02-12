@@ -200,7 +200,7 @@ Add a new one by clicking the **+ sign**:
 .. |pic9| image:: /images/startSP/addFormSet.png
    :alt: Add a Form Set
 
-Сommon use for Form Sets is to provide unique :ref:`forms for members of certain groups <designer-grouprouting>`, that can be easily configured in the menu when you create a new Form Set:
+Common use for Form Sets is to provide unique :ref:`forms for members of certain groups <designer-grouprouting>`, that can be easily configured in the menu when you create a new Form Set:
 
 |pic10|
 

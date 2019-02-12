@@ -506,9 +506,9 @@ Lookup/LookupMulti
 
                 //or search by two fields at once - Title and Category
                 fd.field('Lookup').filter = function(filter) {
-                    return filter
-                        ? "substringof('" + encodeURIComponent(filter) + "', Title) or substringof('" + encodeURIComponent(filter) + "', Category)"
-                        : '';
+                  return filter
+                  ? "substringof('" + encodeURIComponent(filter) + "', Title) or substringof('" + encodeURIComponent(filter) + "', Category)"
+                  : '';
                 }
                 fd.field('Lookup').useCustomFilterOnly = true;
 
