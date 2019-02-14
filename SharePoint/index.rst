@@ -30,6 +30,7 @@ SharePoint Forms for Modern UI
             
             general/roadmap
             general/version-history
+            general/version-history2019
             YouTube Channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
             general/data-security
             general/privacy-policy

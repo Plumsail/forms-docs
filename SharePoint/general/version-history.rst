@@ -1,4 +1,4 @@
-Version history
+Version history (SharePoint Online)
 ==================================================
 
 v1.3.3
