@@ -1,0 +1,73 @@
+Auto-populate List or Library fields
+=======================================================
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
+Description
+--------------------------------------------------
+Sometimes, when working with List or Library control, you might want to automatically populate certain values for newly created items. 
+
+If you've selected Lookup field in Data Source, this field is populated automatically by default:
+
+|pic1|
+
+.. |pic1| image:: ../images/how-to/child-parent-form/datasource.png
+   :alt: Data Source configuration
+
+But other fields are not. For example, you might want to fill out certain field's on Child's form with values from Parent's form. 
+Or you might want to specify certain properties for the uploaded documents.
+
+In this article, I will show you how this can be achieved.
+
+Related List (Dialog)
+--------------------------------------------------
+To autopopulate children in dialog window, you will need to modify both the Parent Form (where you have List or Library placed) and the Child Form. 
+
+First, add the following line to Parent Form's JS to make the manager available globally:
+
+.. code-block:: javascript
+
+    window.fd = fd;
+
+Then, you can add the following code to child's New Form, which will check if form is opened in dialog, and if so, you will be able to access fields and properties from Parent:
+
+.. code-block:: javascript
+
+    if (window != window.top && window.top.fd) {
+        fd.spRendered(function(){
+            var category = window.top.fd.field('Category').value;
+            if(id){
+                fd.field('Category').value = category;
+            }
+        });
+    }
+
+
+Related Documents
+--------------------------------------------------
+For Document Library, you can detect when files are uploaded, retrieve their IDs and use them to modify the documents right after they were uploaded.
+
+Simply use the following code:
+
+.. code-block:: javascript
+
+    fd.spRendered(function() {
+        fd.control('ChildDocs').$on('filesUploaded',
+            function(itemIds) {
+                //get document library
+                var library = pnp.sp.web.lists.getByTitle(fd.control('ChildDocs')._listUrl);
+                //go through each uploaded Item Id and set field values
+                itemIds.forEach(function(itemId) {
+                    library.items.getById(itemId).update({
+                        Title: fd.field('Title').value,
+                        Category: fd.field('Category').value
+                    });
+                });
+                //refresh List or Library after delay, so values are displayed properly
+                setTimeout(function() {
+                    fd.control('ChildDocs')._dataProvider.refresh();
+                }, 2000);
+        });
+    });

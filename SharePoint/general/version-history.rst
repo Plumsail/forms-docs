@@ -1,6 +1,12 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.3.4
+--------------------------------------------------
+Optimized retrieving data in Inline Editing mode of List or Library
+
+Added support of Content type column in Inline Editing mode of List or Library
+
 v1.3.3
 --------------------------------------------------
 Updated :ref:`designer-listorlibrary` control - added an option for Inline Editing, without the need to open dialog window.
