@@ -16,9 +16,8 @@ If you've selected Lookup field in Data Source, this field is populated automati
 .. |pic1| image:: ../images/how-to/child-parent-form/datasource.png
    :alt: Data Source configuration
 
-Other fields are not, and you might want to specify certain properties for the uploaded documents, take it from the current form or make some additional requests with JS.
-
-In this article, I will show you how this can be achieved.
+Other fields are not, and you might want to specify certain properties for the uploaded documents, for example, 
+take some data from the current form or make some additional requests with JS. In this article, I will show you how this can be achieved.
 
 Example
 --------------------------------------------------
@@ -28,24 +27,28 @@ Simply use the following code:
 
 .. code-block:: javascript
 
+    var listOrLibrary = 'SPDataTable0';
+    var docLibraryTitle = 'Documents';
+
     fd.spRendered(function() {
-        fd.control('InternalName').$on('filesUploaded',
+        fd.control(listOrLibrary).$on('filesUploaded',
             function(itemIds) {
                 //get document library by Title
-                var library = pnp.sp.web.lists.getByTitle('Documents');
+                var library = pnp.sp.web.lists.getByTitle(docLibraryTitle);
                 //go through each uploaded Item Id and set field values
                 library.getListItemEntityTypeFullName().then(function(entityTypeFullName){
 
                     var batch = pnp.sp.web.createBatch();
                     
                     for(var i = 0; i < itemIds.length; i++){
+                        //specify which fields to update and how
                         library.items.getById(itemIds[i]).inBatch(batch).update({
                             Title: fd.field('Title').value
                         }, "*", entityTypeFullName);
                     }
 
                     batch.execute().then(function(){ 
-                        fd.control('InternalName').refresh();
+                        fd.control(listOrLibrary).refresh();
                     });
                 });    
             });
