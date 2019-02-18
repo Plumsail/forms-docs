@@ -7,3 +7,4 @@ List or Library configurations
     ./child-parent-form
     ./caml-filter
     ./root-folder
+    ./document-meta
