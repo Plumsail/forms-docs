@@ -72,20 +72,20 @@ These two buttons appear on the ribbon only after you've saved the form.
 |pic4|
 
 .. |pic4| image:: ../images/designer/ribbon-actions/FlowPreview.png
-   :alt: Flow Settings and Preview
+   :alt: General Settings and Preview
 
-**General Settings for Plumsail forms** section contains important information for Flow configuration, including Form ID and Form Schema,
+**General Settings for Plumsail forms** section contains important information for Flow configuration, namely Form ID,
 as well as the widget that you can copy to insert form to a webpage for Plumsail Forms.
 
-You can select if you want to submit form to Flow which needs to be checked if you want to use the form with Microsoft Flow and it is turned on by default.
+You can select if you want to submit form to Flow/Zapier which needs to be checked if you want to use the form with Microsoft Flow or Zapier and it is turned on by default.
 You still need to configure the Flow to actually do something with the submitted data.
 
 Be careful with Form Schema when updating the form, it only changes after the form has been saved.
 
 |pic5|
 
-.. |pic5| image:: ../images/designer/ribbon-actions/FlowSettings.png
-   :alt: Flow Settings for Plumsail Forms
+.. |pic5| image:: ../images/designer/ribbon-actions/GeneralSettings.png
+   :alt: General Settings for Plumsail Forms
 
 
 **Preview** button allows you to quickly open Plumsail Forms in your default browser:

@@ -64,7 +64,7 @@ If this is your first Flow, at this point you'll need to **Sign in to** |Plumsai
 
 Now, you'll need to add the ID of the Form you want to track. You can enter ID of the form you already created or create and save a new form in the designer.
 
-Form ID can be found and copied in **Flow Settings** in the Designer.
+Form ID can be found and copied in **General Settings** in the Designer.
 
 |pic5|
 
