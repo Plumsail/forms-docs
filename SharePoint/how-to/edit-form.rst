@@ -1,0 +1,43 @@
+Switch Display Form for Edit Form
+==================================================
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
+Description
+--------------------------------------------------
+By default, standard form when user clicks List Item is Display Form, but this might not work for all situations. In this article, we'll show you how to automatically open Edit form, when Display form opens normally.
+
+.. important:: This does not actually redirect users to Edit form, instead it makes Display form's fields editable.
+
+Configuration
+--------------------------------------------------
+Let's say you want most users to see default Display form:
+
+|pic0|
+
+.. |pic0| image:: ../images/how-to/edit-form/display-form.png
+   :alt: Default Display form
+
+You may also want Supervisors group to go directly to Edit form. 
+
+For this, you can create a new :doc:`Form Set </designer/form-sets>`, targetted specifically at Supervisors group:
+
+|pic1|
+
+.. |pic1| image:: ../images/how-to/edit-form/form-set.png
+   :alt: Create a Form Set for Supervisors
+
+Add the following code to JS editor, as the first line (no events, copy and paste):
+
+.. code-block:: javascript
+
+    fd.spForm._formType = "Edit";
+
+Then, whenever a Supervisor clicks on an item, they'll be directly opening Edit form:
+
+|pic2|
+
+.. |pic2| image:: ../images/how-to/edit-form/edit-form.gif
+   :alt: Edit form for Supervisors

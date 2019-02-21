@@ -11,3 +11,4 @@ Other
     ./ms-teams
     ./right-left
     ./newform-page
+    ./edit-form
