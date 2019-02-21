@@ -35,9 +35,11 @@ Add the following code to JS editor, as the first line (no events, copy and past
 
     fd.spForm._formType = "Edit";
 
-Then, whenever a Supervisor clicks on an item, they'll be open to edit the item:
+Then, whenever a Supervisor clicks on an item, they'll be able to edit the item:
 
 |pic2|
 
 .. |pic2| image:: ../images/how-to/edit-form/edit-form.gif
    :alt: Edit form for Supervisors
+
+Essentially, this piece of JavaScript allows you to switch the type of the form, making default Display form behave like an Edit form. 
