@@ -116,7 +116,7 @@ you adjust element's layout in regards to all other elements.
 
 .. note::   We do not recommend adding Common Fields to SharePoint forms unless you know what exactly you want to do with them. By default, only SharePoint Fields
             store data when Item is saved, Common Fields lose all the data. If you want, you can use Common fields to perform some calculations on the form or 
-            submit certain data to MS Flow using :doc:`Plumsail Forms </microsoft-flow>` connector.
+            submit certain data to MS Flow using :doc:`Plumsail Forms </how-to/flow>` connector.
 
 Mobile Layouts
 -------------------------------------------------
