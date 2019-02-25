@@ -1,6 +1,14 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.3.5
+--------------------------------------------------
+Improved usability of a Single Choice Lookup field.
+
+Added support of multi-lingual sites in Forms.
+
+.. Note:: :doc:`Update the app package </general/update-package>` for new functionality.
+
 v1.3.4
 --------------------------------------------------
 Optimized retrieving data in Inline Editing mode of List or Library
