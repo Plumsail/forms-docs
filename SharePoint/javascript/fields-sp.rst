@@ -97,6 +97,30 @@ Multiline Text Field
                 fd.field('MultipleLines').$on('change', function(value) {
                     alert('New value: ' + value);
                 });
+    
+    *   -   **refreshHistory()**
+        -   Refresh history of Multiple Lines field with Append changes to load new entries.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.field('MultipleLines').refreshHistory();
+    
+    *   -   **ready()**
+        -   Returns a promise that is resolved when the field is initialized and its history is loaded.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.field('MultipleLines').ready().then(function() {
+                    console.log('Multiple Lines loaded!');
+                }); 
                 
 Choice Single - Dropdown or Radio
 --------------------------------------------------
