@@ -32,7 +32,7 @@ To add another form in another language, we only to have SharePoint Admin with d
 .. |pic3| image:: ../images/how-to/language/sign-in.png
    :alt: Login as German Admin
 
-When they open the form in the editor, they will see an empty form and a Content Type in their own language (if translated):
+When they open the form in the editor, they will see an empty form and a Content Type in their own language:
 
 |pic4|
 
@@ -46,3 +46,9 @@ Next time, when a user with the same language preferences opens the form, they w
 
 .. |pic5| image:: ../images/how-to/language/german.png
    :alt: German form
+
+The forms are generated for each unique Content Type name, in this case: **Task** and **Aufgaben**. These are also used in form URLs:
+
+``/SitePages/PlumsailForms/{ListName}/{ContentType}/NewForm.aspx``
+
+Make sure that the Content Type has a different name in other languages to have different forms. If you don't want this - use the same name for Content Type across languages.
