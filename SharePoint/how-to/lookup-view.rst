@@ -15,7 +15,7 @@ In this article, we will show you an example with several fields displayed at on
 
 |example|
 
-.. |example| image:: ../images/how-to/lookup-view/lookup.png
+.. |example| image:: ../images/how-to/lookup-view/example.png
    :alt: Example Lookup
 
 Getting extra fields
@@ -63,7 +63,7 @@ Please note that you can store the template in a separate script element inserte
 
    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox/configuration/template" target="_blank">Kendo UI Combobox's Template</a>
 
-In this example, I will use string withing JavaScript editor to define template for both selectable items and the current selection:
+In this example, I will use string withing JavaScript editor to define template for selectable items:
 
 .. code-block:: javascript
 
@@ -78,8 +78,6 @@ In this example, I will use string withing JavaScript editor to define template 
         template += '</span>';
         fd.field('Lookup').widgetOptions = {
             template: template,
-            valueTemplate: template,
-            height: 500,
             virtual: {
                 itemHeight: 100
             }
