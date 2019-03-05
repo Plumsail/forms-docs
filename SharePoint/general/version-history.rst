@@ -1,6 +1,12 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.3.6
+--------------------------------------------------
+Added read-only mode for Likert Scale control.
+
+Fixed issues with Lookup and People picker field.
+
 v1.3.5
 --------------------------------------------------
 Improved usability of a Single Choice Lookup field.
