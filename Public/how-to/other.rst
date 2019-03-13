@@ -6,3 +6,4 @@ Other
 
     ./right-left
     ./ms-teams
+    ./grid-advantages

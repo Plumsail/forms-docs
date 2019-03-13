@@ -11,3 +11,4 @@ Other
     ./ms-teams
     ./newform-page
     ./edit-form
+    ./grid-advantages
