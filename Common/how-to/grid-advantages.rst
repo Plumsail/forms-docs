@@ -169,16 +169,19 @@ The Stacked property or the root Grid cannot be changed but you can override it 
 
 By combining different values of the Stacked property for nested grids, you can define how your form will be adjusted to different screen sizes.  
 
-For example, in the form below, I want to leave the Details field alone in a row even for a medium screen size while the remaining fields should be moved to a separate row as a table and collapse into a single column for a small screen.  
+Example form
+********************************
 
-For this purpose, I added a Grid and set its Stacked property to Large: 
+In the form below, I want to leave the Details field alone in a row even for a medium screen size while the remaining fields should be moved to a separate row as a table and collapse into a single column for a small screen.  
+
+For this purpose, I've added a Grid and set its Stacked property to Large: 
 
 |pic17|
 
 .. |pic17| image:: ../images/how-to/grid-advantages/StackedPropertyLarge.png
    :alt: Stacked property large
 
-Then, added a nested Grid for Address, Postal Code, Phone Number and Residential District and set its Stacked property to Small which is default.
+Then, I've added a nested Grid for Address, Postal Code, Phone Number and Residential District and set its Stacked property to Small which is default.
 
 |pic18|
 
@@ -206,38 +209,37 @@ Then, added a nested Grid for Address, Postal Code, Phone Number and Residential
 .. |pic21| image:: ../images/how-to/grid-advantages/ScreenSizeSmall.png
    :alt: Screen size small
 
-Combining Stacked property with extra CSS-classes provided by Bootstrap e.g. col-sm-, col-md-, or col-auto, allows you to define a layout of any complexity which perfectly suits to any screen size.
-
-Advanced features
---------------------------------------------------
-While creating different responsive layouts, you probably found that some scenarios require more complex combination of rows & columns to make “things fit” on multiple devices. 
-
-**Vertical alignment** 
-
-Vertical alignment can be changed with the CSS-classes: align-items-start, align-items-center, align-items-end.  
-
-*Example:* 
+Combining Stacked property with extra CSS-classes provided by Bootstrap e.g. **col-sm-**, **col-md-**, or **col-auto**, allows you to define a layout of any complexity which perfectly suits any screen size.
  
-Assign a CSS class to a nested Grid, for example, 'custom-grid' 
+Vertical alignment
+--------------------------------------------------
 
-Add the code into JS-editor:  
+Vertical alignment can be changed with the CSS-classes: **align-items-start**, **align-items-center**, **align-items-end**.  
+
+Grid wide alignment
+***********************
+ 
+Assign a CSS class to a nested Grid such as **custom-grid**. Use the following code to align items at the center vertically:  
 
 .. code-block:: javascript
 
     fd.rendered(function() { 
-        $(".custom-grid").find(".row:not(.form-group)").eq(0).addClass("align-items-center") 
+        $(".custom-grid").find(".row:not(.form-group)").eq(0).addClass("align-items-center");
     });     
 
-Where '0' is a row index (zero-based) 
+Where *eq(0)* uses a row index (zero-based).
 
-The result: 
+You'll get the following result: 
 
 |pic22|
 
 .. |pic22| image:: ../images/how-to/grid-advantages/AlignItemsCenter.png
    :alt: Align items center
 
-If you need to align fields in each column separately, use align-self-start, align-self-center, align-self-end: 
+Individual alignment
+***********************
+
+If you need to align fields in each column separately, use **align-self-start**, **align-self-center**, **align-self-end** CSS classes: 
 
 |pic23|
 
@@ -251,13 +253,12 @@ That's how it looks like for each class:
 .. |pic24| image:: ../images/how-to/grid-advantages/AlignSelf.png
    :alt: Align self
 
-**Horizontal alignment** 
+Horizontal alignment
+--------------------------------------------------
 
-Horizontal alignment can be changed with justify-content-start, justify-content-center, justify-content-end, 
+Horizontal alignment can be changed with **justify-content-start**, **justify-content-center**, **justify-content-end**, **justify-content-around**, and **justify-content-between**.   
 
-justify-content-around, justify-content-between.   
-
-Assign a custom CSS-class to your Grid and insert the code below into JS-editor in the designer:
+We can assign a custom CSS class to our Grid and use the following JavaScript to give each row a different CSS class:
 
 .. code-block:: javascript
 
@@ -270,23 +271,26 @@ Assign a custom CSS-class to your Grid and insert the code below into JS-editor 
         rows.eq(4).addClass("justify-content-between"); 
     }); 
 
-The result:
+Here's the result, each row uses different option for horizontal alignment:
 
 |pic25|
 
 .. |pic25| image:: ../images/how-to/grid-advantages/HorizontalAlignment.png
    :alt: Horizontal alignment
 
-**No spacing**
+You can mix and match these classes, or only use one, depending on your needs.
 
-The spacing between columns can be removed with .no-gutters 
+No spacing
+--------------------------------------------------
 
-The code sample: 
+The spacing between columns can be removed with **no-gutters** CSS class. 
+
+Code sample: 
 
 .. code-block:: javascript
 
     fd.rendered(function() { 
-        $(".custom-grid").find(".row:not(.form-group)").eq(0).addClass("no-gutters") 
+        $(".custom-grid").find(".row:not(.form-group)").eq(0).addClass("no-gutters");
     }); 
 
 |pic26|
