@@ -4,6 +4,7 @@ Other
 .. toctree::
     :maxdepth: 1
 
+    ./grid-advantages
     ./flow
     ./provision
     ./save-table-signature
@@ -11,4 +12,3 @@ Other
     ./ms-teams
     ./newform-page
     ./edit-form
-    ./grid-advantages

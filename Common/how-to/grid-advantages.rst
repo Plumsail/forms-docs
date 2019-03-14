@@ -1,4 +1,4 @@
-Why should I use Grids instead of Tables
+Use Grids instead of Tables
 ==================================================
 
 .. contents:: Contents:
@@ -13,13 +13,25 @@ It allows you to place fields and controls side by side, control how many column
 
 In this article, we describe the advantages of using Grids instead of Tables in Forms. 
 
+|pic0|
+
+.. |pic0| image:: ../images/how-to/grid-advantages/EmbeddedGrid.png
+   :alt: Embedded Grid
+
+Our Grid is based on |Bootstrap v4 Grid|.
+
+.. |Bootstrap v4 Grid| raw:: html
+
+   <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">Bootstrap v4 Grid</a>
+
 Key advantages
 --------------------------------------------------
-1. Responsiveness – an ability to design a single layout that is adjusted to any screen size automatically.  
 
-2. Flexibility – no need to define the number columns for the whole Grid unlike we do for Tables. Each row can contain an arbitrary and unique number of columns. Thus, you can create a pretty complex form by using just a single Grid. The generated code is more compact with Grids and thus is rendered much faster by browsers. 
+* Responsiveness – an ability to design a single layout that is adjusted to any screen size automatically. It makes Grid even more useful when designing mobile-friendly forms. 
 
-3. Powerfulness – since the Grid is based on very popular Bootstrap grid, it contains a lot of built-in features e.g. predefined classes for adjusting forms to different screen sizes, aligning content inside a Grid, configuring spacing between cells, etc. 
+* Flexibility – no need to define the number columns for the whole Grid unlike we do for Tables. Each row can contain an arbitrary and unique number of columns. Thus, you can create a pretty complex form by using just a single Grid. The generated code is more compact with Grids and thus is rendered much faster by browsers. 
+
+* Powerfulness – since the Grid is based on very popular Bootstrap grid, it contains a lot of built-in features e.g. predefined classes for adjusting forms to different screen sizes, aligning content inside a Grid, configuring spacing between cells, etc. 
 
 |pic1|
 
@@ -30,19 +42,15 @@ Basics of Grid
 --------------------------------------------------
 Plumsail Forms leverages the Bootstrap grid providing a series of containers, rows, and columns to layout and align content in forms. It is built on flexbox and is fully responsive.  
 
-Each row can be split into up to 12 columns. In most cases, you will not use all 12 individual columns. But 12 evenly divides into 6 (halves), 4 (quarters) and 3 (thirds) that gives you a wide range of possibilities to organize content in a form. 
+Each row can be split into up to 12 columns. In most cases, you will not use all 12 individual columns. But 12 evenly divides into 6 (*halves*), 4 (*quarters*) and 3 (*thirds*) that gives you a wide range of possibilities to organize content in a form. 
 
 |pic2|
 
 .. |pic2| image:: ../images/how-to/grid-advantages/Columns.png
    :alt: Columns
 
-But you don't need to limit yourself with 12 columns – nested Grids with their own 12 columns splitting will allow you to adjust the placement of the fields exactly like you want to. Nested Grids also provide you an opportunity to place some vertically organized fields in a single row. 
-
-|pic3|
-
-.. |pic3| image:: ../images/how-to/grid-advantages/Nested.png
-   :alt: Nested
+Limit of 12
+********************************
 
 By default, each field or control placed into a form takes 6 columns of the root Grid and 12 columns of a nested Grid. 
 
@@ -50,7 +58,6 @@ By default, each field or control placed into a form takes 6 columns of the root
 
 .. |pic4| image:: ../images/how-to/grid-advantages/ControlWidth.png
    :alt: Control width
-
 
 The Width can be changed as demonstrated for the Mailing Address field which size is 12 columns. 
 
@@ -73,7 +80,10 @@ Once you reduce the width of the item(s) in a row, you'll get a free space for a
 .. |pic7| image:: ../images/how-to/grid-advantages/DesignerRestrictionOvercome.png
    :alt: Designer restriction overcome
 
-By default, a title width is set to 120px but it can be changed as well. 
+Title width
+********************************
+
+Standard Field title's width is 120px but you can change it. 
 
 |pic8|
 
@@ -87,7 +97,16 @@ Here, title widths were adjusted to better fit form's layout.
 .. |pic9| image:: ../images/how-to/grid-advantages/TitleWidthAdjusted.png
    :alt: Title width adjusted
 
-There are a lot of scenarios that require organizing fields in multiple rows in a single row of a parent Grid. Here, the nested Grids come in handy.    
+Nested Grid
+********************************
+You don't need to limit yourself with 12 columns – nested Grids will allow you to adjust the placement of the fields exactly like you want to. Nested Grids also provide you an opportunity to place some vertically organized fields in a single row. 
+
+|pic3|
+
+.. |pic3| image:: ../images/how-to/grid-advantages/Nested.png
+   :alt: Nested
+
+There are a lot of scenarios that require organizing fields in multiple rows in a single row of a parent Grid. Here, the nested Grids come in handy.   
 
 |pic10|
 
@@ -100,6 +119,9 @@ In this sample, we've added the Grid container to the form and placed fields ins
 
 .. |pic11| image:: ../images/how-to/grid-advantages/FieldsInTwoRows.png
    :alt: Fields in two rows
+
+Offset
+********************************
 
 You can easily add spacing between fields or a field and Grid border with the Parent Grid's Offset property. 
 
@@ -122,14 +144,16 @@ In addition to the concept of column width, Bootstrap has different breakpoints 
 
 Designer implements the breakpoints functionality with Stacked property. 
 
-To make the Grid more responsive, Stacked property has four screen sizes on which the columns are stacked: Never (<576 px), Small (>=576px), Medium (>=768px), Large (>=992px).  For example, if the Stacked property is set to Small, the columns will be stacked at the size of the screen < 576 px. If the Stacked property is set to Never the columns will not be stacked at all. 
+To make the Grid more responsive, Stacked property has four screen sizes on which the columns are stacked: *Never* (<576 px), *Small* (>=576px), *Medium* (>=768px), *Large* (>=992px).  For example, if the Stacked property is set to Small, the columns will be stacked at the size of the screen < 576 px. If the Stacked property is set to Never the columns will not be stacked at all. 
 
-By default, the Stacked property of the Parent Grid is set to Small. So, the fields will be stacked from the screen size less than 576 px: 
+By default, the Stacked property of the Parent Grid is set to Small. That means that fields are not stacked on larger screens:
 
 |pic14|
 
 .. |pic14| image:: ../images/how-to/grid-advantages/FieldsNotStacked.png
    :alt: Fields not stacked
+
+But they will be stacked for the screens with size less than 576 px: 
 
 |pic15|
 
@@ -161,17 +185,21 @@ Then, added a nested Grid for Address, Postal Code, Phone Number and Residential
 .. |pic18| image:: ../images/how-to/grid-advantages/StackedPropertySmall.png
    :alt: Stacked property small
 
-Here is the result in different screen sizes:
+**PC Screen**
 
 |pic19|
 
 .. |pic19| image:: ../images/how-to/grid-advantages/ScreenSizeLarge.png
    :alt: Screen size large
 
+**Tablet Screen**
+
 |pic20|
 
 .. |pic20| image:: ../images/how-to/grid-advantages/ScreenSizeMedium.png
    :alt: Screen size medium
+
+**Mobile Screen**
 
 |pic21|
 
@@ -265,11 +293,4 @@ The code sample:
 
 .. |pic26| image:: ../images/how-to/grid-advantages/NoSpacing.png
    :alt: No spacing
-
-
-Read more about Bootstrap Grid |here|.
-
-.. |here| raw:: html
-
-   <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">here</a>
 

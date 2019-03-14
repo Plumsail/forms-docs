@@ -26,7 +26,7 @@ There's also an option to add new items to the source list, if the item wasn't f
 
 |example|
 
-.. |example| image:: ../images/how-to/lookup-view/lookup.png
+.. |example| image:: ../images/how-to/lookup-view/example.png
    :alt: Example Lookup
 
 Lookup unique properties
