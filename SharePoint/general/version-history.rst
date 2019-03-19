@@ -1,6 +1,12 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.3.7
+--------------------------------------------------
+Added support of Location field.
+
+Various bugfixes.
+
 v1.3.6
 --------------------------------------------------
 Added read-only mode for Likert Scale control.
