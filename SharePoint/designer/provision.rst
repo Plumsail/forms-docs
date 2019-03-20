@@ -131,6 +131,8 @@ FormsManager Methods
     *   -   **GetFormSets()**
         -   Allows to get form sets for the List. Returns :ref:`designer-formsetsettings`.
 
+            .. important:: Only available after customization of Form Sets, for example, adding new Form Set or customizing the Panel.
+
             |
 
             *Example:*
@@ -193,6 +195,11 @@ FormsManager Methods
                 var settings = formsOldSite.GetFormSets();
                 formsNewSite.SetFormSets(settings);
 
+                //alternatively create new Form Set settings
+                formsNewSite.SetFormSets(new FormsDesigner.Data.SharePoint.FormSetSettings() {
+                    //use Constructor to set properties
+                })
+
 .. _designer-formsetsettings:
 
 FormSetSettings
@@ -239,7 +246,8 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
             *Example:*
             
             .. code-block:: c#
-
+                
+                
                 var fss = forms.GetFormSets();
                 var sets = fss.FormSets;
 
@@ -251,6 +259,7 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
                     var title = Set.Title;
                     var guid = Set.Id;
                 }
+
     *   -   **AddListViewCommands**
         -   Contains boolean that determines if Form Commands (Form Panel) are loaded in the list views. Can be used to get and set.
 
@@ -291,6 +300,7 @@ These settings contain code for :ref:`designer-customrouting`, as well as inform
                     },
                     New = null
                 };
+
     *   -   **CustomListViewCode**
         -   Contains string with custom code for List View Commands. Can be used to get and set.
             
