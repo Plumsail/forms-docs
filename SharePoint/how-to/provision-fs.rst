@@ -7,7 +7,7 @@ Working with Form Sets when Provisioning
  
 Description
 --------------------------------------------------
-Form Sets are important. They contain Form Panel and List View settings, and routing configuration, including groups used for redirection.
+Form Sets are important. They contain Form Panel and List View settings, plus routing configuration, including groups used for redirection.
 
 This article will show you how to work with :ref:`designer-formsetsettings` when provisioning forms.
 
