@@ -1,4 +1,4 @@
-Provision Modern UI SharePoint Form
+Provision Form with NuGet package
 ==================================================
 
 .. contents:: Contents:

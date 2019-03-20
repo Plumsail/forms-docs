@@ -28,7 +28,7 @@ FormsManager
     *   -   Constructor
         -   Description/Examples
 
-    *   -   **FormsManager(ClientContext ctx, Guid listId, string contenTypeId);**
+    *   -   **FormsManager(ClientContext ctx, Guid listId, string contentTypeId);**
         -   Forms Manager allows you to manage modern SharePoint Forms for a specific Content Type in the specific List. 
             It takes three arguments as parameters: Client Context for SharePoint Site with valid Site Owner credentials, 
             the ID of the List, and the ID of the Content Type as a string.
@@ -207,6 +207,8 @@ FormSetSettings
 FormSetSettings can be retrieved with **GetFormSets()** and set with **SetFormSets(FormSetSettings)**. 
 
 These settings contain code for :ref:`designer-customrouting`, as well as information about Form Sets, including groups used for redirection.
+
+For examples of working with Form Sets, please, check out :doc:`Working with Form Sets when Provisioning</how-to/provision-fs>`.
 
 .. list-table::
     :header-rows: 1

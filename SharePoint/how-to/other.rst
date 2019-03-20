@@ -6,7 +6,6 @@ Other
 
     ./grid-advantages
     ./flow
-    ./provision
     ./save-table-signature
     ./export-pdf
     ./ms-teams

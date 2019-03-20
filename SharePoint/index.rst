@@ -73,4 +73,5 @@ SharePoint Forms for Modern UI
             how-to/list-or-library-section
             how-to/lookup-section
             how-to/region-culture
+            how-to/prov-section
             how-to/other
