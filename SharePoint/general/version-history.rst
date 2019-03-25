@@ -1,6 +1,16 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.3.8
+--------------------------------------------------
+List or Library: now supports uploading files with drag-n-drop.
+
+Switched to single part app pages for publishing forms.
+
+API improvements: unified API for SP and common choice fields.
+
+Minor bugfixes.
+
 v1.3.7
 --------------------------------------------------
 Added support of Location field.
