@@ -1,6 +1,14 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.3.9
+--------------------------------------------------
+Dutch language support.
+
+Paste images from clipboard to SharePoint Rich Text fields.
+
+Simplified provisioning API
+
 v1.3.8
 --------------------------------------------------
 List or Library: now supports uploading files with drag-n-drop.
