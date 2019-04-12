@@ -56,7 +56,7 @@ Once the package and its dependencies have installed, go to Program.cs and repla
 
 .. code-block:: c#
 
-    using FormsDesigner.Data;
+    using Plumsail.Forms.Data.SharePoint;
     using Microsoft.SharePoint.Client;
     using System;
     using System.Linq;
@@ -106,27 +106,10 @@ Once the package and its dependencies have installed, go to Program.cs and repla
 
                     var layout = XDocument.Load(formPath);
 
-                    var comp = CompileForm(layout);
-
                     // THE FORM WILL REPLACE A DEFAULT NEW FORM IN THE TARGET LIST:
-                    forms.GenerateForms(Guid.Empty, FormTypes.New, layout, comp);
+                    forms.GenerateForms(Guid.Empty, FormTypes.New, layout);
 
                 }
-            }
-
-             private static CompiledForm CompileForm(XDocument layout)
-            {
-                HttpClient httpClient = new HttpClient();
-                httpClient.BaseAddress = new Uri("https://forms.plumsail.com/");
-                httpClient.DefaultRequestHeaders.Accept.Clear();
-                httpClient.DefaultRequestHeaders.Accept.Add(
-                    new MediaTypeWithQualityHeaderValue("application/json")
-                );
-
-                var response = 
-                    httpClient.PostAsJsonAsync("api/sharepoint", layout).Result;
-                response.EnsureSuccessStatusCode();
-                return response.Content.ReadAsAsync<CompiledForm>().Result;
             }
 
             private static SecureString GetSecureString(string s)

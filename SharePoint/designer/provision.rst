@@ -99,18 +99,16 @@ FormsManager Methods
 
     *   -   Method
         -   Description/Examples   
-    *   -   **GenerateForms(Guid formSetId, FormTypes formTypes, XDocument layout, CompiledForm compiledForm)**
+    *   -   **GenerateForms(Guid formSetId, FormTypes formTypes, XDocument layout)**
         -   Generates specified (New, Edit or Display) form for the specific Form Set. 
             
-            Takes 4 arguments: 
+            Takes 3 arguments: 
             
             **formSetId** - ID of the Form Set(empty Guid for Default).
 
             **formTypes** - Flags indicating one or more form types.
 
             **layout** - layout of the form, XDocument from .xfds file.
-
-            **compiledForm** - compiled form.
             
             |
 
@@ -120,13 +118,10 @@ FormsManager Methods
 
                 var layout = XDocument.Load("c:\\provision\\Item_New.xfds");
 
-                var compiledForm = CompileForm(layout);
-
                 forms.GenerateForms(
                         Guid.Empty, 
                         FormTypes.New | FormTypes.Edit | FormTypes.Display, 
-                        layout, 
-                        compiledForm);
+                        layout);
                 
     *   -   **GetFormSets()**
         -   Allows to get form sets for the List. Returns :ref:`designer-formsetsettings`.
