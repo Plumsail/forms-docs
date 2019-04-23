@@ -25,7 +25,7 @@ Installation (Office365)
 -------------------------------------------------------------
 When you install Plumsail Forms to SharePoint Online, you need to add your domain to Plumsail Account. This requires Global Admin (aka Tenant Admin permissions) to install the Azure Active Directory enterprise application.
 
-These permissions are transferred to the app itself, and it uses them to publish forms to any site collection or site that you have on the Tenant. It enables  scripting capabilities on a target site, and is the easiest and most user-friendly option there is.
+These permissions are transferred to the app itself, and it uses them to publish forms to any site collection or site that you have on the Tenant. It enables  scripting capabilities on a target site, and is the easiest and most user-friendly option there is to ensure publishing goes smoothly for any site.
 
 .. important:: We cannot access any of the data stored on your tenant at any point, and once you've published all the forms, you can safely delete it in AAD Admin Center (we can't remove the app for you):
 
