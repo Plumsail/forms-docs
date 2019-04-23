@@ -14,13 +14,25 @@ Personal information: what we collect, when and how we use it
 -------------------------------------------------------------
 When you sign up for |Plumsail Account|, you may be asked to enter your name and email address. 
 We collect information from you when you install Plumsail Forms for the first time, such as the domain names for SharePoint. 
-Notice that we don’t store any information submitted through the Public Web Forms, with the exception of attachments, to allow them to be downloaded. Attachments are stored for 30 days, and then are automatically deleted. For the paid plans, storage can be cleared at any point inside the |Plumsail Account|.
 Forms for SharePoint send all the data directly to SharePoint, we have no access to it.
 All operations are performed over secure encrypted HTTPS connection. We never sell any personal info to third parties.
 
 .. |Plumsail Account| raw:: html
 
    <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>
+
+Installation (Office365)
+-------------------------------------------------------------
+When you install Plumsail Forms to SharePoint Online, you need to add your domain to Plumsail Account. This requires Global Admin (aka Tenant Admin permissions) to install the Azure Active Directory enterprise application.
+
+These permissions are transferred to the app itself, and it uses them to publish forms to any site collection that you have on the Tenant. It enables advanced scripting capabilities, updates URLs for forms, and publishes forms to Site Pages -> PlumsailForms folder.
+
+.. important:: We cannot access any of the data stored on your tenant at any point, and once you've published all the forms, you can safely delete it in AAD Admin Center (we can't remove the app for you):
+
+|pic1|
+
+.. |pic1| image:: /images/general/privacy/DeleteFormsAAD.png
+   :alt: Delete AAD app of Forms
 
 Log information
 -------------------------------------------------------------
@@ -53,4 +65,4 @@ Our services and storages are scanned on a regular basis for security holes and 
 Information about Forms installations and log files are contained behind secured networks and is only accessible by a limited number of persons who have special
 access rights to such systems, and are required to keep the information confidential. 
 In addition, all sensitive information you supply is encrypted via Secure Socket Layer (SSL) technology. 
-All data transited between you and us is encrypted and sent using HTTPS.
+All data transited between you and SharePoint is encrypted and sent using HTTPS.
