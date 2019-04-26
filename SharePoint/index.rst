@@ -46,8 +46,9 @@ SharePoint Forms for Modern UI
             designer/controls
             designer/fields
             designer/fields-sp
-            designer/provision
+            designer/web-part
             designer/panel
+            designer/provision
 
       .. toctree::
             :caption: JavaScript framework 

@@ -80,6 +80,7 @@ Some predefined variables accessible from your code:
     -   **web** - current Web from pnp 
     -   **list** - current List from pnp
     -   **item** - current Item from pnp or null for a New form
+    -   **host** - check if form is opened in a regular page, in a panel, or in a user web part
 
 The code in custom routing must return either server-relative or absolute URL, or ID of a Form Set. 
 It can also return Promise that is resolved with URL or Form Set ID. 
@@ -181,3 +182,24 @@ Redirect to a certain Form Set if 'People' multiple selection Person field conta
                 }
             });
     }
+
+
+.. _designer-hostvar:
+
+Check host
+**********************************************
+Redirect to a certain Form Set if form is opened in full page mode, in a panel, or in a webpart:
+
+.. code-block:: javascript
+
+    // regular form
+    if (host === 0)
+        return '568be5c6-383e-4903-ab5b-aeef7f1e76ae';
+
+    // SharePoint panel
+    if (host === 1)
+        return '87a5e162-3fe5-4459-8527-e1c04e14621f';
+
+    // Plumsail Forms Web Part 
+    if (host === 2)
+        return '719a0769-1c0a-4a6c-8dcf-57abc8a7d71a';
