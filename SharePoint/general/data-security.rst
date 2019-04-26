@@ -7,8 +7,6 @@ General information about privacy protection can be found in the :doc:`Plumsail 
 
 Application security
 ------------------------------
-Plumsail Forms is hosted in Microsoft Azure. The infrastructure for databases and application servers is managed and maintained by |Azure|.
-
 We are seriously concerned about your security, so, everything from engineering to deployment performed with our highest standards of security. 
 Our source code repositories are regularly scanned for security issues and our network is protected by a firewall.
 
@@ -16,10 +14,6 @@ We have a QA department which reviews and test our code for any security vulnera
 Testing is occurred in a separate environment from production. We don't use any customer's data during testing.
 
 Also, we are using IDS technologies to monitor our network for malicious activity or policy violations.
-
-.. |Azure| raw:: html
-
-   <a href="https://www.microsoft.com/en-us/trustcenter/Security/AzureSecurity" target="_blank">Azure</a>
 
 .. _data-security:
 
@@ -30,26 +24,12 @@ only SharePoint Online domain name (for SharePoint License) and |Plumsail Accoun
 
 After installing Plumsail Forms, the only data that we are gathering from you is application logs from the system.
 
-The data submitted with Public Web Forms is not stored on our servers, but goes directly to Microsoft Flow.
-The attachments are stored in Microsoft Azure Storage, |encrypted at REST|. Attachments that are older than 30 days are automatically deleted. For the paid plans, storage can be cleared at any point inside the |Plumsail Account|.
-
-Whenever your data is in transit between you and us, everything is encrypted and sent using HTTPS. Data at rest is encrypted using |AES 256| bit standards (one of the strongest block ciphers available) 
-with keys managed by Azure Storage Service Encryption. Data in transit is encrypted with SSL/TLS protocols.
-
 All the data submitted in SharePoint Forms, including attachments, is sent directly to SharePoint.
-
-.. |encrypted at REST| raw:: html
-
-   <a href="https://docs.microsoft.com/en-us/azure/security/azure-security-encryption-atrest" target="_blank">encrypted at REST</a>
 
 .. |Plumsail Account| raw:: html
 
    <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>
-
-.. |AES 256| raw:: html
-
-   <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank">AES 256</a>
-
+   
 Business transactions
 ------------------------------
 We protect your billing information. 
@@ -57,7 +37,7 @@ All transactions are processed through secure encryption and sensitive data are 
 
 Physical security
 ------------------------------
-Plumsail Forms hosts all data in Microsoft Azure which data centers have been tested for security, availability and business continuity. 
+Plumsail Forms hosts all internal data in Microsoft Azure which data centers have been tested for security, availability and business continuity. 
 For more information, take a look at |this link|. 
 Disaster recovery program ensures that our services will be available or are easily recoverable in the case of any catastrophe.
 

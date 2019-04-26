@@ -1,6 +1,10 @@
 Version history
 ==================================================
 
+v1.4.1
+--------------------------------------------------
+Internal names equal to titles for Common Fields by default.
+
 v1.3.1
 --------------------------------------------------
 Reworked field controls

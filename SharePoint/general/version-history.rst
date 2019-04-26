@@ -1,6 +1,17 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.4.1
+--------------------------------------------------
+Added a new web part allowing users to publish a SharePoint form (from any site within the tenant) or a public form to any SP page. 
+The only requirement is that a user must have appropriate permissions to the target list.
+
+.. Note:: :doc:`Update the app package </general/update-package>` for new functionality.
+
+Internal names equal to titles for Common Fields by default.
+
+A new variable available in custom routing, so you can route to a certain form set depending on where the form is opened - in a regular page, in panel, or in a user web part.
+
 v1.3.9
 --------------------------------------------------
 Dutch language support.
