@@ -80,7 +80,7 @@ Some predefined variables accessible from your code:
     -   **web** - current Web from pnp 
     -   **list** - current List from pnp
     -   **item** - current Item from pnp or null for a New form
-    -   **host** - check if form is opened in a regular page, in a panel, or in a user web part
+    -   **host** - check if form is opened in a regular page, in a panel, or in a user web part. Value can be: 0 / 1 / 2. See :ref:`example <designer-hostvar>`.
 
 The code in custom routing must return either server-relative or absolute URL, or ID of a Form Set. 
 It can also return Promise that is resolved with URL or Form Set ID. 

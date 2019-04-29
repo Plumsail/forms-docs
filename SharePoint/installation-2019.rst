@@ -5,6 +5,14 @@ SharePoint 2019 Installation (On-Premises)
  :local:
  :depth: 1
 
+Video Guide
+--------------------------------------------------
+You can follow the instruction or watch a video here:
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9AIuz_2OWg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Install Farm Solution
 ------------------------------------------------------------
 |Download setup file| and run it on one of the servers in your Sharepoint 2019 farm as Farm Administrator. Follow wizard steps.

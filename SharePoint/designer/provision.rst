@@ -285,13 +285,13 @@ For examples of working with Form Sets, please, check out :doc:`Working with For
             .. code-block:: c#
 
                 var fss = forms.GetFormSets();
-                fss.Panel = FormTypePanelSettings()
+                fss.Panel = new FormTypePanelSettings()
                 {
-                    Display = FormPanelSettings()
+                    Display = new FormPanelSettings()
                     {
                         Size = FormPanelSize.Medium
                     },
-                    Edit = FormPanelSettings()
+                    Edit = new FormPanelSettings()
                     {
                         Size = FormPanelSize.Large
                     },
