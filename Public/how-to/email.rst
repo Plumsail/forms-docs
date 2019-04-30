@@ -1,4 +1,4 @@
-Send an email with Microsoft Flow
+Send an email from form with Microsoft Flow
 ==================================================
 
 .. contents:: Contents:
