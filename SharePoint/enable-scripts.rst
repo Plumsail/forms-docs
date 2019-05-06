@@ -7,10 +7,9 @@ Enabling scripting capabilities in SharePoint Online
 
 Intro
 --------------------------------------------------
-Custom scripts allow you and the apps you install to influence how the pages look, feel and behave in SharePoint. They are disabled by default, 
-but they need to be enabled for Plumsail Forms editor to be able to publish forms to the sites.
+Plumsail Forms requires scripting capabilities to be enabled on a target site. By default, this feature is disabled and only tenant admins are able to turn it on.
 
-Easiest option here is to |give permissions to our Azure Active Directory app|, which will enable scripting capabilities for you:
+The easiest option here is to |give permissions to our Azure Active Directory app|, which will automatically enable scripting capabilities on a site you're saving forms to.
 
 .. |give permissions to our Azure Active Directory app| raw:: html
 
