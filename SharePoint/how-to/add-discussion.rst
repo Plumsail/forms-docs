@@ -51,23 +51,15 @@ Put an extra 'Post' button next to the append-only field and insert the below sn
 .. code-block:: javascript
 
     //Replace "Comments" with the internal name of your Comments field  
-
     var commentField = fd.field("Comments");  
-
   
     //Replace "NTaskArticle" with the name of your list   
-
     var list = sp.web.lists.getByTitle("NTaskArticle");  
 
-
     //Replace "Comments" with the internal name of your Comments field   
-
     list.items.getById(fd.itemId).update({Comments: commentField.value}).then(function(){  
-
         fd.field("Comments").refreshHistory();     
-
         commentField.clear(); 
-
     });   
 
 Here is the result:
