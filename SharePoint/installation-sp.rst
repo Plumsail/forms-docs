@@ -47,19 +47,17 @@ Once you sign in to Plumsail Account, you'll need to go to Forms section.
 
 |pic1|
 
-.. |pic1| image:: /images/SPlicense/PlumsailAccount.png
+.. |pic1| image:: /images/SPlicense/PlumsailAccountNew.png
    :alt: Plumsail Account
 
 Select Licenses tab and add your SharePoint domain to SharePoint Licenses.
 
-You'll need to complete authorization and give permissions to the app, here is where you need a **tenant administrator** account. 
-
-It's only necessary for this step:
-
 |pic2|
 
-.. |pic2| image:: /images/SPlicense/AddLicense.png
+.. |pic2| image:: /images/SPlicense/AddLicenseNew.png
    :alt: Forms Licenses
+
+.. Note:: SharePoint forms require custom scripts to be enabled to function properly. We recommend to grant permissions to the app, so it can enable scripting capabilities for you - you'll need a **tenant administrator** account for that. Alternatively, you can :doc:`enable scripting capabilities</enable-scripts>` manually.
 
 Once you've added SharePoint license to your domain, you will be able to use Plumsail Forms for your lists and document libraries after completing the next step.
 
