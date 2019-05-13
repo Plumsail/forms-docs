@@ -7,7 +7,7 @@ SharePoint Online Installation (Office365)
 
 Video Guide
 --------------------------------------------------
-You can follow the instruction or watch a video here:
+You can follow the instruction or watch a video guide here:
 
 .. raw:: html
 
