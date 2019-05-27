@@ -9,3 +9,4 @@ Dynamic Forms with the use of JavaScript
     ./redirect-sp-save
     ./link-to-form
     ./form-dialog
+    ./add-discussion
