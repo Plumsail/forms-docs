@@ -34,7 +34,7 @@ Here's the simple form designed to receive customers feedback on Forms Designer 
 
 Once you design and save the form, you will see **General Settings** button pop up on top. This section contains important information you'll need to use while setting up the Flow:
 
-.. image:: ../images/how-to/email/6_GeneralSettings.png
+.. image:: ../images/how-to/email/6_GeneralSettingsNew.png
    :alt: General Settings
 
 |
