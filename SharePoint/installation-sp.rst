@@ -39,7 +39,7 @@ Plumsail Forms for SharePoint Online
 
 Bind your SharePoint tenant to your Account
 **************************************************
-In order to bind your SharePoint tenant to Plumsail account, you need to have permissions of **tenant administrator**. 
+In order to bind your SharePoint tenant to Plumsail account, you need to be logged in to Office365.
 
 .. note:: This is only necessary for installation and we are not storing or using your credentials in any way, only to get permission for the installation.
 
