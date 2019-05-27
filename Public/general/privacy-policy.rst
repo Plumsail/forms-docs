@@ -15,7 +15,6 @@ Personal information: what we collect, when and how we use it
 When you sign up for |Plumsail Account|, you may be asked to enter your name and email address. 
 We collect information from you when you install Plumsail Forms for the first time, such as the domain names for SharePoint. 
 Notice that we don’t store any information submitted through the Public Web Forms, with the exception of attachments, to allow them to be downloaded. Attachments are stored for 30 days, and then are automatically deleted. For the paid plans, storage can be cleared at any point inside the |Plumsail Account|.
-Forms for SharePoint send all the data directly to SharePoint, we have no access to it.
 All operations are performed over secure encrypted HTTPS connection. We never sell any personal info to third parties.
 
 .. |Plumsail Account| raw:: html

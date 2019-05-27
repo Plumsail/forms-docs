@@ -36,8 +36,6 @@ The attachments are stored in Microsoft Azure Storage, |encrypted at REST|. Atta
 Whenever your data is in transit between you and us, everything is encrypted and sent using HTTPS. Data at rest is encrypted using |AES 256| bit standards (one of the strongest block ciphers available) 
 with keys managed by Azure Storage Service Encryption. Data in transit is encrypted with SSL/TLS protocols.
 
-All the data submitted in SharePoint Forms, including attachments, is sent directly to SharePoint.
-
 .. |encrypted at REST| raw:: html
 
    <a href="https://docs.microsoft.com/en-us/azure/security/azure-security-encryption-atrest" target="_blank">encrypted at REST</a>
