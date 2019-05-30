@@ -208,9 +208,9 @@ SETTINGS
     *   - InternalName
         - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
     *   - SaveTo
-        - Select or create a new hidden field in the current SharePoint List or Library to save Ink Sketch data to.
+        - Select Multiline Plain Text field in the current SharePoint List to save Ink Sketch data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
         
-          Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
+          Alternatively create a new hidden field in editor. You can delete hidden fields by selecting "🖉 Manage" option in the dropdown. 
 
 LAYOUT
 
@@ -355,9 +355,9 @@ SETTINGS
     *   - New Line
         - Allows to select where the new line will be added - at the Top or at the Bottom of the table.
     *   - SaveTo
-        - Select or create a new hidden field in the current SharePoint List or Library to save DataTable data to.
+        - Select Multiline Plain Text field in the current SharePoint List to save DataTable data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
         
-          Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
+          Alternatively create a new hidden field in editor. You can delete hidden fields by selecting "🖉 Manage" option in the dropdown. 
 
 DataTable Column properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -424,9 +424,9 @@ SETTINGS
     *   - Items
         - Select available choices in the dropdown answers. Only available if Type is set to Dropdown.
     *   - SaveTo
-        - Select or create a new hidden field in the current SharePoint List or Library to save Likert scale data to.
+        - Select Multiline Plain Text field in the current SharePoint List to save Likert scale data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
         
-          Can also delete any hidden field by selecting "🖉 Manage" option in the dropdown. 
+          Alternatively create a new hidden field in editor. You can delete hidden fields by selecting "🖉 Manage" option in the dropdown. 
 
 .. _designer-listorlibrary:
 
