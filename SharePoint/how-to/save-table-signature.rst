@@ -49,7 +49,7 @@ Once you configure SaveTo property for these controls and save the form:
 
 |pic2|
 
-.. image:: ../images/how-to/save-table-signature/SaveTo.png
+.. |pic2| image:: ../images/how-to/save-table-signature/SaveTo.png
    :alt: SaveTo property
 
 You will see fields updated in the List View as well:
@@ -63,5 +63,5 @@ If you don't want to have this formatting applied, you can delete customizers in
 
 |pic4|
 
-.. |pic3| image:: ../images/how-to/save-table-signature/DeleteCustomizers.png
+.. |pic4| image:: ../images/how-to/save-table-signature/DeleteCustomizers.png
    :alt: Delete field customizers
