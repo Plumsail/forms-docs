@@ -7,7 +7,7 @@ Save Ink Sketch, DataTable, and Likert scale controls to SharePoint fields + Lis
 
 Description
 --------------------------------------------------
-Starting with version 1.1.6, it's now possible to save Ink Sketch and DataTable controls 
+Starting with version 1.1.6 it's now possible to save Ink Sketch and DataTable controls 
 to SharePoint fields when using them on a SharePoint Form. This means that the data will be saved when the form is saved.
 
 These fields can be created and deleted right in the designer when editing settings for one of the controls, created fields will be hidden. 
@@ -41,45 +41,27 @@ If you want to delete one of the hidden fields from the list, you can do it by s
 
 Field Customizers
 --------------------------------------------------
-If you are looking for ways to display Ink Sketch, DataTable or Likert scale controls on the List View,
-we recommend to take a look at the |Field Customizers package|.
+Starting with version 1.4.3 Plain text fields holding data for Ink Sketch, DataTable or Likert Scale will automatically apply custom rendering in List View.
 
-.. |Field Customizers package| raw:: html
+.. Note:: :doc:`Update the app package </general/update-package>` for this functionality.
 
-   <a href="https://github.com/Plumsail/forms-fields#fields-customizers" target="_blank">Field Customizers package</a>
-
-It's a small package, which you can add to your App Catalog, and it will allow you to add new columns to lists or libraries. These columns are designed to visually present Forms' controls in List View.
-
-|pic1|
-
-.. |pic1| image:: ../images/how-to/save-table-signature/PlumsailColumns.png
-   :alt: Add Plumsail Column
-
-
-For example, Ink Sketch field stored in Signature column will show an image in List View:
+Once you configure SaveTo property for these controls and save the form:
 
 |pic2|
 
-.. |pic2| image:: ../images/how-to/save-table-signature/SignatureColumn.png
-   :alt: Signature Field Customizer
+.. image:: ../images/how-to/save-table-signature/SaveTo.png
+   :alt: SaveTo property
 
-Data Table column will render an HTML table in List View:
+You will see fields updated in the List View as well:
 
 |pic3|
 
-.. |pic3| image:: ../images/how-to/save-table-signature/DataTableColumn.png
-   :alt: Data Table Field Customizer
+.. |pic3| image:: ../images/how-to/save-table-signature/CustomizersView.png
+   :alt: Field customizers in List View
 
-
-Finally, Likert Scale will allow you to see all the selected options:
+If you don't want to have this formatting applied, you can delete customizers in a new editor menu:
 
 |pic4|
 
-.. |pic4| image:: ../images/how-to/save-table-signature/LikertColumn.png
-   :alt: Likert scale Field Customizer
-
-You can also clone the repository and use it to customize columns further, or add new Field Customizers, by following this |instruction from Microsoft|.
-
-.. |instruction from Microsoft| raw:: html
-
-   <a href="https://docs.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/building-simple-field-customizer" target="_blank">instruction from Microsoft</a>
+.. |pic3| image:: ../images/how-to/save-table-signature/DeleteCustomizers.png
+   :alt: Delete field customizers

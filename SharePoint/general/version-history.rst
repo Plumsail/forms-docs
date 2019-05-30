@@ -1,6 +1,12 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.4.3
+--------------------------------------------------
+Added List View :ref:`field customizers<save-fieldcustomizers>` for Ink Sketch, DataTable and Likert Scale controls. Fields will automatically show rendered in List View.
+
+.. Note:: :doc:`Update the app package </general/update-package>` for new functionality.
+
 v1.4.1
 --------------------------------------------------
 Added :doc:`a new web part</designer/web-part>` allowing users to publish a SharePoint form (from any site within the tenant) or a public form to any SP page. 
