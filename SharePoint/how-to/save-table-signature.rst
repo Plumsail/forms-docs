@@ -11,8 +11,11 @@ Starting with version 1.1.6 it's now possible to save Ink Sketch and DataTable c
 to SharePoint fields when using them on a SharePoint Form. This means that the data will be saved when the form is saved.
 
 These fields can be created and deleted right in the designer when editing settings for one of the controls, created fields will be hidden. 
-Alternatively, you can create a new multiple lines Plain Text column and store control's data in it. 
-Also, check out :ref:`save-fieldcustomizers`, they'll allow you to add new columns with special rendering to the list.
+Alternatively, you can create a new multiple lines Plain Text column and store control's data in it, and this will automatically render saved data in List View.
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f06XijcSLqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 How to configure
 --------------------------------------------------
