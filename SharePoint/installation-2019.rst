@@ -17,6 +17,8 @@ Install Farm Solution
 ------------------------------------------------------------
 |Download setup file| and run it on one of the servers in your Sharepoint 2019 farm as Farm Administrator. Follow wizard steps.
 
+.. Note:: Alternatively, :doc:`use WSP package </install-wsp>` to install Plumsail Forms.
+
 .. |Download setup file| raw:: html
 
    <a href="https://plumsail.com/forms/start-trial/" target="_blank">Download setup file</a>
@@ -36,6 +38,8 @@ Then go to any of the lists on the Site Collection where you've activated Plumsa
    :alt: Run Forms from Ribbon
 
 To complete installation, follow the instruction steps described there.
+
+.. _install-app-package2019:
 
 Upload package to App Catalog
 ------------------------------------------------------------
