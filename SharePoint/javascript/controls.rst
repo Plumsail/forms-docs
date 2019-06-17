@@ -847,6 +847,7 @@ Properties
                 //change button's Icon
                 fd.control('SPDataTable0').buttons[1].class  = 'btn-danger';
 
+                //add new button
                 var button = {text: "Export", 
                               class: 'btn-secondary', 
                               visible: true, 
@@ -855,6 +856,12 @@ Properties
                               click: function() { alert("Exporting!"); }}
 
                 fd.control('SPDataTable0').buttons.push(button);
+
+                //hide button if 0 elements are selected (dynamic)
+                fd.control('SPDataTable0').$watch('selectedItems', 
+                    function(items) { 
+                        fd.control('SPDataTable0').buttons[2].visible = items.length > 0 ;
+                    });
             
     *   -   **readonly**
         -   Property that specifies if the user can add new items/documents to the control, edit or delete existing items/documents. 
@@ -959,7 +966,7 @@ Properties
                     height: 720
                 }
     
-*   -   **selectedItems**
+    *   -   **selectedItems**
         -   Property that holds selected items in an array.
             
             Can be used to retrieve items, but not to modify them.
@@ -1070,21 +1077,6 @@ Events
                         itemIds.forEach(function(item) {
                             console.log(item);
                         });
-                    });
-    *   -   **selectedItems**
-        -   Fired when the user selects an item or removes a selection.
-
-            **itemIds** is an array of IDs of uploaded files.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.control('SPDataTable0').$watch('selectedItems', 
-                    function(items) { 
-                        fd.control('SPDataTable0').buttons[1].visible = items.length > 0 ;
                     });
 
     *   -   **beforeItemsAttach**
