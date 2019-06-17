@@ -24,6 +24,16 @@ After first configuration, please, **re-save** the forms that you want to open i
 **Important!** There is a slight delay between the time when a user opens the list and when the script loads completely for panel forms, so if the users open a form too quickly, 
 then they will be redirected to a default full-screen form instead of a panel.
 
+Custom Width
+*************************************************************
+If you want to change the width of the Panel, and three given options do not suit your needs, you can simply use the following CSS and specify any width that you need:
+
+.. code-block:: css
+
+        .ms-Panel-main{
+          width: 1200px !important;
+        }
+
 Advanced
 -------------------------------------------------------------
 Inside Form Panel configuration there is the Custom Code tab, where you can add JavaScript which will execute when the script loads in the List View.
