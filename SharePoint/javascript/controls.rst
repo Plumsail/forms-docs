@@ -1016,34 +1016,6 @@ Methods
             .. code-block:: javascript
 
                 fd.control('SPDataTable0').refresh();
-
-
-Events
-**************************************************
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30
-        
-    *   -   Name
-        -   Description/Examples
-
-    *   -   **ready**
-        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.spRendered(function() {
-                    fd.control('SPDataTable0').ready().then(function(dt) { 
-                        //dt parameter is the same as fd.control('SPDataTable0')
-                        console.log('SPDataTable0 is initialized');
-                    });
-                });
-
     *   -   **change**
         -   Fired when the user applies any changes to the List or Library.
 
@@ -1059,26 +1031,6 @@ Events
                     function() {
                         alert('List or Library changed');
                     });
-    
-    *   -   **filesUploaded**
-        -   Fired when the user uploads files to Document Library via List or Library control.
-
-            **itemIds** is an array of IDs of uploaded files.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                //log all uploaded files to console
-                fd.control('SPDataTable0').$on('filesUploaded',
-                    function(itemIds) {
-                        itemIds.forEach(function(item) {
-                            console.log(item);
-                        });
-                    });
-
     *   -   **beforeItemsAttach**
         -   Fired when saving New Form that has items in Library or List control, that will be tied to the parent via lookup field.
 
@@ -1112,6 +1064,52 @@ Events
                         resolve();
                     })
                 });
+
+
+Events
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+
+    *   -   **ready**
+        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.spRendered(function() {
+                    fd.control('SPDataTable0').ready().then(function(dt) { 
+                        //dt parameter is the same as fd.control('SPDataTable0')
+                        console.log('SPDataTable0 is initialized');
+                    });
+                });
+    
+    *   -   **filesUploaded**
+        -   Fired when the user uploads files to Document Library via List or Library control.
+
+            **itemIds** is an array of IDs of uploaded files.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                //log all uploaded files to console
+                fd.control('SPDataTable0').$on('filesUploaded',
+                    function(itemIds) {
+                        itemIds.forEach(function(item) {
+                            console.log(item);
+                        });
+                    });
     
 
 .. |kendoGrid widget| raw:: html
