@@ -959,6 +959,19 @@ Properties
                     height: 720
                 }
     
+*   -   **selectedItems**
+        -   Property that holds selected items in an array.
+            
+            Can be used to retrieve items, but not to modify them.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').selectedItems;
+
     *   -   **widget**
         -   Property that holds |kendoGrid widget| for the control.
             
