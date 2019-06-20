@@ -8,3 +8,4 @@ List or Library configurations
     ./caml-filter
     ./root-folder
     ./document-meta
+    ./list-or-library-export
