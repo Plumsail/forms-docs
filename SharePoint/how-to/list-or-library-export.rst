@@ -9,6 +9,11 @@ Description
 --------------------------------------------------
 List or Library control allows selection of multiple items, which can then be manipulated in a variety of ways.
 
+|multiple|
+
+.. |multiple| image:: ../images/designer/controls/ListOrLibraryMultiple.png
+   :alt: Multiple items can be selected
+
 In this article we'll show you how you can add a new button to List or Library control which will start a new Flow, and use selected items to create a PDF invoice.
 
 Form configuration
@@ -25,62 +30,49 @@ We'll use JavaScript to add a new button:
 .. code-block:: javascript
 
     //this URL needs to be updated
-    var url = "FLOW_URL";
+    var url = 'FLOW_URL';
 
     fd.spRendered(function() {
         //new button
-        var button = {
-            text: "Email PDF invoice",
+        var pdfButton = {
+            text: 'Email PDF invoice',
             class: 'btn-secondary',
-            visible: true,
+            visible: false,
             icon: 'PDF',
             iconType: 0,
-            click: function() { 
+            click: function() {
                 //get item IDs of selected items
-                var items = {};
-                items.ids = [];
-                fd.control("SPDataTable0").selectedItems.forEach(function(item){
-                  items.ids.push(parseInt(item.ID));
-                });
+                var itemIds = fd.control('SPDataTable0').selectedItems.map(function(item){ return item.ID} );
 
                 //send a request to start flow
                 fetch(url, {
                     method: 'POST',
-                    body: JSON.stringify(items), // data can be `string` or {object}!
+                    body: JSON.stringify({ids: itemIds}), 
                     headers:{
-                      'Content-Type': 'application/json'
+                    'Content-Type': 'application/json'
                     }
-                }).then(  
-                  function(response) {  
-                    if (response.status >= 300) {  
-                      alert('Looks like there was a problem. Status Code: ' +  
-                        response.status);  
-                      return;  
+                })
+                .then(function(response) {
+                    if (response.status !== 202) {
+                    alert('Looks like there was a problem. Status Code: ' + response.status);
+                    } else {
+                    alert('Please, check your e-mail.');
                     }
-                    else{
-                      alert("Sent succesfully");
-                    }
-                  }  
-                )  
-                .catch(function(err) {  
-                  alert('Fetch Error :-S', err);  
-                });
+                })
             }
         }
-        
-        
 
         fd.control('SPDataTable0').ready().then(function(dt) {
             //dt parameter is the same as fd.control('SPDataTable0')
-            dt.buttons.push(button);
-            dt.buttons[2].visible = false;
-            dt.$watch('selectedItems',
-            function(items) {
-                dt.buttons[2].visible = items.length > 0 ;
+            dt.buttons.push(pdfButton);
+
+            dt.$watch('selectedItems', function(items) {
+                pdfButton.visible = items && items.length > 0 ;
             });
         });
-        
+
     });
+        
 
 This JavaScript code will allow button to show up only when some items are selected. This button would send a POST request to MS Flow with the IDs of currently selected items.
 
@@ -141,16 +133,28 @@ This can be used with Compose action to define certain variables. Search for Com
 .. |pic6| image:: ../images/how-to/list-or-library-export/ComposeAppend.png
    :alt: Compose and append to array
 
-After getting all the items to the Array, it's now possible to use them in our own actions. In this example, we're using two actions from Plumsail Documents.
+After getting all the items to the Array, it's now possible to use them in our own actions. In this example, we're using two actions from |Plumsail Documents|.
 
-We'll use Create HTML from Template:
+.. |Plumsail Documents| raw:: html
+
+   <a href="https://plumsail.com/documents/" target="_blank">Plumsail Documents</a>
+
+We'll use |Create HTML from Template|:
+
+.. |Create HTML from Template| raw:: html
+
+   <a href="https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#create-html-from-template" target="_blank">Create HTML from Template</a>
 
 |pic7|
 
 .. |pic7| image:: ../images/how-to/list-or-library-export/htmlTemplate.png
    :alt: Create HTML from Template
 
-And then Convert HTML to PDF:
+And then |Convert HTML to PDF|:
+
+.. |Convert HTML to PDF| raw:: html
+
+   <a href="https://plumsail.com/docs/documents/v1.x/flow/actions/document-processing.html#convert-html-to-pdf" target="_blank">Convert HTML to PDF</a>
 
 |pic8|
 
