@@ -80,36 +80,23 @@ Last but not least, we use JavaScript in order to apply filtering:
 
 .. code-block:: javascript
 
+    function filterProducts(category) {
+        var categoryId = category && category.LookupId || category || null;
+        fd.field('Product').filter = 'Category/Id eq ' + categoryId;
+        fd.field('Product').widget.dataSource.read();
+    }
+
     fd.spRendered(function() {
         fd.field('Product').ready().then(function() {
-            function filterLookup(v){
-                // getting the selected Category (0 if nothing is selected).
-                var categoryId = 0;
-                if (v) {
-                    categoryId = isNaN(v) ? v.LookupId : v;
-                }
-
-                if (categoryId) {
-                    // setting filtration
-                    fd.field('Product').filter = 'Category/Id eq ' + categoryId;
-                } else {
-                    // resetting the filtration
-                    fd.field('Product').filter = null;
-                }
-
-                fd.field('Product').widget.dataSource.read();
-            }
+            //filter Products when Category changes
+            fd.field('Category').$on('change', function(value){
+                filterProducts(value);
+                fd.field('Product').value = null;
+            });
             
             //filter Products when form opens
             fd.field('Category').ready().then(function(field) {
-                filterLookup(field.value);
-            });
-            
-            
-            //filter Products when Category changes
-            fd.field('Category').$on('change', function(value){
-                filterLookup(value);
-                fd.field('Product').value = null;
+                filterProducts(field.value);
             });
         });
     });
@@ -140,95 +127,3 @@ And here I've selected Camera Category:
 
 .. |pic7| image:: ../images/how-to/lookup-cascading/cameras.png
    :alt: Cameras selected
-
-
-Reverse Populating
---------------------------------------------------
-Finally, we also want to showcase the Reverse Populating, when a user first selects value in secondary lookup, and that in fact populates the primary lookup.
-
-Let's say, user selects Product first, then we want Category to be automatically populated:
-
-|pic8|
-
-.. |pic8| image:: ../images/how-to/lookup-cascading/noCategory.png
-   :alt: No category selected
-
-First, we'll need to retrieve Extra field Category which is stored in the List of our products. 
-Since it's a Lookup field, we need to Expand it first and then retrieve Id specifically, like this:
-
-|pic9|
-
-.. |pic9| image:: ../images/how-to/lookup-cascading/extra.png
-   :alt: Expand extra field
-
-Then, when we add the following code to the form:
-
-.. code-block:: javascript
-
-    fd.spRendered(function() {
-        fd.field('Product').ready().then(function() {
-            //reverse populate Category
-            fd.field('Product').$on('change', function(value){
-                if(value && value.Category.Id){
-                    fd.field('Category').value = value.Category.Id;
-                }
-            });
-        });
-    });
-
-To combine both Cascading Lookup and Reverse Populating, use the following code:
-
-.. code-block:: javascript
-
-    fd.spRendered(function() {
-        fd.field('Product').ready().then(function() {
-            function filterLookup(v){
-                // getting the selected Category (0 if nothing is selected).
-                var categoryId = 0;
-                if (v) {
-                    categoryId = isNaN(v) ? v.LookupId : v;
-                }
-
-                if (categoryId) {
-                    // setting filtration
-                    fd.field('Product').filter = 'Category/Id eq ' + categoryId;
-                } else {
-                    // resetting the filtration
-                    fd.field('Product').filter = null;
-                }
-
-                fd.field('Product').widget.dataSource.read();
-            }
-
-            //filter Products when form opens
-            fd.field('Category').ready().then(function(field) {
-                filterLookup(field.value);
-            });
-
-
-            //filter Products when Category changes
-            fd.field('Category').$on('change', function(value){
-                filterLookup(value);
-                if (value) {
-                    value = isNaN(value) ? value.LookupId : value;
-                }
-                if(!value || !fd.field('Product').value.hasOwnProperty('Category') || fd.field('Product').value.Category.Id != value){
-                    fd.field('Product').value = null;
-                }
-            });
-            
-            //reverse populate Category
-            fd.field('Product').$on('change', function(value){
-                if(value && value.Category.Id){
-                    fd.field('Category').value = value.Category.Id;
-                }
-            });
-        });
-    });
-
-Now, whenever a Product is selected on our form, it sets the appropriate Category automatically:
-
-|pic10|
-
-.. |pic10| image:: ../images/how-to/lookup-cascading/cascadingLookup.gif
-   :alt: Result gif
