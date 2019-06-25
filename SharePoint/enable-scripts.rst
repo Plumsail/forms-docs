@@ -63,11 +63,11 @@ Open SharePoint Admin Center:
 .. |pic3| image:: /images/scripts/AdminSharePoint.png
    :alt: Admin center for SharePoint
 
-Switch to classic mode if your Admin Center opens in Modern UI:
+Switch to classic mode in Settings, if your Admin Center opens in Modern UI:
 
 |pic4|
 
-.. |pic4| image:: /images/scripts/ClassicAdminSharePoint.png
+.. |pic4| image:: /images/scripts/ClassicAdminSharePointNew.png
    :alt: Classic Admin center for SharePoint
 
 Select **Settings** in the left menu:
