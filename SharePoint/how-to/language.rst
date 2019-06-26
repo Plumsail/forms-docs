@@ -52,3 +52,30 @@ The forms are generated for each unique Content Type name, in this case: **Task*
 ``/SitePages/PlumsailForms/{ListName}/{ContentType}/NewForm.aspx``
 
 Make sure that the Content Type has a different name in other languages to have different forms. If you don't want this - use the same name for Content Type across languages.
+
+How to fix missing forms
+------------------------------------------------------
+Sometimes, you can design a form, but when a user tries to open it, they'll be redirected to a non-existing page and will get a 404 error:
+
+|pic6|
+
+.. |pic6| image:: ../images/how-to/language/404.png
+   :alt: 404 Error
+
+This will often happen when form's creator preffered language does not match the preffered lanuage of the user.
+
+If you don't want to create forms for all the languages, simply go to Site Settings -> Language settings:
+
+|pic7|
+
+.. |pic7| image:: ../images/how-to/language/LanguageSettings.png
+   :alt: Language settings
+
+And disable all languages for which you don't want to create forms: 
+
+|pic8|
+
+.. |pic8| image:: ../images/how-to/language/DisableLanguages.png
+   :alt: Disable languages
+
+This will then ensure that users are redirected to the site's default language form.

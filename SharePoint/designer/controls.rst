@@ -19,7 +19,7 @@ Even though it's a plain text control, you can still format the text and apply s
 .. image:: ../images/designer/controls/PlainText.png
    :alt: Plain Text
 
-You can use this control to display field values on Edit/Display forms when the form opens. Simply place [Internal Field Name] in square brackets like this:
+.. Note:: You can use this control to display field values on Edit/Display forms when the form opens. Simply place [Internal Field Name] in square brackets like this:
 
 .. code-block:: javascript
 
@@ -70,7 +70,7 @@ Unlike Plain Text control, Rich Text control comes with an editor which allows y
 .. image:: ../images/designer/controls/RichText.png
    :alt: Rich Text
 
-You can use this control to display field values on Edit/Display forms when the form opens. Simply place [Internal Field Name] in square brackets like this:
+.. Note:: You can use this control to display field values on Edit/Display forms when the form opens. Simply place [Internal Field Name] in square brackets like this:
 
 .. code-block:: javascript
 
