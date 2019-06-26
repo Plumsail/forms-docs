@@ -19,6 +19,21 @@ Even though it's a plain text control, you can still format the text and apply s
 .. image:: ../images/designer/controls/PlainText.png
    :alt: Plain Text
 
+You can use this control to display field values on Edit/Display forms when the form opens. Simply place [Internal Field Name] in square brackets like this:
+
+.. code-block:: javascript
+
+    Current item #[ID] has been created by [Author].
+
+And you'll get the following results:
+
+|Plain Text Fields|
+
+.. |Plain Text Fields| image:: ../images/designer/controls/PlainTextFields.png
+   :alt: Plain Text - Fields
+
+This works for both the default fields and newly created fields.
+
 Plain Text properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Plain Text control has the following settings:
@@ -53,7 +68,22 @@ Rich Text control is also used to add text to your form, just like Plain Text co
 Unlike Plain Text control, Rich Text control comes with an editor which allows you to style your text without relying on CSS.
 
 .. image:: ../images/designer/controls/RichText.png
-   :alt: Plain Text
+   :alt: Rich Text
+
+You can use this control to display field values on Edit/Display forms when the form opens. Simply place [Internal Field Name] in square brackets like this:
+
+.. code-block:: javascript
+
+    Current item #[ID] has been created by [Author].
+
+And you'll get the following results:
+
+|Rich Text Fields|
+
+.. |Rich Text Fields| image:: ../images/designer/controls/RichTextFields.png
+   :alt: Rich Text - Fields
+
+This works for both the default fields and newly created fields.
 
 Rich Text properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
