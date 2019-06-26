@@ -485,6 +485,14 @@ Alternative editing mode allows inline editing on the form:
 .. |inline| image:: ../images/designer/controls/ListOrLibraryInline.png
    :alt: Inline editing
 
+Starting with **v1.4.4** you can select multiple items in control:
+
+|multiple|
+
+.. |multiple| image:: ../images/designer/controls/ListOrLibraryMultiple.png
+   :alt: Multiple items can be selected
+
+
 List or Library properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every List or Library control has the following settings:

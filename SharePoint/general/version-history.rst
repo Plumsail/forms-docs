@@ -1,6 +1,15 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.4.4
+--------------------------------------------------
+Updated **List or Library** control - now you can select multiple elements, as well as configure buttons with :ref:`JS API updates<javascript-listorlibrary>`.
+
+|multiple|
+
+.. |multiple| image:: ../images/designer/controls/ListOrLibraryMultiple.png
+   :alt: Multiple items can be selected
+
 v1.4.3
 --------------------------------------------------
 Added List View :ref:`field customizers<save-fieldcustomizers>` for Ink Sketch, DataTable and Likert Scale controls. Fields will automatically show rendered in List View.
