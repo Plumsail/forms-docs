@@ -28,18 +28,3 @@ If you are using app package *v.1.0.4.0* or an earlier version, you might face i
 
 
 To update to package *v.1.0.5.0* or later, you will also need to re-save all the forms that you have in the latest version of Plumsail Forms designer app. This will update the scripts on the page of each particular form, and fix many issues which might've been present otherwise.
-
-.. important:: If you update the app package, without re-saving the forms, forms that haven't been saved will become unavailable.
-
-Update from v.1.0.5.0
----------------------------------------------------
-If you are updating from *v.1.0.5.0* to *v.1.0.6.0* or later, you wouldn't need to re-save all the forms, but in order to get full functionality and fix any issues with the forms opening in IE, you will need to go to the site, or multiple sites, where you use Plumsail Forms, go to Site contents -> Site Pages/PlumsailForms and find and delete **redirect.aspx**.
-
-|pic2|
-
-.. |pic2| image:: /images/appcatalog/redirect-aspx.png
-   :alt: redirect.aspx page
-
-This file is responsible for routing to a particular forms, to update it, you will need to open ANY form and save it using the latest version of the app. This will create new **redirect.aspx** and the link to this particular form will be updated. You won't need to delete the file again, simply re-save the forms that you have issues with, and they should be fixed.
-
-Now, older forms will continue functioning properly, but in order to fix any issues with URLs - re-save the forms that give the error.
