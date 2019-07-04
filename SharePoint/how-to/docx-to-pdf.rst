@@ -137,7 +137,7 @@ As we need to get multiple items we do the following:
 
 |pic8|
 
-.. |pic8| image:: ../images/how-to/docx-to-pdf/apply_to_each.png
+.. |pic8| image:: ../images/how-to/docx-to-pdf/applyToEach.png
    :alt: Apply to each
 
 Now it’s time to create the file from the template and convert it to PDF. That are two actions from |Plumsail Documents|. 
