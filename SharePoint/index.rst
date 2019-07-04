@@ -74,6 +74,7 @@ SharePoint Forms for Modern UI
             how-to/dynamic-forms-js
             how-to/list-or-library-section
             how-to/lookup-section
+            how-to/microsoft-flow
             how-to/region-culture
             how-to/prov-section
             how-to/other
