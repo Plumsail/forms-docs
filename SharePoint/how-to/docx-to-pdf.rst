@@ -47,28 +47,29 @@ And we will create simple new/edit form for out tasks, excluding “Work_order_i
 .. |pic1| image:: ../images/how-to/docx-to-pdf/DataSource.png
    :alt: Data Source
 
-In Edit form we will add an option to send the result file to a specific email. For this, we will create a “Send PDF” checkbox and an “Email” field.  
+In Edit form, we will add an option to send the result file to a specific email. For this, we will create a “Send PDF” checkbox and an “Email” field.  
 
 In addition, we want the "Email" field to be disabled if the checkbox is unchecked. The following code will do the job. 
 Next, we will create forms for the “Work Order”. In the “New” view we add general fields and “List or Library” control. In settings for “List or Library” control, in Data source specify the child list, view and Lookup filed. “Editing” should be “Dialog”. 
 
 .. code-block:: javascript
 
-   fd.spRendered(function() { 
-    function SendEmail() { 
-        if (fd.field('SendPDF').value) { 
-                        // Setting field Email as editable 
-            fd.field('Email').disabled = false; 
-        } else { 
-                        // Setting field Email as read-only 
-            fd.field('Email').disabled = true; 
+    fd.spRendered(function() { 
+        function SendEmail() { 
+            if (fd.field('SendPDF').value) { 
+                // Setting field Email as editable 
+                fd.field('Email').disabled = false; 
+            } else { 
+                // Setting field Email as read-only 
+                fd.field('Email').disabled = true; 
+            } 
         } 
-    } 
-            // Calling SendEmail when the user changes Send PDF field 
-    fd.field('SendPDF').$on('change',SendEmail); 
-    // Calling SendEmail on form loading 
-            SendEmail(); 
-            });     
+        // Calling SendEmail when the user changes Send PDF field 
+        fd.field('SendPDF').$on('change',SendEmail); 
+
+        // Calling SendEmail on form loading 
+        SendEmail(); 
+    });     
 
 As a result, the editing form is ready and looks something like this. 
 
@@ -81,17 +82,18 @@ As a result, the editing form is ready and looks something like this.
 Flow
 --------------------------------------------------
 
-Create a new Flow from blank that will start when the item created or modified.  Specify the address of your site and the list name. 
+Create a new Flow from blank that will start with SharePoint connector - *When the item created or modified*.  Specify the address of your site and the name of the list. 
 
-The final stream flow looks like this, and next, we will create it step by step. 
+The final Flow will looks like this:
 
 |pic3|
 
 .. |pic3| image:: ../images/how-to/docx-to-pdf/flow.png
    :alt: Flow
 
+We'll create it step by step.
 
-Add “Initialize variable” step. We’ll need it later to hold SharePoint Items. Specify the name, “Type” is array, value is blank. 
+Add *Initialize variable* action. We’ll need it later to hold SharePoint Items. Specify the name, "Type" is array, and the value is blank. 
 
 |pic4|
 
@@ -99,25 +101,25 @@ Add “Initialize variable” step. We’ll need it later to hold SharePoint Ite
    :alt: Initialize variable
 
 
-The workflow will create PDF and send email only if “Send PDF” is checked, so we add condition first. 
+The Flow will create PDF and send email only if “Send PDF” is checked, so we add a condition first. 
 
 |pic5|
 
 .. |pic5| image:: ../images/how-to/docx-to-pdf/condition.png
    :alt: condition
 
-“If no” section will stay blank and in “If yes” section we will add the steps.  
+“If no” section will stay blank and in “If yes” section we will add the following steps:  
 
-Further, we get file content of the template file, in this case, .docx. You need to specify the SharePoint site URL and path to your file. You can use different connectors to get files from other locations. 
+First, we get file content of the template file, in this case, **.docx**. You need to specify the SharePoint site URL and path to your file. You can use different connectors to get files from other locations. 
 
 |pic6|
 
 .. |pic6| image:: ../images/how-to/docx-to-pdf/content.png
    :alt: File Content
 
-We already have the ready template file. And to know how to create your own file, please, have a look at |Create DOCX from template| article to understand how the templating engine works. 
+We already have a template file prepared. To find out how to create your own template file, please, have a look at |Create DOCX from template| article to understand how the templating engine works. 
 
-Next, we will get all the items from the child list with “Get items” action and filter them by parent item id. 
+Next, we will get all the items from the child list with *Get items* action and filter them by Parent Item's ID. 
 
 |pic7|
 
@@ -138,7 +140,7 @@ As we need to get multiple items we do the following:
 
 Now it’s time to create the file from the template and convert it to PDF. That are two actions from |Plumsail Documents|. 
 
-First we will Create |DOCX from Template|: 
+First, we will Create |DOCX from Template|: 
 
 |pic9|
 
@@ -152,14 +154,14 @@ And then |Convert DOCX to PDF|:
 .. |pic10| image:: ../images/how-to/docx-to-pdf/docx_to_pdf.png
    :alt: Convert DOCX to PDF
 
-Eventually, we want to send an email to the address specified in the form and attach the result PDF file to it. 
+Eventually, we want to *Send an email* to the address specified in the form and attach the result PDF file to it. 
 
 |pic11|
 
 .. |pic11| image:: ../images/how-to/docx-to-pdf/email.png
    :alt: Send email
 
-Also, we want to store the result PDF file in the SharePoint library. So, we add an action “Create file”, select the site address, folder path, file name, and file content. 
+We can also store the result PDF file in the SharePoint library. For that, we add a *Create file* action, select the site address, folder path, file name, and file content. 
 
 |pic12|
 
