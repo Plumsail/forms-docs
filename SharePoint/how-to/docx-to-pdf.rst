@@ -29,28 +29,30 @@ We will create 2 lists:
 - To-do (child) 
 
 
-The “Work Order” form will store information about the customer and the list of tasks. To bind the task list and the form we will use :doc:`“List or Library” </how-to/list-or-library-section>` control. For more information about the control, please refer to :doc:`“Create and bind associated items or documents on Modern SharePoint Forms” </how-to/child-parent-form>` article.  
+The "Work Order" form will store information about the customer and the list of tasks. To bind the task list and the form we will use :doc:`List or Library </how-to/list-or-library-section>` control. 
 
-In this example the “To-do” list has the following fields: 
+.. Note:: For more information about the control, please refer to :doc:`Create and bind associated items or documents on Modern SharePoint Forms </how-to/child-parent-form>` article.  
+
+In this example the "To-do" list has the following fields: 
 
 - Description (text field) 
 - Due date (date field) 
 - Assigned To (choice field) 
 - Status (choice field) 
-- Work_order_id (lookup value referred to the “Work Order” list) 
+- Work_order_id (lookup value referred to the "Work Order" list) 
 
 
-And we will create simple new/edit form for out tasks, excluding “Work_order_id” field, as it will set automatically, and we don’t want users to change it manually. 
+And we will create simple new/edit form for out tasks, excluding "Work_order_id" field, as it will get set automatically, and we don’t want users to change it manually. 
 
 |pic1|
 
 .. |pic1| image:: ../images/how-to/docx-to-pdf/DataSource.png
    :alt: Data Source
 
-In Edit form, we will add an option to send the result file to a specific email. For this, we will create a “Send PDF” checkbox and an “Email” field.  
+In Edit form, we will add an option to send the result file to a specific email. For this, we will create a "Send PDF" checkbox and an "Email" field.  
 
 In addition, we want the "Email" field to be disabled if the checkbox is unchecked. The following code will do the job. 
-Next, we will create forms for the “Work Order”. In the “New” view we add general fields and “List or Library” control. In settings for “List or Library” control, in Data source specify the child list, view and Lookup filed. “Editing” should be “Dialog”. 
+Next, we will create forms for the "Work Order". In the "New" view we add general fields and "List or Library" control. In settings for "List or Library" control, in Data source specify the child list, view and Lookup filed. "Editing" should be "Dialog". 
 
 .. code-block:: javascript
 
@@ -101,14 +103,14 @@ Add *Initialize variable* action. We’ll need it later to hold SharePoint Items
    :alt: Initialize variable
 
 
-The Flow will create PDF and send email only if “Send PDF” is checked, so we add a condition first. 
+The Flow will create PDF and send email only if "Send PDF" is checked, so we add a condition first. 
 
 |pic5|
 
 .. |pic5| image:: ../images/how-to/docx-to-pdf/condition.png
    :alt: condition
 
-“If no” section will stay blank and in “If yes” section we will add the following steps:  
+"If no" section will stay blank and in "If yes" section we will add the following steps:  
 
 First, we get file content of the template file, in this case, **.docx**. You need to specify the SharePoint site URL and path to your file. You can use different connectors to get files from other locations. 
 
@@ -128,10 +130,10 @@ Next, we will get all the items from the child list with *Get items* action and 
 
 As we need to get multiple items we do the following: 
 
-1. Add “apply to each” control;
-2. In “Select an output from previous steps” specify a value from “Get items” action;
-3. Add “Compose” action to define current item properties;
-4. Then add “Append to array variable”, select the variable name from the drop-down, and value is the output from “Compose” action. 
+1. Add "apply to each" control;
+2. In "Select an output from previous steps" specify a value from "Get items" action;
+3. Add "Compose" action to define current item properties;
+4. Then add "Append to array variable", select the variable name from the drop-down, and value is the output from "Compose" action. 
 
 |pic8|
 
