@@ -1,6 +1,10 @@
 Version history
 ==================================================
 
+v1.4.5
+--------------------------------------------------
+Added **fd.messages** property to customize message text with JS API.
+
 v1.4.1
 --------------------------------------------------
 Internal names equal to titles for Common Fields by default.

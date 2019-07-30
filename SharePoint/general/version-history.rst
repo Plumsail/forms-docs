@@ -5,7 +5,7 @@ v1.4.5
 --------------------------------------------------
 Updated **List or Library** control - now you can select a **Content Type** of a new item in the List or Library control or create a folder.
 
-Updated language properties in JS API.
+Added **fd.messages** property to customize message text with JS API.
 
 Minor bugfixes.
 
