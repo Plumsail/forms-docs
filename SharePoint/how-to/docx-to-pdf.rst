@@ -56,21 +56,22 @@ Next, we will create forms for the "Work Order". In the "New" view we add genera
 
 .. code-block:: javascript
 
-    fd.spRendered(function() { 
-        function SendEmail() { 
-            if (fd.field('SendPDF').value) { 
-                // Setting field Email as editable 
-                fd.field('Email').disabled = false; 
-            } else { 
-                // Setting field Email as read-only 
-                fd.field('Email').disabled = true; 
+    function updateEmailAvailability() { 
+        if (fd.field('SendPDF').value) { 
+            // Setting field Email as editable 
+            fd.field('Email').disabled = false; 
+        } else { 
+            // Setting field Email as read-only 
+            fd.field('Email').disabled = true; 
             } 
         } 
-        // Calling SendEmail when the user changes Send PDF field 
-        fd.field('SendPDF').$on('change',SendEmail); 
+    fd.spRendered(function() { 
 
-        // Calling SendEmail on form loading 
-        SendEmail(); 
+        // Calling updateEmailAvailability when the user changes Send PDF field 
+        fd.field('SendPDF').$on('change',updateEmailAvailability); 
+
+        // Calling updateEmailAvailability on form loading 
+        updateEmailAvailability(); 
     });     
 
 As a result, the editing form is ready and looks something like this. 
@@ -94,14 +95,6 @@ The final Flow will looks like this:
    :alt: Flow
 
 We'll create it step by step.
-
-Add *Initialize variable* action. We’ll need it later to hold SharePoint Items. Specify the name, "Type" is array, and the value is blank. 
-
-|pic4|
-
-.. |pic4| image:: ../images/how-to/docx-to-pdf/variable.png
-   :alt: Initialize variable
-
 
 The Flow will create PDF and send email only if "Send PDF" is checked, so we add a condition first. 
 
@@ -128,18 +121,6 @@ Next, we will get all the items from the child list with *Get items* action and 
 .. |pic7| image:: ../images/how-to/docx-to-pdf/get_items.png
    :alt: Get Items
 
-As we need to get multiple items we do the following: 
-
-1. Add "apply to each" control;
-2. In "Select an output from previous steps" specify a value from "Get items" action;
-3. Add "Compose" action to define current item properties;
-4. Then add "Append to array variable", select the variable name from the drop-down, and value is the output from "Compose" action. 
-
-|pic8|
-
-.. |pic8| image:: ../images/how-to/docx-to-pdf/applyToEach.png
-   :alt: Apply to each
-
 Now it’s time to create the file from the template and convert it to PDF. That are two actions from |Plumsail Documents|. 
 
 First, we will Create |DOCX from Template|: 
@@ -148,6 +129,8 @@ First, we will Create |DOCX from Template|:
 
 .. |pic9| image:: ../images/how-to/docx-to-pdf/docx_from_template.png
    :alt: DOCX from template
+
+.. Note:: *Value* under *Items* properties is the Value from *Get Items* Action.
 
 And then |Convert DOCX to PDF|: 
 
