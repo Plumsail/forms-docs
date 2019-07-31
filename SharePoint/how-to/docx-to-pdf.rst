@@ -23,17 +23,17 @@ We are going to do this with the help of:
 Form
 --------------------------------------------------
 
-We will create 2 lists: 
+We will create 2 SharePoint Lists: 
 
 - Work Order (parent) 
 - To-do (child) 
 
 
-The "Work Order" form will store information about the customer and the list of tasks. To bind the task list and the form we will use :doc:`List or Library </how-to/list-or-library-section>` control. 
+The Work Order List will store the information about the customer and the list of tasks. To bind the task list to the Work Order form we will use :doc:`List or Library </how-to/list-or-library-section>` control. 
 
 .. Note:: For more information about the control, please refer to :doc:`Create and bind associated items or documents on Modern SharePoint Forms </how-to/child-parent-form>` article.  
 
-In this example the "To-do" list has the following fields: 
+In this example the To-do List has the following fields: 
 
 - Description (text field) 
 - Due date (date field) 
@@ -42,17 +42,16 @@ In this example the "To-do" list has the following fields:
 - Work_order_id (lookup value referred to the "Work Order" list) 
 
 
-And we will create simple new/edit form for out tasks, excluding "Work_order_id" field, as it will get set automatically, and we don’t want users to change it manually. 
+We are going to create simple New and Edit forms for our tasks with all the fields, excluding **Work_order_id** field - it will get set automatically, and we don’t want users to change it manually. 
 
 |pic1|
 
 .. |pic1| image:: ../images/how-to/docx-to-pdf/DataSource.png
    :alt: Data Source
 
-In Edit form, we will add an option to send the result file to a specific email. For this, we will create a "Send PDF" checkbox and an "Email" field.  
+The Work Order List Edit form will have an option to send the result as PDF file to a specific email. For this, we will add Send PDF field (Yes/No) and an Email field (Single line).  
 
-In addition, we want the "Email" field to be disabled if the checkbox is unchecked. The following code will do the job. 
-Next, we will create forms for the "Work Order". In the "New" view we add general fields and "List or Library" control. In settings for "List or Library" control, in Data source specify the child list, view and Lookup filed. "Editing" should be "Dialog". 
+In addition, we want the Email field to be disabled if the checkbox is unchecked. The following code will do the job. 
 
 .. code-block:: javascript
 
@@ -74,7 +73,9 @@ Next, we will create forms for the "Work Order". In the "New" view we add genera
         updateEmailAvailability(); 
     });     
 
-As a result, the editing form is ready and looks something like this. 
+We also add List or Library control to the form, where in Data Source we specify the Child list, View and Lookup filed. Editing property should be set to "Dialog". 
+
+As a result, the Edit Form is ready and looks something like this. 
 
 |pic2|
 
@@ -87,7 +88,7 @@ Flow
 
 Create a new Flow from blank that will start with SharePoint connector - *When the item created or modified*.  Specify the address of your site and the name of the list. 
 
-The final Flow will looks like this:
+The final Flow will look like this:
 
 |pic3|
 
@@ -105,7 +106,7 @@ The Flow will create PDF and send email only if "Send PDF" is checked, so we add
 
 "If no" section will stay blank and in "If yes" section we will add the following steps:  
 
-First, we get file content of the template file, in this case, **.docx**. You need to specify the SharePoint site URL and path to your file. You can use different connectors to get files from other locations. 
+First, we get file content of the template file, in this case, **.docx**. You need to specify the SharePoint site URL and path to your file. You can use different connectors to get files from other locations, such as Box or Dropbox, for example. 
 
 |pic6|
 
@@ -153,7 +154,7 @@ We can also store the result PDF file in the SharePoint library. For that, we ad
 .. |pic12| image:: ../images/how-to/docx-to-pdf/file.png
    :alt: Save file
 
-You can save DOCX file too and it can be saved to any location, for example:  
+You can save the DOCX file as well. It can be saved to any location, such as:  
 
 - SharePoint 
 - Salesforce 
