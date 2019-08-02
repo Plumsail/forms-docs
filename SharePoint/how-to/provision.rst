@@ -56,7 +56,6 @@ Once the package and its dependencies have installed, go to Program.cs and repla
 
 .. code-block:: c#
 
-    using Plumsail.Forms.Data.SharePoint;
     using Microsoft.SharePoint.Client;
     using System;
     using System.Linq;
@@ -65,8 +64,8 @@ Once the package and its dependencies have installed, go to Program.cs and repla
     using System.Security;
     using System.Threading.Tasks;
     using System.Xml.Linq;
-    using FormsDesigner.SharePoint;
-    using FormsDesigner.Data.SharePoint;
+    using Plumsail.Forms.SharePoint;
+    using Plumsail.Forms.Data.SharePoint;
 
     namespace ProvisionApp
     {
