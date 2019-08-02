@@ -98,6 +98,7 @@ In the table, as we want to get repeating data, we will use the following constr
 .. Note:: As we have Choice fields, we use this construction to pass the values in the template **{{Items.Status.Value}}**, where Items is the variable, Status is the name of the field in the repeating table and Value is the selected value in the Choice field.
 
 The file can be stored anywhere:
+
 - SharePoint
 - Salesforce
 - Box
