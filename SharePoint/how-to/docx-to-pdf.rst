@@ -82,7 +82,7 @@ As a result, the Edit Form is ready and looks something like this.
 .. |pic2| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-2.png
    :alt: Edit form
 
-Template
+DOCX Template
 --------------------------------------------------
 
 We need to create the DOCX template.
@@ -94,7 +94,7 @@ We need to create the DOCX template.
 
 In the template we will specify the variables in braces {{ }}, for example **{{InvoiceNumber}}**. And in the flow, in *Create DOCX from Template* action will set variables with the values.
 
-In the table, as we want to get repeating data, we will use the following construction **{{ITEMS.TITLE}}**, where Items is the variable and Title is the name of the field in the repeating table.
+In the table, as we want to get repeating data, we will use the following construction **{{Items.Title}}**, where Items is the variable and Title is the name of the field in the repeating table.
 
 .. Note:: As we have Choice fields, we use this construction to pass the values in the template **{{Items.Status.Value}}**, where Items is the variable, Status is the name of the field in the repeating table and Value is the selected value in the Choice field.
 
