@@ -11,7 +11,7 @@ In this example, you will find a step-by-step instruction on how you can create 
 
 |pic0|
 
-.. |pic0| image:: ../images/how-to/docx-to-pdf/pdf.png
+.. |pic0| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-0.png
    :alt: result file
 
 We are going to do this with the help of: 
@@ -46,7 +46,7 @@ And we will create simple new/edit form for out tasks, excluding "Work_order_id"
 
 |pic1|
 
-.. |pic1| image:: ../images/how-to/docx-to-pdf/DataSource.png
+.. |pic1| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-1.png
    :alt: Data Source
 
 In Edit form, we will add an option to send the result file to a specific email. For this, we will create a "Send PDF" checkbox and an "Email" field.  
@@ -78,9 +78,38 @@ As a result, the editing form is ready and looks something like this.
 
 |pic2|
 
-.. |pic2| image:: ../images/how-to/docx-to-pdf/edit_form.png
+.. |pic2| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-2.png
    :alt: Edit form
 
+Template
+--------------------------------------------------
+
+We need to create the DOCX template.
+
+|pic3|
+
+.. |pic3| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-3.png
+   :alt: Template
+
+In the template we will specify the variables in braces {{ }}, for example **{{InvoiceNumber}}**. And in the flow, in *Create DOCX from Template* action will set variables with the values.
+
+In the table, as we want to get repeating data, we will use the following construction **{{ITEMS.TITLE}}**, where Items is the variable and Title is the name of the field in the repeating table.
+
+.. Note:: As we have Choice fields, we use this construction to pass the values in the template **{{Items.Status.Value}}**, where Items is the variable, Status is the name of the field in the repeating table and Value is the selected value in the Choice field.
+
+The file can be stored anywhere:
+- SharePoint
+- Salesforce
+- Box
+- OneDrive
+- Google Drive
+- Dropbox
+- SFTP
+- File System
+
+In our example we uploaed it in Sharepoint Document Library.
+
+Please, have a look at |Create DOCX from template| article to get more details on how the templating engine works. 
 
 Flow
 --------------------------------------------------
@@ -89,9 +118,9 @@ Create a new Flow from blank that will start with SharePoint connector - *When t
 
 The final Flow will looks like this:
 
-|pic3|
+|pic4|
 
-.. |pic3| image:: ../images/how-to/docx-to-pdf/flow.png
+.. |pic4| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-4.png
    :alt: Flow
 
 We'll create it step by step.
@@ -100,7 +129,7 @@ The Flow will create PDF and send email only if "Send PDF" is checked, so we add
 
 |pic5|
 
-.. |pic5| image:: ../images/how-to/docx-to-pdf/condition.png
+.. |pic5| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-5.png
    :alt: condition
 
 "If no" section will stay blank and in "If yes" section we will add the following steps:  
@@ -109,48 +138,46 @@ First, we get file content of the template file, in this case, **.docx**. You ne
 
 |pic6|
 
-.. |pic6| image:: ../images/how-to/docx-to-pdf/content.png
+.. |pic6| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-6.png
    :alt: File Content
-
-We already have a template file prepared. To find out how to create your own template file, please, have a look at |Create DOCX from template| article to understand how the templating engine works. 
 
 Next, we will get all the items from the child list with *Get items* action and filter them by Parent Item's ID. 
 
 |pic7|
 
-.. |pic7| image:: ../images/how-to/docx-to-pdf/get_items.png
+.. |pic7| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-7.png
    :alt: Get Items
 
 Now it’s time to create the file from the template and convert it to PDF. That are two actions from |Plumsail Documents|. 
 
 First, we will Create |DOCX from Template|: 
 
-|pic9|
+|pic8|
 
-.. |pic9| image:: ../images/how-to/docx-to-pdf/docx_from_template.png
+.. |pic8| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-8.png
    :alt: DOCX from template
 
 .. Note:: *Value* under *Items* properties is the Value from *Get Items* Action.
 
 And then |Convert DOCX to PDF|: 
 
-|pic10|
+|pic9|
 
-.. |pic10| image:: ../images/how-to/docx-to-pdf/docx_to_pdf.png
+.. |pic9| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-9.png
    :alt: Convert DOCX to PDF
 
 Eventually, we want to *Send an email* to the address specified in the form and attach the result PDF file to it. 
 
-|pic11|
+|pic10|
 
-.. |pic11| image:: ../images/how-to/docx-to-pdf/email.png
+.. |pic10| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-10.png
    :alt: Send email
 
 We can also store the result PDF file in the SharePoint library. For that, we add a *Create file* action, select the site address, folder path, file name, and file content. 
 
-|pic12|
+|pic11|
 
-.. |pic12| image:: ../images/how-to/docx-to-pdf/file.png
+.. |pic11| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-11.png
    :alt: Save file
 
 You can save DOCX file too and it can be saved to any location, for example:  
