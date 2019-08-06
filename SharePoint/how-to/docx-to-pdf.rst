@@ -62,8 +62,8 @@ In addition, we want the Email field to be disabled if the checkbox is unchecked
         } else { 
             // Setting field Email as read-only 
             fd.field('Email').disabled = true; 
-            } 
         } 
+    } 
     fd.spRendered(function() { 
 
         // Calling updateEmailAvailability when the user changes Send PDF field 
@@ -94,9 +94,9 @@ We need to create the DOCX template.
 
 In the template we will specify the variables in braces {{ }}, for example **{{InvoiceNumber}}**. And in the flow, in *Create DOCX from Template* action will set variables with the values.
 
-In the table, as we want to get repeating data, we will use the following construction **{{Items.Title}}**, where Items is the variable and Title is the name of the field in the repeating table.
+In the table, as we want to get repeating data, we will use the following construction **{{Items.Title}}**, where Items is a variable containing a list of SharePoint items from "To-do" list and Title is the internal name of the SharePoint field.
 
-.. Note:: As we have Choice fields, we use this construction to pass the values in the template **{{Items.Status.Value}}**, where Items is the variable, Status is the name of the field in the repeating table and Value is the selected value in the Choice field.
+.. Note:: As we have Choice fields, we use this construction to pass the values in the template **{{Items.Status.Value}}**, where Items is a variable containing a list of SharePoint items from "To-do" list, Status is the internal name of the SharePoint field and Value is the selected value in the Choice field.
 
 The file can be stored anywhere:
 
