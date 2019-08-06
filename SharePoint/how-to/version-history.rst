@@ -1,4 +1,4 @@
-Display version history on the form
+Display version history with Vue components
 =================================================================================================
 
 .. contents:: Contents:
@@ -7,14 +7,9 @@ Display version history on the form
 
 Description
 --------------------------------------------------
-In this article, we'll show you a basic example of how to display version history of an item on the form. You will be able to see who and when modified an item, like this:
+In this article, we'll show you a basic example of how to display version history of an item on the form. You will be able to see who and when modified an item.
 
-|pic0|
-
-.. |pic0| image:: ../images/how-to/version-history/how-to-version-history-0.png
-   :alt: Version history on SharePoint Form
-
-It's also possible to get all the changes info using more advanced JavaScript - more on that later!
+We're also going to showcase Vue components and their potential use.
 
 Form
 --------------------------------------------------
@@ -36,79 +31,106 @@ This HTML control is important - it will contain our Version history, I've used 
 
 .. code-block:: HTML
 
-    <div id='changes'>
-    </div>
+    <version-history />
 
 Copy and paste this code to ensure that the following JS code works for you as well!
 
-JavaScript
+Vue Components
 --------------------------------------------------
-We'll use the following JavaScript code to request all the versions of the current item as soon as it loads, and add a record for each version to our Version history:
+Since our forms are built with Vue.js it's possible to create and mount custom components to the form.
+
+For example, this component will detect who and when made changes to the form and display it in our HTML control:
 
 .. code-block:: javascript
 
-    //listurl and id are retrieved from fd
-    var listUrl = fd.webUrl + fd.listUrl;
-    var id = fd.itemId;
-    fd.spRendered(function(){
-        pnp.sp.web.getList(listUrl)
-        .items.getById(id)
-        .select('*, Versions')
-        .expand('Versions')
-        .get().then(function(results){
-            var versions = results.Versions;
-            for(var i = 0; i < versions.length; i++){
-                var text = "";
-                var currentVersion = versions[i];
-                var label = versions[i].VersionLabel;
-                var date =  "<i>" + new Date(versions[i].Modified).toLocaleString() + "</i>";
-                var editor =  "<b>" + versions[i].Editor.LookupValue + "</b>";
-                if(i == versions.length - 1){
-                    text += "v" + label + " was created at: " + date + " by " + editor;
-                }
-                else{
-                    text += "v" + label + " was modified at: " + date + " by " + editor;
-                }
-                $("#changes").append("<p>" + text +"</p>");
+    Vue.component('version-history', {
+        template: '<div><p v-for="(entry, i) in entries">v{{entry.version}} was created at {{entry.date}} by {{entry.user}}</p></div>',
+        data: function() {
+            return {
+                entries: []
             }
-        });
+        },
+        mounted: function() {
+            var self = this;
+            var listUrl = fd.webUrl + fd.listUrl;
+            var id = fd.itemId;
+            pnp.sp.web.getList(listUrl)
+                .items
+                .getById(id)
+                .versions
+                .get()
+                .then(function(versions){
+                    self.entries = versions.map(function(v) {
+                        return {
+                            version: v.VersionLabel,
+                            date: new Date(v.Modified).toLocaleString(),
+                            user: v.Editor.LookupValue
+                        }
+                    })
+                });	
+        }
     });
 
-This code also pulls information about all the fields, so if you need more data, for example, what fields were changed and what exactly the changes were - that's also doable!
+If you place this code inside JS editor it will automatically mount the component on form load, getting the result like this:
 
-Field value change
+|pic0|
+
+.. |pic0| image:: ../images/how-to/version-history/how-to-version-history-0.png
+   :alt: Version history on SharePoint Form
+
+Field values change
 ************************************************
-The following code will not only detect version change, but will also check Description field for changes, and if it was changed - will display the change:
+The following component will check fields for changes, and if any of observed fields had changed - will display so:
 
 .. code-block:: javascript
 
-    var listUrl = fd.webUrl + fd.listUrl;
-    var id = fd.itemId;
-    fd.spRendered(function(){
-        pnp.sp.web.getList(listUrl)
-        .items.getById(id)
-        .select('*, Versions')
-        .expand('Versions')
-        .get().then(function(results){
-            var versions = results.Versions;
-            for(var i = 0; i < versions.length; i++){
-                var text = "";
-                var currentVersion = versions[i];
-                var label = versions[i].VersionLabel;
-                var description = versions[i].Description;
-                if(i == versions.length - 1){
-                    text += "v" + label + " was created";
-                    text += " - Description: " + description;
-                }
-                else{
-                    text += "v" + label + " was modified";
-                    if(description != versions[i + 1].Description){
-                        text += " - New description: " + description;
-                    }
-                }
-                $("#changes").append("<p>" + text +"</p>");
+    var observableFields = ['Title', 'VersionNumber', 'Description', 'Tags'];
+
+    Vue.component('version-history', {
+        template: '<div><p v-for="(entry, i) in entries">{{entry.user}} modified {{entry.fields}} at {{entry.date}}</p></div>',
+        data: function() {
+            return {
+                entries: []
             }
-        });
+        },
+        mounted: function() {
+            var self = this;
+            var listUrl = fd.webUrl + fd.listUrl;
+            var id = fd.itemId;
+            pnp.sp.web.getList(listUrl)
+                .items
+                .getById(id)
+                .versions
+                .get()
+                .then(function(versions){
+                    var prevValues = {};
+                
+                    self.entries = versions
+                        .reverse()
+                        .map(function(v) {
+                            var changedFields = [];
+                            observableFields.forEach(function (f) {
+                                var curValue = JSON.stringify(v[f]);
+                                if (prevValues[f] !== curValue) {
+                                    changedFields.push(f);
+                                    prevValues[f] = curValue;
+                                }
+                            })
+                            
+                            if (changedFields.length > 0) {
+                                return {
+                                    fields: changedFields.join(', '),
+                                    date: new Date(v.Modified).toLocaleString(),
+                                    user: v.Editor.LookupValue
+                                }
+                            }
+                            
+                            return null;
+                        })
+                        .filter(function(v) { return Boolean(v) })
+                        .reverse();
+                });	
+        }
     });
 
 And here's how it will look like in SharePoint:
@@ -116,31 +138,4 @@ And here's how it will look like in SharePoint:
 |pic3|
 
 .. |pic3| image:: ../images/how-to/version-history/how-to-version-history-3.png
-   :alt: Description changes in Version history
-
-Experiment
-************************************************
-Feel free to experiment to achieve the results you are looking for!
-
-This code will give you access to all Versions inside the console:
-
-.. code-block:: javascript
-
-    var listUrl = fd.webUrl + fd.listUrl;
-    var id = fd.itemId;
-    fd.spRendered(function(){
-        pnp.sp.web.getList(listUrl)
-        .items.getById(id)
-        .select('*, Versions')
-        .expand('Versions')
-        .get().then(function(results){
-            console.log(results.Versions);
-        });
-    });
-
-So you can dig in and see what's available for yourself:
-
-|pic4|
-
-.. |pic4| image:: ../images/how-to/version-history/how-to-version-history-4.png
-   :alt: Version history in browser's console
+   :alt: Field changes in Version history
