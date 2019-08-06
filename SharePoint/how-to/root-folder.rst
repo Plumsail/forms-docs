@@ -44,9 +44,9 @@ and only want to display contents of the folder with the name matching current i
 
         function setRootFolder(){
             //set base root folder to the current item's ID:
-            dt.baseRootFolder = fd.itemId;
+            dt.baseRootFolder = String(fd.itemId);
             //set current folder to the current item's ID:
-            dt.rootFolder = fd.itemId;
+            dt.rootFolder = String(fd.itemId);
         }
     });
 
