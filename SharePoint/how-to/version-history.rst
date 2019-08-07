@@ -35,7 +35,7 @@ This HTML control is important - it will contain our Version history, I've used 
 
 Copy and paste this code to ensure that the following JS code works for you as well!
 
-Vue Components
+Tracking item changes
 --------------------------------------------------
 Since our forms are built with Vue.js it's possible to create and mount custom components to the form.
 
@@ -78,8 +78,8 @@ If you place this code inside JS editor it will automatically mount the componen
 .. |pic0| image:: ../images/how-to/version-history/how-to-version-history-0.png
    :alt: Version history on SharePoint Form
 
-Field values change
-************************************************
+Tracking field changes
+--------------------------------------------------
 The following component will check fields for changes, and if any of observed fields had changed - will display so:
 
 .. code-block:: javascript
