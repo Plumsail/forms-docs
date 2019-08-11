@@ -419,6 +419,12 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                     console.log(spForm);
                 });
 
+                //return next tick if you plan to change any values
+                fd.spBeforeSave(function(spForm) {
+                    fd.field('FieldName').value = 'New value';
+                    return fd._vue.$nextTick();
+                });
+
 
     *   - **spSaved()**
         -   Occurs after the form is submitted.
