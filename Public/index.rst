@@ -23,6 +23,7 @@ Public Web Forms
             ./microsoft-flow
             ./zapier
             ./licensing
+            
 
       .. toctree::
             :caption: General
@@ -31,6 +32,7 @@ Public Web Forms
             
             general/roadmap
             general/version-history
+            general/upgrade-renew
             YouTube Channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
             general/data-security
             general/privacy-policy
