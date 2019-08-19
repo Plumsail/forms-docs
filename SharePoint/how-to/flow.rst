@@ -1,4 +1,4 @@
-SharePoint Form to Flow (Plumsail Forms connector)
+Send a notification by e-mail
 ============================================================
 
 .. contents:: Contents:

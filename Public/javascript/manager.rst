@@ -120,7 +120,7 @@ Properties
 
                 fd._vue;
 
-    *   -   **fd._vue.lang**
+    *   -   **fd.messages**
 
         -   Property that stores all language constants, can be used to set text for localization.
 
@@ -134,26 +134,26 @@ Properties
 
                 //example of setting language constant in created event
                 fd.created(function(vue) {
-                    vue.lang.PlumsailForm_Submission_Success = 'Thank you!';
+                    fd.messages.PlumsailForm_Submission_Success = 'Thank you!';
                 });
 
                 //All default values:
-                fd._vue.lang.Failure_General = 
+                fd.messages.Failure_General = 
                     "An error has occured. Please check the browser console (F12).";
 
-                fd._vue.lang.Failure_ItemNotFound = 
+                fd.messages.Failure_ItemNotFound = 
                     "An item was not found. It may have been deleted or renamed by another user.";
 
-                fd._vue.lang.PlumsailForm_CorrectErrors = 
+                fd.messages.PlumsailForm_CorrectErrors = 
                     "Please correct the errors below:";
 
-                fd._vue.lang.PlumsailForm_Submission_Error = 
+                fd.messages.PlumsailForm_Submission_Error = 
                     "An error has occured while saving the form. Please check the console (F12).";
 
-                fd._vue.lang.PlumsailForm_Submission_Success = 
+                fd.messages.PlumsailForm_Submission_Success = 
                     "The form has been submitted successfully.";
 
-                fd._vue.lang.RequiredValidator_Error = 
+                fd.messages.RequiredValidator_Error = 
                     "This field is required.";
 
 

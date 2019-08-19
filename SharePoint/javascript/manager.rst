@@ -133,7 +133,7 @@ Properties
 
                 fd._vue;
 
-    *   -   **fd._vue.lang**
+    *   -   **fd.messages**
 
         -   Property that stores all language constants, can be used to set text for localization.
 
@@ -147,36 +147,36 @@ Properties
 
                 //example of setting language constant in created event
                 fd.created(function(vue) {
-                    vue.lang.PlumsailForm_Submission_Success = 'Thank you!';
+                    fd.messages.PlumsailForm_Submission_Success = 'Thank you!';
                 });
 
                 //All default values:
-                fd._vue.lang.Failure_General = 
+                fd.messages.Failure_General = 
                     "An error has occured. Please check the browser console (F12).";
 
-                fd._vue.lang.Failure_ItemNotFound = 
+                fd.messages.Failure_ItemNotFound = 
                     "An item was not found. It may have been deleted or renamed by another user.";
 
-                fd._vue.lang.PlumsailForm_CorrectErrors = 
+                fd.messages.PlumsailForm_CorrectErrors = 
                     "Please correct the errors below:";
 
-                fd._vue.lang.PlumsailForm_Submission_Error = 
+                fd.messages.PlumsailForm_Submission_Error = 
                     "An error has occured while saving the form. Please check the console (F12).";
 
-                fd._vue.lang.PlumsailForm_Submission_Success = 
+                fd.messages.PlumsailForm_Submission_Success = 
                     "The form has been submitted successfully.";
 
-                fd._vue.lang.RequiredValidator_Error = 
+                fd.messages.RequiredValidator_Error = 
                     "This field is required.";
                     
-                fd._vue.lang.SPDataTable_AddNewItem = "Add new item";
-                fd._vue.lang.SPDataTable_ListNotFoundError = "List does not exist.";
-                fd._vue.lang.SPDataTable_Upload = "Upload";
-                fd._vue.lang.SPDataTable_Uploading = "Uploading...";
-                fd._vue.lang.SPFormToolbar_Close = "Close";
-                fd._vue.lang.SPFormToolbar_Edit = "Edit";
-                fd._vue.lang.SPFormToolbar_Save = "Save";
-                fd._vue.lang.SPFormToolbar_Saving = "Saving...";
+                fd.messages.SPDataTable_AddNewItem = "Add new item";
+                fd.messages.SPDataTable_ListNotFoundError = "List does not exist.";
+                fd.messages.SPDataTable_Upload = "Upload";
+                fd.messages.SPDataTable_Uploading = "Uploading...";
+                fd.messages.SPFormToolbar_Close = "Close";
+                fd.messages.SPFormToolbar_Edit = "Edit";
+                fd.messages.SPFormToolbar_Save = "Save";
+                fd.messages.SPFormToolbar_Saving = "Saving...";
 
     *   -   **fd.pdfFileName**
 
