@@ -64,6 +64,8 @@ This query parameter will be taken from the page's URL which you can add before 
 
 To make sure the users get the correct form for them, please, use :doc:`Form Sets </designer/form-sets>`.
 
+For more detail on using the form web part with form sets, :doc:`read the article </how-to/personal-form>`.
+
 Public Web Form
 -------------------------------------------------------------
 If you want to publish Public Web Form, simply create it, save it, open General settings and copy Form ID to the Web Part:

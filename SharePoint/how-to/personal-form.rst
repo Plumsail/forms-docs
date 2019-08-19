@@ -21,8 +21,8 @@ Creating forms for regular users
 First, we design forms for regular users which do not belong to the support team – New and Edit. 
 
 
-**New Form**  
-
+New Form  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here, we add a Tab Control with two tabs:  'New Issue' and 'My Issues'.
 
 |pic1|
@@ -41,7 +41,7 @@ In 'My Issues' tab, we will add a List or Library control that displays issues c
 
 Name the view 'My Issues', select fields you want to display, and go to the 'Filter' section.   
 
-Add a filter: Create By is equal to [Me]. 
+Add a filter: 'Create By' is equal to [Me]. 
 
 
 |pic3|
@@ -65,7 +65,8 @@ To refresh the List or Library control after adding a new issue, we must insert 
     });  
 
 
-**Edit form**
+Edit form
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Edit form for regular users will contain Title, Body, Assigned To, and Due Date in the read-only mode. Disable editing by setting ReadOnly property of fields to True.   
 
@@ -81,7 +82,7 @@ Find more information on |adding discussion to a SharePoint form|.
 Creating forms for support team
 -------------------------------------------------- 
 
-Next, we will add separate forms for the support team. They will be able to view all unresolved issues created by any users and edit all their properties includng Due Date, Assigned To, and Status. 
+Next, we will add separate forms for the support team. They will be able to view all unresolved issues created by any users and edit all their properties including Due Date, Assigned To, and Status. 
 
 To create a separate form set for the support team, click on the plus button next to the default form set.
 
@@ -100,13 +101,14 @@ In the opened window, specify a name of the form set and select SharePoint group
    :alt: groups
 
 
-**New form**
+New form
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Here, we also add Tab Control with two tabs: 'New Issue' and 'All Issues'.  
 
 Add Title, Body, Assigned To, Due Date, and Status fields to the first tab. In the 'All Issues' tab, we put a list of all unresoved issues, no matter who created them.  
 
-For this, we create another list view, following the steps described above.Name the view 'All Issues'. In the filter section, set Status field not equal to Solved.  
+For this, we create another list view, following the steps described above. Name the view 'All Issues'. In the filter section, set Status field not equal to Solved.  
 
 |pic8|
 
@@ -123,8 +125,8 @@ In Data Source settings of the List or Library control, select the 'Issues' list
 And we also have to add JavaScript code for refreshing the List or Library control after adding a new issue that I mentioned above.   
 
 
-**Edit from**
- 
+Edit from
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   
 In the Edit form, we add Title, Body, Assigned To, Due Date, and Comments fields. For the support team, all those fields will be editable. 
 
@@ -147,7 +149,7 @@ Navigate to the page, click 'Edit', and add Plumsail Form web part.   
 
 Once the web part added, click Configure and select 'SharePoint' form type.    
 
-In Site URL, specify the SharePoint site where we added the Issues list and select it the 'List' drop-down. 
+In Site URL, specify the SharePoint site where we added the Issues list and select it the 'List'. 
 The form type to display is New in this example.
 
 |pic12|
