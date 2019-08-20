@@ -16,10 +16,9 @@ you also need to have a |Public Web Forms License| or use a free plan.
 SharePoint Online
 -------------------------------------------------
 
-**Forms for SharePoint Online (Office365)** is a perpetual license issued per Office 365 tenant.
+**Forms for SharePoint Online (Office365)** is a subscription issued per Office 365 tenant.
 
-*1-year maintenance* is included with the license, it allows you to receive quick support and have access to the latest updates.
-Maintenance expires in 1 year and can be purchased again from the |store|.
+Subscription includes any amount of users, developers, and forms as long as they are within the same domain, e.g. *mycompany.sharepoint.com*
 
 SharePoint 2019 (On-Premises)
 -------------------------------------------------

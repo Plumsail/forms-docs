@@ -1,5 +1,5 @@
 Generate PDF from DOCX template and SharePoint form fields
-==================================================
+==========================================================
 
 .. contents:: Contents:
  :local:
@@ -11,7 +11,7 @@ In this example, you will find a step-by-step instruction on how you can create 
 
 |pic0|
 
-.. |pic0| image:: ../images/how-to/docx-to-pdf/pdf.png
+.. |pic0| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-0.png
    :alt: result file
 
 We are going to do this with the help of: 
@@ -46,7 +46,7 @@ We are going to create simple New and Edit forms for our tasks with all the fiel
 
 |pic1|
 
-.. |pic1| image:: ../images/how-to/docx-to-pdf/DataSource.png
+.. |pic1| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-1.png
    :alt: Data Source
 
 The Work Order List Edit form will have an option to send the result as PDF file to a specific email. For this, we will add Send PDF field (Yes/No) and an Email field (Single line).  
@@ -55,21 +55,22 @@ In addition, we want the Email field to be disabled if the checkbox is unchecked
 
 .. code-block:: javascript
 
-    fd.spRendered(function() { 
-        function SendEmail() { 
-            if (fd.field('SendPDF').value) { 
-                // Setting field Email as editable 
-                fd.field('Email').disabled = false; 
-            } else { 
-                // Setting field Email as read-only 
-                fd.field('Email').disabled = true; 
-            } 
+    function updateEmailAvailability() { 
+        if (fd.field('SendPDF').value) { 
+            // Setting field Email as editable 
+            fd.field('Email').disabled = false; 
+        } else { 
+            // Setting field Email as read-only 
+            fd.field('Email').disabled = true; 
         } 
-        // Calling SendEmail when the user changes Send PDF field 
-        fd.field('SendPDF').$on('change',SendEmail); 
+    } 
+    fd.spRendered(function() { 
 
-        // Calling SendEmail on form loading 
-        SendEmail(); 
+        // Calling updateEmailAvailability when the user changes Send PDF field 
+        fd.field('SendPDF').$on('change',updateEmailAvailability); 
+
+        // Calling updateEmailAvailability on form loading 
+        updateEmailAvailability(); 
     });     
 
 We also add List or Library control to the form, where in Data Source we specify the Child list, View and Lookup filed. Editing property should be set to "Dialog". 
@@ -78,9 +79,39 @@ As a result, the Edit Form is ready and looks something like this.
 
 |pic2|
 
-.. |pic2| image:: ../images/how-to/docx-to-pdf/edit_form.png
+.. |pic2| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-2.png
    :alt: Edit form
 
+DOCX Template
+--------------------------------------------------
+
+We need to create the DOCX template.
+
+|pic3|
+
+.. |pic3| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-3.png
+   :alt: Template
+
+In the template we will specify the variables in braces {{ }}, for example **{{InvoiceNumber}}**. And in the flow, in *Create DOCX from Template* action will set variables with the values.
+
+In the table, as we want to get repeating data, we will use the following construction **{{Items.Title}}**, where Items is a variable containing a list of SharePoint items from "To-do" list and Title is the internal name of the SharePoint field.
+
+.. Note:: As we have Choice fields, we use this construction to pass the values in the template **{{Items.Status.Value}}**, where Items is a variable containing a list of SharePoint items from "To-do" list, Status is the internal name of the SharePoint field and Value is the selected value in the Choice field.
+
+The file can be stored anywhere:
+
+- SharePoint
+- Salesforce
+- Box
+- OneDrive
+- Google Drive
+- Dropbox
+- SFTP
+- File System
+
+In our example we uploaed it in Sharepoint Document Library.
+
+Please, have a look at |Create DOCX from template| article to get more details on how the templating engine works. 
 
 Flow
 --------------------------------------------------
@@ -89,26 +120,18 @@ Create a new Flow from blank that will start with SharePoint connector - *When t
 
 The final Flow will look like this:
 
-|pic3|
+|pic4|
 
-.. |pic3| image:: ../images/how-to/docx-to-pdf/flow.png
+.. |pic4| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-4.png
    :alt: Flow
 
 We'll create it step by step.
-
-Add *Initialize variable* action. We’ll need it later to hold SharePoint Items. Specify the name, "Type" is array, and the value is blank. 
-
-|pic4|
-
-.. |pic4| image:: ../images/how-to/docx-to-pdf/variable.png
-   :alt: Initialize variable
-
 
 The Flow will create PDF and send email only if "Send PDF" is checked, so we add a condition first. 
 
 |pic5|
 
-.. |pic5| image:: ../images/how-to/docx-to-pdf/condition.png
+.. |pic5| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-5.png
    :alt: condition
 
 "If no" section will stay blank and in "If yes" section we will add the following steps:  
@@ -117,58 +140,46 @@ First, we get file content of the template file, in this case, **.docx**. You ne
 
 |pic6|
 
-.. |pic6| image:: ../images/how-to/docx-to-pdf/content.png
+.. |pic6| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-6.png
    :alt: File Content
-
-We already have a template file prepared. To find out how to create your own template file, please, have a look at |Create DOCX from template| article to understand how the templating engine works. 
 
 Next, we will get all the items from the child list with *Get items* action and filter them by Parent Item's ID. 
 
 |pic7|
 
-.. |pic7| image:: ../images/how-to/docx-to-pdf/get_items.png
+.. |pic7| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-7.png
    :alt: Get Items
-
-As we need to get multiple items we do the following: 
-
-1. Add "apply to each" control;
-2. In "Select an output from previous steps" specify a value from "Get items" action;
-3. Add "Compose" action to define current item properties;
-4. Then add "Append to array variable", select the variable name from the drop-down, and value is the output from "Compose" action. 
-
-|pic8|
-
-.. |pic8| image:: ../images/how-to/docx-to-pdf/applyToEach.png
-   :alt: Apply to each
 
 Now it’s time to create the file from the template and convert it to PDF. That are two actions from |Plumsail Documents|. 
 
 First, we will Create |DOCX from Template|: 
 
-|pic9|
+|pic8|
 
-.. |pic9| image:: ../images/how-to/docx-to-pdf/docx_from_template.png
+.. |pic8| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-8.png
    :alt: DOCX from template
+
+.. Note:: *Value* under *Items* properties is the Value from *Get Items* Action.
 
 And then |Convert DOCX to PDF|: 
 
-|pic10|
+|pic9|
 
-.. |pic10| image:: ../images/how-to/docx-to-pdf/docx_to_pdf.png
+.. |pic9| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-9.png
    :alt: Convert DOCX to PDF
 
 Eventually, we want to *Send an email* to the address specified in the form and attach the result PDF file to it. 
 
-|pic11|
+|pic10|
 
-.. |pic11| image:: ../images/how-to/docx-to-pdf/email.png
+.. |pic10| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-10.png
    :alt: Send email
 
 We can also store the result PDF file in the SharePoint library. For that, we add a *Create file* action, select the site address, folder path, file name, and file content. 
 
-|pic12|
+|pic11|
 
-.. |pic12| image:: ../images/how-to/docx-to-pdf/file.png
+.. |pic11| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-11.png
    :alt: Save file
 
 You can save the DOCX file as well. It can be saved to any location, such as:  

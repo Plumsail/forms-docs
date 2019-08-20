@@ -9,4 +9,5 @@ Other
     ./export-pdf
     ./ms-teams
     ./newform-page
+    ./personal-form
     ./edit-form

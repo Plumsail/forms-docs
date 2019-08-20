@@ -15,7 +15,7 @@ Nothing could be easier, as SharePoint forms have a button which allows forms to
 
 |pic1|
 
-.. |pic1| image:: ../images/how-to/export-pdf/ExportPDFButton.png
+.. |pic1| image:: ../images/how-to/export-pdf/how-to-export-pdf-0.png
    :alt: Standard button to export PDF
 
 It's also possible to set up PDF options with JavaScript that can run outside of any events, by simply including **pdfOptions** in JS editor, like this:
@@ -51,7 +51,7 @@ If you have a form that doesn't fit on one screen like this:
 
 |VerticalSP|
 
-.. |VerticalSP| image:: ../images/how-to/export-pdf/VerticalFormSP.png
+.. |VerticalSP| image:: ../images/how-to/export-pdf/how-to-export-pdf-1.png
    :alt: Vertical form in SharePoint
 
 Simply add the following code to JS editor on the form:
@@ -68,7 +68,7 @@ And you'll get the result like this:
 
 |Vertical|
 
-.. |Vertical| image:: ../images/how-to/export-pdf/VerticalForm.png
+.. |Vertical| image:: ../images/how-to/export-pdf/how-to-export-pdf-2.png
    :alt: Vertical form exported to PDF
 
 One page horizontal form
@@ -77,7 +77,7 @@ If the form you have is rather wide and needs to be printed in one page, like th
 
 |HorizontalSP|
 
-.. |HorizontalSP| image:: ../images/how-to/export-pdf/HorizontalFormSP.png
+.. |HorizontalSP| image:: ../images/how-to/export-pdf/how-to-export-pdf-3.png
    :alt: Horizontal form in SharePoint
 
 You can add code similar to this:
@@ -108,7 +108,7 @@ And here's the result:
 
 |Horizontal|
 
-.. |Horizontal| image:: ../images/how-to/export-pdf/HorizontalForm.png
+.. |Horizontal| image:: ../images/how-to/export-pdf/how-to-export-pdf-4.png
    :alt: Horizontal form exported to PDF
 
 Display all tabs on exported PDF
@@ -119,7 +119,7 @@ For example, I have a three tab form:
 
 |SharePointTabs|
 
-.. |SharePointTabs| image:: ../images/how-to/export-pdf/SharePointTabs.png
+.. |SharePointTabs| image:: ../images/how-to/export-pdf/how-to-export-pdf-5.png
    :alt: SharePoint Form with Tabs
 
 
@@ -128,7 +128,7 @@ so they'll only be shown on the exported PDF, for example, I gave each title **t
 
 |TabTitleClass|
 
-.. |TabTitleClass| image:: ../images/how-to/export-pdf/TabTitleClass.png
+.. |TabTitleClass| image:: ../images/how-to/export-pdf/how-to-export-pdf-6.png
    :alt: Plain Text Tab Title with CSS class
 
 Next, I add the following CSS to CSS editor:
@@ -160,7 +160,7 @@ And then, after exporting to PDF, we get this:
 
 |TabsPDF|
 
-.. |TabsPDF| image:: ../images/how-to/export-pdf/TabsPDF.png
+.. |TabsPDF| image:: ../images/how-to/export-pdf/how-to-export-pdf-7.png
    :alt: Tabs displayed after export to PDF
 
 Display all Accordion panels on exported PDF
@@ -172,7 +172,7 @@ An example form with an Accordion:
 
 |SharePointAccordion|
 
-.. |SharePointAccordion| image:: ../images/how-to/export-pdf/SharePointAccordion.png
+.. |SharePointAccordion| image:: ../images/how-to/export-pdf/how-to-export-pdf-8.png
    :alt: SharePoint Form with an Accordion
 
 To expand Accordion, we can use the following CSS:
@@ -196,7 +196,7 @@ And get the following result:
 
 |AccordionPDF|
 
-.. |AccordionPDF| image:: ../images/how-to/export-pdf/AccordionPDF.png
+.. |AccordionPDF| image:: ../images/how-to/export-pdf/how-to-export-pdf-9.png
    :alt: Accordion panels displayed after export to PDF
 
 
@@ -223,7 +223,7 @@ and add the following code to OnClick property (though, of course, you can modif
 
 |pic2|
 
-.. |pic2| image:: ../images/how-to/export-pdf/ButtonScript.png
+.. |pic2| image:: ../images/how-to/export-pdf/how-to-export-pdf-10.png
    :alt: Run export to PDF script on button click
 
 
@@ -233,7 +233,7 @@ Another option is to export PDF each time the form is submitted. You'll need to 
 
 |pic3|
 
-.. |pic3| image:: ../images/how-to/export-pdf/JSEditor.png
+.. |pic3| image:: ../images/how-to/export-pdf/how-to-export-pdf-11.png
    :alt: JS Editor in Plumsail Forms
 
 For **Public Web Forms**, this can be done by adding the following code to the JS editor of the designer:
@@ -251,3 +251,14 @@ For **SharePoint Forms**, use the following code instead:
     fd.spSaved(function(result) {
         fd.exportToPDF("exported-after-saving");
     });
+
+More complex PDFs
+--------------------------------------------------
+This solution is good for exporting most forms right from the browser, but it is limited in a few ways. 
+
+If you are looking for a more complex solution which will allow you to configure how the form is converted to PDF, please, check out our :doc:`Generate PDF from DOCX template article </how-to/docx-to-pdf>`.
+
+|pic_fin|
+
+.. |pic_fin| image:: ../images/how-to/docx-to-pdf/how-to-docx-to-pdf-0.png
+   :alt: result file

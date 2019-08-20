@@ -10,3 +10,4 @@ Dynamic Forms with the use of JavaScript
     ./link-to-form
     ./form-dialog
     ./add-discussion
+    ./version-history

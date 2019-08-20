@@ -72,10 +72,8 @@ allowing you to easily get any necessary information from SharePoint.
 Some predefined variables accessible from your code:
 
     -   **webUrl** - URL of the current site
-    -   **formUrl** - URL of the current form
     -   **listId** - ID of the current list
     -   **itemId** - ID of the current item
-    -   **contentType** - name of the Content Type
     -   **pnp** - pnp JS library instance
     -   **web** - current Web from pnp 
     -   **list** - current List from pnp
