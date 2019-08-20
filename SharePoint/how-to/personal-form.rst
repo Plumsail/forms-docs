@@ -149,7 +149,8 @@ Navigate to the page, click 'Edit', and add Plumsail Form web part.   
 
 Once the web part added, click Configure and select 'SharePoint' form type.    
 
-In Site URL, specify the SharePoint site where we added the Issues list and select it the 'List'. 
+In Site URL, specify the SharePoint site where we added the Issues list and select it in the 'List' drop-down.
+
 The form type to display is New in this example.
 
 |pic12|
