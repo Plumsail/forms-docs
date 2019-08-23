@@ -62,20 +62,13 @@ Sometimes, you can design a form, but when a user tries to open it, they'll be r
 .. |pic6| image:: ../images/how-to/language/404.png
    :alt: 404 Error
 
-This will often happen when form's creator preffered language does not match the preffered lanuage of the user.
+This can happen if you didn't design a default language form for this Content Type. 
 
-If you don't want to create forms for all the languages, simply go to Site Settings -> Language settings:
+If default language is English and you design an English form first, then users with all kinds of language preferences will be redirected to default language form.
+
+You can check default language in Site Settings -> Language settings:
 
 |pic7|
 
 .. |pic7| image:: ../images/how-to/language/LanguageSettings.png
    :alt: Language settings
-
-And disable all languages for which you don't want to create forms: 
-
-|pic8|
-
-.. |pic8| image:: ../images/how-to/language/DisableLanguages.png
-   :alt: Disable languages
-
-This will then ensure that users are redirected to the site's default language form.
