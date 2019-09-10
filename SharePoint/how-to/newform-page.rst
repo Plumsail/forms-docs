@@ -12,6 +12,7 @@ are actually stored in Site Pages -> Plumsail Forms folder.
 
 It's also possible to use these pages, or at least New Forms, without going into List View. Edit and Display Form require you to select an item manually in the List.
 
+.. Note:: Instead of moving a form page to another location, you can also create a new page and :doc:`put a form web part </designer/web-part>` into it. Forms published with a form web part are not limited to just the New Form. You can also add Edit or Display Forms and provide ID in a query parameter which is also configurable. 
 
 Getting the page
 --------------------------------------------------

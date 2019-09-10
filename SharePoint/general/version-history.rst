@@ -1,6 +1,12 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.4.6
+--------------------------------------------------
+Fixed an issue with support of multilingual sites.
+
+Minor bugfixes.
+
 v1.4.5
 --------------------------------------------------
 Updated **List or Library** control - now you can select a **Content Type** of a new item in the List or Library control or create a folder.

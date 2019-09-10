@@ -1,6 +1,15 @@
 Version history
 ==================================================
 
+v1.4.7
+--------------------------------------------------
+Added an option to store submission data from forms in |Plumsail Account storage|.
+
+.. |Plumsail Account storage| raw:: html
+
+   <a href="https://account.plumsail.com/forms/forms" target="_blank">Plumsail Account storage</a>
+
+
 v1.4.5
 --------------------------------------------------
 Added **fd.messages** property to customize message text with JS API.
