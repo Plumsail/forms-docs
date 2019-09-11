@@ -28,3 +28,17 @@ After each submission, the data will be available in Plumsail Account:
 
 .. |pic2| image:: ./images/submissions/submissions_2_Data.png
    :alt: Collected data
+
+You can also view the form as it appeared during submission, just click on the magnifying glass icon:
+
+|pic3|
+
+.. |pic3| image:: ./images/submissions/submissions_3_View.png
+   :alt: Click icon
+
+Here you will find the form filled in and an option to export it to PDF:
+
+|pic4|
+
+.. |pic4| image:: ./images/submissions/submissions_4_Form.png
+   :alt: Form view
