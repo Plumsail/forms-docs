@@ -3,11 +3,11 @@ Version history
 
 v1.4.7
 --------------------------------------------------
-Added an option to store submission data from forms in |Plumsail Account storage|.
+Added an option to store public forms' submissions in |Plumsail Account|.
 
-.. |Plumsail Account storage| raw:: html
+.. |Plumsail Account| raw:: html
 
-   <a href="https://account.plumsail.com/forms/forms" target="_blank">Plumsail Account storage</a>
+   <a href="https://account.plumsail.com/forms/forms" target="_blank">Plumsail Account</a>
 
 
 v1.4.5
