@@ -9,3 +9,4 @@ List or Library configurations
     ./root-folder
     ./document-meta
     ./list-or-library-export
+    ./list-or-library-duplicate
