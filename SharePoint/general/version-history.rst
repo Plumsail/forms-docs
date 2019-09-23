@@ -1,6 +1,15 @@
 Version history (SharePoint Online)
 ==================================================
 
+
+v1.4.8
+--------------------------------------------------
+Added new features to DataTable control.
+
+Minor bugfixes.
+
+
+
 v1.4.6
 --------------------------------------------------
 Fixed an issue with support of multilingual sites.

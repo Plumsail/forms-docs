@@ -388,6 +388,11 @@ SETTINGS
         - Select Multiline Plain Text field in the current SharePoint List to save DataTable data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
         
           Alternatively create a new hidden field in editor. You can delete hidden fields by selecting "🖉 Manage" option in the dropdown. 
+    *   - Delete
+        - Select position of delete button column in DataTable - First or Last (default).
+    *   - ReadOnly
+        - Select if DataTable can be edited or not.
+
 
 DataTable Column properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
