@@ -187,7 +187,7 @@ LAYOUT
 Ink Sketch
 -------------------------------------------------------------
 Ink Sketch control behaves more similarly to a field. It allows users to draw or leave their input by holding down mouse key and dragging the mouse across the control.
-Can be used for signatures, drawings, marking details over a background image, etc.
+Can be used for signatures, drawings, |marking details over a background image|, etc.
 
 The data is stored in the session state, once the browser is closed, it is purged. The data is also sent on Form submission using Microsoft Flow, like other fields' data.
 
@@ -380,6 +380,10 @@ LAYOUT
 .. |kendoGrid| raw:: html
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid</a>
+
+.. |marking details over a background image| raw:: html
+
+    <a href="https://plumsail.com/docs/forms-web/how-to/notes-on-an-image.html" target="_blank">marking details over a background image</a>
 
 .. _designer-likert:
 
