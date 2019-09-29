@@ -6,3 +6,4 @@ Microsoft Flow
 
     ./flow
     ./docx-to-pdf
+    ./flow-edit-display
