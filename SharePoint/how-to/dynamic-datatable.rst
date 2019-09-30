@@ -14,11 +14,11 @@ and if something changes in the source lists, the values in DataTable will stay 
 
 This functionality also supports filtering and cascading selection, which we'll showcase in the article.
 
-|pic5|
+|pic0|
 
-.. |pic5| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-5-result.png
-   :alt: Form with DataTable result
-
+.. |pic0| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-0-anim.gif
+   :alt: Animated DataTable
+   
 Preparation
 --------------------------------------------------
 First, create three SharePoint Lists - **Categories, Products and Orders**.
@@ -120,3 +120,23 @@ and filter Products column by selected Category:
             });
     }
 
+The value for the DataTable can then be stored either in hidden SharePoint field or in Multiline Plain Text column:
+
+|pic6|
+
+.. |pic6| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-6-save.png
+   :alt: SaveTo property
+
+If you store data in column, you will see it displayed in List view with the help of our automatic :doc:`customizers </how-to/save-table-signature>`:
+
+|pic7|
+
+.. |pic7| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-7-column.png
+   :alt: Column with table in List View
+
+Here's how our form would look like in the browser:
+
+|pic5|
+
+.. |pic5| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-5-result.png
+   :alt: Form with DataTable result

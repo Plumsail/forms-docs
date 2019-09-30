@@ -116,11 +116,11 @@ Here's the code:
                 playAnimation();
                 //use List title and column's Internal Name here
                 pnp.sp.web.lists.getByTitle('FlowList').items.select('FlowFinished').getById(fd.itemId).get().then(function(item){
-                if(item.FlowFinished){
-                    clearInterval(timer);
-                    //use URL of your own site/list
-                    window.location.href = 'https://domain.sharepoint.com/sites/sitename/SitePages/PlumsailForms/FlowList/Item/DisplayForm.aspx?item=' + fd.itemId;
-                }
+                    if (item.FlowFinished) {
+                        clearInterval(timer);
+                        //use URL of your own site/list
+                        window.location.href = 'https://domain.sharepoint.com/sites/sitename/SitePages/PlumsailForms/FlowList/Item/DisplayForm.aspx?item=' + fd.itemId;
+                    }
                 });
             }
 
