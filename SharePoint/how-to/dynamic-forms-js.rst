@@ -12,3 +12,4 @@ Dynamic Forms with the use of JavaScript
     ./pass-values
     ./add-discussion
     ./version-history
+    ./dynamic-datatable
