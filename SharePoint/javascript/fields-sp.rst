@@ -792,15 +792,15 @@ Managed Metadata (Taxonomy) Single
                 fd.field('Taxonomy').value;
 
                 // returns the name of the selected option
-                fd.field('Taxonomy').value.Name; 
+                fd.field('Taxonomy').value.name; 
 
                 // returns the ID of the selected option
-                fd.field('Taxonomy').value.Id; 
+                fd.field('Taxonomy').value.id; 
 
                 //set element with the an object:
                 fd.field('Taxonomy').value = { 
-                    Id: "ac68fff3-2826-48f1-8d24-3fadad9533f0", 
-                    Name: "Test1"
+                    id: "ac68fff3-2826-48f1-8d24-3fadad9533f0", 
+                    name: "Test1"
                 };
 
     *   -   **$on('change')**
@@ -815,7 +815,7 @@ Managed Metadata (Taxonomy) Single
             .. code-block:: javascript
 
                 fd.field('Taxonomy').$on('change', function(value) {
-                    alert('New value: ' + value.Name);
+                    alert('New value: ' + value.name);
                 });
 
 Managed Metadata (Taxonomy) Multiple
@@ -842,27 +842,27 @@ Managed Metadata (Taxonomy) Multiple
                 fd.field('TaxonomyMulti').value;
 
                 // returns the name of the first selected option
-                fd.field('TaxonomyMulti').value[0].Name; 
+                fd.field('TaxonomyMulti').value[0].name; 
 
                 // returns the ID of the first selected option
-                fd.field('TaxonomyMulti').value[0].Id; 
+                fd.field('TaxonomyMulti').value[0].id; 
 
                 //returns all selected options as a text string
                 var terms = fd.field('TaxonomyMulti').value;
                 var s = '';
                 for (var i = 0; i < terms.length; i++) {
-                    s += terms[i].Name + '; ';
+                    s += terms[i].name + '; ';
                 }
                 alert(s);
 
                 //set element with the an array:
                 fd.field('TaxonomyMulti').value = [{ 
-                    Id: "ac68fff3-2826-48f1-8d24-3fadad9533f0", 
-                    Name: "Term1"
+                    id: "ac68fff3-2826-48f1-8d24-3fadad9533f0", 
+                    name: "Term1"
                 },
                 {
-                    Id: "53e1c22e-bfc4-4172-81ff-806415606837",
-                    Name: "Term2"
+                    id: "53e1c22e-bfc4-4172-81ff-806415606837",
+                    name: "Term2"
                 }];
 
     *   -   **$on('change')**
@@ -880,7 +880,7 @@ Managed Metadata (Taxonomy) Multiple
                     var terms = value;
                     var s = '';
                     for (var i = 0; i < terms.length; i++) {
-                        s += terms[i].Name + '; ';
+                        s += terms[i].name + '; ';
                     }
                     alert('New value: ' + s);
                 });
