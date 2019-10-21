@@ -155,6 +155,76 @@ Most fields have these properties:
             .. code-block:: javascript
 
                 fd.field('TextBox').widget;
+    *   -   **widgetOptions**
+        -   Property that holds |Kendo UI NumericTextBox widget|. 
+
+            **decimals** - Specifies the number of precision applied to the field value. If not set, the precision defined by the current culture is used.
+
+            **factor** - Specifies the factor by which the value is multiplied. 
+
+            **format** - Specifies displayed number format.
+
+            * "n", "n0", "n3" — Renders a number.
+
+            * "c", "c0", "c3" — Renders a currency value.
+              
+            * "p", "p0", "p3" — Renders a percentage (number is multiplied by 100).
+
+            Where 0,3 - number of decimal places displayed.
+
+            **min** / **max** - Specifies the largest and smallest value the user can enter. 
+
+            **restrictDecimals** - Specifies whether the length of the decimal should be restricted during typing. The length of the fraction is defined by the decimals value.  
+
+            **round** - Specifies whether the value should be rounded or truncated. 
+
+            **step** - Specifies the value used to increment or decrement widget value. 
+
+            |
+
+            *Example #1*
+
+            Input value: **153.965**
+
+            Displayed value: **$154**
+            
+            .. code-block:: javascript
+
+                fd.field('Numeric0').widgetOptions = {
+                    format:"c0",
+                    decimals: 3
+                }
+             
+            *Example #2*
+
+            Input value: **95**
+
+            Displayed value: **95%**
+
+            Value increments/decrements by one.
+            
+            .. code-block:: javascript
+
+                fd.field('Numeric0').widgetOptions = {
+                    format: "p0",
+                    factor: 100,
+                    min: 0,
+                    max: 1,
+                    step: 0.01
+                }
+
+            *Example #3*
+
+            Input value: **122,7669**
+
+            Displayed value: **122,77**
+            
+            .. code-block:: javascript
+
+                fd.field('Numeric0').widgetOptions = {
+                    format: "n2",
+                    decimals: 4
+                }                                  
 
 MaskedTextBox Unique Properties
 --------------------------------------------------
@@ -210,6 +280,10 @@ These properties are only applicable to MaskedTextBox field:
 .. |KendoUI MaskedTextBox| raw:: html
 
                <a href="https://demos.telerik.com/kendo-ui/maskedtextbox/index" target="_blank">KendoUI MaskedTextBox</a>
+
+.. |Kendo UI NumericTextBox widget| raw:: html
+
+               <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/numerictextbox" target="_blank">Kendo UI NumericTextBox widget</a>
 
 Methods
 --------------------------------------------------
