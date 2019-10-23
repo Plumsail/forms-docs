@@ -121,6 +121,92 @@ Multiline Text Field
                 fd.field('MultipleLines').ready().then(function() {
                     console.log('Multiple Lines loaded!');
                 }); 
+    *   -   **widgetOptions**
+        -   These properties are only applicable to Multi Lines of Text Field with enabled enhanced rich text.
+
+            Customize the collection of tools that are used to interact with the text.
+            Tools may be switched on by specifying their names. 
+
+            The available editor commands are:
+
+            **Basic text formatting**:
+
+            'bold', 'italic', 'underline', 'strikethrough', 'subscript', 'superscript'
+            
+
+            **Font and color**:
+
+            'fontName', 'fontSize', 'foreColor', 'backColor'
+
+
+            **Alignment**:
+
+            'justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull' 
+
+
+            **Lists**:
+
+            'insertUnorderedList', 'insertOrderedList', 'indent', 'outdent' 
+
+
+            **Links, images and files**:
+
+            'createLink', 'unlink', 'insertImage', 'insertFile' 
+
+
+            **Table editing**:
+
+            'tableWizard', 'createTable', 'addColumnLeft', 'addColumnRight', 
+            'addRowAbove', 'addRowBelow', 'deleteRow', 'deleteColumn' 
+
+
+            **Structural markup and styles**:
+
+            'formatting',  'cleanFormatting'  
+
+            
+            **HTML code view**:
+
+            'viewHtml'
+
+
+            **Print edited field**:  
+
+            'print'
+
+
+            **Custom**:
+            
+            Add a custom button to the tools pane which will run the JavaScript function. 
+
+            
+            *Example:*
+            
+            .. code-block:: javascript
+                
+                fd.spRendered(function() {
+                    fd.field('MultipleLines').widgetOptions = {
+                        tools: [
+                            { name: 'italic' },
+                            { name: 'underline' },
+                            { name: 'justifyLeft' },
+                            { name: 'justifyCenter' },
+                            { name: 'justifyRight' }, 
+                            {
+                                name: "custom",
+                                tooltip: "Insert signature with Current User Name",
+                                exec: function(e) {
+                                    var editor = $(this).data("kendoEditor");
+                                    editor.exec("inserthtml", { 
+                                        value: "<em>---<br />Kind regards,<br />" + 
+                                                _spPageContextInfo.userDisplayName + 
+                                                "<br />Plumsail team</em>" 
+                                    });
+                                }
+                            }
+                        ]
+                    } 
+                });   
                 
 Choice Single - Dropdown or Radio
 --------------------------------------------------

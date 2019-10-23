@@ -155,76 +155,6 @@ Most fields have these properties:
             .. code-block:: javascript
 
                 fd.field('TextBox').widget;
-    *   -   **widgetOptions**
-        -   Property that holds |Kendo UI NumericTextBox widget|. 
-
-            **decimals** - Specifies the number of precision applied to the field value. If not set, the precision defined by the current culture is used.
-
-            **factor** - Specifies the factor by which the value is multiplied. 
-
-            **format** - Specifies displayed number format.
-
-            * "n", "n0", "n3" — Renders a number.
-
-            * "c", "c0", "c3" — Renders a currency value.
-              
-            * "p", "p0", "p3" — Renders a percentage (number is multiplied by 100).
-
-            Where 0,3 - number of decimal places displayed.
-
-            **min** / **max** - Specifies the largest and smallest value the user can enter. 
-
-            **restrictDecimals** - Specifies whether the length of the decimal should be restricted during typing. The length of the fraction is defined by the decimals value.  
-
-            **round** - Specifies whether the value should be rounded or truncated. 
-
-            **step** - Specifies the value used to increment or decrement widget value. 
-
-            |
-
-            *Example #1*
-
-            Input value: **153.965**
-
-            Displayed value: **$154**
-            
-            .. code-block:: javascript
-
-                fd.field('Numeric0').widgetOptions = {
-                    format:"c0",
-                    decimals: 3
-                }
-             
-            *Example #2*
-
-            Input value: **95**
-
-            Displayed value: **95%**
-
-            Value increments/decrements by one.
-            
-            .. code-block:: javascript
-
-                fd.field('Numeric0').widgetOptions = {
-                    format: "p0",
-                    factor: 100,
-                    min: 0,
-                    max: 1,
-                    step: 0.01
-                }
-
-            *Example #3*
-
-            Input value: **122,7669**
-
-            Displayed value: **122,77**
-            
-            .. code-block:: javascript
-
-                fd.field('Numeric0').widgetOptions = {
-                    format: "n2",
-                    decimals: 4
-                }                                  
 
 MaskedTextBox Unique Properties
 --------------------------------------------------
@@ -284,6 +214,194 @@ These properties are only applicable to MaskedTextBox field:
 .. |Kendo UI NumericTextBox widget| raw:: html
 
                <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/numerictextbox" target="_blank">Kendo UI NumericTextBox widget</a>
+
+MultilineTextBox Unique Properties
+--------------------------------------------------
+These properties are only applicable to MultilineTextBox field:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Property
+        -   Description/Examples
+    
+    *   -   **widgetOptions**
+        -   Customize the collection of tools that are used to interact with the text.
+
+            Tools may be switched on by specifying their names. 
+
+            The available editor commands are:
+
+            **Basic text formatting**:
+
+            'bold', 'italic', 'underline', 'strikethrough', 'subscript', 'superscript'
+            
+
+            **Font and color**:
+
+            'fontName', 'fontSize', 'foreColor', 'backColor'
+
+
+            **Alignment**:
+
+            'justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull' 
+
+
+            **Lists**:
+
+            'insertUnorderedList', 'insertOrderedList', 'indent', 'outdent' 
+
+
+            **Links, images and files**:
+
+            'createLink', 'unlink', 'insertImage', 'insertFile' 
+
+
+            **Table editing**:
+
+            'tableWizard', 'createTable', 'addColumnLeft', 'addColumnRight', 
+            'addRowAbove', 'addRowBelow', 'deleteRow', 'deleteColumn' 
+
+
+            **Structural markup and styles**:
+
+            'formatting',  'cleanFormatting'  
+
+            
+            **HTML code view**:
+
+            'viewHtml'
+
+
+            **Print edited field**:  
+
+            'print'
+
+
+            **Custom**:
+            
+            Add a custom button to the tools pane which will run the JavaScript function. 
+
+            
+            *Example:*
+            
+            .. code-block:: javascript
+                
+                fd.rendered(function() {
+                    fd.field('MultilineTextBox0').widgetOptions = {
+                        tools: [
+                            { name: 'italic' },
+                            { name: 'underline' },
+                            { name: 'justifyLeft' },
+                            { name: 'justifyCenter' },
+                            { name: 'justifyRight' }, 
+                            {
+                                name: "custom",
+                                tooltip: "Insert profile template",
+                                exec: function(e) {
+                                    var editor = $(this).data("kendoEditor");
+                                    editor.exec("inserthtml", { 
+                                        value: "<strong>Name: </strong><br />
+                                                <strong>Age: </strong><br /> 
+                                                <strong>Gender: </strong><br />
+                                                <strong>Email: </strong><br />" 
+                                    });
+                                }
+                            }
+                        ]
+                    } 
+                });   
+
+
+                 
+Numeric Field Unique Properties
+--------------------------------------------------
+These properties are only applicable to Numeric field: 
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **widgetOptions**
+        -   Property that holds |Kendo UI NumericTextBox widget|. 
+
+            - **decimals** - Specifies the number of precision applied to the field value. If not set, the precision defined by the current culture is used.
+
+            - **factor** - Specifies the factor by which the value is multiplied. 
+
+            - **format** - Specifies displayed number format.
+
+              - "n", "n0", "n3" — Renders a number.
+
+              - "c", "c0", "c3" — Renders a currency value.
+              
+              - "p", "p0", "p3" — Renders a percentage (number is multiplied by 100).
+
+                Where 0,3 - number of decimal places displayed.
+
+            - **min** / **max** - Specifies the largest and smallest value the user can enter. 
+
+            - **restrictDecimals** - Specifies whether the length of the decimal should be restricted during typing. The length of the fraction is defined by the decimals value.  
+
+            - **round** - Specifies whether the value should be rounded or truncated. 
+
+            - **step** - Specifies the value used to increment or decrement widget value. 
+
+            |
+
+            *Example #1*
+
+            Input value: **153.965**
+
+            Displayed value: **$154**
+            
+            .. code-block:: javascript
+
+                fd.field('Numeric0').widgetOptions = {
+                    format:"c0",
+                    decimals: 3
+                }
+            
+            |
+
+            *Example #2*
+
+            Input value: **95**
+
+            Displayed value: **95%**
+
+            Value increments/decrements by one.
+            
+            .. code-block:: javascript
+
+                fd.field('Numeric0').widgetOptions = {
+                    format: "p0",
+                    factor: 100,
+                    min: 0,
+                    max: 1,
+                    step: 0.01
+                }
+
+            |
+
+            *Example #3*
+
+            Input value: **122,7669**
+
+            Displayed value: **122,77**
+            
+            .. code-block:: javascript
+
+                fd.field('Numeric0').widgetOptions = {
+                    format: "n2",
+                    decimals: 4
+                }                         
+
+
 
 Methods
 --------------------------------------------------
