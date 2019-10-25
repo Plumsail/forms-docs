@@ -122,7 +122,9 @@ Multiline Text Field
                     console.log('Multiple Lines loaded!');
                 }); 
     *   -   **widgetOptions**
-        -   These properties are only applicable to Multi Lines of Text Field with enabled enhanced rich text.
+        -   The property contains settings for |Kendo UI MultilineTextBox control|.
+        
+            These properties are only applicable to Multi Lines of Text Field with enabled enhanced rich text.
 
             Customize the collection of tools that are used to interact with the text.
             Tools may be switched on by specifying their names. 
@@ -207,7 +209,12 @@ Multiline Text Field
                         ]
                     } 
                 });   
-                
+
+.. |Kendo UI MultilineTextBox control| raw:: html
+
+               <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/editor/configuration/tools" target="_blank">Kendo UI MultilineTextBox control</a>
+
+
 Choice Single - Dropdown or Radio
 --------------------------------------------------
 

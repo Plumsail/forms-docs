@@ -224,7 +224,7 @@ These properties are only applicable to MultilineTextBox field:
         -   Description/Examples
     
     *   -   **widgetOptions**
-        -   The property contains settings for |Kendo UI MultilineTextBox control|. 
+        -   The property contains settings for |Kendo UI MultilineTextBox control| and is applicable for rich text fields only. 
         
             Customize the collection of tools that are used to interact with the text.
 
