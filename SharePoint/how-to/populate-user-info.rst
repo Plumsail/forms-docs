@@ -25,12 +25,14 @@ Expense Report Form
 
 First, create a simple form with the following fields:  
 
-Employee Name (people picker field);
+- Employee Name (people picker field);
 - Job Title (plain text field);
 - Department (plain text field);
 - Mobile (plain text field);
 - Manager Name (people picker field);
-- Expense Sum (currency field).  
+- Expense Sum (currency field). 
+
+|
 
 Here is our form:  
 

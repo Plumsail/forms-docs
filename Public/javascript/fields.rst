@@ -211,9 +211,6 @@ These properties are only applicable to MaskedTextBox field:
 
                <a href="https://demos.telerik.com/kendo-ui/maskedtextbox/index" target="_blank">KendoUI MaskedTextBox</a>
 
-.. |Kendo UI NumericTextBox widget| raw:: html
-
-               <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/numerictextbox" target="_blank">Kendo UI NumericTextBox widget</a>
 
 MultilineTextBox Unique Properties
 --------------------------------------------------
@@ -227,7 +224,9 @@ These properties are only applicable to MultilineTextBox field:
         -   Description/Examples
     
     *   -   **widgetOptions**
-        -   Customize the collection of tools that are used to interact with the text.
+        -   The property contains settings for |Kendo UI MultilineTextBox control|. 
+        
+            Customize the collection of tools that are used to interact with the text.
 
             Tools may be switched on by specifying their names. 
 
@@ -312,6 +311,9 @@ These properties are only applicable to MultilineTextBox field:
                         ]
                     } 
                 });   
+.. |Kendo UI MultilineTextBox control| raw:: html
+
+               <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/editor/configuration/tools" target="_blank">Kendo UI MultilineTextBox control</a>
 
 
                  
@@ -327,7 +329,7 @@ These properties are only applicable to Numeric field:
         -   Description/Examples
         
     *   -   **widgetOptions**
-        -   Property that holds |Kendo UI NumericTextBox widget|. 
+        -   The property contains settings for |Kendo UI NumericTextBox control|. 
 
             - **decimals** - Specifies the number of precision applied to the field value. If not set, the precision defined by the current culture is used.
 
@@ -400,6 +402,9 @@ These properties are only applicable to Numeric field:
                     format: "n2",
                     decimals: 4
                 }                         
+.. |Kendo UI NumericTextBox control| raw:: html
+
+               <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/numerictextbox" target="_blank">Kendo UI NumericTextBox control</a>
 
 
 
