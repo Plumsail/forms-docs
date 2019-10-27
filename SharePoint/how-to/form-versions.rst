@@ -17,7 +17,7 @@ Restoring older version
 --------------------------------------------------
 All form schemas, that the editor opens and interprets as a form are stored on the SharePoint site for in **Site Pages** library.
 
-.. important:: Make sure that versioning is enabled for **Site Pages** library.
+.. important:: Make sure that versioning is enabled for **Site Pages** library!
 
 For example, we've accidentally deleted all fields from Orders Edit Form:
 
@@ -26,22 +26,7 @@ For example, we've accidentally deleted all fields from Orders Edit Form:
 .. |pic0| image:: ../images/how-to/form-versions/how-to-form-versions-0-problem.png
    :alt: Empty form
 
-
-First, you will need to Reset the form in the editor:
-
-|pic1|
-
-.. |pic1| image:: ../images/how-to/form-versions/how-to-form-versions-1-reset.png
-   :alt: Reset form
-
-This will send the form to the Recycle Bin on the site. Find and restore it (remember the name of the file for the following step):
-
-|pic2|
-
-.. |pic2| image:: ../images/how-to/form-versions/how-to-form-versions-2-restore.png
-   :alt: Restore form
-
-To get form to a previous version, go to **Site Pages** -> **PlumsailForms** and find the specific form that you've just restored from the bin. 
+Go to **Site Pages** -> **PlumsailForms** and find the specific form that you've just restored from the bin. 
 
 The file names have the following structure: **{ListName}_{ContentTypeName}_{FormType}.xfds**
 
@@ -71,3 +56,28 @@ That's it! This version should now be back:
 .. |pic6| image:: ../images/how-to/form-versions/how-to-form-versions-6-result.png
    :alt: Restored form
 
+Restoring form after Reset
+--------------------------------------------------
+
+Let's imagine, you Reset a form by accident:
+
+|pic1|
+
+.. |pic1| image:: ../images/how-to/form-versions/how-to-form-versions-1-reset.png
+   :alt: Reset form
+
+This will send the form to the Recycle Bin on the site. Find and restore it:
+
+|pic2|
+
+.. |pic2| image:: ../images/how-to/form-versions/how-to-form-versions-2-restore.png
+   :alt: Restore form
+
+Then re-open the form in the editor, and save it again:
+
+|pic5|
+
+.. |pic5| image:: ../images/how-to/form-versions/how-to-form-versions-5-save.png
+   :alt: Re-save form
+
+This will bring the form back after Reset.
