@@ -13,3 +13,4 @@ Dynamic Forms with the use of JavaScript
     ./add-discussion
     ./version-history
     ./dynamic-datatable
+    ./populate-user-info
