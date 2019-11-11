@@ -78,14 +78,20 @@ In this example, I will use string withing JavaScript editor to define template 
         template += '</span>';
         fd.field('Lookup').widgetOptions = {
             template: template,
+            height: 400,
             virtual: {
                 itemHeight: 100
+            },
+            dataSource: {
+                pageSize: 16
             }
         }
     });
 
 In this template, I've tried to structure everything clearly - starting from an image, going to the next column, 
 wrapping some fields inside span - this will allow us to position fields in a column rather than line.
+
+.. Important:: When adjusting **itemHeight**, **pageSize** should also be adjusted to match new **itemHeight**, using this formula: **((height / itemHeight) * 4)**
 
 Finally, with the added classes, I add the following CSS inside CSS Editor:
 
