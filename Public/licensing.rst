@@ -10,10 +10,10 @@ Available Plans
 All plans offer an **unlimited amount of forms** to be designed and 
 there are no limitations to how complex the forms can be, that includes the free plan as well.
 
-* Scooter (free) - 100 submissions/month, 100 MB storage (cleared monthly)
-* Pickup - 1,000 submissions/month, 1 GB storage (can be cleared at any point)
-* Van - 10,000 submissions/month, 5 GB storage (can be cleared at any point)
-* Truck - 1,000,000 submissions/month, 10 GB storage (can be cleared at any point)
+* Scooter (free) - 100 submissions/month, 100 MB storage (cleared monthly), 20 MB max attachment file size
+* Pickup - 1,000 submissions/month, 1 GB storage (can be cleared at any point), 100 MB max attachment file size
+* Van - 10,000 submissions/month, 5 GB storage (can be cleared at any point), 300 MB max attachment file size
+* Truck - 1,000,000 submissions/month, 10 GB storage (can be cleared at any point), 500 MB max attachment file size
 
 Only the free Scooter plan comes with commercial branding by Plumsail, that includes a small link to our site on free forms. 
 Commercial plans include **no branding**. Once a commercial plan is purchased, the branding is removed.
