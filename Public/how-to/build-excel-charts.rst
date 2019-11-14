@@ -116,4 +116,4 @@ You can build charts and tables based on the loaded data. For example, you can b
 
 .. |here|  raw:: html
 
-   <a href="..\..\..\source\service_quality_form.xfds" target="_blank">here</a>
+   <a href="..\_static\service_quality_form.xfds" target="_blank">here</a>
