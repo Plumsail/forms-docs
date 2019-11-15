@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Form JavaScript="fd.rendered(function() {&#xD;&#xA;&#x9;fd.field('Age').widgetOptions = {&#xD;&#xA;&#x9;    format: &quot;n0&quot;,&#xD;&#xA;&#x9;    min: 18,&#xD;&#xA;&#x9;    max: 100,&#xD;&#xA;&#x9;}&#xD;&#xA;&#xD;&#xA;});" Css=".text {&#xD;&#xA;font-weight: bold;&#xD;&#xA;}" SubmitToFlow="true" FormId="08edb65d-8d78-4094-b5c1-f9d5c9446e8b" Theme="">
+  <PCView>
+    <Layout Version="1.0.0.0">
+      <Grid Stacked="Small" DefaultChildWidth="6">
+        <Row>
+          <Cell Width="6" Offset="0">
+            <TextBlock Text="Customer Satisfaction Survey" TextType="Header2" InternalName="Text7" FontColor="#0070C0" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell Width="6" Offset="0">
+            <Wizard InternalName="Wizard1" Shape="Circle" OnFinish="&quot;return fd.save();&quot;" NextText="Next" BackText="Back" FinishText="Finish" Steps="[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;]">
+              <WizardStep>
+                <Grid Stacked="Small" DefaultChildWidth="12">
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="Name" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" CssClass="text" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="Name" Required="False" PatternType="Custom" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="Email" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" CssClass="text" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="Email" Required="False" PatternType="Custom" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="Age" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" CssClass="text" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Numeric" InternalName="Age" Required="False" />
+                    </Cell>
+                  </Row>
+                </Grid>
+              </WizardStep>
+              <WizardStep>
+                <Grid Stacked="Small" DefaultChildWidth="12">
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <TextBlock CssClass="text" Text="How satisfied are you with our services?" TextType="Text" InternalName="Satisfaction" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="How satisfied are you with our services?" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" TitleWidth="350" Type="Radios" InternalName="satisfaction" Required="False" Items="[&quot;Very Satisfied&quot;,&quot;Satisfied&quot;,&quot;Unsatisfied&quot;,&quot;Neutral&quot;]" ColumnsNumber="4" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <TextBlock CssClass="text" Text="How long have you used our service?" TextType="Text" InternalName="Text2" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="Period" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Radios" InternalName="Period" Required="False" Items="[&quot;Less than a month&quot;,&quot;1-6 months&quot;,&quot;1-3 years&quot;,&quot;Over 3 years&quot;]" ColumnsNumber="4" />
+                    </Cell>
+                  </Row>
+                </Grid>
+              </WizardStep>
+              <WizardStep>
+                <Grid Stacked="Small" DefaultChildWidth="12">
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <TextBlock CssClass="text" Text="What do you like the most about our services?" TextType="Text" InternalName="Text1" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="Radios3" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Radios" InternalName="Like" Required="False" Items="[&quot;Quality&quot;,&quot;Price&quot;,&quot;Support&quot;,&quot;Speed&quot;,&quot;Customer Service&quot;,&quot;Nothing&quot;]" ColumnsNumber="3" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <TextBlock CssClass="text" Text="What do you dislike the most about our services?" TextType="Text" InternalName="Text3" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="Radios3" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Radios" InternalName="Dislike" Required="False" Items="[&quot;Quality&quot;,&quot;Price&quot;,&quot;Support&quot;,&quot;Speed&quot;,&quot;Customer Service&quot;,&quot;Nothing&quot;]" ColumnsNumber="3" />
+                    </Cell>
+                  </Row>
+                </Grid>
+              </WizardStep>
+              <WizardStep>
+                <Grid Stacked="Small" DefaultChildWidth="12">
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <TextBlock CssClass="text" Text="Would you use our service in the future?" TextType="Text" InternalName="Text4" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="DropDown1" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="DropDown" InternalName="Future" Required="False" Items="[&quot;definitely&quot;,&quot;probably&quot;,&quot;not sure&quot;,&quot;probably not&quot;,&quot;definitely not&quot;]" IsMultiple="False" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <TextBlock CssClass="text" Text="Would you recommend our service?" TextType="Text" InternalName="Text5" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="DropDown2" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="DropDown" InternalName="Recommend" Required="False" Items="[&quot;definitely&quot;,&quot;probably&quot;,&quot;not sure&quot;,&quot;probably not&quot;,&quot;definitely not&quot;]" IsMultiple="False" />
+                    </Cell>
+                  </Row>
+                </Grid>
+              </WizardStep>
+              <WizardStep>
+                <Grid Stacked="Small" DefaultChildWidth="12">
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <TextBlock CssClass="text" Text="If you have any comments or suggestions about our services, please share:" TextType="Text" InternalName="Comments" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Offset="0">
+                      <Field Title="MultilineTextBox1" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="MultilineTextBox" InternalName="Comments" Required="False" Mode="Plain" />
+                    </Cell>
+                  </Row>
+                </Grid>
+              </WizardStep>
+            </Wizard>
+          </Cell>
+        </Row>
+      </Grid>
+    </Layout>
+  </PCView>
+</Form>
