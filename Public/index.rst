@@ -54,7 +54,6 @@ Public Web Forms
 
             javascript/general
             javascript/manager
-            javascript/toolbar
             javascript/containers
             javascript/controls
             javascript/fields

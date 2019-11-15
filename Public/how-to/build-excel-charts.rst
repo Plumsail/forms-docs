@@ -5,8 +5,8 @@ Build excel charts based on submissions
  :local:
  :depth: 1
 
- Introduction
- --------------------------------------------------
+Introduction
+--------------------------------------------------
 
 In this article, you will know how to gather information from submissions and build simple charts for data analysis in Excel. 
 
@@ -116,4 +116,4 @@ You can build charts and tables based on the loaded data. For example, you can b
 
 .. |here|  raw:: html
 
-   <a href="..\_static\forms\service_quality_form.xfds" download>here</a>
+   <a href="..\..\service_quality_form.xfds" target="_blank" download= "service_quality_form">here</a>
