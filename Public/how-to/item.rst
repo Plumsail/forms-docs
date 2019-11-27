@@ -13,6 +13,11 @@ You are not tied to SharePoint forms, items can be added from the Flow.
 In this example, we will design a form for customers to subscribe to some form of updates from your company
 and use Flow to add this information to a list on your SharePoint site.
 
+.. Note::   This is a very basic example. To find out how to save complex controls such as Ink Sketch, DataTable or Likert Scale to SharePoint, please, check the :doc:`following article </how-to/save-controls-to-sp>`. These controls can also be rendered in SharePoint List View:
+
+            .. image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-splist2.png
+
+
 Preparation
 --------------------------------------------------
 First step is to design a list, if you don't have one. It's best to start from the list, 

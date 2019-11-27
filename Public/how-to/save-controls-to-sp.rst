@@ -9,9 +9,10 @@ Description
 --------------------------------------------------
 Both Public Web Forms and SharePoint forms can include our custom controls - Ink Sketch, DataTable or Likert Scale.
 
-How to send them to MS Power Automate (MS Flow) and save to SharePoint.
+In this article, we'll prepare SharePoint List and Public Web Forms with these controls.
+Anonymous users will be able to send them to MS Power Automate (MS Flow) where they'll get saved to SharePoint.
 
-Form configuration
+SharePoint list and its forms
 --------------------------------------------------
 First of all, you need SharePoint List with Plain Text columns where you want to save controls to. Please, check out |this article|, so they render properly in the List View.
 
@@ -38,11 +39,20 @@ After saving, you should see the following result:
 .. |pic2| image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-splist.png
    :alt: SharePoint List
 
+Public form with DataTable, InkSketch, and Likert
+--------------------------------------------------
 You also need to create a Public Web Form for anonymous submissions to MS Power Automate:
 
-|pic3|
+|pic3a|
 
-.. |pic3| image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-publicform.png
+.. |pic3a| image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-publicform0.png
+   :alt: Public Form
+
+I've placed all the same controls on the Public Web Form, which you can see here:
+
+|pic3b|
+
+.. |pic3b| image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-publicform.png
    :alt: Public Form
 
 Flow configuration
