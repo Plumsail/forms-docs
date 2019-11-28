@@ -71,6 +71,13 @@ Copy the ID of the form:
 .. |pic5| image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-copyid.png
    :alt: Copy ID
 
+Paste the ID of the form inside **Plumsail Forms** - **Form is submitted** trigger:
+
+|pic5b|
+
+.. |pic5b| image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-submitted.png
+   :alt: Form is submitted trigger
+
 To save DataTable or Likert Scale, use Data Operations - **Compose** action:
 
 |pic6|
