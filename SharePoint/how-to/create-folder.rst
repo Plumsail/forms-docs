@@ -1,4 +1,4 @@
-Display items or documents from a specific folder in a form with 'List or Library' control
+Display items or documents from a specific folder in a form with List or Library control
 ==========================================================================================
 
 .. contents:: Contents:
@@ -7,7 +7,7 @@ Display items or documents from a specific folder in a form with 'List or Librar
 
 Introduction
 --------------------------------------------------
-In this article, I will show you how to create a folder in a document library automatically right after adding an item to a SharePoint list and how to display the content of this folder in Edit and Display forms of the list with the help of 'List or Library' control.
+In this article, I will show you how to create a folder in a document library automatically right after adding an item to a SharePoint list and how to display the content of this folder in Edit and Display forms of the list with the help of List or Library control.
 
 Imagine, we have a list with general information about customers and suppliers. And there are two libraries for storing incoming and outgoing documents related to agents. Documents in those libraries are organized by folders. Each customer or supplier has the corresponding folder in each library. 
 
@@ -23,12 +23,12 @@ Forms Overview
 
 Agent Information form contains the following fields: 
 
-- Title – agent's Name (text field);
+- Agent Name (text field);
 - Postal Address (text field);
 - Phone Number (text field);
 - Manager Name (people picker field).
 
-In Edit and Display forms, we also add a Tab control with two tabs: Incoming and Outgoing. Each tab contains a 'List or Library' control associated with the corresponding document library.
+In Edit and Display forms, we also add a Tab control with two tabs: Incoming and Outgoing. Each tab contains a List or Library control associated with the corresponding document library.
 
 |pic1|
 
@@ -59,14 +59,14 @@ We use the PNP JS library to create folders in a document library. You can find 
         return Promise.all([folder1, folder2]);  
     }); 
 
-Also, if you want to redirect users to the Edit form after creating a customer or supplier so they could add related documents to the new folders, take the code from the |'Redirect user after form submission in SharePoint'| article and insert it into the New form.
+Also, if you want to redirect users to the Edit form after creating a customer or supplier so they could add related documents to the new folders, take the code from the |Redirect user after form submission in SharePoint| article and insert it into the New form.
 
 Root folder
 --------------------------------------------------
 
-In the Edit and Display forms, we have two 'List or Library' controls for incoming and outgoing documents related to the current agent. 
+In the Edit and Display forms, we have two List or Library controls for incoming and outgoing documents related to the current agent. 
 
-By default, 'List or Library' control displays all items from the root folder of a document library. But with a bit of code, we can change the root folder and display documents from a specific folder only. 
+By default, List or Library control displays all items from the root folder of a document library. But with a bit of code, we can change the root folder and display documents from a specific folder only. 
 
 Use the code in the Edit and Display forms to display documents from a folder of the current customer or supplier: 
 
@@ -104,6 +104,6 @@ Use the code in the Edit and Display forms to display documents from a folder of
 
    <a href="https://pnp.github.io/pnpjs/sp/docs/items/" target="_blank">here</a>
 
-.. |'Redirect user after form submission in SharePoint'| raw:: html
+.. |Redirect user after form submission in SharePoint| raw:: html
 
-   <a href="https://plumsail.com/docs/forms-sp/how-to/redirect-sp-save.html" target="_blank">'Redirect user after form submission in SharePoint'</a>
+   <a href="https://plumsail.com/docs/forms-sp/how-to/redirect-sp-save.html" target="_blank">Redirect user after form submission in SharePoint</a>
