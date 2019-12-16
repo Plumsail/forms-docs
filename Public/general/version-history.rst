@@ -1,6 +1,16 @@
 Version history
 ==================================================
 
+v1.5.1
+--------------------------------------------------
+Added customizable |Pages| to share Public Web Forms via URL.
+
+
+.. |Pages| raw:: html
+
+   <a href="https://account.plumsail.com/forms/pages" target="_blank">Pages</a>
+
+
 v1.4.7
 --------------------------------------------------
 Added an option to store public forms' submissions in |Plumsail Account|.
