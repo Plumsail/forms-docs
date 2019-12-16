@@ -43,11 +43,11 @@ Console App (.NET Framework):
 
 In the newly created project, open Tools, find NuGet Package Manager and select Manage NuGet Packages for Solution...
 
-Open the Browse tab, search for 'plumsail', and install Plumsail.Forms.Provision package:
+Open the Browse tab, search for 'plumsail', and install **Plumsail.Forms.O365** (or **Plumsail.Forms.SP2019** for SharePoint 2019) package:
 
 |pic4|
 
-.. |pic4| image:: ../images/how-to/provision/search.png
+.. |pic4| image:: ../images/how-to/provision/provision-search.png
    :alt: Plumsail.Forms.Provision package
 
 Adjust the code

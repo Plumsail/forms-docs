@@ -15,7 +15,7 @@ All you need to do, actually, is to open JS code editor:
 
 |pic1|
 
-.. |pic1| image:: ../images/how-to/export-pdf/JSEditor.png
+.. |pic1| image:: ../images/how-to/export-pdf/how-to-export-pdf-11
    :alt: JS Editor in Plumsail Forms
 
 Insert the following code:

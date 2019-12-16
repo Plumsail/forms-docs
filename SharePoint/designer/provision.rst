@@ -7,7 +7,7 @@ SharePoint Forms Provision
 
 General Info
 -------------------------------------------------------------
-It is possible to provision forms programmatically using **Plumsail.Forms.Provision** |NuGet package|. 
+It is possible to provision forms programmatically using **Plumsail.Forms.O365** |NuGet package|. 
 
 .. important:: For SharePoint 2019, please, use the **Plumsail.Forms.SP2019** |NuGet package 2019| instead. 
 
@@ -17,7 +17,7 @@ Find an example of how it can be used in our article - :doc:`Provision Modern UI
 
 .. |NuGet package| raw:: html
 
-   <a href="https://www.nuget.org/packages/Plumsail.Forms.Provision/" target="_blank">NuGet package</a>
+   <a href="https://www.nuget.org/packages/Plumsail.Forms.O365" target="_blank">NuGet package</a>
 
 .. |NuGet package 2019| raw:: html
 
