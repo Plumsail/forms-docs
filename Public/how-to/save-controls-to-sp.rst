@@ -83,7 +83,7 @@ To save DataTable or Likert Scale, use Data Operations - **Compose** action:
 |pic6|
 
 .. |pic6| image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-compose.png
-   :alt: Сompose action
+   :alt: Compose action
 
 Input the control value there:
 
@@ -96,7 +96,7 @@ Then, use this output when populating SharePoint columns. For Ink Sketch, just u
 
 |pic8|
 
-.. |pic8| image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-сreateitem.png
+.. |pic8| image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-createitem.png
    :alt: Create SharePoint item
 
 Save the Flow! Now, let's test it - fill out the Preview form and Submit it:
