@@ -352,6 +352,67 @@ Date
                 fd.field('Date').value; 
                 fd.field('Date').value = new Date();
 
+    *   -   **widgetOptions**
+        -   The property contains settings for |Kendo UI DatePicker control| and is applicable for Date fields only. 
+
+            **start** - Specifies the start view. The following settings are available for the start value: 
+            
+            - "month" - Shows the days of the month. 
+            - "year" - Shows the months of the year.
+            - "decade" - Shows the years of the decade.
+            - "century" - Shows the decades from the century.
+            
+            **depth** - Specifies the navigation depth. Works only with the start option, if the start option is lower than depth. The following settings are available for the depth value: 
+            
+            - "month" - Shows the days of the month. 
+            - "year" - Shows the months of the year. 
+            - "decade" - Shows the years of the decade.
+            - "century" - Shows the decades from the century. 
+
+            **disableDates** - An array or function that will be used to determine which dates to be disabled for selection by the widget. 
+
+            **format** - Specifies the format, which is used to format the value of the DatePicker displayed in the input.  
+            Example: yyyy/MM/dd
+            For more information on date formats please refer to |Date Formatting|.  
+
+            **min/max** -  Specifies the minimum and maximum date, which the calendar can show. 
+
+            **weekNumber** - Shows a week of the year on the left side of the calendar. 
+
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //Displays the entire calendar for 2019 and shows the week number 
+
+                fd.field('Date').widgetOptions = { 
+
+                    start: 'year', 
+                    weekNumber: true, 
+                    min: new Date(2019, 0, 1) 
+                }
+                
+                //Disables certain week days in the calendar 
+
+                fd.field('Date').widgetOptions = { 
+
+                    disableDates: ["we", "th", "mon"], 
+                } 
+
+                //Sets date range that can be selected in the calendar  
+
+                var today = new Date(); 
+                var minDate = today.setDate(today.getDate()+2); 
+                var maxDate = today.setDate(today.getDate()+30);              
+
+                fd.field('Date').widgetOptions = {             
+
+                    min: new Date(minDate), 
+                    max: new Date(maxDate) 
+                }   
+        
     *   -   **$on('change')**
         -   Triggers on 'change' event.
 
@@ -366,6 +427,15 @@ Date
                 fd.field('Date').$on('change', function(value) {
                     alert('New value: ' + value.toLocaleDateString());
                 });
+
+.. |Kendo UI DatePicker control| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker" target="_blank">Kendo UI DatePicker control</a>
+
+.. |Date Formatting| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/globalization/intl/dateformatting" target="_blank">Date Formatting</a>
+
 
 DateTime
 --------------------------------------------------
@@ -390,6 +460,29 @@ DateTime
                 fd.field('DateTime').value; 
                 fd.field('DateTime').value = new Date().setHours(13, 31, 0);
 
+    *   -   **widgetOptions**
+        -   The property contains settings for |Kendo UI DateTimePicker control| and is applicable for Date and Time fields only.
+
+            It has the same settings as the Date field including:
+                        
+            **interval** - Specifies the interval, between values in the popup list, in minutes.  
+
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //Disables certain week days in the calendar and specifies the time interval in minutes
+
+                fd.field('DateTime').widgetOptions = { 
+
+                    disableDates: ["we", "th", "mon"], 
+                    interval: 5 
+                } 
+
+                       
+
     *   -   **$on('change')**
         -   Triggers on 'change' event.
 
@@ -404,6 +497,10 @@ DateTime
                 fd.field('Date').$on('change', function(value) {
                     alert('New value: ' + value);
                 });
+
+.. |Kendo UI DateTimePicker control| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker" target="_blank">Kendo UI DateTimePicker control</a>
 
 Lookup/LookupMulti
 --------------------------------------------------
