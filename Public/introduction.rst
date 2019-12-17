@@ -46,27 +46,33 @@ customize, hide or show certain elements on the form depending on your needs and
 Plumsail Forms are built using |Bootstrap| and |Vue| and as such are very light, responsive and easy to customize, 
 while offering an enormous potential for customization. Read more about :doc:`designing your first form </design>`.
 
-Publish anywhere
+Share the form or publish anywhere
 --------------------------------------------------
-Gone are the limitations, as long as you can customize HTML of the web page, you can publish the Web Form. 
+Gone are the limitations - now :doc:`you have options </sharing>`: share forms via the URL or publish the form to any page.
+
+If you can customize HTML of the web page, you can publish the web form. 
 It can be your company's public site where clients would be able to fill out the form,
 or it can be a private site where all users need to be authorized first. 
 It can even be a public repository, such as Codepen, you can still publish the form.
 
-As long as your user has an internet connection, the form will be submitted to |Flow|. If there is no connection,
+As long as your user has an internet connection, the form will be submitted to :doc:`MS Power Automate (MS Flow) </microsoft-flow>` or :doc:`Zapier </zapier>`. If there is no connection,
 user will be notified with an error message and the data will be stored in the browser's session storage. 
 As soon as connection is restored, user will be able to submit the form again with the same data.
 
-Data Submitted to Flow
+Data submitted and handled
 --------------------------------------------------
-|Flow| is a cloud-based automation tool which offers a huge number of potential operations and now you can use it to your advantage.
-So, the forms are submitted to Flow, but what can be done with the data? The amount of actions is constantly growing, so we won't be able to
+The easiest option to handle data is to store submissions in your Plumsail Account, find out how to do it in our :doc:`Collecting data from submissions </submissions>` article.
+
+Alternatively, :doc:`MS Power Automate (MS Flow) </microsoft-flow>` is a cloud-based automation tool which offers a huge number of potential operations and you can use it to your advantage.
+So, the forms are submitted to Power Automate, but what can be done with the data? The amount of actions is constantly growing, so we won't be able to
 cover all the use cases even if we tried, but our documentation contains some of the most popular examples.
 
 For starters, you can :doc:`Send an email with Outlook </how-to/email>`, or :doc:`create Items in SharePoint List </how-to/item>`, 
 :doc:`upload files to SharePoint Library </how-to/file>` (or Box, or Dropbox, etc.), :doc:`add records to SQL server </how-to/sql>`, 
 :doc:`or Excel file, or Google Sheets </how-to/excel-single-row>`. Much more is possible and we'll continue updating our documentation to include more 
 interesting cases which you would be able to incorporate in your Flows.
+
+We also fully support :doc:`Zapier </zapier>`.
 
 Find out :doc:`how to install the product </installation>`.
 
@@ -77,7 +83,3 @@ Find out :doc:`how to install the product </installation>`.
 .. |Vue| raw:: html
 
    <a href="https://vuejs.org/" target="_blank">Vue.js 2</a>
-
-.. |Flow| raw:: html
-
-   <a href="https://flow.microsoft.com/en-us/" target="_blank">Microsoft Flow</a>

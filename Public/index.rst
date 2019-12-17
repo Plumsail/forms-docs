@@ -20,6 +20,7 @@ Public Web Forms
             ./introduction
             ./installation
             ./design
+            ./sharing
             ./submissions
             ./microsoft-flow
             ./zapier
