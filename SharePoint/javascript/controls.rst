@@ -911,30 +911,6 @@ Properties
                 fd.control('SPDataTable0').rootFolder = '';
                 //set Folder1 as Current Folder:
                 fd.control('SPDataTable0').rootFolder = "Folder1"
-
-    *   -   **addNewItemText**
-        -   Property that holds "Add new item" text, useful for localizations.
-            
-            |
-
-            *Examples:*
-            
-            .. code-block:: javascript
-
-                fd.control('SPDataTable0').addNewItemText // "Add new item" by default
-                fd.control('SPDataTable0').addNewItemText = "New text"
-    
-    *   -   **uploadText**
-        -   Property that holds "Upload" text, useful for localizations.
-            
-            |
-
-            *Examples:*
-            
-            .. code-block:: javascript
-
-                fd.control('SPDataTable0').uploadText // "Upload" by default
-                fd.control('SPDataTable0').uploadText = "New text"
     
     *   -   **uploadingText**
         -   Property that holds "Uploading..." text, useful for localizations.
