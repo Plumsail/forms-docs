@@ -1,4 +1,4 @@
-Designing and publishing forms
+Designing forms
 ====================================
 
 .. contents:: Contents:
@@ -59,4 +59,4 @@ You are always be able to open, edit or delete your saved forms in the upper rig
 .. |pic5| image:: ./images/start/saved-form.png
    :alt: Saved Public Form
 
-To share saved forms, please, go to our :doc:`Sharing Public forms </sharing>` article.
+To share saved forms, please, go to our :doc:`Sharing forms </sharing>` article.
