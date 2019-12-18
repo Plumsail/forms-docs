@@ -59,4 +59,22 @@ You are always be able to open, edit or delete your saved forms in the upper rig
 .. |pic5| image:: ./images/start/saved-form.png
    :alt: Saved Public Form
 
-To share saved forms, please, go to our :doc:`Sharing forms </sharing>` article.
+After saving, you'll see two additional buttons on the Ribbon - *General* and *Preview*:
+
+|pic16|
+
+.. |pic16| image:: ./images/start/general-preview.png
+   :alt: General and Preview
+
+Preview allows you to see how your form will look in the browser. It will look different from its presentation in the designer, 
+so make sure that you like the final result before publishing:
+
+|pic17|
+
+.. |pic17| image:: ./images/start/form-preview.png
+   :alt: Form Preview
+
+When you are satisfied with how your form looks on all the layouts and screen sizes (you can just resize browser's window to see how the form scales),
+you can finally share the form. 
+
+To find out how to share saved forms, please, go to our :doc:`Sharing forms </sharing>` article.

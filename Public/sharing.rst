@@ -5,27 +5,9 @@ Sharing forms
  :local:
  :depth: 1
 
-Publishing form
+Embedding forms
 -------------------------------------------------------------
-Alternatively, you can publish Public Web Form to any webpage on your own site or anywhere else on the web, where you can edit the HTML and add our widget.
-
-Once you've saved the form, you'll see two additional buttons on the Ribbon - *General* and *Preview*:
-
-|pic16|
-
-.. |pic16| image:: ./images/start/general-preview.png
-   :alt: General and Preview
-
-Preview allows you to see how your form will look in the browser. It will look different from its presentation in the designer, 
-so make sure that you like the final result before publishing:
-
-|pic17|
-
-.. |pic17| image:: ./images/start/form-preview.png
-   :alt: Form Preview
-
-When you are satisfied with how your form looks on all the layouts and screen sizes (you can just resize browser's window to see how the form scales),
-you can finally publish the form. For that, you need to copy the widget with FormID to the HTML code of the page where you want to publish it.
+You can publish Public Web Form to any webpage on your own site or anywhere else on the web, where you can edit the HTML and add our widget.
 
 The widget can be found in General Settings in the designer where you can copy it to clipboard:
 
@@ -82,7 +64,16 @@ Once you click it, you'll be greeted with the following screen:
 
 Here, you can configure sharing page to your liking and change its appearance to match your company's or personal style.
 
-If you select **Make default** for this page, all the future pages you create will start with matching style.
+If you select **Make default** for this page, you'll be able to share any form with this page, by copying links in |Forms section| of your account:
+
+.. |Forms section| raw:: html
+
+   <a href="https://plumsail.com/forms/forms/" target="_blank">Forms section</a>
+
+|pic3|
+
+.. |pic3| image:: /images/start/sharing-forms-links.png
+   :alt: Links to forms
 
 **Title** field is mandatory and its required to identify each sharing page that you have. You can also change the **Logo** and add a link to it, so when users click on the logo, it redirects them to your site. Adjust **Header** where the logo is placed by switching header color or the pattern, where you can choose from many options. Choose **Body background** - either a solid color or an image.
 
