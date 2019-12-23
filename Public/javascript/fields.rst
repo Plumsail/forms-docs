@@ -238,7 +238,7 @@ These properties are only applicable to Date field:
 
 DateTime Unique Properties
 --------------------------------------------------
-These properties are only applicable to Date field: 
+These properties are only applicable to Date and Time field: 
 
 .. list-table::
     :header-rows: 1
@@ -248,7 +248,7 @@ These properties are only applicable to Date field:
         -   Description/Examples    
 
     *   -   **widgetOptions**
-        -   The property contains settings for |Kendo UI DatePicker control| and is applicable for Date and Time fields only.
+        -   The property contains settings for |Kendo UI DateTimePicker control| and is applicable for Date and Time fields only.
 
             It has the same settings as the Date field including:
                         
