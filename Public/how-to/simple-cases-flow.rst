@@ -1,4 +1,4 @@
-Simple Cases with MS Power Automate (MS Flow)
+Simple Cases with Power Automate (MS Flow)
 =============================================
 
 .. toctree::

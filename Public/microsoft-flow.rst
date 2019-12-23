@@ -1,4 +1,4 @@
-Handling data in MS Power Automate (MS Flow)
+Handling data in Power Automate (MS Flow)
 ==================================================
 
 .. contents:: Contents:
@@ -12,7 +12,7 @@ automatic workflows between them to collect data, synchronize files, receive not
 
 .. |Flow| raw:: html
 
-   <a href="https://flow.microsoft.com/en-us/" target="_blank">MS Power Automate (MS Flow)</a>
+   <a href="https://flow.microsoft.com/en-us/" target="_blank">Power Automate (MS Flow)</a>
 
 Plumsail Forms can be utilized with Power Automate in a variety of ways. 
 Data submitted with Plumsail Forms can go through flows and only you decide what to do with it:
