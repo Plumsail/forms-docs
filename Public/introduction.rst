@@ -8,7 +8,7 @@ Introduction
 General information
 --------------------------------------------------
 Plumsail Forms allow you to design and publish elegant, responsive and highly customizable forms to any web page by simply adding an HTML widget to it. 
-When user submits the form, all data is handled by |Flow| which opens an ocean of possibilities for its use.
+When user submits the form, all data is handled by :doc:`MS Power Automate (MS Flow) </microsoft-flow>` which opens an ocean of possibilities for its use.
 The data is collected from anonymous users and can be protected with |reCAPTCHA| to prevent Spam submissions.
 
 .. |reCAPTCHA| raw:: html

@@ -1,31 +1,31 @@
-Handling data in Microsoft Flow
+Handling data in MS Power Automate (MS Flow)
 ==================================================
 
 .. contents:: Contents:
  :local:
  :depth: 1
 
-About Microsoft Flow
+About Power Automate
 -------------------------------------------------------------
 |Flow| allows you to integrate various apps and services by creating 
 automatic workflows between them to collect data, synchronize files, receive notifications and much more.
 
 .. |Flow| raw:: html
 
-   <a href="https://flow.microsoft.com/en-us/" target="_blank">Microsoft Flow</a>
+   <a href="https://flow.microsoft.com/en-us/" target="_blank">MS Power Automate (MS Flow)</a>
 
-Plumsail Forms can be utilized with Microsoft Flow in a variety of ways. 
-All the data submitted with Plumsail Forms goes through Microsoft Flow and only you can decide what to do with it. 
-You can email clients' requests from your site to your Helpdesk, you can create or update SharePoint items from outside SharePoint 
-and practically anything else you can think of.
+Plumsail Forms can be utilized with Power Automate in a variety of ways. 
+Data submitted with Plumsail Forms can go through flows and only you decide what to do with it:
+you can email clients' requests from your site to your Helpdesk, you can create or update SharePoint items from outside SharePoint 
+or do practically anything else you can think of.
 
-Additionally, SharePoint forms can also be handled by Microsoft Flow upon submission, allowing you more freedom than regular Workflows ever could.
+Additionally, SharePoint forms can also be handled by flows upon submission, allowing you more freedom than regular Workflows ever could.
 
 .. note:: The amount of data that can be handled by Plumsail Forms connector depends on your current plan of Plumsail Forms subscription.
 
 .. _creating-flow:
 
-Creating Flow
+Creating flow
 -------------------------------------------------------------
 
 Go to My Flows and click *Create from blank*:
@@ -73,4 +73,4 @@ Form ID can be found and copied in **General Settings** in the Designer.
 
 That's it, after this action you can do pretty much anything with submitted data - it's parsed and ready to be used.
 
-Check out our How-to documentation on examples of using Flow. For example, for :doc:`sending an email with Flow </how-to/email>`.
+Check out our How-to documentation on examples of using MS Power Automate. For example, for :doc:`sending an email with flow </how-to/email>`.
