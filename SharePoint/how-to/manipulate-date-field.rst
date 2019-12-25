@@ -1,4 +1,4 @@
-Manipulate Date&Time field
+Manipulate Date and DateTime fields
 =========================================================================
 
 .. contents:: Contents:
@@ -10,15 +10,15 @@ Description
 
 In this article, you will find the most common examples of working with the Date & Time field.  
 
-Using the |Moment JS| library and its plugins, you can easily calculate duration between dates, add or subtract time from the date, calculate a number of business days/hours between dates, etc.
+Using the |Moment.js| library and its plugins, you can easily calculate duration between dates, add or subtract time from the date, calculate a number of business days/hours between dates, etc.
 
 Add to or Subtract from a Date
 --------------------------------------------------
 
-With the help of the Moment.JS library, you can add and subtract date and time values to calculate future and past dates.  
-In moment JS you can specify a time unit that you want to use in the calculation. Find more info on using the time units |here|.
+With the help of the Moment.js library, you can add and subtract date and time values to calculate future and past dates.  
+In Moment.js you can specify a time unit that you want to use in the calculation. Find more info on using the time units |here|.
 
-Assume we want to populate a due date field as today plus 3 days on loading a new form. This can be done with moment JS: 
+Assume we want to populate a due date field as today plus 3 days on loading a new form. This can be done with Moment.js: 
 
 .. code-block:: javascript
 
@@ -50,7 +50,7 @@ Using a similar approach, you can calculate dates by adding or subtracting time 
 Calculate the number of days between two dates 
 --------------------------------------------------
 
-You can also calculate the difference between two dates in years, months, days, etc. using the |diff() method|.  
+You can also calculate the difference between two dates in years, months, days, etc. using the |diff| method.  
 
 Suppose you need to know how many days have passed since the purchase until the delivery date. 
 
@@ -216,7 +216,7 @@ Based on those settings, you can calculate business days between two dates using
 Calculate the number of business hours between dates  
 -----------------------------------------------------
 
-Using the |moment-business-time.js plugin|, we can calculate the working hours between two dates.  
+Using the |moment-business-time.js| plugin, we can calculate the working hours between two dates.  
 
 By default, the working hours are 09:00-17:00, Monday through Friday. But you can specify custom working hours as shown in this code example: 
 
@@ -274,9 +274,9 @@ By default, the working hours are 09:00-17:00, Monday through Friday. But you ca
 
 You can add and subtract working hours using the same plugin. Please find more details |here2|.
 
-.. |Moment JS|  raw:: html
+.. |Moment.js|  raw:: html
 
-   <a href="https://momentjs.com" target="_blank">Moment JS</a>
+   <a href="https://momentjs.com" target="_blank">Moment.js</a>
 
 .. |here|  raw:: html
 
@@ -286,17 +286,17 @@ You can add and subtract working hours using the same plugin. Please find more d
 
    <a href="https://momentjs.com/docs/#/manipulating/" target="_blank">documentation</a>
 
-.. |diff() method|  raw:: html
+.. |diff|  raw:: html
 
-   <a href="https://momentjs.com/docs/#/displaying/difference/" target="_blank">diff() method</a>
+   <a href="https://momentjs.com/docs/#/displaying/difference/" target="_blank">diff</a>
    
 .. |here1|  raw:: html
 
    <a href="https://www.npmjs.com/package/moment-business-days#businessadddays--moment" target="_blank">here</a>
 
-.. |moment-business-time.js plugin|  raw:: html
+.. |moment-business-time.js|  raw:: html
 
-   <a href="https://www.npmjs.com/package/moment-business-time" target="_blank">moment-business-time.js plugin</a>
+   <a href="https://www.npmjs.com/package/moment-business-time" target="_blank">moment-business-time.js</a>
 
 .. |here2|  raw:: html
 
