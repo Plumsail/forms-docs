@@ -6,6 +6,7 @@ Dynamic Forms with the use of JavaScript
 
     ./conditional-fields
     ./conditional-containers
+    ./manipulate-date-field
     ./redirect-sp-save
     ./link-to-form
     ./form-dialog
