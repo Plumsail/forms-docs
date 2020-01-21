@@ -992,21 +992,6 @@ Methods
             .. code-block:: javascript
 
                 fd.control('SPDataTable0').refresh();
-    *   -   **change**
-        -   Fired when the user applies any changes to the List or Library.
-
-            Adding items, uploading documents, deleting them, or editing item/document's properties from List or Library dialog all counts as change.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.control('SPDataTable0').$on('change',
-                    function() {
-                        alert('List or Library changed');
-                    });
     *   -   **beforeItemsAttach**
         -   Fired when saving New Form that has items in Library or List control, that will be tied to the parent via lookup field.
 
@@ -1051,6 +1036,80 @@ Events
         
     *   -   Name
         -   Description/Examples
+
+    *   -   **edit**
+        -   An event that is raised when a user starts adding or editing a row in the inline editing mode of a List or Library control.
+            
+            **editData** passed as an argument to the handler. It is an object that contains fields and methods for manipulating controls of the current row: 
+                
+            - formType - returns the type of the record.
+
+                - 'New' - adding a new item.
+
+                - 'Edit' - editing an existing item.
+
+            - itemId - returns the ID of the current item. 
+
+            - field('InternalName') - returns Vue-component of corresponding field control. 
+
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                // prepopulating Title field of a new record  
+                // in the List or Library control with the title  
+                // of the parent item 
+                fd.control('SPDataTable0').$on('edit', function(editData) { 
+                    if (editData.formType === 'New') { 
+                        console.log('editData.itemId'); 
+                        //Set Title field value with the value from the parent 
+                        editData.field('Title').value = fd.field('Title').value; 
+                    } 
+                }); 
+
+    *   -   **change**
+        -   An event that is raised when a user applies changes to the List or Library. 
+
+            **changeData** passed as an argument to the handler. It is an object that contains information about the changes made: 
+            
+            - type - returns type of changes made to related items.
+
+                - 'add' - new item has been created 
+                
+                - 'addFolder' - new folder has been created 
+                
+                - 'edit' -  item has been changed 
+                
+                - 'delete' - item/file ahs been deleted 
+                
+                - 'upload' - file ahs been uploaded 
+            
+            - itemId - returns the ID of the changed item  
+            
+            - itemIds - returns the array of IDs of the uploaded files 
+
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                // displays an alert message with IDs of the uploaded files  
+                fd.control('SPDataTable0').$on('change', function(changeData) { 
+                    if (changeData.type === 'upload') { 
+                        alert(changeData.itemIds); 
+                    } 
+                }); 
+
+                // displays an alert message with ID of the changed item  
+                fd.control('SPDataTable0').$on('change', function(changeData) { 
+                    if (changeData.type === 'edit') { 
+                        alert(changeData.itemId); 
+                    } 
+                }); 
+
 
     *   -   **ready**
         -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
