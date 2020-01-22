@@ -2,6 +2,13 @@ Version history (SharePoint Online)
 ==================================================
 
 
+v1.5.2
+--------------------------------------------------
+List or Library control now supports grouping and aggregation.
+
+Minor bugfixes.
+
+
 v1.4.8
 --------------------------------------------------
 Added new features to DataTable control.
