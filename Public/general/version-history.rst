@@ -1,6 +1,14 @@
 Version history
 ==================================================
 
+
+v1.5.3
+--------------------------------------------------
+Improved JS and CSS editors: added suggestions of fields, controls, and containers.
+
+Global JS and CSS editors now open in full window, and form can still be saved.
+
+
 v1.5.1
 --------------------------------------------------
 Added customizable |Pages| to share Public Web Forms via URL.
