@@ -11,3 +11,4 @@ List or Library configurations
     ./document-meta
     ./list-or-library-export
     ./list-or-library-duplicate
+    ./list-or-library-inline
