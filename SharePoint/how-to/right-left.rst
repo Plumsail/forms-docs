@@ -1,5 +1,5 @@
-Align form and fields to the right (Arabic and other languages)
-================================================================
+Align form and fields to the right (Arabic, Hebrew and other languages)
+=======================================================================
 
 .. contents:: Contents:
  :local:
@@ -15,7 +15,7 @@ All you need to do, actually, is to open JS code editor:
 
 |pic1|
 
-.. |pic1| image:: ../images/how-to/export-pdf/how-to-export-pdf-11
+.. |pic1| image:: ../images/how-to/export-pdf/how-to-export-pdf-11.png
    :alt: JS Editor in Plumsail Forms
 
 Insert the following code:
