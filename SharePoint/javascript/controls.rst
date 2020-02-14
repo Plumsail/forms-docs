@@ -1082,9 +1082,9 @@ Events
                 
                 - 'edit' -  item has been changed 
                 
-                - 'delete' - item/file ahs been deleted 
+                - 'delete' - item/file has been deleted 
                 
-                - 'upload' - file ahs been uploaded 
+                - 'upload' - file has been uploaded 
             
             - itemId - returns the ID of the changed item  
             
