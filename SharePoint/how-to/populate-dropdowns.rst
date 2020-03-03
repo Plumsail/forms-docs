@@ -94,36 +94,30 @@ To prepopulate a dropdown field with the data from a SharePoint list that is loc
     function populateDepartmentCodes(){
         
         //specify your site URL
-        var siteURL = 'https://sitename.sharepoint.com/sites/Main/'; 
-        
+        var siteURL = 'https://sitename.sharepoint.com/sites/Main/';
         let web = new Web(siteURL);
         
-        web.lists.getByTitle('Department Codes').items.select('Title').get().then(function(items) { 
+        web.lists.getByTitle('Department Codes').items.select('Title').get().then(function(items) {
             
-            var valuesArray = [];
-            items.forEach(function (element) {
-                valuesArray.push(element.Title);
-            });
-
             fd.field('DropDown1').widget.setDataSource({
-                data: valuesArray
+                data: items.map(function(i) { return i.Title })
             });
+            
+            //set the dropdown with the previously selected value
+            fd.field('DropDown1').value = fd.field('DepartmentCode').value;
         });
-
-        //set the dropdown with the previously selected value            
-        fd.field('DropDown1').value = fd.field('DepartmentCode').value;
     }
-
+    
     fd.spRendered(function() {
-
+        
         //call function on from load
         populateDepartmentCodes();
         
         //fill SharePoint field with the selected value
         fd.field('DropDown1').$on('change', function() {
             fd.field('DepartmentCode').value = fd.field("DropDown1").value;
-        }); 
-    }); 
+        });
+    });  
 
 
 .. |PnPjs library| raw:: html
