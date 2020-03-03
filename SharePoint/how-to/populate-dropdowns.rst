@@ -100,14 +100,18 @@ To prepopulate a dropdown field with the data from a SharePoint list that is loc
         
         web.lists.getByTitle('Department Codes').items.select('Title').get().then(function(items) { 
             
-            fd.field('DropDown1').widget.setDataSource({
-                data: items.map(function(i) { return i.Title })
+            var valuesArray = [];
+            items.forEach(function (element) {
+                valuesArray.push(element.Title);
             });
-            
-            //set the dropdown with the previously selected value
-            fd.field('DropDown1').value = fd.field('DepartmentCode').value;
-            fd.field('DropDown1').widget.value(fd.field('DepartmentCode').value);
-        }); 
+
+            fd.field('DropDown1').widget.setDataSource({
+                data: valuesArray
+            });
+        });
+
+        //set the dropdown with the previously selected value            
+        fd.field('DropDown1').value = fd.field('DepartmentCode').value;
     }
 
     fd.spRendered(function() {
