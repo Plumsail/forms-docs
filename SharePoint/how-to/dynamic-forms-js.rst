@@ -15,3 +15,4 @@ Dynamic Forms with the use of JavaScript
     ./version-history
     ./dynamic-datatable
     ./populate-user-info
+    ./populate-dropdowns
