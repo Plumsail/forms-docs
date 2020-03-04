@@ -1,6 +1,12 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.5.5
+--------------------------------------------------
+Minor bug fixes
+
+UI and performance improvements
+
 v1.5.3
 --------------------------------------------------
 Improved JS and CSS editors: added suggestions of fields, controls, and containers.
