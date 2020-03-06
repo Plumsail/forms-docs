@@ -33,13 +33,16 @@ Assume we want to populate a due date field as today plus 3 days on loading a ne
 
         // To avoid conflicts with requireJS which is available by default in SharePoint  
         // we unset 'define' function until the script are loaded
-        var define = window.define;   
-        window.define = undefined;  
+        var define = window.define;
+        var require = window.define;
+        window.define = undefined;
+        window.require = undefined;
 
         $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')   
         .then(function() { 
             window.define = define; 
-            
+            window.require = require;
+
             // Calling function on form loading 
             setDueDate();
         }) 
@@ -69,12 +72,15 @@ Suppose you need to know how many days have passed since the purchase until the 
 
         // To avoid conflicts with requireJS which is available by default in SharePoint
         // we unset 'define' function until the script are loaded        
-        var define = window.define;  
+        var define = window.define;
+        var require = window.define;
         window.define = undefined;
+        window.require = undefined;
         
         $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')
         .then(function() {
             window.define = define;
+            window.require = require;
             
             // Calling function when the user changes the date
             fd.field('PurchaseDate').$on('change', diffDays);
@@ -126,7 +132,9 @@ In the code example below, we defined a four-day workweek, Monday through Thursd
         // To avoid conflicts with requireJS which is available by default in SharePoint
         // we unset 'define' function until the script are loaded
         var define = window.define;
+        var require = window.define;
         window.define = undefined;
+        window.require = undefined;
         
         $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')
         
@@ -134,6 +142,8 @@ In the code example below, we defined a four-day workweek, Monday through Thursd
         .then(function() {
             
             window.define = define;
+            window.require = require;
+
             // Defining Work Days and Holidays on form loading
             defineWorkDays ();
             
@@ -176,7 +186,9 @@ Based on those settings, you can calculate business days between two dates using
         // To revent conflicts with requireJS which is available by default in SHarePoint
         // we unset 'define' function until the script are loaded
         var define = window.define;
+        var require = window.define;
         window.define = undefined;
+        window.require = undefined;
         
         $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')
         
@@ -184,7 +196,8 @@ Based on those settings, you can calculate business days between two dates using
         .then(function() {
             
             window.define = define;
-            
+            window.require = require;
+
             //get business days from regional settings
             return pnp.sp.web.regionalSettings.get();
         })
@@ -253,7 +266,9 @@ By default, the working hours are 09:00-17:00, Monday through Friday. But you ca
         // To avoid conflicts with requireJS which is available by default in SharePoint
         // we unset 'define' function until the script are loaded
         var define = window.define;
+        var require = window.define;
         window.define = undefined;
+        window.require = undefined;
 
         $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')
         
@@ -261,6 +276,8 @@ By default, the working hours are 09:00-17:00, Monday through Friday. But you ca
         .then(function() { 
             
             window.define = define;
+            window.require = require;
+
             defineWorkHours ();
             
             // Calling function when the user changes the date
