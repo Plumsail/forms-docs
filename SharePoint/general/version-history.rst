@@ -1,6 +1,14 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.5.6
+--------------------------------------------------
+Added an ability to open documents from List or Library in desktop apps, depending on the library configuration.
+
+Added aligning options of choice fields (radio buttons and checkboxes).
+
+Minor bug fixes.
+
 v1.5.5
 --------------------------------------------------
 Minor bug fixes
