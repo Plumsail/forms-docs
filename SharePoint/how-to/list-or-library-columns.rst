@@ -129,7 +129,7 @@ Use the following code, just replace **Predecessors** with the Internal name of 
 
     fd.spRendered(function() {
         fd.control('SPDataTable1').templates = {
-            // Open Office lookup in a dialog
+            // Open Predecessors lookup in a dialog
             Predecessors: function(ctx) {
                 var value = ctx.row.Predecessors;
                 if (!value) {
@@ -204,7 +204,7 @@ Use the following code to achieve the results of all described cases at once:
                     ? '<span style="color:red">' + value + '</span>'
                     : '<span>' + value + '</span>';
             },
-            // Open Office lookup in a dialog
+            // Open Predecessors lookup in a dialog
             Predecessors: function(ctx) {
                 var value = ctx.row.Predecessors;
                 if (!value) {
