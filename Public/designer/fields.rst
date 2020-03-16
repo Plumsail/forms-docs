@@ -159,6 +159,34 @@ Numeric is the basic number input field.
 .. image:: ../images/designer/fields/Numeric.png
    :alt: Numeric
 
+.. _designer-numericproperties:
+
+Numeric properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+These properties are unique to Numeric field:
+
+SETTINGS
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Min
+        - Minimum possible value.
+    *   - Max
+        - Maximum possible value.
+    *   - Decimals
+        - Number of decimals.
+    *   - Format
+        - |Numeric format| for the field.
+    *   - Step
+        - Value added or removed when using the control's arrows.
+
+
+.. |Numeric format| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings" target="_blank">Numeric format</a>
+
+
 MultilineTextBox
 -------------------------------------------------------------
 Advanced text input, allows input of multiple lines and includes basic text editor.

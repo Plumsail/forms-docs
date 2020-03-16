@@ -1,6 +1,10 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.5.7
+--------------------------------------------------
+Added an ability to :doc:`customize columns </how-to/list-or-library-columns>` in List or Library controls.
+
 v1.5.6
 --------------------------------------------------
 Added an ability to open documents from List or Library in desktop apps, depending on the library configuration.
