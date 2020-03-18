@@ -1,6 +1,23 @@
 Version history
 ==================================================
 
+v1.5.7
+--------------------------------------------------
+Added more :ref:`designer-numericproperties` for configuring Numeric fields, e.g. currency, percent, decimals, etc.
+
+v1.5.5
+--------------------------------------------------
+Minor bug fixes
+
+UI and performance improvements
+
+v1.5.3
+--------------------------------------------------
+Improved JS and CSS editors: added suggestions of fields, controls, and containers.
+
+Global JS and CSS editors now open in full window, and form can still be saved.
+
+
 v1.5.1
 --------------------------------------------------
 Added customizable |Pages| to share Public Web Forms via URL.

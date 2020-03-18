@@ -1,6 +1,29 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.5.7
+--------------------------------------------------
+Added an ability to :doc:`customize columns </how-to/list-or-library-columns>` in List or Library controls.
+
+v1.5.6
+--------------------------------------------------
+Added an ability to open documents from List or Library in desktop apps, depending on the library configuration.
+
+Added aligning options of choice fields (radio buttons and checkboxes).
+
+Minor bug fixes.
+
+v1.5.5
+--------------------------------------------------
+Minor bug fixes
+
+UI and performance improvements
+
+v1.5.3
+--------------------------------------------------
+Improved JS and CSS editors: added suggestions of fields, controls, and containers.
+
+Global JS and CSS editors now open in full window, and form can still be saved.
 
 v1.5.2
 --------------------------------------------------

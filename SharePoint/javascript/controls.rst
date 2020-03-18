@@ -816,6 +816,7 @@ Properties
                 //return only items where Title is "Test"
                 fd.control('SPDataTable0').filter = 
                     "<Eq><FieldRef Name='Title'/><Value Type='Text'>Test</Value></Eq>";
+
     *   -   **buttons**
         -   Property that holds all available List or Library buttons in an array of objects.
 
@@ -941,7 +942,7 @@ Properties
                     width: 1280,
                     height: 720
                 }
-    
+                
     *   -   **selectedItems**
         -   Property that holds selected items in an array.
             
@@ -954,6 +955,29 @@ Properties
             .. code-block:: javascript
 
                 fd.control('SPDataTable0').selectedItems;
+
+    *   -   **templates**
+        -   Holds user-defined templates for specific columns of the List or Library control.
+
+            Check out :doc:`column customization article </how-to/list-or-library-columns>` for more information.
+
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable1').templates = {
+                    // Bolden the Due Date field
+                    TaskDueDate: function(ctx) {
+                        var value = ctx.row.TaskDueDate;
+                        if (!value) {
+                            return '';
+                        }
+
+                        return '<b>' + value + '</b>';
+                    }
+                }
 
     *   -   **widget**
         -   Property that holds |kendoGrid widget| for the control.
@@ -1082,9 +1106,9 @@ Events
                 
                 - 'edit' -  item has been changed 
                 
-                - 'delete' - item/file ahs been deleted 
+                - 'delete' - item/file has been deleted 
                 
-                - 'upload' - file ahs been uploaded 
+                - 'upload' - file has been uploaded 
             
             - itemId - returns the ID of the changed item  
             

@@ -12,3 +12,4 @@ List or Library configurations
     ./list-or-library-export
     ./list-or-library-duplicate
     ./list-or-library-inline
+    ./list-or-library-columns
