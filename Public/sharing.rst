@@ -38,7 +38,7 @@ After copying the widget, simply insert it as HTML to your page and the form wil
 
 .. note::   If you're placing more than one form per page, make sure to change div id="**plumsail-form**" and new Plumsail.Form("**#plumsail-form**" to something unique for each widget. The easiest option is to add an index, for example:
 
-            .. code-block:: javascript
+            .. code-block:: HTML
 
                <script type="text/javascript" src="https://forms.plumsail.com/widget/***/app.js"></script>
                <div id="plumsail-form1"><div class="fd-form-loading"></div></div>
