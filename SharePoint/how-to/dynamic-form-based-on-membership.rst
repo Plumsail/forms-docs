@@ -1,4 +1,4 @@
-Make a Form Dynamic Based on User's Membership 
+Make a form dynamic based on user's membership 
 =========================================================================
 
 .. contents:: Contents:
@@ -10,7 +10,7 @@ Introduction
 
 From this article, you will know how to manipulate fields dynamically depending on groups the current user belongs to. This approach is an alternative to the form sets and can be helpful in cases when forms for different groups are almost identical. For instance, when you need to hide a few fields from all users except the users of a certain group. 
   
-Assume you need to design an expense approval form. The approval process requires feedback from users who belongs to Administrators and Managers groups. An administrator should not see a comment left by a manager. And a manager should not be able to edit a comment posted by an administrator. 
+Assume you need to design an expense approval form. The approval process requires feedback from users who belong to Administrators and Managers groups. An administrator should not see a comment left by a manager. And a manager should not be able to edit a comment posted by an administrator. 
 
 Expense Approval Form 
 --------------------------------------------------
@@ -34,14 +34,14 @@ Available to managers:
 - Manager Feedback (choice field); 
 - Manager Comment (multiple-line text field). 
 
-We set all fields available to employees to a read-only state since their values should not be changed after the item creation. 
+We set all fields available to employees to the read-only state since their values should not be changed after the item creation. 
 
 |pic1|
 
 .. |pic1| image:: ../images/how-to/dynamic-form-based-on-membership/dynamic-form-based-on-membership-01.png
    :alt: Read only
 
-Since the fields that are available for managers and administrators should be hidden from regular users, we put them into Grid containers. Thus, instead of hiding each field separately, we'll hide the Grid containers. To be able to hide the grid containers via code, we assign them unique CSS-classes, e.g. 'manager-section'. 
+Since the fields available to managers and administrators only should be hidden from regular users, we put them into Grid containers. Thus, instead of hiding each field separately, we'll hide the Grid containers. To be able to hide the grid containers via code, we assign them unique CSS-classes, e.g. 'manager-section'. 
 
 |pic2|
 
@@ -51,7 +51,7 @@ Since the fields that are available for managers and administrators should be hi
 Manipulating fields dynamically depending on user's membership
 ----------------------------------------------------------------------------------------------------
 
-To check if the current user belongs to a certain group, we use PnPjs library that is built into Plumsail Forms. Depending on the user's membership, we hide or disable specific sections.  
+To check if the current user belongs to a certain group, we use |PnPjs| library that is built into Plumsail Forms. Depending on the user's membership, we hide or disable specific sections.  
 
 .. code-block:: javascript
 
@@ -98,5 +98,9 @@ Here is the demonstration of the Expense Approval Form.
 
 |pic3|
 
-.. |pic3| image:: ../images/how-to/dynamic-form-based-on-membership/dynamic-form-based-on-membership-03.gif
+.. |pic3| image:: ../images/how-to/dynamic-form-based-on-membership/dynamic-form-based-on-membership-00.gif
    :alt: Dynamic Form
+
+.. |PnPjs|  raw:: html
+
+   <a href="https://pnp.github.io/pnpjs/" target="_blank">PnPjs</a>
