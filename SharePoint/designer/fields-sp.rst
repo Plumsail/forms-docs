@@ -33,7 +33,7 @@ Lookup unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lookup field has the following unique settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40

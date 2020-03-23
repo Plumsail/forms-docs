@@ -19,45 +19,24 @@ Even though it's a plain text control, you can still format the text and apply s
 .. image:: ../images/designer/controls/PlainText.png
    :alt: Plain Text
 
-.. Note::   You can use this control to display field values on Edit/Display forms when the form opens. Simply place [Internal Field Name] in square brackets like this:
-
-            .. code-block:: javascript
-
-                Current item #[ID] has been created by [Author].
-
-            And you'll get the following results:
-
-            |Plain Text Fields|
-
-            .. |Plain Text Fields| image:: ../images/designer/controls/PlainTextFields.png
-               :alt: Plain Text - Fields
-
-            This works for both the default fields and newly created fields.
-
 Plain Text properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Plain Text control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
 
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
-
-LAYOUT
-
-.. list-table::
-    :widths: 10 40
-
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
     *   - Type
         - Here you can select the type of the text you are entering - either Text or Header 1, Header 2, or Header 3.
     *   - Text
         - Allows you to type in or copy in the exact text you want to display on the form.
     *   - Color
         - Allows you to set text's color.
-    *   - CSS Class
+    *   - Class 
         - Give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
         - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
@@ -68,43 +47,22 @@ Rich Text control is also used to add text to your form, just like Plain Text co
 Unlike Plain Text control, Rich Text control comes with an editor which allows you to style your text without relying on CSS.
 
 .. image:: ../images/designer/controls/RichText.png
-   :alt: Rich Text
-
-.. Note::   You can use this control to display field values on Edit/Display forms when the form opens. Simply place [Internal Field Name] in square brackets like this:
-
-            .. code-block:: javascript
-
-                Current item #[ID] has been created by [Author].
-
-            And you'll get the following results:
-
-            |Rich Text Fields|
-
-            .. |Rich Text Fields| image:: ../images/designer/controls/RichTextFields.png
-               :alt: Rich Text - Fields
-
-            This works for both the default fields and newly created fields.
+   :alt: Plain Text
 
 Rich Text properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Plain Text control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
         
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
-
-LAYOUT
-
-.. list-table::
-    :widths: 10 40
-
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
     *   - Text
         - Allows you to type in or copy in the exact text you want to display on the form. When editing, opens up an editor screen in Designer.
-    *   - CSS Class
+    *   - Class
         - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
         - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
@@ -120,42 +78,36 @@ Image properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Image control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
         
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
-
-IMAGE
-
-.. list-table::
-    :widths: 10 40
-
-    *   - Source
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
+    *   - Image URL
         - Allows you to specify the URL of an image here.
-    *   - Height
-        - Allows you to set the Height of the image.
     *   - Width
         - Allows you to set the Width of the image.
+    *   - Height
+        - Allows you to set the Height of the image.
     *   - Alt
         - Allows you to specify an alternate text for an image here.
-    *   - CSS Class
+    *   - Class
         - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
         - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
 
-HYPERLINK
+Hyperlink
 
 .. list-table::
     :widths: 10 40
 
-    *   - Href
+    *   - URL
         - Specify the URL of the page clicking the image sends user to. Leave blank if not needed.
     *   - Target
         - Specify where to open the linked document. _blank will open in a new tab.
-    *   - OnClick
+    *   - Click
         - Add JavaScript to execute when image is clicked. If no link is used, add event.preventDefault(); prior to your JS.
 
 Hyperlink
@@ -169,28 +121,22 @@ Hyperlink properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Hyperlink control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
         
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
-    *   - Href
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
+    *   - Text
+        - Allows you to type in or copy in the exact text the link will display on the form.
+    *   - URL
         - Specify the URL of the page clicking the link sends user to. Leave blank if not needed.
     *   - Target
         - Specify where to open the linked document. _blank will open in a new tab.
-    *   - OnClick
+    *   - Click
         - Allows you to add JavaScript to execute when link is clicked. If no link is used, add event.preventDefault(); prior to your JS.
-
-LAYOUT
-
-.. list-table::
-    :widths: 10 40
-
-    *   - Text
-        - Allows you to type in or copy in the exact text the link will display on the form.
-    *   - CSS Class
+    *   - Class
         - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
         - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
@@ -206,7 +152,7 @@ HTML properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every HTML control has the following settings:
 
-LAYOUT
+General
 
 .. list-table::
     :widths: 10 40
@@ -217,7 +163,7 @@ LAYOUT
 Ink Sketch
 -------------------------------------------------------------
 Ink Sketch control behaves more similarly to a field. It allows users to draw or leave their input by holding down mouse key and dragging the mouse across the control.
-Can be used for signatures, drawings, marking details over a background image, etc.
+Can be used for signatures, drawings, |marking details over a background image|, etc.
 
 The data is stored in the session state, once the browser is closed, it is purged. The data is also sent on Form submission using Microsoft Flow, like other fields' data.
 
@@ -230,36 +176,33 @@ Ink Sketch properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Ink Sketch control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
         
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
-    *   - SaveTo
-        - Select Multiline Plain Text field in the current SharePoint List to save Ink Sketch data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
-        
-          Alternatively create a new hidden field in editor. You can delete hidden fields by selecting "🖉 Manage" option in the dropdown. 
-
-LAYOUT
-
-.. list-table::
-    :widths: 10 40
-
-    *   - Readonly
-        - If True, prevents users from being able to change content manually.
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
     *   - Height
         - Allows you to set the Height of the control.
     *   - Width
         - Allows you to set the Width of the control.
     *   - Ink Color
         - Allows you to set the color of drawing done by the user.
-    *   - CSS Class
+    *   - Class
         - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
         - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
 
+SharePoint
+
+.. list-table::
+    :widths: 10 40
+  
+    *   - Save To
+        - Select Multiline Plain Text field in the current SharePoint List to save Ink Sketch data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
+        
+          Alternatively create a new hidden field in editor. You can delete hidden fields by selecting "🖉 Manage" option in the dropdown. 
 
 Button
 -------------------------------------------------------------
@@ -278,26 +221,20 @@ Button properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Button control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
         
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
     *   - OnClick
         - Add JavaScript to execute when button is clicked.
-
-LAYOUT
-
-.. list-table::
-    :widths: 10 40
-
     *   - Text
         - Allows you to type in or copy in the exact text the button will display on the form.
     *   - Width
         - Allows you to set the Width of the button.
-    *   - CSS Class
+    *   - Class
         - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
         - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
@@ -327,17 +264,17 @@ Captcha properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Captcha control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
         
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
-    *   - SiteKey
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
+    *   - Site Key
         - Your public key for the ReCAPTCHA. Get it |SiteKey|. 
 
-LAYOUT
+Appearance
 
 .. list-table::
     :widths: 10 40
@@ -375,30 +312,33 @@ DataTable properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every DataTable control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
         
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
     *   - New Line
         - Allows to select where the new line will be added - at the Top or at the Bottom of the table.
-    *   - SaveTo
+    *   - Delete
+        - Allows to select where the delete button will appear - in the first or in the last column.
+
+SharePoint
+
+.. list-table::
+    :widths: 10 40
+  
+    *   - Save To
         - Select Multiline Plain Text field in the current SharePoint List to save DataTable data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
         
           Alternatively create a new hidden field in editor. You can delete hidden fields by selecting "🖉 Manage" option in the dropdown. 
-    *   - Delete
-        - Select position of delete button column in DataTable - First or Last (default).
-    *   - ReadOnly
-        - Select if DataTable can be edited or not.
-
 
 DataTable Column properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every DataTable Column has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
@@ -409,20 +349,18 @@ SETTINGS
         - Allows to select the type of the data for the column - can be either String, Number, Boolean, Date or Dropdown.
     *   - Required
         - Allows to set the column as mandatory for the record to be added.
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
-
-LAYOUT
-
-.. list-table::
-    :widths: 10 40
-
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
     *   - Width
         - Allows you to set the Width of the column.
 
 .. |kendoGrid| raw:: html
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid</a>
+
+.. |marking details over a background image| raw:: html
+
+    <a href="https://plumsail.com/docs/forms-web/how-to/notes-on-an-image.html" target="_blank">marking details over a background image</a>
 
 .. _designer-likert:
 
@@ -443,13 +381,13 @@ Likert scale properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Likert scale control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
         
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
     *   - Questions
         - Enter how many questions the Likert scale will have - each question starts form a new line.
     *   - Answers
@@ -458,10 +396,18 @@ SETTINGS
         - Select type of answers user can input into the scale. The types include: Radio, Checkbox, String, Number, Dropdown.
     *   - Items
         - Select available choices in the dropdown answers. Only available if Type is set to Dropdown.
-    *   - SaveTo
+  
+SharePoint
+
+.. list-table::
+    :widths: 10 40
+  
+    *   - Save To
         - Select Multiline Plain Text field in the current SharePoint List to save Likert scale data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
         
           Alternatively create a new hidden field in editor. You can delete hidden fields by selecting "🖉 Manage" option in the dropdown. 
+    *   - Read-only
+        - If set to read-only state, will only display data.
 
 .. _designer-listorlibrary:
 
@@ -502,23 +448,23 @@ List or Library properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every List or Library control has the following settings:
 
-SETTINGS
+General
 
 .. list-table::
     :widths: 10 40
 
-    *   - DataSource
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
+    *   - Data Source
         - This setting allows you to select which List or Library will be used as Source, which View will be shown on the form.
           
           It also includes **Lookup Field** - if Source List has a lookup field to Parent list, items will automatically be filtered by it. 
           
           Newly created items will get automatically assigned with the current item ID in this Lookup. New Form needs to be saved first.
 
-    *   - InternalName
-        - Setting utilized by many elements. InternalName is similar to ID, it's a unique identifier for the element.
-    *   - Readonly
+    *   - Read-only
         - Prevents user from being able to add new items, edit or delete existing ones.
     *   - Editing
         - Choose between Dialog and Inline editing. The formet launches dialog to create new and modify existing items, and the latter allows you to do it right on the form.
-    *   - RootFolder
+    *   - Root Folder
         - Type in the name of the folder inside List or Library and user will only be able to see its contents inside the control.
