@@ -1,6 +1,10 @@
 Version history
 ==================================================
 
+v1.5.8
+--------------------------------------------------
+UI Improvements
+
 v1.5.7
 --------------------------------------------------
 Added more :ref:`designer-numericproperties` for configuring Numeric fields, e.g. currency, percent, decimals, etc.

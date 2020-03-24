@@ -1,6 +1,10 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.5.8
+--------------------------------------------------
+UI Improvements
+
 v1.5.7
 --------------------------------------------------
 Added an ability to :doc:`customize columns </how-to/list-or-library-columns>` in List or Library controls.
