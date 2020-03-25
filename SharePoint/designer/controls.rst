@@ -364,22 +364,22 @@ General
 
 .. _designer-likert:
 
-Likert scale
+Likert Scale
 -------------------------------------------------------------
-Likert scale is a control which allows you to gather detailed feedback from the user.
+Likert Scale is a control which allows you to gather detailed feedback from the user.
 
-You can set up as many questions as you want in the Likert scale, as well as choose the available answer options.
+You can set up as many questions as you want in the Likert Scale, as well as choose the available answer options.
 
-Likert scale can be easily submitted to MS Flow or stored in a hidden field in a SharePoint List.
+Likert Scale can be easily submitted to MS Flow or stored in a hidden field in a SharePoint List.
 
 .. image:: ../images/designer/controls/LikertScale.png
-   :alt: Likert scale
+   :alt: Likert Scale
 
 .. _designer-datatable-properties:
 
-Likert scale properties
+Likert Scale properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Likert scale control has the following settings:
+Every Likert Scale control has the following settings:
 
 General
 
@@ -389,11 +389,11 @@ General
     *   - Name
         - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
     *   - Questions
-        - Enter how many questions the Likert scale will have - each question starts form a new line.
+        - Enter how many questions the Likert Scale will have - each question starts form a new line.
     *   - Answers
         - Select labels for available answers. Each one adds an additional answer to the control.
     *   - Type
-        - Select type of answers user can input into the scale. The types include: Radio, Checkbox, String, Number, Dropdown.
+        - Select type of answers user can input into the Scale. The types include: Radio, Checkbox, String, Number, Dropdown.
     *   - Items
         - Select available choices in the dropdown answers. Only available if Type is set to Dropdown.
   
@@ -403,7 +403,7 @@ SharePoint
     :widths: 10 40
   
     *   - Save To
-        - Select Multiline Plain Text field in the current SharePoint List to save Likert scale data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
+        - Select Multiline Plain Text field in the current SharePoint List to save Likert Scale data to. It will automatically :ref:`render control<save-fieldcustomizers>` in List View.
         
           Alternatively create a new hidden field in editor. You can delete hidden fields by selecting "🖉 Manage" option in the dropdown. 
     *   - Read-only
