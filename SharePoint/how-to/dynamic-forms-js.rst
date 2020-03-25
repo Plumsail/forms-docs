@@ -16,3 +16,4 @@ Dynamic Forms with the use of JavaScript
     ./dynamic-datatable
     ./populate-user-info
     ./populate-dropdowns
+    ./dynamic-form-based-on-membership
