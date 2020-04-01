@@ -36,7 +36,7 @@ Accept the invite:
 
 .. |Create a Zap with Plumsail Forms| raw:: html
 
-   <a href="https://zapier.com/platform/public-invite/5635/13daf91f42c7bbcca896a24c4dff58a7/" target="_blank">Create a Zap with Plumsail Forms</a>
+   <a href="https://zapier.com/developer/public-invite/96876/b2914aaaed9e0e3d96b8699efb0f5433/" target="_blank">Create a Zap with Plumsail Forms</a>
 
 Easiest way to start is to click *Make a Zap!* here:
 
