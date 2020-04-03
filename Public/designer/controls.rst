@@ -165,7 +165,7 @@ Ink Sketch
 Ink Sketch control behaves more similarly to a field. It allows users to draw or leave their input by holding down mouse key and dragging the mouse across the control.
 Can be used for signatures, drawings, |marking details over a background image|, etc.
 
-The data is stored in the session state, once the browser is closed, it is purged. The data is also sent on Form submission using Microsoft Flow, like other fields' data.
+The data is stored in the session state, once the browser is closed, it is purged. The data is also sent on Form submission using Power Automate (MS Flow), like other fields' data.
 
 .. image:: ../images/designer/controls/InkSketch.png
    :alt: Ink Sketch
@@ -294,7 +294,7 @@ Most configuration for DataTable can be done by editing individual column settin
 
 |
 
-DataTable can be easily submitted to MS Flow and you can use its data as you see fit including creation of HTML tables or SharePoint items.
+DataTable can be easily submitted to Power Automate (MS Flow) and you can use its data as you see fit including creation of HTML tables or SharePoint items.
 
 .. image:: ../images/designer/controls/DataTable.png
    :alt: DataTable
@@ -351,7 +351,7 @@ Likert scale is a control which allows you to gather detailed feedback from the 
 
 You can set up as many questions as you want in the Likert scale, as well as choose the available answer options.
 
-Likert scale can be easily submitted to MS Flow or stored in a hidden field in a SharePoint List.
+Likert scale can be easily submitted to Power Automate (MS Flow) or stored in a hidden field in a SharePoint List.
 
 .. image:: ../images/designer/controls/LikertScale.png
    :alt: Likert scale
