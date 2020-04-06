@@ -26,7 +26,6 @@ Submissions
 **************************************************
 The main difference between the plans is the **amount of form submissions** available per month. 
 When you press the Submit button on the form and you see a message *The form has been submitted successfully* - this counts as a submission.
-The only exception is if you open Flow configuration in the designer and remove the check mark from *Submit Form to Flow*, in this case submissions wouldn't count.
 
 Available submissions count is renewed every 1st day of the month.
 

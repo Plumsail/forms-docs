@@ -58,7 +58,7 @@ For more examples, please, check our |Integration section| with Wordpress, Jooml
 
    <a href="https://plumsail.com/forms/integration/" target="_blank">Integration section</a>
 
-Now, to actually work with the received data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`Microsoft Flow </microsoft-flow>` or :doc:`Zapier </zapier>`.
+Now, to actually work with the received data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`Power Automate (MS Flow) </microsoft-flow>` or :doc:`Zapier </zapier>`.
 
 Sharing pages
 -------------------------------------------------------------

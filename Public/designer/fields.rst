@@ -8,7 +8,7 @@ Fields
 General Info
 -------------------------------------------------------------
 Fields are primary input elements on the Form. 
-Fields are being filled by the user and store their data in user's session storage and once the form is submitted, their contents are handled by Microsoft Flow.
+Fields are being filled by the user and store their data in user's session storage and once the form is submitted, their contents are handled by Power Automate (MS Flow).
 
 Basic properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

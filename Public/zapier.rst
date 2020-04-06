@@ -15,7 +15,7 @@ automatic workflows. It includes the majority of popular apps, such as Gmail, Go
    <a href="https://zapier.com/" target="_blank">Zapier</a>
 
 Plumsail Forms can be utilized with Zapier in a variety of ways. 
-Just like with Microsoft Flow, you can use our Plumsail Forms app to receive form submissions.
+Just like with Power Automate (MS Flow), you can use our Plumsail Forms app to receive form submissions.
 Then you can integrate it with the other available applications and do anything with the submitted data - send an email, upload files to Google Docs or Dropbox, even add attachment photos to Instagram, everything is possible.
 
 .. note:: The amount of data that can be handled by Plumsail Forms app depends on your current plan of Plumsail Forms subscription.
