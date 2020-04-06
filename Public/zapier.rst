@@ -24,39 +24,18 @@ Then you can integrate it with the other available applications and do anything 
 
 Creating a Zap
 -------------------------------------------------------------
-
-In the future, Plumsail Forms app will be publicly available, but currently, you have to be invited to get access to it, so, please, follow this link - |Create a Zap with Plumsail Forms|.
-
-Accept the invite:
-
-|pic1|
-
-.. |pic1| image:: /images/zapier/invite.png
-   :alt: Accept the invite
-
-.. |Create a Zap with Plumsail Forms| raw:: html
-
-   <a href="https://zapier.com/platform/public-invite/5635/13daf91f42c7bbcca896a24c4dff58a7/" target="_blank">Create a Zap with Plumsail Forms</a>
-
-Easiest way to start is to click *Make a Zap!* here:
-
-|pic2|
-
-.. |pic2| image:: /images/zapier/make-a-zap.png
-   :alt: Make a Zap!
-
 Search for *Plumsail Forms* and add the latest version of the app:
 
 |pic3|
 
-.. |pic3| image:: /images/zapier/search-plumsail-forms.png
+.. |pic3| image:: /images/zapier/zapier-search-plumsail-forms.png
    :alt: Search for Plumsail Forms
 
 Select *New Submission* of a form as a Trigger and click Continue:
 
 |pic4|
 
-.. |pic4| image:: /images/zapier/new-submission.png
+.. |pic4| image:: /images/zapier/zapier-new-submission.png
    :alt: New Submission
 
 If this is your first Zap, at this point you'll need to **Sign in to** |Plumsail Account| from Zapier, so the connection is established between the app and your account. If you already have an account tied to the app, you can add another one at this step, and use it instead.
