@@ -50,7 +50,7 @@ Next, we move on to the form design. Add all fields to the form, so that the New
 .. |pic3| image:: ../images/how-to/reservation-system/reservation-system-03.png
    :alt: Form
 
-Now, we want to restrict the list of rooms and display only those which are available at the specified time. For this, we need to apply extra filtering to the 'Conference room' field to exclude occupied rooms. First, we retrieve Ids of the occupied rooms with PnPjs library that is built into Plumsail Forms: 
+Now, we want to restrict the list of rooms and display only those which are available at the specified time. For this, we need to apply extra filtering to the 'Conference room' field to exclude occupied rooms. First, we retrieve Ids of the occupied rooms with |PnPjs library| that is built into Plumsail Forms: 
 
 .. code-block:: javascript
     
@@ -137,4 +137,8 @@ Here is the final code:
                 });
             }
         });
-    }); 
+    });
+
+.. |PnPjs library| raw:: html
+
+   <a href="https://pnp.github.io/pnpjs/" target="_blank">PnPjs library</a>

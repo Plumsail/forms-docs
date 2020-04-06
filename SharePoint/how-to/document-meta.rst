@@ -66,4 +66,4 @@ For more information, check out **pnpjs** documentation on |working with SharePo
 
 .. |working with SharePoint items| raw:: html
 
-    <a href="https://pnp.github.io/pnpjs/sp/docs/items/" target="_blank">working with SharePoint items</a>
+    <a href="https://pnp.github.io/pnpjs/" target="_blank">working with SharePoint items</a>
