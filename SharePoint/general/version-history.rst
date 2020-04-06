@@ -1,9 +1,17 @@
 Version history (SharePoint Online)
 ==================================================
 
+v1.5.9
+--------------------------------------------------
+Steps in Wizard container can now be re-organized with drag-n-drop
+
+Performance and stability improvements
+
+Minor bug fixes
+
 v1.5.8
 --------------------------------------------------
-UI Improvements
+UI improvements
 
 v1.5.7
 --------------------------------------------------
