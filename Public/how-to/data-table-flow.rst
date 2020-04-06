@@ -164,7 +164,7 @@ Here, we pass ExpensesTable in From field, I also open Advanced options and sele
 
 .. _plumsail-actions-flow:
 
-Plumsail Actions in MS Flow for DataTable
+Plumsail Actions in Power Automate (MS Flow) for DataTable
 --------------------------------------------------
 
 Now, we will use Plumsail Actions connector, which you can read about setting up |Plumsail Actions connector|. 
@@ -182,7 +182,7 @@ but you will need to have an API key from |Plumsail Account| in both cases.
 
 Once the connector is set up, search for HTML Template and select *Plumsail Documents - Create HTML from template*:
 
-.. image:: ../images/how-to/data-table-flow/4_Plumsail_Documents_Search.png
+.. image:: ../images/how-to/data-table-flow/data-table-flow-01.png
    :alt: Search for HTML Template and select Plumsail Documents - Create HTML from template
 
 | 
@@ -207,7 +207,7 @@ First, I'll create the basic structure for our object:
 
 Now, we can insert Form Body inside "Form" and result of HTML Table conversion inside "Table":
 
-.. image:: ../images/how-to/data-table-flow/5_HTML_TemplateData.png
+.. image:: ../images/how-to/data-table-flow/data-table-flow-02.png
    :alt: HTML Template data with Form and Table
 
 | 
@@ -228,7 +228,7 @@ Then add format as the second parameter so it looks like this and click OK:
 
 This is our final version of Template Data:
 
-.. image:: ../images/how-to/data-table-flow/3_HTML_Template_DataFinal.png
+.. image:: ../images/how-to/data-table-flow/data-table-flow-03.png
    :alt: HTML Template data final with dates
 
 | 
@@ -269,14 +269,14 @@ Here's an HTML that I've used:
 
 Last thing that we need to do is convert HTML into PDF. Search for Plumsail Documents and select *Plumsail Documents - Convert HTML to PDF*:
 
-.. image:: ../images/how-to/data-table-flow/6_Plumsail_Documents_Search2.png
+.. image:: ../images/how-to/data-table-flow/data-table-flow-04.png
    :alt: Search for Plumsail Documents and select Plumsail Documents - Convert HTML to PDF
 
 | 
 
 Now we place Result HTML from the last action inside Source HTML field:
 
-.. image:: ../images/how-to/data-table-flow/7_Plumsail_Convert_HTML_to_PDF.png
+.. image:: ../images/how-to/data-table-flow/data-table-flow-05.png
    :alt: Plumsail Documents - Convert HTML to PDF
 
 | 
@@ -288,14 +288,14 @@ Send an email with PDF attachment
 
 We'll use Microsoft's *Office 365 Outlook - Send an email* action to send an email. Select it:
 
-.. image:: ../images/how-to/email/10_SendAnEmail.png
+.. image:: ../images/how-to/data-table-flow/data-table-flow-07.png
    :alt: Send an email
 
 |
 
 Fill in the information for the email, then open Advanced options and add result PDF as an attachment:
 
-.. image:: ../images/how-to/data-table-flow/8_Send_Email.png
+.. image:: ../images/how-to/data-table-flow/data-table-flow-06.png
    :alt: Add an attachment
 
 |

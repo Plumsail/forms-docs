@@ -1,4 +1,4 @@
-Data Tables and MS Flow
+Data Tables and Power Automate (MS Flow)
 =========================
 
 .. toctree::

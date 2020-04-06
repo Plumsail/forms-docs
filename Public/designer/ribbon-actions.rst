@@ -32,7 +32,7 @@ There will be a confirmation prompt to avoid potential misclicks:
    :alt: Layouts icons
 
 .. important::  Make sure that the fields present on different layouts have the same internal names 
-                and the same type to avoid errors on submission in Microsoft Flow. These can be different fields with the same name as long as the type is the same, for example, 
+                and the same type to avoid errors on submission in Power Automate (MS Flow). These can be different fields with the same name as long as the type is the same, for example, 
                 Textbox and MultilineTextBox.
 
 Testing Forms
@@ -71,20 +71,18 @@ These two buttons appear on the ribbon only after you've saved the form.
 
 |pic4|
 
-.. |pic4| image:: ../images/designer/ribbon-actions/FlowPreview.png
+.. |pic4| image:: ../images/designer/ribbon-actions/ribbon-actions-04.png
    :alt: General Settings and Preview
 
-**General Settings for Plumsail forms** section contains important information for Flow configuration, namely Form ID,
-as well as the widget that you can copy to insert form to a webpage for Plumsail Forms.
+**General Settings for Plumsail forms** section contains important information for Activate submissions, namely Form ID, direct link to the form, as well as the widget that you can copy to insert form to a webpage for Plumsail Forms.
 
-You can select if you want to submit form to Flow/Zapier which needs to be checked if you want to use the form with Microsoft Flow or Zapier and it is turned on by default.
-You still need to configure the Flow to actually do something with the submitted data.
+You can turn off the Activate submissions option for testing purposes. Thus the form won't be submitted to our server and neither be saved nor processed in Power Automate or Zapier, and the submission won't be counted either.
 
 Be careful with Form Schema when updating the form, it only changes after the form has been saved.
 
 |pic5|
 
-.. |pic5| image:: ../images/designer/ribbon-actions/GeneralSettings.png
+.. |pic5| image:: ../images/designer/ribbon-actions/ribbon-actions-05.png
    :alt: General Settings for Plumsail Forms
 
 

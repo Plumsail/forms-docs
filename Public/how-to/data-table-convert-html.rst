@@ -24,7 +24,7 @@ It's still the same Expense Reimbursement Form, we just need to add Date column 
 
 Microsoft Flow using HTML template functionality
 --------------------------------------------------
-This will show you how you can set up MS Flow with DataTable without converting it to HTML table first.
+This will show you how you can set up Flow with DataTable without converting it to HTML table first.
 
 Read more about adding Plumsail Actions connector in this section - :ref:`plumsail-actions-flow`.
 

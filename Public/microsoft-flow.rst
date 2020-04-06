@@ -28,25 +28,18 @@ Additionally, SharePoint forms can also be handled by flows upon submission, all
 Creating flow
 -------------------------------------------------------------
 
-Go to My Flows and click *Create from blank*:
+Go to My Flows and click *+ New* >> *Automated-from blank*:
 
 |pic1|
 
-.. |pic1| image:: /images/flow/8_MyFlows.png
+.. |pic1| image:: /images/flow/flow-01.png
    :alt: My Flows
 
-On the next page, click *Search hundreds of connectors and triggers*:
-
-|pic2|
-
-.. |pic2| image:: /images/flow/9_Search.png
-   :alt: Search
-
-Search for *Plumsail Forms* and add *Plumsail Forms - Form is submitted* trigger:
+In the pop-up dialog, in *Choose your flow's trigge* field search for *Plumsail Forms* and add *Plumsail Forms - Form is submitted* trigger:
 
 |pic3|
 
-.. |pic3| image:: /images/flow/10_FormSubmittedTriggerNew.png
+.. |pic3| image:: /images/flow/flow-02.png
    :alt: Plumsail Forms - Form is submitted trigger
 
 If this is your first Flow, at this point you'll need to **Sign in to** |Plumsail Account| from Flow, so you can start using your forms inside the Flow.
