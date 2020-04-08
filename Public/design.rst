@@ -33,7 +33,7 @@ Then you can adjust individual settings for each field, control or container by 
 .. |pic-design-properties| image:: ./images/start/design-properties.gif
    :alt: Field's properties
 
-Multiple fields/controls can be selected at once to adjust their shared properties:
+In **web designer**, multiple fields/controls can be selected at once to adjust their shared properties:
 
 |pic-design-multiple-fields|
 
