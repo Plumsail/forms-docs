@@ -5,6 +5,17 @@ Designing forms
  :local:
  :depth: 1
 
+Introduction
+**************************************************
+Public Web Forms currently offer 2 ways to design forms - using :ref:`start-web-designer` or using :ref:`start-desktop-designer`.
+
+Both designers share most of their functionality, but:
+
+- Web Designer works without installation and gives better understanding of how the form would look like in the browser;
+- Desktop Designer has more advanced controls and containers, which will be implemented in Web Designer with time.
+
+.. _start-web-designer:
+
 Web Designer
 **************************************************
 
@@ -61,6 +72,8 @@ When you are satisfied with how your form looks on all the layouts and screen si
 you can finally share the form. 
 
 To find out how to share saved forms, please, go to our :doc:`Sharing forms </sharing>` article.
+
+.. _start-desktop-designer:
 
 Desktop Designer
 **************************************************
@@ -131,7 +144,7 @@ so make sure that you like the final result before publishing:
 
 |pic17|
 
-.. |pic17| image:: ./images/start/form-preview.png
+.. |pic17| image:: ./images/start/design-preview.png
    :alt: Form Preview
 
 When you are satisfied with how your form looks on all the layouts and screen sizes (you can just resize browser's window to see how the form scales),
