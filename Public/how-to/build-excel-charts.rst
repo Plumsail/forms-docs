@@ -1,4 +1,4 @@
-How to create online quiz and visualize results with charts in Excel
+How to create online quiz and visualize results with Excel сharts
 =========================================================================
 
 .. contents:: Contents:
