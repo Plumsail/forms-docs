@@ -86,7 +86,7 @@ Configure the Flow - Send an email
 
 We'll use Microsoft's *Office 365 Outlook - Send an email* action to send an email. Select it:
 
-.. image:: ../images/how-to/email/10_SendAnEmail.png
+.. image:: ../images/how-to/data-table-flow/data-table-flow-07.png
    :alt: Send an email
 
 |

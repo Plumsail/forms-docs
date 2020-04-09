@@ -1,4 +1,4 @@
-Build excel charts based on submissions
+How to create online quiz and visualize results with charts in Excel
 =========================================================================
 
 .. contents:: Contents:
