@@ -1,5 +1,5 @@
-SharePoint Web Part
-=========================================
+SharePoint web part for publishing a SharePoint form to any modern page within the tenant (Office 365) or web application (SharePoint 2019)
+====================================================================================================================================================================
 
 .. contents:: Contents:
  :local:

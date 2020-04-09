@@ -1,5 +1,5 @@
-SharePoint Form Panel
-=========================================
+Configuring appearance of SharePoint form in panel right from list or library view
+==================================================================================
 
 .. contents:: Contents:
  :local:

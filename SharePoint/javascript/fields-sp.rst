@@ -1,5 +1,5 @@
-SharePoint Fields
-==================================================
+Managing SharePoint fields with JavaScript in Plumsail Forms for SharePoint
+================================================================================
 
 .. contents:: Contents:
  :local:

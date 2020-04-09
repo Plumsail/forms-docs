@@ -1,5 +1,5 @@
-Working with Form Sets when Provisioning
-=========================================
+Provisioning Forms sets and Panel settings
+===========================================
 
 .. contents:: Contents:
  :local:

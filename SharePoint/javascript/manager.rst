@@ -1,5 +1,5 @@
-Manager
-==================================================
+Managing form with JavaScript in Plumsail Forms for SharePoint
+========================================================================
 
 .. contents:: Contents:
  :local:

@@ -17,52 +17,57 @@ SharePoint Forms for Modern UI
             :caption: Getting started
             :maxdepth: 1
 
-            ./introduction-sp
-            ./installation-sp
-            ./enable-scripts
-            ./installation-2019
-            ./design-sp
-            ./licensing-sp
+            Introduction <./introduction-sp>
+            Installation to SharePoint Online (Office 365) <./installation-sp>
+            Installation to SharePoint 2019 <./installation-2019>
+            Designing forms <./design-sp>
 
       .. toctree::
             :caption: General
             :name: generaltoc
             :maxdepth: 1
             
-            general/roadmap
-            general/version-history
-            general/version-history2019
+            Version history (SharePoint Online) <general/version-history> 
+            Version history (SharePoint 2019) <general/version-history2019> 
+            Roadmap <general/roadmap> 
             YouTube Channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
-            general/data-security
-            general/privacy-policy
+            Licensing <./licensing-sp>
+            Privacy Policy <general/data-security> 
+            Data protection and security <general/privacy-policy> 
 
       .. toctree::
             :caption: Designer
             :maxdepth: 1
 
-            designer/ribbon-actions
-            designer/form-sets
-            designer/themes
-            designer/containers
-            designer/controls
-            designer/fields
-            designer/fields-sp
-            designer/web-part
-            designer/panel
-            designer/provision
+            Ribbon Actions <designer/ribbon-actions> 
+            Form Sets <designer/form-sets> 
+            Containers <designer/containers> 
+            Controls <designer/controls> 
+            Fields <designer/fields> 
+            SharePoint web part <designer/web-part> 
+            SharePoint form panel <designer/panel> 
+            
 
       .. toctree::
             :caption: JavaScript framework 
             :maxdepth: 1
 
-            javascript/general
-            javascript/manager
-            javascript/toolbar
-            javascript/dialog
-            javascript/containers
-            javascript/controls
-            javascript/fields
-            javascript/fields-sp
+            Introduction <javascript/general> 
+            Manager <javascript/manager> 
+            Containers <javascript/containers> 
+            Controls <javascript/controls> 
+            Common fields <javascript/fields> 
+            SharePoint fields <javascript/fields-sp> 
+            Toolbar <javascript/toolbar> 
+            Dialog <javascript/dialog> 
+      
+      .. toctree::
+            :caption: Provisioning forms
+            :maxdepth: 1
+
+            Introduction <designer/provision> 
+            Provisioning forms <how-to/provision>
+            Provisioning Form sets <how-to/provision-fs>
       
 
 .. container:: pl-right-column
@@ -76,5 +81,4 @@ SharePoint Forms for Modern UI
             how-to/lookup-section
             how-to/microsoft-flow
             how-to/region-culture
-            how-to/prov-section
             how-to/other

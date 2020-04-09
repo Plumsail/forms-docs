@@ -1,5 +1,5 @@
-Controls
-==================================================
+Managing controls with JavaScript in Plumsail Forms for SharePoint
+====================================================================
 
 .. contents:: Contents:
  :local:

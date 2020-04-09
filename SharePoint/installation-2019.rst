@@ -1,5 +1,5 @@
-SharePoint 2019 Installation (On-Premises)
-==================================================
+Installation of Plumsail Forms for SharePoint 2019 (On-Premises)
+=============================================================================
 
 .. contents:: Contents:
  :local:

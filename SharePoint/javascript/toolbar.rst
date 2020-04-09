@@ -1,5 +1,5 @@
-Toolbar
-==================================================
+Managing SharePoint form's toolbar with JavaScript in Plumsail Forms for SharePoint
+==============================================================================================
 
 .. contents:: Contents:
  :local:

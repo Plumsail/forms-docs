@@ -7,6 +7,7 @@ Other
     ./grid-advantages
     ./save-table-signature
     ./export-pdf
+    ./form-versions
     ./ms-teams
     ./newform-page
     ./personal-form

@@ -1,5 +1,5 @@
-Dialog
-==================================================
+Managing dialogs in SharePoint form with JavaScript in Plumsail Forms for SharePoint
+================================================================================================
 
 .. contents:: Contents:
  :local:

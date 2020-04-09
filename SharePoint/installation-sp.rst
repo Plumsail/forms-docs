@@ -1,5 +1,5 @@
-SharePoint Online Installation (Office365)
-==================================================
+Installation of Plumsail Forms for SharePoint Online (Office 365)
+==============================================================================
 
 .. contents:: Contents:
  :local:

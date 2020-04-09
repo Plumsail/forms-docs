@@ -1,4 +1,4 @@
-SharePoint Forms Licensing
+Licensing Information
 ==================================================
 
 |SharePoint Forms License| is needed to replace standard SharePoint List and Document Library forms 

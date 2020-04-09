@@ -1,5 +1,5 @@
-JavaScript Intro
-==================================================
+Introduction to JavaScript framework of Plumsail Forms for SharePoint
+======================================================================
 
 Limitless possibilities
 --------------------------------------------------

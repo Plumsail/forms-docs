@@ -1,4 +1,4 @@
-Ribbon Actions
+Ribbon actions in Plumsail Forms for SharePoint
 ==================================================
 
 .. contents:: Contents:
