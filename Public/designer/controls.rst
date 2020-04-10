@@ -1,5 +1,5 @@
-Controls
-==================================================
+Controls in Plumsail Forms (public forms)
+====================================================
 
 .. contents:: Contents:
  :local:

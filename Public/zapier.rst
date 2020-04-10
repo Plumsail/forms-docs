@@ -1,5 +1,5 @@
-Handling data in Zapier
-==================================================
+Processing submissions of online forms designed with Plumsail Forms in Zapier
+==========================================================================================
 
 .. contents:: Contents:
  :local:

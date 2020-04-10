@@ -1,5 +1,5 @@
-Handling data in Power Automate (MS Flow)
-==================================================
+Processing submissions of online forms designed with Plumsail Forms in Power Automate (MS Flow)
+====================================================================================================
 
 .. contents:: Contents:
  :local:

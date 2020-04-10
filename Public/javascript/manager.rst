@@ -1,5 +1,5 @@
-Manager
-==================================================
+Managing form with JavaScript in Plumsail Forms (public forms)
+=============================================================================
 
 .. contents:: Contents:
  :local:

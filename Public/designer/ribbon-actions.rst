@@ -1,5 +1,5 @@
-Ribbon Actions
-==================================================
+Ribbon actions in Plumsail Forms (public forms)
+==================================================================
 
 .. contents:: Contents:
  :local:

@@ -1,4 +1,4 @@
-Forms Privacy Policy
+Privacy Policy
 ===========================
 This privacy policy is additional to the |general one| and covering some specific practices in |Plumsail Forms|.
 

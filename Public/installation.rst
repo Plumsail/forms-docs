@@ -1,5 +1,5 @@
-Installation
-==================================================
+Installation of Plumsail Forms for public web forms
+==========================================================
 
 .. contents:: Contents:
  :local:

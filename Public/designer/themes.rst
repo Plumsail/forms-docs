@@ -1,5 +1,5 @@
-Themes
-=========================================
+Configuring color theme for online forms designed with Plumsail Forms
+===============================================================================
 
 .. _designer-publicthemes:
 

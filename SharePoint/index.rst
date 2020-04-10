@@ -65,9 +65,9 @@ SharePoint Forms for Modern UI
             :caption: Provisioning forms
             :maxdepth: 1
 
-            Introduction <designer/provision> 
-            Provisioning forms <how-to/provision>
-            Provisioning Form sets <how-to/provision-fs>
+            Introduction <provision/general> 
+            Provisioning forms <provision/provision>
+            Provisioning Form sets <provision/provision-fs>
       
 
 .. container:: pl-right-column

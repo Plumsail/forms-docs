@@ -1,4 +1,4 @@
-Public Forms Licensing  
+Licensing Information
 ==================================================
 
 **Plumsail Web Forms** offer a |wide range of subscription licenses|, depending on your needs. A free version is available as well.

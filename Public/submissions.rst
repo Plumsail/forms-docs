@@ -1,5 +1,5 @@
-Collecting data from submissions
-==================================================
+Collecting submissions of online forms designed with Plumsail Forms
+=========================================================================
 
 .. contents:: Contents:
  :local:

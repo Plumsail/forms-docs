@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Public Web Forms
+Plumsail Forms Documentation (Public Web Forms)
 =================================================
 
 .. toctree::
@@ -17,47 +17,46 @@ Public Web Forms
             :caption: Getting started
             :maxdepth: 1
 
-            ./introduction
-            ./installation
-            ./design
-            ./sharing
-            ./submissions
-            ./microsoft-flow
-            ./zapier
-            ./licensing
-            
+            Introduction <./introduction> 
+            Installation <./installation>
+            Designing forms <./design>
+            Sharing forms <./sharing>
+            Collecting form data <./submissions>
+            Handling form data in Power Automate (MS Flow) <./microsoft-flow>
+            Handling form data in Zapier <./zapier>
 
       .. toctree::
             :caption: General
             :name: generaltoc
             :maxdepth: 1
             
-            general/roadmap
-            general/version-history
-            general/upgrade-renew
+            Version history <general/version-history>
+            Roadmap <general/roadmap>  
             YouTube Channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
-            general/data-security
-            general/privacy-policy
+            Licensing <./licensing>
+            Renew or upgrade subscription <general/upgrade-renew>  
+            Privacy policy <general/privacy-policy> 
+            Data protection and security <general/data-security>
 
       .. toctree::
             :caption: Designer
             :maxdepth: 1
 
-            designer/ribbon-actions
-            designer/themes
-            designer/containers
-            designer/controls
-            designer/fields
+            Ribbon actions <designer/ribbon-actions>
+            Themes <designer/themes>
+            Containers <designer/containers>
+            Controls <designer/controls>
+            Fields <designer/fields>
 
       .. toctree::
             :caption: JavaScript framework 
             :maxdepth: 1
 
-            javascript/general
-            javascript/manager
-            javascript/containers
-            javascript/controls
-            javascript/fields
+            Introduction <javascript/general>
+            Manager <javascript/manager>
+            Containers <javascript/containers>
+            Controls <javascript/controls>
+            Fields <javascript/fields>
       
 
 .. container:: pl-right-column

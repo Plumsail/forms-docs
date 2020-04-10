@@ -1,5 +1,5 @@
-Fields
-==================================================
+Managing fields with JavaScript in Plumsail Forms (public forms)
+===========================================================================
 
 .. contents:: Contents:
  :local:
