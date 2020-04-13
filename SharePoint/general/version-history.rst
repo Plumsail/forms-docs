@@ -1,6 +1,12 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.6.0
+--------------------------------------------------
+Added an ability to import forms designed with Forms Designer for Office 365
+
+Minor bug fixes
+
 v1.5.9
 --------------------------------------------------
 Steps in Wizard container can now be re-organized with drag-n-drop
