@@ -25,7 +25,7 @@ Go to Site Pages of your Team Site, and create a New Page:
    
 |
 
-If you have `installed Modern SharePoint Forms <../installation-sp.html>`_, you must have Plumsail Forms web part available, add it to the page:
+If you have |installed Modern SharePoint Forms|, you must have Plumsail Forms web part available, add it to the page:
 
 .. image:: ../images/how-to/ms-teams/WebPart.png
    :alt: Add Plumsail Form web part to the page
@@ -98,3 +98,7 @@ Now you have a List View with custom forms in a panel, which you can configure e
 
 .. image:: ../images/how-to/ms-teams/SharePointFormTab.png
    :alt: SharePoint Form Panel in MS Teams
+
+.. |installed Modern SharePoint Forms|  raw:: html
+
+   <a href="https://plumsail.com/docs/forms-sp/installation-sp.html" target="_blank">installed Modern SharePoint Forms</a>
