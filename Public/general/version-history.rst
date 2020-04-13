@@ -1,4 +1,4 @@
-Version history of Plumsail Forms for public web forms
+Version history of Plumsail Forms (public forms)
 =====================================================================
 
 v1.5.9
