@@ -1,4 +1,4 @@
-Introduction to provisioning SharePoint forms designed in Plumsail Forms
+Provisioning API for SharePoint forms designed in Plumsail Forms
 ===============================================================================
 
 .. contents:: Contents:

@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-SharePoint Forms for Modern UI
+Plumsail Forms Documentation (SharePoint forms)
 =================================================
 
 .. toctree::
@@ -30,22 +30,23 @@ SharePoint Forms for Modern UI
             Version history (SharePoint Online) <general/version-history> 
             Version history (SharePoint 2019) <general/version-history2019> 
             Roadmap <general/roadmap> 
-            YouTube Channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
+            YouTube channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
             Licensing <./licensing-sp>
-            Privacy Policy <general/data-security> 
+            Privacy policy <general/data-security> 
             Data protection and security <general/privacy-policy> 
 
       .. toctree::
             :caption: Designer
             :maxdepth: 1
 
-            Ribbon Actions <designer/ribbon-actions> 
-            Form Sets <designer/form-sets> 
+            Ribbon actions <designer/ribbon-actions> 
+            Form sets <designer/form-sets> 
             Containers <designer/containers> 
             Controls <designer/controls> 
-            Fields <designer/fields> 
+            SharePoint fields <designer/fields-sp> 
+            Common fields <designer/fields> 
             SharePoint web part <designer/web-part> 
-            SharePoint form panel <designer/panel> 
+            SharePoint form Panel <designer/panel> 
             
 
       .. toctree::
@@ -56,8 +57,8 @@ SharePoint Forms for Modern UI
             Manager <javascript/manager> 
             Containers <javascript/containers> 
             Controls <javascript/controls> 
-            Common fields <javascript/fields> 
             SharePoint fields <javascript/fields-sp> 
+            Common fields <javascript/fields> 
             Toolbar <javascript/toolbar> 
             Dialog <javascript/dialog> 
       
@@ -65,9 +66,9 @@ SharePoint Forms for Modern UI
             :caption: Provisioning forms
             :maxdepth: 1
 
-            Introduction <provision/general> 
-            Provisioning forms <provision/provision>
-            Provisioning Form sets <provision/provision-fs>
+            Provisioning API <provision/general> 
+            Provisioning forms (samples) <provision/provision>
+            Provisioning Form sets and Panel (samples) <provision/provision-fs>
       
 
 .. container:: pl-right-column

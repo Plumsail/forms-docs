@@ -1,5 +1,5 @@
-Fields in Plumsail Forms for SharePoint
-=========================================
+Common Fields in Plumsail Forms for SharePoint
+==================================================
 
 .. contents:: Contents:
  :local:
@@ -7,9 +7,13 @@ Fields in Plumsail Forms for SharePoint
 
 General Info
 -------------------------------------------------------------
-Fields are primary input elements on the Form. 
-Fields are being filled by the user and store their data in user's session storage and once the form is submitted, their contents are handled by MS Powerautomate.
-SharePoint Fields are saved directly to SharePoint List/Library.
+Common fields are suplimentary input elements on a SharePoint form, which you can use in addition to :doc:`SharePoint fields </designer/fields-sp>`. 
+
+Data entered in Common fields can either be copied to a SharePoint field with JavaScript; or stored in Plumsail Account/handled by Power Automate (MS Flow) using Plumsail Forms connector - the latter options licensed under |Public Web Forms|.
+
+.. |Public Web Forms| raw:: html
+
+   <a href="https://plumsail.com/docs/forms-web/licensing.html" target="_blank">Public Web Forms</a>
 
 Basic properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,46 +75,259 @@ Control
     *   - Font Color
         - Select font color for the input. Can be either selected or manually entered.
 
-SharePoint Fields
+Single-line Text
 -------------------------------------------------------------
-SharePoint fields are based on the columns of the SharePoint List or Library that you connect to. 
-These fields, when added to the form, are automatically connected to the List and will retrieve data from the List, as well as automatically submit user input on save.
+Single-line Text is the basic text input field. It doesn't support multiple lines of text and doesn't include an editor, but it's well-suited for short and simple inputs.
 
-It's recommended to only use SharePoint fields on SharePoint forms unless you want to handle data from the Common fields with JavaScript or Flow.
+.. image:: ../images/designer/fields/TextBox.png
+   :alt: Single-line Text
 
-.. _designer-lookup:
-
-Lookup
+Single-line Text unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lookup field has received several new features, all of which can be configured in the designer.
+Single-line Text field has the following unique settings:
 
-Now, users can use search bar to filter the selection in the lookup field. 
-There's also an option to add new items to the source list, if the item wasn't found - this could be turned on/off.
+Pattern
 
-|example|
+.. list-table::
+    :widths: 10 40
 
-.. |example| image:: ../images/how-to/lookup-view/example.png
-   :alt: Example Lookup
+    *   - Type
+        - Select the Type of the Single-line Text, this will automatically apply a pattern to it. Several types are available, such as Email, Phone, Numeric, etc. This will determine what type of text can be input, and will give field a validator to make sure that the input is correct. You can alter any of the settings, this will automatically switch Type to Custom.
+    *   - Pattern
+        - A regex pattern which the field has to follow. You can either input your own, or select one of the available Types and it will be automatically set for you.
+    *   - Flags
+        - Regex flags, more on that |Regex flags|.
+    *   - Error
+        - The error message shown when the input text doesn't match the pattern.
 
-Lookup unique properties
+.. |Regex flags| raw:: html
+
+   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters" target="_blank">here</a>
+
+Multi-line Text
+-------------------------------------------------------------
+Advanced text input, allows input of multiple lines and includes basic text editor.
+
+.. image:: ../images/designer/fields/MultilineTextBox.png
+   :alt: MultilineTextBox
+
+Number
+-------------------------------------------------------------
+Number is the basic number input field.
+
+.. image:: ../images/designer/fields/Numeric.png
+   :alt: Number
+
+.. _designer-numericproperties:
+
+Number properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lookup field has the following unique settings:
+These properties are unique to Number field:
 
 General
 
 .. list-table::
     :widths: 10 40
 
-    *   - Operator
-        - Determines how the search is handled by the lookup. Has two options: StartsWith - only show items that start with the entered value, Contains - show all items that contain the entered value.
-    *   - Add New
-        - Allows users to add new values to the source list of the Lookup. User must enter value that doesn't exist yet, then there will be an option to add new item.
-    *   - Extra Fields
-        - Select fields from the list that also need to be loaded. By default, only ID and 'Display Field' are retrieved. Extra fields can accessed with JavaScript. When adding Lookup fields in Extra Fields setting, do not forget to format them like this: **Category/ID**, **Category/Title**. Uses OData *$select* query option - read more |REST|.
-    *   - Expand
-        - In the Expand setting you need to enter the Lookup field that you are getting in Extra Fields, such as: **Category**. Uses OData *$expand* query option.
+    *   - Min
+        - Minimum possible value.
+    *   - Max
+        - Maximum possible value.
+    *   - Decimals
+        - Number of decimals.
+    *   - Format
+        - |Numeric format| for the field.
+    *   - Step
+        - Value added or removed when using the control's arrows.
 
 
-.. |REST| raw:: html
+.. |Numeric format| raw:: html
 
-   <a href="https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests#select-fields-to-return/" target="_blank">here</a>
+   <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings" target="_blank">Numeric format</a>
+
+Drop Down
+-------------------------------------------------------------
+Drop Down field gives user a choice which is displayed in a dropdown menu.
+
+.. image:: ../images/designer/fields/DropDown.png
+   :alt: Drop Down
+
+Drop Down unique properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Drop Down field has the following unique settings:
+
+General
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Options
+        - Specify items users can choose from.
+    *   - Selection
+        - Select if user can choose more than one item from dropdown or not.
+    
+
+Toggle
+-------------------------------------------------------------
+Toggle field gives user a choice between Yes or No. By default has False value.
+
+.. image:: ../images/designer/fields/Toggle.png
+   :alt: Toggle
+
+Toggle unique properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Toggle field has the following unique settings:
+
+Control
+
+.. list-table::
+    :widths: 10 40
+
+    *   - On - text
+        - Select displayed text for the True value.
+    *   - Off - text
+        - Select displayed text for the False value.
+
+Multiple Choice
+-------------------------------------------------------------
+Multiple Choice field gives user a number of checkboxes where multiple options can be picked.
+
+.. image:: ../images/designer/fields/Checkboxes.png
+   :alt: Multiple Choice
+
+Multiple Choice unique properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Multiple Choice field has the following unique settings:
+
+General
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Options
+        - Specify items users can choose from.
+
+Control
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Columns
+        - Number of columns items are grouped by.
+
+Radios
+-------------------------------------------------------------
+Radios field gives user a choice which is presented as a number of radio buttons. Unlike checkboxes, only one option can be selected.
+
+.. image:: ../images/designer/fields/Radios.png
+   :alt: Radios
+
+Radios unique properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Radios field has the following unique settings:
+
+General
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Options
+        - Specify items users can choose from.
+
+Control
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Columns
+        - Number of columns items are grouped by.
+
+Date
+-------------------------------------------------------------
+Date field allows users to input date.
+
+.. image:: ../images/designer/fields/Date.png
+   :alt: Date
+
+Date and Time
+-------------------------------------------------------------
+Date and Time field allows users to input both date and time.
+
+.. image:: ../images/designer/fields/DateTime.png
+   :alt: DateTime
+
+.. _designer-maskedtextbox:
+
+Masked Input
+-------------------------------------------------------------
+Masked Input allows to restrict what the user can input. User simply won't be able to enter anything that doesn't match the mask.
+
+.. image:: ../images/designer/fields/MaskedTextBox.png
+   :alt: Masked Input
+
+Masked Input unique properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Masked Input field has the following unique settings:
+
+General
+
+.. list-table::
+    :widths: 10 30
+        
+    *   -   Mask
+        -   Specifies the input mask. The following mask rules are supported:
+
+            0 - Digit. Accepts any digit between 0 and 9.
+
+            9 - Digit or space. Accepts any digit between 0 and 9, plus space.
+
+            # - Digit or space. Like 9 rule, but allows also (+) and (-) signs.
+
+            L - Letter. Restricts input to letters a-z and A-Z. This rule is equivalent to [a-zA-Z] in regular expressions.
+
+            ? - Letter or space. Restricts input to letters a-z and A-Z. This rule is equivalent to [a-zA-Z] in regular expressions.
+
+            & - Character. Accepts any character. The rule is equivalent to \S in regular expressions.
+
+            C - Character or space. Accepts any character. The rule is equivalent to . in regular expressions.
+
+            A - Alphanumeric. Accepts letters and digits only.
+
+            a - Alphanumeric or space. Accepts letters, digits and space only.
+
+            . - Decimal placeholder. The decimal separator will be gotten from the current culture.
+
+            , - Thousands placeholder. The display character will be gotten from the current culture.
+            
+            $ - Currency symbol. The display character will be gotten from the current culture.
+
+            For more information and examples, please, checkout |KendoUI MaskedTextBox|.
+
+
+.. |KendoUI MaskedTextBox| raw:: html
+
+   <a href="https://demos.telerik.com/kendo-ui/maskedtextbox/index" target="_blank">KendoUI MaskedTextBox</a>
+
+Attachments
+-------------------------------------------------------------
+Attachments field allows users to attach files to the form. It's possible to do it by either uploading files manually or dragging and dropping them into the field.
+Possible to drag and drop multiple files at once.
+
+.. image:: ../images/designer/fields/Attachments.png
+   :alt: Attachments
+
+.. important:: Common field Attachments does not store information in SharePoint. Use SharePoint field Attachments for this.
+
+Attachments unique properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Attachments field has the following unique settings:
+
+General
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Max Size (Kb)
+        - Maximum file size each uploaded file can be. Default max file size is 10240, but you can restrict it down, or increase it up (if your subscription plan allows it).
+    *   - Allowed Ext.
+        - Choose what files should be allowed to upload. Extensions should have a dot in front of them, can be separated by a comma, a semicolon or placed on different lines. If empty, all extensions are allowed.

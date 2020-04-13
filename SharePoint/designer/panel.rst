@@ -1,4 +1,4 @@
-Configuring appearance of SharePoint form in panel right from list or library view
+Configuring appearance of SharePoint form in panel from list or library view
 ==================================================================================
 
 .. contents:: Contents:

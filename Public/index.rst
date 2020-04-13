@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Plumsail Forms Documentation (Public Web Forms)
+Plumsail Forms Documentation (public web forms) 
 =================================================
 
 .. toctree::
@@ -32,7 +32,7 @@ Plumsail Forms Documentation (Public Web Forms)
             
             Version history <general/version-history>
             Roadmap <general/roadmap>  
-            YouTube Channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
+            YouTube channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
             Licensing <./licensing>
             Renew or upgrade subscription <general/upgrade-renew>  
             Privacy policy <general/privacy-policy> 
