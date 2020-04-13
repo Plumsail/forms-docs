@@ -34,13 +34,9 @@ and only want to display contents of the folder with the name matching current i
 
     fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
-        if (dt.widget) {
+        dt.ready().then(function() {
             setRootFolder();
-        } else {
-            dt.$on('ready', function() {
-                setRootFolder();
-            });
-        }
+        });
 
         function setRootFolder(){
             //set base root folder to the current item's ID:
@@ -67,13 +63,9 @@ Now, add List or Library control to the Form and the following code to the JavaS
     //use spBeforeRender event to get access to the SharePoint form context
     fd.spBeforeRender(function(ctx) {
         var dt = fd.control('SPDataTable0');
-        if (dt.widget) {
+        dt.ready().then(function() {
             setRootFolder();
-        } else {
-            dt.$on('ready', function() {
-                setRootFolder();
-            });
-        }
+        });
 
         function setRootFolder(){
             dt.baseRootFolder = ctx.ItemAttributes.Url;
@@ -94,15 +86,9 @@ With this code we can make Root Folder automatically change when Category field 
 
     fd.spRendered(function(ctx) {
         var dt = fd.control('SPDataTable0');
-
-        //set root folder when the form loads
-        if (dt.widget) {
+        dt.ready().then(function() {
             setRootFolder();
-        } else {
-            dt.$on('ready', function() {
-                setRootFolder();
-            });
-        }
+        });
 
         //set root folder when Category field changes
         fd.field('Category').$on('change', function() {
