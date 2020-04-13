@@ -35,18 +35,16 @@ This can be done with the following code when List or Library control loads:
 
     fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
-        if (dt.widget) {
+        dt.ready().then(function() {
             filterDT();
-        } else {
-            dt.$on('ready', function() {
-                filterDT();
-            });
-        }
+        });
 
         function filterDT(){
             dt.filter = "<Eq><FieldRef Name='Title'/><Value Type='Text'>Test</Value></Eq>";
+            dt.refresh();
         }
     });
+
 
 Filter by one field dynamically
 --------------------------------------------------
@@ -57,13 +55,9 @@ You can also filter List or Library dynamically. For example, you have Search fi
 
     fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
-        if (dt.widget) {
+        dt.ready().then(function() {
             filterDT();
-        } else {
-            dt.$on('ready', function() {
-                filterDT();
-            });
-        }
+        });
 
         //filter List or Library with new value when Search field changes
         fd.field('Search').$on('change', function() {
@@ -73,6 +67,7 @@ You can also filter List or Library dynamically. For example, you have Search fi
         function filterDT(){
             dt.filter = "<Contains><FieldRef Name='Title'/><Value Type='Text'>" 
                 + fd.field('Search').value + "</Value></Contains>";
+            dt.refresh();
         }
     });
 
@@ -85,13 +80,9 @@ Filtering by two fields is also easy, you just need to include them both in the 
 
     fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
-        if (dt.widget) {
+        dt.ready().then(function() {
             filterDT();
-        } else {
-            dt.$on('ready', function() {
-                filterDT();
-            });
-        }
+        });
 
         function filterDT(){
             var filter = "<And>";
@@ -99,6 +90,7 @@ Filtering by two fields is also easy, you just need to include them both in the 
             filter += "<Eq><FieldRef Name='ID'/><Value Type='Text'>1</Value></Eq>";
             filter += "</And>";
             dt.filter = filter;
+            dt.refresh();
         }
     });
 
@@ -116,13 +108,9 @@ It's easy, you just need to retrieve the old value first:
 
     fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
-        if (dt.widget) {
+        dt.ready().then(function() {
             filterDT();
-        } else {
-            dt.$on('ready', function() {
-                filterDT();
-            });
-        }
+        });
 
         function filterDT(){
             var filter = "<And>"
@@ -133,6 +121,7 @@ It's easy, you just need to retrieve the old value first:
             filter += "</And>"
             //apply filtering
             dt.filter = filter;
+            dt.refresh();
         }
     });
 
@@ -146,13 +135,9 @@ If you have Min and Max fields on your form, this can be easily done with the fo
 
     fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
-        if (dt.widget) {
+        dt.ready().then(function() {
             filterDT();
-        } else {
-            dt.$on('ready', function() {
-                filterDT();
-            });
-        }
+        });
 
         //filter List or Library with new value when Min field changes
         fd.field('Min').$on('change', function() {
@@ -175,6 +160,7 @@ If you have Min and Max fields on your form, this can be easily done with the fo
 
             //apply filtering
             dt.filter = filter;
+            dt.refresh();
         }
     });
 
@@ -188,13 +174,9 @@ You can do it with the following code:
 
     fd.spRendered(function() {
         var dt = fd.control('SPDataTable0');
-        if (dt.widget) {
+        dt.ready().then(function() {
             filterDT();
-        } else {
-            dt.$on('ready', function() {
-                filterDT();
-            });
-        }
+        });
 
         //filter List or Library with new value when From field changes
         fd.field('From').$on('change', function() {
@@ -221,6 +203,7 @@ You can do it with the following code:
 
             //apply filtering
             dt.filter = filter;
+            dt.refresh();
         }
     });
 
