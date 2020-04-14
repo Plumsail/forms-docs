@@ -104,11 +104,11 @@ Order Items List on the other hand has to have Title, Amount, Price, Total, Dest
 
 Now, that the form and lists are ready, it is time to create custom Flow and let it populate lists with data.
 
-MS Flow
+Flow
 --------------------------------------------------
 We will use Flow to first create an Order and then add each record as an item to Order Items.
 
-If you haven't read our introduction to using MS Flow with Plumsail Forms, you can find information on how to add our custom connector :doc:`here </microsoft-flow>`.
+If you haven't read our introduction to using Power Automate (MS Flow) with Plumsail Forms, you can find information on how to add our custom connector :doc:`here </microsoft-flow>`.
 
 You can also find information about how to subscribe to Form submission in the :ref:`creating-flow` section.
 

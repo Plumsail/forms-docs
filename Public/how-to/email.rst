@@ -1,4 +1,4 @@
-Send an email from form with MS Flow
+Send an email from form with Power Automate (MS Flow)
 ==================================================
 
 .. contents:: Contents:
@@ -34,7 +34,7 @@ Here's the simple form designed to receive customers feedback on Forms Designer 
 
 Once you design and save the form, you will see **General Settings** button pop up on top. This section contains important information you'll need to use while setting up the Flow:
 
-.. image:: ../images/how-to/email/6_GeneralSettingsNew.png
+.. image:: ../images/how-to/email/email-00.png
    :alt: General Settings
 
 |
@@ -44,42 +44,26 @@ Once you design and save the form, you will see **General Settings** button pop 
 Configure the Flow - First steps
 --------------------------------------------------
 
-First, open Microsoft Flow page and go to My Flows:
+First, open Microsoft Flow page and go to My Flows >> New >> Automated - from blank:
 
-.. image:: ../images/how-to/email/2_MyFlows.png
+.. image:: ../images/how-to/email/email-02.png
    :alt: My Flows
 
 |
 
-On My Flows page, click *Create from blank* to create new Flow:
+We'll need to find the correct trigger for Forms Submission. Search for *Plumsail* and you'll find the right one - *Plumsail Forms - Form is submitted*. Choose it and click *Create*:
 
-.. image:: ../images/how-to/email/3_CreateFromBlank.png
-   :alt: Create from blank
-
-|
-
-We'll need to find the correct trigger for Forms Submission. Click *Search*:
-
-.. image:: ../images/how-to/email/4_Search.png
+.. image:: ../images/how-to/email/email-03.png
    :alt: Search
 
 |
 
-Search for *Plumsail* and you'll find the right one - *Plumsail Forms - Form is submitted*. Add it:
+Next, you need to fill in Form ID. It can be found in **General Settings** in the designer. 
 
-.. image:: ../images/how-to/email/5_AddPlumsailTrigger.png
-   :alt: Add Plumsail trigger
-
-|
-
-Next, you need to fill in Form ID. It can be found in **Flow Settings** in the designer. 
-
-.. image:: ../images/how-to/email/7_AddID.png
+.. image:: ../images/how-to/email/email-04.png
    :alt: Add ID from General Settings
 
 |
-
-Click *Add an action* when you fill in the ID.
 
 Configure the Flow - Send an email
 --------------------------------------------------

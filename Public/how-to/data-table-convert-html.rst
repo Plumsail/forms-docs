@@ -30,8 +30,8 @@ Read more about adding Plumsail Actions connector in this section - :ref:`plumsa
 
 Once the connector is set up, search for HTML Template and select *Plumsail Documents - Create HTML from template*:
 
-.. image:: ../images/how-to/data-table-flow/4_Plumsail_Documents_Search.png
-   :alt: Search for HTML Template and select Plumsail Documents - Create HTML from template
+.. image:: ../images/how-to/data-table-convert-html/data-table-convert-html-00.png
+    :alt: Search for HTML Template and select Plumsail Documents - Create HTML from template
 
 | 
 
@@ -153,14 +153,14 @@ As you can see, I've formatted the dates and added a dollar sign before cost, to
 
 Now we can convert result HTML into PDF. Search for Plumsail Documents and select *Plumsail Documents - Convert HTML to PDF*:
 
-.. image:: ../images/how-to/data-table-flow/6_Plumsail_Documents_Search2.png
+.. image:: ../images/how-to/data-table-convert-html/data-table-convert-html-01.png
    :alt: Search for Plumsail Documents and select Plumsail Documents - Convert HTML to PDF
 
 | 
 
 Place Result HTML from the last action inside Source HTML field:
 
-.. image:: ../images/how-to/data-table-flow/7_Plumsail_Convert_HTML_to_PDF.png
+.. image:: ../images/how-to/data-table-convert-html/data-table-convert-html-02.png
    :alt: Plumsail Documents - Convert HTML to PDF
 
 | 
