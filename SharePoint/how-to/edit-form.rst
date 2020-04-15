@@ -5,7 +5,7 @@ Switch Display Form for Edit Form
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 By default, standard form when user clicks List Item is Display form, but this might not work for all situations. In this article, we'll show you how to automatically open editable form, when Display form opens normally.
 

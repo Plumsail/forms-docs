@@ -5,7 +5,7 @@ Align form and fields to the right (Arabic, Hebrew and other languages)
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Some languages require form to be read right to left, for example, Arabic or Farsi. That would mean that all titles should be moved to the right, repositioned on the form.
 

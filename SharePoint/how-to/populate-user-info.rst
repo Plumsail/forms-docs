@@ -5,7 +5,7 @@ Populate fields with profile information
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 
 In this article, we will show you how to retrieve information from a user profile and prepopulate form fields with it. 

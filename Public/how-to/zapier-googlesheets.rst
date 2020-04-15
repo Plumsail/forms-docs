@@ -5,7 +5,7 @@ Data Table to Google Sheets with Zapier
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 In this article, we are going to show you how you can use Data Table and Zapier to add multiple rows to a Google Sheet.
 

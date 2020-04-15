@@ -5,7 +5,7 @@ Enabling scripting capabilities in SharePoint Online
  :local:
  :depth: 1
 
-Intro
+Introduction
 --------------------------------------------------
 Plumsail Forms requires scripting capabilities to be enabled on a target site. By default, this feature is disabled and only tenant admins are able to turn it on.
 

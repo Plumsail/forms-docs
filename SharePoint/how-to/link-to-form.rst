@@ -5,7 +5,7 @@ Generate a link to form
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Often, it might be necessary to redirect users to a specific form. It's possible to simply open a form, copy it's link and then use JavaScript for redirection to this specific URL.
 But it would also mean that the users are not redirected to a specific Form Set, if you have routing configured, since you bypass the redirection and go directly to page.

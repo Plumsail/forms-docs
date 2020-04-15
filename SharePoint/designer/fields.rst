@@ -5,7 +5,7 @@ Common Fields in Plumsail Forms for SharePoint
  :local:
  :depth: 1
 
-General Info
+Introduction
 -------------------------------------------------------------
 Common fields are suplimentary input elements on a SharePoint form, which you can use in addition to :doc:`SharePoint fields </designer/fields-sp>`. 
 

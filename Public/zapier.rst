@@ -5,7 +5,7 @@ Processing submissions of online forms designed with Plumsail Forms in Zapier
  :local:
  :depth: 1
 
-About Zapier
+Introduction
 -------------------------------------------------------------
 |Zapier| is a web-based service that allows you to integrate various web applications with
 automatic workflows. It includes the majority of popular apps, such as Gmail, Google Documents, Buffer, Mail Chimp, SendinBlue, Instagram, Twitter and many more.

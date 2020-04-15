@@ -5,7 +5,7 @@ Set up view results for lookup field
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Plumsail Forms offer advanced customization for SharePoint lookup fields. Using JavaScript, you can achieve great results in the way lookups present information.
 

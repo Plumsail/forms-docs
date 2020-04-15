@@ -5,7 +5,7 @@ List or Library Root Folder
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 Previous two articles showed how to filter List or Library by a :doc:`Lookup </how-to/child-parent-form>` or with :doc:`CAML Query </how-to/caml-filter>`.
 This article is going to show you how to limit displayed results to a specific folder and how to change this folder dynamically.

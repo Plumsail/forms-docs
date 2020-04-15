@@ -5,7 +5,7 @@ Generate PDF from DOCX template and SharePoint form fields
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 In this example, you will find a step-by-step instruction on how you can create Work Order Form from the template and send its PDF version to a specific email.  
 

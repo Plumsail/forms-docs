@@ -5,7 +5,7 @@ Managing fields with JavaScript in Plumsail Forms (public forms)
  :local:
  :depth: 1
  
-Intro
+Introduction
 --------------------------------------------------
 Here you can find properties of the fields that you have on your form and methods that can be used on them. 
 

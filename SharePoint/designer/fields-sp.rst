@@ -5,7 +5,7 @@ SharePoint Fields
  :local:
  :depth: 1
 
-General Info
+Introduction
 -------------------------------------------------------------
 SharePoint fields are based on the columns of the SharePoint List or Library that you connect to. 
 These fields, when added to the form, are automatically connected to the List and will retrieve data from the List, as well as automatically submit user input on save.

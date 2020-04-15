@@ -5,7 +5,7 @@ Filtering List or Library by CAML
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 In the :doc:`previous article </how-to/child-parent-form>`, I've shown you how you can filter List or Library displayed results with Lookup, 
 essentially creating a Parent/Children relationship.

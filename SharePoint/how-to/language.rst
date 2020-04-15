@@ -5,7 +5,7 @@ Forms for different languages within one site
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Modern SharePoint sites support large amount of languages. In your company, you might have users with different language preferences, all working on the same site.
 

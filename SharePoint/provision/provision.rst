@@ -5,7 +5,7 @@ Provisioning SharePoint forms designed in Plumsail Forms
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Sometimes, you create a form and want to re-use. Maybe, you have several project sites and some forms are the same across all of them. 
 Or perhaps you want to move forms from one site to another. Of course, you can always use Export and Import functionality of the designer, 

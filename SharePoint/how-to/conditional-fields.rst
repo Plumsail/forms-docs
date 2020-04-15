@@ -5,7 +5,7 @@ Manipulate fields dynamically
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 
 In this article you can find examples of how to use JavaScript to make 

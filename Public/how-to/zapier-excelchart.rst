@@ -5,7 +5,7 @@ Likert Scale to Excel Chart through Zapier
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 This article will show you how you can use our forms, Zapier and Excel file to gather information from anonymous submissions and build charts with it.
 

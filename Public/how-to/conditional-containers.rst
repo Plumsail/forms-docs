@@ -5,7 +5,7 @@ Manipulate tabs and accordions with JavaScript
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 In this article you can find examples of how to use JavaScript to make 
 your forms more interactive by hiding, showing and modifying containers, particularly Tab Control and Accordion.

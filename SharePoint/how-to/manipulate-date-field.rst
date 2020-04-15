@@ -5,7 +5,7 @@ Manipulate Date and DateTime fields
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 
 In this article, you will find the most common examples of working with the Date & Time field.  

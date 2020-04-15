@@ -5,7 +5,7 @@ Convert form with Data Table into PDF and send for approval
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 
 With recently added :ref:`designer-datatable` control, we can design a more complex form and then submit it to Flow.

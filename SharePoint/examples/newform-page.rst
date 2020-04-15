@@ -5,7 +5,7 @@ Copy New Form site page and place it anywhere
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 By default, user can only access forms via the List View, when working with items of the list - creating New items, editing or looking at the existing. But the forms for the list
 are actually stored in Site Pages -> Plumsail Forms folder.

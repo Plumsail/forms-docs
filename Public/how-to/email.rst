@@ -5,7 +5,7 @@ Send an email from form with Power Automate (MS Flow)
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 
 One of the basic functionalities you can add to your form is to send an email once the form is submitted. 

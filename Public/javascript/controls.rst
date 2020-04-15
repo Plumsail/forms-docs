@@ -5,7 +5,7 @@ Managing controls with JavaScript in Plumsail Forms (public forms)
  :local:
  :depth: 1
  
-Intro
+Introduction
 --------------------------------------------------
 Here you can find properties, methods and events of various controls that you can have on your form. 
 

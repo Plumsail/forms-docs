@@ -5,7 +5,7 @@ Duplicate selected item on button click
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 In this scenario, we'll show you how to add button to List or Library control, which would duplicate currently selected item.
 

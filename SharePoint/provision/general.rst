@@ -5,7 +5,7 @@ Provisioning API for SharePoint forms designed in Plumsail Forms
  :local:
  :depth: 1
 
-General Info
+Introduction
 -------------------------------------------------------------
 It is possible to provision forms programmatically using **Plumsail.Forms.O365** |NuGet package|. 
 

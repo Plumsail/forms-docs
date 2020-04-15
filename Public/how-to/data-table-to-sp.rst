@@ -5,7 +5,7 @@ Creating a web form with Data Table and saving data into SharePoint lists
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 We've discussed how a form with DataTable can be :doc:`converted into PDF and sent via email</how-to/data-table-convert-html>`, 
 now we'll use DataTable to add items to SharePoint.

@@ -5,7 +5,7 @@ Format Data Table in an HTML-template before converting into PDF
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Actions|.
 

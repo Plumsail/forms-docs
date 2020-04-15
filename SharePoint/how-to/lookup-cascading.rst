@@ -5,7 +5,7 @@ Cascading Lookups (Filtering)
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 With a little bit of JavaScript code, you can now easily configure Cascading Lookup fields. 
 

@@ -5,7 +5,7 @@ Integrate Forms with MS Teams (Public and SharePoint)
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 If you've ever wanted to have custom forms in MS Teams, Plumsail Forms allows for easy integration. 
 

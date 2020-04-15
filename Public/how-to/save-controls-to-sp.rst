@@ -5,7 +5,7 @@ Send controls (Ink Sketch, DataTable, Likert Scale) to SharePoint columns
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Both Public Web Forms and SharePoint forms can include our custom controls - Ink Sketch, DataTable or Likert Scale.
 

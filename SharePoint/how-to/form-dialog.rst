@@ -5,7 +5,7 @@ Open any form in dialog from another form
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 It is now possible to open any custom Plumsail SharePoint Form in dialog, from another Plumsail SharePoint Form, and this can be used in variety of cases.
 

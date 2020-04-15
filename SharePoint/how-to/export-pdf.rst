@@ -5,7 +5,7 @@ Export any form to PDF (e.g. for printing)
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 If you need your forms printed, you can try printing them from the browser, but the end result will include SharePoint UI 
 and overall composition won't look as good as you might want it to. That's why we recommend exporting form to PDF prior to printing. 

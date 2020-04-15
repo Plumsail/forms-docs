@@ -5,7 +5,7 @@ Processing submissions of online forms designed with Plumsail Forms in Power Aut
  :local:
  :depth: 1
 
-About Power Automate
+Introduction
 -------------------------------------------------------------
 |Flow| allows you to integrate various apps and services by creating 
 automatic workflows between them to collect data, synchronize files, receive notifications and much more.

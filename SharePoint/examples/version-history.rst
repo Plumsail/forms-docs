@@ -5,7 +5,7 @@ Display version history with Vue components
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 In this article, we'll show you a basic example of how to display version history of an item on the form. You will be able to see who and when modified an item.
 

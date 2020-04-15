@@ -5,7 +5,7 @@ Send a notification by e-mail
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 Plumsail Forms includes custom |Flow| connector, which can be used to get all information from submitted forms into Flow.
 

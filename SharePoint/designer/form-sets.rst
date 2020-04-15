@@ -5,7 +5,7 @@ Personalized Form sets in Plumsail Forms for SharePoint
  :local:
  :depth: 1
 
-General Info
+Introduction
 -------------------------------------------------------------
 Form Sets allow you to design additional forms for SharePoint List or Library. 
 

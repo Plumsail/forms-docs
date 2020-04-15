@@ -5,7 +5,7 @@ Managing common fields with JavaScript in Plumsail Forms for SharePoint
  :local:
  :depth: 1
  
-Intro
+Introduction
 --------------------------------------------------
 Here you can find properties of Common fields that you have on your form and methods that can be used on them. 
 

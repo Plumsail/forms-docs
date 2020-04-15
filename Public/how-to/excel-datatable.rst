@@ -5,7 +5,7 @@ Use table to add rows to Excel (Office365) or Google Sheet from Public Web Form
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 In this article, we are going to show you how you can use Data Table, MS Flow and Plumsail Forms connector in order to add multiple rows to an Excel Table in Office 365, though it can also be used for any Excel file stored online, for example in Dropbox or Box account, or even on your own site. 
 

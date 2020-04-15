@@ -5,7 +5,7 @@ Customize view of specific columns
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Starting with version 1.5.7, Plumsail Forms support customization of specific columns in List or Library control. 
 The possibilities are almost endless, in this article we're going to show some of the possible customizations.

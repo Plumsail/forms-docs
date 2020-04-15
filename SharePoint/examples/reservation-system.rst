@@ -5,7 +5,7 @@ Conference room reservation system
  :local:
  :depth: 1
 
-Description
+Introduction
 ----------------------------------------
 
 In this article, we'll show you how to create a simple reservation system. This approach can be applied in booking systems for hotels, restaurants, meeting, or conference planning. 

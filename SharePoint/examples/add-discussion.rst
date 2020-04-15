@@ -5,7 +5,7 @@ Add discussion to a SharePoint form
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 With Plumsail Forms, you can enrich a SharePoint form with a discussion where users exchange their opinions, suggest ideas, and leave comments. 
 

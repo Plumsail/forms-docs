@@ -5,7 +5,7 @@ Send selected items to Flow on button click
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 List or Library control allows selection of multiple items, which can then be manipulated in a variety of ways.
 

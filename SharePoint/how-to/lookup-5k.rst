@@ -5,7 +5,7 @@ Search and filter large lists with a Lookup (more than 5,000 Items)
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Default SharePoint Lookups do not support large lists with more than 5,000 Items, but Plumsail Forms' Lookups will work with these large Lists.
 

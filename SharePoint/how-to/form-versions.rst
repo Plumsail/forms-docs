@@ -5,7 +5,7 @@ Enable versioning for Forms and go back to previous version
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Designing the right form can take a while. It's also possible that some forms might require additional customization and tuning in the process of use. One wrong move in the editor, and you can potentially lose the changes that you've worked on for a while. 
 

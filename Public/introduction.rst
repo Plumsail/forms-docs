@@ -5,7 +5,7 @@ Introduction to building online forms with Plumsail Forms
  :local:
  :depth: 1
  
-General information
+Introduction
 --------------------------------------------------
 Plumsail Forms allow you to design and publish elegant, responsive and highly customizable forms to any web page by simply adding an HTML widget to it. 
 When user submits the form, all data is handled by :doc:`Power Automate (MS Flow) </microsoft-flow>` which opens an ocean of possibilities for its use.

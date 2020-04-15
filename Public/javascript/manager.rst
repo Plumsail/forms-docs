@@ -5,7 +5,7 @@ Managing form with JavaScript in Plumsail Forms (public forms)
  :local:
  :depth: 1
  
-Intro
+Introduction
 --------------------------------------------------
 **fd** is a Forms designer manager variable. Whenever you want to use custom methods on the form, you need to call the manager first. 
 

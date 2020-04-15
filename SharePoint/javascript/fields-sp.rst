@@ -5,7 +5,7 @@ Managing SharePoint fields with JavaScript in Plumsail Forms for SharePoint
  :local:
  :depth: 1
 
-Intro
+Introduction
 --------------------------------------------------
 In this section you will find how to get information from SharePoint fields, how to set their value, how to detect changes in SharePoint fields and much more using JavaScript.
 

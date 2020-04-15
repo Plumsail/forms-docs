@@ -5,7 +5,7 @@ Upload files to SharePoint Document Library
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 Plumsail Forms have Attachments field which can be used to upload files.
 There is a variety of actions that you can perform with Attachments, but one of the basic examples is uploading files to Document Library in SharePoint.

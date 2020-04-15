@@ -5,7 +5,7 @@ Save Ink Sketch, DataTable, and Likert scale controls to SharePoint fields + Lis
  :local:
  :depth: 1
 
-Description
+Introduction
 --------------------------------------------------
 Starting with version 1.1.6 it's now possible to save Ink Sketch and DataTable controls 
 to SharePoint fields when using them on a SharePoint Form. This means that the data will be saved when the form is saved.

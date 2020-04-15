@@ -5,7 +5,7 @@ Dynamic DataTable content from other Lists
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 In this article, we'll show you how to load values from SharePoint List and display them in DataTable control dropdowns.
 
