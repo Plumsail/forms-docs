@@ -82,7 +82,7 @@ Since it's hidden, users won't modify it manually.
 .. |pic6ed| image:: ../images/how-to/flow-edit-display/flow-edit-display-6-edit.png
    :alt: Edit Form
 
-I've also added Start Flow button, but we'll populate the *OnClick* code afterwards.
+I've also added Start Flow button, but we'll populate the *Click* code afterwards.
 
 Next, you need to create a new Form Set for waiting. Don't need to select any groups or priority, just give it a name:
 
@@ -150,7 +150,7 @@ It will give an error (since there is no ID), but it will allow you to **copy th
 .. |pic10| image:: ../images/how-to/flow-edit-display/flow-edit-display-10-copy-url.png
    :alt: Copy the URL
 
-Finally, return to the default Form Set's Edit Form we've created in the beginning and populate OnClick property with the following code:
+Finally, return to the default Form Set's Edit Form we've created in the beginning and populate Click property with the following code:
 
 .. code-block:: javascript
 
@@ -166,7 +166,7 @@ Finally, return to the default Form Set's Edit Form we've created in the beginni
 |pic11|
 
 .. |pic11| image:: ../images/how-to/flow-edit-display/flow-edit-display-11-button.png
-   :alt: Button OnClick property
+   :alt: Button Click property
 
 This is it! 
 

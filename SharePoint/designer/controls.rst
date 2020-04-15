@@ -71,9 +71,6 @@ Image
 -------------------------------------------------------------
 Image control allows you to add images to your forms. Image can either be used as decoration or as a link.
 
-.. image:: ../images/designer/controls/Image.png
-   :alt: Image
-
 Image properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Image control has the following settings:
@@ -114,9 +111,6 @@ Hyperlink
 -------------------------------------------------------------
 Hyperlink control allows you to add hyperlinks to your forms. Can be used to redirect users to different page or execute JavaScript on click.
 
-.. image:: ../images/designer/controls/Hyperlink.png
-   :alt: Hyperlink
-
 Hyperlink properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Hyperlink control has the following settings:
@@ -144,9 +138,6 @@ General
 HTML
 -------------------------------------------------------------
 HTML control allows you to add absolutely any HTML code to your forms. Can be used for variety of reasons, including loading of JavaScript files, creating hidden fields, etc.
-
-.. image:: ../images/designer/controls/HTML.png
-   :alt: HTML
 
 HTML properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -208,12 +199,6 @@ Button
 -------------------------------------------------------------
 Button control allows you to add buttons to your forms. Can be used to execute JavaScript on click.
 
-Bootstrap classes can be used to give different buttons unique look. You can |location_link|.
-
-.. |location_link| raw:: html
-
-   <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_css_buttons.asp" target="_blank">read more here</a>
-
 .. image:: ../images/designer/controls/Buttons.png
    :alt: Buttons
 
@@ -228,16 +213,22 @@ General
         
     *   - Name
         - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
-    *   - OnClick
+    *   - Click
         - Add JavaScript to execute when button is clicked.
     *   - Text
         - Allows you to type in or copy in the exact text the button will display on the form.
+    *   - Type
+        - Allows you to select a type of a button from available types in |Bootstrap buttons|.
     *   - Width
         - Allows you to set the Width of the button.
     *   - Class
         - Allows you to give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
     *   - Style
         - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
+
+.. |Bootstrap buttons| raw:: html
+
+   <a href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_blank">Bootstrap buttons</a>
 
 Submit
 -------------------------------------------------------------

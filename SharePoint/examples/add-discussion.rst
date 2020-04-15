@@ -46,7 +46,7 @@ By default, users can add new comments to an append-only field via saving the fo
 
 In this example, however, we will add an extra button to create new comments right after clicking it **without saving the whole form**. 
 
-Put an extra 'Post' button next to the append-only field and insert the below snippet into its OnClick property: 
+Put an extra 'Post' button next to the append-only field and insert the below snippet into its Click property: 
 
 .. code-block:: javascript
 

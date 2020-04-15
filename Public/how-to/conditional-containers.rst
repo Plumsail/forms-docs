@@ -151,13 +151,13 @@ As a solution, we can add buttons to our tabs at the bottom right and left corne
 
 As for code, it will be fairly simple.
 
-Place this code inside OnClick setting for the Next Tab button:
+Place this code inside Click setting for the Next Tab button:
 
 .. code-block:: javascript
 
     fd.container("Tab0").nextTab();
 
-Place this code inside OnClick setting for the Previous Tab button:
+Place this code inside Click setting for the Previous Tab button:
 
 .. code-block:: javascript
 

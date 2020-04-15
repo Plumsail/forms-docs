@@ -215,7 +215,7 @@ Can be used without either one or both parameters, by simply calling **fd.export
 Running the script from a button
 *************************************************
 One option for running the script would be to add a custom button to the form, and call it something like **Create PDF file from Form** 
-and add the following code to OnClick property (though, of course, you can modify it for your case):
+and add the following code to Click property (though, of course, you can modify it for your case):
 
 .. code-block:: javascript
 

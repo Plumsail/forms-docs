@@ -243,7 +243,7 @@ set Due Date to two weeks after today as it will react to all changes to Start D
 
 Modify fields with Button control
 --------------------------------------------------
-Button and Hyperlink controls have an OnClick property which holds JavaScript code which is executed when the control is clicked.
+Button and Hyperlink controls have an Click property which holds JavaScript code which is executed when the control is clicked.
 
 This can be used for variety of purposes and you don't need to include JavaScript inside **fd** events 
 as by the time the button has loaded, other fields have already loaded as well.
@@ -266,7 +266,7 @@ That's what our form will look like filled out:
 
 |
 
-Here is the code placed inside my button's OnClick property:
+Here is the code placed inside my button's Click property:
 
 .. code-block:: javascript
 
