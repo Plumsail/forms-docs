@@ -1,4 +1,4 @@
-Advanced lookup settings
+Working with Lookup field
 ===========================
 
 .. toctree::

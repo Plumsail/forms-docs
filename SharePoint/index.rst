@@ -69,6 +69,18 @@ Plumsail Forms Documentation (SharePoint forms)
             Provisioning API <provision/general> 
             Provisioning forms (samples) <provision/provision>
             Provisioning Form sets and Panel (samples) <provision/provision-fs>
+
+      .. toctree::
+            :caption: Examples
+            :maxdepth: 1
+
+            Ticket management system <examples/ticket-management>
+            Conference room reservation system <examples/reservation-system>
+            Discussion within a SharePoint form <examples/add-discussion>
+            Version history withing a SharePoint form <examples/version-history>
+            Organizing related docs in libraries and folders <examples/create-folder>
+            Embedding forms into Microsoft Teams <examples/ms-teams>
+            Transferring new form page to another location <examples/newform-page>
       
 
 .. container:: pl-right-column
@@ -77,9 +89,11 @@ Plumsail Forms Documentation (SharePoint forms)
             :caption: How-to
             :maxdepth: 2
 
-            how-to/dynamic-forms-js
+            how-to/layout
+            how-to/personalized
+            how-to/navigation
+            how-to/fields
             how-to/list-or-library-section
             how-to/lookup-section
+            how-to/pdf
             how-to/microsoft-flow
-            how-to/region-culture
-            how-to/other

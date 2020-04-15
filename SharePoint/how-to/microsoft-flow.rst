@@ -1,9 +1,9 @@
-Microsoft Flow
-=========================================
+Integration with Power Automate (MS Flow)
+=================================================
 
 .. toctree::
     :maxdepth: 1
 
     ./flow
-    ./docx-to-pdf
     ./flow-edit-display
+    ./list-or-library-export
