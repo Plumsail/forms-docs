@@ -1,25 +1,25 @@
-Managing containers with JavaScript in Plumsail Forms for SharePoint
-============================================================================
+Containers
+==================================================
 
 .. contents:: Contents:
  :local:
  :depth: 1
  
-Introduction
+Intro
 --------------------------------------------------
 Here you can find properties of the containers that you can have on your form and methods that can be used on them. 
 
 Insert them into JavaScript editor or inside OnClick setting for buttons and links.
 
-*Internal Name* is the property that is used to identify specific containers(Tab Control, Accordion or Wizard) and apply methods to them. 
+*Internal Name* is the property that is used to identify specific containers(Tab Control and Accordion) and apply methods to them. 
 *Internal Name* is unique for every element on the form.
 
-.. important::  These events, methods and properties shouldn't be used on their own, they must be executed inside events 
-                like **spRendered()** or **spBeforeSave()** in order to actually access the fields or controls that you target.
+**Important!** These events, methods and properties shouldn't be used on their own, they must be executed inside events 
+like **rendered()** or **beforeSave()** in order to actually access the fields or controls that you target.
 
-                If you just add these scripts on their own or inside wrong event in JavaScript editor,
-                they will not have access to the specified containers, or will execute at the wrong time.
-                Read more about different events in :doc:`Manager section </javascript/manager>`.
+If you just add these scripts on their own or inside wrong event in JavaScript editor,
+they will not have access to the specified containers, or will execute at the wrong time.
+Read more about different events in :doc:`Manager section </javascript/manager>`.
 
 For more use cases, check out :doc:`our manual </how-to/conditional-containers>` on how-to adjust containers dynamically on your form.
 
@@ -226,9 +226,7 @@ Properties and methods of the Tab Control container.
 
 Wizard
 --------------------------------------------------
-
-Properties 
-""""""""""""""""""""""""""""""""""""
+Properties of the Wizard container.
 
 .. list-table::
     :header-rows: 1
@@ -236,63 +234,6 @@ Properties
         
     *   -   Name
         -   Description/Examples
-
-    *   -   **widget.tabs**
-        -   Gets or sets the array of steps.
-
-            Can be used to hide/show tabs or change its order. 
-
-            |
-
-            *Examples:*
-
-            .. code-block:: javascript  
-
-                //get an array of steps 
-                fd.container('Wizard0').widget.tabs;
-
-                // Swap the first two steps  
-                var tab1 = fd.container('Wizard0').widget.tabs[0]; 
-                fd.container('Wizard0').widget.tabs.splice(1, 0, tab1);
-
-                // Hide or show the second step on toggle change  
-                function toggleTab2(tab2) {  
-
-                    var isToggle = fd.field('Toggle0').value;  
-
-                    if (isToggle) {
-                        // Hide the second tab
-                        fd.container('Wizard0').widget.tabs.splice(1, 1);
-                    }  
-
-                    if (!isToggle && tab2 !== null) {
-                        // Show the second tab 
-                        fd.container('Wizard0').widget.tabs.splice(1, 0, tab2)
-                    }  
-                }  
-                
-                fd.spRendered(function() {
-                    var tab2 = fd.container('Wizard0').widget.tabs[1];
-                    
-                    // Calling function when the user switchs the toggle
-                    fd.field('Toggle0').$on('change', function() { 
-                        toggleTab2(tab2); 
-                        }); 
-                        
-                    // Calling function on form loading
-                    toggleTab2(tab2);
-                });             
-
-    *   -   **widget.activeTabIndex**
-        -   Gets the index of the currently selected step.
-            
-            |
-
-            *Example:*
-
-            .. code-block:: javascript
-
-                fd.container('Wizard0').widget.activeTabIndex; 
 
     *   -   **backText**
         -   Property that holds text of the Back button, can be used to get it or set it.
@@ -370,95 +311,6 @@ Properties
 
                 fd.container('Wizard0').icons;
                 fd.container('Wizard0').icons = ['BoxCheckmarkSolid', 'BoxAdditionSolid', 'BranchSearch'];
-
-Methods
-""""""""""""""""""""""""""""""""""""
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30
-        
-    *   -   Name
-        -   Description/Examples
-
-    *   -   **widget.activateAll()**
-        -   Activates all steps as if the user went through all steps.
-            Doesn't trigger validation 
-
-            |
-
-            *Example:*
-
-            .. code-block:: javascript
-
-                fd.container('Wizard0').widget.activateAll(); 
-
-    *   -   **widget.navigateToTab(tabIndex)**
-        -   Opens a specific step. The step must be activated. 
-            Triggers validation. 
-
-            |
-
-            *Example:*
-
-            .. code-block:: javascript
-
-                //opens the second step 
-                fd.container('Wizard0').widget.navigateToTab(1);  
-
-    *   -   **widget.changeTab(oldIndex, newIndex)**
-        -   Navigates from one step to another.
-            Doesn't trigger validation 
-
-            |
-
-            *Example:*
-
-            .. code-block:: javascript
-
-                //opens  the third step 
-                fd.container('Wizard0').widget.changeTab(0,2);  
-
-Events
-""""""""""""""""""""""""""""""""""""
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30
-        
-    *   -   Name
-        -   Description/Examples
-
-    *   -   **update:startIndex**
-        -   An event that is raised when a user switches between steps.
-            
-            |
-
-            *Example:*
-
-            .. code-block:: javascript
-
-                //if on step 0, go directly to 2, skipping step 1
-                fd.container("Wizard0").widget.$on("update:startIndex", function() {
-                    if (fd.container("Wizard0").widget.activeTabIndex == 0){
-                        window.setTimeout(function() {
-                            fd.container("Wizard0").widget.navigateToTab(2)}, 100)
-                    }
-                })
-
-    *   -   **on-complete**
-        -   An event that is raised when a user finishes the wizard steps.
-            
-            |
-
-            *Example:*
-
-            .. code-block:: javascript
-
-                fd.container("Wizard0").widget.$on("on-complete", function() {  
-                    alert('Wizard steps are completed!'); 
-                }); 
- 
 
 .. |Microsoft Fabric Icons| raw:: html
 

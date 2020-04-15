@@ -1,11 +1,11 @@
-Containers in Plumsail Forms
+Containers in Plumsail Forms (public forms)
 ==================================================
 
 .. contents:: Contents:
  :local:
  :depth: 1
 
-General Info
+Introduction
 -------------------------------------------------------------
 Containers are elements that contain other elements inside of them. Containers can contain any elements inside, including other containers.
 

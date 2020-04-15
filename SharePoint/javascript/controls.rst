@@ -1,11 +1,11 @@
-Managing controls with JavaScript in Plumsail Forms for SharePoint
-====================================================================
+Controls
+==================================================
 
 .. contents:: Contents:
  :local:
  :depth: 1
  
-Introduction
+Intro
 --------------------------------------------------
 Here you can find properties, methods and events of various controls that you can have on your form. 
 
@@ -13,12 +13,12 @@ Insert them into JavaScript editor or inside OnClick setting for buttons and lin
 
 *Internal Name* is the property that is used to identify specific controls and apply methods to them. *Internal Name* is unique for every element on the form.
 
-.. important::  These events, methods and properties shouldn't be used on their own, they must be executed inside events 
-                like **spRendered()** or **spBeforeSave()** in order to actually access the fields or controls that you target.
+**Important!** These events, methods and properties shouldn't be used on their own, they must be executed inside events 
+like **rendered()** or **beforeSave()** in order to actually access the fields or controls that you target.
 
-                If you just add these scripts on their own or inside wrong event in JavaScript editor,
-                they will not have access to the specified controls, or will execute at the wrong time.
-                Read more about different events in :doc:`Manager section </javascript/manager>`.
+If you just add these scripts on their own or inside wrong event in JavaScript editor,
+they will not have access to the specified controls, or will execute at the wrong time.
+Read more about different events in :doc:`Manager section </javascript/manager>`.
 
 Button
 --------------------------------------------------
@@ -816,53 +816,6 @@ Properties
                 //return only items where Title is "Test"
                 fd.control('SPDataTable0').filter = 
                     "<Eq><FieldRef Name='Title'/><Value Type='Text'>Test</Value></Eq>";
-
-    *   -   **buttons**
-        -   Property that holds all available List or Library buttons in an array of objects.
-
-            Can be used to add new buttons, modify or remove existing ones.
-
-            Buttons have the following properties:
-
-            **class** - returns an object, holds button's CSS classes. Can be used to assign CSS classes with either string or an object. 
-            Default class *btn* cannot be removed or changed, is not contained in the property.
-
-            **click** - returns a function, that is executed when a button is clicked. Can be used to assign a new function.
-
-            **disabled** - return boolean, whether button is disabled or not. Can be used to disable or enable a button.
-
-            **icon** - returns a string, which matches icon names from |Microsoft Fabric Icons|. Can be used to add or change button's icon.
-
-            **style** - returns a string, which matches button's HTML property style. Can be used to add styles to a specific button.
-
-            **text** - returns a string, which matches button's text. Can be used to retrieve or change button's text.
-            
-            |
-
-            *Examples:*
-            
-            .. code-block:: javascript
-
-                //get all buttons
-                var allButtons = fd.control('SPDataTable0').buttons;
-                //change button's Icon
-                fd.control('SPDataTable0').buttons[1].class  = 'btn-danger';
-
-                //add new button
-                var button = {text: "Export", 
-                              class: 'btn-secondary', 
-                              visible: true, 
-                              icon: 'PDF', 
-                              iconType: 0, 
-                              click: function() { alert("Exporting!"); }}
-
-                fd.control('SPDataTable0').buttons.push(button);
-
-                //hide button if 0 elements are selected (dynamic)
-                fd.control('SPDataTable0').$watch('selectedItems', 
-                    function(items) { 
-                        fd.control('SPDataTable0').buttons[2].visible = items.length > 0 ;
-                    });
             
     *   -   **readonly**
         -   Property that specifies if the user can add new items/documents to the control, edit or delete existing items/documents. 
@@ -912,6 +865,30 @@ Properties
                 fd.control('SPDataTable0').rootFolder = '';
                 //set Folder1 as Current Folder:
                 fd.control('SPDataTable0').rootFolder = "Folder1"
+
+    *   -   **addNewItemText**
+        -   Property that holds "Add new item" text, useful for localizations.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').addNewItemText // "Add new item" by default
+                fd.control('SPDataTable0').addNewItemText = "New text"
+    
+    *   -   **uploadText**
+        -   Property that holds "Upload" text, useful for localizations.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').uploadText // "Upload" by default
+                fd.control('SPDataTable0').uploadText = "New text"
     
     *   -   **uploadingText**
         -   Property that holds "Uploading..." text, useful for localizations.
@@ -942,43 +919,7 @@ Properties
                     width: 1280,
                     height: 720
                 }
-                
-    *   -   **selectedItems**
-        -   Property that holds selected items in an array.
-            
-            Can be used to retrieve items, but not to modify them.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.control('SPDataTable0').selectedItems;
-
-    *   -   **templates**
-        -   Holds user-defined templates for specific columns of the List or Library control.
-
-            Check out :doc:`column customization article </how-to/list-or-library-columns>` for more information.
-
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.control('SPDataTable1').templates = {
-                    // Bolden the Due Date field
-                    TaskDueDate: function(ctx) {
-                        var value = ctx.row.TaskDueDate;
-                        if (!value) {
-                            return '';
-                        }
-
-                        return '<b>' + value + '</b>';
-                    }
-                }
-
+    
     *   -   **widget**
         -   Property that holds |kendoGrid widget| for the control.
             
@@ -991,10 +932,6 @@ Properties
             .. code-block:: javascript
 
                 fd.control('SPDataTable0').widget;
-
-.. |Microsoft Fabric Icons| raw:: html
-
-    <a href="https://developer.microsoft.com/en-us/fabric#/styles/icons" target="_blank">Microsoft Fabric Icons</a>
 
 Methods
 **************************************************
@@ -1016,6 +953,69 @@ Methods
             .. code-block:: javascript
 
                 fd.control('SPDataTable0').refresh();
+
+
+Events
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+
+    *   -   **change**
+        -   Fired when the user applies any changes to the List or Library.
+
+            Adding items, uploading documents, deleting them, or editing item/document's properties from List or Library dialog all counts as change.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').$on('change',
+                    function() {
+                        alert('List or Library changed');
+                    });
+    
+    *   -   **filesUploaded**
+        -   Fired when the user uploads files to Document Library via List or Library control.
+
+            **itemIds** is an array of IDs of uploaded files.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                //log all uploaded files to console
+                fd.control('SPDataTable0').$on('filesUploaded',
+                    function(itemIds) {
+                        itemIds.forEach(function(item) {
+                            console.log(item);
+                        });
+                    });
+    
+    *   -   **ready**
+        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.spRendered(function() {
+                    fd.control('SPDataTable0').ready().then(function(dt) { 
+                        //dt parameter is the same as fd.control('SPDataTable0')
+                        console.log('SPDataTable0 is initialized');
+                    });
+                });
+
     *   -   **beforeItemsAttach**
         -   Fired when saving New Form that has items in Library or List control, that will be tied to the parent via lookup field.
 
@@ -1049,126 +1049,6 @@ Methods
                         resolve();
                     })
                 });
-
-
-Events
-**************************************************
-
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30
-        
-    *   -   Name
-        -   Description/Examples
-
-    *   -   **edit**
-        -   An event that is raised when a user starts adding or editing a row in the inline editing mode of a List or Library control.
-            
-            **editData** passed as an argument to the handler. It is an object that contains fields and methods for manipulating controls of the current row: 
-                
-            - formType - returns the type of the record.
-
-                - 'New' - adding a new item.
-
-                - 'Edit' - editing an existing item.
-
-            - itemId - returns the ID of the current item. 
-
-            - field('InternalName') - returns Vue-component of corresponding field control. 
-
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                // prepopulating Title field of a new record  
-                // in the List or Library control with the title  
-                // of the parent item 
-                fd.control('SPDataTable0').$on('edit', function(editData) { 
-                    if (editData.formType === 'New') { 
-                        console.log('editData.itemId'); 
-                        //Set Title field value with the value from the parent 
-                        editData.field('Title').value = fd.field('Title').value; 
-                    } 
-                }); 
-
-    *   -   **change**
-        -   An event that is raised when a user applies changes to the List or Library. 
-
-            **changeData** passed as an argument to the handler. It is an object that contains information about the changes made: 
-            
-            - type - returns type of changes made to related items.
-
-                - 'add' - new item has been created 
-                
-                - 'addFolder' - new folder has been created 
-                
-                - 'edit' -  item has been changed 
-                
-                - 'delete' - item/file has been deleted 
-                
-                - 'upload' - file has been uploaded 
-            
-            - itemId - returns the ID of the changed item  
-            
-            - itemIds - returns the array of IDs of the uploaded files 
-
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                // displays an alert message with IDs of the uploaded files  
-                fd.control('SPDataTable0').$on('change', function(changeData) { 
-                    if (changeData.type === 'upload') { 
-                        alert(changeData.itemIds); 
-                    } 
-                }); 
-
-                // displays an alert message with ID of the changed item  
-                fd.control('SPDataTable0').$on('change', function(changeData) { 
-                    if (changeData.type === 'edit') { 
-                        alert(changeData.itemId); 
-                    } 
-                }); 
-
-
-    *   -   **ready**
-        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.spRendered(function() {
-                    fd.control('SPDataTable0').ready().then(function(dt) { 
-                        //dt parameter is the same as fd.control('SPDataTable0')
-                        console.log('SPDataTable0 is initialized');
-                    });
-                });
-    
-    *   -   **filesUploaded**
-        -   Fired when the user uploads files to Document Library via List or Library control.
-
-            **itemIds** is an array of IDs of uploaded files.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                //log all uploaded files to console
-                fd.control('SPDataTable0').$on('filesUploaded',
-                    function(itemIds) {
-                        itemIds.forEach(function(item) {
-                            console.log(item);
-                        });
-                    });
     
 
 .. |kendoGrid widget| raw:: html

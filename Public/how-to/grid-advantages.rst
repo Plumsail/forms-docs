@@ -5,7 +5,7 @@ Use Grids instead of Tables
  :local:
  :depth: 1
  
-Description
+Introduction
 --------------------------------------------------
 Grid is a flexible container.  
 

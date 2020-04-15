@@ -1,5 +1,5 @@
-Introduction to JavaScript framework of Plumsail Forms for SharePoint
-======================================================================
+JavaScript Intro
+==================================================
 
 Limitless possibilities
 --------------------------------------------------
@@ -147,8 +147,8 @@ SharePoint variables
 
 .. |pnpjs library| raw:: html
 
-    <a href="https://pnp.github.io/pnpjs/" target="_blank">pnpjs library</a>
+    <a href="https://github.com/pnp/pnpjs/blob/dev/packages/sp/docs/index.md" target="_blank">pnpjs library</a>
 
 .. |Web| raw:: html
 
-    <a href="https://pnp.github.io/pnpjs/getting-started/#create-web-instances-directly" target="_blank">Web</a>
+    <a href="https://pnp.github.io/pnpjs/documentation/getting-started/#create-web-instances-directly" target="_blank">Web</a>
