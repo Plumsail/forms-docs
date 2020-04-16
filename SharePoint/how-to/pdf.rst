@@ -1,4 +1,4 @@
-Generating PDF documents from SharePoint forms
+Generating PDF documents
 =======================================================
 
 .. toctree::

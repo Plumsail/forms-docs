@@ -77,7 +77,7 @@ Plumsail Forms Documentation (SharePoint forms)
             Ticket management system <examples/ticket-management>
             Conference room reservation system <examples/reservation-system>
             Discussion within a SharePoint form <examples/add-discussion>
-            Version history withing a SharePoint form <examples/version-history>
+            Version history within a SharePoint form <examples/version-history>
             Organizing related docs in libraries and folders <examples/create-folder>
             Embedding forms into Microsoft Teams <examples/ms-teams>
             Transferring new form page to another location <examples/newform-page>
