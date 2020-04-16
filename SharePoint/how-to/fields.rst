@@ -4,7 +4,7 @@ Working with fields in JavaScript
 .. toctree::
     :maxdepth: 1
 
-    Manipulate field properties <./conditional-fields>
+    Manipulate field properties and appearance <./conditional-fields>
     Work with Date and Time fields <./manipulate-date-field>
     Pass field values from parent form to child form opened in dialog <./pass-values>
     Populate common Drop Down field with values from any SharePoint list <./populate-dropdowns>

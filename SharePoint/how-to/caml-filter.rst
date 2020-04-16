@@ -7,10 +7,7 @@ Filtering List or Library by CAML
 
 Introduction
 --------------------------------------------------
-In the :doc:`previous article </how-to/child-parent-form>`, I've shown you how you can filter List or Library displayed results with Lookup, 
-essentially creating a Parent/Children relationship.
-
-In this article, I will show you how to filter by CAML query instead.
+In this article, I will show you how to filter by CAML.
 
 This method can be applied dynamically and when the form loads, allowing you to specify what contents you want List or Library to display at any time.
 

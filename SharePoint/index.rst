@@ -44,7 +44,8 @@ Plumsail Forms Documentation (SharePoint forms)
             Containers <designer/containers> 
             Controls <designer/controls> 
             SharePoint fields <designer/fields-sp> 
-            Common fields <designer/fields> 
+            Common fields <designer/fields>
+            Field customizers <designer/customizers.rst>
             SharePoint web part <designer/web-part> 
             SharePoint form Panel <designer/panel> 
             
