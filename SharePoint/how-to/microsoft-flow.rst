@@ -4,7 +4,7 @@ Integration with Power Automate (MS Flow)
 .. toctree::
     :maxdepth: 1
 
-    Send a notification by e-mail <./flow>
-    Start Flow on Edit Form and redirect to Display Form when complete <./flow-edit-display>
-    Send selected items to Flow on button click <./list-or-library-export>
+    Send e-mail notification after submitting SharePoint form <./flow>
+    Start flow after submitting SharePoint form and wait for results <./flow-edit-display>
+    Start flow from List or Library and pass selected items <./list-or-library-export>
     

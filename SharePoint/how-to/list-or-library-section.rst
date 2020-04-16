@@ -4,10 +4,10 @@ Working with List or Library control
 .. toctree::
     :maxdepth: 1
 
-    ./child-parent-form
-    ./caml-filter
-    ./root-folder
-    ./document-meta
-    ./list-or-library-duplicate
-    ./list-or-library-inline
-    ./list-or-library-columns
+    Create forms with related items or documents <./child-parent-form>
+    Navigate to specific folder dynamically <./root-folder>
+    Filter related items or documents dynamically <./caml-filter>
+    Update properties of uploaded files <./document-meta>
+    Add custom buttons to toolbar <./list-or-library-duplicate>
+    Manipulate fields in inline editing mode <./list-or-library-inline>
+    Customize view of columns <./list-or-library-columns>
