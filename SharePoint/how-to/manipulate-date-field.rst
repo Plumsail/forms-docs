@@ -22,30 +22,18 @@ Assume we want to populate a due date field as today plus 3 days on loading a ne
 
 .. code-block:: javascript
 
-    function setDueDate() {   
+    requirejs.config({
+        paths: {
+            moment: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min"
+        }
+    });
 
-        var today = moment(new Date());
-        var newDate = today.add(3, 'days');
-        fd.field('DueDate').value = newDate.format(); 
-    } 
-
-    fd.spRendered(function() {   
-
-        // To avoid conflicts with requireJS which is available by default in SharePoint  
-        // we unset 'define' function until the script are loaded
-        var define = window.define;
-        var require = window.define;
-        window.define = undefined;
-        window.require = undefined;
-
-        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')   
-        .then(function() { 
-            window.define = define; 
-            window.require = require;
-
-            // Calling function on form loading 
-            setDueDate();
-        }) 
+    fd.spRendered(function() {
+        require(['moment'], function(moment) {
+            var today = moment(new Date());
+            var newDate = today.add(3, 'days');
+            fd.field('DueDate').value = newDate.format();
+        })
     });
 
 Using a similar approach, you can calculate dates by adding or subtracting time in any units - days, weeks, etc. You can find more examples in the |documentation|.
@@ -59,36 +47,30 @@ Suppose you need to know how many days have passed since the purchase until the 
 
 .. code-block:: javascript
 
-    function diffDays() {
+    requirejs.config({
+        paths: {
+            moment: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min"
+        }
+    });
 
-        var purchase = moment(fd.field('PurchaseDate').value); 
-        var delivery = moment(fd.field('DeliveryDate').value);
-        var dateDiff = delivery.diff(purchase, 'days', false);
-        
-        fd.field('DeliveryPeriod').value = dateDiff; 
-    }
-    
     fd.spRendered(function() {
 
-        // To avoid conflicts with requireJS which is available by default in SharePoint
-        // we unset 'define' function until the script are loaded        
-        var define = window.define;
-        var require = window.define;
-        window.define = undefined;
-        window.require = undefined;
-        
-        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')
-        .then(function() {
-            window.define = define;
-            window.require = require;
+        require(['moment'], function(moment) {
             
+            function diffDays() {
+                var purchase = moment(fd.field('PurchaseDate').value); 
+                var delivery = moment(fd.field('DeliveryDate').value);
+                var dateDiff = delivery.diff(purchase, 'days', false);                
+                fd.field('DeliveryPeriod').value = dateDiff; 
+            }            
+          
             // Calling function when the user changes the date
             fd.field('PurchaseDate').$on('change', diffDays);
             fd.field('DeliveryDate').$on('change', diffDays);
             
             // Calling function on form loading
-            DiffDays (); 
-        }) 
+            diffDays (); 
+        }); 
     });  
 
 Calculate the number of business days between dates
@@ -102,58 +84,49 @@ In the code example below, we defined a four-day workweek, Monday through Thursd
 
 .. code-block:: javascript
 
-    function calcDiff() {
-        
-        var startDate = moment(fd.field('StartDate').value);
-        var endDate = moment(fd.field('EndDate').value);
-        var diff = endDate.businessDiff(startDate);
-        
-        console.log(diff);
-    }
-    
-    function defineWorkDays () {
-        
-        //Define holidays that you do not want to be considered working days
-        var july4th = '07-04-2019';
-        var laborDay = '09-07-2019';
-        
-        moment.updateLocale('us', {
-
-            // Defines days from 1 (Monday) to 6 (Saturday) as business days. Note that Sunday is day 0.
-            // When omitting this configuration parameter, business days are based on locale default
-            workingWeekdays: [1, 2, 3, 4], 
-            holidays: [july4th, laborDay],
-            holidayFormat: 'MM-DD-YYYY'
-        });
-    } 
+    requirejs.config({
+        paths: {
+            moment: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min",
+            'moment-business-days': "https://cdn.jsdelivr.net/npm/moment-business-days@1.1.3/index.min"
+        }
+    });
     
     fd.spRendered(function() {
-        
-        // To avoid conflicts with requireJS which is available by default in SharePoint
-        // we unset 'define' function until the script are loaded
-        var define = window.define;
-        var require = window.define;
-        window.define = undefined;
-        window.require = undefined;
-        
-        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')
-        
-        .then(function() { return $.getScript('https://cdn.jsdelivr.net/npm/moment-business-days@1.1.3/index.min.js')})
-        .then(function() {
-            
-            window.define = define;
-            window.require = require;
 
-            // Defining Work Days and Holidays on form loading
-            defineWorkDays ();
-            
-            // Calling function when the user changes the date
-            fd.field('StartDate').$on('change', calcDiff);
-            fd.field('EndDate').$on('change', calcDiff);  
+        require(['moment'], function(moment) {
+            require(['moment-business-days'], function() {
 
-            // Calling function on form loading
-            calcDiff();
-        })
+                function calcDiff() {
+                    var startDate = moment(fd.field('StartDate').value);
+                    var endDate = moment(fd.field('EndDate').value);
+                    var diff = endDate.businessDiff(startDate);
+                    console.log(diff);
+                }
+                
+                function defineWorkDays () {
+                    //Define holidays that you do not want to be considered working days
+                    var july4th = '07-04-2020';
+                    var laborDay = '09-07-2020';
+                    moment.updateLocale('us', {
+                        // Defines days from 1 (Monday) to 6 (Saturday) as business days. Note that Sunday is day 0.
+                        // When omitting this configuration parameter, business days are based on locale default
+                        workingWeekdays: [1, 2, 3, 4], 
+                        holidays: [july4th, laborDay],
+                        holidayFormat: 'MM-DD-YYYY'
+                    });
+                }
+
+                // Defining Work Days and Holidays on form loading
+                defineWorkDays ();
+                
+                // Calling function when the user changes the date
+                fd.field('StartDate').$on('change', calcDiff);
+                fd.field('EndDate').$on('change', calcDiff);  
+
+                // Calling function on form loading
+                calcDiff();
+            });
+        });
     }); 
 
 You can add and subtract the given number of days skipping business days using the same plugin. Please find more details |here1|.
@@ -172,59 +145,47 @@ Based on those settings, you can calculate business days between two dates using
 
 .. code-block:: javascript
 
-    function calcDiff() {
-        
-        var startDate = moment(fd.field('StartDate').value);
-        var endDate = moment(fd.field('EndDate').value);
-        var diff = endDate.businessDiff(startDate);
-        
-        console.log(diff);
-    }
+    requirejs.config({
+        paths: {
+            moment: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min",
+            'moment-business-days': "https://cdn.jsdelivr.net/npm/moment-business-days@1.1.3/index.min"
+        }
+    });
     
     fd.spRendered(function() {
-        
-        // To revent conflicts with requireJS which is available by default in SHarePoint
-        // we unset 'define' function until the script are loaded
-        var define = window.define;
-        var require = window.define;
-        window.define = undefined;
-        window.require = undefined;
-        
-        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')
-        
-        .then(function() { return $.getScript('https://cdn.jsdelivr.net/npm/moment-business-days@1.1.3/index.min.js')})
-        .then(function() {
-            
-            window.define = define;
-            window.require = require;
 
-            //get business days from regional settings
-            return pnp.sp.web.regionalSettings.get();
-        })
-        .then(function(rs) {
-            
-            window.rs = rs;
-            var workingWeekdays = [];
-            for (var d = 0; d < 7; d++) {
-                if (Math.pow(2, 6-d) & rs.WorkDays) {
-                    
-                    workingWeekdays.push(d);  
-                } 
-            }
-            
-            moment.updateLocale(_spPageContextInfo.currentUICultureName, {
+        require(['moment'], function(moment) {
+            require(['moment-business-days'], function() {   
                 
-                workingWeekdays: workingWeekdays
+                function calcDiff() {
+                    var startDate = moment(fd.field('StartDate').value);
+                    var endDate = moment(fd.field('EndDate').value);
+                    var diff = endDate.businessDiff(startDate);
+                    console.log(diff);
+                }
+                
+                pnp.sp.web.regionalSettings.get().then(function(rs) {
+                    var workingWeekdays = [];
+                    for (var d = 0; d < 7; d++) {
+                        if (Math.pow(2, 6-d) & rs.WorkDays) {
+                            workingWeekdays.push(d);  
+                        } 
+                    }
+                    
+                moment.updateLocale(_spPageContextInfo.currentUICultureName, {
+                    workingWeekdays: workingWeekdays
+                });
+
+                // Calling function when the user changes the date   
+                fd.field('StartDate').$on('change', calcDiff);
+                fd.field('EndDate').$on('change', calcDiff);  
+
+                // Calling function on form loading
+                calcDiff();
+                }); 
             });
-
-            // Calling function when the user changes the date   
-            fd.field('StartDate').$on('change', calcDiff);
-            fd.field('EndDate').$on('change', calcDiff);  
-
-            // Calling function on form loading
-            calcDiff();
-        }) 
-    }); 
+        });
+    });
 
 Calculate the number of business hours between dates  
 -----------------------------------------------------
@@ -235,58 +196,52 @@ By default, the working hours are 09:00-17:00, Monday through Friday. But you ca
 
 .. code-block:: javascript
 
-    function calcDiff() {
-        
-        var startDate = moment(fd.field('StartDate').value);
-        var endDate = moment(fd.field('EndDate').value);
-        diff = endDate.workingDiff(startDate, 'hours');
-        
-        console.log(diff);
-    } 
-    
-    //Function that defines working hours     
-    function defineWorkHours () {
-        
-        moment.locale('en', {
-            workinghours: {
-                
-                0: null,
-                1: ['09:30:00', '16:00:00'],
-                2: ['09:30:00', '17:00:00'],
-                3: ['09:30:00', '13:00:00'],
-                4: ['09:30:00', '17:00:00'],
-                5: ['09:30:00', '17:00:00'],
-                6: null
-            }
-        });
-    }
+    requirejs.config({
+        paths: {
+            moment: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min",
+            'moment-business-time': "https://forms.plumsail.com/libs/moment-business-time"
+        }
+    });
     
     fd.spRendered(function() {
-        
-        // To avoid conflicts with requireJS which is available by default in SharePoint
-        // we unset 'define' function until the script are loaded
-        var define = window.define;
-        var require = window.define;
-        window.define = undefined;
-        window.require = undefined;
 
-        $.getScript('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js')
-        
-        .then(function() { return $.getScript('https://forms.plumsail.com/libs/moment-business-time.js') })
-        .then(function() { 
+        require(['moment'], function(moment) {
+            require(['moment-business-time'], function() {
+                
+                function calcDiff() {        
+                    var startDate = moment(fd.field('StartDate').value);
+                    var endDate = moment(fd.field('EndDate').value);
+                    diff = endDate.workingDiff(startDate, 'hours');        
+                    console.log(diff);
+                } 
+    
+                //Function that defines working hours     
+                function defineWorkHours () {
+                    
+                    moment.locale('en', {
+                        workinghours: {
+                            
+                            0: null,
+                            1: ['09:30:00', '16:00:00'],
+                            2: ['09:30:00', '17:00:00'],
+                            3: ['09:30:00', '13:00:00'],
+                            4: ['09:30:00', '17:00:00'],
+                            5: ['09:30:00', '17:00:00'],
+                            6: null
+                        }
+                    });
+                }
+    
+                defineWorkHours ();
             
-            window.define = define;
-            window.require = require;
-
-            defineWorkHours ();
-            
-            // Calling function when the user changes the date
-            fd.field('StartDate').$on('change', calcDiff);
-            fd.field('EndDate').$on('change', calcDiff);
-            
-            // Calling function on form loading
-            calcDiff();
-        })
+                // Calling function when the user changes the date
+                fd.field('StartDate').$on('change', calcDiff);
+                fd.field('EndDate').$on('change', calcDiff);
+                
+                // Calling function on form loading
+                calcDiff();    
+            });
+        });
     });
 
 You can add and subtract working hours using the same plugin. Please find more details |here2|.
