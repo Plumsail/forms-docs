@@ -62,3 +62,7 @@ Available framework variables
 
                 //make fields with CSS class visible
                 $('.field-to-hide').css('visibility', 'visible');
+
+.. |jQuery library| raw:: html	
+
+    <a href="https://jquery.com" target="_blank">jQuery library</a>

@@ -9,7 +9,7 @@ Introduction
 --------------------------------------------------
 Here you can find properties of the fields that you have on your form and methods that can be used on them. 
 
-Insert them into JavaScript editor or inside OnClick setting for buttons and links.
+Insert them into JavaScript editor or inside Click setting for buttons and links.
 
 *Internal Name* is the property that is used to identify specific fields and apply methods to them. *Internal Name* is unique for every element on the form.
 

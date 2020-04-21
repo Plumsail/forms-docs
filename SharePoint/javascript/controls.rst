@@ -9,7 +9,7 @@ Introduction
 --------------------------------------------------
 Here you can find properties, methods and events of various controls that you can have on your form. 
 
-Insert them into JavaScript editor or inside OnClick setting for buttons and links.
+Insert them into JavaScript editor or inside Click setting for buttons and links.
 
 *Internal Name* is the property that is used to identify specific controls and apply methods to them. *Internal Name* is unique for every element on the form.
 
