@@ -1,11 +1,11 @@
-Manager
-==================================================
+Managing form with JavaScript in Plumsail Forms (public forms)
+=============================================================================
 
 .. contents:: Contents:
  :local:
  :depth: 1
  
-Intro
+Introduction
 --------------------------------------------------
 **fd** is a Forms designer manager variable. Whenever you want to use custom methods on the form, you need to call the manager first. 
 
@@ -25,19 +25,6 @@ Properties
 
     *   -   Property
         -   Description/Examples
-
-    *   -   **fd.itemId**
-        -   Returns ID of the current SharePoint item as string, on Edit or Display form. 
-
-            *Only works with* **SharePoint Forms**.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.itemId; //"1"
 
     *   -   **fd.culture**
 
@@ -99,7 +86,7 @@ Properties
 
             If the fields do not match these criterias, the form will not submit.
 
-            Use **rendered()** event for Plumsail forms and **spRendered()** event for SharePoint forms to add custom validators.
+            Use **rendered()** event to add custom validators.
             
             |
 
@@ -146,7 +133,7 @@ Properties
             .. code-block:: javascript
 
                 //example of setting language constant in created event
-                fd.created(function() {
+                fd.created(function(vue) {
                     fd.messages.PlumsailForm_Submission_Success = 'Thank you!';
                 });
 
@@ -168,59 +155,6 @@ Properties
 
                 fd.messages.RequiredValidator_Error = 
                     "This field is required.";
-                    
-                fd.messages.SPDataTable_AddNewItem = "Add new item";
-                fd.messages.SPDataTable_ListNotFoundError = "List does not exist.";
-                fd.messages.SPDataTable_Upload = "Upload";
-                fd.messages.SPDataTable_Uploading = "Uploading...";
-                fd.messages.SPFormToolbar_Close = "Close";
-                fd.messages.SPFormToolbar_Edit = "Edit";
-                fd.messages.SPFormToolbar_Save = "Save";
-                fd.messages.SPFormToolbar_Saving = "Saving...";
-
-    *   -   **fd.pdfFileName**
-
-        -   Get or set the name of the exported PDF file.
-
-            *This property is only available for* **SharePoint Forms** 
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-                
-                //set file name to "My_PDF_File"
-                fd.pdfFileName = "My_PDF_File";
-
-                //set file name to current item's Title
-                fd.spRendered(function() {
-                    fd.pdfFileName = fd.field('Title').value;    
-                });
-
-    *   -   **fd.pdfOptions**
-
-        -   Specifies various options for exported PDF file, such as paper size, margin, orientation, etc.
-
-            More info about all the options |PDF options|.
-
-            *This property is only available for* **SharePoint Forms**
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.pdfOptions = {
-                    paperSize: 'A4',
-                    landscape: true,
-                    multiPage: true
-                };
-
-.. |PDF options| raw:: html
-
-    <a href="https://docs.telerik.com/kendo-ui/framework/drawing/pdf-output#configuration-PDF" target="_blank">here</a>
 
 
 Methods
@@ -357,28 +291,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                     console.log(vue);
                 });
 
-    *   -   **spBeforeRender()**
-        -   Occurs before mounting the vue-component to DOM.
-
-            **ctx** passed as an argument to the function is a SharePoint form context. 
-
-            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
-
-            *Note:* This event is exclusive to SharePoint Forms and occurs after **beforeRender()**. 
-            
-            For Plumsail Forms, use **beforeRender()**.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.spBeforeRender(function(ctx) {
-                    console.log('spBeforeRender');
-                    console.log(ctx);
-                });
-    
     *   -   **rendered()**
         -   Occurs after mounting the vue-component to DOM.
 
@@ -412,44 +324,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                     });
                 });
 
-    *   -   **spRendered()**
-        -   Occurs after mounting the vue-component to DOM.
-
-            **Best place to run your JavaScript** since all elements are already built and rendered. 
-            
-            It's also here that fields with *ready* event should be executed inside.
-
-            You can also use this event for fields that have custom **ready** event available.
-
-            **vue** passed as an argument to the function is a Vue instance of the form. 
-            
-            It is also available from fd variable this way: *fd._vue*
-
-            *Note:* This event is exclusive to SharePoint Forms and occurs after **rendered()**. 
-            
-            For Plumsail Forms, use **rendered()**.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.spRendered(function(vue) {
-                    console.log('rendered');
-                    console.log(vue);
-                });
-
-                fd.spRendered(function() {
-                    //simple fields are available
-                    fd.field('Title').value = "New Title";
-
-                    //can use ready event for complex fields
-                    fd.field('Lookup').ready().then(function(field) {
-                        console.log(field.value.LookupValue);
-                    });
-                });
-
     *   - **beforeSave()**
         -   Occurs before submitting the form.
 
@@ -470,10 +344,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
             **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
 
-            *Note:* This event is exclusive to Plumsail Forms. 
-            
-            For SharePoint Forms, use **spBeforeSave()**.
-            
             |
 
             *Examples:*
@@ -500,29 +370,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                     }); 
                 });
 
-    *   -  **spBeforeSave()**
-        -   Occurs before submitting the form.
-
-            **spForm** passed as an argument to the function is a SharePoint client form.
-
-            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
-
-            *Note:* This event is exclusive to SharePoint Forms and occurs after **beforeSave()**.
-            
-            For Plumsail Forms, use **beforeSave()**.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.spBeforeSave(function(spForm) {
-                    console.log('spBeforeSave');
-                    console.log(spForm);
-                });
-
-
     *   -   **saved()**
         -   Occurs after the data is sent to the Flow.
 
@@ -536,34 +383,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
                 fd.saved(function() {
                     console.log('saved');
-                });
-
-    *   - **spSaved()**
-        -   Occurs after the form is submitted.
-
-            **result** passed as an argument to the function is an object containing additional fields of the SharePoint item: 
-            
-            *Id*, 
-            
-            *ItemUrl* (for documents and document sets), 
-            
-            *RedirectUrl* - URL of a page where a user will be redirected after saving. 
-            
-            This object can be changed.
-
-            *Note:* This event is exclusive to SharePoint Forms. 
-            
-            For Plumsail Forms, use **saved()**.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.spSaved(function(result) {
-                    console.log('spSaved');
-                    console.log(result);
                 });
     
     
