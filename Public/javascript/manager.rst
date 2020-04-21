@@ -208,7 +208,7 @@ These methods can be applied to **fd**:
 
             **options** passed as an argument to the function is a JavaScript object that specifies various options for created PDF file, such as paper size, margin, orientation, etc.
 
-            More info about all the options |PDF options|.
+            Find more about |PDF options|.
             
             |
 
@@ -389,3 +389,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 .. |vueConfig| raw:: html
 
     <a href="https://vuejs.org/v2/guide/instance.html" target="_blank">here</a>
+
+.. |PDF options| raw:: html	
+
+    <a href="https://docs.telerik.com/kendo-ui/framework/drawing/pdf-output#configuration-PDF" target="_blank">PDF options here</a>
