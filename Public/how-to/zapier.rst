@@ -6,4 +6,3 @@ Zapier Integration
 
     ./zapier-googlesheets
     ./zapier-email
-    ./zapier-excelchart
