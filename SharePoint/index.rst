@@ -32,8 +32,8 @@ Plumsail Forms Documentation (SharePoint forms)
             Roadmap <general/roadmap> 
             YouTube channel <https://www.youtube.com/channel/UCR7Ni67GwQ228j9MuGq-39A>
             Licensing <./licensing-sp>
-            Privacy policy <general/data-security> 
-            Data protection and security <general/privacy-policy> 
+            Privacy policy <general/privacy-policy>
+            Data protection and security <general/data-security>
 
       .. toctree::
             :caption: Designer
