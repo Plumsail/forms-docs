@@ -5,4 +5,5 @@ Generating PDF documents
     :maxdepth: 1
 
     Save SharePoint form as PDF (for printing) <./export-pdf>
+    Convert SharePoint Online Form to PDF <./export-to-pdf-setup>
     Generate PDF from DOCX template and SharePoint form fields <./docx-to-pdf>
