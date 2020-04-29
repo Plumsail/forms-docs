@@ -61,6 +61,8 @@ Paper size: **A4**
 .. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-02.png
    :alt: A4
 
+|
+
 Paper Size: **Custom** 
 
 .. code-block:: javascript
@@ -93,6 +95,8 @@ Page Orientation: **landscape (horizontal)**
 
 .. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-04.png
    :alt: landscape (horizontal)
+
+|
 
 Page Orientation: **portrait (vertical)**
 
@@ -127,6 +131,8 @@ Page Margins: **one size**
 
 .. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-06.png
    :alt: one size margins
+
+|
 
 Page Margins: **custom size**
 

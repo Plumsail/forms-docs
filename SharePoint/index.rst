@@ -90,11 +90,11 @@ Plumsail Forms Documentation (SharePoint forms)
             :caption: How-to
             :maxdepth: 2
 
-            how-to/layout
+            Designing complex layouts <how-to/layout>
             how-to/personalized
-            how-to/navigation
-            how-to/fields
+            Navigation between forms <how-to/navigation>
+            Working with fields in JavaScript <how-to/fields>
             how-to/list-or-library-section
-            how-to/lookup-section
-            how-to/pdf
-            how-to/microsoft-flow
+            Working with Lookup field <how-to/lookup-section>
+            Generating PDF documents <how-to/pdf>
+            Integration with Power Automate (MS Flow) <how-to/microsoft-flow>
