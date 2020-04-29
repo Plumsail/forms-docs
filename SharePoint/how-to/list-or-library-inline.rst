@@ -1,5 +1,5 @@
-Manipulating fields within List or Library in Inline editing mode
-====================================================================
+How to manipulate fields in inline editing mode of List or Library control
+===========================================================================
 
 .. contents:: Contents:
  :local:

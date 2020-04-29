@@ -1,4 +1,4 @@
-Generate a link to form
+How to generate link to specific SharePoint form
 ==================================================
 
 .. contents:: Contents:

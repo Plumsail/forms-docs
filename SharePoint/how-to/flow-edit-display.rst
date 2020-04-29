@@ -1,5 +1,5 @@
-Start Flow on Edit Form and redirect to Display Form when complete
-===================================================================
+How to start flow after submitting SharePoint form and wait for results
+=============================================================================================
 
 .. contents:: Contents:
  :local:

@@ -1,5 +1,5 @@
-Display items or documents from a specific folder in a form with List or Library control
-==========================================================================================
+How to organize related files in folders and display documents from a specific folder in a SharePoint form
+==================================================================================================================
 
 .. contents:: Contents:
  :local:

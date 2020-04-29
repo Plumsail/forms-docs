@@ -1,5 +1,5 @@
-Create and bind associated items or documents on Modern SharePoint Forms
-=========================================================================
+How to create SharePoint form with associated items or documents and bind new ones automatically
+===================================================================================================
 
 .. contents:: Contents:
  :local:

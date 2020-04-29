@@ -1,5 +1,5 @@
-Send selected items to Flow on button click
-=================================================
+How to start flow from List or Library control and pass selected items
+===========================================================================
 
 .. contents:: Contents:
  :local:

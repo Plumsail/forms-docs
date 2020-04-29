@@ -1,5 +1,5 @@
-Personal form for reporting and tracking issues on an arbitrary SharePoint page 
-===============================================================================
+How to add a personal form for creating and tracking tickets to an arbitrary SharePoint page 
+=================================================================================================
 
 .. contents:: Contents:
  :local:

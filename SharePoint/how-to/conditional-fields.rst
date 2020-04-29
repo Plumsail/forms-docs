@@ -1,5 +1,5 @@
-Manipulate fields dynamically
-==================================================
+How to populate, hide, disable, or make mandatory SharePoint form fields in JavaScript
+======================================================================================================
 
 .. contents:: Contents:
  :local:

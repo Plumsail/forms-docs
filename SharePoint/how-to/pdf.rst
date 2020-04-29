@@ -1,8 +1,9 @@
-Generating PDF documents
+Generating PDF documents based on SharePoint forms
 =======================================================
 
 .. toctree::
     :maxdepth: 1
 
-    Save SharePoint form as PDF (for printing) <./export-pdf>
+    Save SharePoint form as PDF <./export-pdf>
+    Adjust SharePoint form for saving as PDF <./export-to-pdf-setup>
     Generate PDF from DOCX template and SharePoint form fields <./docx-to-pdf>

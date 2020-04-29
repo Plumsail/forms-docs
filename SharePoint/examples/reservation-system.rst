@@ -1,4 +1,4 @@
-Conference room reservation system
+How to create a SharePoint form for booking a meeting room
 =========================================================================
 
 .. contents:: Contents:

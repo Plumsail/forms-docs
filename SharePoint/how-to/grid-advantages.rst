@@ -1,5 +1,5 @@
-Use Grids instead of Tables
-==================================================
+How to design complex and responsive forms with grids in Plumsail Forms for SharePoint
+==========================================================================================
 
 .. contents:: Contents:
  :local:

@@ -1,5 +1,5 @@
-Integration with Power Automate (MS Flow)
-=================================================
+Integration of SharePoint forms with Power Automate (MS Flow)
+===========================================================================
 
 .. toctree::
     :maxdepth: 1

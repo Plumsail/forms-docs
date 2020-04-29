@@ -1,5 +1,5 @@
-Navigation between forms
-=========================================
+Navigation between SharePoint forms with JavaScript
+===================================================================
 
 .. toctree::
     :maxdepth: 1

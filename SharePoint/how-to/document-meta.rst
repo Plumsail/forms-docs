@@ -1,5 +1,5 @@
-Update uploaded files (List or Library)
-=======================================================
+How to update metadata of uploaded documents in List or Library control
+=================================================================================
 
 .. contents:: Contents:
  :local:

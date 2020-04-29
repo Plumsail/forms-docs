@@ -1,5 +1,5 @@
-Enable versioning for Forms and go back to previous version
-============================================================
+How to restore the previous version of SharePoint form designed with Plumsail Forms
+======================================================================================
 
 .. contents:: Contents:
  :local:

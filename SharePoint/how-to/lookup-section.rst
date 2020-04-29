@@ -1,5 +1,5 @@
-Working with Lookup field
-===========================
+Working with Lookup field in SharePoint form
+=====================================================
 
 .. toctree::
     :maxdepth: 1

@@ -1,4 +1,4 @@
-Export any form to PDF (e.g. for printing)
+How to save SharePoint form as PDF for printing
 =====================================================
 
 .. contents:: Contents:
