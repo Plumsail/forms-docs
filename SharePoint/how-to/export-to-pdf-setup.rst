@@ -1,4 +1,4 @@
-Convert SharePoint Online Form to PDF
+How to adjust SharePoint form for saving as PDF
 =================================================================
 
 .. contents:: Contents:

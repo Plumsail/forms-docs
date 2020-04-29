@@ -1,5 +1,5 @@
-Search and filter large lists with a Lookup (more than 5,000 Items)
-=====================================================================
+How to configure lookup fields pointing to large lists with more than 5000 items
+===============================================================================================
 
 .. contents:: Contents:
  :local:

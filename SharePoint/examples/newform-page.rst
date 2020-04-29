@@ -1,5 +1,5 @@
-Copy New Form site page and place it anywhere
-=====================================================
+How to move new SharePoint form page to another location
+=============================================================
 
 .. contents:: Contents:
  :local:

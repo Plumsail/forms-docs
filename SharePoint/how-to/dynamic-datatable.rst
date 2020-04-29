@@ -1,5 +1,5 @@
-Dynamic DataTable content from other Lists
-=============================================
+How to populate dropdown column of Data Table in SharePoint form with data from any SharePoint list
+======================================================================================================
 
 .. contents:: Contents:
  :local:

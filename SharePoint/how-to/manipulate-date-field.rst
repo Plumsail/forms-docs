@@ -1,4 +1,4 @@
-Manipulate Date and DateTime fields
+How to work with Date and Time fields in SharePoint form with JavaScript
 =========================================================================
 
 .. contents:: Contents:

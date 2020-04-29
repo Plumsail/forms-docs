@@ -1,5 +1,5 @@
-Filtering List or Library by CAML
-=======================================================
+How to filter items or documents by CAML in List or Library control
+=================================================================================
 
 .. contents:: Contents:
  :local:

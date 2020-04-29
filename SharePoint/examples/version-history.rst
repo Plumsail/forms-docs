@@ -1,4 +1,4 @@
-Display version history with Vue components
+How to display version history in a SharePoint form
 =================================================================================================
 
 .. contents:: Contents:

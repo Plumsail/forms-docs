@@ -1,5 +1,5 @@
-Align form and fields to the right (Arabic, Hebrew and other languages)
-=======================================================================
+How to adapt SharePoint form to right-to-left languages e.g. Arabic or Hebrew
+===============================================================================
 
 .. contents:: Contents:
  :local:

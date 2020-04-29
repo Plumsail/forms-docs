@@ -1,5 +1,5 @@
-List or Library Root Folder
-=======================================================
+How to display items or documents from specific folder in List or Library control
+===================================================================================
 
 .. contents:: Contents:
  :local:

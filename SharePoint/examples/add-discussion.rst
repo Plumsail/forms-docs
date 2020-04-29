@@ -1,4 +1,4 @@
-Add discussion to a SharePoint form
+How to add discussion to a SharePoint form
 ==================================================
 
 .. contents:: Contents:

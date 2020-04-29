@@ -1,4 +1,4 @@
-Populate fields with profile information
+How to populate SharePoint form fields with profile information
 =========================================================================
 
 .. contents:: Contents:

@@ -1,5 +1,5 @@
-Duplicate selected item on button click
-===========================================
+How to add a custom button to the toolbar of List or Library control and duplicate selected item
+==================================================================================================
 
 .. contents:: Contents:
  :local:

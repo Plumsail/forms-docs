@@ -1,5 +1,5 @@
-Send a notification by e-mail
-============================================================
+How to send e-mail notification after submitting SharePoint form
+======================================================================================
 
 .. contents:: Contents:
  :local:

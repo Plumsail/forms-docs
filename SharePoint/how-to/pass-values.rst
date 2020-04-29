@@ -1,5 +1,5 @@
-Passing values from a parent form to a child opened in a dialog 
-===============================================================================
+How to retrieve field values of SharePoint form from another form opened in dialog
+=====================================================================================
 
 .. contents:: Contents:
  :local:

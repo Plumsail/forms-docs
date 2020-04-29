@@ -1,5 +1,5 @@
-Generate PDF from DOCX template and SharePoint form fields
-==========================================================
+How to generate PDF document from DOCX template and SharePoint form fields
+====================================================================================
 
 .. contents:: Contents:
  :local:

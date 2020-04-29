@@ -1,5 +1,5 @@
-Customize view of specific columns
-===========================================
+How to customize view of columns in List or Library control
+=====================================================================
 
 .. contents:: Contents:
  :local:

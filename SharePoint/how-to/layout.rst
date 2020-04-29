@@ -1,5 +1,5 @@
-Designing complex layouts
-=========================================
+Designing complex layouts with Plumsail Forms for SharePoint
+===================================================================
 
 .. toctree::
     :maxdepth: 1

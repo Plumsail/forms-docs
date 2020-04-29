@@ -1,5 +1,5 @@
-Redirect user after form submission in SharePoint
-==================================================
+How to redirect users to another form or specific URL after submitting a SharePoint form
+=========================================================================================
 
 .. contents:: Contents:
  :local:

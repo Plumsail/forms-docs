@@ -1,5 +1,5 @@
-Cascading Lookups (Filtering)
-==================================================
+How to configure cascading lookup fields in SharePoint form
+============================================================================
 
 .. contents:: Contents:
  :local:

@@ -1,5 +1,5 @@
-Populate dropdown with data from SharePoint list from another site collection 
-=================================================================================
+How to populate a dropdown field in SharePoint form with data from list located in another site
+===========================================================================================================
 
 .. contents:: Contents:
  :local:

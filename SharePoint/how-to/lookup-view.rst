@@ -1,5 +1,5 @@
-Set up view results for lookup field
-==================================================
+How to customize the appearance of search results for lookup fields in SharePoint form
+======================================================================================================
 
 .. contents:: Contents:
  :local:
