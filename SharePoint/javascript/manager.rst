@@ -1,19 +1,19 @@
-Manager
-==================================================
+Managing form with JavaScript in Plumsail Forms for SharePoint
+========================================================================
 
 .. contents:: Contents:
  :local:
  :depth: 1
  
-Intro
+Introduction
 --------------------------------------------------
 **fd** is a Forms designer manager variable. Whenever you want to use custom methods on the form, you need to call the manager first. 
 
- **fd** is not global and only accesible from within the form, e.g. from JavaScript editor. 
+**fd** is not global and only accesible from within the form, e.g. from JavaScript editor. 
 
- It is accesible globally in Form Preview, so you can run tests from browser's console.
+It is accesible globally in Form Preview, so you can run tests from browser's console.
 
- Otherwise, it will not be accesible globally on the page, so you can include several forms on one page and not worry about their scripts conflicting at all.
+Otherwise, it will not be accesible globally on the page, so you can include several forms on one page and not worry about their scripts conflicting at all.
 
 Properties
 --------------------------------------------------
@@ -146,7 +146,7 @@ Properties
             .. code-block:: javascript
 
                 //example of setting language constant in created event
-                fd.created(function() {
+                fd.created(function(vue) {
                     fd.messages.PlumsailForm_Submission_Success = 'Thank you!';
                 });
 
@@ -337,26 +337,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                     console.log(vue);
                 });
 
-    *   -   **beforeRender()**
-        -   Occurs before mounting the vue-component to DOM.
-
-            **vue** passed as an argument to the function is a Vue instance of the form. 
-            
-            It is also available from fd variable this way: *fd._vue*
-
-            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.beforeRender(function(vue) {
-                    console.log('beforeRender');
-                    console.log(vue);
-                });
-
     *   -   **spBeforeRender()**
         -   Occurs before mounting the vue-component to DOM.
 
@@ -379,39 +359,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                     console.log(ctx);
                 });
     
-    *   -   **rendered()**
-        -   Occurs after mounting the vue-component to DOM.
-
-            **Best place to run your JavaScript** since all elements are already built and rendered.
-
-            **vue** passed as an argument to the function is a Vue instance of the form. 
-            
-            It is also available from fd variable this way: *fd._vue*
-            
-            |
-
-            *Examples:*
-            
-            .. code-block:: javascript
-
-                fd.rendered(function(vue) {
-                    console.log('rendered');
-                    console.log(vue);
-                });
-
-                fd.rendered(function(){
-                    fd.validators.push({
-                        name: 'MyCustomValidator',
-                        error: '"To" must be greater or the same as "From".',
-                        validate: function(value) {
-                            if (fd.field('From').value >= fd.field('To').value)
-                                return false;
-                                
-                            return true;
-                        }
-                    });
-                });
-
     *   -   **spRendered()**
         -   Occurs after mounting the vue-component to DOM.
 
@@ -450,56 +397,6 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                     });
                 });
 
-    *   - **beforeSave()**
-        -   Occurs before submitting the form.
-
-            **data** passed as an argument to the function is an object representing user's input. 
-            
-            Keys are internal names of form fields, Values - user's input. Ex.:
-
-            .. code-block:: javascript
-
-                {
-                    Field1: 'text'
-                    DateTime1: new Date('2017-01-01')
-                }
-
-            Here, you can process form's data with code by yourself instead of sending it to the Flow. 
-            
-            For instance, you can send data directly to your web service or modify it somehow before it is processed by the Flow.
-
-            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
-
-            *Note:* This event is exclusive to Plumsail Forms. 
-            
-            For SharePoint Forms, use **spBeforeSave()**.
-            
-            |
-
-            *Examples:*
-            
-            .. code-block:: javascript
-
-                fd.beforeSave(function(data) {
-                    console.log('beforeSave');
-                    console.log(data);
-                });
-
-            Asynchronous:
-
-            .. code-block:: javascript
-
-                fd.beforeSave(function(data) {
-                return new Promise(function(resolve) {
-                        // loading extra data from external data sources
-                        $.getJSON('https://mywebservice.contoso.com')
-                            .then(function(result) {
-                                data.additionalProperties = result;
-                                resolve();
-                            })
-                    }); 
-                });
-
     *   -  **spBeforeSave()**
         -   Occurs before submitting the form.
 
@@ -522,21 +419,12 @@ These events can be executed from JavaScript editor for Plumsail Forms:
                     console.log(spForm);
                 });
 
-
-    *   -   **saved()**
-        -   Occurs after the data is sent to the Flow.
-
-            Can be used to display confirmation message after the form is saved or perform some other actions.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.saved(function() {
-                    console.log('saved');
+                //return next tick if you plan to change any values
+                fd.spBeforeSave(function(spForm) {
+                    fd.field('FieldName').value = 'New value';
+                    return fd._vue.$nextTick();
                 });
+
 
     *   - **spSaved()**
         -   Occurs after the form is submitted.

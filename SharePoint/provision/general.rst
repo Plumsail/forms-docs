@@ -13,7 +13,7 @@ It is possible to provision forms programmatically using **Plumsail.Forms.O365**
 
 In order to use the package, you need to have *.NET Framework v.4.5.2* or higher installed.
 
-Find an example of how it can be used in our article - :doc:`Provision Modern UI SharePoint Form</how-to/provision>`.
+Find an example of how it can be used in our article - :doc:`Provision Modern UI SharePoint Form<./provision>`.
 
 .. |NuGet package| raw:: html
 
@@ -209,7 +209,7 @@ FormSetSettings can be retrieved with **GetFormSets()** and set with **SetFormSe
 
 These settings contain code for :ref:`designer-customrouting`, as well as information about Form Sets, including groups used for redirection.
 
-For examples of working with Form Sets, please, check out :doc:`Working with Form Sets when Provisioning</how-to/provision-fs>`.
+For examples of working with Form Sets, please, check out :doc:`Working with Form Sets when Provisioning<./provision-fs>`.
 
 .. list-table::
     :header-rows: 1
