@@ -91,7 +91,7 @@ Plumsail Forms Documentation (SharePoint forms)
             :maxdepth: 2
 
             Designing complex layouts <how-to/layout>
-            how-to/personalized
+            Designing personal forms <how-to/personalized>
             Navigation between forms <how-to/navigation>
             Working with fields in JavaScript <how-to/fields>
             how-to/list-or-library-section

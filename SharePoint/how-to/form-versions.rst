@@ -1,4 +1,4 @@
-How to restore the previous version of SharePoint form designed with Plumsail Forms
+How to restore previous version of SharePoint form designed with Plumsail Forms
 ======================================================================================
 
 .. contents:: Contents:
