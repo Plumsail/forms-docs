@@ -1,4 +1,4 @@
-How to populate a dropdown field in SharePoint form with data from list located in another site
+How to populate dropdown field in SharePoint form with data from list located in another site
 ===========================================================================================================
 
 .. contents:: Contents:

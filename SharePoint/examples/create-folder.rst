@@ -1,4 +1,4 @@
-How to organize related files in folders and display documents from a specific folder in a SharePoint form
+How to organize related files in folders and display documents from specific folder in a SharePoint form
 ==================================================================================================================
 
 .. contents:: Contents:
