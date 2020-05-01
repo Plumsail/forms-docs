@@ -55,37 +55,23 @@ Now, after the form is saved, it is time to configure Flow.
 Configure the Flow - First steps
 --------------------------------------------------
 
-First, open Microsoft Flow page and go to My Flows:
+First, open Microsoft Flow page and go to My Flows >> New >> Automated from blank:
 
-.. image:: ../images/how-to/email/2_MyFlows.png
+.. image:: ../images/how-to/item/item-01.png
    :alt: My Flows
 
 |
 
-On My Flows page, click *Create from blank* to create new Flow:
+We'll need to find the correct trigger. Search for *Plumsail* and you'll find the right one - *Plumsail Forms - Form is submitted*. Add it:
 
-.. image:: ../images/how-to/email/3_CreateFromBlank.png
-   :alt: Create from blank
-
-|
-
-We'll need to find the correct trigger for Forms Submission. Click *Search*:
-
-.. image:: ../images/how-to/email/4_Search.png
-   :alt: Search
-
-|
-
-Search for *Plumsail* and you'll find the right one - *Plumsail Forms - Form is submitted*. Add it:
-
-.. image:: ../images/how-to/email/5_AddPlumsailTrigger.png
+.. image:: ../images/how-to/item/item-02.png
    :alt: Add Plumsail trigger
 
 |
 
 Next, you need to fill in Form ID. It can be found in **Flow Settings** in the designer.
 
-.. image:: ../images/how-to/email/7_AddID.png
+.. image:: ../images/how-to/item/item-03.png
    :alt: Add ID from General Settings
 
 |
