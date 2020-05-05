@@ -73,6 +73,41 @@ Control
     *   - Font Color
         - Select font color for the input. Can be either selected or manually entered.
 
+.. _designer-currency:
+
+Currency and Number
+-------------------------------------------------------------
+Currency and Number fields have received multiple unique properties to configure.
+
+|currency-img|
+
+.. |currency-img| image:: ../images/designer/fields/DesignerCurrencyField.png
+   :alt: Currency and Number fields
+
+Currency and Number properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+These properties are unique to Currency and Number fields:
+
+General
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Min
+        - Minimum possible value.
+    *   - Max
+        - Maximum possible value.
+    *   - Decimals
+        - Number of decimals.
+    *   - Format
+        - |Numeric format| for the field.
+    *   - Step
+        - Value added or removed when using the control's arrows.
+
+.. |Numeric format| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings" target="_blank">Numeric format</a>
+
 .. _designer-lookup:
 
 Lookup

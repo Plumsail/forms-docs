@@ -1,6 +1,12 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.6.1
+--------------------------------------------------
+Advanced controls for :ref:`designer-currency` fields in SharePoint forms
+
+Minor bug fixes
+
 v1.6.0
 --------------------------------------------------
 Added an ability to import forms designed with Forms Designer for Office 365
