@@ -7,30 +7,41 @@ Send email from Plumsail Form with MS Power Automate or Zapier
  
 MS Power Automate
 --------------------------------------------------
-Use data from a submitted Plumsail Form to send an email from Office365 Outlook with this |flow template|.
+Send an e-mail message when someone submits Plumsail Form with |MS Power Automate|.
 
-|flow template img|
+|flow process img|
 
-.. |flow template img| image:: ../images/integration/email/integration-email-flow-template.png
-   :alt: 
+.. |flow process img| image:: ../images/integration/email/integration-email-flow-process.png
+   :alt: Flow process
 
-.. |flow template|  raw:: html
+The recommended connector is Mail. You can alternatively use one of the following connectors: **Outlook**, **Gmail**, **SMTP**, etc. 
 
-   <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/834771e8c74d428791ea78ff5ea81396/send-an-office-365-outlook-email-when-a-plumsail-form-is-submitted/" target="_blank">flow template</a>
+Examples: 
+ - Send email notification 
+ - Generate PDF and send by email 
 
-.. note::   Replace Outlook with Mailchimp, Sendinblue, Gmail or another email service to send email from it instead.
+.. |MS Power Automate|  raw:: html
+
+   <a href="https://flow.microsoft.com/" target="_blank">MS Power Automate</a>
 
 Zapier
 --------------------------------------------------
-Use data from a submitted Plumsail Form to send an email from Gmail with this |zap template|.
+Send an e-mail message when someone submits Plumsail Form with |Zapier|.
 
-|zap template img|
+Recommended template: 
 
-.. |zap template img| image:: ../images/integration/email/integration-email-zap-template.png
-   :alt: 
+|zapTemplateImg|
 
-.. |zap template|  raw:: html
+The recommended connector is Email by Zapier. You can alternatively use one of the following connectors: **Outlook**, **Gmail**, **SMTP**, etc.  
 
-   <a href="https://zapier.com/app/editor/template/122891" target="_blank">zap template</a>
+Examples: 
+ - Send email notification 
+ - Generate PDF and send by e-mail 
 
-.. note::   Replace Gmail with Mailchimp, Sendinblue, Microsoft Outlook or another email service to send email from it instead.
+.. |Zapier|  raw:: html
+
+   <a href="https://zapier.com/" target="_blank">Zapier</a>
+
+.. |zapTemplateImg|  raw:: html image:: 
+
+   <a href="https://zapier.com/app/editor/template/148823" target="_blank" style="border:0"><img src="../_static/img/integration/email/integration-email-zap-template.png" style="border:0">Send email for new Plumsail Forms submissions</a>

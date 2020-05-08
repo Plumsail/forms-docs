@@ -1,11 +1,11 @@
-Managing controls with JavaScript in Plumsail Forms (public forms)
-==================================================================================
+Controls
+==================================================
 
 .. contents:: Contents:
  :local:
  :depth: 1
  
-Introduction
+Intro
 --------------------------------------------------
 Here you can find properties, methods and events of various controls that you can have on your form. 
 
@@ -781,6 +781,275 @@ Events
 .. |Kendo UI Grid columns| raw:: html
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#fields-columns" target="_blank">Kendo UI Grid columns</a>
+
+.. _javascript-listorlibrary:
+
+List or Library
+--------------------------------------------------
+Properties and events of the List or Library control.
+
+Properties
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+    
+    *   -   **filter**
+        -   Property that holds CAML filtering for the control. 
+            Empty by default, contains filter value if you choose Lookup Field in Data Source Editor.
+
+            Can also be used to apply filtering. Changes are applied dynamically to the control.
+            Read more and see examples in :doc:`CAML Filter article </how-to/caml-filter>`.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').filter; // returns CAML string
+
+                //return only items where Title is "Test"
+                fd.control('SPDataTable0').filter = 
+                    "<Eq><FieldRef Name='Title'/><Value Type='Text'>Test</Value></Eq>";
+            
+    *   -   **readonly**
+        -   Property that specifies if the user can add new items/documents to the control, edit or delete existing items/documents. 
+            
+            Takes and returns only *true* and *false* values.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').readonly;
+                fd.control('SPDataTable0').readonly = true;
+                fd.control('SPDataTable0').readonly = false;
+
+    *   -   **baseRootFolder**
+        -   Property that specifies starting folder for the control. User cannot go higher than this folder. 
+
+            Read more and see examples in :doc:`Root Folder article </how-to/root-folder>`.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').baseRootFolder;
+                //set root as Base Folder:
+                fd.control('SPDataTable0').baseRootFolder = '';
+                //set folder as Base Folder:
+                fd.control('SPDataTable0').baseRootFolder = "Folder1"
+
+    *   -   **rootFolder**
+        -   Property that specifies current folder for the control. Can be changed dynamically.
+
+            Read more and see examples in :doc:`Root Folder article </how-to/root-folder>`.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').rootFolder;
+                //set root as Current Folder:
+                fd.control('SPDataTable0').rootFolder = '';
+                //set Folder1 as Current Folder:
+                fd.control('SPDataTable0').rootFolder = "Folder1"
+
+    *   -   **addNewItemText**
+        -   Property that holds "Add new item" text, useful for localizations.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').addNewItemText // "Add new item" by default
+                fd.control('SPDataTable0').addNewItemText = "New text"
+    
+    *   -   **uploadText**
+        -   Property that holds "Upload" text, useful for localizations.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').uploadText // "Upload" by default
+                fd.control('SPDataTable0').uploadText = "New text"
+    
+    *   -   **uploadingText**
+        -   Property that holds "Uploading..." text, useful for localizations.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').uploadingText // "Uploading..." by default
+                fd.control('SPDataTable0').uploadingText = "New text"
+    
+    *   -   **dialogOptions**
+        -   |Kendo UI Window| configuration. Holds dialog window options when adding new items, such as width and height.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').dialogOptions.height; //returns height
+                fd.control('SPDataTable0').dialogOptions.width //returns width
+
+                //set width and height:
+                fd.control('SPDataTable0').dialogOptions = {
+                    width: 1280,
+                    height: 720
+                }
+    
+    *   -   **widget**
+        -   Property that holds |kendoGrid widget| for the control.
+            
+            Can be used to retrieve it, but not to modify.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').widget;
+
+Methods
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+
+    *   -   **refresh()**
+        -   Refreshes List or Library control. If any items or documents were changed, the data presented in List or Library will be updated.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').refresh();
+
+
+Events
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+
+    *   -   **change**
+        -   Fired when the user applies any changes to the List or Library.
+
+            Adding items, uploading documents, deleting them, or editing item/document's properties from List or Library dialog all counts as change.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').$on('change',
+                    function() {
+                        alert('List or Library changed');
+                    });
+    
+    *   -   **filesUploaded**
+        -   Fired when the user uploads files to Document Library via List or Library control.
+
+            **itemIds** is an array of IDs of uploaded files.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                //log all uploaded files to console
+                fd.control('SPDataTable0').$on('filesUploaded',
+                    function(itemIds) {
+                        itemIds.forEach(function(item) {
+                            console.log(item);
+                        });
+                    });
+    
+    *   -   **ready**
+        -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.spRendered(function() {
+                    fd.control('SPDataTable0').ready().then(function(dt) { 
+                        //dt parameter is the same as fd.control('SPDataTable0')
+                        console.log('SPDataTable0 is initialized');
+                    });
+                });
+
+    *   -   **beforeItemsAttach**
+        -   Fired when saving New Form that has items in Library or List control, that will be tied to the parent via lookup field.
+
+            Function contains parameter object with the following properties:
+
+            **itemIds** is an array of IDs of uploaded files.
+
+            **lookupField** is a Lookup field on children items, that binds them to parent.
+
+            **parentItemId** is an ID of the newly saved Parent item.
+
+            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                //give an alert message when saving New Form
+                fd.control('SPDataTable0').beforeItemsAttach(function(e) {
+                    return new Promise(function(resolve) {
+                        var ids = '';
+                        var message = 'Item(s): ' + e.itemIds.join();
+                        message += ' attached to Parent with ID: ' + e.parentItemId;
+                        message += ' via Lookup: ' + e.lookupField;
+
+                        alert(message);
+
+                        //once resolved, the form will save:
+                        resolve();
+                    })
+                });
+    
 
 .. |kendoGrid widget| raw:: html
 
