@@ -55,15 +55,34 @@ If this is your first Flow, at this point you'll need to **Sign in to** |Plumsai
 .. |pic4| image:: /images/flow/11_AuthorizationNew.png
    :alt: Sign in to Plumsail Account
 
-Now, you'll need to add the ID of the Form you want to track. You can enter ID of the form you already created or create and save a new form in the designer.
+Select the form that you want to track and that's it!
 
-Form ID can be found and copied in **General Settings** in the Designer.
+|pic_fin|
+
+.. |pic_fin| image:: /images/flow/flow-select-form.png
+   :alt: Select form in flow
+
+SharePoint form
+-------------------------------------------------------------
+For SharePoint form, if you want to use our connector, you'll need to add the ID of the Form you want to track. 
 
 |pic5|
 
-.. |pic5| image:: /images/flow/11_FormIDNew.png
-   :alt: Form ID
+.. |pic5| image:: /images/flow/flow-select-form-custom.png
+   :alt: Enter custom value
 
-That's it, after this action you can do pretty much anything with submitted data - it's parsed and ready to be used.
+Select *Enter custom value* and enter Form ID, which can be found and copied in **Flow Settings** in the Designer:
 
-Check out our How-to documentation on examples of using MS Power Automate. For example, for :doc:`sending an email with flow </how-to/email>`.
+|pic6|
+
+.. |pic6| image:: /images/flow/flow-sharepoint-form-id.png
+   :alt: SharePoint form ID
+
+You then need to use **Data Operation** - **Parse JSON** action, and copy and paste form schema from **Flow Settings**:
+
+|pic7|
+
+.. |pic7| image:: /images/flow/flow-sharepoint-parse-json.png
+   :alt: SharePoint form ID
+
+
