@@ -82,7 +82,7 @@ You then need to use **Data Operation** - **Parse JSON** action, and copy and pa
 
 |pic7|
 
-.. |pic7| image:: /images/flow/flow-sharepoint-parse-json.png
+.. |pic7| image:: /images/flow/flow-sharepoint-parse-JSON.png
    :alt: SharePoint form ID
 
 
