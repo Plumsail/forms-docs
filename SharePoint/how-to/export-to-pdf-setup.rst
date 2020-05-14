@@ -3,11 +3,25 @@ How to adjust SharePoint form for saving as PDF
 
 .. contents:: Contents:
  :local:
- :depth: 1
+ :depth: 2
 
 Introduction
 --------------------------------------------------
-Plumsail Forms has built-in functionality allowing you to export any SharePoint form to PDF by clicking the button on the right side of the toolbar. From this article, you will learn how to customize the exported PDF and how to resolve common issues you may face.  
+Plumsail Forms has built-in functionality allowing you to export any SharePoint form to PDF by clicking the button on the right side of the toolbar.
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-17.png
+   :alt: Export button
+
+Or using the **fd.exportToPDF** method you can call on button click or form submission.
+
+.. code-block:: javascript
+
+    //export PDF on form submission
+    fd.spSaved(function(result) {
+        fd.exportToPDF("FileName");
+    }); 
+
+From this article, you will learn how to customize the exported PDF and how to resolve common issues you may face. 
 
 Assume that you have a SharePoint form that you need to export into PDF. In this example, we have a simple Invoice form with the following fields and controls: 
 
@@ -30,12 +44,12 @@ This is our form:
 
 Next, we will consider various approaches to redesigning the final PDF document. 
 
-Page size, orientation, margins 
+Page layout
 ------------------------------------------------
 
-With JavaScript, you can specify the basic layout properties of PDF pages, such as page size, margins, etc. Let's have a closer look at each property. 
+With JavaScript, you can specify the basic layout properties of PDF pages, such as page size, margins, etc. Let's have a closer look at each property. 
 
-PDF page size 
+Size 
 ~~~~~~~~~~~~~~~~~~~~
 
 *paperSize* option specifies the size of the pages.  
@@ -76,7 +90,7 @@ Paper Size: **Custom**
 
 For the invoice document, we select the standard A4 page size. 
 
-PDF page orientation 
+Orientation 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *landscape* option specifies the orientation of the pages. By default, the option is set to 'false' which means that the page orientation is portrait (vertical).
@@ -112,7 +126,7 @@ Page Orientation: **portrait (vertical)**
 
 The optimal page orientation for the invoice is portrait (vertical).  
 
-PDF page margins 
+Margins 
 ~~~~~~~~~~~~~~~~~~~~
 
 *margin* is an object which specifies the top, left, right, and bottom page margins. You can set all margins to one size, or specify the margin size for each side of the page separately.  
@@ -178,7 +192,12 @@ Content adjustments
 
 You can change the appearance of the exported PDF by using 'k-pdf-export' class. CSS rules for this class are applied to the PDF document only. 
 
-For instance, we don't need the Submit button in the PDF document, so we give it 'pdf-hide' CSS class:
+Show or hide blocks of elements 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For instance, you want some elements displayed on a form to be hidden in PDF, or vice versa. These can be buttons, fields, titles, containers etc.
+
+In this example, we will hide the Submit button in the exported PDF. First, we assign the 'pdf-hide' CSS class to it: 
 
 .. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-10.png
    :alt: CSS class
@@ -191,30 +210,9 @@ Then, add the following rule to the CSS editor to hide it in PDF:
         display: none !important;
     }
 
-You can give each element that you want to hide the same class and hide them all at once.  
+You can give each element that you want to hide in PDF the same class and hide them all at once. 
 
-Also, we want to change the appearance of the input controls in the PDF document. Here, we remove borders, arrow buttons of drop-down fields, and toolbar and command columns of the List or Library control using CSS code: 
-
-.. code-block:: CSS
-
-    .k-pdf-export span.k-dropdown-wrap.k-state-default,
-    .k-pdf-export .fd-form input.form-control {
-        border: none !important;
-    }
-    
-    .k-pdf-export .k-dropdown .k-select {
-        display: none !important;
-    }
-
-    .k-pdf-export .fd-sp-datatable-wrapper table tr th:nth-of-type(1),
-    .k-pdf-export .fd-sp-datatable-wrapper table tr td:nth-of-type(1),
-    .k-pdf-export .fd-sp-datatable-wrapper table tr th:nth-of-type(2),
-    .k-pdf-export .fd-sp-datatable-wrapper table tr td:nth-of-type(2),
-    .k-pdf-export .fd-sp-datatable-toolbar {
-        display: none !important;
-    } 
-
-Finally, we want to add the company logo and contact information to the PDF document, but we don't want it to be visible in the form. For this, we place the logo and contact information inside a Grid and assign 'company-info' CSS class to it. 
+Also, we want to add the company logo and contact information to the PDF document, but we don't want it to be visible in the form. For this, we place the logo and contact information inside a Grid and assign 'company-info' CSS class to it. 
 
 .. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-11.png
    :alt: Company info
@@ -222,19 +220,174 @@ Finally, we want to add the company logo and contact information to the PDF docu
 Next, we add the code to the CSS editor that makes company information visible in PDF document only. 
 
 .. code-block:: CSS
-    
-    .company-info {
-        display: none !Important;
-    } 
-    
-    .k-pdf-export .company-info {
-        display: contents !important;
+
+    /*hide company information on the form*/
+    .company-info { 
+        display: none !Important; 
     } 
 
-This is the resulting PDF document: 
+    /*show company information in PDF document*/
+    .k-pdf-export .company-info { 
+        display: contents !important; 
+    } 
 
-.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-12.png
-   :alt: PDF with Company info
+And this is the result: 
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-18.png
+   :alt: Company info and button
+
+Change view of fields 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Also, we want to change the appearance of the input controls in the PDF document. Particularly, we want to hide the titles of fields and input borders. We can do that with the CSS code: 
+
+.. code-block:: CSS
+
+    /*hide field titles*/
+    .k-pdf-export label.fd-field-title {
+        display: none;
+    }
+
+    /*hide input borders*/
+    .k-pdf-export span.k-dropdown-wrap.k-state-default,
+    .k-pdf-export .fd-form input.form-control { 
+        border: none !important;
+    } 
+
+And get rid of icons, such as arrow icons in the dropdown, lookup, numeric fields, and calendar icon in the Date and Time field.
+
+.. code-block:: CSS
+
+    .k-pdf-export span.k-select {
+        display: none !important;
+    }
+
+Here you can see the difference between the form and the PDF document: 
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-19.png
+   :alt: Change view of fields
+
+Adjust Data Table and List or Library 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+One more thing you may want to change is the appearance of Data Table and List or Library controls in PDF document, specifically to hide the toolbar and command columns. 
+
+To hide the last column of Data Table, toolbar and colored lines, you can use the following CSS: 
+
+.. code-block:: CSS
+
+    /* hide delete column and toolbar from datatable */ 
+    .k-pdf-export .fd-datatable table tr th:last-child, 
+    .k-pdf-export .fd-datatable table tr td:last-child, 
+    .k-pdf-export .fd-datatable div.k-header.k-grid-toolbar 
+    { display: none; } 
+
+    /* remove colored lines from datatable */ 
+    .k-pdf-export .fd-datatable table tr.k-alt 
+    { background-color: white; }
+
+This is the appearance of the form and PDF file: 
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-20.png
+   :alt: Adjust Data table
+
+To do the same for List or Library control use this CSS: 
+
+.. code-block:: CSS
+
+    /* hide delete column and toolbar from List or Library  */ 
+
+    .k-pdf-export .fd-sp-datatable-wrapper table tr th:nth-of-type(1), 
+    .k-pdf-export .fd-sp-datatable-wrapper table tr td:nth-of-type(1), 
+    .k-pdf-export .fd-sp-datatable-wrapper table tr th:nth-of-type(2), 
+    .k-pdf-export .fd-sp-datatable-wrapper table tr td:nth-of-type(2), 
+    .k-pdf-export .fd-sp-datatable-toolbar { 
+        display: none !important; 
+    } 
+
+    /* remove colored lines from List or Library  */ 
+    .k-pdf-export .fd-sp-datatable-wrapper table tr.k-alt 
+    { background-color: white; } 
+
+This is how the List or Library control looks in a web form and in PDF file: 
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-21.png
+   :alt: Adjust List or Library
+
+Expand Tabs and Accordion sections
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you are using Tab or Accordion containers, you would probably want to display all its content at once in the exported PDF document, and this can be achieved with the use of CSS. 
+
+For example, I have a three tab on the form: 
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-22.png
+   :alt: Tabs
+
+Since we are going to hide tabs themselves, it would be a good idea to add Plain Text control title to each tab and give it a common CSS class, so they'll only be shown on the exported PDF, so I give each title 'tab-title' CSS class: 
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-23.png
+   :alt: CSS tabs containers
+
+Next, I add the following CSS to CSS editor: 
+
+.. code-block:: CSS
+
+    /* show tab contents for all tabs */ 
+    .k-pdf-export .tabset .tab-content div.tab-pane.fade { 
+    display: block !important; 
+    opacity: 1 !important; 
+    } 
+
+    /* hide tab navigation bar */ 
+    .k-pdf-export .tabset ul.nav.nav-tabs{ 
+    display: none !important; 
+    } 
+
+    /* hide tab titles by default */ 
+    .tab-title{ 
+    display: none; 
+    } 
+
+    /* show tab titles when exporting */ 
+    .k-pdf-export .tab-title{ 
+    display: block; 
+    } 
+
+And then, after exporting to PDF, we get this: 
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-24.png
+   :alt: Tabs PDF
+
+|
+
+Just like Tabs, Accordion panels could be expanded with appropriate CSS styles. 
+
+This is my form with Accordion container: 
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-25.png
+   :alt: Accordion
+
+To expand Accordion, we can use the following CSS: 
+
+.. code-block:: CSS
+
+    /* show contents for all Accordion panels */ 
+    .k-pdf-export .accordion .card-block{ 
+    display: block !important; 
+    height: auto !important; 
+    } 
+
+    /* gray out all navigation links */ 
+    .k-pdf-export .accordion>.card>.card-header>.nav-link { 
+    background-color: #fff; 
+    color: #55595c; 
+    } 
+
+And get the following result on  PDF page: 
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-26.png
+   :alt: Accordion PDF
 
 Non-Latin and special characters
 --------------------------------------------------
@@ -348,4 +501,12 @@ And this is a final PDF file:
 .. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-16.png
    :alt: Final PDF
 
+Conclusion
+--------------------------------------------------
 
+The above tips and tricks are good for exporting most forms right from the browser, but it is limited in a few ways. 
+
+If you are looking for a more complex solution which will allow you to configure how the form is converted to PDF, please, check out our :doc:`Generate PDF from DOCX template article </how-to/docx-to-pdf>`.
+
+.. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-27.png
+   :alt: DOCX Template
