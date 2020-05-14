@@ -1,4 +1,4 @@
-How to add a custom button to the toolbar of List or Library control and duplicate selected item
+How to add custom button to toolbar of List or Library control and duplicate selected item
 ==================================================================================================
 
 .. contents:: Contents:

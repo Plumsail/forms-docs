@@ -1,5 +1,5 @@
-Designing personal forms
-=========================================
+Designing personal forms with Plumsail Forms for SharePoint
+=============================================================
 
 .. toctree::
     :maxdepth: 1

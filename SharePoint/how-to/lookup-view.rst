@@ -1,4 +1,4 @@
-How to customize the appearance of search results for lookup fields in SharePoint form
+How to customize appearance of search results for lookup fields in SharePoint form
 ======================================================================================================
 
 .. contents:: Contents:

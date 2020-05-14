@@ -1,5 +1,5 @@
-Switch Display Form for Edit Form
-==================================================
+How to open edit form by default for specific SharePoint group
+======================================================================
 
 .. contents:: Contents:
  :local:

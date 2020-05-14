@@ -1,5 +1,5 @@
-Forms for different languages within one site
-===============================================
+How to create different SharePoint forms for alternative languages
+===================================================================
 
 .. contents:: Contents:
  :local:

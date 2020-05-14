@@ -1,5 +1,5 @@
-Make a form dynamic based on user's membership 
-=========================================================================
+How to display specific sections of SharePoint form conditionally based on user's membership
+=============================================================================================
 
 .. contents:: Contents:
  :local:
