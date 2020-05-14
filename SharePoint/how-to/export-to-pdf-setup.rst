@@ -1,4 +1,4 @@
-How to adjust SharePoint form for saving as PDF
+How to save SharePoint form as PDF for printing
 =================================================================
 
 .. contents:: Contents:
