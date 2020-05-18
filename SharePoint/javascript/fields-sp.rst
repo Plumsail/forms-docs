@@ -959,6 +959,46 @@ People Picker
                     alert('New value: ' + s);
                 });
 
+Hyperlink
+--------------------------------------------------
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **value**
+        -   Allows to get or set selected value. Returns an array.
+            |
+
+            *Examples:*
+
+            .. code-block:: javascript
+
+                // returns URL
+                fd.field('Hyperlink').value.url;
+
+                // returns Description
+                fd.field('Hyperlink').value.description;
+
+                // set URL
+                fd.field('Hyperlink').value.url = 'https://plumsail.com/';
+
+                // set Description
+                fd.field('Hyperlink').value.description = 'Plumsail';
+
+    *   -   **testLinkText**
+        -   Get or set text for testing the link, useful for localization.
+            |
+
+            *Example:*
+
+            .. code-block:: javascript
+
+                fd.field('Hyperlink').testLinkText = 'Cliquez ici pour tester'
+
+
 Managed Metadata (Taxonomy) Single
 --------------------------------------------------
 
