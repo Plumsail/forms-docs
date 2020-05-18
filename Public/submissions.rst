@@ -8,19 +8,22 @@ Collecting submissions of online forms designed with Plumsail Forms
 Enable data collection
 -------------------------------------------------------------
 Data collection and storage is disabled by default for all forms that you create. 
-You can enable it manually, if you go to Forms section of Plumsail Account:
+
+You can enable it manually after saving a form in form's **General settings**:
 
 |pic0|
 
-.. |pic0| image:: ./images/submissions/submissions_0_Click.png
-   :alt: Click on the form
+.. |pic0| image:: ./images/submissions/submissions-general-settings-save-submissions.png
+   :alt: Save submissions
 
-Click on the form that you want to enable data collection for and turn it on:
+.. note:: Enabling notifications will allow you to receive emails with submitted information.
+
+You can then view the data in Forms section of your Plumsail Account, simply click on the form:
 
 |pic1|
 
-.. |pic1| image:: ./images/submissions/submissions_1_Save_posts.png
-   :alt: Save posts
+.. |pic1| image:: ./images/submissions/submissions_0_Click.png
+   :alt: Click on the form
 
 After each submission, the data will be available in Plumsail Account:
 
