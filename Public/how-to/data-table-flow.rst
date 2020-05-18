@@ -26,7 +26,7 @@ Finally, the form will include a signature pad for the employee to sign the form
 
 Here's our result:
 
-.. image:: ../images/how-to/data-table-flow/1_Form.png
+.. image:: ../images/how-to/data-table-flow/how-to-data-table-flow-form.png
    :alt: Expense Reimbursement Form
 
 |

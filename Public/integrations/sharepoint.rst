@@ -1,7 +1,7 @@
 SharePoint with Plumsail web forms via Power Automate
 ==================================================================
 
-.. contents:: Examples:
+.. contents:: Contents:
  :local:
  :depth: 1
  
@@ -11,9 +11,15 @@ Create an item in a SharePoint List when someone submits Plumsail Form with |MS 
 
 |flowTemplateImgItem|
 
-Examples: 
- - Add tickets to your Helpdesk
- - Add contacts to your customer's list
+Examples
+***************************************************
+
+.. toctree::
+      :maxdepth: 1
+      
+      Create an item in SharePoint List <../how-to/item>
+      Send controls (Ink Sketch, DataTable, Likert Scale) to SharePoint columns <../how-to/save-controls-to-sp>
+
 
 Upload a file
 --------------------------------------------------
@@ -21,9 +27,13 @@ Upload a document from Attachments when someone submits Plumsail Form with |MS P
 
 |flowTemplateImgFile|
 
-Examples: 
- - Upload pictures taken from a phone
- - Upload invoices or quotas for the paid orders
+Examples
+***************************************************
+
+.. toctree::
+      :maxdepth: 1
+      
+      Upload files to SharePoint Document Library <../how-to/file>
 
 .. |MS Power Automate|  raw:: html
 

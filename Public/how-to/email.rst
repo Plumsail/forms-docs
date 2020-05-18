@@ -1,5 +1,5 @@
 Send an email from form with Power Automate (MS Flow)
-==================================================
+=====================================================
 
 .. contents:: Contents:
  :local:
@@ -58,10 +58,10 @@ We'll need to find the correct trigger for Forms Submission. Search for *Plumsai
 
 |
 
-Next, you need to fill in Form ID. It can be found in **General Settings** in the designer. 
+Next, you just need to select your form:
 
-.. image:: ../images/how-to/email/email-04.png
-   :alt: Add ID from General Settings
+.. image:: ../images/how-to/email/how-to-email-flow-select-form.png
+   :alt: Select your form
 
 |
 

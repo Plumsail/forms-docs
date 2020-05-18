@@ -1,7 +1,7 @@
 Send email from Plumsail Form with MS Power Automate or Zapier
 ==================================================================
 
-.. contents:: Examples:
+.. contents:: Contents:
  :local:
  :depth: 1
  
@@ -14,11 +14,16 @@ Send an e-mail message when someone submits Plumsail Form with |MS Power Automat
 .. |flow process img| image:: ../images/integration/email/integration-email-flow-process.png
    :alt: Flow process
 
-The recommended connector is Mail. You can alternatively use one of the following connectors: **Outlook**, **Gmail**, **SMTP**, etc. 
+The recommended connector is Mail. You can alternatively use one of the following connectors: **Outlook**, **Gmail**, **SMTP**, etc.
 
-Examples: 
- - Send email notification 
- - Generate PDF and send by email 
+Examples
+***************************************************
+
+.. toctree::
+      :maxdepth: 1
+      
+      Send email notification <../how-to/email>
+      Generate PDF with Data Table and send by email <../how-to/data-table-flow>
 
 .. |MS Power Automate|  raw:: html
 
@@ -37,10 +42,6 @@ Recommended templates:
 |zapTemplateImgOutlook|
 
 |zapTemplateImgSMTP|
-
-Examples: 
- - Send email notification 
- - Generate PDF and send by e-mail 
 
 .. |Zapier|  raw:: html
 
