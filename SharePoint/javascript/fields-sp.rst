@@ -884,7 +884,7 @@ Boolean - Yes/No
                     alert('New value: ' + value);
                 });
 
-People Picker
+Person or Group
 --------------------------------------------------
 
 .. list-table::

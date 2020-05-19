@@ -127,3 +127,8 @@ And here I've selected Camera Category:
 
 .. |pic7| image:: ../images/how-to/lookup-cascading/cameras.png
    :alt: Cameras selected
+
+Examples
+-----------------------------------------------------
+
+Learn how to filter lookup results by selected date and time from :doc:`Conference room reservation system </examples/reservation-system>` article. 
