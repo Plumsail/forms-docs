@@ -78,11 +78,13 @@ These two buttons appear on the ribbon only after you've saved the form.
 
 You can turn off the Activate submissions option for testing purposes. Thus the form won't be submitted to our server and neither be saved nor processed in Power Automate or Zapier, and the submission won't be counted either.
 
-Be careful with Form Schema when updating the form, it only changes after the form has been saved.
+Save submissions will ensure that the submitted information is :doc:`stored in your Plumsail Account <../submissions>`.
+
+Enable notifications option will send emails with submitted data to your email.
 
 |pic5|
 
-.. |pic5| image:: ../images/designer/ribbon-actions/ribbon-actions-05.png
+.. |pic5| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-general-settings.png
    :alt: General Settings for Plumsail Forms
 
 

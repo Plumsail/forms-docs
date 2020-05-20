@@ -1,6 +1,12 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+v1.6.2
+--------------------------------------------------
+New theme builder
+
+Notifications of new submissions
+
 v1.5.9
 --------------------------------------------------
 Steps in Wizard container can now be re-organized with drag-n-drop
