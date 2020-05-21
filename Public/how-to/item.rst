@@ -36,14 +36,14 @@ but you'll need to Submit Data to Flow in General Settings.
 
 I've designed this simple form:
 
-.. image:: ../images/how-to/item/1_DesignForm.png
+.. image:: ../images/how-to/item/item-04.png
    :alt: Design Form
 
 |
 
 Once you design and save the form, you will see **General Settings** button pop up on top. This section contains important information you'll need to use while setting up the Flow:
 
-.. image:: ../images/how-to/item/General.png
+.. image:: ../images/how-to/item/item-05.png
    :alt: General Settings
 
 |

@@ -28,14 +28,14 @@ Next, after designing the Library, create Plumsail form in Forms Designer and do
 
 I've designed this simple form:
 
-.. image:: ../images/how-to/file/1_DesignForm.png
+.. image:: ../images/how-to/file/file-00.png
    :alt: Design Form
 
 |
 
 Once you design and save the form, you will see **General Settings** button pop up on top. This section contains important information you'll need to use while setting up the Flow:
 
-.. image:: ../images/how-to/file/General.png
+.. image:: ../images/how-to/file/file-04.png
    :alt: General Settings
 
 |

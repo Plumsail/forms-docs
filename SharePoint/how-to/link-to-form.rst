@@ -90,3 +90,8 @@ The structure of the speicific URL is this:
 
 You can find all the forms stored in Site contents -> Site Pages/PlumsailForms in the folders with List names.
 
+Examples
+-----------------------------------------------------
+
+Also, you might be interested in how to move new SharePoint form page to another location. Find out how to do it :doc:`here </examples/newform-page>`. 
+
