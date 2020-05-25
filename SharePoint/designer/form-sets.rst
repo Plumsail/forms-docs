@@ -205,4 +205,4 @@ Redirect to a certain Form Set if form is opened in full page mode, in a panel, 
 Examples
 -----------------------------------------------------
 
-Please see how you can use Form Sets on the example of :doc:`Ticket management system</examples/ticket-management>`.
+Please see how you can use Form Sets through the example of :doc:`Ticket management system</examples/ticket-management>`.

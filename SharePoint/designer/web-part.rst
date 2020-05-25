@@ -80,4 +80,6 @@ The form will then be submitted to Flow, where you can `process it <https://plum
 Examples
 -----------------------------------------------------
 
-Learn how to embed web form or SharePoint form into Microsoft Teams in :doc:`this</examples/ms-teams>` article. 
+- :doc:`Embedding forms into Microsoft Teams</examples/ms-teams>`
+
+- :doc:`Personal form for creating and tracking tickets on an arbitrary SharePoint page</examples/ticket-management>`
