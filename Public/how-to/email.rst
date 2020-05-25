@@ -27,7 +27,7 @@ Don't forget to include the Submit button, so the form can be actually submitted
 
 Here's the simple form designed to receive customers feedback on Forms Designer problems:
 
-.. image:: ../images/how-to/email/1_DesignForm.png
+.. image:: ../images/how-to/email/email-05.png
    :alt: Design Form
 
 |

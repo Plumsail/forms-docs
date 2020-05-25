@@ -101,6 +101,10 @@ Here is the demonstration of the Expense Approval Form.
 .. |pic3| image:: ../images/how-to/dynamic-form-based-on-membership/dynamic-form-based-on-membership-00.gif
    :alt: Dynamic Form
 
+Examples
+-----------------------------------------------------
+Also, you can use :doc:`Form Sets </designer/form-sets>` to create personal forms for different user groups. Find out how to do it :doc:`here </examples/ticket-management>`.
+
 .. |PnPjs|  raw:: html
 
    <a href="https://pnp.github.io/pnpjs/" target="_blank">PnPjs</a>

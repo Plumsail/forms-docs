@@ -26,7 +26,7 @@ Agent Information form contains the following fields:
 - Agent Name (text field);
 - Postal Address (text field);
 - Phone Number (text field);
-- Manager Name (people picker field).
+- Manager Name (person or group field).
 
 In Edit and Display forms, we also add a Tab control with two tabs: Incoming and Outgoing. Each tab contains a List or Library control associated with the corresponding document library.
 

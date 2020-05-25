@@ -44,7 +44,7 @@ The form has the following fields:
 
 Questions in the form are structured with |wizard containers|.  
 
-You can download the form template |here|. 
+You can |download this form| and import to the desktop designer.
 
 Export submissions 
 --------------------------------------------------
@@ -114,6 +114,6 @@ You can build charts and tables based on the loaded data. For example, you can b
 
    <a href="https://plumsail.com/docs/forms-web/designer/containers.html#wizard" target="_blank">wizard containers</a>
 
-.. |here|  raw:: html
+.. |download this form|  raw:: html
 
-   <a href="..\_static\forms\service_quality_form.xfds" target="_blank" download>here</a>
+   <a href="..\_static\forms\service_quality_form.xfds" target="_blank" download>download this form</a>

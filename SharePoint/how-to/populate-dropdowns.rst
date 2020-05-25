@@ -25,7 +25,7 @@ First, we create a list at the root site that is storing department codes.
 
 Then, on another site, we create a Leave Request list with these columns: 
 
-- Employee Name (people picker field); 
+- Employee Name (person or group field); 
 
 - Job Title (text field); 
 

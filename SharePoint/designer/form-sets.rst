@@ -201,3 +201,8 @@ Redirect to a certain Form Set if form is opened in full page mode, in a panel, 
     // Plumsail Forms Web Part 
     if (host === 2)
         return '719a0769-1c0a-4a6c-8dcf-57abc8a7d71a';
+
+Examples
+-----------------------------------------------------
+
+Please see how you can use Form Sets through the example of :doc:`Ticket management system</examples/ticket-management>`.

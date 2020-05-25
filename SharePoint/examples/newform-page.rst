@@ -45,4 +45,4 @@ Now, users can go to directly to this place and open the form from a page (which
    :alt: Open Form from Site Pages
 
 
-By default, submitting the New Form will always redirect you to the List View of this form, but you can change it. Find out how to do it `here <./redirect-sp-save.html>`_.
+By default, submitting the New Form will always redirect you to the List View of this form, but you can change it. Find out how to do it :doc:`here </how-to/redirect-sp-save>`.
