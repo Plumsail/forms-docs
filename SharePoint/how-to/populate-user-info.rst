@@ -10,7 +10,7 @@ Introduction
 
 In this article, we will show you how to retrieve information from a user profile and prepopulate form fields with it. 
 
-Let's say an HR administrator needs to fill in an expense report form on behalf of an employee. The report contains user information fields that we want to be populated automatically from the user's profile once the administrator selects a user in a people picker field. 
+Let's say an HR administrator needs to fill in an expense report form on behalf of an employee. The report contains user information fields that we want to be populated automatically from the user's profile once the administrator selects a user in a Person or Group field. 
 
 |pic0|
 
@@ -25,11 +25,11 @@ Expense Report Form
 
 First, create a simple form with the following fields:  
 
-- Employee Name (people picker field);
+- Employee Name (person or group field);
 - Job Title (plain text field);
 - Department (plain text field);
 - Mobile (plain text field);
-- Manager Name (people picker field);
+- Manager Name (person or group field);
 - Expense Sum (currency field). 
 
 |

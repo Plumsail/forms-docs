@@ -246,6 +246,11 @@ By default, the working hours are 09:00-17:00, Monday through Friday. But you ca
 
 You can add and subtract working hours using the same plugin. Please find more details |here2|.
 
+Examples
+-----------------------------------------------------
+
+Please see :doc:`this</examples/reservation-system>`  article to learn how to create SharePoint form for booking a meeting room.
+
 .. |Moment.js|  raw:: html
 
    <a href="https://momentjs.com" target="_blank">Moment.js</a>

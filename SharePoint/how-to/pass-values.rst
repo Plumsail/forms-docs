@@ -40,7 +40,7 @@ Issues list will contain the following columns:
 
 - Title (text field);
 - Facility (lookup field);
-- Manager (people picker field);
+- Manager (person or group field);
 - Description (plain text field);
 - Priority (choice field).
 

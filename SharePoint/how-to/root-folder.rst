@@ -103,3 +103,8 @@ With this code we can make Root Folder automatically change when Category field 
             }
         }
     });
+
+Examples
+-----------------------------------------------------
+
+Learn how to automatically create a folder and set it as a root folder from :doc:`this </examples/create-folder>` article.

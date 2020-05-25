@@ -76,3 +76,10 @@ If you want to publish Public Web Form, simply create it, save it, open General 
    :alt: Publish Public Web Form
 
 The form will then be submitted to Flow, where you can `process it <https://plumsail.com/docs/forms-web/microsoft-flow.html>`_.
+
+Examples
+-----------------------------------------------------
+
+- :doc:`Embedding forms into Microsoft Teams</examples/ms-teams>`
+
+- :doc:`Personal form for creating and tracking tickets on an arbitrary SharePoint page</examples/ticket-management>`

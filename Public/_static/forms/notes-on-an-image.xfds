@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Form JavaScript="var attachmentsName = 'Attachments1'; &#xD;&#xA;var inkSketchName = 'Damage'; &#xD;&#xA;var canvasSize = '600px 500px'; &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;function updateBackground() {  &#xD;&#xA;&#xD;&#xA;    var attachmentsField = fd.field(attachmentsName); &#xD;&#xA;    var inkSketchControl = fd.control(inkSketchName); &#xD;&#xA;&#xD;&#xA;    if (attachmentsField.value &amp;&amp; attachmentsField.value.length &gt; 0) { &#xD;&#xA;&#xD;&#xA;        //Getting URL of the attached file  &#xD;&#xA;        var imageURL = attachmentsField.value[0].url;  &#xD;&#xA;&#xD;&#xA;        //Setting the background &#xD;&#xA;        inkSketchControl.$el.style = 'background-image: url(&quot;' + imageURL + '&quot;); background-size:' + canvasSize + '; background-repeat: no-repeat;';  &#xD;&#xA;&#xD;&#xA;    } else { &#xD;&#xA;&#xD;&#xA;        //Clearing the background &#xD;&#xA;        inkSketchControl.$el.style = 'background-image: none;';          &#xD;&#xA;&#xD;&#xA;    }    &#xD;&#xA;}  &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;fd.rendered(function(){&#xD;&#xA;&#xD;&#xA;    // updating the backgroung on changing the Attachments field&#xD;&#xA;    fd.field(attachmentsName).$on('change', updateBackground);&#xD;&#xA;&#xD;&#xA;    // updateing the background on form loading&#xD;&#xA;    updateBackground();&#xD;&#xA;});" Css=".form-container {&#xD;&#xA;    box-shadow: none !important;&#xD;&#xA;}" SubmitToFlow="true" FormId="bd0a49b9-1f9d-411b-9e63-5b4a9e103d69" Theme="">
+  <PCView>
+    <Layout Version="1.0.0.0">
+      <Grid Stacked="Small" DefaultChildWidth="6">
+        <Row>
+          <Cell Width="12" Offset="0">
+            <Grid Stacked="Small" DefaultChildWidth="12">
+              <Row>
+                <Cell Width="12" Offset="0">
+                  <TextBlock Text="Car Damage Report" TextType="Header1" InternalName="Text1" />
+                </Cell>
+              </Row>
+              <Row>
+                <Cell Width="6" Offset="0" CssClass="left">
+                  <Grid Stacked="Small" DefaultChildWidth="12">
+                    <Row>
+                      <Cell Width="12" Offset="0">
+                        <Field Title="Driver Name" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="TextBox1" Required="False" PatternType="Custom" />
+                      </Cell>
+                    </Row>
+                    <Row>
+                      <Cell Width="12" Offset="0">
+                        <Field Title="Car" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="TextBox2" Required="False" PatternType="Custom" />
+                      </Cell>
+                    </Row>
+                    <Row>
+                      <Cell Width="12" Offset="0">
+                        <Field Title="Model" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="TextBox" InternalName="TextBox3" Required="False" PatternType="Custom" />
+                      </Cell>
+                    </Row>
+                    <Row>
+                      <Cell Width="12" Offset="0">
+                        <Field Title="Photo" TitleFontStyle="Normal" TitleFontWeight="Normal" Orientation="Horizontal" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Attachments" InternalName="Attachments1" Required="False" MaxSize="50240" AllowedExtensions="[]" />
+                      </Cell>
+                    </Row>
+                    <Row>
+                      <Cell Width="12" Offset="0">
+                        <SaveButton OnClick="&quot;return fd.save();\n&quot;" Text="Submit" Width="200" InternalName="Button1" Type="primary" />
+                      </Cell>
+                    </Row>
+                  </Grid>
+                </Cell>
+                <Cell Width="6" Offset="0" CssClass="right">
+                  <Grid Stacked="Small" DefaultChildWidth="12">
+                    <Row>
+                      <Cell Width="12" Offset="0">
+                        <Signature Width="600" Height="500" InkColor="#FF0000" InternalName="Damage" />
+                      </Cell>
+                    </Row>
+                  </Grid>
+                </Cell>
+              </Row>
+            </Grid>
+          </Cell>
+        </Row>
+      </Grid>
+    </Layout>
+  </PCView>
+</Form>

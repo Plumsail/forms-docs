@@ -132,7 +132,7 @@ v1.3.6
 --------------------------------------------------
 Added read-only mode for Likert Scale control.
 
-Fixed issues with Lookup and People picker field.
+Fixed issues with Lookup and	Person or Group field.
 
 v1.3.5
 --------------------------------------------------

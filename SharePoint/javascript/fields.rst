@@ -585,7 +585,7 @@ Events
     *   -   **ready**
         -   Returns promise that is resolved when the field has fully loaded. Useful for executing scripts as soon as the field fully loads.
         
-            **Only available for List or Library control, People picker, Lookup and Content Type SharePoint fields!**
+            **Only available for List or Library control, Person or Group, Lookup and Content Type SharePoint fields!**
             
             |
 

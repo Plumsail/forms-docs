@@ -92,8 +92,11 @@ By default, the ink color is black. In the control settings, you can change the 
     });  
 
 To apply it to your form, you need to: 
+
 - replace 'Attachments0' and 'Signature0' with the internal names of your 'Attachment' field and 'Ink Sketch' control; 
 - specify the 'Ink Sketch' control canvas size in 'canvasSize' variable. 
+
+You can |download this form| and import to the desktop designer.
 
 View submissions
 --------------------------------------------------
@@ -134,3 +137,7 @@ Please see |Ink Sketch properties| and |Ink Sketch control| documentation for mo
 .. |Ink Sketch control| raw:: html
 
    <a href="https://plumsail.com/docs/forms-web/designer/controls.html#ink-sketch" target="_blank">'Ink Sketch control'</a>
+
+.. |download this form|  raw:: html
+
+   <a href="..\_static\forms\notes-on-an-image.xfds" target="_blank" download>download this form</a>
