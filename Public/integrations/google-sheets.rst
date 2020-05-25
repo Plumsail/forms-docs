@@ -21,8 +21,7 @@ Recommended template:
 
    <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/1229be9a6c3e4e3790a25d93bcaaa7b6/insert-a-row-in-google-sheets-when-plumsail-form-is-submitted/" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/google-sheets/integration-google-sheets-flow.png">Insert a row in Google Sheets when Plumsail form is submitted</a>
 
-Examples
-***************************************************
+|Examples|
 
 .. toctree::
       :maxdepth: 1
@@ -46,10 +45,13 @@ Recommended template:
 
    <a href="https://zapier.com/app/editor/template/122902" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/google-sheets/integration-google-sheets-zap-template.png">Create Google Sheets rows from new Plumsail Forms submissions</a>
 
-Examples
-***************************************************
+|Examples|
 
 .. toctree::
       :maxdepth: 1
       
       Data Table to Google Sheets with Zapier <../how-to/zapier-googlesheets>
+
+.. |Examples|  raw:: html
+
+   <h3><a>Examples</a></h3>

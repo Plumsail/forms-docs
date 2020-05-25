@@ -11,8 +11,7 @@ Create an item in a SharePoint List when someone submits Plumsail Form with |MS 
 
 |flowTemplateImgItem|
 
-Examples
-***************************************************
+|Examples|
 
 .. toctree::
       :maxdepth: 1
@@ -27,8 +26,7 @@ Upload a document from Attachments when someone submits Plumsail Form with |MS P
 
 |flowTemplateImgFile|
 
-Examples
-***************************************************
+|Examples|
 
 .. toctree::
       :maxdepth: 1
@@ -46,3 +44,7 @@ Examples
 .. |flowTemplateImgFile|  raw:: html
 
    <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/bb6bc611bfa543099b8caf2c0c440ad4/create-sharepoint-files-for-the-attachments-when-plumsail-form-is-submitted/" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/sharepoint/integration-sharepoint-flow-attachment.png">Create SharePoint files for the attachments when Plumsail form is submitted</a>
+
+.. |Examples|  raw:: html
+
+   <h3><a>Examples</a></h3>

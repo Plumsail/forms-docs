@@ -16,8 +16,7 @@ Send an e-mail message when someone submits Plumsail Form with |MS Power Automat
 
 The recommended connector is Mail. You can alternatively use one of the following connectors: **Outlook**, **Gmail**, **SMTP**, etc.
 
-Examples
-~~~~~~~~~~~~~~~~~~~~
+|Examples|
 
 .. toctree::
       :maxdepth: 1
@@ -62,3 +61,7 @@ Recommended templates:
 .. |zapTemplateImgSMTP|  raw:: html
 
    <a href="https://zapier.com/app/editor/template/154241" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-zap-template-smtp.png">Send email via SMTP from new Plumsail Forms submissions</a>
+
+.. |Examples|  raw:: html
+
+   <h3><a>Examples</a></h3>

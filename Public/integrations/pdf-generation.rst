@@ -12,8 +12,7 @@ You can use OneDrive for Business to generate HTML and convert it to PDF, then c
 
 Alternatively, you can use |Plumsail Documents| to create PDF files from template.
 
-Examples
-~~~~~~~~~~~~~~~~~~~~
+|Examples|
 
 .. toctree::
       :maxdepth: 1
@@ -27,3 +26,7 @@ Examples
 .. |Plumsail Documents| raw:: html
 
    <a href="https://plumsail.com/documents/" target="_blank">Plumsail Documents</a>
+
+.. |Examples|  raw:: html
+
+   <h3><a>Examples</a></h3>
