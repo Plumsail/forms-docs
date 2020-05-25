@@ -83,7 +83,16 @@ If this is your first Flow, at this point you'll need to **Sign in to** |Plumsai
 
 |
 
-Now, you'll need to add the ID of the Form that you've created. Form ID can be found and copied in **Flow Settings** in the designer:
+Select *Enter custom value*:
+
+|pic-custom-value|
+
+.. |pic-custom-value| image:: /images/how-to/flow/how-to-flow-select-form-custom.png
+   :alt: Enter custom value
+
+|
+
+Enter Form ID, which can be found and copied in **Flow Settings** in the Designer:
 
 |pic8|
 

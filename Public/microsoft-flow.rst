@@ -55,14 +55,12 @@ If this is your first Flow, at this point you'll need to **Sign in to** |Plumsai
 .. |pic4| image:: /images/flow/11_AuthorizationNew.png
    :alt: Sign in to Plumsail Account
 
-Now, you'll need to add the ID of the Form you want to track. You can enter ID of the form you already created or create and save a new form in the designer.
+Select the form that you want to track:
 
-Form ID can be found and copied in **General Settings** in the Designer.
+|pic_fin|
 
-|pic5|
-
-.. |pic5| image:: /images/flow/11_FormIDNew.png
-   :alt: Form ID
+.. |pic_fin| image:: /images/flow/flow-select-form.png
+   :alt: Select form in flow
 
 That's it, after this action you can do pretty much anything with submitted data - it's parsed and ready to be used.
 

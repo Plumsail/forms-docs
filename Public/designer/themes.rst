@@ -1,11 +1,11 @@
-Configuring color theme for online forms designed with Plumsail Forms
+Configuring theme for online forms designed with Plumsail Forms
 ===============================================================================
 
 .. _designer-publicthemes:
 
 Themes for Public Web Forms
 -------------------------------------------------------------
-Using themes is an easy and quick way to change coloring scheme for all Fields, Controls and Containers.
+Using themes is an easy and quick way to change coloring scheme for all Fields, Controls and Containers, as well as default font, and field borders.
 
 Here's an example of the same form with different themes:
 
@@ -19,28 +19,11 @@ Here's an example of the same form with different themes:
    :alt: Orange Plumsail Form Theme
    :width: 40%
 
-To adjust the theme for your Public Web form, click the Theme button in the designer:
-
-|pic6|
-
-.. |pic6| image:: ../images/designer/themes/ThemeButton.png
-   :alt: Theme button for Plumsail Forms
-
-You will see Theming Settings menu and here you can either select one of default themes:
-
-|pic7| |pic8|
-
-.. |pic7| image:: ../images/designer/themes/ThemingSettings.png
-   :alt: Plumsail Form ThemingSettings
-
-.. |pic8| image:: ../images/designer/themes/DefaultThemes.png
-   :alt: Default Plumsail Form Themes
-
-Or create your own custom theme by selecting colors (will need to wait a few minutes for custom theme to apply):
+Select one of default or create your own custom theme via **Theme Settings**:
 
 |pic9|
 
-.. |pic9| image:: ../images/designer/themes/Custom.png
+.. |pic9| image:: ../images/designer/themes/designer-themes-settings.png
    :alt: Custom Theme for Plumsail Forms
 
 In order to apply a theme, don't forget to **Save** the form!
@@ -51,7 +34,7 @@ There is an option to compare different themes in Form Preview to see how they w
 
 |pic10|
 
-.. |pic10| image:: ../images/designer/themes/Preview.png
+.. |pic10| image:: ../images/designer/themes/designer-themes-preview.png
    :alt: Form Preview with Theme Selection
 
 You can always use additonal CSS to add more changes to the form and to further customize it for your needs.
