@@ -1,5 +1,5 @@
-Manipulate fields dynamically
-==================================================
+How to populate, hide, disable, or make mandatory public web form fields in JavaScript
+========================================================================================
 
 .. contents:: Contents:
  :local:

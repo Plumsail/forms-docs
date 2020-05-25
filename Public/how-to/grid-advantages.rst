@@ -1,5 +1,5 @@
-Use Grids instead of Tables
-==================================================
+How to design complex and responsive public web forms with grids in Plumsail Forms
+====================================================================================
 
 .. contents:: Contents:
  :local:
