@@ -7,9 +7,9 @@ Format Data Table in an HTML-template before converting into PDF
 
 Introduction
 --------------------------------------------------
-This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Actions|.
+This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Documents|.
 
-It's an additional example of using Plumsail Forms data with Plumsail Actions, so it can be used like described in :doc:`the previous article </how-to/data-table-flow>`.
+It's an additional example of using Plumsail Forms data with Plumsail Documents, so it can be used like described in :doc:`the previous article </how-to/data-table-flow>`.
 
 In here, we will also show you how you can format data inside Data Table with HTML-template for columns such as date.
 
@@ -26,7 +26,7 @@ Microsoft Flow using HTML template functionality
 --------------------------------------------------
 This will show you how you can set up Flow with DataTable without converting it to HTML table first.
 
-Read more about adding Plumsail Actions connector in this section - :ref:`plumsail-actions-flow`.
+Read more about adding Plumsail Documents connector in this section - :ref:`plumsail-actions-flow`.
 
 Once the connector is set up, search for HTML Template and select *Plumsail Documents - Create HTML from template*:
 
@@ -116,7 +116,7 @@ As you can see, there are several interesting things I've used here. First of al
 
 Adding **:d** after date will automatically convert any date to American Short Date format *MM/dd/yyyy*.
 
-Plumsail Actions HTML Template engine is based on |mustache#| and provides the same formatting based on |String.Format|.
+Plumsail Documents HTML Template engine is based on |mustache#| and provides the same formatting based on |String.Format|.
 
 Another thing of interest is iteration through each item in ExpensesTable:
 
@@ -147,9 +147,9 @@ As you can see, I've formatted the dates and added a dollar sign before cost, to
 
    <a href="https://msdn.microsoft.com/en-us/library/system.string.format.aspx" target="_blank">String.Format</a>
 
-.. |Plumsail Actions| raw:: html
+.. |Plumsail Documents| raw:: html
 
-   <a href="https://plumsail.com/actions/" target="_blank">Plumsail Actions</a>
+   <a href="https://plumsail.com/documents/" target="_blank">Plumsail Documents</a>
 
 Now we can convert result HTML into PDF. Search for Plumsail Documents and select *Plumsail Documents - Convert HTML to PDF*:
 

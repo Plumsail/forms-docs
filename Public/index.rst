@@ -81,3 +81,4 @@ Plumsail Forms Documentation (public web forms)
             :maxdepth: 2
 
             integrations/saving-sharing
+            integrations/document-generation

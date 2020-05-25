@@ -17,7 +17,7 @@ Send an e-mail message when someone submits Plumsail Form with |MS Power Automat
 The recommended connector is Mail. You can alternatively use one of the following connectors: **Outlook**, **Gmail**, **SMTP**, etc.
 
 Examples
-***************************************************
+~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
       :maxdepth: 1
