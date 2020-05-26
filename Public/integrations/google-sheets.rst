@@ -27,7 +27,7 @@ Recommended template:
       :maxdepth: 1
       
       Add row to Excel Table (Office365) or Google Sheet from Public Web Form <../how-to/excel-single-row>
-      Use table to add rows to Excel (Office365) or Google Sheet from Public Web Form <../how-to/excel-datatable>
+      Use Data Table to add rows to Excel (Office365) or Google Sheet from Public Web Form <../how-to/excel-datatable>
 
 Zapier
 --------------------------------------------------
@@ -50,7 +50,7 @@ Recommended template:
 .. toctree::
       :maxdepth: 1
       
-      Data Table to Google Sheets with Zapier <../how-to/zapier-googlesheets>
+      Use Data Table to add rows to Google Sheets with Zapier <../how-to/zapier-googlesheets>
 
 .. |Examples|  raw:: html
 
