@@ -1,5 +1,5 @@
-Integrate Forms with MS Teams (Public and SharePoint)
-=====================================================
+How to embed web form or SharePoint form into Microsoft Teams
+==============================================================
 
 .. contents:: Contents:
  :local:

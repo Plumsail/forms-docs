@@ -1,5 +1,5 @@
-Likert Scale to Excel Chart through Zapier
-==================================================
+How to save Likert Scale answers to Excel with Zapier and build real-time charts
+==================================================================================
 
 .. contents:: Contents:
  :local:

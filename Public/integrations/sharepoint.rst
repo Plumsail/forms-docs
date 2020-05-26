@@ -18,7 +18,7 @@ Create an item in a SharePoint List when someone submits Plumsail Form with |MS 
       
       Create an item in SharePoint List <../how-to/item>
       Send controls (Ink Sketch, DataTable, Likert Scale) to SharePoint columns <../how-to/save-controls-to-sp>
-      Create a web form with Data Table and saving data into SharePoint lists <../how-to/data-table-to-sp>
+      Create SharePoint list items from Data Table rows <../how-to/data-table-to-sp>
 
 
 Upload a file

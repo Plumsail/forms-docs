@@ -42,6 +42,13 @@ Recommended templates:
 
 |zapTemplateImgSMTP|
 
+|Examples|
+
+.. toctree::
+      :maxdepth: 1
+      
+      Send email with signature and attachments <../how-to/zapier-email>
+
 .. |Zapier|  raw:: html
 
    <a href="https://zapier.com/" target="_blank">Zapier</a>

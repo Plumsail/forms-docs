@@ -1,4 +1,4 @@
-Use table to add rows to Excel (Office365) or Google Sheet from Public Web Form
+How to create Excel or Google Sheet rows from Data Table with Power Automate 
 ================================================================================
 
 .. contents:: Contents:

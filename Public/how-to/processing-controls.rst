@@ -2,7 +2,7 @@ Processing Data Table, Ink Sketch, Likert Scale with Power Automate
 ====================================================================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Convert Data Table into PDF document  <./data-table-flow>
     Convert Data Table into HTML document <./data-table-convert-html>
