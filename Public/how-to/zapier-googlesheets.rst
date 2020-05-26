@@ -1,5 +1,5 @@
-Data Table to Google Sheets with Zapier
-==================================================
+How to create rows in Google Sheets from Data Table with Zapier 
+==================================================================
 
 .. contents:: Contents:
  :local:

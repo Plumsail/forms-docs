@@ -1,5 +1,5 @@
-Format Data Table in an HTML-template before converting into PDF
-=================================================================
+How to generate HTML-template for Data Table and convert it into PDF document with Power Automate 
+==========================================================================================================
 
 .. contents:: Contents:
  :local:
