@@ -4,7 +4,5 @@ Document generation
 .. toctree::
     :maxdepth: 1
 
-    PDF <>
-    Word <>
-    Excel <>
-    Google Sheets <>
+    PDF <./pdf-generation>
+    Google Sheets <./google-sheets>

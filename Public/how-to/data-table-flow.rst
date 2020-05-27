@@ -1,5 +1,5 @@
-Convert form with Data Table into PDF and send for approval
-============================================================
+How to convert web form with Data Table into PDF and send for approval with Power Automate 
+==================================================================================================
 
 .. contents:: Contents:
  :local:
@@ -26,7 +26,7 @@ Finally, the form will include a signature pad for the employee to sign the form
 
 Here's our result:
 
-.. image:: ../images/how-to/data-table-flow/1_Form.png
+.. image:: ../images/how-to/data-table-flow/how-to-data-table-flow-form.png
    :alt: Expense Reimbursement Form
 
 |
@@ -138,7 +138,7 @@ Microsoft Flow using HTML Table
 --------------------------------------------------
 In this example we will first create HTML Template from the submitted data and then transform HTML into PDF and send it via Email.
 
-We will use |Plumsail Actions| to create HTML with template which would use submitted data, then convert this HTML into PDF.
+We will use |Plumsail Documents| to create HTML with template which would use submitted data, then convert this HTML into PDF.
 
 If you haven't read our introduction to using MS Flow with Plumsail Forms, you can find information on how to add our custom connector :doc:`here </microsoft-flow>`.
 
@@ -164,10 +164,10 @@ Here, we pass ExpensesTable in From field, I also open Advanced options and sele
 
 .. _plumsail-actions-flow:
 
-Plumsail Actions in Power Automate (MS Flow) for DataTable
---------------------------------------------------
+Plumsail Documents in Power Automate (MS Flow) for DataTable
+------------------------------------------------------------------
 
-Now, we will use Plumsail Actions connector, which you can read about setting up |Plumsail Actions connector|. 
+Now, we will use Plumsail Documents connector, which you can read about setting up |Plumsail Documents connector|. 
 
 You can either create Custom connector or use MS Flow Premium connector, 
 but you will need to have an API key from |Plumsail Account| in both cases.
@@ -176,9 +176,9 @@ but you will need to have an API key from |Plumsail Account| in both cases.
 
    <a href="https://auth.plumsail.com/account/login" target="_blank">Plumsail Account</a>
 
-.. |Plumsail Actions connector| raw:: html
+.. |Plumsail Documents connector| raw:: html
 
-   <a href="https://plumsail.com/docs/actions/v1.x/getting-started/use-from-flow.html" target="_blank">here</a>
+   <a href="https://plumsail.com/docs/documents/v1.x/getting-started/use-from-flow.html" target="_blank">here</a>
 
 Once the connector is set up, search for HTML Template and select *Plumsail Documents - Create HTML from template*:
 
@@ -309,13 +309,13 @@ Now, when we run the Flow, I receive an email with this PDF:
 
 Summary
 --------------------------------------------------
-In conclusion, I just wanted to bring your attention on how easy it is to transform any Plumsail Form submitted to Flow into PDF with |Plumsail Actions|.
+In conclusion, I just wanted to bring your attention on how easy it is to transform any Plumsail Form submitted to Flow into PDF with |Plumsail Documents|.
 
 Just follow three easy steps - submit form to Flow and parse JSON, transform data to HTML template and transform HTML template to PDF.
 
 You can read more about the first step in our :ref:`creating-flow` article.
 
-Trasnforming to HTML is also an easy step with Plumsail Actions, read more about it here - |Create HTML|. 
+Trasnforming to HTML is also an easy step with Plumsail Documents, read more about it here - |Create HTML|. 
 
 You can even include any custom layout in HTML template, for example, your company's logo in the header of template and extra information in the footer:
 
@@ -328,14 +328,14 @@ Finally, transforming to PDF couldn't be easier and just done in one easy step, 
 
 It's described fully in |Create PDF| article.
 
-.. |Plumsail Actions| raw:: html
+.. |Plumsail Documents| raw:: html
 
-   <a href="https://plumsail.com/actions/" target="_blank">Plumsail Actions</a>
+   <a href="https://plumsail.com/documents/" target="_blank">Plumsail Documents</a>
 
 .. |Create HTML| raw:: html
 
-   <a href="https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/create-html-from-template.html" target="_blank">Create HTML document from template</a>
+   <a href="https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-html-from-template.html" target="_blank">Create HTML document from template</a>
 
 .. |Create PDF| raw:: html
 
-   <a href="https://plumsail.com/docs/actions/v1.x/flow/how-tos/documents/create-pdf-from-html-template.html" target="_blank">Create PDF from HTML template</a>
+   <a href="https://plumsail.com/docs/documents/v1.x/flow/how-tos/documents/create-pdf-from-html-template.html" target="_blank">Create PDF from HTML template</a>

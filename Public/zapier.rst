@@ -24,19 +24,7 @@ Then you can integrate it with the other available applications and do anything 
 
 Creating a Zap
 -------------------------------------------------------------
-Start creating a Zap with one of our templates:
-
-|Widget|
-
-.. |Widget| raw:: html
-
-   <script src="https://zapier.com/apps/embed/widget.js?services=plumsail-forms&limit=5"></script>
-
-Or you can search for *Plumsail Forms* in |Zapier editor|:
-
-.. |Zapier editor| raw:: html
-
-   <a href="https://zapier.com/app/editor" target="_blank">Zapier editor</a>
+Search for *Plumsail Forms* and add the latest version of the app:
 
 |pic3|
 

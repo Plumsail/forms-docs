@@ -1,5 +1,5 @@
-Manipulate tabs and accordions with JavaScript
-==================================================
+How to change, disable, or hide specific tabs or accordion sections based on conditions in Plumsail Forms
+==========================================================================================================
 
 .. contents:: Contents:
  :local:

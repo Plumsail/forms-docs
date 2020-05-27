@@ -1,4 +1,4 @@
-Use table to add rows to Excel (Office365) or Google Sheet from Public Web Form
+How to create Excel or Google Sheet rows from Data Table with Power Automate 
 ================================================================================
 
 .. contents:: Contents:
@@ -17,7 +17,7 @@ This is the form used in this example:
 
 |pic1|
 
-.. |pic1| image:: ../images/how-to/excel-datatable/1_Form.png
+.. |pic1| image:: ../images/how-to/excel-datatable/how-to-excel-datatable-form.png
    :alt: Orders Form
 
 Excel Table

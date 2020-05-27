@@ -69,14 +69,14 @@ We'll need to find the correct trigger. Search for *Plumsail* and you'll find th
 
 |
 
-Next, you need to fill in Form ID. It can be found in **Flow Settings** in the designer.
+Next, you just need to select your form:
 
-.. image:: ../images/how-to/item/item-03.png
-   :alt: Add ID from General Settings
+.. image:: ../images/how-to/item/how-to-item-flow-select-form.png
+   :alt: Select your form
 
 |
 
- Click *Add an action* after you fill in the ID.
+Click *Add an action* after you select a form.
 
 Configure the Flow - Create item in SharePoint
 --------------------------------------------------

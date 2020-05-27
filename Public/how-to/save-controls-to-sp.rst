@@ -1,4 +1,4 @@
-Send controls (Ink Sketch, DataTable, Likert Scale) to SharePoint columns
+How to save Data Table, Ink Sketch, and Likert Scale to SharePoint columns with Power Automate 
 ====================================================================================================
 
 .. contents:: Contents:

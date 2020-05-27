@@ -1,5 +1,5 @@
-Creating a web form with Data Table and saving data into SharePoint lists
-===========================================================================
+How to create SharePoint list items from Data Table rows with Power Automate 
+=======================================================================================
 
 .. contents:: Contents:
  :local:

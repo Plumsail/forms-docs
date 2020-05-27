@@ -57,7 +57,15 @@ Plumsail Forms Documentation (public web forms)
             Containers <javascript/containers>
             Controls <javascript/controls>
             Fields <javascript/fields>
-      
+
+      .. toctree::
+            :caption: Examples
+            :maxdepth: 1
+
+            Online quiz and graphic results <examples/build-excel-charts>
+            Online survey with Likert Scale and real-time charts <examples/zapier-excelchart>
+            Making handwritten notes on images <examples/notes-on-an-image>
+            Embedding forms into Microsoft Teams <examples/ms-teams>
 
 .. container:: pl-right-column
       
@@ -65,8 +73,14 @@ Plumsail Forms Documentation (public web forms)
             :caption: How-to
             :maxdepth: 2
 
-            how-to/simple-cases-flow
-            how-to/dynamic-forms-js
-            how-to/data-table-section
-            how-to/zapier
-            how-to/other
+            how-to/layout
+            how-to/fields
+            how-to/processing-controls
+            how-to/processing-with-zapier
+      
+      .. toctree::
+            :caption: Integrations
+            :maxdepth: 2
+
+            integrations/saving-sharing
+            integrations/document-generation

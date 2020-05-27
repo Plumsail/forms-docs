@@ -1,4 +1,4 @@
-Leave hand-written notes on an image
+How to make notes on images in online forms designed with Plumsail Forms 
 ===============================================================================
 
 .. contents:: Contents:

@@ -7,30 +7,68 @@ Send email from Plumsail Form with MS Power Automate or Zapier
  
 MS Power Automate
 --------------------------------------------------
-Use data from a submitted Plumsail Form to send an email from Office365 Outlook with this |flow template|.
+Send an e-mail message when someone submits Plumsail Form with |MS Power Automate|.
 
-|flow template img|
+|flow process img|
 
-.. |flow template img| image:: ../images/integration/email/integration-email-flow-template.png
-   :alt: 
+.. |flow process img| image:: ../images/integration/email/integration-email-flow-process.png
+   :alt: Flow process
 
-.. |flow template|  raw:: html
+The recommended connector is Mail. You can alternatively use one of the following connectors: **Outlook**, **Gmail**, **SMTP**, etc.
 
-   <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/834771e8c74d428791ea78ff5ea81396/send-an-office-365-outlook-email-when-a-plumsail-form-is-submitted/" target="_blank">flow template</a>
+|Examples|
 
-.. note::   Replace Outlook with Mailchimp, Sendinblue, Gmail or another email service to send email from it instead.
+.. toctree::
+      :maxdepth: 1
+      
+      Send email notification <../how-to/email>
+      Generate PDF with Data Table and send by email <../how-to/data-table-flow>
+
+.. |MS Power Automate|  raw:: html
+
+   <a href="https://flow.microsoft.com/" target="_blank">MS Power Automate</a>
 
 Zapier
 --------------------------------------------------
-Use data from a submitted Plumsail Form to send an email from Gmail with this |zap template|.
+Send an e-mail message when someone submits Plumsail Form with |Zapier|.
 
-|zap template img|
+Recommended templates: 
 
-.. |zap template img| image:: ../images/integration/email/integration-email-zap-template.png
-   :alt: 
+|zapTemplateImg|
 
-.. |zap template|  raw:: html
+|zapTemplateImgGmail|
 
-   <a href="https://zapier.com/app/editor/template/122891" target="_blank">zap template</a>
+|zapTemplateImgOutlook|
 
-.. note::   Replace Gmail with Mailchimp, Sendinblue, Microsoft Outlook or another email service to send email from it instead.
+|zapTemplateImgSMTP|
+
+|Examples|
+
+.. toctree::
+      :maxdepth: 1
+      
+      Send email with signature and attachments <../how-to/zapier-email>
+
+.. |Zapier|  raw:: html
+
+   <a href="https://zapier.com/" target="_blank">Zapier</a>
+
+.. |zapTemplateImg|  raw:: html
+
+   <a href="https://zapier.com/app/editor/template/148823" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-zap-template.png">Send email for new Plumsail Forms submissions</a>
+
+.. |zapTemplateImgGmail|  raw:: html
+
+   <a href="https://zapier.com/app/editor/template/122891" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-zap-template-gmail.png">Send email via Gmail for new Plumsail Forms submissions</a>
+
+.. |zapTemplateImgOutlook|  raw:: html
+
+   <a href="https://zapier.com/app/editor/template/122891" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-zap-template-outlook.png">Send email via Outlook for new Plumsail Forms submissions</a>
+
+.. |zapTemplateImgSMTP|  raw:: html
+
+   <a href="https://zapier.com/app/editor/template/154241" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-zap-template-smtp.png">Send email via SMTP from new Plumsail Forms submissions</a>
+
+.. |Examples|  raw:: html
+
+   <h3><a>Examples</a></h3>
