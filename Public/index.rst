@@ -63,9 +63,9 @@ Plumsail Forms Documentation (public web forms)
             :maxdepth: 1
 
             Online quiz and graphic results <examples/build-excel-charts>
+            Online survey with Likert Scale and real-time charts <examples/zapier-excelchart>
             Making handwritten notes on images <examples/notes-on-an-image>
             Embedding forms into Microsoft Teams <examples/ms-teams>
-            Online survey with Likert Scale and real-time charts <examples/zapier-excelchart>
 
 .. container:: pl-right-column
       
