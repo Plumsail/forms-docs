@@ -5,4 +5,5 @@ Document generation
     :maxdepth: 1
 
     PDF <./pdf-generation>
+    Excel <./excel>
     Google Sheets <./google-sheets>
