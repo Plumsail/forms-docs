@@ -36,12 +36,6 @@ Recommended templates:
 
 |zapTemplateImg|
 
-|zapTemplateImgGmail|
-
-|zapTemplateImgOutlook|
-
-|zapTemplateImgSMTP|
-
 |Examples|
 
 .. toctree::
@@ -55,7 +49,7 @@ Recommended templates:
 
 .. |zapTemplateImg|  raw:: html
 
-   <a href="https://zapier.com/app/editor/template/148823" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-zap-template.png">Send email for new Plumsail Forms submissions</a>
+   <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=148823,122891,154110,154241"></script>
 
 .. |zapTemplateImgGmail|  raw:: html
 
