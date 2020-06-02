@@ -7,7 +7,7 @@ Create items and upload documents to SharePoint from Plumsail Forms with Power A
  
 Create an item
 --------------------------------------------------
-Create an item in a SharePoint List when someone submits Plumsail Form with |MS Power Automate|.
+Create an item in a SharePoint list when someone submits Plumsail Form with |MS Power Automate| and |SharePoint| connector.
 
 |flowTemplateImgItem|
 
@@ -16,14 +16,13 @@ Create an item in a SharePoint List when someone submits Plumsail Form with |MS 
 .. toctree::
       :maxdepth: 1
       
-      Create an item in SharePoint List <../how-to/item>
+      Create an item in SharePoint list <../how-to/item>
       Send controls (Ink Sketch, DataTable, Likert Scale) to SharePoint columns <../how-to/save-controls-to-sp>
       Create SharePoint list items from Data Table rows <../how-to/data-table-to-sp>
 
-
 Upload a file
 --------------------------------------------------
-Upload a document from Attachments when someone submits Plumsail Form with |MS Power Automate|, and, optionally, update uploaded document's properties.
+Upload a document from Attachments when someone submits Plumsail Form with |MS Power Automate| and |SharePoint| connector, plus, optionally, update uploaded document's properties.
 
 |flowTemplateImgFile|
 
@@ -49,3 +48,7 @@ Upload a document from Attachments when someone submits Plumsail Form with |MS P
 .. |Examples|  raw:: html
 
    <h3><a>Examples</a></h3>
+
+.. |SharePoint|  raw:: html
+
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_sharepointonline/sharepoint/" target="_blank">SharePoint</a>

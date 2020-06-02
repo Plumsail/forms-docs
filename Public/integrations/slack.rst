@@ -7,22 +7,24 @@ Send message in Slack from Plumsail Form with MS Power Automate or Zapier
  
 MS Power Automate
 --------------------------------------------------
-Send a message in Slack when someone submits Plumsail Form with |MS Power Automate|.
+Send a message in Slack when someone submits Plumsail Form with |MS Power Automate| and |Slack| connector.
 
 |flow process img|
 
 .. |flow process img| image:: ../images/integration/slack/integration-slack-flow-process.png
    :alt: Flow process
 
-The recommended connector is Slack.
-
 .. |MS Power Automate|  raw:: html
 
    <a href="https://flow.microsoft.com/" target="_blank">MS Power Automate</a>
 
+.. |Slack|  raw:: html
+
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_slack/slack/" target="_blank">Slack</a>
+
 Zapier
 --------------------------------------------------
-Send a message in Slack when someone submits Plumsail Form with |Zapier|.
+Send a message in Slack when someone submits Plumsail Form with |Zapier| and |Slack2| connector.
 
 Recommended templates: 
 
@@ -41,6 +43,10 @@ Recommended templates:
 .. |zapTemplateImg2|  raw:: html
 
    <a href="https://zapier.com/app/editor/template/181195" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/slack/integration-slack-zap-template.png">Send direct message in Slack for new Plumsail Forms submissions</a>
+
+.. |Slack2|  raw:: html
+
+   <a href="https://zapier.com/apps/slack/integrations" target="_blank">Slack</a>
 
 .. |Examples|  raw:: html
 

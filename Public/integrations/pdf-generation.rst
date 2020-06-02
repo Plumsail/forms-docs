@@ -1,7 +1,7 @@
 Generate PDF from Plumsail Form with MS Power Automate
 ==================================================================
 
-Generate PDF file when someone submits Plumsail Form with |MS Power Automate|.
+Generate PDF file when someone submits Plumsail Form with |MS Power Automate| and |OneDrive for Business| connector.
 
 |flow process img|
 
@@ -30,3 +30,7 @@ Alternatively, you can use |Plumsail Documents| to create PDF files from templat
 .. |Examples|  raw:: html
 
    <h3><a>Examples</a></h3>
+
+.. |OneDrive for Business|  raw:: html
+
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_onedriveforbusiness/onedrive-for-business/" target="_blank">OneDrive for Business</a>

@@ -7,7 +7,7 @@ Add rows to Google Sheets from Plumsail Form with MS Power Automate or Zapier
  
 MS Power Automate
 --------------------------------------------------
-Add Google Sheets row when someone submits Plumsail Form with |MS Power Automate|.
+Add Google Sheets row when someone submits Plumsail Form with |MS Power Automate| and |Google Sheets| connector.
 
 Recommended template: 
 
@@ -29,9 +29,13 @@ Recommended template:
       Add row to Excel Table (Office365) or Google Sheet from Public Web Form <../how-to/excel-single-row>
       Use Data Table to add rows to Excel (Office365) or Google Sheet from Public Web Form <../how-to/excel-datatable>
 
+.. |Google Sheets|  raw:: html
+
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_googlesheet/google-sheets/" target="_blank">Google Sheets</a>
+
 Zapier
 --------------------------------------------------
-Add Google Sheets row when someone submits Plumsail Form with |Zapier|.
+Add Google Sheets row when someone submits Plumsail Form with |Zapier| and |Google Sheets2| connector.
 
 Recommended template: 
 
@@ -51,6 +55,10 @@ Recommended template:
       :maxdepth: 1
       
       Use Data Table to add rows to Google Sheets with Zapier <../how-to/zapier-googlesheets>
+
+.. |Google Sheets2|  raw:: html
+
+   <a href="https://zapier.com/apps/google-sheets/integrations" target="_blank">Google Sheets</a>
 
 .. |Examples|  raw:: html
 

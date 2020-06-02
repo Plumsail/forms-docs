@@ -7,14 +7,15 @@ Send email from Plumsail Form with MS Power Automate or Zapier
  
 MS Power Automate
 --------------------------------------------------
-Send an e-mail message when someone submits Plumsail Form with |MS Power Automate|.
+Send an e-mail message when someone submits Plumsail Form with |MS Power Automate| connector.
 
 |flow process img|
 
 .. |flow process img| image:: ../images/integration/email/integration-email-flow-process.png
    :alt: Flow process
 
-The recommended connector is Mail. You can alternatively use one of the following connectors: **Outlook**, **Gmail**, **SMTP**, etc.
+The recommended connector is |Mail|, but the emails are sent from Power Automate. 
+To have more control of where the emails come from, you can alternatively use one of the following connectors: |Office 365 Outlook|, |Gmail|, or |SMTP|.
 
 |Examples|
 
@@ -28,13 +29,32 @@ The recommended connector is Mail. You can alternatively use one of the followin
 
    <a href="https://flow.microsoft.com/" target="_blank">MS Power Automate</a>
 
+.. |Mail|  raw:: html
+
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_sendmail/mail/" target="_blank">Mail</a>
+
+.. |Office 365 Outlook|  raw:: html
+
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_office365/office-365-outlook/" target="_blank">Office 365 Outlook</a>
+
+.. |Gmail|  raw:: html
+
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_gmail/gmail/" target="_blank">Gmail</a>
+
+.. |SMTP|  raw:: html
+
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_smtp/smtp/" target="_blank">SMTP</a>
+
 Zapier
 --------------------------------------------------
-Send an e-mail message when someone submits Plumsail Form with |Zapier|.
+Send an e-mail message when someone submits Plumsail Form with |Zapier| connector.
 
 Recommended templates: 
 
 |zapTemplateImg|
+
+The recommended connector is |Email by Zapier|, but the emails are sent from Zapier. 
+To have more control of where the emails come from, you can alternatively use one of the following connectors: |Microsoft Outlook|, |Gmail2|, or |SMTP2|.
 
 |Examples|
 
@@ -47,21 +67,25 @@ Recommended templates:
 
    <a href="https://zapier.com/" target="_blank">Zapier</a>
 
+.. |Email by Zapier|  raw:: html
+
+   <a href="https://zapier.com/apps/email/integrations" target="_blank">Email by Zapier</a>
+
+.. |Microsoft Outlook|  raw:: html
+
+   <a href="https://zapier.com/apps/microsoft-outlook/integrations" target="_blank">Microsoft Outlook</a>
+
+.. |Gmail2|  raw:: html
+
+   <a href="https://zapier.com/apps/gmail/integrations" target="_blank">Gmail</a>
+
+.. |SMTP2|  raw:: html
+
+   <a href="https://zapier.com/apps/smtp/integrations" target="_blank">SMTP</a>
+
 .. |zapTemplateImg|  raw:: html
 
    <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=148823,122891,154110,154241"></script>
-
-.. |zapTemplateImgGmail|  raw:: html
-
-   <a href="https://zapier.com/app/editor/template/122891" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-zap-template-gmail.png">Send email via Gmail for new Plumsail Forms submissions</a>
-
-.. |zapTemplateImgOutlook|  raw:: html
-
-   <a href="https://zapier.com/app/editor/template/122891" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-zap-template-outlook.png">Send email via Outlook for new Plumsail Forms submissions</a>
-
-.. |zapTemplateImgSMTP|  raw:: html
-
-   <a href="https://zapier.com/app/editor/template/154241" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-zap-template-smtp.png">Send email via SMTP from new Plumsail Forms submissions</a>
 
 .. |Examples|  raw:: html
 

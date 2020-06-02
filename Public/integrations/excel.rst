@@ -7,7 +7,7 @@ Add rows to Microsoft Excel from Plumsail Form with MS Power Automate or Zapier
  
 MS Power Automate
 --------------------------------------------------
-Add Excel Online row when someone submits Plumsail Form with |MS Power Automate|.
+Add Excel Online row when someone submits Plumsail Form with |MS Power Automate| and |Excel Online (Business)| connector.
 
 Recommended template: 
 
@@ -29,9 +29,13 @@ Recommended template:
       Add row to Excel Table (Office365) or Google Sheet from Public Web Form <../how-to/excel-single-row>
       Use Data Table to add rows to Excel (Office365) or Google Sheet from Public Web Form <../how-to/excel-datatable>
 
+.. |Excel Online (Business)|  raw:: html
+
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_excelonlinebusiness/excel-online-business/" target="_blank">Excel Online (Business)</a>
+
 Zapier
 --------------------------------------------------
-Add Microsoft Excel row when someone submits Plumsail Form with |Zapier|.
+Add Microsoft Excel row when someone submits Plumsail Form with |Zapier| and |Microsoft Excel| connector.
 
 Recommended template: 
 
@@ -51,6 +55,10 @@ Recommended template:
       :maxdepth: 1
       
       Save Likert Scale answers to Excel with Zapier and build real-time charts <../how-to/zapier-excelchart>
+
+.. |Microsoft Excel|  raw:: html
+
+   <a href="https://zapier.com/apps/excel/integrations" target="_blank">Microsoft Excel</a>
 
 .. |Examples|  raw:: html
 

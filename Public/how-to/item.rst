@@ -1,4 +1,4 @@
-Create an item in SharePoint List
+Create an item in SharePoint list
 ==================================================
 
 .. contents:: Contents:
