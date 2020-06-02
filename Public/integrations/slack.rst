@@ -40,7 +40,7 @@ Recommended templates:
 
 .. |zapTemplateImg2|  raw:: html
 
-   <a href="https://zapier.com/app/editor/template/181195" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/slack/integration-slack-zap-template.png">Send direct message in Slack for new Plumsail Forms submission</a>
+   <a href="https://zapier.com/app/editor/template/181195" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/slack/integration-slack-zap-template.png">Send direct message in Slack for new Plumsail Forms submissions</a>
 
 .. |Examples|  raw:: html
 
