@@ -84,3 +84,4 @@ Plumsail Forms Documentation (public web forms)
 
             integrations/saving-sharing
             integrations/document-generation
+            integrations/collaboration

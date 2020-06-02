@@ -1,4 +1,4 @@
-Collaboration (2-nd iteration) 
+Collaboration
 ==================================
 
 .. toctree::
