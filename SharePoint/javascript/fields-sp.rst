@@ -608,7 +608,7 @@ Lookup/LookupMulti
 
                 fd.spBeforeRender(function() {
                     fd.field('Lookup').noDataText = 
-                        "Не найдено. Добавить элемент - '#: instance.filterInput.val() #'?";
+                        "Pas trouvé. Ajouter un item - '#: instance.filterInput.val() #'?";
                 });
                 
 
