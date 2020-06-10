@@ -1,6 +1,11 @@
 Create PDF document from SharePoint form based on Word template with Power Automate and Word Online (Business) connector 
 ==========================================================================================================================
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
+
 Introduction
 --------------------------------------------
 
@@ -46,7 +51,7 @@ Assignments list stores granular tasks of the corresponding Work Order. The list
 
 - Status (Choice field); 
 
-- WorkOrder (Lookup field, points to the "Work Order" list).  
+- WorkOrder (Lookup field, points to the 'Work Order' list).  
 
 Work Order consists of one or more assignments. To bind Assignments list to the Work Order form, we will use the *List or Library* control.  
 
@@ -173,13 +178,13 @@ Add the 'Apply to each' action for iterating through the SharePoint items. Inser
 .. |pic12| image:: ../images/how-to/create-pdf-power-automate/create-pdf-power-automate-12.png
    :alt: Append to array
 
-.. Note:: Status is a Choice field. To get the value of the Choice field as a string, please choose the "Status Value"  in the dynamic content.
+.. Note:: Status is a Choice field. To get the value of the Choice field as a string, please choose the 'Status Value'  in the dynamic content.
     
     |pic13|
 
     .. |pic13| image:: ../images/how-to/create-pdf-power-automate/create-pdf-power-automate-13.png
 
-.. Note:: AssignedTo is a Person or Group field. To get the name of the person, please choose the "Assignedto DispalyName"  in the dynamic content. 
+.. Note:: AssignedTo is a Person or Group field. To get the name of the person, please choose the 'Assignedto DispalyName'  in the dynamic content. 
     
     |pic14|
 
