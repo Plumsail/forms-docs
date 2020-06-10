@@ -47,7 +47,7 @@ Plumsail Forms Documentation (SharePoint forms)
             Common fields <designer/fields>
             Field customizers <designer/customizers.rst>
             SharePoint web part <designer/web-part> 
-            SharePoint form Panel <designer/panel> 
+            SharePoint form panel <designer/panel> 
             
 
       .. toctree::
