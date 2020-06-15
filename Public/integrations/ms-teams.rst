@@ -9,14 +9,15 @@ MS Power Automate
 --------------------------------------------------
 Send a message in MS Teams channel when someone submits Plumsail Form with |MS Power Automate| and |Microsoft Teams| connector.
 
-|flow process img|
-
-.. |flow process img| image:: ../images/integration/ms-teams/integration-ms-teams-flow-process.png
-   :alt: Flow process
+|flowTemplateImg|
 
 .. |MS Power Automate|  raw:: html
 
    <a href="https://flow.microsoft.com/" target="_blank">MS Power Automate</a>
+
+.. |flowTemplateImg|  raw:: html 
+
+   <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/52b1490915c945619f7b294205510bd1/post-a-message-to-microsoft-teams-on-plumsail-form-response-submission/" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/ms-teams/integration-ms-teams-flow.png">Post a message to Microsoft Teams on Plumsail form response submission</a>
 
 .. |Microsoft Teams|  raw:: html
 

@@ -9,14 +9,17 @@ MS Power Automate
 --------------------------------------------------
 Send a message in Slack when someone submits Plumsail Form with |MS Power Automate| and |Slack| connector.
 
-|flow process img|
+Recommended template:
 
-.. |flow process img| image:: ../images/integration/slack/integration-slack-flow-process.png
-   :alt: Flow process
+|flowTemplateImg|
 
 .. |MS Power Automate|  raw:: html
 
    <a href="https://flow.microsoft.com/" target="_blank">MS Power Automate</a>
+
+.. |flowTemplateImg|  raw:: html 
+
+   <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/327e1ebef13f4fd19bc80951c0708dad/post-message-in-slack-on-plumsail-form-response-submission/" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/slack/integration-slack-flow.png">Post message in Slack on Plumsail form response submission</a>
 
 .. |Slack|  raw:: html
 

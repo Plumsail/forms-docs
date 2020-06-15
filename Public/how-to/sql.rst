@@ -1,5 +1,5 @@
-Insert SQL Server records from web forms
-==================================================
+Insert new SQL Server records from public web forms
+========================================================
 
 .. contents:: Contents:
  :local:

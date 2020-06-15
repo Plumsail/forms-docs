@@ -93,7 +93,7 @@ Plumsail is implementing necessary data breaches notifications for relevant supe
 
 Compliance Certifications
 ------------------------------
-Azure data center is certified for ISO 27001, SOC I, II AND III, HIPPA and FedRAMP compliance. Visit |Azure trust center|.
+Azure data center is certified for ISO 27001, SOC I, II AND III, HIPAA and FedRAMP compliance. Visit |Azure trust center|.
 
 .. |Azure trust center| raw:: html
 
