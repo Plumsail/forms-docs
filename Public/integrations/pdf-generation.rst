@@ -4,26 +4,53 @@ Generate PDF from Plumsail Form with MS Power Automate or Zapier
 .. contents:: Contents:
  :local:
  :depth: 1
- 
+
+Create Word template
+--------------------------------------------------
+To generate PDF document, the easiest option is to create a Word template file first. For this, you will need desktop version of Microsoft Word.
+
+First, you need to activate the Developer tab in the ribbon. Click **File** -> **Options**, select **Customize Ribbon** in dialog and activate the Developer tab in the right column:
+
+|customize ribbon|
+
+.. |customize ribbon| image:: ../images/integration/word/integration-word-customize-ribbon.png
+   :alt: Customize Ribbon
+
+Go to the Developer tab. With it, you can select any part of your text, for example, the *Title* and select them as Plain Text content control:
+
+|plain text content|
+
+.. |plain text content| image:: ../images/integration/word/integration-word-plain-text-content-control.png
+   :alt: Plain Text content control
+
+These sections can then be populated via a flow or a zap. Upload templates to a cloud storage (such as OneDrive) in order to use in your processes.
+
+.. note::   Alternatively, use |Plumsail Documents| to create PDF files from template - no need to create flows or zaps.
+
+            .. toctree::
+                  :maxdepth: 1
+                  
+                  Generate PDF documents from a DOCX template on Plumsail Forms submission <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-plumsail-forms.html>
+                  Auto-populate fillable PDF on Plumsail Forms submission <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/auto-populate-pdf-from-plumsail-forms.html>
+
 MS Power Automate
 --------------------------------------------------
-Generate PDF file when someone submits Plumsail Form with |MS Power Automate| and |OneDrive for Business| connector.
+Generate PDF file when someone submits Plumsail Form with |MS Power Automate| and |Word Online (Business)| connector.
 
 |flow process img|
 
-.. |flow process img| image:: ../images/integration/pdf-generation/integration-pdf-generation-flow.png
+.. |flow process img| image:: ../images/integration/pdf-generation/integration-pdf-flow.png
    :alt: Flow process
 
-You can use OneDrive for Business to generate HTML and convert it to PDF, then create final file where you need it - SharePoint, OneDrive, etc.
+You can also use |Plumsail Documents| to create PDF files from template.
 
-Alternatively, you can use |Plumsail Documents| to create PDF files from template.
+Recommended templates: 
 
-|Examples|
+|flowTemplateImg|
 
-.. toctree::
-      :maxdepth: 1
-      
-      Convert form with Data Table into PDF with Plumsail Documents <../how-to/data-table-flow>
+.. |flowTemplateImg|  raw:: html 
+
+   <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/35bdf13afbad4ff29d3df49e7f288729/create-word-and-pdf-documents-from-plumsail-forms/" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/pdf/integration-pdf-flow-documents.png">Create Word and PDF documents from Plumsail Forms</a>
 
 .. |MS Power Automate|  raw:: html
 
@@ -37,9 +64,9 @@ Alternatively, you can use |Plumsail Documents| to create PDF files from templat
 
    <h3><a>Examples</a></h3>
 
-.. |OneDrive for Business|  raw:: html
+.. |Word Online (Business)|  raw:: html
 
-   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_onedriveforbusiness/onedrive-for-business/" target="_blank">OneDrive for Business</a>
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_wordonlinebusiness/word-online-business/" target="_blank">Word Online (Business)</a>
 
 Zapier
 --------------------------------------------------
