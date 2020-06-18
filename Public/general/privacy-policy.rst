@@ -14,12 +14,19 @@ Personal information: what we collect, when and how we use it
 -------------------------------------------------------------
 When you sign up for |Plumsail Account|, you may be asked to enter your name and email address. 
 We collect information from you when you install Plumsail Forms for the first time, such as the domain names for SharePoint. 
-Notice that we don’t store any information submitted through the Public Web Forms (unless you :doc:`enable this option </submissions>` for a specific form), with the exception of attachments, to allow them to be downloaded. Attachments are stored for 30 days, and then are automatically deleted. For the paid plans, storage can be cleared at any point inside the |Plumsail Account|.
+
+The data submitted with Public Web Forms is by default stored in Microsoft Azure Storage (you can :doc:`disable this option </submissions>` for any form), |encrypted at REST|. It's not accessible until you login to your |Plumsail Account|, even we don't have access to the stored data. 
+Attachments are always stored encrypted at REST, even if the rest of the form data is not stored. Attachments that are older than 30 days are automatically deleted. For the paid plans, this storage can be cleared at any point.
+
 All operations are performed over secure encrypted HTTPS connection. We never sell any personal info to third parties.
 
 .. |Plumsail Account| raw:: html
 
    <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>
+
+.. |encrypted at REST| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/azure/security/azure-security-encryption-atrest" target="_blank">encrypted at REST</a>
 
 Log information
 -------------------------------------------------------------

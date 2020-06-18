@@ -30,8 +30,8 @@ only SharePoint Online domain name (for SharePoint License) and |Plumsail Accoun
 
 After installing Plumsail Forms, the only data that we are gathering from you is application logs from the system.
 
-The data submitted with Public Web Forms is not stored on our servers (unless you :doc:`enable this option </submissions>` for a specific form), but goes directly to Power Automate (MS Flow).
-The attachments are stored in Microsoft Azure Storage, |encrypted at REST|. Attachments that are older than 30 days are automatically deleted. For the paid plans, storage can be cleared at any point inside the |Plumsail Account|.
+The data submitted with Public Web Forms is by default stored in Microsoft Azure Storage (you can :doc:`disable this option </submissions>` for any form), |encrypted at REST|. It's not accessible until you login to your |Plumsail Account|, even we don't have access to the stored data. 
+Attachments are always stored encrypted at REST, even if the rest of the form data is not stored. Attachments that are older than 30 days are automatically deleted. For the paid plans, this storage can be cleared at any point.
 
 Whenever your data is in transit between you and us, everything is encrypted and sent using HTTPS. Data at rest is encrypted using |AES 256| bit standards (one of the strongest block ciphers available) 
 with keys managed by Azure Storage Service Encryption. Data in transit is encrypted with SSL/TLS protocols.
