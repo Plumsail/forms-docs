@@ -1,8 +1,12 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+v1.6.4
+--------------------------------------------------
+Improved code editors in web based designer
+
 v1.6.3
-----------------------------------------------------------
+--------------------------------------------------
 New theme builder is now available in the desktop version
 
 Minor bug fixes

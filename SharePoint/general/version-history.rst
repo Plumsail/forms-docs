@@ -1,6 +1,16 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.6.4
+--------------------------------------------------
+Separate forms are not generated anymore for every form set. A default form resolves the form set now
+
+Performance improvements when opening forms in full-screen mode
+
+Fixed a bug with multilingual sites when users with different languages had to design forms separately
+
+.. Note:: :doc:`Update the app package </general/update-package>` for new functionality.
+
 v1.6.1
 --------------------------------------------------
 Advanced controls for :ref:`designer-currency` fields in SharePoint forms
