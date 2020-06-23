@@ -14,61 +14,49 @@ Modern SharePoint sites support large amount of languages. In your company, you 
 .. |pic1| image:: ../images/how-to/language/languages.png
    :alt: Language settings
 
-Plumsail Forms supports custom forms for different languages out of the box.
+Plumsail Forms can support multiple languages for each form with a little bit of work.
+
+.. important:: Previously, the implementation of different language forms worked differently. To get the latest functionality, please, :doc:`update the app package <../general/update-package>` to v1.0.8 or higher, and re-save forms in the editor v1.6.4 or higher.
 
 Implementation
 --------------------------------------------------
-Let's say, we have a Task List. Here's the default English form:
+First, you'll need to create a :doc:`Form Set <../designer/form-sets>` for the language that you want to support:
 
 |pic2|
 
-.. |pic2| image:: ../images/how-to/language/english.png
-   :alt: English form
+.. |pic2| image:: ../images/how-to/language/how-to-language-add-form-set.png
+   :alt: Add form set
 
-To add another form in another language, we only to have SharePoint Admin with different language in his profile:
+This language will have to be available for the site:
 
 |pic3|
 
-.. |pic3| image:: ../images/how-to/language/sign-in.png
-   :alt: Login as German Admin
+.. |pic3| image:: ../images/how-to/language/how-to-language-available-languages.png
+   :alt: Available languages
 
-When they open the form in the editor, they will see an empty form and a Content Type in their own language:
+Then, you need to configure Custom Routing to redirect to this Form Set when the UI of the site is rendered with this language:
 
 |pic4|
 
-.. |pic4| image:: ../images/how-to/language/editor.png
-   :alt: Editor with German Content
+.. |pic4| image:: ../images/how-to/language/how-to-language-custom-routing.png
+   :alt: Custom routing
 
-They can customize the form, make sure that it works for their language. 
-Next time, when a user with the same language preferences opens the form, they will see the custom form for their language instead:
+Use code like this:
+
+.. code-block:: javascript
+
+    if(_spPageContextInfo.currentUICultureName == "es-ES"){
+      return "b442f350-2949-4d95-b13c-ac4063ab34e4";
+   }
+
+You only need to replace **"es-ES"** with the name of the |language/culture| you want supported and the ID of the Form Set can be copied at the bottom of the editor:
 
 |pic5|
 
-.. |pic5| image:: ../images/how-to/language/german.png
-   :alt: German form
+.. |pic5| image:: ../images/how-to/language/how-to-language-form-set-id.png
+   :alt: Form Set ID
 
-The forms are generated for each unique Content Type name, in this case: **Task** and **Aufgaben**. These are also used in form URLs:
+.. |language/culture| raw:: html
 
-``/SitePages/PlumsailForms/{ListName}/{ContentType}/NewForm.aspx``
+   <a href="https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes" target="_blank">language/culture</a>
 
-Make sure that the Content Type has a different name in other languages to have different forms. If you don't want this - use the same name for Content Type across languages.
-
-How to fix missing forms
-------------------------------------------------------
-Sometimes, you can design a form, but when a user tries to open it, they'll be redirected to a non-existing page and will get a 404 error:
-
-|pic6|
-
-.. |pic6| image:: ../images/how-to/language/404.png
-   :alt: 404 Error
-
-This can happen if you didn't design a default language form for this Content Type. 
-
-If default language is English and you design an English form first, then users with all kinds of language preferences will be redirected to default language form.
-
-You can check default language in Site Settings -> Language settings:
-
-|pic7|
-
-.. |pic7| image:: ../images/how-to/language/LanguageSettings.png
-   :alt: Language settings
