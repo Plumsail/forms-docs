@@ -7,12 +7,14 @@ How to create different SharePoint forms for alternative languages
  
 Introduction
 --------------------------------------------------
-Modern SharePoint sites support large amount of languages. In your company, you might have users with different language preferences, all working on the same site.
+Modern SharePoint sites support large amount of languages. In your company, you might have users with different language preferences working on the same site.
+
+.. note:: Make sure the desired language is available on your site, before designing a form for it.
 
 |pic1|
 
-.. |pic1| image:: ../images/how-to/language/languages.png
-   :alt: Language settings
+.. |pic1| image:: ../images/how-to/language/how-to-language-available-languages.png
+   :alt: Available languages
 
 Plumsail Forms can support multiple languages for each form with a little bit of work.
 
@@ -27,13 +29,6 @@ First, you'll need to create a :doc:`Form Set <../designer/form-sets>` for the l
 .. |pic2| image:: ../images/how-to/language/how-to-language-add-form-set.png
    :alt: Add form set
 
-This language will have to be available for the site:
-
-|pic3|
-
-.. |pic3| image:: ../images/how-to/language/how-to-language-available-languages.png
-   :alt: Available languages
-
 Then, you need to configure Custom Routing to redirect to this Form Set when the UI of the site is rendered with this language:
 
 |pic4|
@@ -45,18 +40,18 @@ Use code like this:
 
 .. code-block:: javascript
 
-    if(_spPageContextInfo.currentUICultureName == "es-ES"){
-      return "b442f350-2949-4d95-b13c-ac4063ab34e4";
+    if(_spPageContextInfo.currentUICultureName == 'es-ES'){
+      return 'b442f350-2949-4d95-b13c-ac4063ab34e4';
    }
 
-You only need to replace **"es-ES"** with the name of the |language/culture| you want supported and the ID of the Form Set can be copied at the bottom of the editor:
+You only need to replace **'es-ES'** with the code of the |culture| that you want to be supported and the ID of the Form Set can be copied at the bottom of the editor:
 
 |pic5|
 
 .. |pic5| image:: ../images/how-to/language/how-to-language-form-set-id.png
    :alt: Form Set ID
 
-.. |language/culture| raw:: html
+.. |culture| raw:: html
 
-   <a href="https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes" target="_blank">language/culture</a>
+   <a href="https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes" target="_blank">culture</a>
 
