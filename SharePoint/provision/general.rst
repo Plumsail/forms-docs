@@ -262,20 +262,6 @@ For examples of working with Form Sets, please, check out :doc:`Working with For
                     var title = Set.Title;
                     var guid = Set.Id;
                 }
-
-    *   -   **AddListViewCommands**
-        -   Contains boolean that determines if Form Commands (Form Panel) are loaded in the list views. Can be used to get and set.
-
-            If set to false, neither **Panel** nor **CustomListViewCode** properties will work.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: c#
-
-                var fss = forms.GetFormSets();
-                fss.AddListViewCommands = true;
             
     *   -   **Panel**
         -   Contains object that determines which forms will open in a panel and at what size. Can be used to get and set.
