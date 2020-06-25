@@ -48,7 +48,7 @@ You only need to replace **'es-ES'** with the code of the |language| that you wa
 
 |pic5|
 
-.. |pic5| image:: ../images/how-to/language/how-to-language-form-set-id.png
+.. |pic5| image:: ../images/how-to/language/how-to-language-form-set-id-copy.png
    :alt: Form Set ID
 
 .. |language| raw:: html
