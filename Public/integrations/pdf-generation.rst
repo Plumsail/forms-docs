@@ -3,10 +3,13 @@ Generate PDF from Plumsail Form with MS Power Automate or Zapier
 
 .. contents:: Contents:
  :local:
- :depth: 1
+ :depth: 2
+
+MS Power Automate
+--------------------------------------------------
 
 Create Word template
---------------------------------------------------
+*******************************************************************
 To generate PDF document, the easiest option is to create a Word template file first. For this, you will need desktop version of Microsoft Word.
 
 First, you need to activate the Developer tab in the ribbon. Click **File** -> **Options**, select **Customize Ribbon** in dialog and activate the Developer tab in the right column:
@@ -23,18 +26,10 @@ Go to the Developer tab. With it, you can select any part of your text, for exam
 .. |plain text content| image:: ../images/integration/word/integration-word-plain-text-content-control.png
    :alt: Plain Text content control
 
-These sections can then be populated via a flow or a zap. Upload templates to a cloud storage (such as OneDrive) in order to use in your processes.
+These sections can then be populated via a flow. Upload templates to a cloud storage (such as OneDrive) in order to use in your processes.
 
-.. note::   Alternatively, use |Plumsail Documents| to create PDF files from template - no need to create flows or zaps.
-
-            .. toctree::
-                  :maxdepth: 1
-                  
-                  Generate PDF documents from a DOCX template on Plumsail Forms submission <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-plumsail-forms.html>
-                  Auto-populate fillable PDF on Plumsail Forms submission <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/auto-populate-pdf-from-plumsail-forms.html>
-
-MS Power Automate
---------------------------------------------------
+Launch flow
+*******************************************************************
 Generate PDF file when someone submits Plumsail Form with |MS Power Automate| and |Word Online (Business)| connector.
 
 |flow process img|
@@ -42,11 +37,21 @@ Generate PDF file when someone submits Plumsail Form with |MS Power Automate| an
 .. |flow process img| image:: ../images/integration/pdf-generation/integration-pdf-flow.png
    :alt: Flow process
 
-You can also use |Plumsail Documents| to create PDF files from template.
+Other options
+*******************************************************************
+
+You can also use |Plumsail Documents| with Power Automate to create PDF files from template.
 
 Recommended templates: 
 
 |flowTemplateImg|
+
+|Examples|
+
+.. toctree::
+      :maxdepth: 1
+      
+      Convert web form with Data Table into PDF and send for approval with Power Automate  <../how-to/data-table-flow>
 
 .. |flowTemplateImg|  raw:: html 
 
@@ -113,3 +118,13 @@ Recommended templates:
 .. |zapTemplateImg6|  raw:: html
 
    <a href="https://zapier.com/app/editor/template/199567" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/pdf/integration-pdf-zap-template-pandadoc.png">Create document in PandaDoc</a>
+
+Plumsail Documents
+--------------------------------------------------
+Alternatively, use |Plumsail Documents| to create PDF files from template - no need to create flows or zaps.
+
+.. toctree::
+      :maxdepth: 1
+      
+      Generate PDF documents from a DOCX template on Plumsail Forms submission <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/create-word-and-pdf-documents-from-plumsail-forms.html>
+      Auto-populate fillable PDF on Plumsail Forms submission <https://plumsail.com/docs/documents/v1.x/user-guide/processes/examples/auto-populate-pdf-from-plumsail-forms.html>
