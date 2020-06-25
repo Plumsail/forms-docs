@@ -40,11 +40,11 @@ Use code like this:
 
 .. code-block:: javascript
 
-    if(_spPageContextInfo.currentUICultureName == 'es-ES'){
+   if(_spPageContextInfo.currentUICultureName == 'es-ES'){
       return 'b442f350-2949-4d95-b13c-ac4063ab34e4';
    }
 
-You only need to replace **'es-ES'** with the code of the |culture| that you want to be supported and the ID of the Form Set can be copied at the bottom of the editor:
+You only need to replace **'es-ES'** with the code of the |language| that you want to be supported and the ID of the Form Set can be copied at the bottom of the editor:
 
 |pic5|
 
@@ -53,5 +53,5 @@ You only need to replace **'es-ES'** with the code of the |culture| that you wan
 
 .. |culture| raw:: html
 
-   <a href="https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes" target="_blank">culture</a>
+   <a href="https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes" target="_blank">language</a>
 
