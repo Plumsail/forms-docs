@@ -51,7 +51,7 @@ You only need to replace **'es-ES'** with the code of the |language| that you wa
 .. |pic5| image:: ../images/how-to/language/how-to-language-form-set-id.png
    :alt: Form Set ID
 
-.. |culture| raw:: html
+.. |language| raw:: html
 
-   <a href="https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes" target="_blank">language</a>
+   <a href="https://docs.microsoft.com/en-us/deployoffice/overview-deploying-languages-microsoft-365-apps#languages-culture-codes-and-companion-proofing-languages" target="_blank">language</a>
 
