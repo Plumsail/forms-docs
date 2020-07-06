@@ -11,6 +11,8 @@ Working with SharePoint, it's often important to guide users through the process
 
 Nothing could be simpler actually as you will find in this article. With the use of the **spSaved()** event, it can be done with very little code. Read more about different events in our :ref:`js-events` section.
 
+.. Note:: The examples below are not applicable when the form is opened in a panel. RedirectUrl is ignored inside a panel.
+
 Redirect to any page
 --------------------------------------------------
 To redirect users to any page on the web, all you need to know is the URL of this page. It can be a page on your SharePoint site or it can be any website page. 
