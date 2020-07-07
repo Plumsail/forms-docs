@@ -1,3 +1,6 @@
+.. meta::
+   :description: How SharePoint themes are applied to Forms
+
 Themes
 =========================================
 

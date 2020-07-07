@@ -1,3 +1,6 @@
+.. meta::
+   :description: Information about controls and their properties
+
 Controls in Plumsail Forms for SharePoint
 ==================================================
 

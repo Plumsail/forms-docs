@@ -1,3 +1,6 @@
+.. meta::
+   :description: Information about common fields and their properties
+
 Common Fields in Plumsail Forms for SharePoint
 ==================================================
 

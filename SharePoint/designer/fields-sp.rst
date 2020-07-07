@@ -1,3 +1,6 @@
+.. meta::
+   :description: Information about SharePoint fields and their properties
+
 SharePoint Fields
 ==================================================
 

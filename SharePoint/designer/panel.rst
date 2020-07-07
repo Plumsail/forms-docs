@@ -1,3 +1,6 @@
+.. meta::
+   :description: Select if you want forms to load in a panel or not
+
 Configuring appearance of SharePoint form in panel from list or library view
 ==================================================================================
 
@@ -7,19 +10,18 @@ Configuring appearance of SharePoint form in panel from list or library view
 
 Introduction
 -------------------------------------------------------------
-SharePoint Form Panel allows you to open SharePoint forms in a panel, similar to default SharePoint forms.
+SharePoint Form Panel will open SharePoint forms in a panel, similar to default SharePoint forms.
 
 *In order to use this functionality, please, make sure to* :ref:`update the package <install-app-package>` *in the App Catalog to v.1.0.4 or higher.*
 
 Form Panel preserves full functionality of our custom SharePoint fields - including :doc:`routing </designer/form-sets>`.
 
-It's configured in the designer, in the new Form Panel section:
+It is enabled by default in the latest version, but can be configured in the designer, in the Form Panel section:
 
 .. image:: ../images/designer/panel/Menu.png
    :alt: Form Panel configuration menu
 
-Here, you can select which forms you want to be opened in the panel, as well as the size of the panel. 
-After first configuration, please, **re-save** the forms that you want to open in the panel.
+Here, you can select which forms you want or do not want to be opened in the panel, as well as the size of the panel. 
 
 **Important!** There is a slight delay between the time when a user opens the list and when the script loads completely for panel forms, so if the users open a form too quickly, 
 then they will be redirected to a default full-screen form instead of a panel.

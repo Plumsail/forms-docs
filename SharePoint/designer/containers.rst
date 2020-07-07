@@ -1,3 +1,6 @@
+.. meta::
+   :description: Information about containers and their properties
+
 Containers in Plumsail Forms for SharePoint
 ==================================================
 

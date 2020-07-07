@@ -1,3 +1,6 @@
+.. meta::
+   :description: What do the buttons in the ribbon do
+
 Ribbon actions in Plumsail Forms for SharePoint
 ==================================================
 

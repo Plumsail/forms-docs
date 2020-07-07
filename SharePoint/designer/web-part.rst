@@ -1,3 +1,8 @@
+.. title:: SharePoint Forms publishing with a web part
+
+.. meta::
+   :description: How to publish a form to any page with a web part
+
 SharePoint web part for publishing a SharePoint form to any modern page within the tenant (Office 365) or web application (SharePoint 2019)
 ====================================================================================================================================================================
 
