@@ -1,4 +1,9 @@
-How to populate dropdown column of Data Table in SharePoint form with data from any SharePoint list
+.. title:: Populate column of DataTable in SharePoint form
+
+.. meta::
+   :description: Get info from any other SharePoint list inside a DataTable column
+
+How to populate dropdown column of DataTable in SharePoint form with data from any SharePoint list
 ======================================================================================================
 
 .. contents:: Contents:

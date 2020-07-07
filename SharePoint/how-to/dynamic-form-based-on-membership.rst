@@ -1,3 +1,8 @@
+.. title:: Display sections of a SharePoint form conditionally
+
+.. meta::
+   :description: Only show parts of the form based on user's membership
+
 How to display specific sections of SharePoint form conditionally based on user's membership
 =============================================================================================
 

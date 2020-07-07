@@ -1,3 +1,8 @@
+.. title:: Filter List or Library by CAML in a SharePoint form 
+
+.. meta::
+   :description: How to filter List or Library control
+
 How to filter items or documents by CAML in List or Library control
 =================================================================================
 

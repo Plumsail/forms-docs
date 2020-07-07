@@ -1,3 +1,8 @@
+.. title:: Use JS on Date and Time fields in SharePoint form
+
+.. meta::
+   :description: Many examples for working with date fields using JavaScript API
+
 How to work with Date and Time fields in SharePoint form with JavaScript
 =========================================================================
 

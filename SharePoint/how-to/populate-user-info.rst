@@ -1,3 +1,8 @@
+.. title:: Populate SharePoint form fields with profile information
+
+.. meta::
+   :description: Use JavaScript to populate fields with information about the current user
+
 How to populate SharePoint form fields with profile information
 =========================================================================
 

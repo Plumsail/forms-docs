@@ -1,3 +1,8 @@
+.. title:: Grids in Plumsail Forms for SharePoint
+
+.. meta::
+   :description: How to design complex and responsive forms
+
 How to design complex and responsive forms with grids in Plumsail Forms for SharePoint
 ==========================================================================================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Number of properties to adjust the exported PDF with
+
 How to save SharePoint form as PDF for printing
 =================================================================
 

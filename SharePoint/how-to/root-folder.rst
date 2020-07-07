@@ -1,3 +1,9 @@
+.. title:: Display only from specific folder in List or Library control
+
+.. meta::
+   :description: How to limit displayed results to a specific folder / how to change this folder
+
+
 How to display items or documents from specific folder in List or Library control
 ===================================================================================
 

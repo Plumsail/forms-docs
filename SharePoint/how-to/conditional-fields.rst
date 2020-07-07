@@ -1,3 +1,8 @@
+.. title:: Work with fields using JS on Plumsail SP Forms
+
+.. meta::
+   :description: How to populate, hide, show, disable and modify fields with JavaScript
+
 How to populate, hide, disable, or make mandatory SharePoint form fields in JavaScript
 ======================================================================================================
 

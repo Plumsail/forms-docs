@@ -1,3 +1,8 @@
+.. title:: Add custom button to the toolbar of List or Library
+
+.. meta::
+   :description: Example of how to add a button that will duplicate selected item
+
 How to add custom button to toolbar of List or Library control and duplicate selected item
 ==================================================================================================
 

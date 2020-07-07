@@ -1,3 +1,8 @@
+.. title:: Add flow start button to the toolbar of List or Library
+
+.. meta::
+   :description: Example of how to add a button that will start flow on press
+
 How to start flow from List or Library control and pass selected items
 ===========================================================================
 

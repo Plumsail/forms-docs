@@ -1,3 +1,8 @@
+.. title:: Update metadata of uploaded documents in List or Library
+
+.. meta::
+   :description: Auto-populate properties for files uploaded on a Plumsail form
+
 How to update metadata of uploaded documents in List or Library control
 =================================================================================
 

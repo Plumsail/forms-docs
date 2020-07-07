@@ -1,3 +1,8 @@
+.. title:: Edit form as default for a specific SharePoint group
+
+.. meta::
+   :description: Make Edit form show instead of Display form for a specific group
+
 How to open edit form by default for specific SharePoint group
 ======================================================================
 

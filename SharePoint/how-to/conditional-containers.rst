@@ -1,3 +1,8 @@
+.. title:: Work with containers using JS on Plumsail SP Forms
+
+.. meta::
+   :description: How to hide, show and modify containers with JavaScript
+
 How to change, disable, or hide specific tabs or accordion sections based on conditions in Plumsail Forms
 ===============================================================================================================
 

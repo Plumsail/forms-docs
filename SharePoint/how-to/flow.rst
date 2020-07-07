@@ -1,4 +1,9 @@
-How to send e-mail notification after submitting SharePoint form
+.. title:: Send an email notification after submitting SharePoint form
+
+.. meta::
+   :description: How to use MS Power Automate Plumsail Forms connector with SP Forms
+
+How to send email notification after submitting SharePoint form
 ======================================================================================
 
 .. contents:: Contents:

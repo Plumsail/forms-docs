@@ -1,3 +1,8 @@
+.. title:: Manipulate fields in inline editing mode of List or Library
+
+.. meta::
+   :description: Prepopulate fields, set fields based on changes in other fields, filter lookup fields
+
 How to manipulate fields in inline editing mode of List or Library control
 ===========================================================================
 
