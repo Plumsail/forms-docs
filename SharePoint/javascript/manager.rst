@@ -1,3 +1,8 @@
+.. title:: Managing form with JS in Plumsail Forms for SharePoint
+
+.. meta::
+   :description: JavaScript API for managing the form
+
 Managing form with JavaScript in Plumsail Forms for SharePoint
 ========================================================================
 

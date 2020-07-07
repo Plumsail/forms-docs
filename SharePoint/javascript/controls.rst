@@ -1,3 +1,8 @@
+.. title:: Managing controls with JS in Plumsail Forms for SharePoint
+
+.. meta::
+   :description: Controls' JavaScript API with properties and methods
+
 Managing controls with JavaScript in Plumsail Forms for SharePoint
 ====================================================================
 

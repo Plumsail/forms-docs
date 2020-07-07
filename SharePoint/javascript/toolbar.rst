@@ -1,3 +1,8 @@
+.. title:: Managing form's toolbar with JS in Plumsail Forms for SharePoint
+
+.. meta::
+   :description: Form toolbar's JavaScript API with properties and methods
+
 Managing SharePoint form's toolbar with JavaScript in Plumsail Forms for SharePoint
 ==============================================================================================
 

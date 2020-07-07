@@ -1,3 +1,8 @@
+.. title:: Managing SP fields with JS in Plumsail Forms for SharePoint
+
+.. meta::
+   :description: SharePoint fields' JavaScript API with properties and methods
+
 Managing SharePoint fields with JavaScript in Plumsail Forms for SharePoint
 ================================================================================
 
