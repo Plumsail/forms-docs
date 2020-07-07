@@ -1,4 +1,4 @@
-Add row to Excel Table (Office365) or Google Sheet from Public Web Form
+Add row to Excel Table (Office 365) or Google Sheet from Public Web Form
 ========================================================================
 
 .. contents:: Contents:
@@ -23,7 +23,7 @@ For both of the examples, we'll be using a very simple contact form with just th
    :alt: Contact Form
 
 In this example, we are using *OneDrive for Business* as storage for our Excel file. When you create 
-an Excel Online file in Office365, it's automatically stored there. We've created Contacts.xlsx file 
+an Excel Online file in Office 365, it's automatically stored there. We've created Contacts.xlsx file 
 and added table to it:
 
 |pic2|

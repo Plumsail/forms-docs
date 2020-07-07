@@ -1,3 +1,8 @@
+.. title:: Installation of Plumsail Forms for SP 2019 (On-Premises)
+
+.. meta::
+   :description: How to install Forms - step by step text and video guide
+
 Installation of Plumsail Forms for SharePoint 2019 (On-Premises)
 =============================================================================
 

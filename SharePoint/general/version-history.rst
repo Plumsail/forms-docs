@@ -1,3 +1,9 @@
+.. title:: Version history of Plumsail Forms for SP Online (Office 365)
+
+.. meta::
+   :description: All versions and changes are described here
+
+
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 

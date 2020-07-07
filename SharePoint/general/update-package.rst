@@ -1,4 +1,7 @@
-Update the app package
+.. meta::
+   :description: Instruction on the SharePoint app package update
+
+How to update the app package for Plumsail Forms
 ==================================================
 
 .. contents:: Contents:

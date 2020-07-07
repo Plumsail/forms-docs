@@ -1,5 +1,8 @@
-Data protection and security
-==============================
+.. meta::
+   :description: How we protect your data
+
+Data protection and security in Plumsail Forms for SharePoint
+==============================================================
 
 Privacy Policy
 ------------------------------

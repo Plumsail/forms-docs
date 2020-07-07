@@ -1,3 +1,8 @@
+.. title:: Plumsail Forms WSP installation for SharePoint 2019
+
+.. meta::
+   :description: How to install Forms WSP package to SharePoint On-Premises
+
 WSP installation for SharePoint 2019
 ==================================================
 

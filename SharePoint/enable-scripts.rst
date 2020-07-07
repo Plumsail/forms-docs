@@ -1,3 +1,8 @@
+.. title:: Plumsail Forms scripting capabilities
+
+.. meta::
+   :description: How to enable scripting capabilities in SP Online
+
 Enabling scripting capabilities in SharePoint Online
 ======================================================
 

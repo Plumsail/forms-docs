@@ -23,7 +23,7 @@ This is the form used in this example:
 Excel Table
 --------------------------------------------------
 In this example, we are using *OneDrive for Business* as storage for our Excel file. When you create 
-an Excel Online file in Office365, it's automatically stored there. We've created Orders.xlsx file 
+an Excel Online file in Office 365, it's automatically stored there. We've created Orders.xlsx file 
 and added table to it:
 
 |pic2|
