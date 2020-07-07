@@ -28,11 +28,25 @@ For SharePoint Online app launches with the following window:
 
 |pic1|
 
-.. |pic1| image:: /images/startSP/signIn.png
+.. |pic1| image:: /images/startSP/startSP-sign-in.png
    :alt: Sign In SharePoint Online
 
-Simply choose SharePoint in Forms Designer during sign in, enter your site's URL and Site Owner credentials, select a List or a Library 
-forms for which you want to modify and start working on the forms. Saved forms will automatically replace default forms on your site.
+Simply enter the URL of the site that you want to modify forms for. 
+
+You'll then need to go through standard SharePoint authentication, make sure to use login with Full Control on the site:
+
+|auth|
+
+.. |auth| image:: /images/startSP/startSP-auth.png
+   :alt: SharePoint Authentication
+
+.. note::   If you want to logout from the previously selected user, just connect to the site once again and press Sign Out button:
+
+            |sign-out|
+
+            .. |sign-out| image:: /images/startSP/startSP-sign-out.png
+               :alt: Sign out button
+
 
 SharePoint On-Premises
 ---------------------------------------------------
