@@ -1,3 +1,6 @@
+.. meta::
+   :description: Examples of using Plumsail Forms with MS Teams
+
 How to embed web form or SharePoint form into Microsoft Teams
 =====================================================================
 

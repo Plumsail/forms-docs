@@ -1,3 +1,8 @@
+.. title:: Organize related files in folders on a SharePoint form
+
+.. meta::
+   :description: Auto-create a folder for the item in the related library to upload children docs
+
 How to organize related files in folders and display documents from specific folder in a SharePoint form
 ==================================================================================================================
 

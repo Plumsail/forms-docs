@@ -1,3 +1,6 @@
+.. meta::
+   :description: Add information about previous item versions with JavaScript
+
 How to display version history in a SharePoint form
 =================================================================================================
 

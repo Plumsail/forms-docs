@@ -1,3 +1,6 @@
+.. meta::
+   :description: Example of how you can move page with form anywhere
+
 How to move new SharePoint form page to another location
 =============================================================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Example of how to configure a modern SharePoint form
+
 How to create SharePoint form for booking a meeting room
 =========================================================================
 

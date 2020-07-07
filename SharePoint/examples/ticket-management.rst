@@ -1,3 +1,8 @@
+.. title:: Add personalized ticket form to a SharePoint page
+
+.. meta::
+   :description: How to design specific form layouts for different user groups
+
 How to add personal form for creating and tracking tickets to an arbitrary SharePoint page 
 =================================================================================================
 
