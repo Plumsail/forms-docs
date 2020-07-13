@@ -1,3 +1,8 @@
+.. title:: Processing Plumsail Forms in Power Automate
+
+.. meta::
+   :description: How to get info from forms' submissions and use them in flows
+
 Processing submissions of online forms designed with Plumsail Forms in Power Automate (MS Flow)
 ====================================================================================================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Examples and templates for public web forms integration
+
 Add rows to Microsoft Excel from Plumsail Form with MS Power Automate or Zapier
 ================================================================================
 

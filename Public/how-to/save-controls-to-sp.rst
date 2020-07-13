@@ -1,3 +1,8 @@
+.. title:: Save Data Table, Ink Sketch, and Likert Scale to SharePoint
+
+.. meta::
+   :description: Use Power Automate to save advanced controls from public web forms to SharePoint
+
 How to save Data Table, Ink Sketch, and Likert Scale to SharePoint columns with Power Automate 
 ====================================================================================================
 

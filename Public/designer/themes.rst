@@ -1,3 +1,6 @@
+.. meta::
+   :description: How to configure colors and style of your form
+
 Configuring theme for online forms designed with Plumsail Forms
 ===============================================================================
 

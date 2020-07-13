@@ -1,3 +1,6 @@
+.. meta::
+   :description: What are public web forms and how to create them with Plumsail Forms
+
 Introduction to building online forms with Plumsail Forms
 ===============================================================
 

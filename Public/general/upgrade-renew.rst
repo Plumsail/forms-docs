@@ -1,3 +1,6 @@
+.. meta::
+   :description: Guide to upgrading/renewing subscription
+
 How to upgrade or renew your Plumsail Forms subscription
 ==============================================================
 To upgrade/renew a subscription you need to sign into your personal store account. Navigate to https://secure.avangate.com/myaccount and sign in using your email and password. If you don’t have a password, you can easily receive it. Just click “Create New Account” and specify your order number or email address which you used to purchase the product. 

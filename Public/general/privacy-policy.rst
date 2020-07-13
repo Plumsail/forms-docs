@@ -1,5 +1,8 @@
-Privacy Policy
-===========================
+.. meta::
+   :description: What data is collected, how and why
+
+Privacy Policy of Plumsail Forms (public forms)
+=================================================
 This privacy policy is additional to the |general one| and covering some specific practices in |Plumsail Forms|.
 
 .. |general one| raw:: html

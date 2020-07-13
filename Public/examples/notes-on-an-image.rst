@@ -1,4 +1,9 @@
-How to make notes on images in online forms designed with Plumsail Forms 
+.. title:: Make notes on images in web forms designed with Plumsail Forms
+
+.. meta::
+   :description: Allow users of your forms to draw on attached images
+
+How to make notes on images in web forms designed with Plumsail Forms 
 ===============================================================================
 
 .. contents:: Contents:

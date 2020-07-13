@@ -1,3 +1,6 @@
+.. meta::
+   :description: All versions and changes are described here
+
 Version history of Plumsail Forms (public forms)
 =====================================================================
 

@@ -1,3 +1,8 @@
+.. title:: Сreate SharePoint items from Data Table rows with Power Automate
+
+.. meta::
+   :description: Use Power Automate to create items in SharePoint from public web form's Data Table
+
 How to create SharePoint list items from Data Table rows with Power Automate 
 =======================================================================================
 

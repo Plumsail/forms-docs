@@ -1,3 +1,8 @@
+.. title:: Processing Plumsail Forms in Zapier
+
+.. meta::
+   :description: How to get info from forms' submissions and use them in zaps
+
 Processing submissions of online forms designed with Plumsail Forms in Zapier
 ==========================================================================================
 

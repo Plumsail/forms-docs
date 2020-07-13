@@ -1,3 +1,6 @@
+.. meta::
+   :description: Examples and templates for public web forms integration
+
 Insert row to SQL server from Plumsail Forms with Power Automate or Zapier
 ==========================================================================
 

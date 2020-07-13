@@ -1,5 +1,10 @@
-Send an email with attachments and signature using Zapier
-==========================================================
+.. title:: Send an email with attachments and signature using Zapier
+
+.. meta::
+   :description: Use Zapier and Plumsail public web forms to send emails with attachments and sketches
+
+How to send an email with attachments and signature using Zapier
+=================================================================
 
 .. contents:: Contents:
  :local:

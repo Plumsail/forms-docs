@@ -1,3 +1,8 @@
+.. title:: Adapt public web forms to right-to-left languages
+
+.. meta::
+   :description: One line of code is enough to support right-to-left languages
+
 How to adapt public web forms to right-to-left languages e.g. Arabic or Hebrew
 ===============================================================================
 

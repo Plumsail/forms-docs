@@ -1,3 +1,6 @@
+.. meta::
+   :description: Two main ways to ensure that your forms reach the end user
+
 Sharing web forms created with Plumsail Forms
 ==================================================
 

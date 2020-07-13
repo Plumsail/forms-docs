@@ -1,3 +1,6 @@
+.. meta::
+   :description: Information about common fields and their properties
+
 Fields in Plumsail Forms (public forms)
 ==================================================
 

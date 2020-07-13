@@ -1,5 +1,10 @@
-Upload files to SharePoint Document Library
-==================================================
+.. title:: Upload files to SharePoint Document Library with Power Automate
+
+.. meta::
+   :description: Use Power Automate to upload files attached to public web forms to SharePoint
+
+How to upload files to SharePoint Document Library with Power Automate
+=======================================================================
 
 .. contents:: Contents:
  :local:

@@ -1,4 +1,9 @@
-Send an email from form with Power Automate (MS Flow)
+.. title:: Send an email from form with Power Automate
+
+.. meta::
+   :description: Use Power Automate to send an email from form's submission
+
+How to send an email from form with Power Automate
 =====================================================
 
 .. contents:: Contents:

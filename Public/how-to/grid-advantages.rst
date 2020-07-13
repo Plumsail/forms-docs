@@ -1,3 +1,8 @@
+.. title:: Grids in Plumsail Forms (public forms)
+
+.. meta::
+   :description: How to design complex and responsive forms
+
 How to design complex and responsive public web forms with grids in Plumsail Forms
 ====================================================================================
 

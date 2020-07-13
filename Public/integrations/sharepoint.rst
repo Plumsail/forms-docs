@@ -1,3 +1,6 @@
+.. meta::
+   :description: Examples and templates for public web forms integration
+
 Create items and upload documents to SharePoint from Plumsail Forms with Power Automate 
 ================================================================================================
 

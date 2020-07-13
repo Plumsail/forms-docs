@@ -1,3 +1,6 @@
+.. meta::
+   :description: Examples and templates for public web forms integration
+
 Send email from Plumsail Form with MS Power Automate or Zapier
 ==================================================================
 

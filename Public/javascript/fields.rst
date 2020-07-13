@@ -1,3 +1,8 @@
+.. title:: Managing common fields with JS in Plumsail Forms (public forms)
+
+.. meta::
+   :description: Common fields' JavaScript API with properties and methods
+
 Managing fields with JavaScript in Plumsail Forms (public forms)
 ===========================================================================
 

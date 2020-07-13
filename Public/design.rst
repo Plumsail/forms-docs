@@ -1,3 +1,6 @@
+.. meta::
+   :description: How to use Plumsail Forms - learn the basics
+
 Designing online forms with Plumsail Forms
 ==================================================
 

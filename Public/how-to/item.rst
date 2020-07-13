@@ -1,5 +1,10 @@
-Create an item in SharePoint list
-==================================================
+.. title:: Create an item in SharePoint list
+
+.. meta::
+   :description: Use Power Automate to create items in SharePoint form public web form submissions
+
+How to create an item in SharePoint list with Power Automate
+=============================================================
 
 .. contents:: Contents:
  :local:
