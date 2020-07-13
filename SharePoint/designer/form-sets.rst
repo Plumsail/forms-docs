@@ -83,15 +83,14 @@ Some predefined variables accessible from your code:
     -   **item** - current Item from pnp or null for a New form
     -   **host** - check if form is opened in a regular page, in a panel, or in a user web part. Value can be: 0 / 1 / 2. See :ref:`example <designer-hostvar>`.
 
-The code in custom routing must return either server-relative or absolute URL, or ID of a Form Set. 
-It can also return Promise that is resolved with URL or Form Set ID. 
-The URL or the ID will be used to redirect user either to specific Form Set or address.
+The code in custom routing must return an ID of a Form Set, or a Promise that is resolved with Form Set ID. 
+The ID will be used to render a specific Form Set.
 
-Form Set ID can be found in the lower left corner of the designer, it can be selected and copied:
+Form Set ID can be found in the lower left corner of the designer, it can be copied with a button click:
 
 |pic4|
 
-.. |pic4| image:: ../images/designer/form-sets/4-FormSetID.png
+.. |pic4| image:: ../images/designer/form-sets/designer-form-sets-id.png
    :alt: Form Set ID
 
 If the code returns nothing or throws an error, default routing is applied.

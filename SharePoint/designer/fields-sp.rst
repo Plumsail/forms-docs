@@ -16,6 +16,14 @@ These fields, when added to the form, are automatically connected to the List an
 It's recommended to only use SharePoint fields on SharePoint forms unless you want to handle data from the Common fields with JavaScript or Flow.
 This section contains information about settings for fields that are unique to SharePoint. 
 
+
+.. note::   If you add another column to the list, while editing its forms, you can refresh fields by clicking refresh fields button:
+
+            |refresh|
+
+            .. |refresh| image:: /images/designer/fields-sp/designer-fields-sp-refresh.png
+               :alt: Refresh SharePoint fields
+
 Basic properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Most fields have following settings:
