@@ -435,7 +435,7 @@ These events can be executed from JavaScript editor for Plumsail Forms:
             
             - *Id* - returns the ID of the item.
             
-            - *FileLeafRef* - returns the name of the docuemnt and document set.
+            - *FileLeafRef* - returns the name of the document and document set.
             
             - *RedirectUrl* - holds the URL of a page where a user will be redirected after saving. This object can be changed.
             **Note**: RedirectUrl is ignored inside a panel.
