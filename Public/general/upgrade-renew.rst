@@ -1,5 +1,7 @@
+.. title:: Upgrade or renew your Plumsail Forms subscription
+
 .. meta::
-   :description: Guide to upgrading/renewing subscription
+   :description: Guide on how to upgrade/renew subscription via your personal store account
 
 How to upgrade or renew your Plumsail Forms subscription
 ==============================================================

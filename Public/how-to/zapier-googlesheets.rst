@@ -1,7 +1,7 @@
 .. title:: Create rows in Google Sheets from Data Table
 
 .. meta::
-   :description: Use Zapier and Plumsail public web forms to create rows in Google Sheets from Data Table
+   :description: Use Zapier and Plumsail public web forms to create rows in Google Sheets from Data Table rows submitted by anonymous users
 
 How to create rows in Google Sheets from Data Table with Zapier 
 ==================================================================

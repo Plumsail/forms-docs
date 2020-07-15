@@ -1,5 +1,7 @@
+.. title:: Introduction to building online forms with Plumsail Forms
+
 .. meta::
-   :description: What are public web forms and how to create them with Plumsail Forms
+   :description: Design and publish elegant, responsive and highly customizable forms to any web page by simply adding an HTML widget to it, or share it via a link.
 
 Introduction to building online forms with Plumsail Forms
 ===============================================================
@@ -10,7 +12,7 @@ Introduction to building online forms with Plumsail Forms
  
 Introduction
 --------------------------------------------------
-Plumsail Forms allow you to design and publish elegant, responsive and highly customizable forms to any web page by simply adding an HTML widget to it. 
+Plumsail Forms allow you to design and publish elegant, responsive and highly customizable forms to any web page by simply adding an HTML widget to it, or share it via a link.
 When user submits the form, all data is handled by :doc:`Power Automate (MS Flow) </microsoft-flow>` which opens an ocean of possibilities for its use.
 The data is collected from anonymous users and can be protected with |reCAPTCHA| to prevent Spam submissions.
 

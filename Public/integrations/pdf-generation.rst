@@ -1,5 +1,7 @@
+.. title:: Generate PDF from Plumsail Form 
+
 .. meta::
-   :description: Examples and templates for public web forms integration
+   :description: Examples and templates for public web forms integration with Microsoft Power Automate, Zapier or Plumsail Documents
 
 Generate PDF from Plumsail Form with MS Power Automate, Zapier, or Plumsail Documents
 ====================================================================================================

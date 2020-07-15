@@ -1,5 +1,7 @@
+.. title:: Fields in Plumsail Forms (public forms)
+
 .. meta::
-   :description: Information about common fields and their properties
+   :description: Information about fields, e.g. Text, Number, Drop Down, Toggle, Checkboxes, Radios, Date and Attachments, and their properties that you can configure on a form
 
 Fields in Plumsail Forms (public forms)
 ==================================================

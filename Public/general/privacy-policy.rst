@@ -1,5 +1,7 @@
+.. title:: Privacy Policy of Plumsail Forms (public forms)
+
 .. meta::
-   :description: What data is collected, how and why
+   :description: What data is collected, how and why, for users of our public web forms
 
 Privacy Policy of Plumsail Forms (public forms)
 =================================================

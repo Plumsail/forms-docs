@@ -1,5 +1,7 @@
+.. title:: Create items and upload documents to SharePoint from Plumsail Forms
+
 .. meta::
-   :description: Examples and templates for public web forms integration
+   :description: Examples and templates for public web forms integration with Microsoft Power Automate
 
 Create items and upload documents to SharePoint from Plumsail Forms with Power Automate 
 ================================================================================================

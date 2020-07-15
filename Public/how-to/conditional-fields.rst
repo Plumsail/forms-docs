@@ -1,7 +1,7 @@
 .. title:: Work with fields using JS on Plumsail Forms (public forms)
 
 .. meta::
-   :description: How to populate, hide, show, disable and modify fields with JavaScript
+   :description: How to populate, hide, show, disable, make required and modify fields, on various events, with custom conditions using JavaScript
    
 How to populate, hide, disable, or make mandatory fields of public web forms in JavaScript 
 ============================================================================================

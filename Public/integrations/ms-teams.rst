@@ -1,5 +1,7 @@
+.. title:: Send MS Teams message from Plumsail Form
+
 .. meta::
-   :description: Examples and templates for public web forms integration
+   :description: Examples and templates for public web forms integration with Microsoft Power Automate or Zapier
 
 Send MS Teams message from Plumsail Form with MS Power Automate or Zapier
 ==========================================================================

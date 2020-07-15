@@ -1,7 +1,9 @@
-.. meta::
-   :description: Examples and templates for public web forms integration
+.. title:: Generate Word document from Plumsail Form
 
-Generate Word document from Plumsail Form  with MS Power Automate, Zapier, or Plumsail Documents
+.. meta::
+   :description: Examples and templates for public web forms integration with Microsoft Power Automate, Zapier or Plumsail DOcuments
+
+Generate Word document from Plumsail Form with MS Power Automate, Zapier, or Plumsail Documents
 ====================================================================================================
 
 .. contents:: Contents:

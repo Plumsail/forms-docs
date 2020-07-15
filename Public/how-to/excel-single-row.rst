@@ -1,7 +1,7 @@
 .. title:: Add row to Excel or Google Sheets with Power Automate
 
 .. meta::
-   :description: Use Power Automate to add row to Excel or Google Sheets from public web form submission
+   :description: Use Mictosoft Power Automate to add a single row to Excel or Google Sheets from public web form submission
 
 How to add row to Excel Table (Office 365) or Google Sheet from Public Web Form
 ================================================================================

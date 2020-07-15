@@ -1,5 +1,7 @@
+.. title:: Data protection and security in Plumsail Forms (public forms)
+
 .. meta::
-   :description: How we protect your data
+   :description: How we protect your data - application security, data security, business transactions, GDPR
 
 Data protection and security in Plumsail Forms (public forms)
 =================================================================

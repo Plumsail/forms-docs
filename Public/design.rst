@@ -1,5 +1,7 @@
+.. title:: Designing online forms with Plumsail Forms
+
 .. meta::
-   :description: How to use Plumsail Forms - learn the basics
+   :description: How to create public web forms - learn the basics: web editor vs desktop editor, add fields, controls and containers, save the form
 
 Designing online forms with Plumsail Forms
 ==================================================

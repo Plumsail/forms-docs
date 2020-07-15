@@ -1,7 +1,7 @@
-.. title:: Managing controls with JS in Plumsail Forms (public forms)
+.. title:: Managing controls with JavaScript 
 
 .. meta::
-   :description: Controls' JavaScript API with properties and methods
+   :description: Controls' JavaScript API with properties and methods in Plumsail Forms (public forms)
 
 Managing controls with JavaScript in Plumsail Forms (public forms)
 ==================================================================================

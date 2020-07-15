@@ -1,7 +1,7 @@
 .. title:: From Data Table to Excel or Google Sheets with Power Automate
 
 .. meta::
-   :description: Use Power Automate to add rows to Excel or Google Sheets from public web form's Data Table
+   :description: Use Mictosoft Power Automate to add rows to Excel or Google Sheets from public web form's Data Table rows
 
 How to create Excel or Google Sheet rows from Data Table with Power Automate 
 ================================================================================

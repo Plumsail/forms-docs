@@ -1,7 +1,7 @@
 .. title:: Work with Date and Time fields in public web forms using JS
 
 .. meta::
-   :description: Add, subtract, calculate difference between dates and more, using JavaScript and Moment.js
+   :description: Add, subtract, calculate number of days between two dates, calculate number of business days and hours, and more, using JavaScript and Moment.js
 
 How to work with Date and Time fields in public web form with JavaScript
 =========================================================================

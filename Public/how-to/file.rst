@@ -1,7 +1,7 @@
 .. title:: Upload files to SharePoint Document Library with Power Automate
 
 .. meta::
-   :description: Use Power Automate to upload files attached to public web forms to SharePoint
+   :description: Use Mictosoft Power Automate to upload files attached to public web forms to SharePoint Document Library and update uploaded files' properties
 
 How to upload files to SharePoint Document Library with Power Automate
 =======================================================================

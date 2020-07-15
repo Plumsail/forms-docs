@@ -1,7 +1,7 @@
 .. title:: Send an email from form with Power Automate
 
 .. meta::
-   :description: Use Power Automate to send an email from form's submission
+   :description: Use Mictosoft Power Automate to send a customized email on form's submission using submitted data
 
 How to send an email from form with Power Automate
 =====================================================

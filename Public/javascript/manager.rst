@@ -1,7 +1,7 @@
-.. title:: Managing form with JS in Plumsail Forms (public forms)
+.. title:: Managing form with JavaScript
 
 .. meta::
-   :description: JavaScript API for managing the form
+   :description: JavaScript API for managing the form in Plumsail Forms (public forms)
 
 Managing form with JavaScript in Plumsail Forms (public forms)
 =============================================================================

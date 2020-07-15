@@ -1,5 +1,7 @@
+.. title:: Installation of Plumsail Forms for public web forms
+
 .. meta::
-   :description: How to install Forms - step by step text and video guide
+   :description: How to start using public web forms - step by step text instruction with images and video guide
 
 Installation of Plumsail Forms for public web forms
 ==========================================================

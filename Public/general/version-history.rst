@@ -1,5 +1,7 @@
+.. title:: Version history of Plumsail Forms (public forms)
+
 .. meta::
-   :description: All versions and changes are described here
+   :description: All versions, changes and updates are described here
 
 Version history of Plumsail Forms (public forms)
 =====================================================================
