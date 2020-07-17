@@ -78,7 +78,7 @@ To get specific values of items from the array, we add tags to the table with th
 
 For instance, to get the description of the assignment, we add this tag: **{{Assignments.Description}}**  
 
-.. Note:: If the field value stores as an object, to get the property inside an object, we need to use a dot operator. For instance, to get the display name of the user that is selected in 'AssignedTo' field, we use this tag: **{{Assignments.AssignedTo.DisplayName}}**
+.. Note:: If a field value stores an object, use the dot operator to get a property from the object. For instance, to get a display name of a user that is selected in 'AssignedTo' field, use this tag: **{{Assignments.AssignedTo.DisplayName}}**
 
 Also, you can format a tag value. For instance, in our template, we format date tags like this: **{{Created}:format(MM.dd.yyyy)}** 
 
