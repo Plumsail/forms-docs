@@ -16,7 +16,7 @@ You can follow the instruction or watch a video here:
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WuidPMLnQbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div data-nosnippet="true"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WuidPMLnQbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 First step - Register a Plumsail Account
 --------------------------------------------------
