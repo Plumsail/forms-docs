@@ -1,3 +1,8 @@
+.. title:: Update Plumsail Forms On-Premises solution
+
+.. meta::
+   :description: How to download and install an update for the On-Premises installation of Plumsail Forms
+
 Update Plumsail Forms On-Premises solution
 ==================================================
 

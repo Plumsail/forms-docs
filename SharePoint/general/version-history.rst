@@ -1,7 +1,7 @@
 .. title:: Version history of Plumsail Forms for SP Online (Office 365)
 
 .. meta::
-   :description: All versions and changes are described here
+   :description: All versions, changes and updates of Plumsail Forms for SharePoint Online are described here
 
 
 Version history of Plumsail Forms for SharePoint Online (Office 365)
@@ -184,7 +184,7 @@ SharePoint Fields **ID**, **Created By**, **Created**, **Modified By**, **Modifi
 
 Plain Text and Rich Text controls now support display of SharePoint Fields, for example: *Current item #[ID] has been created by [Author]*. Simply place field's [Internal Name] in square brackets.
 
-Simplified URL generation for SharePoint Forms, now :ref:`using query string<link-specific>` for parameters, instead of the hash. Allows linking to specific Form Sets and fixes issues with linking forms in IE. Need to :doc:`update the app package </general/update-package>` for the URL generation to update.
+Simplified URL generation for SharePoint Forms, now using query string for parameters, instead of the hash. Allows linking to specific Form Sets and fixes issues with linking forms in IE. Need to :doc:`update the app package </general/update-package>` for the URL generation to update.
 
 Various bug fixes
 

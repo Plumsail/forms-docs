@@ -1,5 +1,7 @@
+.. title:: Plumsail Form in SharePoint panel
+
 .. meta::
-   :description: Select if you want forms to load in a panel or not
+   :description: Form Panel will open Plumsail SharePoint forms in a panel, similar to default SharePoint forms. Select if you want Plumsail forms to load in a panel or not
 
 Configuring appearance of SharePoint form in panel from list or library view
 ==================================================================================

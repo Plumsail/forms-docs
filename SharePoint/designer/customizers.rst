@@ -1,7 +1,7 @@
 .. title:: Ink Sketch, DataTable, and Likert Scale in SharePoint
 
 .. meta::
-   :description: How to save controls to list, and how to display them in List View
+   :description: How to save complex controls such as signature or table to a SharePoint list, and how to display them in List View
 
 Save Ink Sketch, DataTable, and Likert Scale controls to SharePoint fields + List View Rendering
 =================================================================================================

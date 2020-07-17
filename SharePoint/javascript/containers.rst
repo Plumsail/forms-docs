@@ -1,7 +1,7 @@
-.. title:: Managing containers with JS in Plumsail Forms for SharePoint
+.. title:: Managing containers with JavaScript
 
 .. meta::
-   :description: Containers' JavaScript API with properties and methods
+   :description: Containers' JavaScript API with properties and methods in Plumsail Forms for SharePoint
 
 Managing containers with JavaScript in Plumsail Forms for SharePoint
 ============================================================================

@@ -1,3 +1,5 @@
+.. title:: Licensing Information for SharePoint Forms
+
 .. meta::
    :description: Plumsail Forms licensing details for SP Online and SP 2019
 

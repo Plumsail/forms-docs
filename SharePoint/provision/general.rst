@@ -1,7 +1,7 @@
 .. title:: Plumsail Forms Provisioning API for SharePoint 
 
 .. meta::
-   :description: Provision forms to SP sites in Visual Studio with our NuGet package
+   :description: Provision exported forms to SharePoint sites in Visual Studio with our NuGet package
 
 Provisioning API for SharePoint forms designed in Plumsail Forms
 ===============================================================================

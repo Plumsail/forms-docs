@@ -1,5 +1,7 @@
+.. title:: Personalized Form sets in Plumsail Forms for SharePoint
+
 .. meta::
-   :description: How to create special form sets and redirect users to them
+   :description: How to create special form sets, such as a set of forms for supervisors or managers, and redirect only specific users to them based on SharePoint groups or custom rules
 
 Personalized Form sets in Plumsail Forms for SharePoint
 =============================================================

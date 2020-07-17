@@ -1,5 +1,7 @@
+.. title:: Privacy Policy of Plumsail Forms for SharePoint
+
 .. meta::
-   :description: What data is collected, how and why
+   :description: What data is collected, how and why, for users of our SharePoint forms
 
 Privacy Policy of Plumsail Forms for SharePoint
 =================================================

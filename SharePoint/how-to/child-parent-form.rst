@@ -1,7 +1,7 @@
 .. title:: Automatically bind items or documents to parent
 
 .. meta::
-   :description: How to associate items and files in List or Library with parent item or document
+   :description: How to bind items and files in List or Library to parent item or document - create items or upload documents from the form, and associate them with current item
 
 How to create SharePoint form with associated items or documents and bind new ones automatically
 ===================================================================================================

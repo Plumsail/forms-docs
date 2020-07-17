@@ -1,5 +1,7 @@
+.. title:: Roadmap of Plumsail Forms for SharePoint
+
 .. meta::
-   :description: Planned and developed features of Plumsail Forms
+   :description: Planned and developed features of Plumsail Forms for SharePoint - these will soon be available
 
 Roadmap of Plumsail Forms for SharePoint
 =======================================================

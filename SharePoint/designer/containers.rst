@@ -1,5 +1,8 @@
+.. title:: Containers in Plumsail Forms for SharePoint
+
 .. meta::
-   :description: Information about containers and their properties
+   :description: Information about containers, such as Grid, Tabs, Accordion and Wizard, and their properties that you can configure on a form
+
 
 Containers in Plumsail Forms for SharePoint
 ==================================================

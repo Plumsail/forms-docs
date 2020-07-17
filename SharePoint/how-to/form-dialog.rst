@@ -1,7 +1,7 @@
 .. title:: Open SharePoint form in dialog from another form
 
 .. meta::
-   :description: Open another SP form in dialog and pass parameters to it with JavaScript
+   :description: Open another SharePoint form in a dialog and pass parameters to it with JavaScript to populate fields
 
 How to open SharePoint form in dialog from another form and pass parameters with JavaScript
 ===============================================================================================

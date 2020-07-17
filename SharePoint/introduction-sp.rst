@@ -1,7 +1,7 @@
 .. title:: Intro to modern forms for SP Online (Office 365) and SP 2019
 
 .. meta::
-   :description: What are modern forms and how to create them with Plumsail Forms
+   :description: What is SharePoint modern UI, how it's different from classic UI, and how to create custom forms for modern UI with Plumsail Forms
 
 Introduction to modern forms for SharePoint Online in Office 365 and SharePoint 2019
 ====================================================================================================

@@ -1,5 +1,7 @@
+.. title:: SharePoint Fields in Plumsail Forms for SharePoint
+
 .. meta::
-   :description: Information about SharePoint fields and their properties
+   :description: Information about SharePoint fields, e.g. Currency and Lookup, and their properties that you can configure on a form
 
 SharePoint Fields
 ==================================================

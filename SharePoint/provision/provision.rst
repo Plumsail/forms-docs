@@ -1,7 +1,7 @@
 .. title:: Plumsail Forms Provisioning example for SharePoint 
 
 .. meta::
-   :description: Example of provisioning forms to a SP site in Visual Studio
+   :description: Example of provisioning forms to a SharePoint site in Visual Studio - follow this case to provision your form
 
 Provisioning SharePoint forms designed in Plumsail Forms
 =======================================================================

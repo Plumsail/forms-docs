@@ -1,7 +1,7 @@
 .. title:: Configure lookup fields pointing to very large lists
 
 .. meta::
-   :description: How to add support to large lists with over 5,000 items
+   :description: How to add support to lookup fields that point to very large lists with over 5,000 items with indexed columns
 
 How to configure lookup fields pointing to large lists with more than 5000 items
 ===============================================================================================

@@ -1,5 +1,8 @@
+.. title:: Controls in Plumsail Forms for SharePoint
+
 .. meta::
-   :description: Information about controls and their properties
+   :description: Information about controls, such as Text, Image, HTML, Button, Ink Sketch, DataTable, Likert and List or Library, and their properties that you can configure on a form
+
 
 Controls in Plumsail Forms for SharePoint
 ==================================================

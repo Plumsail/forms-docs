@@ -1,7 +1,7 @@
 .. title:: Generate PDF from DOCX template and SharePoint form
 
 .. meta::
-   :description: How to create a form from the template and email it as PDF
+   :description: A step-by-step instruction on how you can create Work Order Form from the template and send its PDF version to a specific email
 
 How to generate PDF document from DOCX template and SharePoint form fields
 ====================================================================================

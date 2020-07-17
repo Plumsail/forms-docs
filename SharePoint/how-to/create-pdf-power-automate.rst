@@ -1,7 +1,7 @@
 .. title:: PDF document from SharePoint form based on Word template
 
 .. meta::
-   :description: How to convert form data to PDF using Power Automate and Plumsail Forms
+   :description: How to convert form data to PDF using Plumsail Forms, DOCX template, Power Automate and Word Online (Business) connector
 
 Create PDF document from SharePoint form based on Word template with Power Automate and Word Online (Business) connector 
 ==========================================================================================================================

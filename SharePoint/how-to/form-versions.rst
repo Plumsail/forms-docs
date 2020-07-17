@@ -1,7 +1,7 @@
 .. title:: Restore previous version of SharePoint form
 
 .. meta::
-   :description: Find out how to restore older versions of SP forms designed with Plumsail Forms
+   :description: Find out how to restore older versions of SharePoint forms designed with Plumsail Forms using SharePoint version history
 
 How to restore previous version of SharePoint form designed with Plumsail Forms
 ======================================================================================

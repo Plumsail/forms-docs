@@ -1,7 +1,8 @@
-.. title:: Use JS on Date and Time fields in SharePoint form
+.. title:: Work with Date and Time fields in SharePoint forms using JS
 
 .. meta::
-   :description: Many examples for working with date fields using JavaScript API
+   :description: Add, subtract, calculate number of days between two dates, calculate number of business days and hours, and more, using JavaScript and Moment.js
+
 
 How to work with Date and Time fields in SharePoint form with JavaScript
 =========================================================================

@@ -1,7 +1,7 @@
 .. title:: Installation of Plumsail Forms for SP 2019 (On-Premises)
 
 .. meta::
-   :description: How to install Forms - step by step text and video guide
+   :description: How to start using Plumsail Forms for SharePoint 2019 - step by step text instruction with images and video guide
 
 Installation of Plumsail Forms for SharePoint 2019 (On-Premises)
 =============================================================================
@@ -16,7 +16,7 @@ You can follow the instruction or watch a video here:
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9AIuz_2OWg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div data-nosnippet="true"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9AIuz_2OWg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 Install Farm Solution
 ------------------------------------------------------------

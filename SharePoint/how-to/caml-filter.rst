@@ -1,7 +1,7 @@
 .. title:: Filter List or Library by CAML in a SharePoint form 
 
 .. meta::
-   :description: How to filter List or Library control
+   :description: Examples on how to filter List or Library control by one field, by one field dynamically, by multiple fields, add filter with lookup filter already applied, and more
 
 How to filter items or documents by CAML in List or Library control
 =================================================================================

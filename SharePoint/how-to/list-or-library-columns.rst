@@ -1,7 +1,7 @@
 .. title:: Customize view of columns in List or Library
 
 .. meta::
-   :description: Adjust presentation of columns on Plumsail Forms' List or Library control
+   :description: Adjust presentation of columns on Plumsail Forms' List or Library control - e.g. add button to send an email, highlight overdue dates, open lookup fields in dialogs and more
 
 How to customize view of columns in List or Library control
 =====================================================================

@@ -1,7 +1,7 @@
 .. title:: Designing modern forms for SP Online (Office 365) and SP 2019
 
 .. meta::
-   :description: How to use Plumsail Forms - learn the basics
+   :description: How to create SharePoint forms - learn the basics: open desktop editor and connect, add fields, controls and containers, save the form
 
 Designing modern forms for SharePoint Online in Office 365 and SharePoint 2019
 ===============================================================================================================

@@ -1,7 +1,7 @@
 .. title:: Customize appearance for lookup fields in a SharePoint form
 
 .. meta::
-   :description: Use JavaScript to transform lookup field results
+   :description: Use JavaScript to transform lookup field results - customize styles, add information from other fields, even include images if necessary
 
 How to customize appearance of search results for lookup fields in SharePoint form
 ======================================================================================================

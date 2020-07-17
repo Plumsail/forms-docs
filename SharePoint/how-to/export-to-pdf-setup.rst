@@ -1,5 +1,7 @@
+.. title:: Edit form as default for a specific SharePoint group
+
 .. meta::
-   :description: Number of properties to adjust the exported PDF with
+   :description: Adjustments you can make to SharePoint form before exporting it to PDF - adjust layout (size, orientation, margins) and styles, show or hide certain parts of the form, manage page breaks and more
 
 How to save SharePoint form as PDF for printing
 =================================================================

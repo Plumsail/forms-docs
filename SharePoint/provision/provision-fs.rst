@@ -1,7 +1,7 @@
 .. title:: Plumsail Forms Provisioning form sets for SharePoint 
 
 .. meta::
-   :description: Example of provisioning form sets with panel settings to a SP site
+   :description: Example of provisioning form sets with panel settings to a SharePoint site - follow this example to provision forms with panel settings
 
 Provisioning Form sets and Panel settings
 ===========================================

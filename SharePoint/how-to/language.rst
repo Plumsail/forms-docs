@@ -1,7 +1,7 @@
 .. title:: SharePoint forms for alternative languages
 
 .. meta::
-   :description: How to create new forms for alternative languages in Plumsail Forms
+   :description: How to create new forms for alternative languages and configure routing to them in Plumsail Forms
 
 How to create different SharePoint forms for alternative languages
 ===================================================================

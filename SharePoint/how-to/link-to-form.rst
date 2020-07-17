@@ -1,7 +1,7 @@
-.. title:: Link to a specific SharePoint form
+.. title:: Link to a SharePoint form
 
 .. meta::
-   :description: How to generate links to a Plumsail form in SharePoint
+   :description: How to generate links to a Plumsail form in SharePoint - either manually or with JavaScript
 
 How to generate link to specific SharePoint form
 ==================================================
