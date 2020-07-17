@@ -68,7 +68,7 @@ Then, we exclude those rooms from the lookup results:
     if(roomIds.length > 0) {
         var filterString = "Id ne " + roomIds.join(" and Id ne ");
         fd.field('ConferenceRoom').filter = filterString;
-        fd.field('ConferenceRoom').widget.dataSource.read();
+        fd.field('ConferenceRoom').refresh();
     }
 
 Filtering is applied automatically after changing the Reservation Date field: 
@@ -132,7 +132,7 @@ Here is the final code:
                         //filter Conference room lookup field values
                         var filterString = "Id ne " + roomIds.join(" and Id ne ");
                         fd.field('ConferenceRoom').filter = filterString;
-                        fd.field('ConferenceRoom').widget.dataSource.read();
+                        fd.field('ConferenceRoom').refresh();
                     }
                 });
             }
