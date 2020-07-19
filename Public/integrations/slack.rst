@@ -1,3 +1,8 @@
+.. title:: Send message in Slack from Plumsail Form 
+
+.. meta::
+   :description: Examples and templates for public web forms integration with Microsoft Power Automate or Zapier
+
 Send message in Slack from Plumsail Form with MS Power Automate or Zapier
 ==========================================================================
 

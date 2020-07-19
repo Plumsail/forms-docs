@@ -1,3 +1,8 @@
+.. title:: Licensing Information
+
+.. meta::
+   :description: Plumsail Forms licensing details for public web forms
+
 Licensing Information
 ==================================================
 

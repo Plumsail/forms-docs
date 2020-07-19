@@ -1,4 +1,9 @@
-Update the app package
+.. title:: Update the app package for Plumsail Forms (SharePoint Online)
+
+.. meta::.. meta::
+   :description: Occasionally, we'll update our app package to expand product's functionality and to fix any issues from SP updates. Here's how you can install the latest version
+
+How to update the app package for Plumsail Forms
 ==================================================
 
 .. contents:: Contents:

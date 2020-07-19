@@ -1,3 +1,8 @@
+.. title:: Data Table to PDF with HTML-template and Plumsail Documents
+
+.. meta::
+   :description: Use Microsoft Power Automate and Plumsail Documents to generate HTML-template and convert Data Table to PDF
+   
 How to generate HTML-template for Data Table and convert it into PDF document with Power Automate 
 ==========================================================================================================
 
@@ -171,34 +176,3 @@ And here's PDF that I receive from Flow:
 
 .. image:: ../images/how-to/data-table-convert-html/4_PDF.png
    :alt: Final PDF
-
-| 
-
-Fixing time zones for Dates
--------------------------------
-One issue that you may face with the dates in Flow is time zone offset. 
-
-Dates in Microsoft Flow are in Universal Time (aka, UTC or GMT) by default, but Plumsail Forms dates are in your local time which could lead to unexpected results.
-
-These differences can be resolved by adjusting dates before submission with JavaScript in **fd.beforeSave()** event.
-
-In our case, we can make sure that dates are correct with the following code, including dates in our expenses table:
-
-.. code-block:: javascript
-
-    fd.beforeSave(function(data) {
-        //convert From field to appropriate 12:00 AM Time UTC:
-        data.From = new Date(data.From.getTime() 
-            - data.From.getTimezoneOffset() * 60000);
-            
-        //convert To field to appropriate 12:00 AM Time UTC:
-        data.To = new Date(data.To.getTime() 
-            - data.To.getTimezoneOffset() * 60000);
-
-        //convert Date column to appropriate 12:00 AM Time UTC:
-        for (var i = 0; i < data.ExpensesTable.length; i++){
-		    var date = data.ExpensesTable[i].Date;
-		    data.ExpensesTable[i].Date = new Date(date.getTime() 
-			    - date.getTimezoneOffset() * 60000);
-	}
-    });

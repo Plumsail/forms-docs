@@ -1,5 +1,29 @@
+.. title:: Version history of Plumsail Forms for SP Online (Office 365)
+
+.. meta::
+   :description: All versions, changes and updates of Plumsail Forms for SharePoint Online are described here
+
+
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
+
+v1.7.1
+--------------------------------------------------
+Many UI enhancements for the desktop editor - currently selected site URL visible in full when connecting, custom Form Set routing code moved to JavaScript editor, added current List View section to CSS editor, moved Reset button away from Save to form type dropdown, new button to refresh SP fields without reconnecting, and a button to copy Form Set ID, simplified Panel dialog menu by removing List View JS section.
+
+Form panels are enabled by default now.
+
+Minor bug fixes
+
+v1.6.4
+--------------------------------------------------
+Separate forms are not generated anymore for every form set. A default form resolves the form set now
+
+Performance improvements when opening forms in full-screen mode
+
+Fixed a bug with multilingual sites when users with different languages had to design forms separately
+
+.. Note:: :doc:`Update the app package </general/update-package>` for new functionality.
 
 v1.6.1
 --------------------------------------------------
@@ -160,7 +184,7 @@ SharePoint Fields **ID**, **Created By**, **Created**, **Modified By**, **Modifi
 
 Plain Text and Rich Text controls now support display of SharePoint Fields, for example: *Current item #[ID] has been created by [Author]*. Simply place field's [Internal Name] in square brackets.
 
-Simplified URL generation for SharePoint Forms, now :ref:`using query string<link-specific>` for parameters, instead of the hash. Allows linking to specific Form Sets and fixes issues with linking forms in IE. Need to :doc:`update the app package </general/update-package>` for the URL generation to update.
+Simplified URL generation for SharePoint Forms, now using query string for parameters, instead of the hash. Allows linking to specific Form Sets and fixes issues with linking forms in IE. Need to :doc:`update the app package </general/update-package>` for the URL generation to update.
 
 Various bug fixes
 

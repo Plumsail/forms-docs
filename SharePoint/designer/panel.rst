@@ -1,3 +1,8 @@
+.. title:: Plumsail Form in SharePoint panel
+
+.. meta::
+   :description: Form Panel will open Plumsail SharePoint forms in a panel, similar to default SharePoint forms. Select if you want Plumsail forms to load in a panel or not
+
 Configuring appearance of SharePoint form in panel from list or library view
 ==================================================================================
 
@@ -7,22 +12,21 @@ Configuring appearance of SharePoint form in panel from list or library view
 
 Introduction
 -------------------------------------------------------------
-SharePoint Form Panel allows you to open SharePoint forms in a panel, similar to default SharePoint forms.
+SharePoint Form Panel will open SharePoint forms in a panel, similar to default SharePoint forms.
 
-*In order to use this functionality, please, make sure to* :ref:`update the package <install-app-package>` *in the App Catalog to v.1.0.4 or higher.*
+.. note::    *In order to use this functionality, please, make sure to* :ref:`update the package <install-app-package>` *in the App Catalog to the latest version.*
 
 Form Panel preserves full functionality of our custom SharePoint fields - including :doc:`routing </designer/form-sets>`.
 
-It's configured in the designer, in the new Form Panel section:
+It is enabled by default in the latest version, but can be configured in the designer, in the Form Panel section:
 
-.. image:: ../images/designer/panel/Menu.png
+.. image:: ../images/designer/panel/designer-panel-menu.png
    :alt: Form Panel configuration menu
 
-Here, you can select which forms you want to be opened in the panel, as well as the size of the panel. 
-After first configuration, please, **re-save** the forms that you want to open in the panel.
+Here, you can select which forms you want or do not want to be opened in the panel, as well as the size of the panel. 
 
-**Important!** There is a slight delay between the time when a user opens the list and when the script loads completely for panel forms, so if the users open a form too quickly, 
-then they will be redirected to a default full-screen form instead of a panel.
+.. important::    There is a slight delay between the time when a user opens the list and when the script loads completely for panel forms, so if the users open a form too quickly, 
+                  then they will be redirected to a default full-screen form instead of a panel.
 
 Custom Width
 *************************************************************
@@ -33,16 +37,3 @@ If you want to change the width of the Panel, and three given options do not sui
         .ms-Panel-main{
           width: 1200px !important;
         }
-
-Advanced
--------------------------------------------------------------
-Inside Form Panel configuration there is the Custom Code tab, where you can add JavaScript which will execute when the script loads in the List View.
-
-For example, this code will allow you to hide Properties section in Details panel, so user will need to open an actual form to edit them:
-
-.. code-block:: javascript
-
-        var styleEl = document.createElement('style');
-        document.head.appendChild(styleEl);
-        var styleSheet = styleEl.sheet;
-        styleSheet.insertRule('.InfoPaneSection--properties{display: none;}', 0);

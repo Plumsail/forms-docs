@@ -1,3 +1,8 @@
+.. title:: Sharing web forms created with Plumsail Forms
+
+.. meta::
+   :description: There are two main ways to ensure that your forms reach the end user - share form via a link or publish it to a webpage on your site
+
 Sharing web forms created with Plumsail Forms
 ==================================================
 

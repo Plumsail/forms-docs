@@ -1,3 +1,8 @@
+.. title:: Managing dialog with JS
+
+.. meta::
+   :description: Dialog's JavaScript API with properties and methods in Plumsail Forms for SharePoint
+
 Managing dialogs in SharePoint form with JavaScript in Plumsail Forms for SharePoint
 ================================================================================================
 

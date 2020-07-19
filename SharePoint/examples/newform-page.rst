@@ -1,3 +1,8 @@
+.. title:: Move new SharePoint form page to another location
+
+.. meta::
+   :description: Example of how you can move page with the form anywhere, and it would still work just fine if the user has appropriate permissions
+
 How to move new SharePoint form page to another location
 =============================================================
 

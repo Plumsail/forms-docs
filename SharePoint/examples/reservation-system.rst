@@ -1,3 +1,8 @@
+.. title:: Create SharePoint form for booking a meeting room
+
+.. meta::
+   :description: We'll show you how to create a simple reservation system. This approach can be applied in booking systems for hotels, restaurants, meeting, or conference planning.
+
 How to create SharePoint form for booking a meeting room
 =========================================================================
 

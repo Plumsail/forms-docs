@@ -1,3 +1,8 @@
+.. title:: Add rows to Google Sheets from Plumsail Form
+
+.. meta::
+   :description: Examples and templates for public web forms integration with Microsoft Power Automate or Zapier
+
 Add rows to Google Sheets from Plumsail Form with MS Power Automate or Zapier
 ==============================================================================
 
@@ -26,8 +31,8 @@ Recommended template:
 .. toctree::
       :maxdepth: 1
       
-      Add row to Excel Table (Office365) or Google Sheet from Public Web Form <../how-to/excel-single-row>
-      Use Data Table to add rows to Excel (Office365) or Google Sheet from Public Web Form <../how-to/excel-datatable>
+      Add row to Excel Table (Office 365) or Google Sheet from Public Web Form <../how-to/excel-single-row>
+      Use Data Table to add rows to Excel (Office 365) or Google Sheet from Public Web Form <../how-to/excel-datatable>
 
 .. |Google Sheets|  raw:: html
 

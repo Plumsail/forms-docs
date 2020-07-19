@@ -1,3 +1,8 @@
+.. title:: Display version history in a SharePoint form
+
+.. meta::
+   :description: Track item and specific field changes, as well as users who've added these changes with version history on the form
+
 How to display version history in a SharePoint form
 =================================================================================================
 

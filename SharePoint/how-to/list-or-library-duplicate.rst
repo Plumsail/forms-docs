@@ -1,3 +1,8 @@
+.. title:: Add duplicate button to the toolbar of List or Library
+
+.. meta::
+   :description: Example of how to add a button to a List or Library control on SharePoint form that will duplicate selected item
+
 How to add custom button to toolbar of List or Library control and duplicate selected item
 ==================================================================================================
 

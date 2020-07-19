@@ -1,3 +1,8 @@
+.. title:: Start flow after submitting SharePoint form and wait for it
+
+.. meta::
+   :description: Set up flow which starts on saving the form, then redirect users to the updated form after the flow is done
+
 How to start flow after submitting SharePoint form and wait for results
 =============================================================================================
 

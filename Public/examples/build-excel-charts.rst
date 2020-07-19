@@ -1,3 +1,8 @@
+.. title:: Create online quiz and visualize results with Excel charts
+
+.. meta::
+   :description: Build complex form for an online quiz to get information from submissions, and use it to build charts for data analysis in Excel
+
 How to create online quiz and visualize results with Excel charts
 =========================================================================
 

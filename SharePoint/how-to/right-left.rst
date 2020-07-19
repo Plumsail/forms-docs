@@ -1,3 +1,8 @@
+.. title:: Adapt SharePoint forms to right-to-left languages
+
+.. meta::
+   :description: Some languages require form to be read right to left, for example, Arabic or Farsi. One line of code is enough to support right-to-left languages
+
 How to adapt SharePoint form to right-to-left languages e.g. Arabic or Hebrew
 ===============================================================================
 

@@ -1,3 +1,8 @@
+.. title:: Ribbon actions in Plumsail Forms for SharePoint
+
+.. meta::
+   :description: What do the buttons in the ribbon do - adjust form layout for mobile devices, export and import forms, open general settings or preview form
+
 Ribbon actions in Plumsail Forms for SharePoint
 ==================================================
 

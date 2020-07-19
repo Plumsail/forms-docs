@@ -1,3 +1,8 @@
+.. title:: Managing common fields with JavaScript
+
+.. meta::
+   :description: Common fields' JavaScript API with properties and methods in Plumsail Forms for SharePoint
+
 Managing common fields with JavaScript in Plumsail Forms for SharePoint
 =========================================================================
 

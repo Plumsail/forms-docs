@@ -1,4 +1,9 @@
-Themes
+.. title:: SharePoint themes with Plumsail Forms
+
+.. meta::
+   :description: How SharePoint themes are applied to Forms - support for both standard and custom themes
+
+SharePoint themes with Plumsail Forms
 =========================================
 
 .. contents:: Contents:

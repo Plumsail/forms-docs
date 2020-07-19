@@ -1,3 +1,8 @@
+.. title:: Intro to modern forms for SP Online (Office 365) and SP 2019
+
+.. meta::
+   :description: What is SharePoint modern UI, how it's different from classic UI, and how to create custom forms for modern UI with Plumsail Forms
+
 Introduction to modern forms for SharePoint Online in Office 365 and SharePoint 2019
 ====================================================================================================
 
@@ -83,4 +88,4 @@ Last, but not least, you get the ability to create more than one form for a list
 and automatically redirect users to the correct form. Not only that, but you can write custom rules for redirection, based on item's values 
 and/or user's properties, and make sure that you provide the appropriate form in all circumstances.
 
-Find out :doc:`how to install the product for Office365 </installation-sp>` or :doc:`how to install the product for SharePoint 2019 </installation-2019>`.
+Find out :doc:`how to install the product for Office 365 </installation-sp>` or :doc:`how to install the product for SharePoint 2019 </installation-2019>`.

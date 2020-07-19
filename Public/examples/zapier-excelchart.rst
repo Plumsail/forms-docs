@@ -1,3 +1,8 @@
+.. title:: Save Likert Scale answers with Zapier and build Excel charts
+
+.. meta::
+   :description: This article will show you how you can use our forms, Zapier and Excel file to gather information from anonymous submissions and build charts with it
+
 How to save Likert Scale answers to Excel with Zapier and build real-time charts
 ==================================================================================
 
@@ -104,7 +109,7 @@ That's okay, the data will be accessible later, the tests must be performed.
 .. |pic10| image:: ../images/how-to/zapier-excelchart/10_output.png
    :alt: Test Output
 
-This will select the first answer from Likert scale. You'll need to repeat this step four times total, replacing *0* with *1*,*2* and *3*, so you have 4 Formatter Utilities actions:
+This will select the first answer from Likert Scale. You'll need to repeat this step four times total, replacing *0* with *1*,*2* and *3*, so you have 4 Formatter Utilities actions:
 
 |pic11|
 

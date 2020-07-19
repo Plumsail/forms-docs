@@ -1,3 +1,8 @@
+.. title:: Controls in Plumsail Forms (public forms)
+
+.. meta::
+   :description: Information about controls, such as Text, Image, HTML, Button, Ink Sketch, DataTable and Likert, and their properties that you can configure on a form
+
 Controls in Plumsail Forms (public forms)
 ====================================================
 

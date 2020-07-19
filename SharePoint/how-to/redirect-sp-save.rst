@@ -1,3 +1,8 @@
+.. title:: Redirect users after submitting a SharePoint form
+
+.. meta::
+   :description: Use JavaScript to redirect users to another form or specific URL after saving the changes to current item
+
 How to redirect users to another form or specific URL after submitting a SharePoint form
 =========================================================================================
 
