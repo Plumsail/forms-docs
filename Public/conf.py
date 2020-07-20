@@ -52,7 +52,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Forms'
-copyright = '2017, Plumsail'
+copyright = '2020, Plumsail'
 author = 'Plumsail'
 
 # The version info for the project you're documenting, acts as replacement for

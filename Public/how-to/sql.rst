@@ -1,5 +1,10 @@
-Insert new SQL Server records from public web forms
-========================================================
+.. title:: Insert new SQL Server records from public web forms
+
+.. meta::
+   :description: Use Microsoft Power Automate to insert a new SQL Server record from public web form submission
+
+How to insert new SQL Server records from public web forms
+===========================================================
 
 .. contents:: Contents:
  :local:

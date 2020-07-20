@@ -1,3 +1,8 @@
+.. title:: Save Likert Scale answers to Excel with Zapier
+
+.. meta::
+   :description: Use Zapier and Plumsail public web forms to save Likert Scale answers to Excel table and build real-time charts
+
 How to save Likert Scale answers to Excel with Zapier and build real-time charts
 ==================================================================================
 

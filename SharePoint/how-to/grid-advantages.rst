@@ -1,3 +1,8 @@
+.. title:: Grids in Plumsail Forms for SharePoint
+
+.. meta::
+   :description: Flexible container, allows you to place fields and controls side by side, control how many columns a row has, and adjust it dynamically based on screen size
+
 How to design complex and responsive forms with grids in Plumsail Forms for SharePoint
 ==========================================================================================
 

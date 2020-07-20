@@ -1,3 +1,8 @@
+.. title:: Insert row to SQL server from Plumsail Forms
+
+.. meta::
+   :description: Examples and templates for public web forms integration with Microsoft Power Automate or Zapier
+
 Insert row to SQL server from Plumsail Forms with Power Automate or Zapier
 ==========================================================================
 

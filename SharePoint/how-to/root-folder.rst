@@ -1,3 +1,9 @@
+.. title:: Show docs from one folder only in List or Library control
+
+.. meta::
+   :description: How to limit List or Library displayed results to a specific folder and how to change this folder with JavaScript
+
+
 How to display items or documents from specific folder in List or Library control
 ===================================================================================
 

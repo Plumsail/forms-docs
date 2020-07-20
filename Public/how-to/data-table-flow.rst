@@ -1,3 +1,8 @@
+.. title:: Data Table to PDF with HTML-template and Plumsail Documents
+
+.. meta::
+   :description: Use Microsoft Power Automate and Plumsail Documents to generate HTML-template and convert Data Table to PDF
+
 How to convert web form with Data Table into PDF and send for approval with Power Automate 
 ==================================================================================================
 

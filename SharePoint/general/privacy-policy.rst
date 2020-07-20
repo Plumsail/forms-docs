@@ -1,5 +1,10 @@
-Privacy Policy
-=====================
+.. title:: Privacy Policy of Plumsail Forms for SharePoint
+
+.. meta::
+   :description: What data is collected, how and why, for users of our SharePoint forms
+
+Privacy Policy of Plumsail Forms for SharePoint
+=================================================
 This privacy policy is additional to the |general one| and covering some specific practices in |Plumsail Forms|.
 
 .. |general one| raw:: html
@@ -21,7 +26,7 @@ All operations are performed over secure encrypted HTTPS connection. We never se
 
    <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>
 
-Installation (Office365)
+Installation (Office 365)
 -------------------------------------------------------------
 When you install Plumsail Forms to SharePoint Online, you need to add your domain to Plumsail Account. 
 

@@ -1,4 +1,9 @@
-Licensing Information
+.. title:: Licensing Information for SharePoint Forms
+
+.. meta::
+   :description: Plumsail Forms licensing details for SP Online and SP 2019
+
+Licensing Information for SharePoint Forms
 ==================================================
 
 |SharePoint Forms License| is needed to replace standard SharePoint List and Document Library forms 
@@ -16,7 +21,7 @@ you also need to have a |Public Web Forms License| or use a free plan.
 SharePoint Online
 -------------------------------------------------
 
-**Forms for SharePoint Online (Office365)** is a subscription issued per Office 365 tenant.
+**Forms for SharePoint Online (Office 365)** is a subscription issued per Office 365 tenant.
 
 Subscription includes any amount of users, developers, and forms as long as they are within the same domain, e.g. *mycompany.sharepoint.com*
 

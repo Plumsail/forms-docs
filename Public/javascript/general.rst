@@ -1,3 +1,8 @@
+.. title:: Intro to JavaScript framework
+
+.. meta::
+   :description: General information and JavaScript API variables of Plumsail Forms (public forms)
+
 Introduction to JavaScript framework of Plumsail Forms (public forms)
 ====================================================================================================
 

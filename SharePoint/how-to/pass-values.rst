@@ -1,3 +1,8 @@
+.. title:: Pass SharePoint values to a dialog form
+
+.. meta::
+   :description: An instructions for passing values ​​from a parent form to a child form, which is opened in the dialog box
+
 How to retrieve field values of SharePoint form from another form opened in dialog
 =====================================================================================
 

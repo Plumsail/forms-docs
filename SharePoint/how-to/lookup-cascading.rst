@@ -1,3 +1,8 @@
+.. title:: Configure cascading lookup fields on a SharePoint form
+
+.. meta::
+   :description: Find out how to configure filering for cascading lookup fields on Plumsail Forms - e.g. first select country, then office branch in this specific country
+   
 How to configure cascading lookup fields in SharePoint form
 ============================================================================
 

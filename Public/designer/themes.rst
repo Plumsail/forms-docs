@@ -1,3 +1,8 @@
+.. title:: Themes in Plumsail Forms (public forms)
+
+.. meta::
+   :description: How to configure colors and style of your form in the editor - select theme or build your own with primary and background colors, various fonts and borders
+
 Configuring theme for online forms designed with Plumsail Forms
 ===============================================================================
 

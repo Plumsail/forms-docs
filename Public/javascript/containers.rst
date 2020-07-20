@@ -1,3 +1,8 @@
+.. title:: Managing containers with JavaScript
+
+.. meta::
+   :description: Containers' JavaScript API with properties and methods in Plumsail Forms (public forms)
+
 Managing containers with JavaScript in Plumsail Forms (public forms)
 ==========================================================================================
 

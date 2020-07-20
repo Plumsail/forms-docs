@@ -1,3 +1,8 @@
+.. title:: Designing modern forms for SP Online (Office 365) and SP 2019
+
+.. meta::
+   :description: How to create SharePoint forms - learn the basics: open desktop editor and connect, add fields, controls and containers, save the form
+
 Designing modern forms for SharePoint Online in Office 365 and SharePoint 2019
 ===============================================================================================================
 
@@ -10,7 +15,7 @@ Open the designer
 **************************************************
 First of all, you need to make sure that you've downloaded and installed |the designer application| to your PC.
 
-Don't forget to follow all the steps in the :doc:`SharePoint installation instruction (Office365) </installation-sp>` 
+Don't forget to follow all the steps in the :doc:`SharePoint installation instruction (Office 365) </installation-sp>` 
 or :doc:`SharePoint installation instruction (SharePoint 2019) </installation-2019>`, 
 upload package to your App Catalog and share it with all the sites.
 
@@ -28,11 +33,25 @@ For SharePoint Online app launches with the following window:
 
 |pic1|
 
-.. |pic1| image:: /images/startSP/signIn.png
+.. |pic1| image:: /images/startSP/startSP-sign-in.png
    :alt: Sign In SharePoint Online
 
-Simply choose SharePoint in Forms Designer during sign in, enter your site's URL and Site Owner credentials, select a List or a Library 
-forms for which you want to modify and start working on the forms. Saved forms will automatically replace default forms on your site.
+Simply enter the URL of the site that you want to modify forms for. 
+
+You'll then need to go through standard SharePoint authentication, make sure to use login with Full Control on the site:
+
+|auth|
+
+.. |auth| image:: /images/startSP/startSP-auth.png
+   :alt: SharePoint Authentication
+
+.. note::   If you want to logout from the previously selected user, just connect to the site once again and press Sign Out button:
+
+            |sign-out|
+
+            .. |sign-out| image:: /images/startSP/startSP-sign-out.png
+               :alt: Sign out button
+
 
 SharePoint On-Premises
 ---------------------------------------------------
@@ -133,22 +152,16 @@ Saving a form is easy - just click the Save button. Once the button is pressed, 
 
 |pic5|
 
-.. |pic5| image:: /images/startSP/saving.png
+.. |pic5| image:: /images/startSP/startSP-saving.png
    :alt: Saving a form
-   :width: 80%
-
-|
 
 Please, **wait until the process is complete**. Meanwhile, you can continue working in the designer, but if you want to see the results in SharePoint, 
 you need to wait until you see *Layout has been successfully saved* message:
 
 |pic6|
 
-.. |pic6| image:: /images/startSP/saved.png
+.. |pic6| image:: /images/startSP/startSP-saved.png
    :alt: Form is saved
-   :width: 80%
-
-|
 
 Finally, you are also able to save multiple forms at once if you want them to share functionality. For example, if the form has no custom logic, 
 it's often easier to save New, Edit and Display form at the same time. Just click the arrow symbol on the Save button and select which forms you want to
@@ -156,11 +169,9 @@ replace with the current one:
 
 |pic7|
 
-.. |pic7| image:: /images/startSP/save3.png
+.. |pic7| image:: /images/startSP/startSP-save3.png
    :alt: Save multiple forms
-
-|
-
+   
 Be extra careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them, for example.
 Because of that, and other potentially risky situations, we recommend backing up forms that are important to you, 
 by using :ref:`Export feature <designer-export>` of the designer:
@@ -169,6 +180,15 @@ by using :ref:`Export feature <designer-export>` of the designer:
 
 .. |pic8| image:: /images/designer/ribbon-actions/ExportImport.png
    :alt: Export and Import buttons
+
+Reset a form to the default MS form
+**************************************************
+If you decide that you no longer want to utilize specific form, you can open it in the editor and click the Reset button:
+
+|reset|
+
+.. |reset| image:: /images/startSP/startSP-reset.png
+   :alt: Reset the form
 
 Advanced functionality
 **************************************************
@@ -180,7 +200,7 @@ Don't forget that you can give each element a class and then use it in CSS edito
 
 |editors|
 
-.. |editors| image:: /images/startSP/editors.png
+.. |editors| image:: /images/startSP/startSP-editors.png
    :alt: JavaScript and CSS editors
 
 |

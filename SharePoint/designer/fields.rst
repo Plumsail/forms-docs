@@ -1,3 +1,8 @@
+.. title:: Common Fields in Plumsail Forms for SharePoint
+
+.. meta::
+   :description: Information about fields, e.g. Text, Number, Drop Down, Toggle, Checkboxes, Radios, Date and Attachments, and their properties that you can configure on a form
+
 Common Fields in Plumsail Forms for SharePoint
 ==================================================
 

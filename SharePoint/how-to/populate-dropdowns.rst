@@ -1,3 +1,8 @@
+.. title:: Populate dropdown with data from another site collection
+
+.. meta::
+   :description: Use JavaScript to pull information from any SharePoint list, even on other site collections and populate dropdown field on a form
+
 How to populate dropdown field in SharePoint form with data from list located in another site
 ===========================================================================================================
 

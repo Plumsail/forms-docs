@@ -1,3 +1,8 @@
+.. title:: Link to a SharePoint form
+
+.. meta::
+   :description: How to generate links to a Plumsail form in SharePoint - either manually or with JavaScript
+
 How to generate link to specific SharePoint form
 ==================================================
 
@@ -15,8 +20,6 @@ the URL would lose its parameters, such as Item ID, preventing the form from ope
 
 In this article, we're going to show you how you can create general URLs, which would only specify what List and what Item you want to open, 
 thus allowing for routing to take place, plus avoiding the lose of parameters during authentication.
-
-We will also show you how you can create specific URLs to the forms, including Form Sets, which will bypass Microsoft's authentication and keep all the parameters.
 
 Universal URL
 --------------------------------------------------
@@ -65,33 +68,3 @@ Use the following code to build link while on a form:
     Dialog.open(url);
 
 Now, you don't have to get all these values with JavaScript, some, if not all, can be prepopulated depending on your scenario.
-
-.. _link-specific:
-
-Specific URL
---------------------------------------------------
-Specific URL will open a particular form, unlike Universal URL, so you can specify every little detail, including a Form Set.
-
-.. important:: This URL will only work if you've :doc:`updated the app package </general/update-package>` to v.1.0.6.0 and saved form in Forms application v1.3.2 or higher
-
-The structure of the speicific URL is this:
-
-.. code-block:: javascript
-
-    var url = "https://domain.sharepoint.com/sites/sitename/subsite/SitePages/PlumsailForms/ListName/ContentType/FormType.aspx?item=" + itemId + "&ct=" + contentTypeId + "&rf=" + rootFolder + "&source=" + sourceURL
-
-* **itemId** is the ID of the Item or Document to open. This parameter is the only one that is required for Edit and Display Forms.
-
-* **contentTypeId** is the ID of the Content Type with which the item will be saved after form submission. Optional.
-
-* **rootFolder** is only used for New Form, and can specify folder where new Item will be created. Optional.
-
-* **sourceURL** is the URL where the user will be redirected after the form is closed. Optional.
-
-You can find all the forms stored in Site contents -> Site Pages/PlumsailForms in the folders with List names.
-
-Examples
------------------------------------------------------
-
-Also, you may want to know :doc:`how to move new SharePoint form page to another location</examples/newform-page>`. 
-

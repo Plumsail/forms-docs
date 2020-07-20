@@ -1,3 +1,8 @@
+.. title:: Intro to JavaScript framework of Plumsail Forms for SP
+
+.. meta::
+   :description: General information and JavaScript API variables of Plumsail Forms for SharePoint
+
 Introduction to JavaScript framework of Plumsail Forms for SharePoint
 ======================================================================
 

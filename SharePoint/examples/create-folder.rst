@@ -1,3 +1,8 @@
+.. title:: Organize related files in folders on a SharePoint form
+
+.. meta::
+   :description: Auto-create a folder for the item in the related library to upload documents. For example, create a project folder for all related documents in a document library accessible from the form
+
 How to organize related files in folders and display documents from specific folder in a SharePoint form
 ==================================================================================================================
 

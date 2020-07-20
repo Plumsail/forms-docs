@@ -1,3 +1,8 @@
+.. title:: Add discussion to a SharePoint form
+
+.. meta::
+   :description: Use JavaScript and item versioning to add discussion field to a form, where multiple users can leave their comments
+
 How to add discussion to a SharePoint form
 ==================================================
 
