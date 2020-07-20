@@ -88,7 +88,7 @@ Last but not least, we use JavaScript in order to apply filtering:
     function filterProducts(category) {
         var categoryId = category && category.LookupId || category || null;
         fd.field('Product').filter = 'Category/Id eq ' + categoryId;
-        fd.field('Product').widget.dataSource.read();
+        fd.field('Product').refresh();
     }
 
     fd.spRendered(function() {

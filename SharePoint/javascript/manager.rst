@@ -433,21 +433,18 @@ These events can be executed from JavaScript editor for Plumsail Forms:
 
     *   - **spSaved()**
         -   Occurs after the form is submitted.
+            
+            **Note:** This event is exclusive to SharePoint Forms. For Plumsail Forms, use **saved()**.
 
-            **result** passed as an argument to the function is an object containing additional fields of the SharePoint item: 
+            **result** passed as an argument to the function. It is an object that contains additional fields of the SharePoint item: 
             
-            *Id*, 
+            - *Id* - returns the ID of the item.
             
-            *ItemUrl* (for documents and document sets), 
+            - *FileLeafRef* - returns the name of the document and document set.
             
-            *RedirectUrl* - URL of a page where a user will be redirected after saving. 
-            
-            This object can be changed.
-
-            *Note:* This event is exclusive to SharePoint Forms. 
-            
-            For Plumsail Forms, use **saved()**.
-            
+            - *RedirectUrl* - holds the URL of a page where a user will be redirected after saving. This object can be changed.
+            **Note**: RedirectUrl is ignored inside a panel.
+           
             |
 
             *Example:*
