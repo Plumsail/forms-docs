@@ -1,7 +1,7 @@
 .. title:: Generate PDF from DOCX template with Plumsail Processes
 
 .. meta::
-   :description: learn how to populate a DOCX template with data from two linked SharePoint lists and convert it to PDF with the help of |Plumsail Processes| in Power Automate (MS Flow). The instructions below will help you automate the process of the generation of different documents like orders, invoices, inquiries, contracts, etc.
+   :description: Learn how to populate a DOCX template with data from two linked SharePoint lists and convert it to PDF using Plumsail Processes in Power Automate (MS Flow).
    :keywords: SharePoint forms to pdf, fillable pdf, pdf to docx
 
 Create PDF document from SharePoint form based on Word template with Power Automate and Plumsail Processes 
