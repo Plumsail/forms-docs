@@ -12,7 +12,7 @@ Create a contact web form in Visual Studio
  
 Introduction
 --------------------------------------------------
-Sometimes, you might not want to work with the editor at all. :doc:`Dragging and dropping fields </design>` is easy, but if you want to scale your production of forms - you can use our provisioning API for public web forms that allows creation of forms in Visual Studio with the help of our |NuGet package|.
+Sometimes, you might not want to work with the editor at all. :doc:`Dragging and dropping fields </design>` is easy, but if you want to generate forms dynamically based on data from other systems - you can use our provisioning API for public web forms that allows creation of forms in Visual Studio with the help of our |NuGet package|.
 
 In this example, you'll see how easy it is to create a public web form in the Visual Studio, and you can follow the same path to create and provision your own form. This method might be very beneficial, if you want to have the same form available in multiple accounts and want to provision them quickly and efficiently.
 
@@ -23,7 +23,7 @@ In this example, you'll see how easy it is to create a public web form in the Vi
 
 Create application and install NuGet package
 --------------------------------------------------
-Run the Visual Studio. Make sure you have *.NET Framework v.4.7.2* or higher installed. In the Visual Studio, create a new Project and select 
+Run the Visual Studio. In the Visual Studio, create a new Project and select 
 Console App (.NET Core):
 
 |pic3|

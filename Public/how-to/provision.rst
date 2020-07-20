@@ -4,5 +4,5 @@ Provisioning public forms with NuGet package
 .. toctree::
     :maxdepth: 1
 
-    ./provision-api
+    Create and provision web forms programmatically <./provision-api>
     ./provision-example

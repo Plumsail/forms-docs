@@ -1,11 +1,11 @@
 
-.. title:: Plumsail Forms Public NuGet package forms provisioning
+.. title:: Create and provision public web forms programmatically
 
 .. meta::
    :description: Create new forms from scratch by specifying details for each row and cell, or edit existing forms in Visual Studio with our NuGet package
 
-Create and provision public web forms with Plumsail Forms Public NuGet package
-===================================================================================
+Create and provision Plumsail public web forms programmatically
+=================================================================
 
 .. contents:: Contents:
  :local:
@@ -19,7 +19,11 @@ Forms can also be edited, as well as deleted using the same NuGet package.
 
 .. important:: Functionality of this method is limited to web editor's functionality. Only web editor's forms can be edited. Forms created this way will also be editable only in web editor.
 
-In order to use the package, you need to have *.NET Framework v.4.7.2* or higher installed. Create a .NET Core application in order to add the NuGet package.
+In order to use the package, your project must be compatible with |.NET Standard 2.1|
+
+.. |.NET Standard 2.1| raw:: html
+
+   <a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.1.md" target="_blank">.NET Standard 2.1</a>
 
 Find an example of how it can be used in our article - :doc:`Create a contact web form in Visual Studio<./provision-example>`.
 
@@ -146,7 +150,7 @@ Use **NewForm(string name)** or **GetForm(string formId)** to start working with
 
                 form.NotifyOwner = true;
     *   -   **Enabled**
-        -   Boolean property that determines if form submissions will trigger Power Automate or Zapier or not.
+        -   Boolean property that determines if form submissions will be sent to the server or not.
 
             |
 
@@ -188,7 +192,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
     *   -   Method/Property
         -   Description/Examples
     *   -   **Css**
-        -   Contains string with CSS code for the form.
+        -   Gets or sets CSS code for the form.
             
             |
 
@@ -198,7 +202,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
 
                 form.Layout.Css = ".fd-form h1 { color: red }";
     *   -   **JavaScript**
-        -   Contains string with JavaScript code for the form.
+        -   Gets or sets JavaScript code for the form.
             
             |
 
@@ -208,7 +212,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
 
                 form.Layout.Css = "fd.rendered(function(){ fd.field("Name").value = "John Bull" });";
     *   -   **Theme**
-        -   Contains theme used for the form. Create your own theme or use one of predefined themes.
+        -   Gets or sets theme used for the form. Use one of predefined themes such as *Blue*, *Compact*, *Default*, *Explicit*, *Gray*, *Green*, *Orange*, *Plumsail*, *Purple*, *Red*, *Smooth*, or *Soft*.
             
             |
 
@@ -219,7 +223,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
                 form.Layout.Theme = new Theme(PredefinedThemes.Compact);
 
     *   -   **PC/Tablet/Phone**
-        -   Contains grid that will nest the rest of the form. At least one of these must be filled before the form is saved.
+        -   Gets or sets grid that will nest the rest of the form. At least one of these must be filled before the form is saved.
         
             When creating a grid, make sure that each row's width is less or equal to 12.
             
