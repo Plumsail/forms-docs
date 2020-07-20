@@ -7,6 +7,10 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.7.2
+--------------------------------------------------
+Minor bug fixes
+
 v1.7.1
 --------------------------------------------------
 Many UI enhancements for the desktop editor - currently selected site URL visible in full when connecting, custom Form Set routing code moved to JavaScript editor, added current List View section to CSS editor, moved Reset button away from Save to form type dropdown, new button to refresh SP fields without reconnecting, and a button to copy Form Set ID, simplified Panel dialog menu by removing List View JS section.

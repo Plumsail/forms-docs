@@ -6,6 +6,10 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+v1.7.2
+--------------------------------------------------
+Added support of Google fonts in theme settings
+
 v1.6.4
 --------------------------------------------------
 Improved code editors in web based designer
