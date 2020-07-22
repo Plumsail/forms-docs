@@ -129,7 +129,7 @@ Use **NewForm(string name)** or **GetForm(string formId)** to start working with
     *   -   Method/Property
         -   Description/Examples   
     *   -   **SavePosts**
-        -   Boolean property that determines if form submissions will be saved to your Plumsail Account or not.
+        -   Get or set this boolean property that determines if form submissions will be saved to your Plumsail Account or not.
 
             |
 
@@ -140,7 +140,7 @@ Use **NewForm(string name)** or **GetForm(string formId)** to start working with
                 form.SavePosts = true;
 
     *   -   **NotifyOwner**
-        -   Boolean property that determines if form submissions will be sent as messages to your email or not.
+        -   Get or set this boolean property that determines if form submissions will be sent as messages to your email or not.
 
             |
 
@@ -150,7 +150,7 @@ Use **NewForm(string name)** or **GetForm(string formId)** to start working with
 
                 form.NotifyOwner = true;
     *   -   **Enabled**
-        -   Boolean property that determines if form submissions will be sent to the server or not.
+        -   Get or set this boolean property that determines if form submissions will be sent to the server or not.
 
             |
 
@@ -192,7 +192,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
     *   -   Method/Property
         -   Description/Examples
     *   -   **Css**
-        -   Gets or sets CSS code for the form.
+        -   Get or set CSS code for the form.
             
             |
 
@@ -202,7 +202,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
 
                 form.Layout.Css = ".fd-form h1 { color: red }";
     *   -   **JavaScript**
-        -   Gets or sets JavaScript code for the form.
+        -   Get or set JavaScript code for the form.
             
             |
 
@@ -212,7 +212,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
 
                 form.Layout.Css = "fd.rendered(function(){ fd.field("Name").value = "John Bull" });";
     *   -   **Theme**
-        -   Gets or sets theme used for the form. Use one of predefined themes such as *Blue*, *Compact*, *Default*, *Explicit*, *Gray*, *Green*, *Orange*, *Plumsail*, *Purple*, *Red*, *Smooth*, or *Soft*.
+        -   Get or set theme used for the form. Use one of predefined themes such as *Blue*, *Compact*, *Default*, *Explicit*, *Gray*, *Green*, *Orange*, *Plumsail*, *Purple*, *Red*, *Smooth*, or *Soft*.
             
             |
 
@@ -223,7 +223,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
                 form.Layout.Theme = new Theme(PredefinedThemes.Compact);
 
     *   -   **PC/Tablet/Phone**
-        -   Gets or sets grid that will nest the rest of the form. At least one of these must be filled before the form is saved.
+        -   Get or set grid that will nest the rest of the form. At least one of these must be filled before the form is saved.
         
             When creating a grid, make sure that each row's width is less or equal to 12.
             
