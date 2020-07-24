@@ -1,40 +1,41 @@
-.. title:: Work with containers using JS on Plumsail Forms for SharePoint
+.. title:: Manipulate containers using JS on Plumsail Forms for SharePoint
 
 .. meta::
-   :description: How to hide, show and modify containers, particularly Tab Control and Accordion, with JavaScript
+   :description: How to hide, show and modify containers, particularly Tab Control, Accordion and Wizard, with JavaScript.
+   :keywords: javascript tabs, javascript wizard, hide steps, accordion tabs
 
-How to change, disable, or hide specific tabs or accordion sections based on conditions in Plumsail Forms
-===============================================================================================================
+How to change, disable, or hide specific tabs, accordion sections or wizard steps based on conditions in Plumsail Forms
+==========================================================================================================================
 
 .. contents:: Contents:
  :local:
- :depth: 1
+ :depth: 2
 
 Introduction
 --------------------------------------------------
 In this article you can find examples of how to use JavaScript to make 
-your SharePoint forms more interactive by hiding, showing and modifying containers, particularly Tab Control and Accordion.
+your SharePoint forms more interactive by hiding, showing and modifying containers, particularly Tab Control, Accordion and Wizard.
 
-This article will include some simple and easy to understand cases which can then be used as templates for your forms.
-
+This article includes some simple and easy to understand cases which can then be used as templates for your forms.
 You can find similar examples for manipulating fields in this :doc:`article </how-to/conditional-fields>`.
 
-Disable/hide tabs based on condition
+Let's say we have a form for an issue the employee is working on, and we divide various pieces of information using containers.
+
+Tab control
 --------------------------------------------------
-Let's say we have a form for an issue the employee is working on. It's divided into tabs with various pieces of information.
-
-Among these tabs, there is one called Resolved, where we have fields that need to be filled once the issue is resolved.
-
-It makes no sense for this tab to be available at all times, so we can disable it and only make clickable once the issue gets a "Resolved" status.
 
 Here is our form with tabs:
 
 .. image:: ../images/how-to/conditional-containers/TabsForm.png
-   :alt: Tabs Form
+    :width: 800
+    :alt: Tabs Form
 
 |
 
-Let's disable Resolved tab and make it's only enabled when the field Status has value "Resolved" with this code:
+Disable & hide tabs
+~~~~~~~~~~~~~~~~~~~~
+
+*Resolved* tab stores fields that an employee needs to fill out after he completes the task. It makes no sense for this tab to be available at all times, so we can disable it and only make clickable once the issue status is changed to 'Resolved' using this code:
 
 .. code-block:: javascript
 
@@ -42,64 +43,84 @@ Let's disable Resolved tab and make it's only enabled when the field Status has 
 
         function enableOrDisableResolvedTab() {
             if (fd.field('Status').value == 'Resolved') {
-                // Show the tab number 1, in our case Resolved
+                //enable the second tab, in our case Resolved tab
                 fd.container('Tab0').tabs[1].disabled = false;
             } else {
-                // Hide the tab number 1, in our case Resolved
+                //disable the second tab, in our case Resolved tab
                 fd.container('Tab0').tabs[1].disabled = true;
             }
         }
         
-        // Calling enableOrDisableResolvedTab when the user changes the Status
+        //call enableOrDisableResolvedTab when a user changes the status
         fd.field('Status').$on('change',enableOrDisableResolvedTab);
 
-        // Calling enableOrDisableResolvedTab on form loading
+        //call enableOrDisableResolvedTab on form load
         enableOrDisableResolvedTab();
 
     });
 
-Here's the result and as you can see Resolved tab is grayed out and it cannot be selected:
-
-.. image:: ../images/how-to/conditional-containers/TabsFormDisabled.png
-   :alt: Tabs Form - Resolved is disabled
-
 |
 
-Now, if we select Status "Resolved", it can be selected once again:
-
-.. image:: ../images/how-to/conditional-containers/TabsFormResolved.png
-   :alt: Tabs Form - Resolved tab
-
-|
-
-You can also hide Resolved tab with a little bit of CSS which will hide all the disabled tabs:
+Moreover, you can hide disabled tabs with CSS:
 
 .. code-block:: css
 
     .tabset .disabled{
-	    display: none; /* disabled tabs don't show up */
+	    display: none; /* hide disabled tabs */
     }
 
-Now the user won't even see the tab until the Status is "Resolved":
 
-.. image:: ../images/how-to/conditional-containers/TabsFormHidden.png
-   :alt: Tabs Form - Resolved tab is hidden
+Switch to tab
+~~~~~~~~~~~~~~~~~~~~
+
+Also, we can set the active tab programmatically. For instance, we can make *Resolved* tab active once the issue gets a 'Resolved' status with this code:
+
+.. code-block:: javascript
+
+    //switch between tabs when a user changes the status
+    fd.field('Status').$on('change',function(value){
+            if(value == 'Resolved') {
+                //setting the second tab as active
+                fd.container('Tab0').setTab(1);
+            }
+            esle {
+                //setting the first tab as active
+                fd.container('Tab0').setTab(0);
+            }
+    });
+
+Or we can add buttons to our tabs to switch to the next or previous tab when clicked. That will make it easier for users to switch between tabs when they contain a lot of content, and Tab container orientation is set to 'top'.
+
+Place this code inside 'Click' setting for the *Next Tab* button:
+
+.. code-block:: javascript
+
+    fd.container("Tab0").nextTab();
+
+And this code for the *Previous Tab* button:
+
+.. code-block:: javascript
+
+    fd.container("Tab0").previousTab();
 
 |
 
-
-Disable/hide Accordion sections based on condition
+Accordion
 --------------------------------------------------
-Let's implement the same functionality, but this time for Accordion. Same form and fields, but instead of Tabs container, we have Accordion.
+Let's implement the same functionality, but this time for Accordion container.
 
 Here is our form with Accordion:
 
 .. image:: ../images/how-to/conditional-containers/AccordionForm.png
-   :alt: Accordion Form
+    :width: 800
+    :alt: Accordion Form
 
 |
 
-Let's disable Resolved section and make it's only enabled when the field Status has value "Resolved" with this code:
+Disable & hide section
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Let's disable *Resolved* section and make it  enabled only when the status is set to 'Resolved' with this code:
 
 .. code-block:: javascript
 
@@ -107,66 +128,105 @@ Let's disable Resolved section and make it's only enabled when the field Status 
 
         function enableOrDisableResolvedSection() {
             if (fd.field('Status').value == 'Resolved') {
-                // Show the tab number 1, in our case Resolved
+                //enable the second section, in our case Resolved
                 fd.container('Accordion0').$children[1].disabled = false;
             } else {
-                // Hide the tab number 1, in our case Resolved
+                //disable the second section, in our case Resolved
                 fd.container('Accordion0').$children[1].disabled = true;
             }
         }
         
-        // Calling enableOrDisableResolvedSection when the user changes the Status
+        //call enableOrDisableResolvedSection when a user changes the status
         fd.field('Status').$on('change',enableOrDisableResolvedSection);
 
-        // Calling enableOrDisableResolvedSection on form loading
+        //call enableOrDisableResolvedSection on form load
         enableOrDisableResolvedSection();
 
     });
 
-As you can see, it's fairly similar, but we need to access Accordion's children instead of tabs.
-
-Here's the result and as you can see Resolved tab is grayed out and it cannot be selected:
-
-.. image:: ../images/how-to/conditional-containers/AccordionFormDisabled.png
-   :alt: Accordion Form - Resolved is disabled
-
 |
 
-Resolved section can also be hidden just like a tab with a little bit of CSS which will hide all the disabled tabs:
+*Resolved* section can also be hidden just like a tab with CSS:
 
 .. code-block:: css
 
     .accordion .disabled{
-	    display: none; /* disabled tabs don't show up */
+	    display: none; /* hide disabled sections */
     }
-
-Now the user won't even see the section until the Status is "Resolved":
-
-.. image:: ../images/how-to/conditional-containers/AccordionFormHidden.png
-   :alt: Accordion Form - Resolved section is hidden
 
 |
 
+Expand/collapse section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Switch to the next tab on button click
+In case you want to expand *Resolved* section once the issue gets a 'Resolved' status, you can use the following code:
+
+.. code-block:: javascript
+
+    fd.field('Status').$on('change',function(value){
+            //expand the second section, in our case 'Resolved', when the status is changed to 'Resolved'
+            if(value == 'Resolved') {
+                fd.container('Accordion0').$children[1].open = true;
+            }
+    });
+
+|
+
+Wizard
 --------------------------------------------------
-In case you have rather large tabs and Orientation is set to Top, users might have a hard time scrolling to the top each time one tab is filled.
 
-As a solution, we can add buttons to our tabs at the bottom right and left corner to switch to next or previous tab when clicked.
+We can divide information using Wizard container and show/hide steps dynamically.
 
-As for code, it will be fairly simple.
+Here is our form with Wizard:
 
-Place this code inside Click setting for the Next Tab button:
+.. image:: ../images/how-to/conditional-containers/conditional-containers-00.png
+    :width: 700
+    :alt: Wizard Form
+
+Hide/Show step
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Let's hide *Resolved* step and show it only when the issue status is set to 'Resolved' using this code:
 
 .. code-block:: javascript
 
-    fd.container("Tab0").nextTab();
+    function hideShowResolvedStep(resolvedTab) {
+        if (fd.field('Status').value == 'Resolved' && resolvedTab !== null) {
+            //show the second step, in our case Resolved
+            fd.container('Wizard0').widget.tabs.splice(1, 0, tab2);
+        } 
 
-Place this code inside Click setting for the Previous Tab button:
+        if(fd.field('Status').value != 'Resolved') {
+            //hide the second section, in our case Resolved
+            fd.container('Wizard0').widget.tabs.splice(1, 1);
+        }
+    }
+
+    fd.spRendered(function() {
+
+        var resolvedTab = fd.container('Wizard0').widget.tabs[1];
+        
+        //call hideShowResolvedStep when a user changes the status
+        fd.field('Status').$on('change',function() {
+            hideShowResolvedStep(resolvedTab);
+        });
+
+        //call hideShowResolvedStep on form load
+        hideShowResolvedStep(resolvedTab);
+
+    });
+
+Switch to step
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We can navigate from one step to another using the code. For instance,  open *Resolved* step when the issue status is changed to 'Resolved'.
 
 .. code-block:: javascript
 
-    fd.container("Tab0").previousTab();
-
-That's it, you just need to make sure that the InternalName of your Tabs container is correct and this should work.
-
+    fd.field('Status').$on('change',function(value){
+            //open the second step, in our case 'Resolved', when the status is changed to 'Resolved'
+            if(value == 'Resolved') {
+                //that doesn't trigger validation
+                fd.container('Wizard0').widget.changeTab(0,1);
+            }
+    });
