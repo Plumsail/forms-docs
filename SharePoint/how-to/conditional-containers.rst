@@ -190,7 +190,7 @@ Let's hide *Resolved* step and show it only when the issue status is set to 'Res
 
 .. code-block:: javascript
 
-    function hideShowResolvedStep(resolvedTab) {
+    function showOrHideResolvedStep(resolvedTab) {
         if (fd.field('Status').value == 'Resolved' && resolvedTab !== null) {
             //show the second step, in our case Resolved
             fd.container('Wizard0').widget.tabs.splice(1, 0, tab2);
@@ -206,13 +206,13 @@ Let's hide *Resolved* step and show it only when the issue status is set to 'Res
 
         var resolvedTab = fd.container('Wizard0').widget.tabs[1];
         
-        //call hideShowResolvedStep when a user changes the status
+        //call showOrHideResolvedStep when a user changes the status
         fd.field('Status').$on('change',function() {
-            hideShowResolvedStep(resolvedTab);
+            showOrHideResolvedStep(resolvedTab);
         });
 
-        //call hideShowResolvedStep on form load
-        hideShowResolvedStep(resolvedTab);
+        //call showOrHideResolvedStep on form load
+        showOrHideResolvedStep(resolvedTab);
 
     });
 
