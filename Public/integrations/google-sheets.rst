@@ -52,7 +52,7 @@ Recommended template:
 
 .. |zapTemplateImg|  raw:: html
 
-   <a href="https://zapier.com/app/editor/template/122902" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/google-sheets/integration-google-sheets-zap-template.png">Create Google Sheets rows from new Plumsail Forms submissions</a>
+   <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=122902"></script>
 
 |Examples|
 

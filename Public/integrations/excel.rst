@@ -52,7 +52,7 @@ Recommended template:
 
 .. |zapTemplateImg|  raw:: html
 
-   <a href="https://zapier.com/app/editor/template/175616" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/excel/integration-excel-zap-template.png">Create Microsoft Excel rows from new Plumsail Forms submissions</a>
+   <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=175616"></script>
 
 |Examples|
 

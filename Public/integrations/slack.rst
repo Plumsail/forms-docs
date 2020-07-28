@@ -46,11 +46,7 @@ Recommended templates:
 
 .. |zapTemplateImg|  raw:: html
 
-   <a href="https://zapier.com/app/editor/template/181186" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/slack/integration-slack-zap-template.png">Send channel message in Slack for new Plumsail Forms submissions</a>
-
-.. |zapTemplateImg2|  raw:: html
-
-   <a href="https://zapier.com/app/editor/template/181195" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/slack/integration-slack-zap-template.png">Send direct message in Slack for new Plumsail Forms submissions</a>
+   <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=181186,181195"></script>
 
 .. |Slack2|  raw:: html
 
