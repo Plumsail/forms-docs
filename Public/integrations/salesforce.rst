@@ -25,7 +25,7 @@ Add records such as leads and contacts to Salesforce when someone submits Plumsa
 
 .. |Salesforce Flow|  raw:: html
 
-   <a href="https://emea.flow.microsoft.com/en-us/connectors/salesforce/" target="_blank">Salesforce</a>
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_salesforce/salesforce/" target="_blank">Salesforce</a>
 
 Zapier
 --------------------------------------------------
