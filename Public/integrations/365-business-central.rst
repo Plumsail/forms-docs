@@ -1,16 +1,16 @@
-.. title:: Add records to Business Central from Plumsail Form with MS Power Automate
+.. title:: Add records to Dynamics 365 Business Central from Plumsail Form with MS Power Automate
 
 .. meta::
-   :description: Templates for public web forms integration with Business Central in MS Power Automate
+   :description: Templates for public web forms integration with Dynamics 365 Business Central in MS Power Automate
 
-Add records to Business Central with MS Power Automate
+Add records to Dynamics 365 Business Central with MS Power Automate
 ==========================================================================
 
 .. contents:: Contents:
  :local:
  :depth: 1
 
-Add records, such as items and customers, to Business Central when someone submits Plumsail Form with |MS Power Automate| and |Business Central Flow| connector.
+Add records, such as items and customers, to Dynamics 365 Business Central when someone submits Plumsail Form with |MS Power Automate| and |Business Central Flow| connector.
 
 |flow process img|
 
