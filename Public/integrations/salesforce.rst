@@ -1,9 +1,9 @@
-.. title:: Add records to Salesforce from Plumsail Form with Zapier
+.. title:: Add records to Salesforce from Plumsail Form with MS Power Automate or Zapier
 
 .. meta::
-   :description: Templates for public web forms integration with Salesforce in Zapier
+   :description: Templates for public web forms integration with Salesforce in MS Power Automate or Zapier
 
-Add records to Salesforce from with Zapier
+Add records to Salesforce with MS Power Automate or Zapier
 ==========================================================================
 
 .. contents:: Contents:
@@ -12,7 +12,7 @@ Add records to Salesforce from with Zapier
 
 MS Power Automate
 --------------------------------------------------
-Add records such as leads and contacts to Salesforce when someone submits Plumsail Form with |MS Power Automate| and |Salesforce Flow| connector.
+Add records, such as leads and contacts, to Salesforce when someone submits Plumsail Form with |MS Power Automate| and |Salesforce Flow| connector.
 
 |flow process img|
 
@@ -29,7 +29,7 @@ Add records such as leads and contacts to Salesforce when someone submits Plumsa
 
 Zapier
 --------------------------------------------------
-Add records such as leads and contacts to Salesforce when someone submits Plumsail Form with |Zapier| and |Salesforce| connector.
+Add records, such as leads and contacts, to Salesforce when someone submits Plumsail Form with |Zapier| and |Salesforce| connector.
 
 Recommended templates: 
 
@@ -45,5 +45,5 @@ Recommended templates:
 
 .. |zapTemplateImg|  raw:: html
 
-   <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=122910,122967"></script>
+   <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=122910,122967,246634,246624"></script>
 
