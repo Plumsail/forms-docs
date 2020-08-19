@@ -14,6 +14,11 @@ Installation of Plumsail Forms for public web forms
  :local:
  :depth: 1
 
+.. important:: If you have any issues during installation, please, contact our |support team| or write us an email to **support@plumsail.com**
+
+.. |support team| raw:: html
+
+   <a href="https://plumsail.com/support/" target="_blank">support team</a>
 
 Register a Plumsail Account
 --------------------------------------------------

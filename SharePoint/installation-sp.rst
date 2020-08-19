@@ -6,32 +6,33 @@
 Installation of Plumsail Forms for SharePoint Online (Office 365)
 ==============================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Video Guide
---------------------------------------------------
-You can follow the instruction or watch a video guide here:
-
 .. raw:: html
 
     <div data-nosnippet="true"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hAkNpE7X10I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-First step - Register a Plumsail Account
---------------------------------------------------
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
+.. important:: If you have any issues during installation, please, contact our |support team| or write us an email to **support@plumsail.com**
+
+.. |support team| raw:: html
+
+   <a href="https://plumsail.com/support/" target="_blank">support team</a>
+
+Register a Plumsail Account
+---------------------------------------------------
 Plumsail Forms product uses our service called Plumsail Account. Using Plumsail Account you can manage your licenses - for both Modern SharePoint and Public Web Forms, 
 and it also stores all your Public Web Forms. 
 
-Register
-**************************************************
 You can register by filling out |location_link|.
 
 .. |location_link| raw:: html
 
    <a href="https://auth.plumsail.com/account/register?ReturnUrl=http://account.plumsail.com/" target="_blank">Plumsail Account registration form</a>
 
-Sign in
+
+Sign in to an existing account
 **************************************************
 You can log in by going to the |location_link2| and entering your login and password. Make sure you've registered first.
 
@@ -39,11 +40,8 @@ You can log in by going to the |location_link2| and entering your login and pass
 
    <a href="https://auth.plumsail.com/account/login" target="_blank">Plumsail Account login page</a>
 
-Plumsail Forms for SharePoint Online
---------------------------------------------------
-
 Bind your SharePoint tenant to your Account
-**************************************************
+--------------------------------------------------
 In order to bind your SharePoint tenant to Plumsail account, you need to be logged in to Office 365.
 
 .. note:: This is only necessary for installation and we are not storing or using your credentials in any way, only to get permission for the installation.
@@ -74,7 +72,7 @@ Once you've added SharePoint license to your domain, you will be able to use Plu
 .. _install-app-package:
 
 Install app package to your tenant
-**************************************************
+--------------------------------------------------
 Last thing you need to do, to include Plumsail Forms on your SharePoint sites, 
 is to install Form Web Part package to your App Catalog. You can download the package from the Intro section of your Plumsail Account area. 
 
@@ -98,7 +96,7 @@ but it won't replace any forms that you haven't edited and saved yourself. If yo
 you can always reset it to default as well.
 
 Download designer and start designing forms for SharePoint
-***********************************************************
+-----------------------------------------------------------
 Once you've added your SharePoint license to your Plumsail Account and distributed app across your sites using App Catalog, 
 it is time to download Forms Designer and start using it. You can |download| from your Plumsail Account in Forms Section in the Intro tab.
 
