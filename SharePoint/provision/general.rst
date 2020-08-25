@@ -295,8 +295,8 @@ For examples of working with Form Sets, please, check out :doc:`Working with For
                     New = null
                 };
 
-    *   -   **CustomListViewCode**
-        -   Contains string with custom code for List View Commands. Can be used to get and set.
+    *   -   **CustomListViewStyle**
+        -   Contains string with custom CSS code for the List View of the selected list. Can be used to get and set.
             
             |
 
@@ -305,4 +305,4 @@ For examples of working with Form Sets, please, check out :doc:`Working with For
             .. code-block:: c#
 
                 var fss = forms.GetFormSets();
-                ffs.CustomListViewCode = "alert('Form Panels active')";
+                ffs.CustomListViewStyle = "alert('Form Panels active')";
