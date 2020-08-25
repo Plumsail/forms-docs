@@ -1,4 +1,4 @@
-.. title:: Add records to Salesforce from Plumsail Form with MS Power Automate or Zapier
+.. title:: Add records to Salesforce from Plumsail Forms with MS Power Automate or Zapier
 
 .. meta::
    :description: Templates for public web forms integration with Salesforce in MS Power Automate or Zapier
