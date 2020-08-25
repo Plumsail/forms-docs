@@ -17,7 +17,6 @@ Plumsail Forms Documentation (SharePoint forms)
             :caption: Getting started
             :maxdepth: 1
 
-            Introduction <./introduction-sp>
             Installation to SharePoint Online (Office 365) <./installation-sp>
             Installation to SharePoint 2019 <./installation-2019>
             Designing forms <./design-sp>
