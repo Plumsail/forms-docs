@@ -305,4 +305,4 @@ For examples of working with Form Sets, please, check out :doc:`Working with For
             .. code-block:: c#
 
                 var fss = forms.GetFormSets();
-                ffs.CustomListViewStyle = "alert('Form Panels active')";
+                ffs.CustomListViewStyle = ".ms-CommandBarItem-link[data-automationid='detailsPane'] { display: none; }";
