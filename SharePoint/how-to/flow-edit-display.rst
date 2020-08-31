@@ -141,32 +141,46 @@ Here's the code:
             }
         });
 
-After you save this form, go to *Site Pages -> PlumsailForms -> FlowList -> Item -> FormSetIDFolder* and open the form you've just saved:
+You also need to configure Routing code in JavaScript editor -> Custom routing - we'll use localStorage of the browser to store if the flow has started or not, and we'll check it so that the user's are redirected to the correct form set:
 
-|pic9|
+.. code-block:: javascript
 
-.. |pic9| image:: ../images/how-to/flow-edit-display/flow-edit-display-9-plumsail-forms.png
+      if (localStorage.getItem('startFlow') == '1'){
+         localStorage.setItem('startFlow', 0);
+         //redirect to this form set, copy ID and replace it in the code:
+         return 'a539eec7-1669-45be-b960-6ab96ceae1a2';
+      }
+
+You can check the ID of the form set in the lower part of the editor, and use the copy button to copy it:
+
+|copyID|
+
+.. |copyID| image:: ../images/how-to/flow-edit-display/flow-edit-display-copyID.png
    :alt: Plumsail Forms
-
-It will give an error (since there is no ID), but it will allow you to **copy the URL**, and we need it for redirection:
-
-|pic10|
-
-.. |pic10| image:: ../images/how-to/flow-edit-display/flow-edit-display-10-copy-url.png
-   :alt: Copy the URL
 
 Finally, return to the default Form Set's Edit Form we've created in the beginning and populate Click property with the following code:
 
 .. code-block:: javascript
 
     fd.field('StartFlow').value = true;
-    fd.spSaved(function(result) {
-        //simply replace this URL with the copied one and add ?item=
-        result.RedirectUrl =
-            'https://site.sharepoint.com/sites/sitename/SitePages/PlumsailForms/FlowList/Item/a539eec7-1669-45be-b960-6ab96ceae1a2/DisplayForm.aspx?item=' + fd.itemId;
-    });
 
-    return fd.save();
+   fd.spSaved(function(result) {
+      //set localStorage variable for routing check
+      localStorage.setItem('startFlow', '1');
+      
+      //redirect to display form
+      var listId = fd.spFormCtx.ListAttributes.Id
+      var itemId = result.Id;
+
+      //simply replace this URL with yours:
+      //PageType=4 means Display Form
+      result.RedirectUrl =
+         "https://domain.sharepoint.com/sites/sitename/_layouts/15/listform.aspx?PageType=4&ListId="
+         + listId + "&ID=" + itemId;
+   });
+
+
+   return fd.save();
 
 |pic11|
 
