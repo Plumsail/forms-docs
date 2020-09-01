@@ -1,17 +1,10 @@
 .. title:: Create SharePoint form for booking a meeting room
 
 .. meta::
-   :description: We'll show you how to create a simple reservation system. This approach can be applied in booking systems for hotels, restaurants, meeting, or conference planning.
+   :description: Learn how to create a simple reservation system in SharePoint. For instance, booking system for hotels, restaurants, meeting and conference planning.
 
 How to create SharePoint form for booking a meeting room
 =========================================================================
-
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
-----------------------------------------
 
 In this article, we'll show you how to create a simple reservation system. This approach can be applied in booking systems for hotels, restaurants, meeting, or conference planning. 
 
@@ -21,6 +14,12 @@ Assume, there are several conference rooms, and they are available for booking w
 
 .. |pic0| image:: ../images/how-to/reservation-system/reservation-system-00.gif
    :alt: Reservation System
+
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 
 Lists
 ----------------------------------------
@@ -120,6 +119,11 @@ Here is the final code:
             //enable/disable Conference room field if date and time is changed
             fd.field('ConferenceRoom').disabled = !fd.field('ReservationDate').value; 
             
+            //clear filtering
+            fd.field('ConferenceRoom').filter = '';
+            fd.field('ConferenceRoom').refresh();
+
+
             if(date != null) {
                 
                 var rDate = date.toISOString();
@@ -130,7 +134,8 @@ Here is the final code:
                 //get IDs of rooms that are occupied
                 list.items.filter("ReservationDate eq '" +  rDate +"'").get().then(function(items) {
                     
-                    roomIds = items.map(function(i) { return i.RoomId });
+                    //replace ConferenceRoom with the internal name of the lookup field
+                    roomIds = items.map(function(i) { return i.ConferenceRoomId });
                     
                     if(roomIds.length > 0) {
                         
