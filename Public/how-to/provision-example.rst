@@ -6,12 +6,6 @@
 Create a contact web form in Visual Studio
 =======================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Sometimes, you might not want to work with the editor at all. :doc:`Dragging and dropping fields </design>` is easy, but if you want to generate forms dynamically based on data from other systems - you can use our provisioning API for public web forms that allows creation of forms in Visual Studio with the help of our |NuGet package|.
 
 In this example, you'll see how easy it is to create a public web form in the Visual Studio, and you can follow the same path to create and provision your own form. This method might be very beneficial, if you want to have the same form available in multiple accounts and want to provision them quickly and efficiently.
@@ -20,6 +14,9 @@ In this example, you'll see how easy it is to create a public web form in the Vi
 
    <a href="https://www.nuget.org/packages/Plumsail.Forms.Public" target="_blank">NuGet package</a>
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Create application and install NuGet package
 --------------------------------------------------

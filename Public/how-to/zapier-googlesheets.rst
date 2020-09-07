@@ -6,12 +6,6 @@
 How to create rows in Google Sheets from Data Table with Zapier 
 ==================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 In this article, we are going to show you how you can use Data Table and Zapier to add multiple rows to a Google Sheet.
 
 The same method can be used to add just one row, if you are not using a Data Table, and just need to add a record on form submission.
@@ -28,6 +22,10 @@ We will use the Order Form in this example, which you can download |Order Form|.
 .. |Order Form| raw:: html
 
    <a href="/forms/templates/order-form/" target="_blank">here</a>
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Google Sheet
 --------------------------------------------------

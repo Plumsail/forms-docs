@@ -6,8 +6,6 @@
 Introduction to JavaScript framework of Plumsail Forms (public forms)
 ====================================================================================================
 
-Limitless possibilities
---------------------------------------------------
 Modern Forms are highly customizable and it's JavaScript which allows you to go above and beyond any limitations you might face.
 
 Bootstrap and custom styles can make your form look great on any screen and device, but JavaScript can add often much needed interactivity to the form.

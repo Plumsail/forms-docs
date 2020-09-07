@@ -6,12 +6,6 @@
 How to create an item in SharePoint list with Power Automate
 =============================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 One of the simplest and very practical use cases for Plumsail Forms might be adding items to SharePoint Lists.
 You are not tied to SharePoint forms, items can be added from the Flow.
 
@@ -22,6 +16,10 @@ and use Flow to add this information to a list on your SharePoint site.
 
             .. image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-splist2.png
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 
 Preparation
 --------------------------------------------------

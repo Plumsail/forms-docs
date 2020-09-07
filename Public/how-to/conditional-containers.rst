@@ -7,12 +7,6 @@
 How to change, disable, or hide specific tabs, accordion sections or wizard steps based on conditions in Plumsail Forms
 ==========================================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 2
-
-Introduction
---------------------------------------------------
 In this article you can find examples of how to use JavaScript to make 
 your SharePoint forms more interactive by hiding, showing and modifying containers, particularly Tab Control, Accordion and Wizard.
 
@@ -20,6 +14,10 @@ This article includes some simple and easy to understand cases which can then be
 You can find similar examples for manipulating fields in this :doc:`article </how-to/conditional-fields>`.
 
 Let's say we have a form for an issue the employee is working on, and we divide various pieces of information using containers.
+
+.. contents:: Contents:
+ :local:
+ :depth: 2
 
 Tab control
 --------------------------------------------------

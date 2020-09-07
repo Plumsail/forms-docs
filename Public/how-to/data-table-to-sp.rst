@@ -6,18 +6,16 @@
 How to create SharePoint list items from Data Table rows with Power Automate 
 =======================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 We've discussed how a form with DataTable can be :doc:`converted into PDF and sent via email</how-to/data-table-convert-html>`, 
 now we'll use DataTable to add items to SharePoint.
 
 We'll create an Office Supplies Request form which when submitted will create items in two SharePoint lists - Orders and Ordered Items.
 As you might've guessed, general information from the form will go into orders 
 while specific information about each record in DataTable will create an item in Ordered Items list. Ordered Items will have a lookup to tie them to the Order.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Form and Form's Logic
 --------------------------------------------------

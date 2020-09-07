@@ -6,12 +6,6 @@
 Processing submissions of online forms designed with Plumsail Forms in Power Automate (MS Flow)
 ====================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 |Flow| allows you to integrate various apps and services by creating 
 automatic workflows between them to collect data, synchronize files, receive notifications and much more.
 
@@ -27,6 +21,10 @@ or do practically anything else you can think of.
 Additionally, SharePoint forms can also be handled by flows upon submission, allowing you more freedom than regular Workflows ever could.
 
 .. note:: The amount of data that can be handled by Plumsail Forms connector depends on your current plan of Plumsail Forms subscription.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 .. _creating-flow:
 

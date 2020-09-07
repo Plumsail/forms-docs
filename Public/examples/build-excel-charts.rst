@@ -6,16 +6,13 @@
 How to create online quiz and visualize results with Excel charts
 =========================================================================
 
+In this article, you will learn how to gather information from submissions and build simple charts for data analysis in Excel. 
+
+For this, we've created a Customer Satisfaction survey to analyze service loyalty and clients' average age. 
+
 .. contents:: Contents:
  :local:
  :depth: 1
-
-Introduction
---------------------------------------------------
-
-In this article, you will know how to gather information from submissions and build simple charts for data analysis in Excel. 
-
-For this, we've created a Customer Satisfaction survey to analyze service loyalty and clients' average age. 
 
 Form overview 
 --------------------------------------------------

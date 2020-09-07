@@ -7,12 +7,6 @@
 Create and provision Plumsail public web forms programmatically
 =================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 It is possible to create forms from scratch and then provision them programmatically using **Plumsail.Forms.Public** |NuGet package|. 
 
 Forms can also be edited, as well as deleted using the same NuGet package.
@@ -30,6 +24,10 @@ Find an example of how it can be used in our article - :doc:`Create a contact we
 .. |NuGet package| raw:: html
 
    <a href="https://www.nuget.org/packages/Plumsail.Forms.Public" target="_blank">NuGet package</a>
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Client
 -------------------------------------------------------------

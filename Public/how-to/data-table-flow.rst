@@ -6,17 +6,15 @@
 How to convert web form with Data Table into PDF and send for approval with Power Automate 
 ==================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
-
-With recently added :ref:`designer-datatable` control, we can design a more complex form and then submit it to Flow.
+With the recently added :ref:`designer-datatable` control, we can design a more complex form and then submit it to Power Automate flow.
 
 In this example, we will design an Expense Reimbursement Form, which will include DataTable to list all the expenses,
 as well as Ink Sketch controls to get signatures from the user and his supervisor.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 
 Design a form
 --------------------------------------------------

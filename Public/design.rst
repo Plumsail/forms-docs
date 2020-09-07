@@ -6,18 +6,16 @@
 Designing online forms with Plumsail Forms
 ==================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
-**************************************************
 Public Web Forms currently offer 2 ways to design forms - using :ref:`start-web-designer` or using :ref:`start-desktop-designer`.
 
 Both designers share most of their functionality, but:
 
 - Web Designer works without installation and gives better understanding of how the form would look like in the browser;
 - Desktop Designer has more advanced controls and containers, which will be implemented in Web Designer with time.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 .. _start-web-designer:
 

@@ -6,18 +6,16 @@
 How to add row to Excel Table (Office 365) or Google Sheet from Public Web Form
 ================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 In this article, we are going to show you how you can use MS Flow and Plumsail Forms connector in 
 order to add rows to an Excel Table in Office 365, though it can also be used for any Excel file 
 stored online, for example in Dropbox or Box account, or even on your own site. 
 
 We will also show how to add rows to a Google Sheet. Without further ado, let's get started!
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Excel Table
 --------------------------------------------------
 For both of the examples, we'll be using a very simple contact form with just three fields - Name, Phone, and Email:

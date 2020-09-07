@@ -6,17 +6,15 @@
 How to generate HTML-template for Data Table and convert it into PDF document with Power Automate 
 ==========================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Documents|.
 
 It's an additional example of using Plumsail Forms data with Plumsail Documents, so it can be used like described in :doc:`the previous article </how-to/data-table-flow>`.
 
 In here, we will also show you how you can format data inside Data Table with HTML-template for columns such as date.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Setting up the form
 --------------------------------------------------

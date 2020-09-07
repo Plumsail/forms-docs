@@ -6,12 +6,6 @@
 How to create Excel or Google Sheet rows from Data Table with Power Automate 
 ================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 In this article, we are going to show you how you can use Data Table, MS Flow and Plumsail Forms connector in order to add multiple rows to an Excel Table in Office 365, though it can also be used for any Excel file stored online, for example in Dropbox or Box account, or even on your own site. 
 
 We will also show how to add multiple rows to a Google Sheet. 
@@ -25,6 +19,10 @@ This is the form used in this example:
 .. |pic1| image:: ../images/how-to/excel-datatable/how-to-excel-datatable-form.png
    :alt: Orders Form
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Excel Table
 --------------------------------------------------
 In this example, we are using *OneDrive for Business* as storage for our Excel file. When you create 

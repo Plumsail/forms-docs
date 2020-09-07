@@ -6,12 +6,6 @@
 How to insert new SQL Server records from public web forms
 ===========================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 There are many actions available in Microsoft Flow, including SQL Server actions. 
 It's very easy to handle form submissions and add or update records in your database.
 
@@ -20,7 +14,10 @@ which anyone who is interested in partnership can fill.
 
 This information will then be handled by MS Flow and new record would be added to SQL Server Database.
 
-
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Form creation and submission
 ----------------------------------------------------
 First, we create a form in the designer. Add all the necessary fields, in this case - Company, Name, Email, About and Products the user can be interested in.
