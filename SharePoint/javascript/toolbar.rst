@@ -6,14 +6,12 @@
 Managing SharePoint form's toolbar with JavaScript in Plumsail Forms for SharePoint
 ==============================================================================================
 
+**fd.toolbar** can be used to customize form's toolbar.
+
 .. contents:: Contents:
  :local:
  :depth: 1
  
-Introduction
---------------------------------------------------
-**fd.toolbar** can be used to customize form's toolbar.
-
 Properties
 --------------------------------------------------
 

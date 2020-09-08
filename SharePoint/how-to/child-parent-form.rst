@@ -6,12 +6,6 @@
 How to create SharePoint form with associated items or documents and bind new ones automatically
 ===================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 This article will describe how you can use :ref:`designer-listorlibrary` control from the form to create Child elements and bind them to Parent.
 
 This means that you can add new Items or Documents from the Form straight into related SharePoint List or Document Library, 
@@ -20,6 +14,10 @@ and automatically attach them to the current Item or Document with a Lookup. Whe
 This can serve as alternative to attachments or to create complex relationships between items. 
 
 With **List or Library** control this is very easy to do, just follow the steps described below.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Bind children to parent
 --------------------------------------------------

@@ -6,17 +6,13 @@
 How to populate dropdown field in SharePoint form with data from list located in another site
 ===========================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-
-Introduction
---------------------------------------------------
-
 In this article, I will show you how to populate a regular dropdown field with the data from a SharePoint list. This can be helpful in cases when you're not able to use lookup columns. For instance, you need to get data from another SharePoint site collection, or you want to reduce the number of lookup columns. 
 
 Assume that you have different forms across a SharePoint tenant, e.g. request forms, purchase orders forms, leave request forms, etc. Each form has a dropdown field with department codes. The list with department codes is located at the root site collection, and you want to re-use its data in your forms.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Source List and Target Form 
 --------------------------------------------------

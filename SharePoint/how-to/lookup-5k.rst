@@ -6,12 +6,6 @@
 How to configure lookup fields pointing to large lists with more than 5000 items
 ===============================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Default SharePoint Lookups do not support large lists with more than 5,000 Items, but Plumsail Forms' Lookups will work with these large Lists.
 
 But choosing correct item among more than 5,000 choices is not an easy task. That's why, our Lookups also support search and filtering.
@@ -20,6 +14,10 @@ But choosing correct item among more than 5,000 choices is not an easy task. Tha
 
 .. |pic1| image:: ../images/how-to/lookup-5k/threshold.png
    :alt: Threshold
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Index Columns
 --------------------------------------------------

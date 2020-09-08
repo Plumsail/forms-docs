@@ -6,17 +6,15 @@
 How to restore previous version of SharePoint form designed with Plumsail Forms
 ======================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Designing the right form can take a while. It's also possible that some forms might require additional customization and tuning in the process of use. One wrong move in the editor, and you can potentially lose the changes that you've worked on for a while. 
 
 To prevent this from happening and to always have a back up, we will show you how to enable versioning for any form and how to go back to a previous version, if that ever becomes necessary.
 
 .. Note:: While this method is secure, to be extra sure that the most important and/or complex forms are backed up, we recommend to **Export** them in the editor and store the form schema somewhere safe.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Restoring older version
 --------------------------------------------------

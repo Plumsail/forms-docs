@@ -6,16 +6,13 @@
 How to manipulate fields in inline editing mode of List or Library control
 ===========================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
------------------------------------
-
 In this article, I will show you how to work with List or Library control in the Inline editing mode.  
 
 You will know how to prepopulate fields, set fields based on changes in other fields, filter lookup fields within a List or Library control. 
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Form and Source Lists
 -----------------------------------

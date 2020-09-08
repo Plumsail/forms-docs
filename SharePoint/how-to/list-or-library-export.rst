@@ -6,12 +6,6 @@
 How to start flow from List or Library control and pass selected items
 ===========================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 List or Library control allows selection of multiple items, which can then be manipulated in a variety of ways.
 
 |multiple|
@@ -21,6 +15,10 @@ List or Library control allows selection of multiple items, which can then be ma
 
 In this article we'll show you how you can add a new button to List or Library control which will start a new Flow, and use selected items to create a PDF invoice.
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Form configuration
 --------------------------------------------------
 First, create form a with List or Library control. We'll use Order form with Order items in List or Library:

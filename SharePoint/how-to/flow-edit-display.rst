@@ -6,12 +6,6 @@
 How to start flow after submitting SharePoint form and wait for results
 =============================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 Sometimes, you might want to save the item you are working with, start Flow (or Workflow) and see results of the Flow straight away.
 
 For this, we will show you how you can configure both the Flow and the forms to achieve this result.
@@ -20,6 +14,11 @@ For this, we will show you how you can configure both the Flow and the forms to 
 
 .. |pic1| image:: ../images/how-to/flow-edit-display/flow-edit-display-1-result.gif
    :alt: Result
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
 
 List and Flow configuration
 --------------------------------------------------

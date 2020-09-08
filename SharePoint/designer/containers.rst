@@ -7,15 +7,13 @@
 Containers in Plumsail Forms for SharePoint
 ==================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 Containers are elements that contain other elements inside of them. Containers can contain any elements inside, including other containers.
 
 All containers are taken from Bootstrap and are fully responsive.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 .. _designer-grid:
 

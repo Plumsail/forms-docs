@@ -6,14 +6,6 @@
 Create PDF document from SharePoint form based on Word template with Power Automate and Word Online (Business) connector 
 ==========================================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-
-Introduction
---------------------------------------------
-
 From this article, you will learn how to create a PDF file from a Word document template using Word Online (Business) connector in Power Automate (MS Flow). 
 
 By way of example, we will set up a flow that populates a DOCX template with data from SharePoint lists, converts it to PDF, and saves the resulting file to a SharePoint document library.  
@@ -24,6 +16,10 @@ As a result, we will get a PDF document as below generated based on data from tw
 
 .. |pic1| image:: ../images/how-to/create-pdf-power-automate/create-pdf-power-automate-01.png
    :alt: Work Order PDF
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Form 
 --------------------------------------------

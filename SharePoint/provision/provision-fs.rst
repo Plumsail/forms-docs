@@ -6,16 +6,14 @@
 Provisioning Form sets and Panel settings
 ===========================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Form Sets are important. They contain Form Panel and List View settings, plus routing configuration, including groups used for redirection.
 
 This article will show you how to work with :ref:`designer-formsetsettings` when provisioning forms.
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Get Form Set Settings
 --------------------------------------------------
 Here's an example how you can retrieve existing Form Set Settings:

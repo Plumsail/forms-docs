@@ -7,12 +7,6 @@
 How to display items or documents from specific folder in List or Library control
 ===================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 Previous two articles showed how to filter List or Library by a :doc:`Lookup </how-to/child-parent-form>` or with :doc:`CAML Query </how-to/caml-filter>`.
 This article is going to show you how to limit displayed results to a specific folder and how to change this folder dynamically.
 
@@ -24,7 +18,9 @@ Root Folder can also be used in conjuction with both CAML and Lookup filtering.
 
 Read more about properties and events in :ref:`javascript-listorlibrary` JavaScript documentation.
 
-*Important note!* You cannot create new folders with List or Library control, it only uses existing folders. If you need to create New Folder, use MS Flow instead.
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Set Root Folder
 --------------------------------------------------

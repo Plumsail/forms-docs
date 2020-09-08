@@ -6,18 +6,17 @@
 How to configure cascading lookup fields in SharePoint form
 ============================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 With a little bit of JavaScript code, you can now easily configure Cascading Lookup fields. 
 
 What does that mean? Just to be clear, I am talking about Lookup fields where choosing value in one field, limits available choice in the other field. 
 Lookup filtering can be applied with any data, including values of other fields on the form, not limited to other lookups.
 
 In this example, however, I will show you two Lookup fields on one form - Category and Product, so that the user can only see and choose Products belonging to the selected Category.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 
 Setting up Lists
 --------------------------------------------------

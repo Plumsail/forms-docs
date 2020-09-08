@@ -6,13 +6,6 @@
 How to create SharePoint form for booking a meeting room
 =========================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
-----------------------------------------
-
 In this article, we'll show you how to create a simple reservation system. This approach can be applied in booking systems for hotels, restaurants, meeting, or conference planning. 
 
 Assume, there are several conference rooms, and they are available for booking with the 1-hour interval. To make a reservation, a user selects the date and time of the planning meeting and then picks one of the available rooms in the dropdown.
@@ -21,6 +14,10 @@ Assume, there are several conference rooms, and they are available for booking w
 
 .. |pic0| image:: ../images/how-to/reservation-system/reservation-system-00.gif
    :alt: Reservation System
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Lists
 ----------------------------------------

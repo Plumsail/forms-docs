@@ -6,12 +6,6 @@
 Managing common fields with JavaScript in Plumsail Forms for SharePoint
 =========================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Here you can find properties of Common fields that you have on your form and methods that can be used on them. 
 
 Insert them into JavaScript editor or inside Click setting for buttons and links.
@@ -27,6 +21,10 @@ Insert them into JavaScript editor or inside Click setting for buttons and links
 
 For more use cases, check out :doc:`our manual </how-to/conditional-fields>` on how-to adjust fields dynamically on your form.
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Properties
 --------------------------------------------------
 Most fields have these properties:

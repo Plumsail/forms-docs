@@ -6,12 +6,6 @@
 SharePoint themes with Plumsail Forms
 =========================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Themes for SharePoint
--------------------------------------------------------------
 Modern Forms for SharePoint now include support for SharePoint themes. The changes are purely aesthetic and only affect the colors of various elements on the form.
 You can change the look of the SharePoint site in the Settings menu:
 

@@ -6,12 +6,6 @@
 How to update metadata of uploaded documents in List or Library control
 =================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 Sometimes, when working with List or Library control, you might want to automatically populate certain values for newly uploaded documents. 
 
 If you've selected Lookup field in Data Source, this field is populated automatically by default:
@@ -23,6 +17,10 @@ If you've selected Lookup field in Data Source, this field is populated automati
 
 Other fields are not, and you might want to specify certain properties for the uploaded documents, for example, 
 take some data from the current form or make some additional requests with JS. In this article, I will show you how this can be achieved.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Example
 --------------------------------------------------

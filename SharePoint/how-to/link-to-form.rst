@@ -6,12 +6,6 @@
 How to generate link to specific SharePoint form
 ==================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Often, it might be necessary to redirect users to a specific form. It's possible to simply open a form, copy it's link and then use JavaScript for redirection to this specific URL.
 But it would also mean that the users are not redirected to a specific Form Set, if you have routing configured, since you bypass the redirection and go directly to page.
 
@@ -21,9 +15,13 @@ the URL would lose its parameters, such as Item ID, preventing the form from ope
 In this article, we're going to show you how you can create general URLs, which would only specify what List and what Item you want to open, 
 thus allowing for routing to take place, plus avoiding the lose of parameters during authentication.
 
-Universal URL
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
+Building URL
 --------------------------------------------------
-Universal URL will lead users not to a particular form, but will open an appropriate form for the user. It will use all the :doc:`Routing rules </designer/form-sets>` set for the List, 
+This URL will lead users not to a particular form, but will open an appropriate form for the user. It will use all the :doc:`Routing rules </designer/form-sets>` set for the List, 
 so it is very useful as a generic link, for example, to send multiple users in various groups, and let Routing redirect them to the correct Form Set.
 
 The structure of the URL is fairly simple:

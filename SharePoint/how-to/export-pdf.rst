@@ -6,12 +6,6 @@
 How to save SharePoint form as PDF for printing
 =====================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 If you need your forms printed, you can try printing them from the browser, but the end result will include SharePoint UI 
 and overall composition won't look as good as you might want it to. That's why we recommend exporting form to PDF prior to printing. 
 You can also use this functionality to store various forms in PDF.
@@ -23,7 +17,17 @@ Nothing could be easier, as SharePoint forms have a button which allows forms to
 .. |pic1| image:: ../images/how-to/export-pdf/how-to-export-pdf-0.png
    :alt: Standard button to export PDF
 
-It's also possible to set up PDF options with JavaScript that can run outside of any events, by simply including **pdfOptions** in JS editor, like this:
+Moreover, you can export both SharePoint and Public Web Forms to SharePoint with a simple JavaScript command **fd.exportToPDF();**
+
+Find out more in this article.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
+
+Basic options
+--------------------------------------------------
+It's easy to set up PDF options with JavaScript that can run outside of any events, by simply including **pdfOptions** in JS editor, like this:
 
 .. code-block:: javascript
 
@@ -39,8 +43,6 @@ You can also customize CSS for the exported PDF by using k-pdf-export class. For
     .k-pdf-export .field-to-hide {
       display: none;
     }
-
-Moreover, you can export both SharePoint and Public Web Forms to SharePoint with a simple JavaScript command **fd.exportToPDF();**
 
 *Note: you can find more about options that you can use* |PDF options|.
 

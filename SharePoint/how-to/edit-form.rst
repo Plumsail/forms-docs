@@ -6,15 +6,13 @@
 How to open edit form by default for specific SharePoint group
 ======================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 By default, standard form when user clicks List Item is Display form, but this might not work for all situations. In this article, we'll show you how to automatically open editable form, when Display form opens normally.
 
 .. important:: This does not actually redirect users to Edit form, instead it makes Display form's fields editable.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Configuration
 --------------------------------------------------

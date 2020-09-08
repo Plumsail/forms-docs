@@ -6,15 +6,7 @@
 How to retrieve field values of SharePoint form from another form opened in dialog
 =====================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction 
---------------------------------------------------
-
 In this article, you will find the instructions for passing values ​​from a parent form to a child form, which is opened in the dialog box.
-
 
 |pic0|
 
@@ -23,7 +15,11 @@ In this article, you will find the instructions for passing values ​​from a 
 
 Suppose that a company possesses a set of facilities and requires a facility management system. In case of any problem at a facility, a user creates an issue in this system. This issue is assigned to a specific manager who is responsible for this facility. Each issue can have several tasks.
 
-To speed up a task creation, we will set up prepopulation of the necessary information from a parent form, e.g. 'Facility', 'Priority', and 'Assigned to'.
+To speed up the task creation, we will set up prepopulation of the necessary information from a parent form, e.g. 'Facility', 'Priority', and 'Assigned to'.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Lists
 --------------------------------------------------

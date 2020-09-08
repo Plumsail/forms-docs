@@ -6,27 +6,26 @@
 How to send email notification after submitting SharePoint form
 ======================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
-Plumsail Forms includes custom |Flow| connector, which can be used to get all information from submitted forms into Flow.
+Plumsail Forms includes custom |Power Automate| connector, which can be used to get all information from submitted forms into Power Automate.
 
 Of course, you can use default SharePoint connector provided by Microsoft in many cases, especially if you only have SharePoint fields on your form.
 
-But in case you want to utilize Common fields or some of our new controls - you can use our connector to get all this information into Flow.
+But in case you want to utilize Common fields or some of our new controls - you can use our connector to get all this information into Power Automate.
 
 .. important:: Plumsail Forms connector submissions are licensed under |Public Web Forms license|, not SharePoint Forms license.
 
-.. |Flow| raw:: html
+.. |Power Automate| raw:: html
 
-   <a href="https://flow.microsoft.com/en-us/" target="_blank">Microsoft Flow</a>
+   <a href="https://flow.microsoft.com/en-us/" target="_blank">Power Automate</a>
 
 .. |Public Web Forms license| raw:: html
 
    <a href="https://plumsail.com/docs/forms-web/licensing.html" target="_blank">Public Web Forms license</a>
+
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 List and Form configuration
 --------------------------------------------------
@@ -39,7 +38,7 @@ Let's say, we have a basic form like this:
 
 Title and Description are SharePoint fields, but Notify is a Common field with an Email pattern.
 
-In order for us to capture this extra field in Flow with the use of Plumsail Forms connector, we need to make sure our form will be submitted to Flow.
+In order for us to capture this extra field in Power Automate with the use of Plumsail Forms connector, we need to make sure our form will be submitted to Power Automate.
 Open Flow settings and mark this checkbox:
 
 |pic2|
@@ -47,12 +46,12 @@ Open Flow settings and mark this checkbox:
 .. |pic2| image:: ../images/how-to/flow/submit.png
    :alt: Submit to Flow
 
-Now, we can configure the Flow.
+Now, we can configure the flow.
 
-Flow configuration
+Power Automate configuration
 --------------------------------------------------
 
-First thing first, open MS Flow and go to My Flows and click *Create from blank*:
+First thing first, open MS Power Automate and go to My Flows and click *Create from blank*:
 
 |pic4|
 
@@ -73,13 +72,13 @@ Search for *Plumsail Forms* and add *Plumsail Forms - Form is submitted* trigger
 .. |pic6| image:: ../images/flow/10_FormSubmittedTriggerNew.png
    :alt: Plumsail Forms - Form is submitted trigger
 
-If this is your first Flow, at this point you'll need to **Sign in to** |Plumsail Account| from Flow, so you can start using your forms inside the Flow.
+If this is your first flow, at this point you'll need to **Sign in to** |Plumsail Account| from Power Automate, so you can start using your forms inside the flow.
 
 .. |Plumsail Account| raw:: html
 
    <a href="https://auth.plumsail.com/account/login" target="_blank"><b>Plumsail Account</b></a>
 
-.. important:: You can only bind Flows to SharePoint forms, if SharePoint license is bound to this Plumsail Account
+.. important:: You can only bind flows to SharePoint forms, if SharePoint license is bound to this Plumsail Account
 
 |pic7|
 
@@ -131,7 +130,7 @@ Finally, search for **Send an Email** action and fill it with information we've 
 .. |pic11| image:: /images/how-to/flow/email.png
    :alt: Send an Email action
 
-Save Flow, make sure the form is also saved with all the configuration, and let's begin testing!
+Save flow, make sure the form is also saved with all the configuration, and let's begin testing!
 
 Results
 --------------------------------------------------
@@ -150,5 +149,5 @@ I save the Item and in just a few seconds receive the following email:
    :alt: Received email
 
 This is just a basic example of how you can use Plumsail Forms connector with SharePoint forms, 
-you can actually create much more complex forms with lots of Common fields and controls, and then submit them all to Flow, 
+you can actually create much more complex forms with lots of Common fields and controls, and then submit them all to Power Automate, 
 using our connector to retrieve the data and use it in any scenario imaginable.

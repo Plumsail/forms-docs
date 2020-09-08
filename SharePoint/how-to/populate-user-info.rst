@@ -6,13 +6,6 @@
 How to populate SharePoint form fields with profile information
 =========================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
-
 In this article, we will show you how to retrieve information from a user profile and prepopulate form fields with it. 
 
 Let's say an HR administrator needs to fill in an expense report form on behalf of an employee. The report contains user information fields that we want to be populated automatically from the user's profile once the administrator selects a user in a Person or Group field. 
@@ -24,6 +17,9 @@ Let's say an HR administrator needs to fill in an expense report form on behalf 
 
 .. note:: You can see all user profile properties in the "SharePoint Admin Centre > Classic features > User Profiles > Manage User Profiles > Edit User Profile".
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Expense Report Form 
 --------------------------------------------------

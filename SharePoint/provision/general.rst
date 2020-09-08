@@ -6,12 +6,6 @@
 Provisioning API for SharePoint forms designed in Plumsail Forms
 ===============================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 It is possible to provision forms programmatically using **Plumsail.Forms.O365** |NuGet package|. 
 
 .. important:: For SharePoint 2019, please, use the **Plumsail.Forms.SP2019** |NuGet package 2019| instead. 
@@ -28,6 +22,9 @@ Find an example of how it can be used in our article - :doc:`Provision Modern UI
 
    <a href="https://www.nuget.org/packages/Plumsail.Forms.SP2019/" target="_blank">NuGet package</a>
 
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 FormsManager
 -------------------------------------------------------------

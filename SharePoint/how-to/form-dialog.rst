@@ -6,12 +6,6 @@
 How to open SharePoint form in dialog from another form and pass parameters with JavaScript
 ===============================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 It is now possible to open any custom Plumsail SharePoint Form in dialog, from another Plumsail SharePoint Form, and this can be used in variety of cases.
 
 For example, you can open a form in dialog and copy some data from parent form into it, even if the actual form is located in another Site Collection, 
@@ -21,6 +15,10 @@ JS API also allows you to pass parameters to the form that's opened in dialog, a
 Also, it's possible to detect if Dialog form was saved or not, and to even pass some parameters back to main form.
 
 In this article we'll show practical examples of how you can use Dialog, but you can also find general information about it on our JS documentation :doc:`Dialog </javascript/dialog>` page.
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Open in dialog form in another Site Collection
 ---------------------------------------------------

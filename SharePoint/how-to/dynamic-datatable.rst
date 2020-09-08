@@ -6,12 +6,6 @@
 How to populate dropdown column of DataTable in SharePoint form with data from any SharePoint list
 ======================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 In this article, we'll show you how to load values from SharePoint List and display them in DataTable control dropdowns.
 
 Essentially, this works similar to Lookup fields, but the values are stored as text, 
@@ -23,7 +17,11 @@ This functionality also supports filtering and cascading selection, which we'll 
 
 .. |pic0| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-0-anim.gif
    :alt: Animated DataTable
-   
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
+ 
 Preparation
 --------------------------------------------------
 First, create three SharePoint Lists - **Categories, Products and Orders**.

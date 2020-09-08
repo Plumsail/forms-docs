@@ -6,12 +6,6 @@
 How to organize related files in folders and display documents from specific folder in a SharePoint form
 ==================================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 In this article, I will show you how to create a folder in a document library automatically right after adding an item to a SharePoint list and how to display the content of this folder in Edit and Display forms of the list with the help of List or Library control.
 
 Imagine, we have a list with general information about customers and suppliers. And there are two libraries for storing incoming and outgoing documents related to agents. Documents in those libraries are organized by folders. Each customer or supplier has the corresponding folder in each library. 
@@ -22,6 +16,10 @@ Now, we want to create a folder in those libraries automatically after adding a 
 
 .. |pic0| image:: ../images/how-to/create-folder/create-folder-0.gif
    :alt: preview
+
+.. contents:: Contents:
+ :local:
+ :depth: 1
 
 Forms Overview
 --------------------------------------------------
