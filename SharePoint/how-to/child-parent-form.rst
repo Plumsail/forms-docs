@@ -15,10 +15,6 @@ This can serve as alternative to attachments or to create complex relationships 
 
 With **List or Library** control this is very easy to do, just follow the steps described below.
 
-.. contents::
- :local:
- :depth: 1
-
 Bind children to parent
 --------------------------------------------------
 | First, create Lists that you want to use as Parent List and Children List. You can use Lists or Document Libraries for this.
