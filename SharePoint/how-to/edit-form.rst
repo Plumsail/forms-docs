@@ -10,10 +10,6 @@ By default, standard form when user clicks List Item is Display form, but this m
 
 .. important:: This does not actually redirect users to Edit form, instead it makes Display form's fields editable.
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
 Configuration
 --------------------------------------------------
 Let's say you want most users to see default Display form:
