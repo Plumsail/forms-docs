@@ -12,10 +12,6 @@ In this scenario, we'll show you how to add button to List or Library control, w
 
 .. |pic1| image:: ../images/how-to/list-or-library-duplicate/list-or-library-duplicate-1.png
    :alt: Duplicate button
-
-.. contents::
- :local:
- :depth: 1
  
 Form configuration
 --------------------------------------------------
