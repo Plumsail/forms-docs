@@ -22,10 +22,6 @@ Additionally, SharePoint forms can also be handled by flows upon submission, all
 
 .. note:: The amount of data that can be handled by Plumsail Forms connector depends on your current plan of Plumsail Forms subscription.
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
 .. _creating-flow:
 
 Creating flow

@@ -19,10 +19,6 @@ Then you can integrate it with the other available applications and do anything 
 
 .. note:: The amount of data that can be handled by Plumsail Forms app depends on your current plan of Plumsail Forms subscription.
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
 .. _creating-zap:
 
 Creating a Zap
