@@ -10,7 +10,7 @@ In this article, you will learn how to gather information from submissions and b
 
 For this, we've created a Customer Satisfaction survey to analyze service loyalty and clients' average age. 
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

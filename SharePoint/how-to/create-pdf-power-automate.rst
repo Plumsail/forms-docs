@@ -17,7 +17,7 @@ As a result, we will get a PDF document as below generated based on data from tw
 .. |pic1| image:: ../images/how-to/create-pdf-power-automate/create-pdf-power-automate-01.png
    :alt: Work Order PDF
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

@@ -13,7 +13,7 @@ and SharePoint Forms, by adding a List to a tab, and using Panel to display form
 
 In this article, we'll go into more details and how you can achieve the same results to add advanced custom forms to MS Teams.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

@@ -23,7 +23,7 @@ We will use the Order Form in this example, which you can download |Order Form|.
 
    <a href="/forms/templates/order-form/" target="_blank">here</a>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

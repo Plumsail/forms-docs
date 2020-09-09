@@ -10,7 +10,7 @@ Form Sets are important. They contain Form Panel and List View settings, plus ro
 
 This article will show you how to work with :ref:`designer-formsetsettings` when provisioning forms.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

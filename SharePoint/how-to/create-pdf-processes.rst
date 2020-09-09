@@ -13,7 +13,7 @@ From this article, you will learn how to populate a DOCX template with data from
 
 By way of example, we will set up a process that creates a signed work order document and saves the result document to SharePoint library.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

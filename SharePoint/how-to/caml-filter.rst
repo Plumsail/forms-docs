@@ -21,7 +21,7 @@ Read more about properties and events in :ref:`javascript-listorlibrary` JavaScr
 
 You will find several examples of filtering which you can copy or modify according to your needs.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

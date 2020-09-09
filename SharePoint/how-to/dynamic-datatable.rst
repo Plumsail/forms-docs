@@ -18,7 +18,7 @@ This functionality also supports filtering and cascading selection, which we'll 
 .. |pic0| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-0-anim.gif
    :alt: Animated DataTable
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

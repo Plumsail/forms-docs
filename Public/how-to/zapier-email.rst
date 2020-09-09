@@ -19,7 +19,7 @@ We'll use this incident report form, a template of which you can download |Incid
 
    <a href="/forms/templates/incident-report-form/" target="_blank">here</a>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

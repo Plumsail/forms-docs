@@ -10,7 +10,7 @@ From this article, you will know how to manipulate fields dynamically depending 
   
 Assume you need to design an expense approval form. The approval process requires feedback from users who belong to Administrators and Managers groups. An administrator should not see a comment left by a manager. And a manager should not be able to edit a comment posted by an administrator. 
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

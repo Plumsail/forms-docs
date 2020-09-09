@@ -6,7 +6,7 @@
 Generate PDF from Plumsail Form with MS Power Automate, Zapier, or Plumsail Documents
 ====================================================================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 2
 

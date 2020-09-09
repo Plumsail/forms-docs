@@ -17,7 +17,7 @@ Suppose that a company possesses a set of facilities and requires a facility man
 
 To speed up the task creation, we will set up prepopulation of the necessary information from a parent form, e.g. 'Facility', 'Priority', and 'Assigned to'.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

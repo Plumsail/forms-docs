@@ -14,7 +14,7 @@ It is accesible globally in Form Preview, so you can run tests from browser's co
 
 Otherwise, it will not be accesible globally on the page, so you can include several forms on one page and not worry about their scripts conflicting at all.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

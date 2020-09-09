@@ -14,7 +14,7 @@ This article will help you provision Form from one site to another programmatica
 First of all, you do need both Lists to be identical, perhaps deployed programmatically, otherwise this method won't work as intended. 
 Second of all, forms need to be exported first - this is not mandatory and you can retrieve forms from the old site. 
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

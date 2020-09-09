@@ -14,7 +14,7 @@ which anyone who is interested in partnership can fill.
 
 This information will then be handled by MS Flow and new record would be added to SQL Server Database.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

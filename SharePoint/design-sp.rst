@@ -6,7 +6,7 @@
 Designing modern forms for SharePoint Online in Office 365 and SharePoint 2019
 ===============================================================================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

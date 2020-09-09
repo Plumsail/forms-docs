@@ -10,7 +10,7 @@ Containers are elements that contain other elements inside of them. Containers c
 
 All containers are taken from Bootstrap and are fully responsive.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

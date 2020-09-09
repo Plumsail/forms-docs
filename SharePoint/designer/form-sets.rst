@@ -25,7 +25,7 @@ Default Form Set is what all users see if they are not redirected.
 Add new Form Set by clicking **+ sign** next to the currently selected Form Set. Clicking Pen Icon allows you to edit properties of the currently selected Form Set.
 Trash bin icon allows you to delete a Form Set. After creating a Form Set, do not forget to save every form you plan to use or it might be missing.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

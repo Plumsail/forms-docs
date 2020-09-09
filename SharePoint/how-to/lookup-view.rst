@@ -17,7 +17,7 @@ In this article, we will show you an example with several fields displayed at on
 .. |example| image:: ../images/how-to/lookup-view/example.png
    :alt: Example Lookup
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

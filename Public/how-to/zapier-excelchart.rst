@@ -29,7 +29,7 @@ We just want to get the poll's statistic and build a chart from it for each cate
 .. |pic2| image:: ../images/how-to/zapier-excelchart/2_chart.png
    :alt: Excel Chart
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

@@ -14,7 +14,7 @@ Data entered in Common fields can either be copied to a SharePoint field with Ja
 
    <a href="https://plumsail.com/docs/forms-web/licensing.html" target="_blank">Public Web Forms</a>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

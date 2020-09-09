@@ -21,7 +21,7 @@ Insert them into JavaScript editor or inside Click setting for buttons and links
 
 For more use cases, check out :doc:`our manual </how-to/conditional-fields>` on how-to adjust fields dynamically on your form.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

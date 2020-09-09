@@ -22,7 +22,7 @@ Read more about different events in :doc:`Manager section </javascript/manager>`
 
 For more use cases, check out :doc:`our manual </how-to/conditional-containers>` on how-to adjust containers dynamically on your form.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

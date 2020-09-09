@@ -9,7 +9,7 @@ Controls in Plumsail Forms (public forms)
 Controls are elements designed to give you more control over your forms. They allow you to customize the look of the form and add interactivity to it. 
 Controls aren't fields as they do not store information, though some controls rely on user input.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
     

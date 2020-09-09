@@ -13,7 +13,7 @@ Both designers share most of their functionality, but:
 - Web Designer works without installation and gives better understanding of how the form would look like in the browser;
 - Desktop Designer has more advanced controls and containers, which will be implemented in Web Designer with time.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

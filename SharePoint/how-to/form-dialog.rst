@@ -16,7 +16,7 @@ Also, it's possible to detect if Dialog form was saved or not, and to even pass 
 
 In this article we'll show practical examples of how you can use Dialog, but you can also find general information about it on our JS documentation :doc:`Dialog </javascript/dialog>` page.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

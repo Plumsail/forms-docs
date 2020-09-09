@@ -17,7 +17,7 @@ You can add Web Part to any Modern page:
 .. |pic1| image:: ../images/designer/web-part/WebPart.png
    :alt: Add Web Part
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

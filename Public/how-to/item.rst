@@ -16,7 +16,7 @@ and use Flow to add this information to a list on your SharePoint site.
 
             .. image:: ../images/how-to/save-controls-to-sp/save-controls-to-sp-splist2.png
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

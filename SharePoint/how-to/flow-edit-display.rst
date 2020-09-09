@@ -15,7 +15,7 @@ For this, we will show you how you can configure both the Flow and the forms to 
 .. |pic1| image:: ../images/how-to/flow-edit-display/flow-edit-display-1-result.gif
    :alt: Result
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

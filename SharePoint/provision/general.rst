@@ -22,7 +22,7 @@ Find an example of how it can be used in our article - :doc:`Provision Modern UI
 
    <a href="https://www.nuget.org/packages/Plumsail.Forms.SP2019/" target="_blank">NuGet package</a>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

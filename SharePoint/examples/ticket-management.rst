@@ -15,7 +15,7 @@ In this article, I will show you how to design specific form layouts for differe
 
 For example, we have an issue processing system. Issue records can be created by any users, but only a support team can process them. For user convenience, we will add an ability to report issues and track their statuses on an intranet page where users spend most of their time.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

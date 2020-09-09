@@ -21,7 +21,7 @@ Read more about different events in :doc:`Manager section </javascript/manager>`
 
 For more use cases, check out :doc:`our manual </how-to/conditional-fields>` on how-to adjust fields dynamically on your form.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

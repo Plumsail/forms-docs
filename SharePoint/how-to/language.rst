@@ -19,7 +19,7 @@ Plumsail Forms can support multiple languages for each form with a little bit of
 
 .. important:: Previously, the implementation of different language forms worked differently. To get the latest functionality, please, :doc:`update the app package <../general/update-package>` to v1.0.8 or higher, and re-save forms in the editor v1.6.4 or higher.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

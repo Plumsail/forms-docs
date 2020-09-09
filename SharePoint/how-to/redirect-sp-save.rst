@@ -12,7 +12,7 @@ Nothing could be simpler actually as you will find in this article. With the use
 
 .. Note:: The examples below are not applicable when the form is opened in a panel. RedirectUrl is ignored inside a panel.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

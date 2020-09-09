@@ -12,7 +12,7 @@ The possibilities are almost endless, in this article we're going to show some o
 In order to customize a column, you just need to know its Internal Name, what type of field it is, and what you want to achieve with customization.
 In this case, I'm using SharePoint's standard Task Content Type and its columns with default Internal Names.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

@@ -10,7 +10,7 @@ Installation of Plumsail Forms for SharePoint 2019 (On-Premises)
 
     <div data-nosnippet="true"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9AIuz_2OWg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

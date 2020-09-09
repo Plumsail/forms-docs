@@ -17,7 +17,7 @@ Now, we want to create a folder in those libraries automatically after adding a 
 .. |pic0| image:: ../images/how-to/create-folder/create-folder-0.gif
    :alt: preview
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

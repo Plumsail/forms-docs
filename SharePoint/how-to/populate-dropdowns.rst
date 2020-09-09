@@ -10,7 +10,7 @@ In this article, I will show you how to populate a regular dropdown field with t
 
 Assume that you have different forms across a SharePoint tenant, e.g. request forms, purchase orders forms, leave request forms, etc. Each form has a dropdown field with department codes. The list with department codes is located at the root site collection, and you want to re-use its data in your forms.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

@@ -10,7 +10,7 @@ In this article, we'll show you a basic example of how to display version histor
 
 We're also going to showcase Vue components and their potential use.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

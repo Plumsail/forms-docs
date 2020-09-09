@@ -15,7 +15,7 @@ This can serve as alternative to attachments or to create complex relationships 
 
 With **List or Library** control this is very easy to do, just follow the steps described below.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

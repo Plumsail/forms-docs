@@ -6,7 +6,7 @@
 Add records to Salesforce with MS Power Automate or Zapier
 ==========================================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

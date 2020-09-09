@@ -6,7 +6,7 @@
 Sharing web forms created with Plumsail Forms
 ==================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

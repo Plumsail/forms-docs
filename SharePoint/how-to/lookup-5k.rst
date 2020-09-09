@@ -15,7 +15,7 @@ But choosing correct item among more than 5,000 choices is not an easy task. Tha
 .. |pic1| image:: ../images/how-to/lookup-5k/threshold.png
    :alt: Threshold
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

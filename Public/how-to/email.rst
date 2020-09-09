@@ -16,7 +16,7 @@ to our company's |location_link|.
 
    <a href="https://plumsail.com/SharePoint-helpdesk/" target="_blank">Helpdesk</a>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

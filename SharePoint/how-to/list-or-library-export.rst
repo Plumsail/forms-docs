@@ -15,7 +15,7 @@ List or Library control allows selection of multiple items, which can then be ma
 
 In this article we'll show you how you can add a new button to List or Library control which will start a new Flow, and use selected items to create a PDF invoice.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

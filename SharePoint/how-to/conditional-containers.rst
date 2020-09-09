@@ -15,7 +15,7 @@ You can find similar examples for manipulating fields in this :doc:`article </ho
 
 Let's say we have a form for an issue the employee is working on, and we divide various pieces of information using containers.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 2
 

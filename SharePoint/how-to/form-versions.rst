@@ -12,7 +12,7 @@ To prevent this from happening and to always have a back up, we will show you ho
 
 .. Note:: While this method is secure, to be extra sure that the most important and/or complex forms are backed up, we recommend to **Export** them in the editor and store the form schema somewhere safe.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

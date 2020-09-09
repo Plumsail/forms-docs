@@ -21,7 +21,7 @@ The easiest option here is to |give permissions to our Azure Active Directory ap
 
 We do not store your credentials, nor do we access the actual data in your tenant. If you don't want to do this - use the following options.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

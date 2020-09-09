@@ -6,7 +6,7 @@
 Update Plumsail Forms On-Premises solution
 ==================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

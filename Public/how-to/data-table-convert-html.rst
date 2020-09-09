@@ -12,7 +12,7 @@ It's an additional example of using Plumsail Forms data with Plumsail Documents,
 
 In here, we will also show you how you can format data inside Data Table with HTML-template for columns such as date.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

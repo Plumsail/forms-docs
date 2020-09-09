@@ -11,7 +11,7 @@ With the recently added :ref:`designer-datatable` control, we can design a more 
 In this example, we will design an Expense Reimbursement Form, which will include DataTable to list all the expenses,
 as well as Ink Sketch controls to get signatures from the user and his supervisor.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

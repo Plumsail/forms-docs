@@ -11,7 +11,7 @@ Both Public Web Forms and SharePoint forms can include our custom controls - Ink
 In this article, we'll prepare SharePoint List and Public Web Forms with these controls.
 Anonymous users will be able to send them to MS Power Automate (MS Flow) where they'll get saved to SharePoint.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

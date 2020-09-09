@@ -19,7 +19,7 @@ forms, to fully customize them, add interactivity to them and much more.
             ./design-sp
             ./licensing-sp
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

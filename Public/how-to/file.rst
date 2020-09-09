@@ -11,7 +11,7 @@ There is a variety of actions that you can perform with Attachments, but one of 
 
 In this example, we will design a simple form with Attachments field and configure Flow to send uploaded files to Document Library on your SharePoint site.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

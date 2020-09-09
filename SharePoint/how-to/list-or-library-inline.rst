@@ -10,7 +10,7 @@ In this article, I will show you how to work with List or Library control in the
 
 You will know how to prepopulate fields, set fields based on changes in other fields, filter lookup fields within a List or Library control. 
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

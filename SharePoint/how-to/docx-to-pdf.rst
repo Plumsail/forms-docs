@@ -19,7 +19,7 @@ We are going to do this with the help of:
 - |Plumsail Documents| 
 - Simple code 
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

@@ -13,7 +13,7 @@ Lookup filtering can be applied with any data, including values of other fields 
 
 In this example, however, I will show you two Lookup fields on one form - Category and Product, so that the user can only see and choose Products belonging to the selected Category.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

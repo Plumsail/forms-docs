@@ -22,7 +22,7 @@ Or using the **fd.exportToPDF** method you can call on button click or form subm
 
 From this article, you will learn how to customize the exported PDF and how to resolve common issues you may face. 
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 2
 

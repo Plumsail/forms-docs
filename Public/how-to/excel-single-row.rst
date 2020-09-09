@@ -12,7 +12,7 @@ stored online, for example in Dropbox or Box account, or even on your own site.
 
 We will also show how to add rows to a Google Sheet. Without further ado, let's get started!
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

@@ -10,7 +10,7 @@ Installation of Plumsail Forms for public web forms
 
     <div data-nosnippet="true"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WuidPMLnQbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

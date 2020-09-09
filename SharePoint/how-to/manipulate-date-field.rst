@@ -11,7 +11,7 @@ In this article, you will find the most common examples of working with the Date
 
 Using the |Moment.js| library and its plugins, you can easily calculate duration between dates, add or subtract time from the date, calculate a number of business days/hours between dates, etc.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

@@ -15,7 +15,7 @@ You can use the 'Ink Sketch' control to leave marks over a selected image. The i
 
 This functionality can be useful in many cases: a user can draw directions on a map, leave marks in a patient card, make corrections in blueprints, specify damaged parts of a vehicle in an accident report form.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

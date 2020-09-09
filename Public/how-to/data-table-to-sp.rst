@@ -13,7 +13,7 @@ We'll create an Office Supplies Request form which when submitted will create it
 As you might've guessed, general information from the form will go into orders 
 while specific information about each record in DataTable will create an item in Ordered Items list. Ordered Items will have a lookup to tie them to the Order.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

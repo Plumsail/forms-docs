@@ -21,7 +21,7 @@ Moreover, you can export both SharePoint and Public Web Forms to SharePoint with
 
 Find out more in this article.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

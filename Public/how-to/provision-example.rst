@@ -14,7 +14,7 @@ In this example, you'll see how easy it is to create a public web form in the Vi
 
    <a href="https://www.nuget.org/packages/Plumsail.Forms.Public" target="_blank">NuGet package</a>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

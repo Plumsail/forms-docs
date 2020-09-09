@@ -25,7 +25,7 @@ Find an example of how it can be used in our article - :doc:`Create a contact we
 
    <a href="https://www.nuget.org/packages/Plumsail.Forms.Public" target="_blank">NuGet package</a>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

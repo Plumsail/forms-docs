@@ -20,7 +20,7 @@ This section contains information about settings for fields that are unique to S
             .. |refresh| image:: /images/designer/fields-sp/designer-fields-sp-refresh.png
                :alt: Refresh SharePoint fields
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

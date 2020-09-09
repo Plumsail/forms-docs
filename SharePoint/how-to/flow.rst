@@ -23,7 +23,7 @@ But in case you want to utilize Common fields or some of our new controls - you 
    <a href="https://plumsail.com/docs/forms-web/licensing.html" target="_blank">Public Web Forms license</a>
 
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

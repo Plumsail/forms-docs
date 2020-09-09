@@ -8,7 +8,7 @@ Ribbon actions in Plumsail Forms (public forms)
 
 What do the buttons in the ribbon of the editor do? Find more about layouts for mobile devices, export and import functionality, and other buttons.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

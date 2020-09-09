@@ -15,7 +15,7 @@ Assume, there are several conference rooms, and they are available for booking w
 .. |pic0| image:: ../images/how-to/reservation-system/reservation-system-00.gif
    :alt: Reservation System
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

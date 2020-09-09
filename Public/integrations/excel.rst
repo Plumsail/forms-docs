@@ -6,7 +6,7 @@
 Add rows to Microsoft Excel from Plumsail Form with MS Power Automate or Zapier
 ================================================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

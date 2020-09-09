@@ -6,7 +6,7 @@
 Insert row to SQL server from Plumsail Forms with Power Automate or Zapier
 ==========================================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

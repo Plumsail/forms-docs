@@ -6,7 +6,7 @@
 Add records to Dynamics 365 Business Central with MS Power Automate
 ==========================================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

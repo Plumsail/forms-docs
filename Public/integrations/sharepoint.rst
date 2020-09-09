@@ -6,7 +6,7 @@
 Create items and upload documents to SharePoint from Plumsail Forms with Power Automate 
 ================================================================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

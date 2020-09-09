@@ -19,7 +19,7 @@ This is the form used in this example:
 .. |pic1| image:: ../images/how-to/excel-datatable/how-to-excel-datatable-form.png
    :alt: Orders Form
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  

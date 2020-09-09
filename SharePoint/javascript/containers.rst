@@ -22,7 +22,7 @@ Insert them into JavaScript editor or inside Click setting for buttons and links
 
 For more use cases, check out :doc:`our manual </how-to/conditional-containers>` on how-to adjust containers dynamically on your form.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

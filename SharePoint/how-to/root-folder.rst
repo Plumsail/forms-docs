@@ -18,7 +18,7 @@ Root Folder can also be used in conjuction with both CAML and Lookup filtering.
 
 Read more about properties and events in :ref:`javascript-listorlibrary` JavaScript documentation.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

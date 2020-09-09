@@ -23,7 +23,7 @@ Our Grid is based on |Bootstrap v4 Grid|.
 
    <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">Bootstrap v4 Grid</a>
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

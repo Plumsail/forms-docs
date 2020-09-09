@@ -6,7 +6,7 @@
 Send MS Teams message from Plumsail Form with MS Power Automate or Zapier
 ==========================================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
  
