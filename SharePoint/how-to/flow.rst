@@ -3,33 +3,27 @@
 .. meta::
    :description: Learn how to send an email with attachments and add a signature to the email body when submitting SharePoint form using Power Automate.
 
-How to send a customized email when submitting SharePoint form using Power Automate
+How to send email notification after submitting SharePoint form with Power Automate
 ======================================================================================
 
 Using Power Automate (MS Flow), you can send a customized email with form data. You can create a flow using a default SharePoint connector or Plumsail Forms connector. 
 
 The default SharePoint connector can be used if your form has SharePoint fields only. 
 
-But in case you want to utilize Plumsail common fields or controls in your flow - you need to use Plumsail Forms connector. 
-  
-Find the instructions on how to create flow using these connectors below. 
+But in case you want to utilize Plumsail common fields or controls in your flow - you need to use Plumsail Forms connector.
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 3
 
 SharePoint connector
 ----------------------------------
 
-We are going to create an automated flow that sends an email with attachments and an Ink Sketch signature using the Outlook account when a new SharePoint item is created. 
+Here you find instructions on how to create an automated flow using SharePoint connector from scratch. 
+You can also create the same flow from a |template| and jump to :ref:`configure_email_SP` step.
 
 Configure the Flow 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Here you find instructions on how to create an automated flow from scratch. 
-You can also create the same flow from a |template| and jump to :ref:`configure_email_SP` step. 
-
-|
 
 Open |Microsoft Power Automate| page and go to *My Flows* → *New* → *Automated - from blank*. 
 
@@ -65,10 +59,6 @@ Next, select the site address and the list name from a drop down.
 .. |pic5| image:: ../images/flow/flow_05.png
    :alt: Selecting site and list name
 
-|
-
-Now, you can add other steps to perform any actions, for instance, to send an email to a specific user by adding 'Send an email (V2)' step.
-
 .. _configure_email_SP:
 
 Configure 'Send an email' action 
@@ -101,7 +91,7 @@ To insert a base64 string to the email body, first, you need to switch the body 
 .. |pic8| image:: ../images/flow/flow_08.png
    :alt: Code view
 
-Then, paste this HTML code line to the email body and add the field that stores Ink Sketch data from the dynamic content. 
+Then, paste this HTML code line to the email body and add field that stores Ink Sketch data from the dynamic content. 
 
 .. code-block:: html
 
@@ -122,7 +112,7 @@ To send an email with multiple attachments, add these steps.
 .. |pic10| image:: ../images/flow/flow_10.png
    :alt: Flow steps
 
-Let's take a closer look at each step.
+|  
 
 **1. Get attachments**
 
@@ -153,8 +143,8 @@ Add 'Apply to each' action for iterating through the attachments. 'body' is the 
 
 Insert the 'Get attachment content' action inside
 
-Specify site address and list name. For the ID field select ID output from the 'When an item is created' trigger.
-For the File identifier field select the Id output from 'Get Attachments' action.
+Specify site address and list name. For the *ID* field select ID output from the 'When an item is created' trigger.
+For the *File identifier* field select the Id output from 'Get Attachments' action.
 
 |pic13|
 
@@ -169,6 +159,7 @@ Add 'Append to array variable' action inside 'Apply to each' step.
 Select the variable name from the drop-down. In the value section, map file name and its content. 
 
 .. code-block:: html
+
    {
    "Name": ,
    "ContentBytes": 
@@ -183,10 +174,10 @@ Select the variable name from the drop-down. In the value section, map file name
 
 **5. Send an email (V2)**
 	
-Now we can add the attachments array to our email template.
+Now you can add the attachments array to the email template.
 
 Go to 'Send and email' action.
-To add attachments to email, click *Show advanced options*, switch attachments field to input entire array. 
+Сlick *Show advanced options*, switch attachments field to input entire array. 
 Add the variable output to the attachments input field.
 
 |pic15|
@@ -202,14 +193,11 @@ If you want to send an e-mail with common fields and do not want to save them to
 
 .. important:: Plumsail Forms connector submissions are licensed under |Public Web Forms license|, not SharePoint Forms license.
 
+Here you find instructions on how to create an automated flow using Plumsail Forms connector from scratch. 
+You can also create the same flow from a |template0| and jump to :ref:`configure_email_PF` step.
 
 Configure the Flow
 ^^^^^^^^^^^^^^^^^^^^^^
-
-Here you find instructions on how to create an automated flow from scratch. 
-You can also create the same flow from a |template0| and jump to :ref:`configure_email_PF` step.
-
-|
 
 Open |Microsoft Power Automate| page and go to *My Flows* → *New* → *Automated - from blank*. 
 
@@ -262,15 +250,13 @@ To copy Form ID, open the form in the desktop designer, go to Flow settings and 
 |
 
 Using Plumsail Forms connector the form data is submitted as JSON. 
-To parse all the data, we add 'Parse JSON' action.
+To parse all the data, add 'Parse JSON' action.
 For the *Content* field select body of the form, and for the *Form Schema* -  paste Form Schema from Flow Settings:
 
 |pic20|
 
 .. |pic20| image:: ../images/flow/flow_20.png
    :alt: JSON
-
-Now, you can add other steps to perform any actions, for instance, to send an email to a specific user by adding 'Send an email (V2)' step.
 
 .. _configure_email_PF:
 
@@ -304,7 +290,7 @@ To insert a base64 string to the email body, first, you need to switch the body 
 .. |pic8| image:: ../images/flow/flow_08.png
    :alt: Code view
 
-Then, paste this HTML code line to the email body and add the field that stores Ink Sketch data from the dynamic content. 
+Then, paste this HTML code line to the email body and add field that stores Ink Sketch data from the dynamic content. 
 
 .. code-block:: html
 
@@ -324,8 +310,6 @@ To send an email with multiple attachments, add these steps.
 
 .. |pic23| image:: ../images/flow/flow_23.png
    :alt: Flow steps
-
-Let's take a closer look at each step.
 
 **1. Initialize variable**
 
@@ -373,7 +357,7 @@ Select the variable name from the drop-down. In the value section, map file name
 **4. Send an email**
 
 Go to 'Send and email' action.
-To add attachments to email, click *Show advanced options*, switch attachments field to input entire array. 
+Сlick *Show advanced options*, switch attachments field to input entire array. 
 Add the variable output to the attachments input field.
 
 |pic15|
