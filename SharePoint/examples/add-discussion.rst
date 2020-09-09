@@ -15,10 +15,6 @@ It can be handy in tasks, requests, issues in systems like CRMs, help desks, req
 .. |pic0| image:: ../images/how-to/add-discussion/ArticleComments.gif
    :alt: Article Comments gif
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
 How to configure
 --------------------------------------------------
 
