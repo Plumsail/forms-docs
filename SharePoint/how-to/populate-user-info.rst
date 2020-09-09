@@ -17,10 +17,6 @@ Let's say an HR administrator needs to fill in an expense report form on behalf 
 
 .. note:: You can see all user profile properties in the "SharePoint Admin Centre > Classic features > User Profiles > Manage User Profiles > Edit User Profile".
 
-.. contents::
- :local:
- :depth: 1
-
 Expense Report Form 
 --------------------------------------------------
 
