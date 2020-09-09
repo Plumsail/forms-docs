@@ -18,10 +18,6 @@ If you've selected Lookup field in Data Source, this field is populated automati
 Other fields are not, and you might want to specify certain properties for the uploaded documents, for example, 
 take some data from the current form or make some additional requests with JS. In this article, I will show you how this can be achieved.
 
-.. contents::
- :local:
- :depth: 1
-
 Example
 --------------------------------------------------
 For Document Library, you can detect when files are uploaded, retrieve their IDs and use them to modify the documents right after they were uploaded.
