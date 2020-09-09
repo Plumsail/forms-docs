@@ -6,10 +6,6 @@
 Collecting submissions of online forms designed with Plumsail Forms
 =========================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
 Enable data collection
 -------------------------------------------------------------
 Data collection and storage is enabled by default for all forms that you create. 
