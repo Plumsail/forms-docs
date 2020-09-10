@@ -20,7 +20,7 @@ SharePoint connector
 ----------------------------------
 
 Here you find instructions on how to create an automated flow using SharePoint connector from scratch. 
-You can also create the same flow from a |template| and jump to :ref:`configure_email_SP` step.
+You can also create the same flow from the |template| and jump to :ref:`configure_email_SP` step.
 
 Configure the Flow 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -194,7 +194,7 @@ If you want to send an e-mail with common fields and do not want to save them to
 .. important:: Plumsail Forms connector submissions are licensed under |Public Web Forms license|, not SharePoint Forms license.
 
 Here you find instructions on how to create an automated flow using Plumsail Forms connector from scratch. 
-You can also create the same flow from a |template0| and jump to :ref:`configure_email_PF` step.
+You can also create the same flow from the |template0| and jump to :ref:`configure_email_PF` step.
 
 Configure the Flow
 ^^^^^^^^^^^^^^^^^^^^^^
