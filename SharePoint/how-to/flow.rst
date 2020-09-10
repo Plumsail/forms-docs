@@ -217,7 +217,7 @@ Select the trigger that starts the flow. Search for *Plumsail* and select 'Form 
 
 |
 
-If this is a first time you are using Plumsail Forms connector, you will be asked to sign in to Plumsail account to create a connection. 
+If this is the first time you are using Plumsail Forms connector, you will be asked to sign in to Plumsail account to create a connection. 
 Click *Sign in* and enter your account credentials.
 
 |pic17|
