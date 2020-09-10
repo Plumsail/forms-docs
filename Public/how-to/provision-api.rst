@@ -208,7 +208,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
             
             .. code-block:: c#
 
-                form.Layout.Css = "fd.rendered(function(){ fd.field("Name").value = "John Bull" });";
+                form.Layout.JavaScript = "fd.rendered(function(){ fd.field('Name').value = 'John Bull' });";
     *   -   **Theme**
         -   Get or set theme used for the form. Use one of predefined themes such as *Blue*, *Compact*, *Default*, *Explicit*, *Gray*, *Green*, *Orange*, *Plumsail*, *Purple*, *Red*, *Smooth*, or *Soft*.
             
