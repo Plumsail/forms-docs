@@ -6,13 +6,7 @@
 How to adapt SharePoint form to right-to-left languages e.g. Arabic or Hebrew
 ===============================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
-Some languages require form to be read right to left, for example, Arabic or Farsi. That would mean that all titles should be moved to the right, repositioned on the form.
+Some languages require a form to be read right to left, for example, Arabic, Hebrew or Farsi. That would mean that all titles should be moved to the right, repositioned on the form.
 
 This functionality is actually fully supported in **Plumsail Forms**! 
 

@@ -6,12 +6,6 @@
 Provisioning SharePoint forms designed in Plumsail Forms
 =======================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Sometimes, you create a form and want to re-use. Maybe, you have several project sites and some forms are the same across all of them. 
 Or perhaps you want to move forms from one site to another. Of course, you can always use Export and Import functionality of the designer, 
 but this takes time - to open each form and to import it.
@@ -19,6 +13,10 @@ but this takes time - to open each form and to import it.
 This article will help you provision Form from one site to another programmatically, using Visual Studio and our NuGet package. 
 First of all, you do need both Lists to be identical, perhaps deployed programmatically, otherwise this method won't work as intended. 
 Second of all, forms need to be exported first - this is not mandatory and you can retrieve forms from the old site. 
+
+.. contents::
+ :local:
+ :depth: 1
 
 Export the form
 --------------------------------------------------

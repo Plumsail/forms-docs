@@ -6,12 +6,6 @@
 How to customize appearance of search results for lookup fields in SharePoint form
 ======================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Plumsail Forms offer advanced customization for SharePoint lookup fields. Using JavaScript, you can achieve great results in the way lookups present information.
 
 You are not limited to displaying just one field, multiple fields can be displayed at once and all of this can be customized to fit your needs.
@@ -22,6 +16,10 @@ In this article, we will show you an example with several fields displayed at on
 
 .. |example| image:: ../images/how-to/lookup-view/example.png
    :alt: Example Lookup
+
+.. contents::
+ :local:
+ :depth: 1
 
 Getting extra fields
 --------------------------------------------------

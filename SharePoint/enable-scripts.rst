@@ -6,12 +6,6 @@
 Enabling scripting capabilities in SharePoint Online
 ======================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 Plumsail Forms requires scripting capabilities to be enabled on a target site. By default, this feature is disabled and only tenant admins are able to turn it on.
 
 The easiest option here is to |give permissions to our Azure Active Directory app|, which will automatically enable scripting capabilities on a site you're saving forms to.
@@ -26,6 +20,10 @@ The easiest option here is to |give permissions to our Azure Active Directory ap
    :alt: Give permissions to AAD app
 
 We do not store your credentials, nor do we access the actual data in your tenant. If you don't want to do this - use the following options.
+
+.. contents::
+ :local:
+ :depth: 1
 
 With Powershell commands
 --------------------------------------------------

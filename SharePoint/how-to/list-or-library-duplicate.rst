@@ -6,19 +6,13 @@
 How to add custom button to toolbar of List or Library control and duplicate selected item
 ==================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 In this scenario, we'll show you how to add button to List or Library control, which would duplicate currently selected item.
 
 |pic1|
 
 .. |pic1| image:: ../images/how-to/list-or-library-duplicate/list-or-library-duplicate-1.png
    :alt: Duplicate button
-
+ 
 Form configuration
 --------------------------------------------------
 Create a form with a List or Library control. Then, check Internal Names of the fields in List or Library source list - you need to know these, so you can copy them. 

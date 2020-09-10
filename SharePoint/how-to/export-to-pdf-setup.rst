@@ -6,12 +6,6 @@
 How to save SharePoint form as PDF for printing
 =================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 2
-
-Introduction
---------------------------------------------------
 Plumsail Forms has built-in functionality allowing you to export any SharePoint form to PDF by clicking the button on the right side of the toolbar.
 
 .. image:: ../images/how-to/export-to-pdf-setup/export-to-pdf-setup-17.png
@@ -28,6 +22,12 @@ Or using the **fd.exportToPDF** method you can call on button click or form subm
 
 From this article, you will learn how to customize the exported PDF and how to resolve common issues you may face. 
 
+.. contents::
+ :local:
+ :depth: 2
+
+Form 
+--------------------------------------------------
 Assume that you have a SharePoint form that you need to export into PDF. In this example, we have a simple Invoice form with the following fields and controls: 
 
 - Company Name (text field); 

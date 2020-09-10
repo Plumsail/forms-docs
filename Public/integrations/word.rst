@@ -6,7 +6,7 @@
 Generate Word document from Plumsail Form with MS Power Automate, Zapier, or Plumsail Documents
 ====================================================================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 2
 
@@ -75,31 +75,13 @@ Recommended templates:
 
 |zapTemplateImg|
 
-|zapTemplateImg3|
-
-|zapTemplateImg5|
-
-|zapTemplateImg6|
-
 .. |Zapier|  raw:: html
 
    <a href="https://zapier.com/" target="_blank">Zapier</a>
 
 .. |zapTemplateImg|  raw:: html
 
-   <a href="https://zapier.com/app/editor/template/133665" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/pdf/integration-pdf-zap-template-documents.png">Generate documents from templates in Plumsail Documents</a>
-
-.. |zapTemplateImg3|  raw:: html
-
-   <a href="https://zapier.com/app/editor/template/198876" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/pdf/integration-pdf-zap-template-formstack.png">Create Word and PDF files with Formstack Docs</a>
-
-.. |zapTemplateImg5|  raw:: html
-
-   <a href="https://zapier.com/app/editor/template/199139" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/pdf/integration-pdf-zap-template-docupilot.png">Create document in Docupilot</a>
-
-.. |zapTemplateImg6|  raw:: html
-
-   <a href="https://zapier.com/app/editor/template/199567" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/pdf/integration-pdf-zap-template-pandadoc.png">Create document in PandaDoc</a>
+   <script type="text/javascript" src="https://zapier.com/apps/embed/widget.js?guided_zaps=133665,198876,199139,199567"></script>
 
 Plumsail Documents
 --------------------------------------------------

@@ -6,16 +6,13 @@
 How to work with Date and Time fields in public web form with JavaScript
 =========================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
-
 In this article, you will find the most common examples of working with the Date & Time field.  
 
 Using the |Moment.js| library and its plugins, you can easily calculate duration between dates, add or subtract time from the date, calculate a number of business days/hours between dates, etc.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Add to or Subtract from a Date
 --------------------------------------------------

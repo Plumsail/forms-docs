@@ -6,16 +6,14 @@
 How to save Data Table, Ink Sketch, and Likert Scale to SharePoint columns with Power Automate 
 ====================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Both Public Web Forms and SharePoint forms can include our custom controls - Ink Sketch, DataTable or Likert Scale.
 
 In this article, we'll prepare SharePoint List and Public Web Forms with these controls.
 Anonymous users will be able to send them to MS Power Automate (MS Flow) where they'll get saved to SharePoint.
+
+.. contents::
+ :local:
+ :depth: 1
 
 SharePoint list and its forms
 --------------------------------------------------

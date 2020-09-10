@@ -6,12 +6,6 @@
 SharePoint Fields
 ==================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 SharePoint fields are based on the columns of the SharePoint List or Library that you connect to. 
 These fields, when added to the form, are automatically connected to the List and will retrieve data from the List, as well as automatically submit user input on save.
 
@@ -26,8 +20,12 @@ This section contains information about settings for fields that are unique to S
             .. |refresh| image:: /images/designer/fields-sp/designer-fields-sp-refresh.png
                :alt: Refresh SharePoint fields
 
+.. contents::
+ :local:
+ :depth: 1
+
 Basic properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------
 Most fields have following settings:
 
 General

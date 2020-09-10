@@ -6,16 +6,14 @@
 How to upload files to SharePoint Document Library with Power Automate
 =======================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 Plumsail Forms have Attachments field which can be used to upload files.
 There is a variety of actions that you can perform with Attachments, but one of the basic examples is uploading files to Document Library in SharePoint.
 
 In this example, we will design a simple form with Attachments field and configure Flow to send uploaded files to Document Library on your SharePoint site.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Preparation
 --------------------------------------------------

@@ -6,13 +6,7 @@
 SharePoint web part for publishing a SharePoint form to any modern page within the tenant (Office 365) or web application (SharePoint 2019)
 ====================================================================================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Plumsail Forms Web Part
--------------------------------------------------------------
-New Web Part will allow you to publish any Public or SharePoint Form to any page. 
+Our Web Part will allow you to publish any Public or SharePoint Form to any page. 
 
 .. important:: You need to :doc:`update the app package </general/update-package>` to version 1.0.7.0
 
@@ -22,6 +16,11 @@ You can add Web Part to any Modern page:
 
 .. |pic1| image:: ../images/designer/web-part/WebPart.png
    :alt: Add Web Part
+
+.. contents::
+ :local:
+ :depth: 1
+
 
 SharePoint Form
 -------------------------------------------------------------

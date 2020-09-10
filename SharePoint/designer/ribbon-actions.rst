@@ -6,7 +6,9 @@
 Ribbon actions in Plumsail Forms for SharePoint
 ==================================================
 
-.. contents:: Contents:
+What do the buttons in the ribbon of the editor do? Find more about layouts for mobile devices, export and import functionality, and other buttons.
+
+.. contents::
  :local:
  :depth: 1
 

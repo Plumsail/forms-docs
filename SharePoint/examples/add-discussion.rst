@@ -6,16 +6,9 @@
 How to add discussion to a SharePoint form
 ==================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 With Plumsail Forms, you can enrich a SharePoint form with a discussion where users exchange their opinions, suggest ideas, and leave comments. 
 
 It can be handy in tasks, requests, issues in systems like CRMs, help desks, request management, document processing and others where you work with items and documents needed to be discussed. 
-
 
 |pic0|
 

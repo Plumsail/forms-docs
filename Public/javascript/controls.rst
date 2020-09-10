@@ -6,12 +6,6 @@
 Managing controls with JavaScript in Plumsail Forms (public forms)
 ==================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Here you can find properties, methods and events of various controls that you can have on your form. 
 
 Insert them into JavaScript editor or inside Click setting for buttons and links.
@@ -24,6 +18,11 @@ like **rendered()** or **beforeSave()** in order to actually access the fields o
 If you just add these scripts on their own or inside wrong event in JavaScript editor,
 they will not have access to the specified controls, or will execute at the wrong time.
 Read more about different events in :doc:`Manager section </javascript/manager>`.
+
+.. contents::
+ :local:
+ :depth: 1
+ 
 
 Button
 --------------------------------------------------

@@ -6,16 +6,13 @@
 How to display specific sections of SharePoint form conditionally based on user's membership
 =============================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
-----------------------------------------
-
 From this article, you will know how to manipulate fields dynamically depending on groups the current user belongs to. This approach is an alternative to the form sets and can be helpful in cases when forms for different groups are almost identical. For instance, when you need to hide a few fields from all users except the users of a certain group. 
   
 Assume you need to design an expense approval form. The approval process requires feedback from users who belong to Administrators and Managers groups. An administrator should not see a comment left by a manager. And a manager should not be able to edit a comment posted by an administrator. 
+
+.. contents::
+ :local:
+ :depth: 1
 
 Expense Approval Form 
 --------------------------------------------------

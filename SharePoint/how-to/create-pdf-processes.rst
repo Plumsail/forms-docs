@@ -7,19 +7,15 @@
 Create PDF document from SharePoint form based on Word template with Power Automate and Plumsail Processes 
 ==========================================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-
-Introduction
---------------------------------------------
-
 The PDF file format is one of the most common file formats in use today for exchanging and distributing documents. 
 
 From this article, you will learn how to populate a DOCX template with data from two linked SharePoint lists and convert it to PDF with the help of |Plumsail Processes| in Power Automate (MS Flow). The instructions below will help you automate the process of the generation of different documents like orders, invoices, inquiries, contracts, etc.
 
 By way of example, we will set up a process that creates a signed work order document and saves the result document to SharePoint library.
+
+.. contents::
+ :local:
+ :depth: 1
 
 SharePoint Form 
 --------------------------------------------  

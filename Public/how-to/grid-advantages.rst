@@ -6,12 +6,6 @@
 How to design complex and responsive public web forms with grids in Plumsail Forms
 ====================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Grid is a flexible container.  
 
 It allows you to place fields and controls side by side, control how many columns each row has. It's used as a basis on every form, and inside of other containers – Tab Control, Accordion, Wizard.  
@@ -28,6 +22,10 @@ Our Grid is based on |Bootstrap v4 Grid|.
 .. |Bootstrap v4 Grid| raw:: html
 
    <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">Bootstrap v4 Grid</a>
+
+.. contents::
+ :local:
+ :depth: 1
 
 Key advantages
 --------------------------------------------------

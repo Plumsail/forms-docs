@@ -6,13 +6,6 @@
 How to send an email from form with Power Automate
 =====================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
-
 One of the basic functionalities you can add to your form is to send an email once the form is submitted. 
 It can be used in variety of cases - to receive feedback from the clients, to get latest update from your employees and just to get some information in general.
 
@@ -23,6 +16,10 @@ to our company's |location_link|.
 
    <a href="https://plumsail.com/SharePoint-helpdesk/" target="_blank">Helpdesk</a>
 
+.. contents::
+ :local:
+ :depth: 1
+ 
 Design a form
 --------------------------------------------------
 

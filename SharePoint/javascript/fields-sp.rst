@@ -6,12 +6,6 @@
 Managing SharePoint fields with JavaScript in Plumsail Forms for SharePoint
 ================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 In this section you will find how to get information from SharePoint fields, how to set their value, how to detect changes in SharePoint fields and much more using JavaScript.
 
 A lot of properties and events are shared between :doc:`Common Fields </javascript/fields>` and SharePoint fields, but some things are unique to SharePoint fields.
@@ -26,6 +20,10 @@ Here you can find the most complete information on SharePoint fields.
                 If you just add these scripts on their own or inside wrong event in JavaScript editor,
                 they will not have access to the specified fields, or will execute at the wrong time.
                 Read more about different events in :doc:`Manager section </javascript/manager>`.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Single Line of Text
 --------------------------------------------------

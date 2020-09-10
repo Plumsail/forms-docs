@@ -6,15 +6,13 @@
 How to display version history in a SharePoint form
 =================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 In this article, we'll show you a basic example of how to display version history of an item on the form. You will be able to see who and when modified an item.
 
 We're also going to showcase Vue components and their potential use.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Form
 --------------------------------------------------

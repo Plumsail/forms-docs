@@ -6,13 +6,6 @@
 How to populate, hide, disable, or make mandatory SharePoint form fields in JavaScript
 ======================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
-
 In this article you can find examples of how to use JavaScript to make 
 your forms more interactive by hiding, disabling and making fields mandatory based on certain conditions.
 These will be simple and popular cases realized mostly with SharePoint forms which you can easily replicate even on Plumsail forms as functionality is fairly similar.
@@ -32,11 +25,15 @@ In any case, you can check the internal name property of the field in the design
 Read more about different field properties :doc:`here </designer/fields>`.
 
 Another thing to be aware of is that you shouldn't simply place JavaScript inside the editor on its own, it must be executed inside **fd** events 
-like **rendered()** or **beforeSave()** in order to actually access the fields or controls that you target.
+like **spRendered()** or **spBeforeSave()** in order to actually access the fields or controls that you target.
 
 If you just add these scripts on their own or inside wrong event in JavaScript editor,
 they will not have access to the specified fields, or will execute at the wrong time.
 Read more about different events in :doc:`Manager section </javascript/manager>`.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Prepopulate field and disable/enable it based on condition
 -----------------------------------------------------------

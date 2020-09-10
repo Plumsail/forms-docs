@@ -6,13 +6,6 @@
 How to make notes on images in web forms designed with Plumsail Forms 
 ===============================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
-
 You can use the 'Ink Sketch' control to leave marks over a selected image. The image won't be changed, but your drawings will be placed on top of it. 
 
 |pic0|
@@ -21,6 +14,10 @@ You can use the 'Ink Sketch' control to leave marks over a selected image. The i
    :alt: preview
 
 This functionality can be useful in many cases: a user can draw directions on a map, leave marks in a patient card, make corrections in blueprints, specify damaged parts of a vehicle in an accident report form.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Configuration
 --------------------------------------------------

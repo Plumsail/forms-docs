@@ -6,12 +6,6 @@
 How to add personal form for creating and tracking tickets to an arbitrary SharePoint page 
 =================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 In this article, I will show you how to design specific form layouts for different user groups and publish them to a SharePoint page located on another site.  
 
 |pic0|
@@ -20,6 +14,10 @@ In this article, I will show you how to design specific form layouts for differe
    :alt: preview
 
 For example, we have an issue processing system. Issue records can be created by any users, but only a support team can process them. For user convenience, we will add an ability to report issues and track their statuses on an intranet page where users spend most of their time.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Creating forms for regular users
 --------------------------------------------------

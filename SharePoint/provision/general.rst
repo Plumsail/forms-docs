@@ -6,12 +6,6 @@
 Provisioning API for SharePoint forms designed in Plumsail Forms
 ===============================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 It is possible to provision forms programmatically using **Plumsail.Forms.O365** |NuGet package|. 
 
 .. important:: For SharePoint 2019, please, use the **Plumsail.Forms.SP2019** |NuGet package 2019| instead. 
@@ -28,6 +22,9 @@ Find an example of how it can be used in our article - :doc:`Provision Modern UI
 
    <a href="https://www.nuget.org/packages/Plumsail.Forms.SP2019/" target="_blank">NuGet package</a>
 
+.. contents::
+ :local:
+ :depth: 1
 
 FormsManager
 -------------------------------------------------------------
@@ -295,8 +292,8 @@ For examples of working with Form Sets, please, check out :doc:`Working with For
                     New = null
                 };
 
-    *   -   **CustomListViewCode**
-        -   Contains string with custom code for List View Commands. Can be used to get and set.
+    *   -   **CustomListViewStyle**
+        -   Contains string with custom CSS code for the List View of the selected list. Can be used to get and set.
             
             |
 
@@ -305,4 +302,4 @@ For examples of working with Form Sets, please, check out :doc:`Working with For
             .. code-block:: c#
 
                 var fss = forms.GetFormSets();
-                ffs.CustomListViewCode = "alert('Form Panels active')";
+                ffs.CustomListViewStyle = ".ms-CommandBarItem-link[data-automationid='detailsPane'] { display: none; }";

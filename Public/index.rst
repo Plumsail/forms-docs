@@ -77,6 +77,7 @@ Plumsail Forms Documentation (public web forms)
             how-to/fields
             how-to/processing-controls
             how-to/processing-with-zapier
+            how-to/provision
       
       .. toctree::
             :caption: Integrations
@@ -85,3 +86,5 @@ Plumsail Forms Documentation (public web forms)
             integrations/saving-sharing
             integrations/document-generation
             integrations/collaboration
+            integrations/crm
+            integrations/social-networks

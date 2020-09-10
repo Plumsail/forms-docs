@@ -6,12 +6,6 @@
 How to move new SharePoint form page to another location
 =============================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 By default, user can only access forms via the List View, when working with items of the list - creating New items, editing or looking at the existing. But the forms for the list
 are actually stored in Site Pages -> Plumsail Forms folder.
 
@@ -19,6 +13,10 @@ It's also possible to use these pages, or at least New Forms, without going into
 
 .. Note:: Instead of moving a form page to another location, you can also create a new page and :doc:`put a form web part </designer/web-part>` into it. Forms published with a form web part are not limited to just the New Form. You can also add Edit or Display Forms and provide ID in a query parameter which is also configurable. 
 
+.. contents::
+ :local:
+ :depth: 1
+ 
 Getting the page
 --------------------------------------------------
 Let's say you want to move the page, so the SharePoint users don't have to go to List View and click *Add new item*. 

@@ -5,13 +5,6 @@
 
 Introduction to building online forms with Plumsail Forms
 ===============================================================
-
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Plumsail Forms allow you to design and publish elegant, responsive and highly customizable forms to any web page by simply adding an HTML widget to it, or share it via a link.
 When user submits the form, all data is handled by :doc:`Power Automate (MS Flow) </microsoft-flow>` which opens an ocean of possibilities for its use.
 The data is collected from anonymous users and can be protected with |reCAPTCHA| to prevent Spam submissions.
@@ -32,7 +25,7 @@ which you can then add to SharePoint Lists, Excel documents, Google sheets or SQ
             ./microsoft-flow
             ./zapier
             ./licensing
-
+ 
 Complex business forms made simple
 --------------------------------------------------
 While many products on the market offer tools to build custom forms, very few can boast the same level of interactivity as Plumsail Forms. 

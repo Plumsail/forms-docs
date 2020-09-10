@@ -6,12 +6,6 @@
 Configuring appearance of SharePoint form in panel from list or library view
 ==================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 SharePoint Form Panel will open SharePoint forms in a panel, similar to default SharePoint forms.
 
 .. note::    *In order to use this functionality, please, make sure to* :ref:`update the package <install-app-package>` *in the App Catalog to the latest version.*

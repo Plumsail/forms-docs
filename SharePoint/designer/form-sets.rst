@@ -6,12 +6,6 @@
 Personalized Form sets in Plumsail Forms for SharePoint
 =============================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 Form Sets allow you to design additional forms for SharePoint List or Library. 
 
 By default, each List only has three forms - New, Edit and Display. 
@@ -30,6 +24,10 @@ Default Form Set is what all users see if they are not redirected.
 
 Add new Form Set by clicking **+ sign** next to the currently selected Form Set. Clicking Pen Icon allows you to edit properties of the currently selected Form Set.
 Trash bin icon allows you to delete a Form Set. After creating a Form Set, do not forget to save every form you plan to use or it might be missing.
+
+.. contents::
+ :local:
+ :depth: 1
 
 .. _designer-grouprouting:
 

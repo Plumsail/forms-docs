@@ -6,12 +6,6 @@
 Managing fields with JavaScript in Plumsail Forms (public forms)
 ===========================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Here you can find properties of the fields that you have on your form and methods that can be used on them. 
 
 Insert them into JavaScript editor or inside Click setting for buttons and links.
@@ -26,6 +20,10 @@ they will not have access to the specified fields, or will execute at the wrong 
 Read more about different events in :doc:`Manager section </javascript/manager>`.
 
 For more use cases, check out :doc:`our manual </how-to/conditional-fields>` on how-to adjust fields dynamically on your form.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Properties
 --------------------------------------------------

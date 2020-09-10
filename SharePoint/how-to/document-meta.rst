@@ -6,12 +6,6 @@
 How to update metadata of uploaded documents in List or Library control
 =================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 Sometimes, when working with List or Library control, you might want to automatically populate certain values for newly uploaded documents. 
 
 If you've selected Lookup field in Data Source, this field is populated automatically by default:

@@ -6,18 +6,16 @@
 How to embed web form or SharePoint form into Microsoft Teams
 =====================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 If you've ever wanted to have custom forms in MS Teams, Plumsail Forms allows for easy integration. 
 
 Using SharePoint tab in MS Teams, you can get access to both Public Web Forms, by publishing them on a SharePoint page first and linking a tab to this page, 
 and SharePoint Forms, by adding a List to a tab, and using Panel to display forms.
 
 In this article, we'll go into more details and how you can achieve the same results to add advanced custom forms to MS Teams.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Public Web Form
 ---------------------------------------------------

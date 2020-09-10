@@ -6,12 +6,6 @@
 Common Fields in Plumsail Forms for SharePoint
 ==================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 Common fields are suplimentary input elements on a SharePoint form, which you can use in addition to :doc:`SharePoint fields </designer/fields-sp>`. 
 
 Data entered in Common fields can either be copied to a SharePoint field with JavaScript; or stored in Plumsail Account/handled by Power Automate (MS Flow) using Plumsail Forms connector - the latter options licensed under |Public Web Forms|.
@@ -20,8 +14,12 @@ Data entered in Common fields can either be copied to a SharePoint field with Ja
 
    <a href="https://plumsail.com/docs/forms-web/licensing.html" target="_blank">Public Web Forms</a>
 
+.. contents::
+ :local:
+ :depth: 1
+
 Basic properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------
 Most fields have following settings:
 
 General

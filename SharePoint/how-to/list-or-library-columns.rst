@@ -6,18 +6,16 @@
 How to customize view of columns in List or Library control
 =====================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Starting with version 1.5.7, Plumsail Forms support customization of specific columns in List or Library control. 
 The possibilities are almost endless, in this article we're going to show some of the possible customizations.
 
 In order to customize a column, you just need to know its Internal Name, what type of field it is, and what you want to achieve with customization.
 In this case, I'm using SharePoint's standard Task Content Type and its columns with default Internal Names.
 
+.. contents::
+ :local:
+ :depth: 1
+ 
 Display numeric fields as progress bars
 --------------------------------------------------
 One customization option is to turn numeric field into a progress bar, which can be useful for Task List as an example:

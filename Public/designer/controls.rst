@@ -6,16 +6,13 @@
 Controls in Plumsail Forms (public forms)
 ====================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-    
-Introduction
--------------------------------------------------------------
 Controls are elements designed to give you more control over your forms. They allow you to customize the look of the form and add interactivity to it. 
 Controls aren't fields as they do not store information, though some controls rely on user input.
 
-
+.. contents::
+ :local:
+ :depth: 1
+    
 Plain Text
 -------------------------------------------------------------
 Plain Text control is used to add text to your form, for information that you want to convey to the user. 

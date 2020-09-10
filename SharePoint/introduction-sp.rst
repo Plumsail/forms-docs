@@ -6,12 +6,6 @@
 Introduction to modern forms for SharePoint Online in Office 365 and SharePoint 2019
 ====================================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Plumsail Forms allows you to design beautiful modern responsive forms for SharePoint Modern UI.
 These forms will work for SharePoint Lists and Libraries allowing you to replace New, Edit and Display
 forms, to fully customize them, add interactivity to them and much more.
@@ -25,6 +19,10 @@ forms, to fully customize them, add interactivity to them and much more.
             ./design-sp
             ./licensing-sp
 
+.. contents::
+ :local:
+ :depth: 1
+ 
 Modern UI
 --------------------------------------------------
 In SharePoint Online and SharePoint 2019, Modern UI was introduced by Microsoft to keep the user experience fresh and

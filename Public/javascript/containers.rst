@@ -6,12 +6,6 @@
 Managing containers with JavaScript in Plumsail Forms (public forms)
 ==========================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Here you can find properties of the containers that you can have on your form and methods that can be used on them. 
 
 Insert them into JavaScript editor or inside Click setting for buttons and links.
@@ -28,6 +22,10 @@ Read more about different events in :doc:`Manager section </javascript/manager>`
 
 For more use cases, check out :doc:`our manual </how-to/conditional-containers>` on how-to adjust containers dynamically on your form.
 
+.. contents::
+ :local:
+ :depth: 1
+ 
 Accordion
 --------------------------------------------------
 Properties of the Accordion container.

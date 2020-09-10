@@ -6,7 +6,7 @@
 How to update the app package for Plumsail Forms
 ==================================================
 
-.. contents:: Contents:
+.. contents::
  :local:
  :depth: 1
 

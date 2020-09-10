@@ -6,17 +6,15 @@
 Fields in Plumsail Forms (public forms)
 ==================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
--------------------------------------------------------------
 Fields are primary input elements on the Form. 
 Fields are being filled by the user and store their data in user's session storage and once the form is submitted, their contents are either saved to Plumsail Account, or handled by Power Automate (MS Flow) or Zapier.
 
+.. contents::
+ :local:
+ :depth: 1
+
 Basic properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------
 Most fields have following settings:
 
 General

@@ -6,12 +6,6 @@
 How to filter items or documents by CAML in List or Library control
 =================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
-
-Introduction
---------------------------------------------------
 In this article, I will show you how to filter by CAML.
 
 This method can be applied dynamically and when the form loads, allowing you to specify what contents you want List or Library to display at any time.
@@ -25,7 +19,11 @@ you'll need to modify the query instead of replacing it, otherwise the filtering
 
 Read more about properties and events in :ref:`javascript-listorlibrary` JavaScript documentation.
 
-In this article you will find several examples of filtering which you can copy or modify according to your needs.
+You will find several examples of filtering which you can copy or modify according to your needs.
+
+.. contents::
+ :local:
+ :depth: 1
 
 Filter by one field
 --------------------------------------------------

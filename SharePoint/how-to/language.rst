@@ -6,12 +6,6 @@
 How to create different SharePoint forms for alternative languages
 ===================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 Modern SharePoint sites support large amount of languages. In your company, you might have users with different language preferences working on the same site.
 
 .. note:: Make sure the desired language is available on your site, before designing a form for it.

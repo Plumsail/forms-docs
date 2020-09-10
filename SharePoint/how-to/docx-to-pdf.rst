@@ -6,12 +6,6 @@
 How to generate PDF document from DOCX template and SharePoint form fields
 ====================================================================================
 
-.. contents:: Contents:
- :local:
- :depth: 1
- 
-Introduction
---------------------------------------------------
 In this example, you will find a step-by-step instruction on how you can create Work Order Form from the template and send its PDF version to a specific email.  
 
 |pic0|
@@ -24,6 +18,10 @@ We are going to do this with the help of:
 - |Plumsail Forms| 
 - |Plumsail Documents| 
 - Simple code 
+
+.. contents::
+ :local:
+ :depth: 1
 
 Form
 --------------------------------------------------
