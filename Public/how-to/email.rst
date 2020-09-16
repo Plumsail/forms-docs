@@ -3,8 +3,8 @@
 .. meta::
    :description: Use Microsoft Power Automate to send a customized email with form data
 
-How to send an email from form with Power Automate
-=====================================================
+How to send an email from Plumsail form with Power Automate
+=====================================================================
 
 You can send a customized email with form data using Power Automate (MS Flow) and Plumsail Forms connector. 
 
