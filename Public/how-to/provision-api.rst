@@ -13,11 +13,11 @@ Forms can also be edited, as well as deleted using the same NuGet package.
 
 .. important:: Functionality of this method is limited to web editor's functionality. Only web editor's forms can be edited. Forms created this way will also be editable only in web editor.
 
-In order to use the package, your project must be compatible with |.NET Standard 2.1|
+In order to use the package, your project must be compatible with |.NET Standard 2.0|
 
-.. |.NET Standard 2.1| raw:: html
+.. |.NET Standard 2.0| raw:: html
 
-   <a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.1.md" target="_blank">.NET Standard 2.1</a>
+   <a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md" target="_blank">.NET Standard 2.0</a>
 
 Find an example of how it can be used in our article - :doc:`Create a contact web form in Visual Studio<./provision-example>`.
 
@@ -208,7 +208,7 @@ Layout is the main content of the form. It's the property that holds PC/Tablet/P
             
             .. code-block:: c#
 
-                form.Layout.Css = "fd.rendered(function(){ fd.field("Name").value = "John Bull" });";
+                form.Layout.JavaScript = "fd.rendered(function(){ fd.field('Name').value = 'John Bull' });";
     *   -   **Theme**
         -   Get or set theme used for the form. Use one of predefined themes such as *Blue*, *Compact*, *Default*, *Explicit*, *Gray*, *Green*, *Orange*, *Plumsail*, *Purple*, *Red*, *Smooth*, or *Soft*.
             
