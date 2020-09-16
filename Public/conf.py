@@ -149,6 +149,8 @@ html_theme_options = {
     "google_analytics_account": "UA-36215023-2",
     "base_url": "https://plumsail.com/docs/forms/" #for sitemap
 }
+
+html_sidebars = {'**': ['searchbox.html','globaltoc.html']}
 #-----
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
