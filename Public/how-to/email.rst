@@ -8,7 +8,7 @@ How to send an email from Plumsail form with Power Automate
 
 You can send a customized email with form data using Power Automate (MS Flow) and Plumsail Forms connector. 
 
-Here you find instructions on how to create an automated flow from scratch. 
+Here you will find instructions on how to create an automated flow from scratch. 
 You can also create the same flow from the |template0| and jump to :ref:`configure_email` step.
 
 .. |template0| raw:: html
@@ -103,7 +103,7 @@ You can add any dynamic content from the form to the subject and body of the ema
 Adding Ink Sketch to email body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The |Ink Sketch control| picture stored as a base64 string. 
+The |Ink Sketch control| picture is stored as a base64 string. 
 To insert a base64 string to the email body, first, you need to switch the body input to the code view. 
 
 .. |Ink Sketch control| raw:: html
@@ -129,7 +129,7 @@ Then, paste this HTML code line to the email body and add field that stores Ink 
 Adding DataTable to email body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The |DataTable control| stored as an array of objects.
+The |DataTable control| is stored as an array of objects.
 
 .. |DataTable control| raw:: html
 

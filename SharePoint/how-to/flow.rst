@@ -83,7 +83,7 @@ You can add any dynamic content from the SharePoint item to the subject and body
 Adding Ink Sketch to email body
 """""""""""""""""""""""""""""""""
 
-The |Ink Sketch control| picture stores as a base64 string. 
+The |Ink Sketch control| picture is stored as a base64 string. 
 To insert a base64 string to the email body, first, you need to switch the body input to the code view. 
 
 |pic8|
@@ -272,7 +272,7 @@ Click *New step* and search for *Send email* action. Select 'Send an email (V2)'
 
 |
 
-You can add any dynamic content from the form to the subject and body of the email. For instance, names of requester and approver. 
+You can add any dynamic content from the form to the subject and body of the email.
 
 |pic21|
 
@@ -282,7 +282,7 @@ You can add any dynamic content from the form to the subject and body of the ema
 Adding Ink Sketch to email body
 """""""""""""""""""""""""""""""""
 
-The |Ink Sketch control| picture stores as a base64 string. 
+The |Ink Sketch control| picture is stored as a base64 string. 
 To insert a base64 string to the email body, first, you need to switch the body input to the code view. 
 
 |pic8|
@@ -294,12 +294,44 @@ Then, paste this HTML code line to the email body and add field that stores Ink 
 
 .. code-block:: html
 
-   <img src= alt="img" /></p> 
+   <img src= alt="img" />
 
 |pic9|
 
 .. |pic9| image:: ../images/flow/flow_09.png
    :alt: insert InkSketch
+
+Adding DataTable to email body
+"""""""""""""""""""""""""""""""""
+
+The |DataTable control| is stored as an array of objects.
+
+.. |DataTable control| raw:: html
+
+   <a href="https://plumsail.com/docs/forms-sp/designer/controls.html#datatable" target="_blank">DataTable control</a>
+
+Add 'Create HTML table' step to convert an array of objects to HTML table.
+For the *From* field select DataTable control from the dynamic content and set *Columns* to 'Automatic'.
+
+|pic26|
+
+.. |pic26| image:: ../images/flow/flow_26.png
+   :alt: Create HTML table
+
+|
+
+To insert the HTML table to the email body, switch the body input to the code view. 
+
+|pic8|
+
+|
+
+Then, add output of the 'Create HTML table' step to the email body.
+
+|pic27|
+
+.. |pic27| image:: ../images/flow/flow_27.png
+   :alt: add HTML table
 
 Adding attachments to email
 """""""""""""""""""""""""""""""""
