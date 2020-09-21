@@ -1,106 +1,221 @@
 .. title:: Send an email from form with Power Automate
 
 .. meta::
-   :description: Use Mictosoft Power Automate to send a customized email on form's submission using submitted data
+   :description: Use Microsoft Power Automate to send a customized email with form data
 
-How to send an email from form with Power Automate
-=====================================================
+How to send an email from Plumsail form with Power Automate
+=====================================================================
 
-One of the basic functionalities you can add to your form is to send an email once the form is submitted. 
-It can be used in variety of cases - to receive feedback from the clients, to get latest update from your employees and just to get some information in general.
+You can send a customized email with form data using Power Automate (MS Flow) and Plumsail Forms connector. 
 
-In this example, we will design a form for customers to report their problems and use Flow to send submitted information 
-to our company's |location_link|.
+Here you will find instructions on how to create an automated flow from scratch. 
+You can also create the same flow from the |template0| and jump to :ref:`configure_email` step.
 
-.. |location_link| raw:: html
+.. |template0| raw:: html
 
-   <a href="https://plumsail.com/SharePoint-helpdesk/" target="_blank">Helpdesk</a>
+   <a href="https://flow.microsoft.com/en-us/galleries/public/templates/834771e8c74d428791ea78ff5ea81396/send-an-office-365-outlook-email-when-a-plumsail-form-is-submitted/" target="_blank">Microsoft Power Automate template</a>
+
 
 .. contents::
  :local:
- :depth: 1
+ :depth: 2
  
-Design a form
+Configure the Flow 
+--------------------------------------------------
+Open |Microsoft Power Automate| page and go to *My Flows* → *New* → *Automated - from blank*. 
+
+.. |Microsoft Power Automate| raw:: html
+
+   <a href="https://flow.microsoft.com/" target="_blank">Microsoft Power Automate</a>
+
+|pic1|
+
+.. |pic1| image:: ../images/how-to/email/email_01.png
+   :alt: Creating a flow
+
+|
+
+Select the trigger that starts the flow. Search for *Plumsail* and select 'Form is submitted' trigger, click *Create*.
+
+|pic02|
+
+.. |pic02| image:: ../images/how-to/email/email_02.png
+   :alt: Trigger
+
+|
+
+If this is the first time you are using Plumsail Forms connector, you will be asked to sign in to Plumsail account to create a connection. 
+Click *Sign in* and enter your account credentials.
+
+|pic03|
+
+.. |pic03| image:: ../images/how-to/email/email_03.png
+   :alt: connection
+
+|
+
+Select the name of the form from the drop-down list.
+
+|pic04|
+
+.. |pic04| image:: ../images/how-to/email/email_04.png
+   :alt: Selecting form
+
+.. _configure_email:
+
+Configure 'Send an email' action
 --------------------------------------------------
 
-First, design the form. Think about what information you might need in the email, what can be used as a subject for the email, etc.
+In this example, we use |Office 365 Outlook connector| to send emails from the Outlook account, but you can use any other connector like |Mail|, |Gmail|, or |SMTP|.
 
-Don't forget to include the Submit button, so the form can be actually submitted. Flow only starts operating once the form is submitted.
+.. |Office 365 Outlook connector| raw:: html
 
-Here's the simple form designed to receive customers feedback on Forms Designer problems:
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_office365/office-365-outlook/" target="_blank">Office 365 Outlook connector</a>
 
-.. image:: ../images/how-to/email/email-05.png
-   :alt: Design Form
+.. |Mail| raw:: html
 
-|
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_sendmail/mail/" target="_blank">Mail</a>
 
-Once you design and save the form, you will see **General Settings** button pop up on top. This section contains important information you'll need to use while setting up the Flow:
+.. |Gmail| raw:: html
 
-.. image:: ../images/how-to/email/email-00.png
-   :alt: General Settings
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_gmail/gmail/" target="_blank">Gmail</a>
 
-|
+.. |SMTP| raw:: html
 
-**Important!** If you add changes the form, you first need to save it and only after saving the information in General Settings will update.
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_smtp/smtp/" target="_blank">SMTP</a>
 
-Configure the Flow - First steps
---------------------------------------------------
+Click *New step* and search for *Send email* action. Select 'Send an email (V2)'.
 
-First, open Microsoft Flow page and go to My Flows >> New >> Automated - from blank:
+|pic05|
 
-.. image:: ../images/how-to/email/email-02.png
-   :alt: My Flows
+.. |pic05| image:: ../images/how-to/email/email_05.png
+   :alt: Send an email step
 
 |
 
-We'll need to find the correct trigger for Forms Submission. Search for *Plumsail* and you'll find the right one - *Plumsail Forms - Form is submitted*. Choose it and click *Create*:
+You can add any dynamic content from the form to the subject and body of the email. 
 
-.. image:: ../images/how-to/email/email-03.png
-   :alt: Search
+|pic06|
+
+.. |pic06| image:: ../images/how-to/email/email_06.png
+   :alt: Email example
+
+Adding Ink Sketch to email body
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The |Ink Sketch control| picture is stored as a base64 string. 
+To insert a base64 string to the email body, first, you need to switch the body input to the code view. 
+
+.. |Ink Sketch control| raw:: html
+
+   <a href="https://plumsail.com/docs/forms-web/designer/controls.html#ink-sketch" target="_blank">Ink Sketch control</a>
+
+|pic7|
+
+.. |pic7| image:: ../images/how-to/email/email_07.png
+   :alt: Code view
+
+Then, paste this HTML code line to the email body and add field that stores Ink Sketch data from the dynamic content. 
+
+.. code-block:: html
+
+   <img src= alt="img" /> 
+
+|pic8|
+
+.. |pic8| image:: ../images/how-to/email/email_08.png
+   :alt: insert InkSketch
+
+Adding DataTable to email body
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The |DataTable control| is stored as an array of objects.
+
+.. |DataTable control| raw:: html
+
+   <a href="https://plumsail.com/docs/forms-web/designer/controls.html#datatable" target="_blank">DataTable control</a>
+
+Add 'Create HTML table' step to convert an array of objects to HTML table.
+For the *From* field select DataTable control from the dynamic content and set *Columns* to 'Automatic'.
+
+|pic14|
+
+.. |pic14| image:: ../images/how-to/email/email_14.png
+   :alt: Create HTML table
 
 |
 
-Next, you just need to select your form:
+To insert the HTML table to the email body, switch the body input to the code view. 
 
-.. image:: ../images/how-to/email/how-to-email-flow-select-form.png
-   :alt: Select your form
-
-|
-
-Configure the Flow - Send an email
---------------------------------------------------
-
-We'll use Microsoft's *Office 365 Outlook - Send an email* action to send an email. Select it:
-
-.. image:: ../images/how-to/email/email-01.png
-   :alt: Send an email
+|pic7|
 
 |
 
-Now, you can use various fields from the Form to compose an email. I've configured a very basic email and selected our support email address to send an email to.
-Finally, press *Save Flow*, unless you want other actions to take place after an email is sent:
+Then, add the output of the 'Create HTML table' step to the email body.
 
-.. image:: ../images/how-to/email/11_SaveFlow.png
-   :alt: Save Flow
+|pic15|
+
+.. |pic15| image:: ../images/how-to/email/email_15.png
+   :alt: add HTML table
+
+Adding attachments to email
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To send an email with multiple attachments, add these steps.
+
+|pic9|
+
+.. |pic9| image:: ../images/how-to/email/email_09.png
+   :alt: Flow steps
+
+**1. Initialize variable**
+
+Name the variable and set its type to 'Array'.
+
+|pic10|
+
+.. |pic10| image:: ../images/how-to/email/email_10.png
+   :alt: Initialize variable
+
+**2. HTTP**
+
+Add the 'Apply to each' action for iterating through the attachments. 'Attachments1' is the common field output.
+	
+To get the content of the attached files add 'HTTP' action. Select GET in *Method* dropdown field and add url to the *Uri* field.
+
+|pic11|
+
+.. |pic11| image:: ../images/how-to/email/email_11.png
+   :alt: Initialize variable
+
+|
+	
+**3. Append to array variable**
+
+Add 'Append to array variable' action inside 'Apply to each' step. 
+Select the variable name from the drop-down. In the value section, map file name and its content. 
+
+.. code-block:: html
+
+   {
+      "Name": ,
+      "ContentBytes": 
+   }
+
+|pic12|
+
+.. |pic12| image:: ../images/how-to/email/email_12.png
+   :alt: Append to array variable
 
 |
 
-Final Result
---------------------------------------------------
+**4. Send an email**
 
-Here is the preview of my form. I've filled in some basic information to serve as an example and clicked *Submit*:
+Go to 'Send an email' action.
+Сlick *Show advanced options*, switch attachments field to input entire array. 
+Add the variable output to the attachments input field.
 
-.. image:: ../images/how-to/email/12_FormPreview.png
-   :alt: Form Preview
+|pic13|
 
-|
-
-And here is the ticket in our Helpdesk, automatically created once the email is received:
-
-.. image:: ../images/how-to/email/13_Ticket.png
-   :alt: Ticket
-   
-|
-
-In the similar fashion, you can send emails to your own support team, or perhaps collect some data for your work or even personal email.
-It's up to you, but there is nothing difficult in configuring it just like I showed you.
+.. |pic13| image:: ../images/how-to/email/email_13.png
+   :alt: Send an email with attachements
