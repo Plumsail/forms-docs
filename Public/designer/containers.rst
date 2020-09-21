@@ -35,6 +35,8 @@ Every element within a Grid has the following properties:
         
     *   - Property
         - Description
+    *   - Alignment
+        - Determines how to align elements inside of the grid cell. Four options are available: Justify, Left, Center, Right.
     *   - Offset
         - Determines how much of an offset element gets from the left. The offset number also determines how much of the total grid space offset takes, where 6 is equal to half the grid. Setting offset will also affect total available Width for the element, and if not enough space left, it will automatically adjust to be smaller.
     *   - Width
