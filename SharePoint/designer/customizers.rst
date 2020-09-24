@@ -14,7 +14,7 @@ Alternatively, you can create a new multiple lines Plain Text column and store c
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f06XijcSLqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div data-nosnippet="true"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f06XijcSLqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 .. contents::
  :local:
