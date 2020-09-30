@@ -18,7 +18,7 @@ In this example, however, I will show you two Lookup fields on one form - Catego
  :depth: 1
  
 
-Setting up Lists
+Source Lists
 --------------------------------------------------
 There is nothing difficult in setting up the Lists. Our first List - Categories, only contains Title column:
 
@@ -78,7 +78,7 @@ Here, I just need to add Internal Name of the Lookup field, simple enough:
     Category
 
 JavaScript
---------------------------------------------------
+---------------
 
 Last but not least, we use JavaScript in order to apply filtering:
 
@@ -115,7 +115,8 @@ Read more about OData query |here|.
 
 
 Result
---------------------------------------------------
+-----------
+
 By default, all Products are available in the Products field, but if I choose Category - only products of this particular Category are available.
 
 For example, here is Cell Phone Category:
