@@ -69,6 +69,35 @@ General
         - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
 
 
+Stack
+-------------------------------------------------------------
+Stack container allows you to place controls on a fixed distance from each other. This can be useful for fields that should always go together, like first and last name.
+
+.. image:: ../images/designer/containers/Stack.png
+   :alt: Stack
+
+Stack's properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every Stack container has the following settings:
+
+General
+
+.. list-table::
+    :widths: 10 40
+        
+    *   - Overflow
+        - Property that controls what happens to content that is too big to fit into an area. 
+
+          Options
+            - **No wrap** option means that the content is clipped;
+            - **Wrap** option means that the content wraps to the next line.
+
+    *   - Class
+        - Allows you to give custom CSS classes to the Stack which then can be used in CSS or with JavaScript. Multiple classes need to be separated with spaces.
+    *   - Style
+        - Allows you to give custom style settings to the Stack. Works as a style attribute of an HTML tag, doesn't require any selectors to work.
+    *   - Spacing
+        - Choose what space is between different elements in the Stack container in pixels. Default value is 15
 
 Tabs
 -------------------------------------------------------------
@@ -120,36 +149,6 @@ General
         - Single - only one panel is always open. SingleCollapsable - only one panel can be open, but it can also be closed. Multiple means that Multiple panels can be open and all can be closed.
     *   - Expanded
         - Allows you to choose panels that will be expanded by default. Leave it empty if you don't want any panel to be expanded. Can select multiple panels if Multiple mode is selected, e.g. *0,1,2*
-
-Stack
--------------------------------------------------------------
-Stack container allows you to place controls on a fixed distance from each other. This can be useful for fields that should always go together, like first and last name.
-
-.. image:: ../images/designer/containers/Stack.png
-   :alt: Stack
-
-Stack's properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Every Stack container has the following settings:
-
-General
-
-.. list-table::
-    :widths: 10 40
-        
-    *   - Overflow
-        - Property that controls what happens to content that is too big to fit into an area. 
-
-          Options
-            - **No wrap** option means that the content is clipped;
-            - **Wrap** option means that the content wraps to the next line.
-
-    *   - Class
-        - Allows you to give custom CSS classes to the Stack which then can be used in CSS or with JavaScript. Multiple classes need to be separated with spaces.
-    *   - Style
-        - Allows you to give custom style settings to the Stack. Works as a style attribute of an HTML tag, doesn't require any selectors to work.
-    *   - Spacing
-        - Choose what space is between different elements in the Stack container in pixels. Default value is 15
 
 .. _designer-wizard:
 
