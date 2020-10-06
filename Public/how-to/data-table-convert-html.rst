@@ -8,7 +8,7 @@ How to generate HTML-template for Data Table and convert it into PDF document wi
 
 This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Documents|.
 
-It's an additional example of using Plumsail Forms data with Plumsail Documents, so it can be used like described in :doc:`the previous article </how-to/data-table-flow>`.
+It's an example of using Plumsail Forms data with Plumsail Documents, and you can also check how to :doc:`convert web form with Data Table into PDF </how-to/data-table-flow>`.
 
 In here, we will also show you how you can format data inside Data Table with HTML-template for columns such as date.
 
@@ -16,20 +16,43 @@ In here, we will also show you how you can format data inside Data Table with HT
  :local:
  :depth: 1
 
-Setting up the form
+Design a form
 --------------------------------------------------
-We will use the same form that we used in the previous article - :ref:`data-table-form`.
+First, we will design a form, which will include all the necessary information from the employee, such as name, ID, Department, and the purpose behind the expenses.
+We will also include two date fields From and To, which will include time period during which the expenses took place.
 
-It's still the same Expense Reimbursement Form, we just need to add Date column to our Expenses table and set its type to Date:
+Next, our form will have DataTable to store all the expenses and will include Description, Category and Cost.
 
-.. image:: ../images/how-to/data-table-convert-html/1_Add_Date.png
-   :alt: Add Date column to Expenses table
+After the table, we will have Total field which will automatically calculate and display Total amount of expenses.
+
+Finally, the form will include a signature pad for the employee to sign the form.
+
+Here's our result:
+
+.. image:: ../images/how-to/data-table-flow/how-to-data-table-flow-form.png
+   :alt: Expense Reimbursement Form
 
 Microsoft Flow using HTML template functionality
 --------------------------------------------------
-This will show you how you can set up Flow with DataTable without converting it to HTML table first.
+We will use Plumsail Documents connector, which you can read about setting up |Plumsail Documents connector|. 
 
-Read more about adding Plumsail Documents connector in this section - :ref:`plumsail-actions-flow`.
+You can either create Custom connector or use MS Flow Premium connector, 
+but you will need to have an API key from |Plumsail Account| in both cases.
+
+.. |Plumsail Account| raw:: html
+
+   <a href="https://auth.plumsail.com/account/login" target="_blank">Plumsail Account</a>
+
+.. |Plumsail Documents connector| raw:: html
+
+   <a href="https://plumsail.com/docs/documents/v1.x/getting-started/use-from-flow.html" target="_blank">here</a>
+
+Once the connector is set up, search for HTML Template and select *Plumsail Documents - Create HTML from template*:
+
+.. image:: ../images/how-to/data-table-flow/data-table-flow-01.png
+   :alt: Search for HTML Template and select Plumsail Documents - Create HTML from template
+
+| 
 
 Once the connector is set up, search for HTML Template and select *Plumsail Documents - Create HTML from template*:
 
@@ -154,23 +177,14 @@ As you can see, I've formatted the dates and added a dollar sign before cost, to
 
    <a href="https://plumsail.com/documents/" target="_blank">Plumsail Documents</a>
 
-Now we can convert result HTML into PDF. Search for Plumsail Documents and select *Plumsail Documents - Convert HTML to PDF*:
+Now we can use HTML result to send an email, use Send an email action and set Is HTML option to Yes:
 
-.. image:: ../images/how-to/data-table-convert-html/data-table-convert-html-01.png
-   :alt: Search for Plumsail Documents and select Plumsail Documents - Convert HTML to PDF
+.. image:: ../images/how-to/data-table-convert-html/data-table-convert-html-send-email.png
+   :alt: Send email with HTML
 
-| 
+|
 
-Place Result HTML from the last action inside Source HTML field:
-
-.. image:: ../images/how-to/data-table-convert-html/data-table-convert-html-02.png
-   :alt: Plumsail Documents - Convert HTML to PDF
-
-| 
-
-Read more on how to receive this PDF via email in :ref:`email-pdf-attachment` section.
-
-And here's PDF that I receive from Flow:
+Here's the resulting HTML we receive from the flow:
 
 .. image:: ../images/how-to/data-table-convert-html/4_PDF.png
    :alt: Final PDF
