@@ -10,61 +10,6 @@ Sharing web forms created with Plumsail Forms
  :local:
  :depth: 1
 
-Embedding forms
--------------------------------------------------------------
-You can publish Public Web Form to any webpage on your own site or anywhere else on the web, where you can edit the HTML and add our widget.
-
-The widget can be found in General Settings in the designer where you can copy it to clipboard:
-
-|pic18|
-
-.. |pic18| image:: ./images/start/general-widget.png
-   :alt: Form Widget in General Settings
-
-You can also copy form's widget from Plumsail Account Forms section in |Forms subsection| where all your forms are stored. 
-
-Simply click the copy button next to a form:
-
-|pic19|
-
-.. |pic19| image:: ./images/start/forms-forms.png
-   :alt: Forms Section and Forms Subsection
-
-.. |Forms subsection| raw:: html
-
-   <a href="https://account.plumsail.com/forms/forms-page" target="_blank">Forms subsection</a>
-
-After copying the widget, simply insert it as HTML to your page and the form will be published, ready to receive submissions:
-
-|pic20|
-
-.. |pic20| image:: ./images/start/form-published.png
-   :alt: Public Web Form Published
-
-.. note::   If you're placing more than one form per page, make sure to change div id="**plumsail-form**" and new Plumsail.Form("**#plumsail-form**" to something unique for each widget. The easiest option is to add an index, for example:
-
-            .. code-block:: HTML
-
-               <script type="text/javascript" src="https://forms.plumsail.com/widget/***/app.js"></script>
-               <div id="plumsail-form1"><div class="fd-form-loading"></div></div>
-               <script type="text/javascript">
-                  var fd = new Plumsail.Form("#plumsail-form1", "...");
-               </script>
-
-               <script type="text/javascript" src="https://forms.plumsail.com/widget/***/app.js"></script>
-               <div id="plumsail-form2"><div class="fd-form-loading"></div></div>
-               <script type="text/javascript">
-                  var fd = new Plumsail.Form("#plumsail-form2", "...");
-               </script>
-
-For more examples, please, check our |Integration section| with Wordpress, Joomla, Wix, Squarespace and Facebook cases.
-
-.. |Integration section| raw:: html
-
-   <a href="https://plumsail.com/forms/integration/" target="_blank">Integration section</a>
-
-Now, to actually work with the received data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`Power Automate (MS Flow) </microsoft-flow>` or :doc:`Zapier </zapier>`.
-
 Sharing pages
 -------------------------------------------------------------
 Sharing pages allow you to share forms directly with users - via the URL. You can send this URL in an email, or add it to any link on your site.
@@ -132,4 +77,59 @@ And here's the page that I've created in just a couple of minutes with a simple 
 .. |pic15| image:: /images/start/sharing-page-result.png
    :alt: Final page
 
-Once again, to work with the received data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`Microsoft Flow </microsoft-flow>` or :doc:`Zapier </zapier>`.
+.. note:: To actually work with the data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`MS Power Automate </microsoft-flow>` or :doc:`Zapier </zapier>`.
+
+Embedding forms
+-------------------------------------------------------------
+You can publish Public Web Form to any webpage on your own site or anywhere else on the web, where you can edit the HTML and add our widget.
+
+The widget can be found in General Settings in the designer where you can copy it to clipboard:
+
+|pic18|
+
+.. |pic18| image:: ./images/start/general-widget.png
+   :alt: Form Widget in General Settings
+
+You can also copy form's widget from Plumsail Account Forms section in |Forms subsection| where all your forms are stored. 
+
+Simply click the copy button next to a form:
+
+|pic19|
+
+.. |pic19| image:: ./images/start/forms-forms.png
+   :alt: Forms Section and Forms Subsection
+
+.. |Forms subsection| raw:: html
+
+   <a href="https://account.plumsail.com/forms/forms-page" target="_blank">Forms subsection</a>
+
+After copying the widget, simply insert it as HTML to your page and the form will be published, ready to receive submissions:
+
+|pic20|
+
+.. |pic20| image:: ./images/start/form-published.png
+   :alt: Public Web Form Published
+
+.. note::   If you're placing more than one form per page, make sure to change div id="**plumsail-form**" and new Plumsail.Form("**#plumsail-form**" to something unique for each widget. The easiest option is to add an index, for example:
+
+            .. code-block:: HTML
+
+               <script type="text/javascript" src="https://forms.plumsail.com/widget/***/app.js"></script>
+               <div id="plumsail-form1"><div class="fd-form-loading"></div></div>
+               <script type="text/javascript">
+                  var fd = new Plumsail.Form("#plumsail-form1", "...");
+               </script>
+
+               <script type="text/javascript" src="https://forms.plumsail.com/widget/***/app.js"></script>
+               <div id="plumsail-form2"><div class="fd-form-loading"></div></div>
+               <script type="text/javascript">
+                  var fd = new Plumsail.Form("#plumsail-form2", "...");
+               </script>
+
+For more examples, please, check our |Integration section| with Wordpress, Joomla, Wix, Squarespace and Facebook cases.
+
+.. |Integration section| raw:: html
+
+   <a href="https://plumsail.com/forms/integration/" target="_blank">Integration section</a>
+
+.. note:: To actually work with the data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`MS Power Automate </microsoft-flow>` or :doc:`Zapier </zapier>`.
