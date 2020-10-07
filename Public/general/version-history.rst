@@ -6,6 +6,14 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.4.0
+--------------------------------------------------
+Added the Stack container
+
+Moved "Save As" option under the Save button
+
+Minor bug fixes
+
 v1.7.2
 --------------------------------------------------
 Added support of Google fonts in theme settings

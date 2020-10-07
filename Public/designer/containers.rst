@@ -35,6 +35,8 @@ Every element within a Grid has the following properties:
         
     *   - Property
         - Description
+    *   - Alignment
+        - Determines how to align elements inside of the grid cell. Four options are available: Justify, Left, Center, Right.
     *   - Offset
         - Determines how much of an offset element gets from the left. The offset number also determines how much of the total grid space offset takes, where 6 is equal to half the grid. Setting offset will also affect total available Width for the element, and if not enough space left, it will automatically adjust to be smaller.
     *   - Width
@@ -67,6 +69,35 @@ General
         - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
 
 
+Stack
+-------------------------------------------------------------
+Stack container allows you to place controls on a fixed distance from each other. This can be useful for fields that should always go together, like first and last name.
+
+.. image:: ../images/designer/containers/Stack.png
+   :alt: Stack
+
+Stack's properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every Stack container has the following settings:
+
+General
+
+.. list-table::
+    :widths: 10 40
+        
+    *   - Overflow
+        - Property that controls what happens to content that is too big to fit into an area. 
+
+          Options
+            - **No wrap** option means that the content is clipped;
+            - **Wrap** option means that the content wraps to the next line.
+
+    *   - Class
+        - Allows you to give custom CSS classes to the Stack which then can be used in CSS or with JavaScript. Multiple classes need to be separated with spaces.
+    *   - Style
+        - Allows you to give custom style settings to the Stack. Works as a style attribute of an HTML tag, doesn't require any selectors to work.
+    *   - Spacing
+        - Choose what space is between different elements in the Stack container in pixels. Default value is 15
 
 Tabs
 -------------------------------------------------------------

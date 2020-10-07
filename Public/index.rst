@@ -17,7 +17,6 @@ Plumsail Forms Documentation (public web forms)
             :caption: Getting started
             :maxdepth: 1
 
-            Introduction <./introduction> 
             Installation <./installation>
             Designing forms <./design>
             Sharing forms <./sharing>

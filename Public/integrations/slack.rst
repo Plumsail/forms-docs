@@ -38,8 +38,6 @@ Recommended templates:
 
 |zapTemplateImg|
 
-|zapTemplateImg2|
-
 .. |Zapier|  raw:: html
 
    <a href="https://zapier.com/" target="_blank">Zapier</a>
