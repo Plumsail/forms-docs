@@ -6,6 +6,12 @@
 How to design complex and responsive forms with grids in Plumsail Forms for SharePoint
 ==========================================================================================
 
+.. raw:: html
+
+    <div data-nosnippet="true"><iframe width="840" height="472" src="https://www.youtube.com/embed/QYIhePFy28E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+|
+
 Grid is a flexible container.  
 
 It allows you to place fields and controls side by side, control how many columns each row has. It's used as a basis on every form, and inside of other containers – Tab Control, Accordion, Wizard.  

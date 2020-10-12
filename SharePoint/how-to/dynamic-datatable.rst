@@ -22,7 +22,7 @@ This functionality also supports filtering and cascading selection, which we'll 
  :local:
  :depth: 1
  
-Preparation
+Source Lists
 --------------------------------------------------
 First, create three SharePoint Lists - **Categories, Products and Orders**.
 
@@ -47,7 +47,7 @@ Finally, **Orders** will also contain two columns - Title and License (Choice):
 .. |pic3| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-3-orders.png
    :alt: Products List
 
-Form
+Form Configuration
 --------------------------------------------------
 Open Orders List in editor and customize forms, add Title and License.
 
@@ -59,8 +59,48 @@ set them to Type: *Dropdown* and don't forget to change their Internal Name to m
 .. |pic4| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-4-form.png
    :alt: Match Internal Name
 
-Finally, here's the code to load values from other fields, filter Category column by selected License field value,
-and filter Products column by selected Category:
+Populating Dropdown
+------------------------
+
+To populate the Category dropdown column of DataTable control with data from **Categories** list, we use |PnPjs library| that is built into Plumsail Forms. 
+Here is the code:
+
+.. code-block:: javascript
+
+    fd.spRendered(function() {
+        fd.control('DataTable1').$on('edit', function(e) {
+            if (e.column.field === 'Category') {
+                //pass widget + current Category value 
+                populateCategories(e.widget, e.model.Category);
+            }
+        })
+        
+    });
+
+    function populateCategories(widget, value) {
+        //will show as loading
+        widget._showBusy();
+        
+        sp.web.lists.getByTitle('Categories').items
+            .select('ID', 'Title')
+            .get()
+            .then(function(items) {
+                //set options
+                widget.setDataSource({
+                    data: items.map(function(i) { return i.Title })
+                });
+
+                //set value if one was select
+                widget.value(value);
+                //hide loading state
+                widget._hideBusy();
+            });
+    }
+
+Cascading Dropdowns
+-----------------------
+
+To display only products that belongs to the selected category, apply filtering to the data from **Products** list:
 
 .. code-block:: javascript
 
@@ -82,12 +122,9 @@ and filter Products column by selected Category:
     function populateCategories(widget, value) {
         //will show as loading
         widget._showBusy();
-        
-        //get value from License field to filter
-        var status = fd.field('License').value;
+
         sp.web.lists.getByTitle('Categories').items
             .select('ID', 'Title')
-            .filter("Status eq '" + status + "'")
             .get()
             .then(function(items) {
                 //set options
@@ -143,3 +180,7 @@ Here's how our form would look like in the browser:
 
 .. |pic5| image:: ../images/how-to/dynamic-datatable/dynamic-datatable-5-result.png
    :alt: Form with DataTable result
+
+.. |PnPjs library| raw:: html
+
+    <a href="https://pnp.github.io/pnpjs/" target="_blank">PnPjs library</a>

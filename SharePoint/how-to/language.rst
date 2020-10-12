@@ -54,3 +54,4 @@ You only need to replace **'es-ES'** with the code of the |language| that you wa
 
    <a href="https://docs.microsoft.com/en-us/deployoffice/overview-deploying-languages-microsoft-365-apps#languages-culture-codes-and-companion-proofing-languages" target="_blank">language</a>
 
+If you need to design a form in a language that use a right-to-left format, please see :doc:`'Align fields to the right for Arabic, Hebrew and other languages' </how-to/right-left>` article.
