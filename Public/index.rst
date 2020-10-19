@@ -41,7 +41,7 @@ Plumsail Forms Documentation (public web forms)
             :caption: Designer
             :maxdepth: 1
 
-            Ribbon actions <designer/ribbon-actions>
+            Toolbar actions <designer/toolbar-actions>
             Themes <designer/themes>
             Containers <designer/containers>
             Controls <designer/controls>
