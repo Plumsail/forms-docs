@@ -6,6 +6,10 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.4.2
+--------------------------------------------------
+Tabs were added to the web designer
+
 Web Designer v1.4.1
 --------------------------------------------------
 Added Ink Sketch control to the web designer 
