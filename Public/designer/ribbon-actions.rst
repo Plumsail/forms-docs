@@ -12,6 +12,86 @@ What do the buttons in the ribbon of the editor do? Find more about layouts for 
  :local:
  :depth: 1
 
+Save button
+--------------------------------------------------
+Use this button to save current layout of the form. Make sure that you give your form a name, before saving.
+
+|save|
+
+.. |save| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-save.png
+   :alt: Save button
+
+Once the form has been saved, you have an option to save it as new, effectively creating a copy of the form or creating a new version without overwriting an existing form.
+
+|saveas|
+
+.. |saveas| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-saveas.png
+   :alt: Save as new button
+
+Mode buttons
+--------------------------------------------------
+
+Design mode
+**************************************************
+This button activates the design mode - the main mode in which you drag and drop fields and controls onto the form, and configure their layout and properties. It's on by default.
+
+|design|
+
+.. |design| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-design-mode.png
+   :alt: Design mode button
+
+Theme settings
+**************************************************
+This button allows you to configure theme settings - such as the colors used on the form, font settings, field borders, etc. Use one of existing premade themes or create your own. 
+
+|theme|
+
+.. |theme| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-theme.png
+   :alt: Theme settings button
+
+JavaScript editor
+**************************************************
+This button allows you to customize JavaScript for the whole form - please, refer to our :doc:`JavaScript documentation <../javascript/general>` to learn about events, properties and methods available in our API
+
+|js|
+
+.. |js| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-js.png
+   :alt: JavaScript editor button
+
+CSS editor
+**************************************************
+This button allows you to customize CSS for the whole form - if theme settings aren't enough, and you want to utilize CSS for further customization of the form, you have this option. Can also be used to hide certain elements on the form.
+
+|css|
+
+.. |css| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-css.png
+   :alt: CSS editor button
+
+Export and Import
+--------------------------------------------------
+Use these buttons if you want to export configuration of your form. For example, you can do this to create a backup of the form, which you might later change, and revert back to the exported version. Or you can move forms between different Plumsail Account using this feature.
+
+|export-import|
+
+.. |export-import| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-export-import.png
+   :alt: Export and Import buttons
+
+General Settings
+--------------------------------------------------
+This button simply opens General Settings menu on the right side of the screen. Only usable after the form has been saved.
+
+|general-button|
+
+.. |general-button| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-general.png
+   :alt: General Settings button
+
+General Settings will allow you to configure if the form is active, if submissions need to be stored, if you need to receive email notifications on submissions or not. You can also copy form ID, widget and a Form Link from this menu.
+
+|general-settings|
+
+.. |general-settings| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-general-menu.png
+   :alt: General Settings menu
+
 .. _designer-layouts:
 
 Layouts - PC, Tablet or Phone
@@ -30,17 +110,17 @@ Designing Forms
 Designing forms for different devices has never been easier. All you need to do, is click 
 the icon of the device you want to design form for, customize the form and click Save.
 
-The red cross under the icon of the device indicates that the form is registered. Click on it to remove the specific form. 
-There will be a confirmation prompt to avoid potential misclicks: 
+|layouts|
 
-|pic1|
-
-.. |pic1| image:: ../images/designer/ribbon-actions/Layouts.png
+.. |layouts| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-layouts.png
    :alt: Layouts icons
 
-.. important::  Make sure that the fields present on different layouts have the same internal names 
-                and the same type to avoid errors on submission in Power Automate (MS Flow). These can be different fields with the same name as long as the type is the same, for example, 
-                Textbox and MultilineTextBox.
+If you want to delete the layout after it has been customized, simply select the layout and click the icon again (it will turn white again when deleted). 
+
+|layouts-phone|
+
+.. |layouts-phone| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-layouts-phoneview.png
+   :alt: Layouts phone view
 
 Testing Forms
 **************************************************
@@ -56,46 +136,17 @@ Similar functionality is present in almost all modern browsers.
 
 .. _designer-export:
 
-Export and Import
+Preview
 --------------------------------------------------
-You can export currently selected form by pressing Export button. It will allow you to save the form as a file on your computer.
-
-|pic3|
-
-.. |pic3| image:: ../images/designer/ribbon-actions/ExportImport.png
-   :alt: Export and Import
-
-This can be used in variety of situations, especially if you need to design a number of similar forms. 
-
-We also recommend storing backups for your important and/or complex forms, 
-so if somebody changes the form later, it would be possible to restore it quickly.
-
-Finally, you can import forms from the exported files, either yours or somebody else's, by pressing the Import button and selecting the form to import.
-
-General Settings and Preview
---------------------------------------------------
-These two buttons appear on the ribbon only after you've saved the form.
+This button will open a preview of your form:
 
 |pic4|
 
-.. |pic4| image:: ../images/designer/ribbon-actions/ribbon-actions-04.png
+.. |pic4| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-preview.png
    :alt: General Settings and Preview
 
-**General Settings for Plumsail forms** section contains important information for Activate submissions, namely Form ID, direct link to the form, as well as the widget that you can copy to insert form to a webpage for Plumsail Forms.
 
-You can turn off the Activate submissions option for testing purposes. Thus the form won't be submitted to our server and neither be saved nor processed in Power Automate or Zapier, and the submission won't be counted either.
-
-Save submissions will ensure that the submitted information is :doc:`stored in your Plumsail Account <../submissions>`.
-
-Enable notifications option will send emails with submitted data to your email.
-
-|pic5|
-
-.. |pic5| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-general-settings.png
-   :alt: General Settings for Plumsail Forms
-
-
-**Preview** button allows you to quickly open Plumsail Forms in your default browser:
+This will allow you to test how the form functions:
 
 |pic6|
 
