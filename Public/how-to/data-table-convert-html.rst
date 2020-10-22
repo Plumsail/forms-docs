@@ -6,7 +6,7 @@
 How to generate HTML-template for Data Table and convert it into PDF document with Power Automate 
 ==========================================================================================================
 
-This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Documents|.
+This article will describe how you can convert :ref:`designer-datatable` into HTML template with |Plumsail Documents|. You can use any form with DataTable control, but we'll use our :doc:`example Expense Reimbursement form <../examples/expense-reimbursement>`.
 
 It's an example of using Plumsail Forms data with Plumsail Documents, and you can also check how to :doc:`convert web form with Data Table into PDF </how-to/data-table-flow>`.
 
@@ -15,22 +15,6 @@ In here, we will also show you how you can format data inside Data Table with HT
 .. contents::
  :local:
  :depth: 1
-
-Design a form
---------------------------------------------------
-First, we will design a form, which will include all the necessary information from the employee, such as name, ID, Department, and the purpose behind the expenses.
-We will also include two date fields From and To, which will include time period during which the expenses took place.
-
-Next, our form will have DataTable to store all the expenses and will include Description, Category and Cost.
-
-After the table, we will have Total field which will automatically calculate and display Total amount of expenses.
-
-Finally, the form will include a signature pad for the employee to sign the form.
-
-Here's our result:
-
-.. image:: ../images/how-to/data-table-flow/how-to-data-table-flow-form.png
-   :alt: Expense Reimbursement Form
 
 Microsoft Flow using HTML template functionality
 --------------------------------------------------

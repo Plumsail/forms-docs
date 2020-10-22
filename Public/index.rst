@@ -61,6 +61,7 @@ Plumsail Forms Documentation (public web forms)
             :caption: Examples
             :maxdepth: 1
 
+            Expense reimbursement form <examples/expense-reimbursement>
             Online quiz and graphic results <examples/build-excel-charts>
             Online survey with Likert Scale and real-time charts <examples/zapier-excelchart>
             Making handwritten notes on images <examples/notes-on-an-image>
