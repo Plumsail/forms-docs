@@ -651,7 +651,7 @@ Lookup/LookupMulti
 
                 fd.field('Lookup').orderBy = 'Title';
                 fd.field('Lookup').orderBy = { field: 'Title', desc: true };
-                fd.field('Lookup').operator = [
+                fd.field('Lookup').orderBy = [
                     { field: 'FirstChoice', desc: true },
                     { field: 'Title', desc: false }
                 ];

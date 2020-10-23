@@ -7,7 +7,7 @@ How to create Expense Reimbursement form with dates and total calculation
 =========================================================================
 
 
-With the recently added :ref:`designer-datatable` control, we can design a more complex form and then submit it to Power Automate flow.
+With the :ref:`designer-datatable` control, we can design a more complex form and then submit it to Power Automate flow.
 
 In this example, we will design an Expense Reimbursement Form, which will include DataTable to list all the expenses,
 as well as Ink Sketch controls to get signatures from the user and his supervisor.
