@@ -7,6 +7,12 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.7.3
+--------------------------------------------------
+Added the Alignment property to the Grid container
+
+Minor bug fixes
+
 v1.7.2
 --------------------------------------------------
 Improved List or Library control Inline editing mode - now the changes are auto-saved when user switches between rows or saves the form. Also, double clicking a row activates editing.

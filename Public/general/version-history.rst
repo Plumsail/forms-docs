@@ -6,6 +6,14 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+v1.7.3
+--------------------------------------------------
+Added the Alignment property to the Grid container in the Windows desktop app
+
+Web Designer v1.4.3
+--------------------------------------------------
+Accordion container was added to the web designer
+
 Web Designer v1.4.2
 --------------------------------------------------
 Tabs were added to the web designer
