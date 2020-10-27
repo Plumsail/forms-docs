@@ -555,6 +555,8 @@ Events
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid" target="_blank">kendoGrid widget</a>
 
+.. _js-datatable:
+
 DataTable
 --------------------------------------------------
 Properties, methods and events of the DataTable control.

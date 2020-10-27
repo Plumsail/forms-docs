@@ -6,3 +6,4 @@ Working with fields in JavaScript
 
     Manipulate field properties and appearance <./conditional-fields>
     Work with Date and Time fields <./manipulate-date-field>
+    Work with Data Table <./data-table-cases>    
