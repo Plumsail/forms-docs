@@ -29,67 +29,11 @@ I will also include Order Total field to calculate total value of the order and 
 
 |
 
-Now is the harder part, adding JavaScript calculations to the Form. I have two fields that need to be calculated - Order Total and Total for each row. 
-This calculation needs to happen every time there is a change to the DataTable, so we can use **change** event.
-
-What we'll do is, we'll create a variable to store the Order Total, then we'll go through each row and calculate Total for it and add this Total to Order Total. 
-Finally, we'll update Table value with all the Totals calculated and we'll set Order Total field value to Order Total.
-
-Order Total will be disabled, and Total value will be not be editable either. That's in order to prevent users from changing these fields manually.
-
-Here's the code:
-
-.. code-block:: javascript
-
-    //once the form is rendered
-    fd.rendered(function() {
-        //Disable Order Total field
-        fd.field('OrderTotal').disabled = true;
-
-        //Make Total column noneditable
-        fd.control('RequestedItemsTable').columns[3].editable =
-            function(){return false};
-
-        fd.control('RequestedItemsTable').$on('change', function(value) {
-            //variable to count Order Total
-            var orderTotal = 0;
-
-            //if there are records in the table
-            var isTableModified = false;
-            if(value){
-                //go through each one by one
-                for (var i = 0; i < value.length; i++){
-                    //if this record has Amount and Price
-                    if(value[i].Amount && value[i].Price){
-                        //set Total to their product
-                        var cost = value[i].Amount * value[i].Price;
-                        
-                        if (value[i].Total != cost) {
-                            value[i].Total = cost;
-                            isTableModified = true;
-                        }
-                    }
-
-                    //add Total to the Order Total
-                    orderTotal += parseInt(value[i].Total);
-                }
-            }
-
-            //here we make our change to the table
-            if (isTableModified) {
-                fd.control('RequestedItemsTable').value = value;
-            }
-
-            //we set Order Total field to sum of Totals
-            fd.field('OrderTotal').value = orderTotal;
-        });
-    });
-
-We can also add some other rules and validators to our form, but for this example it should be enough. Next, we need to create and configure SharePoint Lists to store this data.
+.. Note:: If you want to find out how to add Line total and Overall total calculation to this form, please, check out our :doc:`how to work with Data Table using JS article <./data-table-cases>`.
 
 SharePoint Lists
 --------------------------------------------------
-We need two SharePoint Lists - Orders and Ordered Items.
+In order to save data to SharePoint, we need two SharePoint Lists - Orders and Ordered Items.
 
 Orders should have Title, Department, Destination, Requester, Date Needed, and Order Total columns:
 
