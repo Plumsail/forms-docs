@@ -541,13 +541,13 @@ Lookup/LookupMulti
 
                 //MULTI CHOICE LOOKUP
 
-                //returns an array of the selected IDs
+                //returns an array of objects
                 fd.field('LookupMulti').value;
 
-                //returns an ID of the first selected
+                //returns the first selected element as an object
                 fd.field('LookupMulti').value[0];
 
-                // returns first selected element as text:
+                //returns first selected element as text:
                 fd.field('LookupMulti').value[0].LookupValue; 
 
                 //set with an array of IDs:
@@ -557,7 +557,7 @@ Lookup/LookupMulti
                 var selected = fd.field('LookupMulti').value;
                 var s = '';
                 for (var i = 0; i < selected.length; i++) {
-                    s += selected[i].ID + '; ';
+                    s += selected[i].LookupId + '; ';
                 }
                 alert(s);
 
