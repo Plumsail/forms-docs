@@ -79,6 +79,7 @@ Plumsail Forms Documentation (SharePoint forms)
             Discussion within a SharePoint form <examples/add-discussion>
             Version history within a SharePoint form <examples/version-history>
             Organizing related docs in libraries and folders <examples/create-folder>
+            Duplicate item button for List or Library <examples/list-or-library-duplicate>
             Embedding forms into Microsoft Teams <examples/ms-teams>
             Transferring new form page to another location <examples/newform-page>
       

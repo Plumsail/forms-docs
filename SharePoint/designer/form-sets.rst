@@ -95,7 +95,7 @@ Form Set ID can be found in the lower left corner of the designer, it can be cop
 
 If the code returns nothing or throws an error, default routing is applied.
 
-Routing examples
+Routing code samples
 -------------------------------------------------------------
 
 Check item's field
@@ -204,7 +204,7 @@ Redirect to a certain Form Set if form is opened in full page mode, in a panel, 
     if (host === 2)
         return '719a0769-1c0a-4a6c-8dcf-57abc8a7d71a';
 
-Examples
+Business case examples
 -----------------------------------------------------
 
 Please see how you can use Form Sets through the example of :doc:`Ticket management system</examples/ticket-management>`.
