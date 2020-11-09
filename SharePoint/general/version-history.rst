@@ -7,6 +7,14 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.7.4
+--------------------------------------------------
+Added :ref:`designer-stack` container
+
+Added bulk editing for List or Library
+
+Minor bug fixes
+
 v1.7.3
 --------------------------------------------------
 Added the Alignment property to the Grid container
