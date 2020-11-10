@@ -14,7 +14,7 @@ Assume that you have different forms across a SharePoint tenant, e.g. request fo
  :local:
  :depth: 1
 
-Source List and Target Form 
+Form configuration
 --------------------------------------------------
 
 First, we create a list at the root site that is storing department codes. 
@@ -24,19 +24,7 @@ First, we create a list at the root site that is storing department codes.
 .. |pic0| image:: ../images/how-to/populate-dropdowns/populate-dropdowns-00.png
    :alt: Department codes
 
-Then, on another site, we create a Leave Request list with these columns: 
-
-- Employee Name (person or group field); 
-
-- Job Title (text field); 
-
-- Department Code (text field); 
-
-- Reason for the requested leave (Multiline text field); 
-
-- Start Date (date field); 
-
-- End Date (date field). 
+Then, on another site, we create a Leave Request list with the Department Code column (Single Line Text).
 
 Next, we move on to the form design. We add all SharePoint fields to the form. Plus, as we want a user to see the list of department codes in a dropdown, we add a DropDown field from the Common Fields section.
 
@@ -85,7 +73,7 @@ Here is our resulting form:
 .. |pic5| image:: ../images/how-to/populate-dropdowns/populate-dropdowns-05.png
    :alt: Department codes
 
-Populating dropdown with the data from the SharePoint list 
+Populating drop-down field
 -------------------------------------------------------------
 
 To prepopulate a dropdown field with the data from a SharePoint list that is located on a different site, we use |PnPjs library| that is built into Plumsail Forms.  
