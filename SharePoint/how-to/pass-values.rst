@@ -15,43 +15,15 @@ In this article, you will find the instructions for passing values ​​from a 
 
 Suppose that a company possesses a set of facilities and requires a facility management system. In case of any problem at a facility, a user creates an issue in this system. This issue is assigned to a specific manager who is responsible for this facility. Each issue can have several tasks.
 
+Facilities list will only store the information about facilities and their managers: Title and Manager fields only. Issues list will be the parent list for the Tasks list.
+
 To speed up the task creation, we will set up prepopulation of the necessary information from a parent form, e.g. 'Facility', 'Priority', and 'Assigned to'.
 
 .. contents::
  :local:
  :depth: 1
 
-Lists
---------------------------------------------------
-
-First of all, we will create 3 lists: 
-
-- Facilities; 
-- Issues; 
-- Tasks (a regular Tasks list).
-
-
-Facilities list will store the information about facilities and their managers: 
-
-- Title;
-- Manager.
-
-
-Issues list will contain the following columns: 
-
-- Title (text field);
-- Facility (lookup field);
-- Manager (person or group field);
-- Description (plain text field);
-- Priority (choice field).
-
-
-And the Tasks list will be based on a regular SharePoint Tasks list with just two extra columns: 
-
-- Issue (a lookup field pointing to the Issues list);
-- Facility (a lookup field pointing to the Facilities list).
-
-Issue form 
+Parent form
 --------------------------------------------------
 
 Here is a simple Issue form containing all the fields from the Issues list plus a 'List or Library' control bound to the Tasks list and displaying issue's tasks.
@@ -86,7 +58,7 @@ Since each facility has a manager, we'll populate the Manager field, when the Fa
         }) 
     }); 
 
-Task form 
+Child form
 --------------------------------------------------
 
 Here is a form of the Tasks list: 
@@ -96,9 +68,9 @@ Here is a form of the Tasks list:
 .. |pic3| image:: ../images/how-to/pass-values/pass-values-3.png
    :alt: Task form
 
-Here we will populate Priority, Facility, and Assigned To fields with values from the parent form. 
+Here we will populate Priority, Facility (lookup field), and Assigned To fields with values from the parent form. 
 
-To get access to the parent form's fields, we will use 'window.top' property which returns the topmost window object. And this is the code which we put into the task form: 
+To get access to the parent form's fields, we will use 'window.top' property which returns the topmost window object. This code will get values from parent form: 
 
 .. code-block:: javascript
 
