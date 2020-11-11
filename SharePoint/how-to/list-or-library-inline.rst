@@ -14,70 +14,15 @@ You will know how to prepopulate fields, set fields based on changes in other fi
  :local:
  :depth: 1
 
-Form and Source Lists
------------------------------------
-
-Assume that you have a Project list. Each project is tied to the city and can have several associated tasks. Each task is tied to the Project and Office within the selected city. 
-
-For this, we will create the following lists:  
-
-- City;  
-
-- Office;  
-
-- Project (a regular Tasks list);  
-
-- Task (a regular Tasks list).  
-
-City list will store the city names.   
-
-And Office list will store the information about the offices:  
-
-- Title (text field);  
-
-- City (lookup field).  
-
-Project and Task list are the SharePoint Tasks list with extra columns.   
-
-Project list will have these additional fields:  
-
-- City (lookup field);  
-
-- Resolution Date (date field).  
-
-And Task list will have these: 
-
-- Project (lookup field); 
-
-- Office (lookup field); 
-
-- Resolution Date (date field).  
-
-Next, we will design a form for the Project list. To display Tasks related to the Project, we will add a List or Library control to the form. In Settings >> DataSource, select List: Task and Lookup Field: Project.
-
-|pic0|
-
-.. |pic0| image:: ../images/how-to/list-or-library-inline/list-or-library-inline-00.png
-   :alt: Source
-
-In the settings of the List or Library control, we will choose inline editing:  
-
-|pic1|
-
-.. |pic1| image:: ../images/how-to/list-or-library-inline/list-or-library-inline-01.png
-   :alt: mode
-
-This is how Project form will look like: 
-
-|pic2|
-
-.. |pic2| image:: ../images/how-to/list-or-library-inline/list-or-library-inline-02.png
-   :alt: Form
-
 Populating fields of a new row in List or Library control 
 ----------------------------------------------------------------------
 
-First, we want to prepopulate the Due Date and Assigned To fields in a new task with the Project field values. 
+|pic1|
+
+.. |pic1| image:: ../images/how-to/list-or-library-inline/how-to-list-or-library-inline-populate-fields.gif
+   :alt: Populating fields of a new row
+
+First, we want to prepopulate the Due Date and Assigned To fields in a new List or Library row with the current form field values. 
 
 To handle switching a row into Inline editing mode, we will use the edit event of the List or Library control. Since we're prepopulating fields of a new record only, we will check the form type. 
 
@@ -112,6 +57,11 @@ Find more information about the |edit event|.
 Populating fields based on other fields in List or Library control 
 ----------------------------------------------------------------------
 
+|pic2|
+
+.. |pic2| image:: ../images/how-to/list-or-library-inline/how-to-list-or-library-inline-change-field.gif
+   :alt: Populating fields based on other fields
+
 Next, we want to set the Resolution Date to the current date when a user changes the Status field to 'Completed'.  
 
 As in the previous example, we will use the 'edit' event of the List or Library control and 'change' event of the Status field. 
@@ -134,6 +84,11 @@ As in the previous example, we will use the 'edit' event of the List or Library 
 Filtering lookup fields in List or Library control  
 ----------------------------------------------------------------------
 
+|pic3|
+
+.. |pic3| image:: ../images/how-to/list-or-library-inline/how-to-list-or-library-inline-lookup-filter.gif
+   :alt: Filtering lookup fields
+
 Finally, in the 'edit' event, we can dynamically filter lookup values in the List or Library control. In this example, we will filter the Office lookup field by the selected City field. Here is the code:
 
 .. code-block:: javascript
@@ -141,7 +96,7 @@ Finally, in the 'edit' event, we can dynamically filter lookup values in the Lis
     fd.spRendered(function() {
         fd.control('SPDataTable1').$on('edit', function(editData) {
             //filter Office field by City
-            editData.field('Office').filter = "City/Title eq '" + fd.field("City").value.LookupValue + "'";
+            editData.field('Office').filter = "City/Id eq '" + fd.field("City").value.LookupId + "'";
             editData.field('Office').useCustomFilterOnly = true;
         });
     }); 
