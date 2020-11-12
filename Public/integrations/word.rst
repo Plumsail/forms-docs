@@ -15,7 +15,7 @@ MS Power Automate
 
 Create Word template
 *******************************************************************
-To generate PDF document, the easiest option is to create a Word template file first. For this, you will need desktop version of Microsoft Word.
+To generate DOCX document, it's necessary to create a template file first. For this, you will need desktop version of Microsoft Word.
 
 First, you need to activate the Developer tab in the ribbon. Click **File** -> **Options**, select **Customize Ribbon** in dialog and activate the Developer tab in the right column:
 
@@ -35,12 +35,20 @@ These sections can then be populated via a flow. Upload templates to a cloud sto
 
 Launch flow
 *******************************************************************
-Generate a Word document from template when someone submits Plumsail Form with |MS Power Automate| and |Word Online (Business)| connector.
+Generate a Word document from template when someone submits Plumsail Form with |MS Power Automate|, |Word Online (Business)| and |SharePoint| connector. 
 
-|flow process img|
+.. |SharePoint|  raw:: html
 
-.. |flow process img| image:: ../images/integration/word/integration-word-flow-process.png
-   :alt: Flow process
+   <a href="https://emea.flow.microsoft.com/en-us/connectors/shared_sharepointonline/sharepoint/" target="_blank">SharePoint</a>
+
+
+|flowTemplateImgItem|
+
+.. |flowTemplateImgItem|  raw:: html 
+
+   <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/739ed9dc9f764d228f9993c9cff1e0f8/create-word-and-pdf-file-when-plumsail-form-is-submitted" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/word/integration-word-pdf-flow.png">Create Word and PDF file when Plumsail form is submitted</a>
+
+.. Note:: Just drop the convert to PDF action, if you don't want to convert DOCX to PDF.
 
 .. |MS Power Automate|  raw:: html
 

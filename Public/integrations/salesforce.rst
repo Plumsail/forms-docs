@@ -14,10 +14,11 @@ MS Power Automate
 --------------------------------------------------
 Add records, such as leads and contacts, to Salesforce when someone submits Plumsail Form with |MS Power Automate| and |Salesforce Flow| connector.
 
-|flow process img|
+|flowTemplateImgItem|
 
-.. |flow process img| image:: ../images/integration/salesforce/integration-salesforce-flow-process.png
-   :alt: Flow process
+.. |flowTemplateImgItem|  raw:: html 
+
+   <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/1e9d897815664dcf8abb0d42178cc891/create-salesforce-record-when-a-plumsail-form-is-submitted" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/salesforce/integration-salesforce-lead.png">Create Salesforce record when a Plumsail form is submitted</a>
 
 .. |MS Power Automate|  raw:: html
 

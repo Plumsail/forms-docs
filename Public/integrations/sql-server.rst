@@ -14,10 +14,11 @@ MS Power Automate
 --------------------------------------------------
 Add SQL server row when someone submits Plumsail Form with |MS Power Automate| and |SQL Server| connector.
 
-|flow process img|
+|flowTemplateImg|
 
-.. |flow process img| image:: ../images/integration/sql-server/integration-sql-server-flow-process.png
-   :alt: SQL Server flow process
+.. |flowTemplateImg|  raw:: html
+
+      <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/1761723bcb0447779fbb0276853b9951/insert-row-in-sql-server-when-a-plumsail-form-is-submitted" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/sql-server/integration-sql-server-flow.png">Insert row in SQL server when a Plumsail form is submitted</a>
 
 .. |MS Power Automate|  raw:: html
 

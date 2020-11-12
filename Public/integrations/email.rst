@@ -14,10 +14,18 @@ MS Power Automate
 --------------------------------------------------
 Send an e-mail message when someone submits Plumsail Form with |MS Power Automate| connector.
 
-|flow process img|
+|flowTemplateImgItem|
 
-.. |flow process img| image:: ../images/integration/email/integration-email-flow-process.png
-   :alt: Flow process
+.. |flowTemplateImgItem|  raw:: html 
+
+   <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/2b4a8974f5d94e97a7d518d686143fae/send-an-email-notification-when-plumsail-forms-is-submitted" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-email-flow.png">Send an email notification when Plumsail Forms is submitted</a>
+
+|flowTemplateImgItem2|
+
+.. |flowTemplateImgItem2|  raw:: html 
+
+   <a href="https://emea.flow.microsoft.com/en-us/galleries/public/templates/834771e8c74d428791ea78ff5ea81396/send-an-office-365-outlook-email-when-a-plumsail-form-is-submitted" target="_blank" class="img-link public-integration"><img src="../_static/img/integration/email/integration-outlook-flow.png">Send an Office 365 Outlook email when a Plumsail form is submitted</a>
+
 
 The recommended connector is |Mail|, but the emails are sent from Power Automate. 
 To have more control of where the emails come from, you can alternatively use one of the following connectors: |Office 365 Outlook|, |Gmail|, or |SMTP|.
