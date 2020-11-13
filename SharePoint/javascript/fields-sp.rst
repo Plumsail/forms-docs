@@ -461,7 +461,11 @@ DateTime
 
                 // returns Date object:
                 fd.field('DateTime').value; 
-                fd.field('DateTime').value = new Date().setHours(13, 31, 0);
+                
+                //set date and time:
+                var d = new Date();
+                d.setHours(13, 31, 0);
+                fd.field('DateTime').value = d;
 
     *   -   **widgetOptions**
         -   The property contains settings for |Kendo UI DateTimePicker control| and is applicable for Date and Time fields only.
