@@ -32,7 +32,6 @@ Here's an example how you can create new Form Set Settings:
 .. code-block:: c#
 
     var fs = new FormSetSettings(){
-        AddListViewCommands = true,
         CustomRouting = "//JS code for custom routing",
         CustomListViewStyle = "//CSS code to apply in List View"
     };
