@@ -7,6 +7,15 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.7.5
+--------------------------------------------------
+Added option to configure lookup filtering and cascading lookups without JS code, via new properties
+
+Added multi-choice type column for the Data Table control
+
+Minor bug fixes
+
+
 v1.7.4
 --------------------------------------------------
 Added :ref:`designer-stack` container

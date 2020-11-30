@@ -6,6 +6,12 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.4.5
+--------------------------------------------------
+Added multi-choice type column for the Data Table control
+
+Minor bug fixes
+
 Web Designer v1.4.4
 --------------------------------------------------
 Added Likert Scale control to the web designer
