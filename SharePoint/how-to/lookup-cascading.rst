@@ -1,7 +1,7 @@
 .. title:: Configure cascading lookup fields on a SharePoint form with JavaScript
 
 .. meta::
-   :description: Find out how to configure filering for cascading lookup fields on Plumsail Forms - e.g. first select country, then office branch in this specific country
+   :description: Find out how to configure filtering for cascading lookup fields on Plumsail Forms - e.g. first select country, then office branch in this specific country
    
 How to configure cascading lookup fields in SharePoint form programmatically
 =============================================================================
@@ -13,7 +13,7 @@ Lookup filtering can be applied with any data, including values of other fields 
 
 In this example, however, I will show you two Lookup fields on one form - Category and Product, so that the user can only see and choose Products belonging to the selected Category.
 
-.. Note:: You don't have to use JavaScript for this functionality. Cascading lookups and other filter conditions can also be applied with **Depends on** property described in more detail in :doc:`Filter lookup fields article <./lookup-filter>`.
+.. Note:: You don't have to use JavaScript for this functionality. Cascading lookups and other filter conditions can also be applied with **Depends on** property described in more detail in :doc:`Filter lookup by another field article <./lookup-filter>`.
 
 .. contents::
  :local:

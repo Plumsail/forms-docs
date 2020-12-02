@@ -5,8 +5,8 @@ Working with Lookup field in SharePoint form
     :maxdepth: 1
 
     Customize appearance of search results <./lookup-view>
-    Filter lookup field by choice, person or another lookup field <./lookup-filter>
-    Configure cascading lookups with JS <./lookup-cascading>
+    Filter by another field: Lookup, Person, Choice <./lookup-filter>
+    Filter by another field with JavaScript <./lookup-cascading>
     Search and filter large lists (more than 5,000 Items) <./lookup-5k>
     
     

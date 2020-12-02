@@ -1,15 +1,14 @@
-.. title:: Filter lookup fields by Choice, Lookup or Person fields
+.. title:: Filter Lookup by another field: Lookup, Person, Choice
 
 .. meta::
    :description: Find out how to configure filering for lookup fields on Plumsail Forms
    
-How to filter a lookup by choice, lookup or person fields (single value)
+How to filter lookup by another field: Choice, Lookup, or Person
 =============================================================================
 
 Property of the lookup field **Depends on** allows you to set up a filter condition on a lookup field without any JavaScript. This way you can filter a lookup by variety of fields, starting with simple ones such as Single Line text and Choice, but also by single value Lookup or Person fields.
 
-.. Note:: More advanced filter conditions are possible programmatically, you can find an example in our :doc:`Configure cascading lookups with JS article <./lookup-cascading>` (this is just an example, the same filter can currently be applied with **Depends on** property without JavaScript)
-
+.. Note:: More advanced filter conditions are possible programmatically, you can find an example in our :doc:`Filter by another field with JavaScript <./lookup-cascading>`
 .. contents::
  :local:
  :depth: 1
