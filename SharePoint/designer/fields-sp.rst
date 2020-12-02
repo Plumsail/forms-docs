@@ -128,6 +128,8 @@ Lookup field has received several new features, all of which can be configured i
 Now, users can use search bar to filter the selection in the lookup field. 
 There's also an option to add new items to the source list, if the item wasn't found - this could be turned on/off.
 
+Additionally, you can apply a field based filter on the lookup with Filter properties.
+
 |example|
 
 .. |example| image:: ../images/how-to/lookup-view/example.png
@@ -151,6 +153,15 @@ General
     *   - Expand
         - In the Expand setting you need to enter the Lookup field that you are getting in Extra Fields, such as: **Category**. Uses OData *$expand* query option.
 
+Filter
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Depends on
+        - Select what field in the current list will be used for filtering items available in the lookup field. For complex fields, such as Lookup or Person, also select which property to match (ID, Title or Email, Display Name, etc.)
+    *   - Match to
+        - Select what field in the source list has to match the field selected in **Depends on** property. For more information on filtering, refer to our :doc:`Filter lookup fields article <../how-to/lookup-filter>`.
 
 .. |REST| raw:: html
 
