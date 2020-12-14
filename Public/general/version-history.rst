@@ -6,6 +6,12 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.4.6
+--------------------------------------------------
+Added improvements in editing properties in web designer 
+
+Minor bug fixes
+
 Web Designer v1.4.5
 --------------------------------------------------
 Added multi-choice type column for the Data Table control

@@ -7,6 +7,12 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.7.6
+--------------------------------------------------
+Added the Height property to List or Library control
+
+Minor bug fixes
+
 v1.7.5
 --------------------------------------------------
 Added option to configure lookup filtering and cascading lookups without JS code, via new properties.  For more information, refer to our :doc:`Filter lookup fields article <../how-to/lookup-filter>`.
