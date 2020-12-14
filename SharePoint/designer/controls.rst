@@ -463,3 +463,5 @@ General
         - Choose between Dialog and Inline editing. The formet launches dialog to create new and modify existing items, and the latter allows you to do it right on the form.
     *   - Root Folder
         - Type in the name of the folder inside List or Library and user will only be able to see its contents inside the control.
+    *   - Height
+        - Height of List or Library control in pixels. Usually, the control takes as much space as necessary to show all items on the page, but if Height is set, the control gets a scrollbar.
