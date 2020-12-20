@@ -11,17 +11,17 @@ your forms more interactive by hiding, disabling and making fields mandatory bas
 These will be simple and popular cases realized mostly with SharePoint forms which you can easily replicate even on Plumsail forms as functionality is fairly similar.
 You can also mix and match these examples to achieve the results you are looking for.
 
-In order to access fields in JavaScript, you'll need use **fd.field()** method of which expects an internal name of a field you want to retrieve.
-Both Plumsail fields and SharePoint fields have internal name property which is unique for every field on the form. 
+In order to access fields in JavaScript, you'll need use **fd.field()** method of which expects an Name of a field you want to retrieve.
+Both Plumsail fields and SharePoint fields have Name property which is unique for every field on the form. 
 Find more about using JavaScript on fields :doc:`here </javascript/fields>`.
 
-.. image:: ../images/how-to/conditional/1_InternalName.png
-   :alt: Internal Name
+.. image:: ../images/how-to/conditional/how-to-conditional-copy-name-sp.png
+   :alt: Copy Name
 
 |
 
-You can give custom name to Plumsail fields, but SharePoint fields have their own names given by SharePoint. 
-In any case, you can check the internal name property of the field in the designer when you select the field.
+You can give a custom Name to the Common fields, but SharePoint fields have their own names given by SharePoint. 
+In any case, you can check the Name property of the field in the designer when you select the field.
 Read more about different field properties :doc:`here </designer/fields>`.
 
 Another thing to be aware of is that you shouldn't simply place JavaScript inside the editor on its own, it must be executed inside **fd** events 
@@ -35,7 +35,7 @@ Read more about different events in :doc:`Manager section </javascript/manager>`
  :local:
  :depth: 1
 
-Prepopulate fields on Form load
+Populate field value
 --------------------------------------------------
 Set the field once the form loads:
 
@@ -54,7 +54,7 @@ For some fields, such as Lookup or Person, you might need to wait until the fiel
         field.value = 5;
     });
 
-Populate field dynamically
+Handle field change
 -----------------------------------------------------------
 Set the field once value of another field changes:
 
@@ -78,7 +78,7 @@ Set the field once value of another field changes:
     });
 
 
-Disable field dynamically
+Disable field
 -----------------------------------------------------------
 Disable field once specific conditions are meant.
 
@@ -105,7 +105,7 @@ Disable field once specific conditions are meant.
 
     });
 
-Hide/show field dynamically
+Hide/show field
 --------------------------------------------------
 Hide/show fields once value of another field changes:
 
