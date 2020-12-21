@@ -33,11 +33,6 @@ Read more about different events in :doc:`Manager section </javascript/manager>`
  :local:
  :depth: 1
 
-
-.. contents::
- :local:
- :depth: 1
-
 Populate field value
 --------------------------------------------------
 Set the field once the form loads:
@@ -133,8 +128,6 @@ Hide/show fields once value of another field changes:
         hideOrShowDueDate();
 
     });
-
-You can hide multiple fields by assigning all of them a unique Class, and using this Class to refer to multiple fields:
 
 Require field based on condition
 --------------------------------------------------

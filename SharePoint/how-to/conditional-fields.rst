@@ -131,8 +131,6 @@ Hide/show fields once value of another field changes:
 
     });
 
-You can hide multiple fields by assigning all of them a unique Class, and using this Class to refer to multiple fields:
-
 Require field based on condition
 --------------------------------------------------
 Set field to required state if conditions are meant:

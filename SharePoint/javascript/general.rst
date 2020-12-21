@@ -142,11 +142,26 @@ SharePoint variables
                 //make Site available in browser's console
                 window.Site = Site;
     
+    *   -   **graph**
+        -   |Microsoft Graph API| for calling Microsoft Graph rest services
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                //make graph available in browser's console
+                window.graph = graph;
+    
 
 .. |jQuery library| raw:: html
 
     <a href="https://jquery.com" target="_blank">jQuery library</a>
 
+.. |Microsoft Graph API| raw:: html
+
+    <a href="https://pnp.github.io/pnpjs/graph/" target="_blank">Microsoft Graph API</a>
 
 .. |pnpjs library| raw:: html
 
