@@ -162,7 +162,7 @@ And the following code can be used to retrieve profile properties for a user sel
 
 .. Important::  In order to retrieve user profile properties with Graph API, you first need to make sure that the Microsoft Graph app has the permissions to access data on your tenant.
 
-                For this, make sure to install Microsoft 365 CLI (you'll need to install Node.js first in order to do that).
+                For this, make sure to install |Microsoft 365 CLI| (you'll need to install Node.js first in order to do that).
 
                 Connect it to your Office 365 tenant from the command line:
 
@@ -175,3 +175,7 @@ And the following code can be used to retrieve profile properties for a user sel
                 .. code-block:: javascript
 
                     m365 spo serviceprincipal grant add --resource "Microsoft Graph" --scope "User.Read"
+
+.. |Microsoft 365 CLI| raw:: html
+
+    <a href="https://pnp.github.io/cli-microsoft365/" target="_blank">Microsoft 365 CLI</a>
