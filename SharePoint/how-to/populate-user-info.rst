@@ -139,47 +139,25 @@ For example, the following code will allow you to retrieve and populate fields w
 
 .. code-block:: javascript
 
-    function updateCurrentUserInfoGraph() {
-        graph.me().then(function(props) {            
-            for (var prop in props) {
-                switch (prop) {
-                    case 'jobTitle':
-                        fd.field('JobTitle').value = props[prop];
-                        break;
-                }
-            } 
-        });
-    } 
-
     fd.spRendered(function() {
-        //executes updateCurrentUserInfoGraph on form load
-        updateCurrentUserInfoGraph();
-    }); 
+        graph.me().then(function(props) {
+            fd.field('JobTitle').value = props.jobTitle;
+        });
+    });
 
 And the following code can be used to retrieve profile properties for a user selected in Person field:
 
 .. code-block:: javascript
 
-    function updateUserInfoGraph() {
-        var employee = fd.field('PersonFieldName').value;
-
-        if (employee && employee.EntityData && employee.EntityData.Email){
-            graph.users.getById(employee.EntityData.Email)().then(function(props){
-                for (var prop in props) {
-                    switch (prop) {
-                        case 'jobTitle':
-                            fd.field('JobTitle').value = props[prop];
-                            break;
-                    }
-                }
-            });
-        }
-    } 
-
     fd.spRendered(function() {
-        //executes updateUserInfo on field change
-        fd.field('PersonFieldName').$on('change', updateUserInfoGraph);
-    }); 
+        fd.field('PersonFieldName').$on('change', function(user) {
+            if (user && user.EntityData && user.EntityData.Email){
+                graph.users.getById(user.EntityData.Email)().then(function(props){
+                    fd.field('JobTitle').value = props.jobTitle;
+                });
+            }	
+        });
+    });
 
 
 .. Important::  In order to retrieve user profile properties with Graph API, you first need to make sure that the Microsoft Graph app has the permissions to access data on your tenant.
