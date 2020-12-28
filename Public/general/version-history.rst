@@ -6,6 +6,12 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.4.7
+--------------------------------------------------
+Reorganized general properties of fields
+
+Minor bug fixes
+
 Web Designer v1.4.6
 --------------------------------------------------
 Added improvements in editing properties in web designer 
