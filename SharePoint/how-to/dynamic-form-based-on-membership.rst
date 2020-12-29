@@ -14,29 +14,10 @@ Assume you need to design an expense approval form. The approval process require
  :local:
  :depth: 1
 
-Expense Approval Form 
+Edit Form 
 --------------------------------------------------
 
-Here, we focus on designing the Edit form, as it differs for different user groups. The Edit form contains the following fields.
-
-Available to employees: 
-
-- Employee Name (plain text field); 
-- Expense Amount (currency field); 
-- Expense Date (date and time field); 
-- Expense Reason (multiline text field). 
-
-Available to administrators: 
-
-- Administrator Feedback (choice field); 
-- Administrator Comment (multiple-line text field). 
-
-Available to managers: 
-
-- Manager Feedback (choice field); 
-- Manager Comment (multiple-line text field). 
-
-We set all fields available to employees to the read-only state since their values should not be changed after the item creation. 
+We set all fields available to employees on Edit Form to the read-only state since their values should not be changed after the item creation. 
 
 |pic1|
 
@@ -102,10 +83,6 @@ Here is the demonstration of the Expense Approval Form.
 
 .. |pic3| image:: ../images/how-to/dynamic-form-based-on-membership/dynamic-form-based-on-membership-00.gif
    :alt: Dynamic Form
-
-Examples
------------------------------------------------------
-Also, you can use :doc:`Form Sets </designer/form-sets>` to create personal forms for different user groups. Find out how to do it :doc:`here </examples/ticket-management>`.
 
 .. |PnPjs|  raw:: html
 
