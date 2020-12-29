@@ -130,4 +130,4 @@ Then, you can use the following code to first hide some fields, and then show th
       showHideFields();
    });
 
-For an example of how to use **PnPjs library** and SharePoint groups to achieve the same result, please, check out - :doc:`display specific sections of SharePoint form conditionally based on user’s membership <./dynamic-form-based-on-membership>`.
+For an example of how to use **PnPjs library** and SharePoint groups to achieve the same result, please, check out - :doc:`display specific sections of SharePoint form conditionally based on user’s membership <../examples/dynamic-form-based-on-membership>`.

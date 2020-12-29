@@ -75,6 +75,7 @@ Plumsail Forms Documentation (SharePoint forms)
             :maxdepth: 1
 
             Ticket management system <examples/ticket-management>
+            Dynamic form for a user group <examples/dynamic-form-based-on-membership>
             Conference room reservation system <examples/reservation-system>
             Discussion within a SharePoint form <examples/add-discussion>
             Version history within a SharePoint form <examples/version-history>
