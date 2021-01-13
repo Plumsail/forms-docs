@@ -3,40 +3,23 @@
 .. meta::
    :description: Only show parts of the form based on user's membership - for example, hide certain parts for regular users, and only show them to supervisors/admins 
 
-How to display specific sections of SharePoint form conditionally based on user's membership
-=============================================================================================
+How to display specific sections of SharePoint form conditionally based on user's SharePoint groups
+=====================================================================================================
 
 From this article, you will know how to manipulate fields dynamically depending on groups the current user belongs to. This approach is an alternative to the form sets and can be helpful in cases when forms for different groups are almost identical. For instance, when you need to hide a few fields from all users except the users of a certain group. 
   
 Assume you need to design an expense approval form. The approval process requires feedback from users who belong to Administrators and Managers groups. An administrator should not see a comment left by a manager. And a manager should not be able to edit a comment posted by an administrator. 
 
+.. Note:: Achieve the same functionality with O365 groups instead of SharePoint groups with :doc:`Personalize form based on user group in Azure Ad or Office365 <../how-to/forms-for-groups>` article.
+
 .. contents::
  :local:
  :depth: 1
 
-Expense Approval Form 
+Edit Form 
 --------------------------------------------------
 
-Here, we focus on designing the Edit form, as it differs for different user groups. The Edit form contains the following fields.
-
-Available to employees: 
-
-- Employee Name (plain text field); 
-- Expense Amount (currency field); 
-- Expense Date (date and time field); 
-- Expense Reason (multiline text field). 
-
-Available to administrators: 
-
-- Administrator Feedback (choice field); 
-- Administrator Comment (multiple-line text field). 
-
-Available to managers: 
-
-- Manager Feedback (choice field); 
-- Manager Comment (multiple-line text field). 
-
-We set all fields available to employees to the read-only state since their values should not be changed after the item creation. 
+We set all fields available to employees on Edit Form to the read-only state since their values should not be changed after the item creation. 
 
 |pic1|
 
@@ -50,7 +33,7 @@ Since the fields available to managers and administrators only should be hidden 
 .. |pic2| image:: ../images/how-to/dynamic-form-based-on-membership/dynamic-form-based-on-membership-02.png
    :alt: CSS Class
 
-Manipulating fields dynamically depending on user's membership
+JavaScript
 ----------------------------------------------------------------------------------------------------
 
 To check if the current user belongs to a certain group, we use |PnPjs| library that is built into Plumsail Forms. Depending on the user's membership, we hide or disable specific sections.  
@@ -102,10 +85,6 @@ Here is the demonstration of the Expense Approval Form.
 
 .. |pic3| image:: ../images/how-to/dynamic-form-based-on-membership/dynamic-form-based-on-membership-00.gif
    :alt: Dynamic Form
-
-Examples
------------------------------------------------------
-Also, you can use :doc:`Form Sets </designer/form-sets>` to create personal forms for different user groups. Find out how to do it :doc:`here </examples/ticket-management>`.
 
 .. |PnPjs|  raw:: html
 
