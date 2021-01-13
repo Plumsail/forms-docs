@@ -1,9 +1,9 @@
 .. title:: Personalize SharePoint forms for user groups
 
 .. meta::
-   :description: Provide unique forms for users based on their membership in Azure AD, Office365 or SharePoint groups
+   :description: Provide unique forms for users based on their membership in Azure AD (Office 365) or SharePoint groups
 
-Personalize form based on user group in Azure Ad or Office365
+Personalize form based on user group in SharePoint or Azure AD (Office 365)
 ======================================================================================
 
 This article will show you how to create custom forms for users of different groups. Some ways are easier than others, but we want you to see all available options.
@@ -12,7 +12,7 @@ This article will show you how to create custom forms for users of different gro
  :local:
  :depth: 1
 
-Routing based on SharePoint groups
+Routing based on SharePoint security groups
 --------------------------------------------------
 This is the easiest option to customize forms for a user group. All you need to do is to create a new :doc:`Form Set <../designer/form-sets>`, and select which groups will be redirected to it:
 
@@ -25,15 +25,15 @@ Then the users of this group will automatically redirect to it, all the others w
 
 For a practical example of how to customize forms for a specific SharePoint group, check out :doc:`add personal form for creating and tracking tickets to any SP page <../examples/ticket-management>`.
 
-Routing based on O365 groups
+Routing based on Azure AD (Office 365) groups 
 --------------------------------------------------
-You can use custom routing and |Microsoft Graph API| to retrieve Office365 groups and check current user's membership.
+You can use custom routing and |Microsoft Graph client| to retrieve Office365 groups and check current user's membership.
 
-.. |Microsoft Graph API| raw:: html
+.. |Microsoft Graph client| raw:: html
 
-    <a href="https://pnp.github.io/pnpjs/graph/" target="_blank">Microsoft Graph API</a>
+    <a href="https://pnp.github.io/pnpjs/graph/" target="_blank">Microsoft Graph client</a>
 
-.. Important::  In order to retrieve user profile properties with Graph API, you first need to make sure that the Microsoft Graph app has the permissions to access data on your tenant.
+.. Important::  In order to retrieve user profile properties with Graph API, you first need to make sure that the Microsoft Graph client has the permissions to check if the current user belongs to specific 365 groups of your tenant.
 
                 For this, make sure to install |Microsoft 365 CLI| (you'll need to install Node.js first in order to do that).
 
@@ -87,9 +87,9 @@ We check the user's groups and only redirect user to the Form if they belong to 
 
     <a href="https://pnp.github.io/cli-microsoft365/" target="_blank">Microsoft 365 CLI</a>
 
-Show/hide sections based on O365 groups
---------------------------------------------------
-Another option that you have is not to design a separate Form Set, but instead hide and show elements based on user's group membership. You still need to configure |Microsoft Graph API| as described in the previous section.
+Show/hide forms sections based on Azure AD (Office 365) groups
+--------------------------------------------------------------------
+Another option that you have is not to design a separate Form Set, but instead hide and show elements based on user's group membership. You still need to configure |Microsoft Graph client| as described in the previous section.
 
 Then, you can use the following code to first hide some fields, and then show them if user belongs to a specific group:
 
