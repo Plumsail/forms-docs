@@ -6,6 +6,12 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.4.8
+--------------------------------------------------
+Added support of sorting and filtering in Data Table controls 
+
+New properties for the public forms: redirect URL, thank you message, option to hide the form after submission, or to add a timeout between submission
+
 Web Designer v1.4.7
 --------------------------------------------------
 Reorganized general properties of fields

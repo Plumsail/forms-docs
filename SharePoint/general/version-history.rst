@@ -7,6 +7,12 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.7.7
+--------------------------------------------------
+Added support of Image fields in SharePoint forms
+
+Fixed auto-adjustment of columns in List or Library control and optimized the performance
+
 v1.7.6
 --------------------------------------------------
 Added the Height property to List or Library control
