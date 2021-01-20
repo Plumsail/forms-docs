@@ -69,30 +69,30 @@ This button allows you to customize CSS for the whole form - if theme settings a
 .. |css| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-css.png
    :alt: CSS editor button
 
-Export and Import
+Settings
 --------------------------------------------------
-Use these buttons if you want to export configuration of your form. For example, you can do this to create a backup of the form, which you might later change, and revert back to the exported version. Or you can move forms between different Plumsail Account using this feature.
-
-|export-import|
-
-.. |export-import| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-export-import.png
-   :alt: Export and Import buttons
-
-General Settings
---------------------------------------------------
-This button simply opens General Settings menu on the right side of the screen. Only usable after the form has been saved.
+This button opens General settings menu. Only usable after the form has been saved.
 
 |general-button|
 
 .. |general-button| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-general.png
    :alt: General Settings button
 
-General Settings will allow you to configure if the form is active, if submissions need to be stored, if you need to receive email notifications on submissions or not. You can also copy form ID, widget and a Form Link from this menu.
+General Settings will allow you to configure if the **form is active**, if **submissions need to be stored**, and if you need to receive **email notifications** on submissions. 
+
+Additionally, you can select what **Thank you message** will be displayed after the form is submitted, whether the user needs to be **redirected**, and if the form needs to be **hidden after submission**. If you decide to hide the form after submission, you can also **add a delay** until the same user can submit the form again.
 
 |general-settings|
 
 .. |general-settings| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-web-general-menu.png
-   :alt: General Settings menu
+   :alt: General settings menu
+
+You can also open Sharing settings to copy link to form or a widget for your site:
+
+|sharing-settings|
+
+.. |sharing-settings| image:: ../images/designer/ribbon-actions/designer-ribbon-actions-sharing-settings.png
+   :alt: Sharing settings menu
 
 .. _designer-layouts:
 
