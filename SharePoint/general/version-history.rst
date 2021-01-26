@@ -7,6 +7,14 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.7.8
+--------------------------------------------------
+Added Hint property to SharePoint fields
+
+Added support of Description and BannerImageUrl of Site Pages library
+
+Added filtering for List or Library by multi-lookup fields
+
 v1.7.7
 --------------------------------------------------
 Added support of Image fields in SharePoint forms

@@ -8,11 +8,7 @@ Managing form with JavaScript in Plumsail Forms for SharePoint
 
 **fd** is a Forms designer manager variable. Whenever you want to use custom methods on the form, you need to call the manager first. 
 
-**fd** is not global and only accesible from within the form, e.g. from JavaScript editor. 
-
-It is accesible globally in Form Preview, so you can run tests from browser's console.
-
-Otherwise, it will not be accesible globally on the page, so you can include several forms on one page and not worry about their scripts conflicting at all.
+**fd** is not global and only accesible from within the form, e.g. from JavaScript editor, so you can include several forms on one page and not worry about their scripts conflicting at all.
 
 .. contents::
  :local:
