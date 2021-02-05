@@ -6,6 +6,12 @@
 How to filter lookup by another field: Choice, Lookup, or Person
 =============================================================================
 
+.. raw:: html
+
+    <div data-nosnippet="true"><iframe width="840" height="472" src="https://www.youtube.com/embed/a-T_oRohlvM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+|
+
 Property of the lookup field **Depends on** allows you to set up a filter condition on a lookup field without any JavaScript. This way you can filter a lookup by variety of fields, starting with simple ones such as Single Line text and Choice, but also by single value Lookup or Person fields.
 
 .. Note:: More advanced filter conditions are possible programmatically, you can find an example in our :doc:`Filter by another field with JavaScript <./lookup-cascading>`
