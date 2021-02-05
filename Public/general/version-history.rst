@@ -189,7 +189,7 @@ Minor bug fixes.
 
 v1.1.0
 --------------------------------------------------
-Added :ref:`theme support for Public Web Forms<designer-publicthemes>`.
+Added :doc:`theme support for Public Web Forms</designer/themes>`.
 
 v1.0.5
 --------------------------------------------------

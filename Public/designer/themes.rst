@@ -6,10 +6,6 @@
 Configuring theme for online forms designed with Plumsail Forms
 ===============================================================================
 
-.. _designer-publicthemes:
-
-Themes for Public Web Forms
--------------------------------------------------------------
 Using themes is an easy and quick way to change coloring scheme for all Fields, Controls and Containers, as well as default font, and field borders.
 
 Here's an example of the same form with different themes:
