@@ -59,6 +59,35 @@ This can be achieved with a simple validator:
 
 .. Note::   You can adjust the number in the code to make more records required or add other conditions for a more complex validation.
 
+Populating Dropdown column
+-----------------------------------------------------------
+To populate dropdown column of DataTable control dynamically, use the code:
+
+.. code-block:: javascript
+
+    fd.rendered(function() {
+        fd.control('DataTable1').$on('edit', function(e) {
+            console.log(e)
+            if (e.column.field === "Column1") {
+                //pass widget + current column value
+                console.log(e.model);
+                populateColumn(e.widget, e.model.Column1);
+            }
+        })
+
+    });
+
+    function populateColumn(widget, value) {
+
+        widget.setDataSource({
+            data: ['Category A', 'Category B', 'Category C']
+        });
+
+        //set value if one was select
+        widget.value(value);
+    }
+
+
 Set fields based on other fields
 --------------------------------------------------
 Sometimes, you might want to set fields automatically, without direct user input:

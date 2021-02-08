@@ -77,10 +77,10 @@ To populate dropdown column of DataTable control dynamically, use the code:
 
     });
 
-    function populateCategories(widget, value) {
+    function populateColumn(widget, value) {
 
         widget.setDataSource({
-            data: ['Category1', 'Category2', 'Category3']
+            data: ['Category A', 'Category B', 'Category C']
         });
 
         //set value if one was select
