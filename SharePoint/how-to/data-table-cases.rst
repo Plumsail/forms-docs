@@ -59,7 +59,33 @@ This can be achieved with a simple validator:
 
 .. Note::   You can adjust the number in the code to make more records required or add other conditions for a more complex validation.
 
-Populating Dropdown column
+Prepopulating column value for new row
+-----------------------------------------------------------
+To prepopulate column values of a new row in DataTable control, use the code:
+
+.. code-block:: javascript
+
+    fd.rendered(function() {
+        //select DataTable control to prepopulate
+        var dt = fd.control('DataTable1');
+        var isNew = false;
+
+        dt.widget.wrapper.find('.k-grid-add').on('click', e => {
+            isNew = true;
+        });
+
+        dt.widget.bind('edit', function(e) {
+            if (isNew) {
+                isNew = false;
+                //set values for Column1 and Column2
+                e.model.set('Column1', 'Item 2');
+                e.model.set('Column2', 'Item 3');
+            }
+        });
+    });
+
+
+Populating Dropdown column options
 -----------------------------------------------------------
 To populate dropdown column of DataTable control dynamically, use the code:
 
@@ -192,3 +218,52 @@ If you're getting an incorrect value in one of your fields, for example, in Orde
 
 .. image:: ../images/how-to/data-table-cases/how-to-data-table-cases-fieldformat.png
    :alt: Configure format for your fields
+
+Add a button to duplicate row
+--------------------------------------------------
+You can add a button to DataTable rows, which will allow you to duplicate them, like this:
+
+.. image:: ../images/how-to/data-table-cases/how-to-data-table-cases-duplicate-button.gif
+   :alt: Button to duplicate row
+
+
+Use the following code:
+
+.. code-block:: javascript
+
+        fd.rendered(function() {
+            //select DataTable control to add new column to
+            var dt = fd.control('DataTable1');
+            var columns = dt.widget.options.columns;
+            var customRowDataItem = null;
+            var isCustomAdd = false;
+
+            //specify what the column will be like
+            columns.push({
+                command: {
+                    text: "Copy row",
+                    iconClass:"k-icon k-i-copy",
+                    click: function(e) {
+                        e.preventDefault();
+                        customRowDataItem = this.dataItem($(e.currentTarget).closest("tr"));
+                        isCustomAdd = true;
+                        this.addRow();
+                    }
+                }
+            });
+            dt.widget.setOptions({
+                columns: columns
+            });
+            dt.widget.bind('edit', function(e) {
+                if (isCustomAdd && e.model.isNew()) {
+                    isCustomAdd = false;
+                    for (var i = 0; i < columns.length; i++) {
+                        var field = columns[i].field;
+                        if (field) {
+                            e.model.set(field, customRowDataItem[field]);
+                        }
+                    }
+                    e.sender.closeCell(e.container);
+                }
+            });
+        });
