@@ -33,7 +33,7 @@ disqus_shortname = 'plumsail'  # Add this line to conf.py.
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx_sitemap']  # 'sphinxcontrib.disqus', 'rst2pdf.pdfbuilder']  # Add to this list.
-html_baseurl = 'https://plumsail.com/docs/forms/' #for sitemap
+html_baseurl = 'https://plumsail.com/docs/forms-web/' #for sitemap
 
 #pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
 
