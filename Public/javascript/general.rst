@@ -3,7 +3,7 @@
 .. meta::
    :description: General information and JavaScript API variables of Plumsail Forms (public forms)
 
-Introduction to JavaScript framework of Plumsail Forms (public forms)
+JavaScript framework of Plumsail Forms (public forms)
 ====================================================================================================
 
 Modern Forms are highly customizable and it's JavaScript which allows you to go above and beyond any limitations you might face.

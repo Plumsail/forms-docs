@@ -3,7 +3,7 @@
 .. meta::
    :description: How to create public web forms - learn the basics: web editor vs desktop editor, add fields, controls and containers, save the form
 
-Designing online forms with Plumsail Forms
+Designing web forms with Plumsail Forms
 ==================================================
 
 Public Web Forms currently offer 2 ways to design forms - using :ref:`start-web-designer` or using :ref:`start-desktop-designer`.

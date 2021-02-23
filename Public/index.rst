@@ -3,19 +3,20 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Plumsail Forms Documentation (public web forms) 
+Plumsail Forms Documentation (web forms) 
 =================================================
 
 .. toctree::
-   :hidden:
+  :hidden:
 
-   self
+  Table of contents <self>
 
 .. container:: pl-left-column
 
       .. toctree::
             :caption: Getting started
             :maxdepth: 1
+            :titlesonly:
 
             Installation <./installation>
             Designing forms <./design>
@@ -28,6 +29,7 @@ Plumsail Forms Documentation (public web forms)
             :caption: General
             :name: generaltoc
             :maxdepth: 1
+            :titlesonly:
             
             Version history <general/version-history>
             Roadmap <general/roadmap>  
@@ -40,6 +42,7 @@ Plumsail Forms Documentation (public web forms)
       .. toctree::
             :caption: Designer
             :maxdepth: 1
+            :titlesonly:
 
             Toolbar actions <designer/toolbar-actions>
             Themes <designer/themes>
@@ -50,6 +53,7 @@ Plumsail Forms Documentation (public web forms)
       .. toctree::
             :caption: JavaScript framework 
             :maxdepth: 1
+            :titlesonly:
 
             Introduction <javascript/general>
             Manager <javascript/manager>
@@ -60,6 +64,7 @@ Plumsail Forms Documentation (public web forms)
       .. toctree::
             :caption: Examples
             :maxdepth: 1
+            :titlesonly:
 
             Expense reimbursement form <examples/expense-reimbursement>
             Online quiz and graphic results <examples/build-excel-charts>
@@ -72,6 +77,7 @@ Plumsail Forms Documentation (public web forms)
       .. toctree::
             :caption: How-to
             :maxdepth: 2
+            :titlesonly:
 
             how-to/layout
             how-to/fields
@@ -82,6 +88,7 @@ Plumsail Forms Documentation (public web forms)
       .. toctree::
             :caption: Integrations
             :maxdepth: 2
+            :titlesonly:
 
             integrations/saving-sharing
             integrations/document-generation

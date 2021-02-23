@@ -3,7 +3,7 @@
 .. meta::
    :description: How to start using public web forms - step by step text instruction with images and video guide
 
-Installation of Plumsail Forms for public web forms
+Installation of Plumsail Forms (public forms)
 ==========================================================
 
 .. raw:: html

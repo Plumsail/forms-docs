@@ -3,7 +3,7 @@
 .. meta::
    :description: General information and JavaScript API variables of Plumsail Forms for SharePoint
 
-Introduction to JavaScript framework of Plumsail Forms for SharePoint
+JavaScript framework of Plumsail Forms for SharePoint
 ======================================================================
 
 Modern Forms are highly customizable and it's JavaScript which allows you to go above and beyond any limitations you might face.

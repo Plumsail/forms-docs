@@ -3,19 +3,20 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Plumsail Forms Documentation (SharePoint forms)
+Plumsail Forms Documentation (SharePoint)
 =================================================
 
 .. toctree::
-   :hidden:
+  :hidden:
 
-   self
+  Table of contents <self>
 
 .. container:: pl-left-column
 
       .. toctree::
             :caption: Getting started
             :maxdepth: 1
+            :titlesonly:
 
             Installation to SharePoint Online (Office 365) <./installation-sp>
             Installation to SharePoint 2019 <./installation-2019>
@@ -25,6 +26,7 @@ Plumsail Forms Documentation (SharePoint forms)
             :caption: General
             :name: generaltoc
             :maxdepth: 1
+            :titlesonly:
             
             Version history (SharePoint Online) <general/version-history> 
             Version history (SharePoint 2019) <general/version-history2019> 
@@ -37,6 +39,7 @@ Plumsail Forms Documentation (SharePoint forms)
       .. toctree::
             :caption: Designer
             :maxdepth: 1
+            :titlesonly:
 
             Ribbon actions <designer/ribbon-actions> 
             Form sets <designer/form-sets> 
@@ -52,6 +55,7 @@ Plumsail Forms Documentation (SharePoint forms)
       .. toctree::
             :caption: JavaScript framework 
             :maxdepth: 1
+            :titlesonly:
 
             Introduction <javascript/general> 
             Manager <javascript/manager> 
@@ -65,6 +69,7 @@ Plumsail Forms Documentation (SharePoint forms)
       .. toctree::
             :caption: Provisioning forms
             :maxdepth: 1
+            :titlesonly:
 
             Provisioning API <provision/general> 
             Provisioning forms (samples) <provision/provision>
@@ -73,6 +78,7 @@ Plumsail Forms Documentation (SharePoint forms)
       .. toctree::
             :caption: Examples
             :maxdepth: 1
+            :titlesonly:
 
             Ticket management system <examples/ticket-management>
             Dynamic form for a user group <examples/dynamic-form-based-on-membership>
@@ -90,6 +96,7 @@ Plumsail Forms Documentation (SharePoint forms)
       .. toctree::
             :caption: How-to
             :maxdepth: 2
+            :titlesonly:
 
             Designing complex layouts <how-to/layout>
             Designing personal forms <how-to/personalized>

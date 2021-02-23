@@ -1,9 +1,9 @@
-.. title:: Processing Plumsail Forms in Power Automate
+.. title:: Processing Plumsail Forms in MS Power Automate
 
 .. meta::
    :description: How to get info from forms' submissions with our connector and use them in your flows
 
-Processing submissions of online forms designed with Plumsail Forms in Power Automate (MS Flow)
+Processing submissions of online forms designed with Plumsail Forms in MS Power Automate
 ====================================================================================================
 
 |Flow| allows you to integrate various apps and services by creating 
@@ -11,7 +11,7 @@ automatic workflows between them to collect data, synchronize files, receive not
 
 .. |Flow| raw:: html
 
-   <a href="https://flow.microsoft.com/en-us/" target="_blank">Power Automate (MS Flow)</a>
+   <a href="https://flow.microsoft.com/en-us/" target="_blank">Power Automate</a>
 
 Plumsail Forms can be utilized with Power Automate in a variety of ways. 
 Data submitted with Plumsail Forms can go through flows and only you decide what to do with it:

@@ -4,7 +4,7 @@
    :description: All versions, changes and updates of Plumsail Forms for SharePoint Online are described here
 
 
-Version history of Plumsail Forms for SharePoint Online (Office 365)
+Plumsail Forms version history for SharePoint Online (Office 365)
 ====================================================================================================
 
 v1.7.8
