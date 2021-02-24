@@ -3,7 +3,7 @@
 .. meta::
    :description: All versions, changes and updates of Plumsail Forms for SharePoint 2019 are described here
 
-Plumsail Forms version history for SharePoint 2019 (On-Premises)
+Version history of Plumsail Forms for SharePoint 2019 (On-Premises)
 ========================================================================================
 
 v1.4.8

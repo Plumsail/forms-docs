@@ -8,5 +8,8 @@ Roadmap of Plumsail Forms (public forms)
 
 Features in development
 -------------------------------------------------------
-- Adding more containers (e.g. Tab Control, Accordion) to web designer
-- Adding advanced controls (e.g. Data Table, Ink Sketch, Likert Scale) to web designer
+Possible user authentication via MS Account
+
+Permissions management based on Azure AD
+
+Support for external data sources

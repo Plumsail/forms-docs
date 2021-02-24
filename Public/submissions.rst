@@ -3,7 +3,7 @@
 .. meta::
    :description: Save, preview, re-submit and export previous submissions of public web forms in your Plumsail Account
 
-Collecting submissions of online forms designed with Plumsail Forms (public forms)
+Collecting submissions of online forms designed with Plumsail Forms
 ===================================================================================
 
 Enable data collection
