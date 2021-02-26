@@ -35,7 +35,7 @@ Assume we want to populate a due date field as today plus 3 days on loading a ne
         require(['moment'], function(moment) {
             var today = moment(new Date());
             var newDate = today.add(3, 'days');
-            fd.field('DueDate').value = newDate.format();
+            fd.field('DueDate').value = moment(newDate).toDate();
         })
     });
 
