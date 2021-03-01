@@ -8,7 +8,6 @@ Roadmap of Plumsail Forms for SharePoint
 
 Features in development
 -------------------------------------------------------
-- New **Lookup** control for connections across site collections
 - Performance improvements for forms containing SharePoint lookup fields
 - Adding more options for routing rules (e.g. AD user groups)
 - Continued improvement of the designer

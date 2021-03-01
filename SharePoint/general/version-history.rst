@@ -7,6 +7,16 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.8.0
+--------------------------------------------------
+Added Lookup control for connecting lists across sites
+
+Aligned numeric columns in Data Tables to the right
+
+Replaced text with checkmarks for boolean columns of Data Tables
+
+.. Note:: :doc:`Update the app package </general/update-package>` for new functionality.
+
 v1.7.8
 --------------------------------------------------
 Added Hint property to SharePoint fields

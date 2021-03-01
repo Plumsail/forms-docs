@@ -6,6 +6,12 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.5.1
+--------------------------------------------------
+Aligned numeric columns in Data Tables to the right
+
+Replaced text with checkmarks for boolean columns of Data Tables
+
 Web Designer v1.4.8
 --------------------------------------------------
 Added support of sorting and filtering in Data Table controls 
