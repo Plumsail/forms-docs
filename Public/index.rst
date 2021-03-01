@@ -72,19 +72,6 @@ Plumsail Forms for public web forms
             Making handwritten notes on images <examples/notes-on-an-image>
             Embedding forms into Microsoft Teams <examples/ms-teams>
 
-.. container:: pl-right-column
-      
-      .. toctree::
-            :caption: How-to
-            :maxdepth: 2
-            :titlesonly:
-
-            how-to/layout
-            how-to/fields
-            how-to/processing-controls
-            how-to/processing-with-zapier
-            how-to/provision
-      
       .. toctree::
             :caption: Integrations
             :maxdepth: 2
@@ -95,3 +82,70 @@ Plumsail Forms for public web forms
             integrations/collaboration
             integrations/crm
             integrations/social-networks
+
+.. container:: pl-right-column
+
+      .. toctree::
+            :caption: Designing complex layouts 
+            :maxdepth: 1
+            :titlesonly:
+
+            Organize content with Grids <how-to/grid-advantages>
+            Manipulate tabs, accordions, and wizards with JavaScript <how-to/conditional-containers>
+            Align fields to the right for Arabic, Hebrew and other languages <how-to/right-left>
+      
+      .. toctree::
+            :caption: Working with fields in JavaScript 
+            :maxdepth: 1
+            :titlesonly:
+
+            Manipulate field properties and appearance <how-to/conditional-fields>
+            Work with Date and Time fields <how-to/manipulate-date-field>
+            Work with Data Table <how-to/data-table-cases>
+
+      .. toctree::
+            :caption: Processing Data Table, Ink Sketch, Likert Scale with Power Automate
+            :maxdepth: 1
+            :titlesonly:
+
+            Convert Data Table into PDF document  <how-to/data-table-flow>
+            Convert Data Table into HTML document <how-to/data-table-convert-html>
+            Save Data Table rows to SharePoint list <how-to/data-table-to-sp>
+            Save Data Table, Ink Sketch, Likert Scale to SharePoint columns <how-to/save-controls-to-sp>
+            Save Data Table rows to Excel or Google Sheets <how-to/excel-datatable>
+
+      .. toctree::
+            :caption: Working with fields in JavaScript 
+            :maxdepth: 1
+            :titlesonly:
+
+            Manipulate field properties and appearance <how-to/conditional-fields>
+            Work with Date and Time fields <how-to/manipulate-date-field>
+            Work with Data Table <how-to/data-table-cases>
+
+      .. toctree::
+            :caption: Processing Data Table, Ink Sketch, Likert Scale with Power Automate
+            :maxdepth: 1
+            :titlesonly:
+
+            Convert Data Table into PDF document  <how-to/data-table-flow>
+            Convert Data Table into HTML document <how-to/data-table-convert-html>
+            Save Data Table rows to SharePoint list <how-to/data-table-to-sp>
+            Save Data Table, Ink Sketch, Likert Scale to SharePoint columns <how-to/save-controls-to-sp>
+            Save Data Table rows to Excel or Google Sheets <how-to/excel-datatable>
+
+      .. toctree::
+            :caption: Processing Data Table, Likert Scale with Zapier
+            :maxdepth: 1
+            :titlesonly:
+
+            Save Data Table rows to Google Sheets <how-to/zapier-googlesheets>
+            Save Likert Scale answers to Excel <how-to/zapier-excelchart>
+
+      .. toctree::
+            :caption: Provisioning public forms with NuGet package
+            :maxdepth: 1
+            :titlesonly:
+
+            Create and provision web forms programmatically <how-to/provision-api>
+            how-to/provision-example
