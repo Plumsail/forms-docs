@@ -22,7 +22,7 @@ Plumsail Forms for public web forms
             Designing forms <./design>
             Sharing forms <./sharing>
             Collecting form data <./submissions>
-            Handling form data in Power Automate (MS Flow) <./microsoft-flow>
+            Handling form data in Power Automate <./microsoft-flow>
             Handling form data in Zapier <./zapier>
 
       .. toctree::
@@ -113,15 +113,6 @@ Plumsail Forms for public web forms
             Save Data Table rows to SharePoint list <how-to/data-table-to-sp>
             Save Data Table, Ink Sketch, Likert Scale to SharePoint columns <how-to/save-controls-to-sp>
             Save Data Table rows to Excel or Google Sheets <how-to/excel-datatable>
-
-      .. toctree::
-            :caption: Working with fields in JavaScript 
-            :maxdepth: 1
-            :titlesonly:
-
-            Manipulate field properties and appearance <how-to/conditional-fields>
-            Work with Date and Time fields <how-to/manipulate-date-field>
-            Work with Data Table <how-to/data-table-cases>
 
       .. toctree::
             :caption: Processing Data Table, Ink Sketch, Likert Scale with Power Automate
