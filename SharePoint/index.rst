@@ -94,15 +94,84 @@ Plumsail Forms for SharePoint
 .. container:: pl-right-column
       
       .. toctree::
-            :caption: How-to
-            :maxdepth: 2
+            :caption: Designing complex layouts
+            :maxdepth: 1
             :titlesonly:
 
-            Designing complex layouts <how-to/layout>
-            Designing personal forms <how-to/personalized>
-            Navigation between forms <how-to/navigation>
-            Working with fields in JavaScript <how-to/fields>
-            how-to/list-or-library-section
-            Working with Lookup field <how-to/lookup-section>
-            Generating PDF documents <how-to/pdf>
-            Integration with Power Automate (MS Flow) <how-to/microsoft-flow>
+            Organize content with Grids <how-to/grid-advantages> 
+            Manipulate tabs, accordions, and wizards with JavaScript <how-to/conditional-containers> 
+            Align fields to the right for Arabic, Hebrew and other languages <how-to/right-left> 
+            Restore previous versions of your form <how-to/form-versions> 
+
+      .. toctree::
+            :caption: Designing personal forms
+            :maxdepth: 1
+            :titlesonly:
+
+            ./forms-for-groups
+            Open edit form by default for a user group <how-to/edit-form>
+            Create forms in multiple languages <how-to/language>
+
+      .. toctree::
+            :caption: Navigation between forms
+            :maxdepth: 1
+            :titlesonly:
+
+            Redirect user after form submission <how-to/redirect-sp-save>
+            Open any form in dialog from another form <how-to/form-dialog>
+            Generate link to SharePoint form <how-to/link-to-form>
+
+      .. toctree::
+            :caption: Working with fields in JavaScript
+            :maxdepth: 1
+            :titlesonly:
+
+            Manipulate field properties and appearance <how-to/conditional-fields>
+            Work with Date and Time fields <how-to/manipulate-date-field>
+            Work with Data Table <how-to/data-table-cases>    
+            Get field values of parent form from child form opened in a dialog <how-to/pass-values>
+            Populate common Drop Down field with values from any SharePoint list <how-to/populate-dropdowns>
+            Populate Drop Down column of Data Table with values from any SharePoint list <how-to/dynamic-datatable>
+            Populate fields with profile information <how-to/populate-user-info>
+
+      .. toctree::
+            :caption: Working with List or Library control
+            :maxdepth: 1
+            :titlesonly:
+
+            Create forms with related items or documents <how-to/child-parent-form>
+            Navigate to specific folder dynamically <how-to/root-folder>
+            Filter related items or documents dynamically <how-to/caml-filter>
+            Update properties of uploaded files <how-to/document-meta>
+            Add or customize buttons in the toolbar <how-to/list-or-library-buttons>
+            Manipulate fields in inline editing mode <how-to/list-or-library-inline>
+            Customize view of columns <how-to/list-or-library-columns>
+
+      .. toctree::
+            :caption: Working with SharePoint lookup field
+            :maxdepth: 1
+            :titlesonly:
+
+            Customize appearance of search results <how-to/lookup-view>
+            Filter by another field: Lookup, Person, Choice <how-to/lookup-filter>
+            Filter by another field with JavaScript <how-to/lookup-cascading>
+            Search and filter large lists (more than 5,000 Items) <how-to/lookup-5k>
+
+      .. toctree::
+            :caption: Generating PDF documents
+            :maxdepth: 1
+            :titlesonly:
+
+            Save SharePoint form as PDF <how-to/export-to-pdf-setup>
+            Generate PDF from DOCX template with Plumsail Processes <how-to/create-pdf-processes>
+            Generate PDF from DOCX template with Word Online (Business) <how-to/create-pdf-power-automate>
+
+
+      .. toctree::
+            :caption: Integration with Power Automate
+            :maxdepth: 1
+            :titlesonly:
+
+            Send e-mail notification after submitting SharePoint form <how-to/flow>
+            Start flow after submitting SharePoint form and wait for results <how-to/flow-edit-display>
+            Start flow from List or Library and pass selected items <how-to/list-or-library-export>
