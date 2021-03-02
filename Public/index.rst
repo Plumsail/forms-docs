@@ -75,7 +75,7 @@ Plumsail Forms for public web forms
 .. container:: pl-right-column
 
       .. toctree::
-            :caption: Designing complex layouts 
+            :caption: Complex layouts 
             :maxdepth: 1
             :titlesonly:
 
@@ -93,7 +93,7 @@ Plumsail Forms for public web forms
             Data Table: populate cells, calculate totals, duplicate rows <how-to/data-table-cases>
 
       .. toctree::
-            :caption: Processing advanced controls in Power Automate
+            :caption: Advanced controls in Power Automate
             :maxdepth: 1
             :titlesonly:
 
@@ -104,7 +104,7 @@ Plumsail Forms for public web forms
             Save Data Table rows to Excel or Google Sheets <how-to/excel-datatable>
 
       .. toctree::
-            :caption: Processing advanced controls in Zapier
+            :caption: Advanced controls in Zapier
             :maxdepth: 1
             :titlesonly:
 

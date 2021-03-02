@@ -94,17 +94,17 @@ Plumsail Forms for SharePoint
 .. container:: pl-right-column
       
       .. toctree::
-            :caption: Designing complex layouts
+            :caption: Complex layouts
             :maxdepth: 1
             :titlesonly:
 
             Organize content with Grids <how-to/grid-advantages> 
-            Manipulate tabs, accordions, and wizards with JavaScript <how-to/conditional-containers> 
+            Manipulate Tabs, Accordions, and Wizards with JavaScript <how-to/conditional-containers> 
             Align fields to the right for Arabic, Hebrew and other languages <how-to/right-left> 
-            Restore previous versions of your form <how-to/form-versions> 
+            Restore previous versions of a form <how-to/form-versions> 
 
       .. toctree::
-            :caption: Designing personal forms
+            :caption: Personal forms
             :maxdepth: 1
             :titlesonly:
 
@@ -126,29 +126,29 @@ Plumsail Forms for SharePoint
             :maxdepth: 1
             :titlesonly:
 
-            Manipulate field properties and appearance <how-to/conditional-fields>
-            Work with Date and Time fields <how-to/manipulate-date-field>
-            Work with Data Table <how-to/data-table-cases>    
-            Get field values of parent form from child form opened in a dialog <how-to/pass-values>
-            Populate common Drop Down field with values from any SharePoint list <how-to/populate-dropdowns>
-            Populate Drop Down column of Data Table with values from any SharePoint list <how-to/dynamic-datatable>
+            Populate, hide, disable, make mandatory fields <how-to/conditional-fields>
+            Date and Time: calculate difference, adjust values <how-to/manipulate-date-field>
+            Data Table: populate cells, calculate totals, duplicate rows <how-to/data-table-cases>    
+            Get field values of a parent form from a dialog <how-to/pass-values>
+            Populate common Drop Down field with values from a SharePoint list <how-to/populate-dropdowns>
+            Populate Drop Down column of Data Table with values from a SharePoint list <how-to/dynamic-datatable>
             Populate fields with profile information <how-to/populate-user-info>
 
       .. toctree::
-            :caption: Working with List or Library control
+            :caption: List or Library control
             :maxdepth: 1
             :titlesonly:
 
             Create forms with related items or documents <how-to/child-parent-form>
-            Navigate to specific folder dynamically <how-to/root-folder>
+            Change the root folder dynamically <how-to/root-folder>
             Filter related items or documents dynamically <how-to/caml-filter>
             Update properties of uploaded files <how-to/document-meta>
             Add or customize buttons in the toolbar <how-to/list-or-library-buttons>
-            Manipulate fields in inline editing mode <how-to/list-or-library-inline>
+            Handle fields in inline editing mode <how-to/list-or-library-inline>
             Customize view of columns <how-to/list-or-library-columns>
 
       .. toctree::
-            :caption: Working with SharePoint lookup field
+            :caption: SharePoint Lookup field
             :maxdepth: 1
             :titlesonly:
 
