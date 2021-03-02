@@ -785,6 +785,344 @@ Events
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#fields-columns" target="_blank">Kendo UI Grid columns</a>
 
+Lookup Control
+--------------------------------------------------
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+
+    *   -   Property
+        -   Description/Examples
+        
+    *   -   **value**
+        -   Allows to get or set selected value. 
+            
+            Returns an object for Single selection Lookup, returns an array of objects for Multiple selection Lookups. 
+
+            Can be set with Item ID or an array of item IDs for Multiple Choice Lookups.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                //SINGLE CHOICE LOOKUP
+
+                // returns an ID of the selected element:
+                fd.control('Lookup').value.LookupId; 
+
+                // returns the selected element as a string:
+                fd.control('Lookup').value.LookupValue;
+
+                // select element with the ID:
+                fd.control('Lookup').value = 5;
+
+                //MULTI CHOICE LOOKUP
+
+                //returns an array of objects
+                fd.control('LookupMulti').value;
+
+                //returns the first selected element as an object
+                fd.control('LookupMulti').value[0];
+
+                //returns first selected element as text:
+                fd.control('LookupMulti').value[0].LookupValue; 
+
+                //set with an array of IDs:
+                fd.control('LookupMulti').value = ["2", "3", "4"];
+
+                //alerts all values as a string of IDs
+                var selected = fd.control('LookupMulti').value;
+                var s = '';
+                for (var i = 0; i < selected.length; i++) {
+                    s += selected[i].LookupId + '; ';
+                }
+                alert(s);
+
+                //alerts all values as a text string
+                var selected = fd.control('LookupMulti').value;
+                var s = '';
+                for (var i = 0; i < selected.length; i++) {
+                    s += selected[i].LookupValue + '; ';
+                }
+                alert(s);
+
+    *   -   **ready**
+        -   Returns promise that is resolved when the control has fully loaded. Useful for executing scripts as soon as the control fully loads.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').ready().then(function(control) {
+                    console.log(control.value.LookupValue);
+                });
+
+    *   -   **addNewText**
+        -   Get or set text for adding new element, useful for localization. Appears if search is unsuccessful.
+
+            Must be set before the control is rendered.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.spBeforeRender(function() {
+                    fd.control('Lookup').addNewText = "Ajouter un nouvel élément";
+                });
+                
+
+    *   -   **noDataText**
+        -   Get or set text when no items are found, useful for localization. Appears if search is unsuccessful.
+
+            Must be set before the control is rendered.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.spBeforeRender(function() {
+                    fd.control('Lookup').noDataText = 
+                        "Pas trouvé. Ajouter un item - '#: instance.filterInput.val() #'?";
+                });
+                
+
+    *   -   **title**
+        -   Get or set the title of the control.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').title;
+                fd.control('Lookup').title = "Super Lookup";
+    
+    *   -   **operator**
+        -   Get or set search operator. Can search for elements that either start with entered text or contain it.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').operator;
+                fd.control('Lookup').operator = "startsWith";
+                fd.control('Lookup').operator = "contains";
+                
+    *   -   **orderBy**
+        -   Set $orderby Query Option. Allows to sort the results by one or multiple fields.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').orderBy = 'Title';
+                fd.control('Lookup').orderBy = { field: 'Title', desc: true };
+                fd.control('Lookup').orderBy = [
+                    { field: 'FirstChoice', desc: true },
+                    { field: 'Title', desc: false }
+                ];
+
+    *   -   **disabled**
+        -   Check if control is disabled, or set control to disabled or editable state.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').disabled;
+                fd.control('Lookup').disabled = true;
+                fd.control('Lookup').disabled = false;
+
+    *   -   **readonly**
+        -   Check if control is readonly. Cannot be changed.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').readonly;
+
+    *   -   **extraFields**
+        -   Get or set Extra Fields to retrieve from the source list. Returns an array.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').extraFields;
+                fd.control('Lookup').extraFields = ["Category/Id", "Category/Title"];
+
+    *   -   **expandFields**
+        -   Get or set Expand Fields (need for all Lookups) to retrieve extra data. Returns an array.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').extraFields;
+                fd.control('Lookup').extraFields = ["Category"];
+
+    *   -   **filter**
+        -   Get or set filter query for the lookup, which will filter the results. 
+
+            Can also hold a function which is executed when user inputs text into the search box to modify search behavior.
+
+            Read more about OData $filter query |OData Filter|.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').filter;
+                //example filtering by one field
+                fd.control('Lookup').filter = "Country eq '" + fd.control("Country").value + "'";
+
+                //or search by two fields at once - Title and Category
+                fd.control('Lookup').filter = function(filter) {
+                    var search = encodeURIComponent(filter);
+                    return filter
+                        ? "substringof('" + search + "', Title) or substringof('" + search + "', Category)"
+                        : '';
+                }
+                fd.control('Lookup').useCustomFilterOnly = true;
+
+    *   -   **useCustomFilterOnly**
+        -   Property which determines to use only custom filtering specified in **filter** or add default filtering on search.
+        
+            Default filtering searches via the selected field, and uses operator specified in SETTINGS or with **operator** property:
+
+            |operator|
+
+            .. |operator| image:: ../images/designer/fields/LookupOperator.png
+                :alt: Lookup operator
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').useCustomFilterOnly = true;
+
+    *   -   **widget**
+        -   Returns jquery-object lying under the Vue-component. 
+        
+            For Single choice Lookup it is |LookupKendo| widget. 
+            
+            For Multiple Choice Lookup it is |LookupKendoMulti| widget.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').widget;
+    
+    *   -   **widgetOptions**
+        -   Get or set configuration options for the lookup. Must be set before the controls render, cannot be changed afterwards.
+        
+            Read more about Single Choice Lookup configuration |OptionsLookupSingle|. 
+            
+            Multiple Choice Lookup configuration |OptionsLookupMultiple|.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.spBeforeRender(function() {
+                    //display Extra Field Price, if it is available 
+                    var tmp = '#: data.LookupValue # #: data.Price ? " $" + data.Price : "" #';
+                    fd.control('Lookup').widgetOptions = {
+                        template: tmp,
+                        valueTemplate: tmp
+                    }
+                });
+
+    *   -   **dialogOptions**
+        -   |Kendo UI Window| configuration. 
+        
+            Holds dialog window options when adding new items, such as width and height.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable0').dialogOptions.height; //returns height
+                fd.control('SPDataTable0').dialogOptions.width //returns width
+
+                //set width and height:
+                fd.control('SPDataTable0').dialogOptions = {
+                    width: 1280,
+                    height: 720
+                }
+    *   -   **$on('change')**
+        -   Triggers on 'change' event.
+
+            
+            |
+
+            *Example:*
+
+            .. code-block:: javascript
+
+                fd.control('Lookup').$on('change', function(value) {
+                    alert('New value: ' + value.LookupValue));
+                });
+
+
+.. |Kendo UI Window| raw:: html
+
+    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/window#configuration" target="_blank">Kendo UI Window</a>
+
+.. |LookupKendo| raw:: html
+
+   <a href="https://demos.telerik.com/kendo-ui/dropdownlist/index" target="_blank">DropDownList</a>
+
+.. |LookupKendoMulti| raw:: html
+
+   <a href="https://demos.telerik.com/kendo-ui/multiselect/index" target="_blank">MultiSelect</a>
+
+.. |OptionsLookupSingle| raw:: html
+
+   <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/dropdownlist" target="_blank">here</a>
+
+.. |OptionsLookupMultiple| raw:: html
+
+   <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect" target="_blank">here</a>
+
+.. |OData Filter| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests" target="_blank">here</a>
+
 .. _javascript-listorlibrary:
 
 List or Library

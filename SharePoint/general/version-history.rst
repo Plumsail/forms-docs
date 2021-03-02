@@ -9,7 +9,7 @@ Version history of Plumsail Forms for SharePoint Online (Office 365)
 
 v1.8.0
 --------------------------------------------------
-Added Lookup control for connecting lists across sites
+Added :ref:`designer-lookupcontrol` for connecting lists across sites
 
 Aligned numeric columns in Data Tables to the right
 

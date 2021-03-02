@@ -404,6 +404,77 @@ SharePoint
     *   - Read-only
         - If set to read-only state, will only display data.
 
+
+.. _designer-lookupcontrol:
+
+Lookup control
+-------------------------------------------------------------
+Lookup control functions very similarly to a SharePoint Lookup field, but can be used to **connect to different sites and even site collections**.
+
+Since it's only a control, and not a SharePoint column, it's value can only be stored as text and wouldn't autoupdate if the source value changes.
+
+Search for items and add new items if necessary:
+
+|search|
+
+.. |search| image:: ../images/designer/controls/designer-lookup-control-search.gif
+   :alt: Search lookup and add new items
+
+Lookup control properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every Lookup control has the following settings:
+
+General
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Title
+        - Change title text that appears next to the Lookup control, similar to any other field's Title.
+    *   - Name
+        - Setting utilized by many elements. Name is similar to ID, it's a unique identifier for the element.
+    *   - Data Source
+        - This setting allows you to select which SharePoint list or library will be used as data source, which field will be loaded from it.
+          
+          Please, note that you can change the site and select any site within your tenant.
+    *   - Save To
+        - Select column to save value to. Since Lookup control is not a SharePoint column, it needs to be saved somewhere - here you can create a new column and select it.
+    *   - Required
+        - Set control as required or not. False by default.
+    *   - Hint
+        - Add text to be displayed as a hint inside of control, until some value is entered by a user.
+    *   - Orientation
+        - Select if the title is displayed on the left from control or on top of it, giving more space to the control itself. Might automatically switch if not enough space.
+    *   - Read-only
+        - Prevents user from being able to add new items, edit or delete existing ones.
+    *   - Selection
+        - Choose between Single or Multiple selection for the control.
+    *   - Operator
+        - Determines how the search is handled by the lookup. Has two options: StartsWith - only show items that start with the entered value, Contains - show all items that contain the entered value.
+    *   - Add New
+        - Allows users to add new values to the source list of the Lookup. User must enter value that doesn't exist yet, then there will be an option to add new item.
+    *   - Extra Fields
+        - Select fields from the list that also need to be loaded. By default, only ID and 'Display Field' are retrieved. Extra fields can accessed with JavaScript. When adding Lookup fields in Extra Fields setting, do not forget to format them like this: **Category/ID**, **Category/Title**. Uses OData *$select* query option - read more |REST|.
+    *   - Expand
+        - In the Expand setting you need to enter the Lookup field that you are getting in Extra Fields, such as: **Category**. Uses OData *$expand* query option.
+    *   - Class
+        - Give CSS Class to the element, in order to apply JavaScript or CSS Style to it. Can give multiple classes separated by spaces to one element.
+    *   - Style
+        - Allows you to give specific element certain style. No need to use selectors, simply add CSS rules to this setting.
+
+Filter
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Depends on
+        - Select what field in the current list will be used for filtering items available in the Lookup control. For complex fields, such as Lookup or Person, also select which property to match (ID, Title or Email, Display Name, etc.)
+    *   - Match to
+        - Select what field in the source list has to match the field selected in **Depends on** property. For more information on filtering, refer to our :doc:`Filter lookup fields article <../how-to/lookup-filter>`.
+
+.. |REST| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/use-odata-query-operations-in-sharepoint-rest-requests#select-fields-to-return/" target="_blank">here</a>
 .. _designer-listorlibrary:
 
 List or Library
