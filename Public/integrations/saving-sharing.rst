@@ -6,5 +6,6 @@ Saving and sharing
 
     Email <./email>
     SharePoint <./sharepoint>
+    Excel <./excel>
     Google Sheets <./google-sheets>
     Microsoft SQL Server <./sql-server>
