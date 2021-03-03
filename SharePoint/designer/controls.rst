@@ -413,12 +413,12 @@ Lookup control functions very similarly to a SharePoint Lookup field, but can be
 
 Since it's only a control, and not a SharePoint column, it's value can only be stored as text and wouldn't autoupdate if the source value changes.
 
-Search for items and add new items if necessary:
+|lookup|
 
-|search|
+.. |lookup| image:: ../images/designer/controls/designer-lookup-control.png
+   :alt: Search lookup
 
-.. |search| image:: ../images/designer/controls/designer-lookup-control-search.gif
-   :alt: Search lookup and add new items
+Users can search for items and add new items if such an option is enabled.
 
 Lookup properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
