@@ -785,14 +785,17 @@ Events
 
     <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#fields-columns" target="_blank">Kendo UI Grid columns</a>
 
-Lookup Control
+Lookup
 --------------------------------------------------
+
+Properties
+**************************************************
 
 .. list-table::
     :header-rows: 1
     :widths: 10 30
 
-    *   -   Property
+    *   -   Name
         -   Description/Examples
         
     *   -   **value**
@@ -849,18 +852,6 @@ Lookup Control
                 }
                 alert(s);
 
-    *   -   **ready**
-        -   Returns promise that is resolved when the control has fully loaded. Useful for executing scripts as soon as the control fully loads.
-            
-            |
-
-            *Example:*
-            
-            .. code-block:: javascript
-
-                fd.control('Lookup').ready().then(function(control) {
-                    console.log(control.value.LookupValue);
-                });
 
     *   -   **addNewText**
         -   Get or set text for adding new element, useful for localization. Appears if search is unsuccessful.
@@ -1084,7 +1075,30 @@ Lookup Control
                     width: 1280,
                     height: 720
                 }
-    *   -   **$on('change')**
+
+Events
+**************************************************
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30
+        
+    *   -   Name
+        -   Description/Examples
+    *   -   **ready**
+        -   Returns promise that is resolved when the control has fully loaded. Useful for executing scripts as soon as the control fully loads.
+            
+            |
+
+            *Example:*
+            
+            .. code-block:: javascript
+
+                fd.control('Lookup').ready().then(function(control) {
+                    console.log(control.value.LookupValue);
+                });
+
+    *   -   **change**
         -   Triggers on 'change' event.
 
             

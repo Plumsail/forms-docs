@@ -407,7 +407,7 @@ SharePoint
 
 .. _designer-lookupcontrol:
 
-Lookup control
+Lookup
 -------------------------------------------------------------
 Lookup control functions very similarly to a SharePoint Lookup field, but can be used to **connect to different sites and even site collections**.
 
@@ -420,7 +420,7 @@ Search for items and add new items if necessary:
 .. |search| image:: ../images/designer/controls/designer-lookup-control-search.gif
    :alt: Search lookup and add new items
 
-Lookup control properties
+Lookup properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Every Lookup control has the following settings:
 
@@ -438,7 +438,7 @@ General
           
           Please, note that you can change the site and select any site within your tenant.
     *   - Save To
-        - Select column to save value to. Since Lookup control is not a SharePoint column, it needs to be saved somewhere - here you can create a new column and select it.
+        - Select column to save value to. Since it’s only a control, and not a SharePoint column, it’s value is stored as text in a regular SharePoint single-line text field. 
     *   - Required
         - Set control as required or not. False by default.
     *   - Hint
