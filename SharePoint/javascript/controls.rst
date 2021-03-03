@@ -1372,10 +1372,10 @@ Methods
             .. code-block:: javascript
 
                 fd.control('SPDataTable0').refresh();
-    *   -   **beforeItemsAttach(handler)*
-        -   **handler** function is fired when saving New Form that has items in Library or List control, that will be tied to the parent via lookup field.
+    *   -   **beforeItemsAttach(handler)**
+        -   *handler* function is fired when saving New Form that has items in Library or List control, that will be tied to the parent via lookup field.
 
-            **handler** function contains parameter object with the following properties:
+            *handler* function contains parameter object with the following properties:
 
             **itemIds** is an array of IDs of uploaded files.
 
@@ -1383,7 +1383,7 @@ Methods
 
             **parentItemId** is an ID of the newly saved Parent item.
 
-            **Asynchronous event!**  Can return a Promise and the corresponding operation will not continue until the promise is resolved.
+            .. important::  Asynchronous event! Can return a Promise and the corresponding operation will not continue until the promise is resolved.
             
             |
 
