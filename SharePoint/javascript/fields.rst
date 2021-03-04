@@ -64,9 +64,7 @@ Most fields have these properties:
     *   -   **required**
         -   Returns true if the field is required. 
         
-            For SharePoint fields only adds or removes asterisk near the title. 
-            
-            For Plumsail fields it also adds validation.
+            Allows setting fields to be required.
             
             |
 
