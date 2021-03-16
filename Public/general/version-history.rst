@@ -6,6 +6,10 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.5.2
+--------------------------------------------------
+Added 'Clear format' and 'Foreground color' buttons to the text editor in web designer
+
 Web Designer v1.5.1
 --------------------------------------------------
 Aligned numeric columns in Data Tables to the right

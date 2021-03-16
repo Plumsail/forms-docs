@@ -7,6 +7,16 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.8.2
+--------------------------------------------------
+Increased performance of cascading lookups
+
+Added support of dependent lookup fields in edit forms
+
+Added support of classic lists, e.g. Workflow Tasks
+
+Fixed obtaining Plumsail Lookup controls with JavaScript
+
 v1.8.0
 --------------------------------------------------
 Added :ref:`designer-lookupcontrol` for connecting lists across sites
