@@ -48,6 +48,18 @@ Single Line of Text
                 fd.field('SingleLine').value;
                 fd.field('SingleLine').value = "New Text";
 
+    *   -   **displayValue**
+        -   Returns the formatted value of a field when it is rendered in the read-only mode.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //returns string
+                fd.field('SingleLine').displayValue ;
+
     *   -   **$on('change')**
         -   Triggers on 'change' event.
 
@@ -279,6 +291,18 @@ Choice Multiple - Checkboxes
                 fd.field('ChoiceMultiple').value; 
                 fd.field('ChoiceMultiple').value = ["Enter Choice #1", "Enter Choice #2"];
 
+    *   -   **displayValue**
+        -   Returns the formatted value of a field when it is rendered in the read-only mode.. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //returns selected choice as a string
+                fd.field('ChoiceSingle').displayValue ;
+                
     *   -   **$on('change')**
         -   Triggers on 'change' event.
 
@@ -317,6 +341,18 @@ Number/Currency
                 fd.field('Number').value; 
                 fd.field('Number').value = "256";
 
+    *   -   **displayValue**
+        -   Returns the formatted value of a field when it is rendered in the read-only mode.. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //returns selected choice as a string
+                fd.field('Number').displayValue ;
+
     *   -   **$on('change')**
         -   Triggers on 'change' event.
 
@@ -354,6 +390,18 @@ Date
                 // returns Date object:
                 fd.field('Date').value; 
                 fd.field('Date').value = new Date();
+
+    *   -   **displayValue**
+        -   Returns the formatted value of a field when it is rendered in the read-only mode.. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //returns selected choice as a string
+                fd.field('Date').displayValue ;
 
     *   -   **widgetOptions**
         -   The property contains settings for |Kendo UI DatePicker control| and is applicable for Date fields only. 
@@ -466,6 +514,18 @@ DateTime
                 var d = new Date();
                 d.setHours(13, 31, 0);
                 fd.field('DateTime').value = d;
+
+    *   -   **displayValue**
+        -   Returns the formatted value of a field when it is rendered in the read-only mode.. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //returns selected choice as a string
+                fd.field('DateTime').displayValue ;
 
     *   -   **widgetOptions**
         -   The property contains settings for |Kendo UI DateTimePicker control| and is applicable for Date and Time fields only.
@@ -876,6 +936,18 @@ Boolean - Yes/No
                 // can set with 0/1:
                 fd.field('Boolean').value = 1; 
 
+    *   -   **displayValue**
+        -   Returns the formatted value of a field when it is rendered in the read-only mode.. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //returns selected choice as a string
+                fd.field('Boolean').displayValue ;
+
     *   -   **$on('change')**
         -   Triggers on 'change' event.
 
@@ -1040,6 +1112,18 @@ Managed Metadata (Taxonomy) Single
                     name: "Test1"
                 };
 
+    *   -   **displayValue**
+        -   Returns the formatted value of a field when it is rendered in the read-only mode.. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //returns selected choice as a string
+                fd.field('Taxonomy').displayValue ;
+
     *   -   **$on('change')**
         -   Triggers on 'change' event.
 
@@ -1101,6 +1185,18 @@ Managed Metadata (Taxonomy) Multiple
                     id: "53e1c22e-bfc4-4172-81ff-806415606837",
                     name: "Term2"
                 }];
+
+    *   -   **displayValue**
+        -   Returns the formatted value of a field when it is rendered in the read-only mode.. 
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                //returns selected choice as a string
+                fd.field('TaxonomyMulti').displayValue ;
 
     *   -   **$on('change')**
         -   Triggers on 'change' event.
