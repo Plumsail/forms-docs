@@ -6,6 +6,16 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.5.4
+--------------------------------------------------
+Added an option to enable authentication for public web forms via MS account
+
+Added an option to allow users to submit a form just once
+
+Added an option to allow users to modify their submissions
+
+Improved the speed of initial rendering of large forms
+
 Web Designer v1.5.2
 --------------------------------------------------
 Added 'Clear format' and 'Foreground color' buttons to the text editor in web designer

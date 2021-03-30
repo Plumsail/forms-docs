@@ -7,6 +7,12 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.8.3
+--------------------------------------------------
+Added responsiveness to the toolbar of List or Library control
+
+Improved the speed of initial rendering of large forms
+
 v1.8.2
 --------------------------------------------------
 Increased performance of cascading lookups
