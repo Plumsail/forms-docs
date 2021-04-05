@@ -6,6 +6,12 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.5.5
+--------------------------------------------------
+Added description property for form fields
+
+Added an ability to resize image within rich text editor
+
 Web Designer v1.5.4
 --------------------------------------------------
 Added an option to enable authentication for public web forms via MS account
