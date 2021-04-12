@@ -108,7 +108,7 @@ Plumsail Forms for SharePoint
             :maxdepth: 1
             :titlesonly:
 
-            ./forms-for-groups
+            Personalize form based on user group in SharePoint or Azure AD <how-to/forms-for-groups>
             Open edit form by default for a user group <how-to/edit-form>
             Create forms in multiple languages <how-to/language>
 
