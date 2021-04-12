@@ -14,12 +14,12 @@ All fields and controls have the name property, which you can check in the edito
 .. image:: ../images/how-to/data-table-cases/how-to-data-table-cases-name.png
    :alt: Name of the Data Table
 
-Another thing to be aware of is that you shouldn't simply place JavaScript inside the editor on its own, it must be executed inside **fd** events 
-like **rendered()** or **beforeSave()** in order to actually access the fields or controls that you target.
+.. important::  These events, methods and properties shouldn't be used on their own, they must be executed inside events 
+                like **spRendered()** or **spBeforeSave()** in order to actually access the fields or controls that you target.
 
-If you just add these scripts on their own or inside wrong event in JavaScript editor,
-they will not have access to the specified fields, or will execute at the wrong time.
-Read more about different events in :doc:`Manager section </javascript/manager>`.
+                If you just add these scripts on their own or inside wrong event in JavaScript editor,
+                they will not have access to the specified controls, or will execute at the wrong time.
+                Read more about different events in :doc:`Manager section </javascript/manager>`.
 
 For more information on working with Data Table control specifically, please, refer to the :ref:`Data Table section of our JS documentation<js-datatable>`.
 
@@ -42,7 +42,7 @@ This can be achieved with a simple validator:
 .. code-block:: javascript
     
     //make at least one record required
-    fd.rendered(function(){
+    fd.spRendered(function(){
         fd.control('DataTable1').validators.push({
             name: 'DataTable1 validator',
             error: 'Enter at least one record into the table',
@@ -65,7 +65,7 @@ To prepopulate column values of a new row in DataTable control, use the code:
 
 .. code-block:: javascript
 
-    fd.rendered(function() {
+    fd.spRendered(function() {
         //select DataTable control to prepopulate
         var dt = fd.control('DataTable1');
         var isNew = false;
@@ -91,7 +91,7 @@ To populate dropdown column of DataTable control dynamically, use the code:
 
 .. code-block:: javascript
 
-    fd.rendered(function() {
+    fd.spRendered(function() {
         fd.control('DataTable1').$on('edit', function(e) {
             console.log(e)
             if (e.column.field === "Column1") {
@@ -136,7 +136,7 @@ We'll use a simple |JS Object| to store product prices, and automatically set un
     merch['T-shirt'] = 19.99;
     merch['Key chain'] = 4.99;
 
-    fd.rendered(function(){
+    fd.spRendered(function(){
         //set unit price column (2nd column) to be non-editable, as we set it with code
         fd.control('DataTable1').columns[1].editable = function(){return false};
         
@@ -171,7 +171,7 @@ Here is the code:
 
 .. code-block:: javascript
 
-        fd.rendered(function() {
+        fd.spRendered(function() {
             //Disable OrderTotal field
             fd.field('OrderTotal').disabled = true;
 
@@ -231,7 +231,7 @@ Use the following code:
 
 .. code-block:: javascript
 
-        fd.rendered(function() {
+        fd.spRendered(function() {
             //select DataTable control to add new column to
             var dt = fd.control('DataTable1');
             var columns = dt.widget.options.columns;
