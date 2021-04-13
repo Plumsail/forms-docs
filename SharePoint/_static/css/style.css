@@ -1,11 +1,8 @@
-/* В этом файле переопределяются стандартные стили basic-темы Sphinx. В этих стилях есть сомнительные ходы, тк писать поверх темы вообще не очень правильно, а внешний вид изменить нужно */
-
 .container-fluid {
   max-width: 1601px;
   padding: 0 70px;
 }
 
-/* container-fluid чтобы стили применились только к документации, но не к футеру */
 .container-fluid h1, .container-fluid h2, .container-fluid h3, .container-fluid h4, .container-fluid h5, .container-fluid h6 {
   font-weight: normal;
   margin-top: 1rem;
