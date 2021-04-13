@@ -1,7 +1,7 @@
-.. title:: Lookup control
+.. title:: Cross-site Lookup for SharePoint forms
 
 .. meta::
-   :description: Learn out how to link lists across different sites and site collections.
+   :description: How to link lists across different SharePoint sites using Lookup control of Plumsail Forms
    
 How to link lists across different sites using Lookup control
 =============================================================================
