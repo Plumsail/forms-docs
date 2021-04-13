@@ -8,7 +8,9 @@ How to link lists across different sites using Lookup control
 
 .. raw:: html
 
-    <div data-nosnippet="true"><iframe width="840" height="472" src="https://www.youtube.com/embed/_jdBG0MGgWk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/_jdBG0MGgWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
 
 |
 
@@ -20,7 +22,7 @@ Lookup control allows you to link lists across different sites and even site col
 
 - filter and create cascading dropdowns;
 
-- display related items from another site linked via Lookup field with List or Library control.
+- display related items from another site linked via Lookup control with List or Library control.
  
 Selected data for this control is stored in a regular text field and rendered as a lookup field in a list view. 
 
@@ -81,7 +83,13 @@ By clicking on the value, you can open a display form of the selected item in a 
 Other properties
 ~~~~~~~~~~~~~~~~~~~~
 
-Using other control properties, you can configure how the search within the control is handled – *Operator* property, allow users to add new values to the source list - *Add New* property, select fields from the source list that also need to be loaded - *Extra Fields/ Expand* properties.
+Using other control properties, you can:
+
+- Сonfigure how the search within the control is handled - **Operator** property
+
+- Allow users to add new values to the source list - **Add New** property
+
+- Select fields from the source list that also need to be loaded - **Extra Fields/Expand** properties.
 
 .. image:: ../images/how-to/csl/csl_06.png
    :alt: properties
@@ -94,7 +102,7 @@ List or Library control
 -------------------------------
 Lookup control is also supported by List or Library control. Thus, you can design a form with a list of related items from another site. 
 
-In List or Library control, the column that stores lookup control value is also rendered as a regular SharePoint lookup field, both in a dialog and in inline editing modes, and has the same functionality.
+In List or Library control, the column that stores lookup control value is also rendered as a regular SharePoint lookup field, both in a dialog and in inline editing mode, and has the same functionality.
 
 .. image:: ../images/how-to/csl/csl_07.png
    :alt: List or Library
@@ -142,10 +150,10 @@ You can find instructions on how to configure filtration by different field type
 
 For instance, you can create cascading dropdowns which source lists are stored on another site.
 
-Let’s say, Office and Conference room lists are located on the same site - Assets. The conference rooms are linked to the offices using a regular lookup field. 
+Let’s say, Office and ConferenceRoom lists are located on the same site - Assets. The conference rooms are linked to the offices using a regular lookup field. 
 On the form, the list of conference rooms should be filtered by the selected office.
 
-First, add two Lookup controls to the form. Name controls accordingly: Office and Conference room.
+First, add two Lookup controls to the form. Name controls accordingly: Office and ConferenceRoom.
 
 .. image:: ../images/how-to/csl/csl_10.png
    :alt: Cascading dropdowns
@@ -159,7 +167,7 @@ Select a data source for both controls.
 
 |
 
-Next, go to Conference room control properties: General → *Depends on* property, select the Office lookup control. 
+Next, go to ConferenceRoom control properties: General → *Depends on* property, select the Office lookup control. 
 
 .. image:: ../images/how-to/csl/csl_12.png
    :alt: Depends on
@@ -181,8 +189,8 @@ And this is how it works on the form:
 
 |
 
-JavaScript
-~~~~~~~~~~~~~~~~~~~~
+Programmatic filtration 
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use JavaScript to create more complex filter conditions.
 

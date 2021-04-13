@@ -127,7 +127,6 @@ Plumsail Forms for SharePoint
             :titlesonly:
 
             Populate, hide, disable, make mandatory fields <how-to/conditional-fields>
-            Lookup control: cros-site lookup, related items from another site <how-to/csl>
             Date and Time: calculate difference, adjust values <how-to/manipulate-date-field>
             Data Table: populate cells, calculate totals, duplicate rows <how-to/data-table-cases>    
             Get field values of a parent form from a dialog <how-to/pass-values>
@@ -156,6 +155,7 @@ Plumsail Forms for SharePoint
             Customize appearance of search results <how-to/lookup-view>
             Filter by another field: Lookup, Person, Choice <how-to/lookup-filter>
             Filter by another field with JavaScript <how-to/lookup-cascading>
+            Configure cross-site lookup field <how-to/csl>
             Search and filter large lists (more than 5,000 Items) <how-to/lookup-5k>
 
       .. toctree::
