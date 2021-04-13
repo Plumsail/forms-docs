@@ -8,7 +8,9 @@ How to design complex and responsive public web forms with grids in Plumsail For
 
 .. raw:: html
 
-    <div data-nosnippet="true"><iframe width="840" height="472" src="https://www.youtube.com/embed/QYIhePFy28E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/QYIhePFy28E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
 
 |
 

@@ -8,7 +8,9 @@ How to filter lookup by another field: Choice, Lookup, or Person
 
 .. raw:: html
 
-    <div data-nosnippet="true"><iframe width="840" height="472" src="https://www.youtube.com/embed/a-T_oRohlvM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/a-T_oRohlvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
 
 |
 
