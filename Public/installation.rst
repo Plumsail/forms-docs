@@ -8,7 +8,9 @@ Installation of Plumsail Forms (public forms)
 
 .. raw:: html
 
-    <div data-nosnippet="true"><iframe width="840" height="472" src="https://www.youtube-nocookie.com/embed/26x25IhUbOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="video-container">
+      <iframe src="https://www.youtube-nocookie.com/embed/26x25IhUbOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>   
 
 .. contents::
  :local:

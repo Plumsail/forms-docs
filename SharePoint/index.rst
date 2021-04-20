@@ -155,6 +155,7 @@ Plumsail Forms for SharePoint
             Customize appearance of search results <how-to/lookup-view>
             Filter by another field: Lookup, Person, Choice <how-to/lookup-filter>
             Filter by another field with JavaScript <how-to/lookup-cascading>
+            Configure cross-site lookup field <how-to/csl>
             Search and filter large lists (more than 5,000 Items) <how-to/lookup-5k>
 
       .. toctree::

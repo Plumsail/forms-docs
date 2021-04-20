@@ -1,15 +1,17 @@
+<<<<<<< HEAD
 /* В этом файле переопределяются стандартные стили basic-темы Sphinx. В этих стилях есть сомнительные ходы, тк писать поверх темы вообще не очень правильно, а внешний вид изменить нужно */
 
 .img-link.public-integration img{
   filter:none!important;
 }
 
+=======
+>>>>>>> 5f7691ae0d8e189ebaec09fb6c01c2a6e75ef61c
 .container-fluid {
   max-width: 1601px;
   padding: 0 70px;
 }
 
-/* container-fluid чтобы стили применились только к документации, но не к футеру */
 .container-fluid h1, .container-fluid h2, .container-fluid h3, .container-fluid h4, .container-fluid h5, .container-fluid h6 {
   font-weight: normal;
   margin-top: 1rem;
@@ -368,4 +370,24 @@ table .highlight {
     float: initial;
     width: 100%;
   }
+}
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width:100%;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
