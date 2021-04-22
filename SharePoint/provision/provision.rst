@@ -133,4 +133,4 @@ After saving the file, run the app. Congratulations, you've successfully provisi
 
 The example shown in this article is very basic and requires you to export the form first, 
 while technically you can retrieve form's layouts and form sets settings from the original site.
-To learn more about various methods available to FormsManager in :doc:`this article </designer/provision>`.
+To learn more about various methods available to FormsManager in :doc:`this article </provision/general>`.
