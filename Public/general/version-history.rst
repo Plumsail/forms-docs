@@ -6,6 +6,10 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.5.6
+--------------------------------------------------
+Added the support of an Excel file in Microsoft OneDrive to be used as data source for a Drop Down field
+
 Web Designer v1.5.5
 --------------------------------------------------
 Added description property for form fields
