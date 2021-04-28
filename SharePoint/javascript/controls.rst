@@ -1070,11 +1070,11 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').dialogOptions.height; //returns height
-                fd.control('SPDataTable0').dialogOptions.width //returns width
+                fd.control('SPDataTable1').dialogOptions.height; //returns height
+                fd.control('SPDataTable1').dialogOptions.width //returns width
 
                 //set width and height:
-                fd.control('SPDataTable0').dialogOptions = {
+                fd.control('SPDataTable1').dialogOptions = {
                     width: 1280,
                     height: 720
                 }
@@ -1169,10 +1169,10 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').filter; // returns CAML string
+                fd.control('SPDataTable1').filter; // returns CAML string
 
                 //return only items where Title is "Test"
-                fd.control('SPDataTable0').filter = 
+                fd.control('SPDataTable1').filter = 
                     "<Eq><FieldRef Name='Title'/><Value Type='Text'>Test</Value></Eq>";
 
     *   -   **buttons**
@@ -1202,9 +1202,9 @@ Properties
             .. code-block:: javascript
 
                 //get all buttons
-                var allButtons = fd.control('SPDataTable0').buttons;
+                var allButtons = fd.control('SPDataTable1').buttons;
                 //change button's Icon
-                fd.control('SPDataTable0').buttons[1].class  = 'btn-danger';
+                fd.control('SPDataTable1').buttons[1].class  = 'btn-danger';
 
                 //add new button
                 var button = {text: "Export", 
@@ -1214,12 +1214,12 @@ Properties
                               iconType: 0, 
                               click: function() { alert("Exporting!"); }}
 
-                fd.control('SPDataTable0').buttons.push(button);
+                fd.control('SPDataTable1').buttons.push(button);
 
                 //hide button if 0 elements are selected (dynamic)
-                fd.control('SPDataTable0').$watch('selectedItems', 
+                fd.control('SPDataTable1').$watch('selectedItems', 
                     function(items) { 
-                        fd.control('SPDataTable0').buttons[2].visible = items.length > 0 ;
+                        fd.control('SPDataTable1').buttons[2].visible = items.length > 0 ;
                     });
             
     *   -   **readonly**
@@ -1233,9 +1233,9 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').readonly;
-                fd.control('SPDataTable0').readonly = true;
-                fd.control('SPDataTable0').readonly = false;
+                fd.control('SPDataTable1').readonly;
+                fd.control('SPDataTable1').readonly = true;
+                fd.control('SPDataTable1').readonly = false;
 
     *   -   **baseRootFolder**
         -   Property that specifies starting folder for the control. User cannot go higher than this folder. 
@@ -1248,11 +1248,11 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').baseRootFolder;
+                fd.control('SPDataTable1').baseRootFolder;
                 //set root as Base Folder:
-                fd.control('SPDataTable0').baseRootFolder = '';
+                fd.control('SPDataTable1').baseRootFolder = '';
                 //set folder as Base Folder:
-                fd.control('SPDataTable0').baseRootFolder = "Folder1"
+                fd.control('SPDataTable1').baseRootFolder = "Folder1"
 
     *   -   **rootFolder**
         -   Property that specifies current folder for the control. Can be changed dynamically.
@@ -1265,11 +1265,22 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').rootFolder;
+                fd.control('SPDataTable1').rootFolder;
                 //set root as Current Folder:
-                fd.control('SPDataTable0').rootFolder = '';
+                fd.control('SPDataTable1').rootFolder = '';
                 //set Folder1 as Current Folder:
-                fd.control('SPDataTable0').rootFolder = "Folder1"
+                fd.control('SPDataTable1').rootFolder = "Folder1"
+
+    *   -   **selectable**
+        -   Property that can be used to enable/disable selection of items in List or Library.
+            
+            |
+
+            *Examples:*
+            
+            .. code-block:: javascript
+
+                fd.control('SPDataTable1').selectable = false
     
     *   -   **uploadingText**
         -   Property that holds "Uploading..." text, useful for localizations.
@@ -1280,8 +1291,8 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').uploadingText // "Uploading..." by default
-                fd.control('SPDataTable0').uploadingText = "New text"
+                fd.control('SPDataTable1').uploadingText // "Uploading..." by default
+                fd.control('SPDataTable1').uploadingText = "New text"
     
     *   -   **dialogOptions**
         -   |Kendo UI Window| configuration. Holds dialog window options when adding new items, such as width and height.
@@ -1292,11 +1303,11 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').dialogOptions.height; //returns height
-                fd.control('SPDataTable0').dialogOptions.width //returns width
+                fd.control('SPDataTable1').dialogOptions.height; //returns height
+                fd.control('SPDataTable1').dialogOptions.width //returns width
 
                 //set width and height:
-                fd.control('SPDataTable0').dialogOptions = {
+                fd.control('SPDataTable1').dialogOptions = {
                     width: 1280,
                     height: 720
                 }
@@ -1312,7 +1323,7 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').selectedItems;
+                fd.control('SPDataTable1').selectedItems;
 
     *   -   **templates**
         -   Holds user-defined templates for specific columns of the List or Library control.
@@ -1348,7 +1359,7 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').widget;
+                fd.control('SPDataTable1').widget;
 
 .. |Microsoft Fabric Icons| raw:: html
 
@@ -1373,7 +1384,7 @@ Methods
             
             .. code-block:: javascript
 
-                fd.control('SPDataTable0').refresh();
+                fd.control('SPDataTable1').refresh();
     *   -   **beforeItemsAttach(handler)**
         -   *handler* function is fired when saving New Form that has items in Library or List control, that will be tied to the parent via lookup field.
 
@@ -1394,7 +1405,7 @@ Methods
             .. code-block:: javascript
 
                 //give an alert message when saving New Form
-                fd.control('SPDataTable0').beforeItemsAttach(function(e) {
+                fd.control('SPDataTable1').beforeItemsAttach(function(e) {
                     return new Promise(function(resolve) {
                         var ids = '';
                         var message = 'Item(s): ' + e.itemIds.join();
@@ -1443,7 +1454,7 @@ Events
                 // prepopulating Title field of a new record  
                 // in the List or Library control with the title  
                 // of the parent item 
-                fd.control('SPDataTable0').$on('edit', function(editData) { 
+                fd.control('SPDataTable1').$on('edit', function(editData) { 
                     if (editData.formType === 'New') { 
                         console.log('editData.itemId'); 
                         //Set Title field value with the value from the parent 
@@ -1479,14 +1490,14 @@ Events
             .. code-block:: javascript
 
                 // displays an alert message with IDs of the uploaded files  
-                fd.control('SPDataTable0').$on('change', function(changeData) { 
+                fd.control('SPDataTable1').$on('change', function(changeData) { 
                     if (changeData.type === 'upload') { 
                         alert(changeData.itemIds); 
                     } 
                 }); 
 
                 // displays an alert message with ID of the changed item  
-                fd.control('SPDataTable0').$on('change', function(changeData) { 
+                fd.control('SPDataTable1').$on('change', function(changeData) { 
                     if (changeData.type === 'edit') { 
                         alert(changeData.itemId); 
                     } 
@@ -1503,9 +1514,9 @@ Events
             .. code-block:: javascript
 
                 fd.spRendered(function() {
-                    fd.control('SPDataTable0').ready().then(function(dt) { 
-                        //dt parameter is the same as fd.control('SPDataTable0')
-                        console.log('SPDataTable0 is initialized');
+                    fd.control('SPDataTable1').ready().then(function(dt) { 
+                        //dt parameter is the same as fd.control('SPDataTable1')
+                        console.log('SPDataTable1 is initialized');
                     });
                 });
     
@@ -1521,7 +1532,7 @@ Events
             .. code-block:: javascript
 
                 //log all uploaded files to console
-                fd.control('SPDataTable0').$on('filesUploaded',
+                fd.control('SPDataTable1').$on('filesUploaded',
                     function(itemIds) {
                         itemIds.forEach(function(item) {
                             console.log(item);
