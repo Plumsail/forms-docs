@@ -159,12 +159,33 @@ General
 .. list-table::
     :widths: 10 40
 
-    *   - Options
-        - Specify items users can choose from.
     *   - Selection
-        - Select if user can choose more than one item from dropdown or not.
-    
+        - Select if user can choose more than one item from dropdown.
 
+Data Source
+
+.. list-table::
+    :widths: 10 40
+
+    *   - Type
+        - Specify where options to select come from - either a static list or an Excel file.
+    *   - Options
+        - Available if static list is the source, specify items here.
+    *   - Account
+        - Available if Excel file is selected as Type, login to your OneDrive account.
+    *   - File
+        - Select an Excel file in your OneDrive account to get items from.
+    *   - Sheet
+        - Select a sheet in the Excel file to get items from.
+    *   - Table
+        - Select a Table in Excel file to get items from.
+    *   - Text column
+        - Select a column in the Table to get items from for their presentation in the dropdown.
+    *   - Value column
+        - Select a column in the Table to get items from for their value in the submission.
+    *   - Caching
+        - How long data is kept in cache. If a form is refreshed within this time frame, new values wouldn't load.
+    
 Toggle
 -------------------------------------------------------------
 Toggle field gives user a choice between Yes or No. By default has False value.
@@ -197,13 +218,29 @@ Multiple Choice unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Multiple Choice field has the following unique settings:
 
-General
+Data Source
 
 .. list-table::
     :widths: 10 40
 
+    *   - Type
+        - Specify where options to select come from - either a static list or an Excel file.
     *   - Options
-        - Specify items users can choose from.
+        - Available if static list is the source, specify items here.
+    *   - Account
+        - Available if Excel file is selected as Type, login to your OneDrive account.
+    *   - File
+        - Select an Excel file in your OneDrive account to get items from.
+    *   - Sheet
+        - Select a sheet in the Excel file to get items from.
+    *   - Table
+        - Select a Table in Excel file to get items from.
+    *   - Text column
+        - Select a column in the Table to get items from for their presentation in the dropdown.
+    *   - Value column
+        - Select a column in the Table to get items from for their value in the submission.
+    *   - Caching
+        - How long data is kept in cache. If a form is refreshed within this time frame, new values wouldn't load.
 
 Control
 
@@ -224,13 +261,29 @@ Radios unique properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Radios field has the following unique settings:
 
-General
+Data Source
 
 .. list-table::
     :widths: 10 40
 
+    *   - Type
+        - Specify where options to select come from - either a static list or an Excel file.
     *   - Options
-        - Specify items users can choose from.
+        - Available if static list is the source, specify items here.
+    *   - Account
+        - Available if Excel file is selected as Type, login to your OneDrive account.
+    *   - File
+        - Select an Excel file in your OneDrive account to get items from.
+    *   - Sheet
+        - Select a sheet in the Excel file to get items from.
+    *   - Table
+        - Select a Table in Excel file to get items from.
+    *   - Text column
+        - Select a column in the Table to get items from for their presentation in the dropdown.
+    *   - Value column
+        - Select a column in the Table to get items from for their value in the submission.
+    *   - Caching
+        - How long data is kept in cache. If a form is refreshed within this time frame, new values wouldn't load.
 
 Control
 

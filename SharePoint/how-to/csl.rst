@@ -54,7 +54,7 @@ After clicking the checkmark button, all lists and libraries from the selected s
 
 Then, select the source list and the field that will be shown in the control. 
 
-.. image:: ../images/how-to/csl/csl_03.png
+.. image:: ../images/how-to/csl/csl_11.png
    :alt: Data Source
 
 |
