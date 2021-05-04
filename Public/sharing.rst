@@ -8,7 +8,7 @@ Sharing web forms created with Plumsail Forms
 
 .. contents::
  :local:
- :depth: 1
+ :depth: 2
 
 Sharing pages
 -------------------------------------------------------------
@@ -81,14 +81,26 @@ And here's the page that I've created in just a couple of minutes with a simple 
 
 Embedding forms
 -------------------------------------------------------------
+
+Popular platforms
+**********************************
+
+.. toctree::
+      :maxdepth: 1
+      
+      Wix </embed/wix>
+
+Publish to any site
+**********************************
+
 You can publish Public Web Form to any webpage on your own site or anywhere else on the web, where you can edit the HTML and add our widget.
 
-The widget can be found in General Settings in the designer where you can copy it to clipboard:
+The widget can be found in Sharing Settings in the designer where you can copy it to clipboard:
 
 |pic18|
 
-.. |pic18| image:: ./images/start/general-widget.png
-   :alt: Form Widget in General Settings
+.. |pic18| image:: ./images/start/start-copy-snippet.png
+   :alt: Copy Form Widget snippet in Sharing Settings
 
 You can also copy form's widget from Plumsail Account Forms section in |Forms subsection| where all your forms are stored. 
 
@@ -96,8 +108,8 @@ Simply click the copy button next to a form:
 
 |pic19|
 
-.. |pic19| image:: ./images/start/forms-forms.png
-   :alt: Forms Section and Forms Subsection
+.. |pic19| image:: ./images/start/start-copy-widget.png
+   :alt: Copy widget from Account
 
 .. |Forms subsection| raw:: html
 
@@ -110,26 +122,21 @@ After copying the widget, simply insert it as HTML to your page and the form wil
 .. |pic20| image:: ./images/start/form-published.png
    :alt: Public Web Form Published
 
-.. note::   If you're placing more than one form per page, make sure to change div id="**plumsail-form**" and new Plumsail.Form("**#plumsail-form**" to something unique for each widget. The easiest option is to add an index, for example:
+Multiple forms on one page
+**********************************
 
-            .. code-block:: HTML
+If you're placing more than one form per page, make sure to change *div id=*"**plumsail-form**" and *new Plumsail.Form(*"**#plumsail-form**" to something unique for each widget. The easiest option is to add an index, for example:
 
-               <script type="text/javascript" src="https://forms.plumsail.com/widget/***/app.js"></script>
-               <div id="plumsail-form1"><div class="fd-form-loading"></div></div>
-               <script type="text/javascript">
-                  var fd = new Plumsail.Form("#plumsail-form1", "...");
-               </script>
+.. code-block:: HTML
 
-               <script type="text/javascript" src="https://forms.plumsail.com/widget/***/app.js"></script>
-               <div id="plumsail-form2"><div class="fd-form-loading"></div></div>
-               <script type="text/javascript">
-                  var fd = new Plumsail.Form("#plumsail-form2", "...");
-               </script>
+   <script type="text/javascript" src="https://forms.plumsail.com/widget/***/app.js"></script>
+   <div id="plumsail-form1"><div class="fd-form-loading"></div></div>
+   <script type="text/javascript">
+      var fd = new Plumsail.Form("#plumsail-form1", "...");
+   </script>
 
-For more examples, please, check our |Integration section| with Wordpress, Joomla, Wix, Squarespace and Facebook cases.
-
-.. |Integration section| raw:: html
-
-   <a href="https://plumsail.com/forms/integration/" target="_blank">Integration section</a>
-
-.. note:: To actually work with the data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`MS Power Automate </microsoft-flow>` or :doc:`Zapier </zapier>`.
+   <script type="text/javascript" src="https://forms.plumsail.com/widget/***/app.js"></script>
+   <div id="plumsail-form2"><div class="fd-form-loading"></div></div>
+   <script type="text/javascript">
+      var fd = new Plumsail.Form("#plumsail-form2", "...");
+   </script>
