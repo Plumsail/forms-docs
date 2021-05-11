@@ -88,6 +88,7 @@ Popular platforms
 .. toctree::
       :maxdepth: 1
       
+      Squarespace </embed/squarespace>
       Wix </embed/wix>
 
 Publish to any site

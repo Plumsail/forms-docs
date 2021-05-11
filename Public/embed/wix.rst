@@ -7,18 +7,18 @@ Embed Plumsail web form on a Wix site
 ==========================================================
 You can add a custom Plumsail web form to a Wix site in just a couple of easy steps with the help of our Widget:
 
-#. Login to |Wix| account
-#. Select the site where you want to publish a form
-#. Click **Edit site**
-#. Click **Add** → **Embed** → **Custom embeds** → **Embed a widget**:
-   |embed|
-#. Position the embed where you want it to be on your page
-#. Copy widget snippet from your form's settings:
-   |copy|
-#. Paste the snippet into the embed's HTML Settings → *Code* → Add your code here (HTTPS only) on a Wix site:
-   |paste|
-#. Your form will then appear on a Wix site and will be ready to go:
-   |ready|
+#. | Login to |Wix| account
+#. | Select the site where you want to publish a form
+#. | Click **Edit site**
+#. | Click **Add** → **Embed** → **Custom embeds** → **Embed a widget**:
+   | |embed|
+#. | Position the embed where you want it to be on your page
+#. | Copy widget snippet from your form's settings:
+   | |copy|
+#. | Paste the snippet into the embed's HTML Settings → *Code* → Add your code here (HTTPS only) on a Wix site:
+   | |paste|
+#. | Your form will then appear on a Wix site and will be ready to go:
+   | |ready|
 
 
 .. |Wix| raw:: html
