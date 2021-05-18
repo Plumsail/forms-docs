@@ -6,6 +6,14 @@
 Version history of Plumsail Forms (public forms)
 =====================================================================
 
+Web Designer v1.5.8
+--------------------------------------------------
+Added access management based on Azure AD users and groups
+
+Drop Down with Selection: Multiple is presented as an array in flow
+
+Minor bug fixes
+
 Web Designer v1.5.7
 --------------------------------------------------
 Minor bug fixes
