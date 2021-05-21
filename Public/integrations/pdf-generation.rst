@@ -18,7 +18,7 @@ Create Word template
 
 To generate PDF document, the easiest option is to create a Word template file first. For this, you will need desktop version of Microsoft Word.
 
-First, you need to activate the Developer tab in the ribbon. Click **File** -> **Options**, select **Customize Ribbon** in dialog and activate the Developer tab in the right column:
+First, you need to activate the Developer tab in the ribbon. Click **File** → **Options**, select **Customize Ribbon** in dialog and activate the Developer tab in the right column:
 
 |customize ribbon|
 

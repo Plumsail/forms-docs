@@ -61,3 +61,7 @@ When you are satisfied with how your form looks on all the layouts and screen si
 you can finally share the form. 
 
 To find out how to share saved forms, please, go to our :doc:`Sharing forms </sharing>` article.
+
+.. |Plumsail Account| raw:: html
+
+   <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>

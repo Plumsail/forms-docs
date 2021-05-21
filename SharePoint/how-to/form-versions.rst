@@ -29,7 +29,7 @@ For example, we've accidentally deleted all fields from Orders Edit Form:
 .. |pic0| image:: ../images/how-to/form-versions/how-to-form-versions-0-problem.png
    :alt: Empty form
 
-Go to **Site Pages** -> **PlumsailForms** and find the specific form that you want to return to a previous version. 
+Go to **Site Pages** → **PlumsailForms** and find the specific form that you want to return to a previous version. 
 
 The file names have the following structure: **{ListName}_{ContentTypeName}_{FormType}.xfds**
 
