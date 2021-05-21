@@ -10,6 +10,17 @@ Sharing web forms created with Plumsail Forms
  :local:
  :depth: 1
 
+Restrict access
+-------------------------------------------------------------
+Normally, a web form can be completed and submitted by anyone, but you can require users to authenticate via Microsoft Account, and even restrict access to specific SharePoint users or Azure Active Directory groups:
+
+|auth_pic|
+
+.. |auth_pic| image:: /images/authorization/authorization-domain.png
+   :alt: Restrict to a domain
+
+Find more in :doc:`Authorization for public web forms </authorization>`.
+
 Sharing pages
 -------------------------------------------------------------
 Sharing pages allow you to share forms directly with users - via the URL. You can send this URL in an email, or add it to any link on your site.
