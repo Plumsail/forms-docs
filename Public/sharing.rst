@@ -25,7 +25,7 @@ Sharing pages
 -------------------------------------------------------------
 Sharing pages allow you to share forms directly with users - via the URL. You can send this URL in an email, or add it to any link on your site.
 
-To create a sharing page, please, go to your Plumsail Account -> Forms -> Pages section and click **Add page**:
+To create a sharing page, please, go to your Plumsail Account → Forms → Pages section and click **Add page**:
 
 |pic1|
 

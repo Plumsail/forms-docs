@@ -140,7 +140,7 @@ Here's the code:
             }
         });
 
-You also need to configure Routing code in JavaScript editor -> Custom routing - we'll use localStorage of the browser to store if the flow has started or not, and we'll check it so that the user's are redirected to the correct form set:
+You also need to configure Routing code in JavaScript editor → Custom routing - we'll use localStorage of the browser to store if the flow has started or not, and we'll check it so that the user's are redirected to the correct form set:
 
 .. code-block:: javascript
 
