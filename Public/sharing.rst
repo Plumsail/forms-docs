@@ -98,9 +98,10 @@ Popular platforms
 
 .. toctree::
       :maxdepth: 1
-      
+       
+      Wix </embed/wix>     
       Squarespace </embed/squarespace>
-      Wix </embed/wix>
+
 
 Publish to any site
 **********************************
@@ -114,28 +115,12 @@ The widget can be found in Sharing Settings in the designer where you can copy i
 .. |pic18| image:: ./images/start/start-copy-snippet.png
    :alt: Copy Form Widget snippet in Sharing Settings
 
-You can also copy form's widget from Plumsail Account Forms section in |Forms subsection| where all your forms are stored. 
-
-Simply click the copy button next to a form:
-
-|pic19|
-
-.. |pic19| image:: ./images/start/start-copy-widget.png
-   :alt: Copy widget from Account
-
-.. |Forms subsection| raw:: html
-
-   <a href="https://account.plumsail.com/forms/forms-page" target="_blank">Forms subsection</a>
-
 After copying the widget, simply insert it as HTML to your page and the form will be published, ready to receive submissions:
 
 |pic20|
 
 .. |pic20| image:: ./images/start/form-published.png
    :alt: Public Web Form Published
-
-Multiple forms on one page
-**********************************
 
 If you're placing more than one form per page, make sure to change *div id=*"**plumsail-form**" and *new Plumsail.Form(*"**#plumsail-form**" to something unique for each widget. The easiest option is to add an index, for example:
 
