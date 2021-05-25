@@ -10,17 +10,6 @@ Sharing web forms created with Plumsail Forms
  :local:
  :depth: 1
 
-Restrict access
--------------------------------------------------------------
-Normally, a web form can be completed and submitted by anyone, but you can require users to authenticate via Microsoft Account, and even restrict access to specific SharePoint users or Azure Active Directory groups:
-
-|auth_pic|
-
-.. |auth_pic| image:: /images/authorization/authorization-domain.png
-   :alt: Restrict to a domain
-
-Find more in :doc:`Authorization for public web forms </authorization>`.
-
 Sharing pages
 -------------------------------------------------------------
 Sharing pages allow you to share forms directly with users - via the URL. You can send this URL in an email, or add it to any link on your site.
@@ -144,3 +133,21 @@ For more examples, please, check our |Integration section| with Wordpress, Jooml
    <a href="https://plumsail.com/forms/integration/" target="_blank">Integration section</a>
 
 .. note:: To actually work with the data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`MS Power Automate </microsoft-flow>` or :doc:`Zapier </zapier>`.
+
+Access management
+-------------------------------------------------------------
+Normally, a web form can be completed and submitted by anyone, but you can require users to authenticate via Microsoft Account:
+
+|auth_pic|
+
+.. |auth_pic| image:: /images/authorization/authorization-domain.png
+   :alt: Restrict to a domain
+
+Here you can configure the following options:
+
+- Enable access to authenticated users only
+- Allow users to submit the form just once
+- Allow users to edit their submissions
+- Provide access to the form to specific Microsoft 365 groups or users
+
+Find more in :doc:`Authorization for public web forms </authorization>`.
