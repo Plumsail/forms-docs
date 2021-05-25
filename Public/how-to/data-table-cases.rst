@@ -139,16 +139,20 @@ We'll use a simple |JS Object| to store product prices, and automatically set un
     fd.rendered(function(){
         //set unit price column (2nd column) to be non-editable, as we set it with code
         fd.control('DataTable1').columns[1].editable = function(){return false};
-        
         fd.control('DataTable1').$on('change', function(value) {
-            console.log(value); // DataTable's value
-            if(value){
-                //these changes are not manual
-                manualChange = false;
-                for(var i = 0; i < value.length; i++){
-                value[i].UnitPrice = merch[value[i].Product];
+            var modifiedValue = null;
+            if(value) {
+                for (var i = 0; i < value.length; i++) {
+                    if (value[i].UnitPrice !== merch[value[i].Product]) {
+                        if (!modifiedValue) {
+                            modifiedValue = Object.assign({}, value);
+                        }
+                        modifiedValue[i].UnitPrice = merch[value[i].Product];
+                    }
                 }
-                //refresh to update all values
+            }
+            if (modifiedValue) {
+                fd.control('DataTable1').value = value;
                 fd.control('DataTable1').widget.refresh()
             }
         });
@@ -174,16 +178,13 @@ Here is the code:
         fd.rendered(function() {
             //Disable OrderTotal field
             fd.field('OrderTotal').disabled = true;
-
             //Make LineTotal column noneditable
             fd.control('DataTable1').columns[3].editable = function(){return false};
-
             fd.control('DataTable1').$on('change', function(value) {
                 //variable to count Order Total
                 var orderTotal = 0.0;
-
                 //if there are records in the table
-                var isTableModified = false;
+                var modifiedValue = null;
                 if(value){
                     //go through each one by one
                     for (var i = 0; i < value.length; i++){
@@ -191,24 +192,23 @@ Here is the code:
                         if(value[i].Amount && value[i].UnitPrice){
                             //set LineTotal to their product
                             var cost = value[i].Amount * value[i].UnitPrice;
-
-                            if (value[i].LineTotal != cost) {
-                                value[i].LineTotal = cost;
-                                isTableModified = true;
+                            if (value[i].LineTotal !== cost) {
+                                if (!modifiedValue) {
+                                    modifiedValue = Object.assign({}, value);
+                                }
+                                modifiedValue[i].LineTotal = cost;
                             }
                         }
-
                         //add Total to the Order Total
                         orderTotal += parseFloat(value[i].LineTotal);
                         console.log(orderTotal);
                     }
                 }
-
                 //here we refresh the table
-                if (isTableModified) {
+                if (modifiedValue) {
+                    fd.control('DataTable1').value = value;
                     fd.control('DataTable1').widget.refresh();
                 }
-
                 //we set Order Total field to sum of Totals
                 fd.field('OrderTotal').value = orderTotal;
             });
