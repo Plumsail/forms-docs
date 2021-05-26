@@ -27,17 +27,17 @@ You can add a Plumsail web form to a Squarespace site in just a couple of easy s
 
    <a href="https://www.squarespace.com/" target="_blank">Squarespace</a>
 
-.. |edit| image:: ../images/integrations/squarespace/integrations-squarespace-edit-page.png
+.. |edit| image:: ../images/embed/squarespace/embed-squarespace-edit-page.png
    :alt: Edit a page
 
-.. |code| image:: ../images/integrations/squarespace/integrations-squarespace-code.png
+.. |code| image:: ../images/embed/squarespace/embed-squarespace-code.png
    :alt: Add code
    
 .. |copy| image:: ../images/start/start-copy-snippet.png
    :alt: Copy Form Widget snippet in Sharing Settings
 
-.. |content| image:: ../images/integrations/squarespace/integrations-squarespace-content.png
+.. |content| image:: ../images/embed/squarespace/embed-squarespace-content.png
    :alt: Paste snippet into content
 
-.. |result| image:: ../images/integrations/squarespace/integrations-squarespace-result.png
+.. |result| image:: ../images/embed/squarespace/embed-squarespace-result.png
    :alt: The form is ready to roll

@@ -82,17 +82,25 @@ And here's the page that I've created in just a couple of minutes with a simple 
 Embedding forms
 -------------------------------------------------------------
 
-Popular platforms
+Wix
 **********************************
+|Wix|
 
-.. toctree::
-      :maxdepth: 1
-       
-      Wix </embed/wix>     
-      Squarespace </embed/squarespace>
+Powerful website building platform with lots of templates to choose from. Find out how you can embed forms on your :doc:`Wix website </embed/wix>`.
 
+.. |Wix| image:: ./images/embed/wix/embed-wix-logo.png
+   :alt: Wix logo
 
-Publish to any site
+Squarespace
+**********************************
+|Squarespace|
+
+All-in-one solution for anyone looking to create a beautiful website. Find out how you can embed forms on your :doc:`Squarespace website </embed/squarespace>`.
+
+.. |Squarespace| image:: ./images/embed/squarespace/embed-squarespace-logo.png
+   :alt: Squarespace logo
+
+Custom web site
 **********************************
 
 You can publish Public Web Form to any webpage on your own site or anywhere else on the web, where you can edit the HTML and add our widget.

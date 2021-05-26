@@ -25,14 +25,14 @@ You can add a custom Plumsail web form to a Wix site in just a couple of easy st
 
    <a href="https://www.wix.com/" target="_blank">Wix</a>
 
-.. |embed| image:: ../images/integrations/wix/integrations-wix-embed.png
+.. |embed| image:: ../images/embed/wix/embed-wix-embed.png
    :alt: Embed a widget
    
 .. |copy| image:: ../images/start/start-copy-snippet.png
    :alt: Copy Form Widget snippet in Sharing Settings
 
-.. |paste| image:: ../images/integrations/wix/integrations-wix-paste.png
+.. |paste| image:: ../images/embed/wix/embed-wix-paste.png
    :alt: Paste snippet into embed
 
-.. |ready| image:: ../images/integrations/wix/integrations-wix-ready.png
+.. |ready| image:: ../images/embed/wix/embed-wix-ready.png
    :alt: The form is ready to roll
