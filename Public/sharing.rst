@@ -83,7 +83,7 @@ Embedding forms
 -------------------------------------------------------------
 You can publish Public Web Form to any webpage on your own site or anywhere else on the web, where you can edit the HTML and add our widget.
 
-The widget can be found in General Settings in the designer where you can copy it to clipboard:
+The widget can be found in Settings → Sharing in the designer where you can copy it to clipboard:
 
 |pic18|
 
