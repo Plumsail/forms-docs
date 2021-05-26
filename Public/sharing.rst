@@ -87,7 +87,7 @@ The widget can be found in General Settings in the designer where you can copy i
 
 |pic18|
 
-.. |pic18| image:: ./images/start/general-widget.png
+.. |pic18| image:: ./images/start/start-copy-snippet.png
    :alt: Form Widget in General Settings
 
 You can also copy form's widget from Plumsail Account Forms section in |Forms subsection| where all your forms are stored. 
