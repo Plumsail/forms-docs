@@ -20,7 +20,7 @@ How to configure
 
 First of all, add an append-only rich text field to store a discussion in. 
 
-Please note that you must also enable versioning for the list since each comment is stored in a separate version of an item. Go to the List settings -> Versioning settings and enable version history. 
+Please note that you must also enable versioning for the list since each comment is stored in a separate version of an item. Go to the List settings → Versioning settings and enable version history. 
 
 Next, create a field:
 

@@ -14,7 +14,7 @@ Sharing pages
 -------------------------------------------------------------
 Sharing pages allow you to share forms directly with users - via the URL. You can send this URL in an email, or add it to any link on your site.
 
-To create a sharing page, please, go to your Plumsail Account -> Forms -> Pages section and click **Add page**:
+To create a sharing page, please, go to your Plumsail Account → Forms → Pages section and click **Add page**:
 
 |pic1|
 
@@ -87,7 +87,7 @@ The widget can be found in General Settings in the designer where you can copy i
 
 |pic18|
 
-.. |pic18| image:: ./images/start/general-widget.png
+.. |pic18| image:: ./images/start/start-copy-snippet.png
    :alt: Form Widget in General Settings
 
 You can also copy form's widget from Plumsail Account Forms section in |Forms subsection| where all your forms are stored. 
@@ -133,3 +133,21 @@ For more examples, please, check our |Integration section| with Wordpress, Jooml
    <a href="https://plumsail.com/forms/integration/" target="_blank">Integration section</a>
 
 .. note:: To actually work with the data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`MS Power Automate </microsoft-flow>` or :doc:`Zapier </zapier>`.
+
+Access management
+-------------------------------------------------------------
+Normally, a web form can be completed and submitted by anyone, but you can require users to authenticate via Microsoft Account:
+
+|auth_pic|
+
+.. |auth_pic| image:: /images/authorization/authorization-domain.png
+   :alt: Restrict to a domain
+
+Here you can configure the following options:
+
+- Enable access to authenticated users only
+- Allow users to submit the form just once
+- Allow users to edit their submissions
+- Provide access to the form to specific Microsoft 365 groups or users
+
+Find more in :doc:`Authorization for public web forms </authorization>`.
