@@ -1,7 +1,7 @@
-.. title:: Designing modern forms for SP Online (Office 365) and SP 2019
+.. title:: How to design modern forms for SharePoint Online in Office 365 and for SharePoint 2019
 
 .. meta::
-   :description: How to create SharePoint forms - learn the basics: open desktop editor and connect, add fields, controls and containers, save the form
+   :description: Learn all you need: how to launch the editor app, how to customize a form, how to create form sets, and more
 
 Designing modern forms for SharePoint Online in Office 365 and SharePoint 2019
 ===============================================================================================================
@@ -13,37 +13,22 @@ Designing modern forms for SharePoint Online in Office 365 and SharePoint 2019
 
 Open the designer
 **************************************************
-First of all, you need to make sure that you've downloaded and installed |the designer application| to your PC.
-
-Don't forget to follow all the steps in the :doc:`SharePoint installation instruction (Office 365) </installation-sp>` 
-or :doc:`SharePoint installation instruction (SharePoint 2019) </installation-2019>`, 
-upload package to your App Catalog and share it with all the sites.
-
-.. |Plumsail Account| raw:: html
-
-   <a href="https://account.plumsail.com/" target="_blank">Plumsail Account</a>
-
-.. |the designer application| raw:: html
-
-   <a href="https://account.plumsail.com/forms/intro" target="_blank">the designer application</a>
 
 SharePoint Online
 ---------------------------------------------------
-For SharePoint Online app launches with the following window:
+After following all the steps of :doc:`SharePoint installation instruction (Office 365) </installation-sp>`, download and run |the designer application|.
+Simply enter the URL of the site that you want to modify forms for:
 
 |pic1|
 
 .. |pic1| image:: /images/startSP/startSP-sign-in.png
    :alt: Sign In SharePoint Online
 
-Simply enter the URL of the site that you want to modify forms for. 
+.. |the designer application| raw:: html
 
-You'll then need to go through standard SharePoint authentication, make sure to use login with Full Control on the site:
+   <a href="https://account.plumsail.com/forms/intro" target="_blank">the designer application</a>
 
-|auth|
-
-.. |auth| image:: /images/startSP/startSP-auth.png
-   :alt: SharePoint Authentication
+You'll then need to go through standard SharePoint authentication, make sure to use login with **Full Control permissions** on the site.
 
 .. note::   If you want to logout from the previously selected user, just connect to the site once again and press Sign Out button:
 
@@ -55,19 +40,12 @@ You'll then need to go through standard SharePoint authentication, make sure to 
 
 SharePoint On-Premises
 ---------------------------------------------------
-You can launch the designer app from desktop or use **Design Forms** button in the ribbon (make sure to activate Site Collection feature first):
+After following all the steps of :doc:`SharePoint installation instruction (SharePoint 2019) </installation-2019>`, you can launch the designer app from desktop or use **Design Forms** button in the ribbon (make sure to activate Site Collection feature first):
 
 |ribbonButton|
 
 .. |ribbonButton| image:: /images/startSP/runFormsFromRibbon.png
    :alt: Run Forms from Ribbon
-
-For SharePoint On-Premises app launches with the following window:
-
-|designer2019|
-
-.. |designer2019| image:: /images/startSP/launch2019.png
-   :alt: Sign In SharePoint 2019
 
 Enter the exact URL of the site that you want to customize list for. Unless your Windows desktop login is the same as your SharePoint login, you'll need to
 remove the mark from **Login as current user** and use your SharePoint credentials instead:
@@ -86,7 +64,7 @@ Depending on the type of authentication you have on your site, you might need to
 
 New, Edit and Display forms
 **************************************************
-Inside the designer, when you open a specific List or a Library to work with, you can select which form you want to edit in the upper right corner.
+You can select which form you want to edit in the upper right corner of the editor:
 
 |pic2|
 
@@ -100,14 +78,12 @@ Inside the designer, when you open a specific List or a Library to work with, yo
 Content Type
 -------------------------------------------------
 
-Also, if Content Types are enabled for the List, you can select which Content Type you want to customize forms for:
+You can select which Content Type you want to customize forms for - each Content Type has its own forms:
 
 |content-type|
 
-.. |content-type| image:: /images/startSP/contentType.png
+.. |content-type| image:: /images/startSP/startSP-ContentType.png
    :alt: Select Content Type
-
-Each Content Type has its own forms.
 
 Basics of form design
 **************************************************
@@ -118,16 +94,16 @@ In the designer, on the left, you have Containers, Controls and Fields that you 
 .. |pic3| image:: /images/startSP/elements.png
    :alt: Containers, Controls and Fields
 
-Adding them to the form is easy, just drag and drop the desired elements to the form. You can change individualy configuration of each :doc:`Field </designer/fields>`, 
+Adding them to the form is easy, just drag and drop the desired elements to the form. You can change individualy configuration of each :doc:`Field </designer/fields-sp>`, 
 :doc:`Control </designer/controls>` and :doc:`Container </designer/containers>` by selecting it with a click and then adjusting its properties in menu on the right:
 
 |pic4|
 
-.. |pic4| image:: /images/startSP/settings.png
+.. |pic4| image:: /images/startSP/startSP-designer-properties.gif
    :alt: Field's Properties
 
-By default, each element is placed inside a :ref:`designer-grid`, which is based on |Bootstrap Grid|. By adjusting PARENT GRID properties of each element, 
-you adjust element's layout in regards to all other elements.
+By default, each element is placed inside a :ref:`designer-grid`. By adjusting PARENT GRID properties of each element, 
+you adjust element's layout in regards to all other elements. You can learn more on :doc:`how to work with form layout </how-to/grid-advantages>`.
 
 .. |Bootstrap Grid| raw:: html
 
@@ -143,47 +119,37 @@ You can customize :ref:`layout for mobile devices <designer-layouts>` by selecti
 
 |mobile|
 
-.. |mobile| image:: /images/designer/ribbon-actions/Layouts.png
+.. |mobile| image:: /images/startSP/startSP-layouts.png
    :alt: Layouts icons
 
 Saving a form
 **************************************************
-Saving a form is easy - just click the Save button. Once the button is pressed, it gets grayed out and you'll see a message that says that the form is saving:
-
-|pic5|
-
-.. |pic5| image:: /images/startSP/startSP-saving.png
-   :alt: Saving a form
-
+Saving a form is easy - just click the Save button. Once the button is pressed, it gets grayed out and you'll see a message that says that the form is saving.
 Please, **wait until the process is complete**. Meanwhile, you can continue working in the designer, but if you want to see the results in SharePoint, 
 you need to wait until you see *Layout has been successfully saved* message:
 
-|pic6|
+|pic5|
 
-.. |pic6| image:: /images/startSP/startSP-saved.png
-   :alt: Form is saved
+.. |pic5| image:: /images/startSP/startSP-saving.gif
+   :alt: Saving a form
 
-Finally, you are also able to save multiple forms at once if you want them to share functionality. For example, if the form has no custom logic, 
+You are also able to save multiple forms at once if you want them to share functionality. For example, if the form has no custom logic, 
 it's often easier to save New, Edit and Display form at the same time. Just click the arrow symbol on the Save button and select which forms you want to
 replace with the current one:
 
 |pic7|
 
-.. |pic7| image:: /images/startSP/startSP-save3.png
+.. |pic7| image:: /images/startSP/startSP-saving-all.png
    :alt: Save multiple forms
    
-Be extra careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them, for example.
-Because of that, and other potentially risky situations, we recommend backing up forms that are important to you, 
-by using :ref:`Export feature <designer-export>` of the designer:
+Be careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them and overwrite existing code.
 
-|pic8|
+.. note::   If you ever want to go back and revert some changes, you can always :doc:`restore a previous version of a form </how-to/form-versions>`.
 
-.. |pic8| image:: /images/designer/ribbon-actions/ExportImport.png
-   :alt: Export and Import buttons
 
 Reset a form to the default MS form
 **************************************************
-If you decide that you no longer want to utilize specific form, you can open it in the editor and click the Reset button:
+If you decide that you no longer want to utilize a specific form, you can open it in the editor and click the Reset button:
 
 |reset|
 
@@ -208,7 +174,16 @@ Don't forget that you can give each element a class and then use it in CSS edito
 Another thing that you can alter on any form is JavaScript and with our rich :doc:`JavaScript API </javascript/general>` there is a lot that can be done with it.
 
 Please, make sure that you are familiar with the events present in JavaScript API as these events need to be used in order to get access to all forms elements.
-In this section you can check out the practical examples of using JavaScript API to make forms more dynamic.
+You can check out the practical examples of using JavaScript API to make forms more dynamic:
+
+   .. toctree::
+               :maxdepth: 1
+               :titlesonly:
+
+               Populate, hide, disable, make mandatory fields <how-to/conditional-fields>
+               Date and Time: calculate difference, adjust values <how-to/manipulate-date-field>
+               Data Table: populate cells, calculate totals, duplicate rows <how-to/data-table-cases>
+               Handle List or Library fields in inline editing mode <how-to/list-or-library-inline>
 
 Form Sets
 --------------------------------------------------
