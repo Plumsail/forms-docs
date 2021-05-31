@@ -100,6 +100,15 @@ All-in-one solution for anyone looking to create a beautiful website. Find out h
 .. |Squarespace| image:: ./images/embed/squarespace/embed-squarespace-logo.png
    :alt: Squarespace logo
 
+Facebook
+**********************************
+|Facebook|
+
+One of the most used social media platforms in the world. Find out how you can embed forms on your :doc:`Facebook page </embed/facebook>`.
+
+.. |Facebook| image:: ./images/embed/facebook/embed-facebook-logo.png
+   :alt: Facebook logo
+
 Custom web site
 **********************************
 
