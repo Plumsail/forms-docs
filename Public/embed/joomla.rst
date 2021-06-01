@@ -14,16 +14,8 @@ You can add a Plumsail web form to a Joomla! site in just a couple of easy steps
 #. | Paste the snippet into the Code's Content on a Joomla! site and publish the page:
    | |content|
 
-
-.. |Squarespace| raw:: html
-
-   <a href="https://www.squarespace.com/" target="_blank">Squarespace</a>
-
 .. |editor| image:: ../images/embed/joomla/embed-joomla-editor.png
    :alt: Code Mirror as the default editor
-
-.. |code| image:: ../images/embed/squarespace/embed-squarespace-code.png
-   :alt: Add code
    
 .. |copy| image:: ../images/start/start-copy-snippet.png
    :alt: Copy Form Widget snippet in Sharing Settings

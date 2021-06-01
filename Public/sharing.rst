@@ -82,41 +82,51 @@ And here's the page that I've created in just a couple of minutes with a simple 
 Embedding forms
 -------------------------------------------------------------
 
-Wix
+
+
+|Wix| Wix
 **********************************
-|Wix|
 
 Powerful website building platform with lots of templates to choose from. Find out how you can embed forms on your :doc:`Wix website </embed/wix>`.
 
 .. |Wix| image:: ./images/embed/wix/embed-wix-logo.png
-   :alt: Wix logo
+   :alt:
 
-Squarespace
+
+
+|Squarespace| Squarespace
 **********************************
-|Squarespace|
 
 All-in-one solution for anyone looking to create a beautiful website. Find out how you can embed forms on your :doc:`Squarespace website </embed/squarespace>`.
 
 .. |Squarespace| image:: ./images/embed/squarespace/embed-squarespace-logo.png
-   :alt: Squarespace logo
+   :alt:
 
-Joomla!
+|Wordpress| Wordpress
 **********************************
-|Joomla!|
+
+A free and open-source content management system written. Find out how you can embed forms on your :doc:`Wordpress website </embed/wordpress>`.
+
+.. |Wordpress| image:: ./images/embed/wordpress/embed-wordpress-logo.png
+   :alt:
+
+
+
+|Joomla!| Joomla!
+**********************************
 
 A free and open-source content management system for publishing web content. Find out how you can embed forms on your :doc:`Joomla! website </embed/joomla>`.
 
 .. |Joomla!| image:: ./images/embed/joomla/embed-joomla-logo.png
-   :alt: Joomla! logo
+   :alt:
 
-Facebook
+|Facebook| Facebook
 **********************************
-|Facebook|
 
 One of the most used social media platforms in the world. Find out how you can embed forms on your :doc:`Facebook page </embed/facebook>`.
 
 .. |Facebook| image:: ./images/embed/facebook/embed-facebook-logo.png
-   :alt: Facebook logo
+   :alt:
 
 Custom web site
 **********************************
