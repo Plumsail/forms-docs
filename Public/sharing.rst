@@ -100,6 +100,15 @@ All-in-one solution for anyone looking to create a beautiful website. Find out h
 .. |Squarespace| image:: ./images/embed/squarespace/embed-squarespace-logo.png
    :alt: Squarespace logo
 
+Joomla!
+**********************************
+|Joomla!|
+
+A free and open-source content management system for publishing web content. Find out how you can embed forms on your :doc:`Joomla! website </embed/joomla>`.
+
+.. |Joomla!| image:: ./images/embed/joomla/embed-joomla-logo.png
+   :alt: Joomla! logo
+
 Facebook
 **********************************
 |Facebook|
