@@ -84,7 +84,7 @@ Embedding forms
 
 
 
-|Wix| Wix
+Wix
 **********************************
 
 Powerful website building platform with lots of templates to choose from. Find out how you can embed forms on your :doc:`Wix website </embed/wix>`.
@@ -94,7 +94,7 @@ Powerful website building platform with lots of templates to choose from. Find o
 
 
 
-|Squarespace| Squarespace
+Squarespace
 **********************************
 
 All-in-one solution for anyone looking to create a beautiful website. Find out how you can embed forms on your :doc:`Squarespace website </embed/squarespace>`.
@@ -102,7 +102,7 @@ All-in-one solution for anyone looking to create a beautiful website. Find out h
 .. |Squarespace| image:: ./images/embed/squarespace/embed-squarespace-logo.png
    :alt:
 
-|Wordpress| Wordpress
+Wordpress
 **********************************
 
 A free and open-source content management system written. Find out how you can embed forms on your :doc:`Wordpress website </embed/wordpress>`.
@@ -112,7 +112,7 @@ A free and open-source content management system written. Find out how you can e
 
 
 
-|Joomla!| Joomla!
+Joomla!
 **********************************
 
 A free and open-source content management system for publishing web content. Find out how you can embed forms on your :doc:`Joomla! website </embed/joomla>`.
@@ -120,7 +120,7 @@ A free and open-source content management system for publishing web content. Fin
 .. |Joomla!| image:: ./images/embed/joomla/embed-joomla-logo.png
    :alt:
 
-|Facebook| Facebook
+Facebook
 **********************************
 
 One of the most used social media platforms in the world. Find out how you can embed forms on your :doc:`Facebook page </embed/facebook>`.

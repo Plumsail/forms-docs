@@ -6,6 +6,70 @@
   filter: none;
 }
 
+#embedding-forms .section:not(#custom-web-site) .headerlink{
+  display: none;
+}
+
+#embedding-forms h3{
+  display: flex;
+  align-items: center;
+}
+
+#embedding-forms #wix h3:before{
+  background-image: url('../img/embed/embed-wix-logo.svg');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 14px;
+  margin-bottom: 5px;
+}
+
+#embedding-forms #squarespace h3:before{
+  background-image: url('../img/embed/embed-squarespace-logo.svg');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 14px;
+  margin-bottom: 5px;
+}
+
+#embedding-forms #wordpress h3:before{
+  background-image: url('../img/embed/embed-wordpress-logo.svg');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 13px;
+  margin-bottom: 5px;
+}
+
+#embedding-forms #joomla h3:before{
+  background-image: url('../img/embed/embed-joomla-logo.svg');
+  background-size: 25px 25px;
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  content:"";
+  margin-right: 18px;
+  margin-bottom: 5px;
+}
+
+#embedding-forms #facebook h3:before{
+  background-image: url('../img/embed/embed-facebook-logo.svg');
+  background-size: 26px 26px;
+  display: inline-block;
+  width: 26px; 
+  height: 26px;
+  content:"";
+  margin-right: 17px;
+  margin-bottom: 3px;
+}
+
 .img-link.public-integration img{
   filter:none!important;
   margin:0!important;
