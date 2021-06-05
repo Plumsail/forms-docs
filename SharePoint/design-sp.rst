@@ -10,8 +10,7 @@ Designing modern forms for SharePoint Online in Office 365 and SharePoint 2019
  :local:
  :depth: 1
 
-
-Open the designer
+Connecting to SharePoint
 **************************************************
 
 SharePoint Online
@@ -62,7 +61,7 @@ Depending on the type of authentication you have on your site, you might need to
 .. |authentication| image:: /images/startSP/authentication.png
    :alt: Select authentication
 
-New, Edit and Display forms
+Working with New, Edit and Display forms
 **************************************************
 You can select which form you want to edit in the upper right corner of the editor:
 
@@ -85,7 +84,7 @@ You can select which Content Type you want to customize forms for - each Content
 .. |content-type| image:: /images/startSP/startSP-ContentType.png
    :alt: Select Content Type
 
-Basics of form design
+Learning the basics of designer's layout
 **************************************************
 In the designer, on the left, you have Containers, Controls and Fields that you can use on the form:
 
@@ -122,7 +121,9 @@ You can customize :ref:`layout for mobile devices <designer-layouts>` by selecti
 .. |mobile| image:: /images/startSP/startSP-layouts.png
    :alt: Layouts icons
 
-Saving a form
+To find more about various buttons and options available in the editor, check out :doc:`our Ribbon actions article </designer/ribbon-actions>`.
+
+Saving forms or restoring previous versions
 **************************************************
 Saving a form is easy - just click the Save button. Once the button is pressed, it gets grayed out and you'll see a message that says that the form is saving.
 Please, **wait until the process is complete**. Meanwhile, you can continue working in the designer, but if you want to see the results in SharePoint, 
@@ -144,10 +145,10 @@ replace with the current one:
    
 Be careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them and overwrite existing code.
 
-.. note::   If you ever want to go back and revert some changes, you can always :doc:`restore a previous version of a form </how-to/form-versions>`.
+If you ever want to go back and revert some changes, you can always :doc:`restore a previous version of a form </how-to/form-versions>`.
 
 
-Reset a form to the default MS form
+Resetting a form to the default state
 **************************************************
 If you decide that you no longer want to utilize a specific form, you can open it in the editor and click the Reset button:
 
@@ -156,11 +157,8 @@ If you decide that you no longer want to utilize a specific form, you can open i
 .. |reset| image:: /images/startSP/startSP-reset.png
    :alt: Reset the form
 
-Advanced functionality
+Working with CSS and JavaScript
 **************************************************
-
-CSS and JavaScript
---------------------------------------------------
 If you want to change the appearance of elements on the form, you can either edit Style property of the elements or apply custom styles with CSS editor.
 Don't forget that you can give each element a class and then use it in CSS editor to apply styles by class.
 
@@ -185,8 +183,8 @@ You can check out the practical examples of using JavaScript API to make forms m
                Data Table: populate cells, calculate totals, duplicate rows <how-to/data-table-cases>
                Handle List or Library fields in inline editing mode <how-to/list-or-library-inline>
 
-Form Sets
---------------------------------------------------
+Providing unique Form Sets for different users
+**************************************************
 You are not limited to three Forms per Content Type. In fact, you can create many :doc:`Form Sets </designer/form-sets>` as necessary.
 Add a new one by clicking the **+ sign**:
 
@@ -210,8 +208,8 @@ such as field values on the form or user's properties:
 .. |pic11| image:: /images/designer/form-sets/3-Routing.png
    :alt: Form Routing button
 
-Related Items/Documents
---------------------------------------------------
+Displaying Related Items/Documents on the form
+**************************************************
 :ref:`designer-listorlibrary` control allows you to show another SharePoint List or Library within the form. 
 It also allows users to add new items, change or delete existing ones, directly from the current form.
 
