@@ -10,7 +10,7 @@ Designing modern forms for SharePoint Online in Office 365 and SharePoint 2019
  :local:
  :depth: 1
 
-Connecting to SharePoint
+Connecting to a SharePoint List
 **************************************************
 
 SharePoint Online
@@ -63,7 +63,7 @@ Depending on the type of authentication you have on your site, you might need to
 
 Working with New, Edit and Display forms
 **************************************************
-You can select which form you want to edit in the upper right corner of the editor:
+Once you connect to a SharePoint List, you can select which form you want to edit in the upper right corner of the editor:
 
 |pic2|
 
@@ -84,7 +84,7 @@ You can select which Content Type you want to customize forms for - each Content
 .. |content-type| image:: /images/startSP/startSP-ContentType.png
    :alt: Select Content Type
 
-Learning the basics of designer's layout
+Learning the basics of the editor's layout
 **************************************************
 In the designer, on the left, you have Containers, Controls and Fields that you can use on the form:
 
@@ -123,7 +123,7 @@ You can customize :ref:`layout for mobile devices <designer-layouts>` by selecti
 
 To find more about various buttons and options available in the editor, check out :doc:`our Ribbon actions article </designer/ribbon-actions>`.
 
-Saving forms or restoring previous versions
+Saving a form or multiple forms
 **************************************************
 Saving a form is easy - just click the Save button. Once the button is pressed, it gets grayed out and you'll see a message that says that the form is saving.
 Please, **wait until the process is complete**. Meanwhile, you can continue working in the designer, but if you want to see the results in SharePoint, 
@@ -145,17 +145,16 @@ replace with the current one:
    
 Be careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them and overwrite existing code.
 
-If you ever want to go back and revert some changes, you can always :doc:`restore a previous version of a form </how-to/form-versions>`.
-
-
-Resetting a form to the default state
-**************************************************
+Resetting a form back to default or to previous version
+********************************************************
 If you decide that you no longer want to utilize a specific form, you can open it in the editor and click the Reset button:
 
 |reset|
 
 .. |reset| image:: /images/startSP/startSP-reset.png
    :alt: Reset the form
+
+If you ever want to go back and revert some changes, you can always :doc:`restore a previous version of a form </how-to/form-versions>`.
 
 Working with CSS and JavaScript
 **************************************************
@@ -179,6 +178,7 @@ You can check out the practical examples of using JavaScript API to make forms m
                :titlesonly:
 
                Populate, hide, disable, make mandatory fields <how-to/conditional-fields>
+               Manipulate Tabs, Accordions, and Wizards with JavaScript <how-to/conditional-containers> 
                Date and Time: calculate difference, adjust values <how-to/manipulate-date-field>
                Data Table: populate cells, calculate totals, duplicate rows <how-to/data-table-cases>
                Handle List or Library fields in inline editing mode <how-to/list-or-library-inline>
@@ -193,11 +193,11 @@ Add a new one by clicking the **+ sign**:
 .. |pic9| image:: /images/startSP/addFormSet.png
    :alt: Add a Form Set
 
-Common use for Form Sets is to provide unique :ref:`forms for members of certain groups <designer-grouprouting>`, that can be easily configured in the menu when you create a new Form Set:
+Common use for Form Sets is to provide unique :ref:`forms for members of certain groups <designer-grouprouting>`, easily configured in the menu when you create a new Form Set:
 
 |pic10|
 
-.. |pic10| image:: /images/designer/form-sets/2-FormSetsConfig.png
+.. |pic10| image:: /images/startSP/azureADGroups.png
    :alt: Form Sets Group Configuration
 
 But you are not limited to it. In fact, you can leave it empty and instead use :ref:`designer-customrouting` to redirect users to the appropriate form based on other conditions,
@@ -205,8 +205,10 @@ such as field values on the form or user's properties:
 
 |pic11|
 
-.. |pic11| image:: /images/designer/form-sets/3-Routing.png
+.. |pic11| image:: /images/startSP/startSP-designSP-routing.png
    :alt: Form Routing button
+
+.. note::   This can also be used to provide :doc:`different forms for different languages </how-to/language>`.
 
 Displaying Related Items/Documents on the form
 **************************************************
@@ -219,8 +221,33 @@ It also allows users to add new items, change or delete existing ones, directly 
    :alt: Parent Form with Children
 
 What is even more impressive - it allows to :doc:`create Parent/Child relationship </how-to/child-parent-form>` between items in one list and items in another list very easily, 
-without any code required. Find out how it's done in this article.
+without any code required. This connection can be established even across sites, using our :doc:`Lookup control </how-to/csl>`.
 
 You also need to be aware that List or Library supports various means of filtering. For example, you can :doc:`set Root Folder property </how-to/root-folder>` 
 either manually or with a script, and it will ensure that users can only see contents of this root folder and cannot see items higher in the hierarchy. 
 :doc:`CAML filtering </how-to/caml-filter>` is also supported and can also be used to filter shown items by their field values, and it can be done dynamically as well.
+
+.. note::   You can also :doc:`update properties of uploaded files </how-to/document-meta>` dynamically.
+
+Configuring Lookup - cascading, filtering, and cross-site connection
+**********************************************************************
+You can also do a lot with the Lookup on the form. For example, you can use our custom **Lookup control** to setup :doc:`cross-site connection </how-to/csl>`:
+
+|lookup-control|
+
+.. |lookup-control| image:: /images/startSP/startSP-designSP-LookupControl.png
+   :alt: Lookup control
+
+Either Lookup control or a regular SharePoint field can then be further customized. For example, you can add :doc:`filtering and cascading functionality </how-to/lookup-filter>`:
+
+|lookup-filter|
+
+.. |lookup-filter| image:: /images/how-to/lookup-filter/how-to-lookup-filter-depends-on-person.png
+   :alt: Lookup filter
+
+Also, both can be customized, and you can :doc:`adjust display values </how-to/lookup-view>` in dropdown for your exact needs:
+
+|lookup-view|
+
+.. |lookup-view| image:: /images/how-to/lookup-view/example.png
+   :alt: Lookup view customized

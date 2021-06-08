@@ -119,7 +119,7 @@ Plumsail Forms for SharePoint
 
             Redirect user after form submission <how-to/redirect-sp-save>
             Open any form in dialog from another form <how-to/form-dialog>
-            Generate link to SharePoint form <how-to/link-to-form>
+            Generate a link to a SharePoint form <how-to/link-to-form>
 
       .. toctree::
             :caption: Working with fields in JavaScript
