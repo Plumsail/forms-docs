@@ -11,7 +11,7 @@ Form Sets allow you to design additional forms for SharePoint List or Library.
 By default, each List only has three forms - New, Edit and Display. 
 Each additional Form Set allows you to add three more forms - also New, Edit and Display, but a Form Set doesn't have to contain all three forms, it can be just one or two.
 
-- :ref:`designer-grouprouting` can be used to redirect users who belong to selected groups to a specific Form Set.
+- :ref:`designer-grouprouting` can be used to redirect users from a selected group to a specific Form Set.
 - :ref:`designer-customrouting` can be used to apply more complex logic prior to redirection, for example, check item's field values or user's properties.
 
 |pic1|
@@ -31,19 +31,19 @@ Trash bin icon allows you to delete a Form Set. After creating a Form Set, do no
 
 .. _designer-grouprouting:
 
-Automatic routing based on SharePoint group membership
+Automatic routing based on Azure AD or SharePoint group membership
 -------------------------------------------------------------
 When you create a Form Set, straight away, you can configure automatic routing for the members of certain groups:
 
 |pic2|
 
-.. |pic2| image:: ../images/designer/form-sets/2-FormSetsConfig.png
+.. |pic2| image:: ../images/designer/form-sets/designer-form-sets-azureADGroups.png
    :alt: Form Sets Configuration
 
 * Name - the name of the Form Set, can be anything you want, just makes it easier to find among all the Form Sets.
 * Order - determines the order in which to open Form Sets if conditions are met. The lower the Order value, the higher the priority for Form Set to open.
-* Open forms when a user belongs... - select all groups user must belong to in order to be redirected. **Note!** Must select something in order for redirection to work.
-* Excluding the selected groups - will not redirect the user that belongs to the previously picked groups, if the user also belongs to one of the groups selected here.
+* Azure AD routing allows you to create forms for specific Azure AD groups or even individual users
+* SharePoint groups routing allows you to make a form for the users of a specific SharePoint security group
 
 .. _designer-customrouting:
 
@@ -56,6 +56,8 @@ or any other information from SharePoint. Based on this information, you can red
 Custom routing always takes priority over group routing. So, if your custom code returns ID of a Form Set, 
 users will get redirected to the corresponding URL or Form Set all the time, even if they do not belong to the selected groups for this Form Set.
 Custom routing is configured for all Forms and Form Sets of the current Content Type. Each Content Type has its own custom routing configuration.
+
+.. note::   This can also be used to provide :doc:`different forms for different languages <../how-to/language>`.
 
 To add custom routing conditions, click *Routing* button:
 
