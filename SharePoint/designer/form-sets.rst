@@ -1,7 +1,7 @@
 .. title:: Personalized Form sets in Plumsail Forms for SharePoint
 
 .. meta::
-   :description: How to create special form sets, such as a set of forms for supervisors or managers, and redirect only specific users to them based on SharePoint groups or custom rules
+   :description: How to create special Form sets, such as a set of forms for supervisors only, and redirect to them based on Azure AD users or groups, SharePoint groups or custom rules
 
 Personalized Form sets in Plumsail Forms for SharePoint
 =============================================================
@@ -10,18 +10,18 @@ Personalized Form sets in Plumsail Forms for SharePoint
  :local:
  :depth: 1
 
-Form Sets allow you to design additional forms for SharePoint List or Library - for example, forms for a specific user or group.
+Form sets allow you to design additional forms for SharePoint - for example, forms for a specific user or group.
 
 |pic1|
 
 .. |pic1| image:: ../images/designer/form-sets/designer-form-sets-addFormSet.png
-   :alt: Form Sets UI
+   :alt: Form sets UI
 
 You can select currently active Form Set in an upper right corner, in the drop-down.
-Default Form Set is what all users see if they are not redirected.
+Default Form Set is what all users see if they are not redirected to a custom one.
 
-Add new Form Set by clicking **+ sign** next to the currently selected Form Set. Clicking Pen Icon allows you to edit properties of the currently selected Form Set.
-Trash bin icon allows you to delete a Form Set. After creating a Form Set, do not forget to save every form you plan to use or it might be missing.
+Add new Form Set by clicking the **+ sign** next to the currently selected Form Set. Clicking the Pen Icon allows you to edit properties of the currently selected Form Set.
+Trash bin icon allows you to delete a Form Set. After creating a Form Set, do not forget to save every form you plan to use, such as New, Edit or Display form, or it might be missing.
 
 .. _designer-azurerouting:
 
@@ -34,8 +34,8 @@ When you create a Form Set, straight away, you can configure automatic routing f
 .. |pic-azure| image:: ../images/designer/form-sets/designer-form-sets-azureADGroups.png
    :alt: Azure AD routing
 
-* Name - the name of the Form Set, can be anything you want, just makes it easier to find among all the Form Sets.
-* Order - determines the order in which to open Form Sets if conditions are met. The lower the Order value, the higher the priority for Form Set to open.
+* Name - the name of the Form Set, can be anything you want, just makes it easier to find among all the Form sets.
+* Order - determines the order in which to open Form sets if conditions are met. The lower the Order value, the higher the priority for Form Set to open.
 * Add users or groups - select specific users or any Azure AD groups (such Team site groups, for example), to redirect to the Form Set
 
 .. _designer-grouprouting:
@@ -49,8 +49,8 @@ You can switch to SharePoint groups tab and configure access based on SharePoint
 .. |pic-sharepoint| image:: ../images/designer/form-sets/designer-form-sets-SharePointGroups.png
    :alt: SharePoint group routing
 
-* Name - the name of the Form Set, can be anything you want, just makes it easier to find among all the Form Sets.
-* Order - determines the order in which to open Form Sets if conditions are met. The lower the Order value, the higher the priority for Form Set to open.
+* Name - the name of the Form Set, can be anything you want, just makes it easier to find among all the Form sets.
+* Order - determines the order in which to open Form sets if conditions are met. The lower the Order value, the higher the priority for Form Set to open.
 * Open forms when a user belongs… - select all groups user must belong to in order to be redirected.
 * Excluding the selected groups - completely prevent redirection from these groups, even if users also belong to the groups previously selected.
 
@@ -60,11 +60,11 @@ Custom routing
 -------------------------------------------------------------
 You are not limited to checking current user's group membership, using custom routing you can use any logic to redirect users to specific form.
 With custom routing, you can check current item's field values, user's properties, such as title or department, 
-or any other information from SharePoint. Based on this information, you can redirect users to different Form Sets or URLs.
+or any other information from SharePoint. Based on this information, you can redirect users to different Form sets or URLs.
 
 Custom routing always takes priority over group routing. So, if your custom code returns ID of a Form Set, 
 users will get redirected to the corresponding URL or Form Set all the time, even if they do not belong to the selected groups for this Form Set.
-Custom routing is configured for all Forms and Form Sets of the current Content Type. Each Content Type has its own custom routing configuration.
+Custom routing is configured for all Forms and Form sets of the current Content Type. Each Content Type has its own custom routing configuration.
 
 .. note::   This can also be used to provide :doc:`different forms for different languages <../how-to/language>`.
 
@@ -218,11 +218,7 @@ Practical cases with routing
 -----------------------------------------------------
 Check out the following examples of how you can use routing in your forms and projects:
 
-.. toctree::
-        :maxdepth: 1
-        :titlesonly:
-
-        Create forms in multiple languages <../how-to/language>
-        Open edit form by default for a user group <../how-to/edit-form>
-        Personalize form based on user group in SharePoint or Azure AD with Graph API <../how-to/forms-for-groups>
-        Configure a ticket management system <../examples/ticket-management>
+   - :doc:`Create forms in multiple languages <../how-to/language>`
+   - :doc:`Open edit form by default for a user group <../how-to/edit-form>`
+   - :doc:`Personalize form based on user group in SharePoint or Azure AD with Graph API <../how-to/forms-for-groups>`
+   - :doc:`Configure a ticket management system <../examples/ticket-management>`

@@ -108,7 +108,7 @@ This schema is used when creating Flow with Plumsail Forms connector to parse JS
 .. |pic6| image:: ../images/flow/14_ParseJSONContent.png
    :alt: Parse JSON with Form Schema
 
-**Routing** button allows you to configure automatic redirection to a correct Form Set, based on some rules. Find out more about in our :doc:`Form Sets article </designer/panel>`.
+**Routing** button allows you to configure automatic redirection to a correct Form Set, based on some rules. Find out more about in our :doc:`Form sets article </designer/panel>`.
 
 |pic7|
 

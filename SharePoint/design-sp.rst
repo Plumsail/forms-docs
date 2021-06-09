@@ -1,16 +1,16 @@
-.. title:: How to design modern forms for SharePoint Online in Office 365 and for SharePoint 2019
+.. title:: How to design modern SharePoint forms for Microsoft 365 or SharePoint 2019 on-premises
 
 .. meta::
-   :description: Learn all you need: how to launch the editor app, how to customize a form, how to create form sets, and more
+   :description: Learn all you need: how to launch SharePoint forms builder, how to customize SharePoint forms, how to create multiple forms for different users and groups, how to connect lists from different SharePoint sites
 
-Designing modern forms for SharePoint Online in Office 365 and SharePoint 2019
+How to design modern SharePoint forms for Microsoft 365 or SharePoint 2019 on-premises
 ===============================================================================================================
 
 .. contents::
  :local:
  :depth: 1
 
-Connecting to a SharePoint List
+Connect to a SharePoint list or library
 **************************************************
 
 SharePoint Online
@@ -61,7 +61,7 @@ Depending on the type of authentication you have on your site, you might need to
 .. |authentication| image:: /images/startSP/authentication.png
    :alt: Select authentication
 
-Working with New, Edit and Display forms
+New, Edit, and Display forms
 **************************************************
 Once you connect to a SharePoint List, you can select which form you want to edit in the upper right corner of the editor:
 
@@ -74,6 +74,29 @@ Once you connect to a SharePoint List, you can select which form you want to edi
 - **Edit Form** - form that allows you to edit values stored in an item, or properties of an uploaded file in SharePoint Library.
 - **Display Form** - form that only allows you to see what values are stored in an item or check properties of an uploaded file, cannot edit.
 
+
+Saving a form or multiple forms
+-------------------------------------------------
+Saving a form is easy - just click the Save button. Once the button is pressed, it gets grayed out and you'll see a message that says that the form is saving.
+Please, **wait until the process is complete**. Meanwhile, you can continue working in the designer, but if you want to see the results in SharePoint, 
+you need to wait until you see *Layout has been successfully saved* message:
+
+|pic5|
+
+.. |pic5| image:: /images/startSP/startSP-saving.gif
+   :alt: Saving a form
+
+You are also able to save multiple forms at once if you want them to share functionality. For example, if the form has no custom logic, 
+it's often easier to save New, Edit and Display form at the same time. Just click the arrow symbol on the Save button and select which forms you want to
+replace with the current one:
+
+|pic7|
+
+.. |pic7| image:: /images/startSP/startSP-saving-all.png
+   :alt: Save multiple forms
+   
+Be careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them and overwrite existing code.
+
 Content Type
 -------------------------------------------------
 
@@ -84,7 +107,19 @@ You can select which Content Type you want to customize forms for - each Content
 .. |content-type| image:: /images/startSP/startSP-ContentType.png
    :alt: Select Content Type
 
-Learning the basics of the editor's layout
+
+Restoring default forms
+********************************************************
+If you decide that you no longer want to utilize a specific form, you can open it in the editor and click the Reset button:
+
+|reset|
+
+.. |reset| image:: /images/startSP/startSP-reset.png
+   :alt: Reset the form
+
+If you ever want to go back and revert some changes, you can always :doc:`restore a previous version of a form </how-to/form-versions>`.
+
+Editing layouts: PC, Tablet, Phone
 **************************************************
 In the designer, on the left, you have Containers, Controls and Fields that you can use on the form:
 
@@ -123,40 +158,7 @@ You can customize :ref:`layout for mobile devices <designer-layouts>` by selecti
 
 To find more about various buttons and options available in the editor, check out :doc:`our Ribbon actions article </designer/ribbon-actions>`.
 
-Saving a form or multiple forms
-**************************************************
-Saving a form is easy - just click the Save button. Once the button is pressed, it gets grayed out and you'll see a message that says that the form is saving.
-Please, **wait until the process is complete**. Meanwhile, you can continue working in the designer, but if you want to see the results in SharePoint, 
-you need to wait until you see *Layout has been successfully saved* message:
-
-|pic5|
-
-.. |pic5| image:: /images/startSP/startSP-saving.gif
-   :alt: Saving a form
-
-You are also able to save multiple forms at once if you want them to share functionality. For example, if the form has no custom logic, 
-it's often easier to save New, Edit and Display form at the same time. Just click the arrow symbol on the Save button and select which forms you want to
-replace with the current one:
-
-|pic7|
-
-.. |pic7| image:: /images/startSP/startSP-saving-all.png
-   :alt: Save multiple forms
-   
-Be careful when saving more than one form, it's easy to forget that two forms might have different JavaScript attached to them and overwrite existing code.
-
-Resetting a form back to default or to previous version
-********************************************************
-If you decide that you no longer want to utilize a specific form, you can open it in the editor and click the Reset button:
-
-|reset|
-
-.. |reset| image:: /images/startSP/startSP-reset.png
-   :alt: Reset the form
-
-If you ever want to go back and revert some changes, you can always :doc:`restore a previous version of a form </how-to/form-versions>`.
-
-Working with CSS and JavaScript
+CSS and JavaScript
 **************************************************
 If you want to change the appearance of elements on the form, you can either edit Style property of the elements or apply custom styles with CSS editor.
 Don't forget that you can give each element a class and then use it in CSS editor to apply styles by class.
@@ -173,19 +175,15 @@ Another thing that you can alter on any form is JavaScript and with our rich :do
 Please, make sure that you are familiar with the events present in JavaScript API as these events need to be used in order to get access to all forms elements.
 You can check out the practical examples of using JavaScript API to make forms more dynamic:
 
-   .. toctree::
-               :maxdepth: 1
-               :titlesonly:
+   - :doc:`Populate, hide, disable, make mandatory fields <how-to/conditional-fields>`
+   - :doc:`Manipulate Tabs, Accordions, and Wizards with JavaScript <how-to/conditional-containers>` 
+   - :doc:`Date and Time: calculate difference, adjust values <how-to/manipulate-date-field>`
+   - :doc:`Data Table: populate cells, calculate totals, duplicate rows <how-to/data-table-cases>`
+   - :doc:`Handle List or Library fields in inline editing mode <how-to/list-or-library-inline>`
 
-               Populate, hide, disable, make mandatory fields <how-to/conditional-fields>
-               Manipulate Tabs, Accordions, and Wizards with JavaScript <how-to/conditional-containers> 
-               Date and Time: calculate difference, adjust values <how-to/manipulate-date-field>
-               Data Table: populate cells, calculate totals, duplicate rows <how-to/data-table-cases>
-               Handle List or Library fields in inline editing mode <how-to/list-or-library-inline>
-
-Providing unique Form Sets for different users
+Form sets for user groups
 **************************************************
-You are not limited to three Forms per Content Type. In fact, you can create many :doc:`Form Sets </designer/form-sets>` as necessary.
+You are not limited to three Forms per Content Type. In fact, you can create many :doc:`Form sets </designer/form-sets>` as necessary.
 Add a new one by clicking the **+ sign**:
 
 |pic9|
@@ -193,12 +191,12 @@ Add a new one by clicking the **+ sign**:
 .. |pic9| image:: /images/startSP/addFormSet.png
    :alt: Add a Form Set
 
-Common use for Form Sets is to provide unique :ref:`forms for members of certain groups <designer-grouprouting>`, easily configured in the menu when you create a new Form Set:
+Common use for Form sets is to provide unique :ref:`forms for members of certain groups <designer-grouprouting>`, easily configured in the menu when you create a new Form Set:
 
 |pic10|
 
 .. |pic10| image:: /images/startSP/azureADGroups.png
-   :alt: Form Sets Group Configuration
+   :alt: Form sets Group Configuration
 
 But you are not limited to it. In fact, you can leave it empty and instead use :ref:`designer-customrouting` to redirect users to the appropriate form based on other conditions,
 such as field values on the form or user's properties:
@@ -210,7 +208,7 @@ such as field values on the form or user's properties:
 
 .. note::   This can also be used to provide :doc:`different forms for different languages </how-to/language>`.
 
-Displaying Related Items/Documents on the form
+Related lists and libraries
 **************************************************
 :ref:`designer-listorlibrary` control allows you to show another SharePoint List or Library within the form. 
 It also allows users to add new items, change or delete existing ones, directly from the current form.
@@ -227,9 +225,9 @@ You also need to be aware that List or Library supports various means of filteri
 either manually or with a script, and it will ensure that users can only see contents of this root folder and cannot see items higher in the hierarchy. 
 :doc:`CAML filtering </how-to/caml-filter>` is also supported and can also be used to filter shown items by their field values, and it can be done dynamically as well.
 
-.. note::   You can also :doc:`update properties of uploaded files </how-to/document-meta>` dynamically.
+You can also :doc:`update properties of uploaded files </how-to/document-meta>` automatically on the upload to List or Library.
 
-Configuring Lookup - cascading, filtering, and cross-site connection
+Lookup: filtering, cascading, cross-site connection
 **********************************************************************
 You can also do a lot with the Lookup on the form. For example, you can use our custom **Lookup control** to setup :doc:`cross-site connection </how-to/csl>`:
 
@@ -237,6 +235,8 @@ You can also do a lot with the Lookup on the form. For example, you can use our 
 
 .. |lookup-control| image:: /images/startSP/startSP-designSP-LookupControl.png
    :alt: Lookup control
+
+.. note:: You can also use List or Library control to :doc:`create Parent/Child relationship </how-to/child-parent-form>` across sites with the **Lookup control**.
 
 Either Lookup control or a regular SharePoint field can then be further customized. For example, you can add :doc:`filtering and cascading functionality </how-to/lookup-filter>`:
 
