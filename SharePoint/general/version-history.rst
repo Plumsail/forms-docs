@@ -9,7 +9,7 @@ Version history of Plumsail Forms for SharePoint Online (Office 365)
 
 v1.8.5
 --------------------------------------------------
-Added :ref:`routing based on Azure AD groups and users <designer-grouprouting>`
+Added :ref:`routing based on Azure AD groups and users <designer-azurerouting>`
 
 v1.8.4
 --------------------------------------------------
