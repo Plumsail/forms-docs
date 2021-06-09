@@ -132,9 +132,9 @@ FormsManager Methods
                         layout);
                 
     *   -   **GetFormSets()**
-        -   Allows to get form sets for the List. Returns :ref:`designer-formsetsettings`.
+        -   Allows to get Form sets for the List. Returns :ref:`designer-formsetsettings`.
 
-            .. important:: Only available after customization of Form Sets, for example, adding new Form Set or customizing the Panel.
+            .. important:: Only available after customization of Form sets, for example, adding new Form Set or customizing the Panel.
 
             |
 
@@ -183,7 +183,7 @@ FormsManager Methods
                 forms.ResetForms(Guid.Empty, FormTypes.New);
     
     *   -   **SetFormSets(FormSetSettings settings)**
-        -   Allows to use FormSetSettings to create a structure for Form Sets in the List. Still need to generate forms after.
+        -   Allows to use FormSetSettings to create a structure for Form sets in the List. Still need to generate forms after.
 
             Takes 1 arguments: 
             
@@ -209,9 +209,9 @@ FormSetSettings
 -------------------------------------------------------------
 FormSetSettings can be retrieved with **GetFormSets()** and set with **SetFormSets(FormSetSettings)**. 
 
-These settings contain code for :ref:`designer-customrouting`, as well as information about Form Sets, including groups used for redirection.
+These settings contain code for :ref:`designer-customrouting`, as well as information about Form sets, including groups used for redirection.
 
-For examples of working with Form Sets, please, check out :doc:`Working with Form Sets when Provisioning<./provision-fs>`.
+For examples of working with Form sets, please, check out :doc:`Working with Form sets when Provisioning<./provision-fs>`.
 
 .. list-table::
     :header-rows: 1
@@ -232,7 +232,7 @@ For examples of working with Form Sets, please, check out :doc:`Working with For
                 var routing = fss.CustomRouting;
 
     *   -   **FormSets**
-        -   Contains IEnumerable of Form Sets. Can be used to get and set. 
+        -   Contains IEnumerable of Form sets. Can be used to get and set. 
 
             Returned Form Set class contains:
 

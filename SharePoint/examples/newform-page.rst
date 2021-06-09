@@ -21,7 +21,7 @@ Getting the page
 --------------------------------------------------
 Let's say you want to move the page, so the SharePoint users don't have to go to List View and click *Add new item*. 
 
-If you go to Site Pages → Plumsail Forms → *List Name* → *Content Type*, you will find all the forms for this List and specific Content Type, with form sets in separate folders:
+If you go to Site Pages → Plumsail Forms → *List Name* → *Content Type*, you will find all the forms for this List and specific Content Type, with Form sets in separate folders:
 
 |pic1|
 
