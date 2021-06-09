@@ -188,8 +188,8 @@ Add a new one by clicking the **+ sign**:
 
 |pic9|
 
-.. |pic9| image:: /images/startSP/addFormSet.png
-   :alt: Add a Form Set
+.. |pic9| image:: /images/designer/form-sets/designer-form-sets-addFormSet.png
+   :alt: Add Form sets
 
 Common use for Form sets is to provide unique :ref:`forms for members of certain groups <designer-grouprouting>`, easily configured in the menu when you create a new Form Set:
 
@@ -221,11 +221,12 @@ It also allows users to add new items, change or delete existing ones, directly 
 What is even more impressive - it allows to :doc:`create Parent/Child relationship </how-to/child-parent-form>` between items in one list and items in another list very easily, 
 without any code required. This connection can be established even across sites, using our :doc:`Lookup control </how-to/csl>`.
 
-You also need to be aware that List or Library supports various means of filtering. For example, you can :doc:`set Root Folder property </how-to/root-folder>` 
-either manually or with a script, and it will ensure that users can only see contents of this root folder and cannot see items higher in the hierarchy. 
-:doc:`CAML filtering </how-to/caml-filter>` is also supported and can also be used to filter shown items by their field values, and it can be done dynamically as well.
+There are many other ways you can work with this control, for example:
 
-You can also :doc:`update properties of uploaded files </how-to/document-meta>` automatically on the upload to List or Library.
+
+   - :doc:`Use CAML to apply dynamic filtering to List or Library</how-to/caml-filter>`
+   - :doc:`Update properties of files automatically on the upload </how-to/document-meta>`
+   - :doc:`Set Root Folder property to upload files inside </how-to/root-folder>`
 
 Lookup: filtering, cascading, cross-site connection
 **********************************************************************
