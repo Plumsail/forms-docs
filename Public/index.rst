@@ -16,7 +16,6 @@ Plumsail Forms for public web forms
       .. toctree::
             :caption: Getting started
             :maxdepth: 1
-            :titlesonly:
 
             Installation <./installation>
             Designing forms <./design>
