@@ -81,9 +81,6 @@ And here's the page that I've created in just a couple of minutes with a simple 
 
 Embedding forms
 -------------------------------------------------------------
-
-
-
 Wix
 **********************************
 
@@ -91,8 +88,6 @@ Powerful website building platform with lots of templates to choose from. Find o
 
 .. |Wix| image:: ./images/embed/wix/embed-wix-logo.png
    :alt:
-
-
 
 Squarespace
 **********************************
@@ -109,8 +104,6 @@ A free and open-source content management system written. Find out how you can e
 
 .. |Wordpress| image:: ./images/embed/wordpress/embed-wordpress-logo.png
    :alt:
-
-
 
 Joomla!
 **********************************

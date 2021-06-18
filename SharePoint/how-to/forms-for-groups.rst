@@ -6,7 +6,9 @@
 Personalize form based on user group in SharePoint or Azure AD (Office 365)
 ======================================================================================
 
-This article will show you how to create custom forms for users of different groups. Some ways are easier than others, but we want you to see all available options.
+This article will show you how to create custom forms for users of different groups with Graph API. Some ways are easier than others, but we want you to see all available options.
+
+.. note:: Also, check out :ref:`routing based on Azure AD groups and users <designer-azurerouting>` available out of the box and without any code!
 
 .. contents::
  :local:

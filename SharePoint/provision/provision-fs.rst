@@ -1,12 +1,12 @@
-.. title:: Plumsail Forms Provisioning form sets for SharePoint 
+.. title:: Plumsail Forms Provisioning Form sets for SharePoint 
 
 .. meta::
-   :description: Example of provisioning form sets with panel settings to a SharePoint site - follow this example to provision forms with panel settings
+   :description: Example of provisioning Form sets with panel settings to a SharePoint site - follow this example to provision forms with panel settings
 
 Provisioning Form sets and Panel settings
 ===========================================
 
-Form Sets are important. They contain Form Panel and List View settings, plus routing configuration, including groups used for redirection.
+Form sets are important. They contain Form Panel and List View settings, plus routing configuration, including groups used for redirection.
 
 This article will show you how to work with :ref:`designer-formsetsettings` when provisioning forms.
 
@@ -23,7 +23,7 @@ Here's an example how you can retrieve existing Form Set Settings:
     var forms = new FormsDesigner.SharePoint.FormsManager(ctx, list.Id, contentType.Id.ToString());
     var fs = forms.GetFormSets();
 
-.. important:: Only available after customization of Form Sets, for example, adding new Form Set or customizing the Panel.
+.. important:: Only available after customization of Form sets, for example, adding new Form Set or customizing the Panel.
 
 Create new Form Set Settings
 --------------------------------------------------
@@ -37,9 +37,9 @@ Here's an example how you can create new Form Set Settings:
     };
 
 
-Set Form Sets
+Set Form sets
 --------------------------------------------------
-Here's an example how you can create new Form Sets:
+Here's an example how you can create new Form sets:
 
 .. code-block:: c#
 

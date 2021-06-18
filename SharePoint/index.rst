@@ -108,7 +108,7 @@ Plumsail Forms for SharePoint
             :maxdepth: 1
             :titlesonly:
 
-            Personalize form based on user group in SharePoint or Azure AD <how-to/forms-for-groups>
+            Personalize form based on user group in SharePoint or Azure AD with Graph API <how-to/forms-for-groups>
             Open edit form by default for a user group <how-to/edit-form>
             Create forms in multiple languages <how-to/language>
 
@@ -119,7 +119,7 @@ Plumsail Forms for SharePoint
 
             Redirect user after form submission <how-to/redirect-sp-save>
             Open any form in dialog from another form <how-to/form-dialog>
-            Generate link to SharePoint form <how-to/link-to-form>
+            Generate a link to a SharePoint form <how-to/link-to-form>
 
       .. toctree::
             :caption: Working with fields in JavaScript

@@ -7,6 +7,14 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.8.5
+--------------------------------------------------
+Added :ref:`routing based on Azure AD groups and users <designer-azurerouting>`
+
+v1.8.4
+--------------------------------------------------
+Minor bug fixes
+
 v1.8.3
 --------------------------------------------------
 Added responsiveness to the toolbar of List or Library control
@@ -259,7 +267,7 @@ SharePoint Fields **ID**, **Created By**, **Created**, **Modified By**, **Modifi
 
 Plain Text and Rich Text controls now support display of SharePoint Fields, for example: *Current item #[ID] has been created by [Author]*. Simply place field's [Internal Name] in square brackets.
 
-Simplified URL generation for SharePoint Forms, now using query string for parameters, instead of the hash. Allows linking to specific Form Sets and fixes issues with linking forms in IE. Need to :doc:`update the app package </general/update-package>` for the URL generation to update.
+Simplified URL generation for SharePoint Forms, now using query string for parameters, instead of the hash. Allows linking to specific Form sets and fixes issues with linking forms in IE. Need to :doc:`update the app package </general/update-package>` for the URL generation to update.
 
 Various bug fixes
 
@@ -345,7 +353,7 @@ Added advanced :ref:`designer-customrouting` to Modern SharePoint Forms.
 
 v1.0.7
 --------------------------------------------------
-Added automatic routing to SharePoint :doc:`Form Sets </designer/form-sets>` based on the user's groups.
+Added automatic routing to SharePoint :doc:`Form sets </designer/form-sets>` based on the user's groups.
 
 Added :doc:`theme support </designer/themes>` for Modern SharePoint Forms.
 

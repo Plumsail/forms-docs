@@ -66,9 +66,9 @@ This query parameter will be taken from the page's URL which you can add before 
 .. |pic8| image:: ../images/designer/web-part/QueryParamURLWebPart.png
    :alt: Query parameter in URL
 
-To make sure the users get the correct form for them, please, use :doc:`Form Sets </designer/form-sets>`.
+To make sure the users get the correct form for them, please, use :doc:`Form sets </designer/form-sets>`.
 
-For more detail on using the form web part with form sets, :doc:`read the article </how-to/personal-form>`.
+For more detail on using the form web part with Form sets, :doc:`read the article </how-to/personal-form>`.
 
 Public Web Form
 -------------------------------------------------------------
