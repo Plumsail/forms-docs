@@ -29,25 +29,14 @@ I have designed a Document Library with two extra columns - *Department*, which 
 
 Next, after designing the Library, create Plumsail form in Forms Designer and don't forget to add the Attachments field.
 
-I've designed this simple form:
+I've :doc:`designed this simple form <../design>`:
 
 .. image:: ../images/how-to/file/file-00.png
    :alt: Design Form
 
 |
 
-Once you design and save the form, you will see **General Settings** button pop up on top. This section contains important information you'll need to use while setting up the Flow:
-
-.. image:: ../images/how-to/file/file-04.png
-   :alt: General Settings
-
-|
-
-Now, after the form is saved, it is time to configure Flow.
-
-**Important!** If you add changes the form, you first need to save it and only after saving the information in General Settings will update.
-
-Configure the Flow - First steps
+Configure the Flow
 --------------------------------------------------
 
 First, open Microsoft Flow page and go to My Flows >> New >> Automated from blank:
@@ -64,19 +53,9 @@ We'll need to find the correct trigger. Search for *Plumsail* and you'll find th
 
 |
 
-Next, you need to fill in Form ID. It can be found in **Flow Settings** in the designer.
+Select the form that you've designed.
 
-.. image:: ../images/how-to/file/file-03.png
-   :alt: Add ID from General Settings
-
-|
-
-Click *Add an action* after you fill in the ID.
-
-Configure the Flow - Create file in SharePoint
---------------------------------------------------
-
-First, you need to search for *HTTP* and select **HTTP - HTTP** action to download file from the Url created on form submission:
+Next, you need to search for *HTTP* and select **HTTP - HTTP** action to download file from the Url created on form submission:
 
 .. image:: ../images/how-to/file/2_HTTP.png
    :alt: HTTP Search
@@ -143,7 +122,7 @@ Make sure that the Flow is active and open Form preview. I've filled mine with e
 
 Once the Form is submitted and processed with Flow, here are the files in my Documents Library:
 
-.. image:: ../images/how-to/file/9_Result.png
+.. image:: ../images/how-to/file/how-to-file-result.png
    :alt: Result
 
 |
