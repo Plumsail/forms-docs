@@ -89,37 +89,31 @@ Powerful website building platform with lots of templates to choose from. Find o
 .. |Wix| image:: ./images/embed/wix/embed-wix-logo.png
    :alt:
 
+Editor X
+**********************************
+
+New project from Wix for more advanced and responsive sites. Find out how you can embed forms on your :doc:`Editor X website </embed/editor-x>`.
+
 Squarespace
 **********************************
 
 All-in-one solution for anyone looking to create a beautiful website. Find out how you can embed forms on your :doc:`Squarespace website </embed/squarespace>`.
 
-.. |Squarespace| image:: ./images/embed/squarespace/embed-squarespace-logo.png
-   :alt:
 
 Wordpress
 **********************************
 
 A free and open-source content management system written. Find out how you can embed forms on your :doc:`Wordpress website </embed/wordpress>`.
 
-.. |Wordpress| image:: ./images/embed/wordpress/embed-wordpress-logo.png
-   :alt:
-
 Joomla!
 **********************************
 
 A free and open-source content management system for publishing web content. Find out how you can embed forms on your :doc:`Joomla! website </embed/joomla>`.
 
-.. |Joomla!| image:: ./images/embed/joomla/embed-joomla-logo.png
-   :alt:
-
 Facebook
 **********************************
 
 One of the most used social media platforms in the world. Find out how you can embed forms on your :doc:`Facebook page </embed/facebook>`.
-
-.. |Facebook| image:: ./images/embed/facebook/embed-facebook-logo.png
-   :alt:
 
 Custom web site
 **********************************
@@ -180,14 +174,16 @@ Find more in :doc:`Authorization for public web forms </authorization>`.
    <script type="text/javascript">
    window.addEventListener('load', function() {
       $('#wix a.toc-backref').attr('href', './embed/wix.html');
+      $('#editor-x a.toc-backref').attr('href', './embed/editor-x.html');
       $('#squarespace a.toc-backref').attr('href', './embed/squarespace.html');
       $('#wordpress a.toc-backref').attr('href', './embed/wordpress.html');
       $('#joomla a.toc-backref').attr('href', './embed/joomla.html');
       $('#facebook a.toc-backref').attr('href', './embed/facebook.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id3').attr('href', './embed/wix.html');
-      $('#sharing-web-forms-created-with-plumsail-forms a#id4').attr('href', './embed/squarespace.html');
-      $('#sharing-web-forms-created-with-plumsail-forms a#id5').attr('href', './embed/wordpress.html');
-      $('#sharing-web-forms-created-with-plumsail-forms a#id6').attr('href', './embed/joomla.html');
-      $('#sharing-web-forms-created-with-plumsail-forms a#id7').attr('href', './embed/facebook.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id4').attr('href', './embed/editor-x.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id5').attr('href', './embed/squarespace.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id6').attr('href', './embed/wordpress.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id7').attr('href', './embed/joomla.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id8').attr('href', './embed/facebook.html');
    })
    </script>

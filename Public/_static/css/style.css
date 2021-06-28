@@ -26,6 +26,17 @@
   margin-bottom: 5px;
 }
 
+#embedding-forms #editor-x h3:before{
+  background-image: url('../img/embed/embed-editor-x-logo');
+  background-size: 28px 28px;
+  display: inline-block;
+  width: 28px; 
+  height: 28px;
+  content:"";
+  margin-right: 14px;
+  margin-bottom: 5px;
+}
+
 #embedding-forms #squarespace h3:before{
   background-image: url('../img/embed/embed-squarespace-logo.svg');
   background-size: 30px 30px;
