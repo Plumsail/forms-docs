@@ -66,6 +66,8 @@ Please note that you can store the template in a separate script element inserte
 
    <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox/configuration/template" target="_blank">Kendo UI Combobox's Template</a>
 
+.. Note:: You can use the same code for the :ref:`designer-lookupcontrol` control, just replace *fd.field('Lookup')* part with **fd.control('Lookup')** in your JavaScript code
+
 In this example, I will use string withing JavaScript editor to define template for selectable items:
 
 .. code-block:: javascript

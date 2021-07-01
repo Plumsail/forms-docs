@@ -82,6 +82,8 @@ Here, I just need to add Internal Name of the Lookup field, simple enough:
 JavaScript
 ---------------
 
+.. Note:: You can use the same code for the :ref:`designer-lookupcontrol` control, just replace *fd.field('Lookup')* part with **fd.control('Lookup')** in your JavaScript code
+
 Last but not least, we use JavaScript in order to apply filtering:
 
 .. code-block:: javascript
