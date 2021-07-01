@@ -27,7 +27,7 @@
 }
 
 #embedding-forms #editor-x h3:before{
-  background-image: url('../img/embed/embed-editor-x-logo');
+  background-image: url('../img/embed/embed-editor-x-logo.svg');
   background-size: 28px 28px;
   display: inline-block;
   width: 28px; 
@@ -76,6 +76,17 @@
   display: inline-block;
   width: 26px; 
   height: 26px;
+  content:"";
+  margin-right: 17px;
+  margin-bottom: 3px;
+}
+
+#embedding-forms #tilda h3:before{
+  background-image: url('../img/embed/embed-tilda-logo.svg');
+  background-size: 28px 28px;
+  display: inline-block;
+  width: 28px; 
+  height: 28px;
   content:"";
   margin-right: 17px;
   margin-bottom: 3px;

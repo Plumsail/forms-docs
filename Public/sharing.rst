@@ -110,6 +110,11 @@ Joomla!
 
 A free and open-source content management system for publishing web content. Find out how you can embed forms on your :doc:`Joomla! website </embed/joomla>`.
 
+Tilda
+**********************************
+
+An intuitive website builder based on blocks of content. Find out how you can embed forms on your :doc:`Tilda page </embed/tilda>`.
+
 Facebook
 **********************************
 
@@ -162,12 +167,14 @@ Find more in :doc:`Authorization for public web forms </authorization>`.
       $('#squarespace a.toc-backref').attr('href', './embed/squarespace.html');
       $('#wordpress a.toc-backref').attr('href', './embed/wordpress.html');
       $('#joomla a.toc-backref').attr('href', './embed/joomla.html');
+      $('#tilda a.toc-backref').attr('href', './embed/tilda.html');
       $('#facebook a.toc-backref').attr('href', './embed/facebook.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id3').attr('href', './embed/wix.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id4').attr('href', './embed/editor-x.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id5').attr('href', './embed/squarespace.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id6').attr('href', './embed/wordpress.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id7').attr('href', './embed/joomla.html');
-      $('#sharing-web-forms-created-with-plumsail-forms a#id8').attr('href', './embed/facebook.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id8').attr('href', './embed/tilda.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id9').attr('href', './embed/facebook.html');
    })
    </script>
