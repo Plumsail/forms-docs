@@ -7,6 +7,12 @@
 Version history of Plumsail Forms for SharePoint Online (Office 365)
 ====================================================================================================
 
+v1.7.6
+--------------------------------------------------
+Added Order By property to the Lookup field and control
+
+Minor bug fixes
+
 v1.8.5
 --------------------------------------------------
 Added :ref:`routing based on Azure AD groups and users <designer-azurerouting>`

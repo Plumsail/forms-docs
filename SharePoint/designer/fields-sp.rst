@@ -152,6 +152,11 @@ General
         - Select fields from the list that also need to be loaded. By default, only ID and 'Display Field' are retrieved. Extra fields can accessed with JavaScript. When adding Lookup fields in Extra Fields setting, do not forget to format them like this: **Category/ID**, **Category/Title**. Uses OData *$select* query option - read more |REST|.
     *   - Expand
         - In the Expand setting you need to enter the Lookup field that you are getting in Extra Fields, such as: **Category**. Uses OData *$expand* query option.
+    *   - Order By
+        - Select a field to display available options in a specific order.
+    *   - Order Type
+        - Available if Order By property is set - select Ascending or Descending order.
+
 
 Filter
 
