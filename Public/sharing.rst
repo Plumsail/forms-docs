@@ -99,6 +99,10 @@ Squarespace
 
 All-in-one solution for anyone looking to create a beautiful website. Find out how you can embed forms on your :doc:`Squarespace website </embed/squarespace>`.
 
+Weebly
+**********************************
+
+Free online web site builder with easy to use drag-and-drop interface and a web store integration. Find out how you can embed forms on your :doc:`Weebly website </embed/weebly>`.
 
 Wordpress
 **********************************
@@ -165,6 +169,7 @@ Find more in :doc:`Authorization for public web forms </authorization>`.
       $('#wix a.toc-backref').attr('href', './embed/wix.html');
       $('#editor-x a.toc-backref').attr('href', './embed/editor-x.html');
       $('#squarespace a.toc-backref').attr('href', './embed/squarespace.html');
+      $('#weebly a.toc-backref').attr('href', './embed/weebly.html');
       $('#wordpress a.toc-backref').attr('href', './embed/wordpress.html');
       $('#joomla a.toc-backref').attr('href', './embed/joomla.html');
       $('#tilda a.toc-backref').attr('href', './embed/tilda.html');
@@ -172,9 +177,10 @@ Find more in :doc:`Authorization for public web forms </authorization>`.
       $('#sharing-web-forms-created-with-plumsail-forms a#id3').attr('href', './embed/wix.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id4').attr('href', './embed/editor-x.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id5').attr('href', './embed/squarespace.html');
-      $('#sharing-web-forms-created-with-plumsail-forms a#id6').attr('href', './embed/wordpress.html');
-      $('#sharing-web-forms-created-with-plumsail-forms a#id7').attr('href', './embed/joomla.html');
-      $('#sharing-web-forms-created-with-plumsail-forms a#id8').attr('href', './embed/tilda.html');
-      $('#sharing-web-forms-created-with-plumsail-forms a#id9').attr('href', './embed/facebook.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id6').attr('href', './embed/weebly.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id7').attr('href', './embed/wordpress.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id8').attr('href', './embed/joomla.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id9').attr('href', './embed/tilda.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id10').attr('href', './embed/facebook.html');
    })
    </script>

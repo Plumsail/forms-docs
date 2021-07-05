@@ -92,6 +92,17 @@
   margin-bottom: 3px;
 }
 
+#embedding-forms #weebly h3:before{
+  background-image: url('../img/embed/embed-weebly-logo.svg');
+  background-size: 32px 32px;
+  display: inline-block;
+  width: 32px; 
+  height: 32px;
+  content:"";
+  margin-right: 15px;
+  margin-bottom: 1px;
+}
+
 .img-link.public-integration img{
   filter:none!important;
   margin:0!important;
