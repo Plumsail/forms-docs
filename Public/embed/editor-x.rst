@@ -5,6 +5,9 @@
 
 Embed Plumsail web form on an Editor X website
 ==========================================================
+
+.. note:: If you're using classic Wix.com platform, we have :doc:`an instruction for Wix <./wix>` as well 
+
 You can add a custom Plumsail web form to an Editor X site in just a couple of easy steps with the help of our Widget:
 
 #. | Login to your |Editor X| account

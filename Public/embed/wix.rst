@@ -5,6 +5,9 @@
 
 Embed Plumsail web form on a Wix site
 ==========================================================
+
+.. note:: If you're using Editor X, newer platform from Wix.com, we have :doc:`an instruction for Editor X <./editor-x>` as well 
+
 You can add a custom Plumsail web form to a Wix site in just a couple of easy steps with the help of our Widget:
 
 #. | Login to |Wix| account
