@@ -8,7 +8,7 @@ Sharing web forms created with Plumsail Forms
 
 .. contents::
  :local:
- :depth: 1
+ :depth: 2
 
 Sharing pages
 -------------------------------------------------------------
@@ -81,27 +81,60 @@ And here's the page that I've created in just a couple of minutes with a simple 
 
 Embedding forms
 -------------------------------------------------------------
+Wix
+**********************************
+
+Powerful website building platform with lots of templates to choose from. Find out how you can embed forms on your :doc:`Wix website </embed/wix>`.
+
+.. |Wix| image:: ./images/embed/wix/embed-wix-logo.png
+   :alt:
+
+Editor X
+**********************************
+
+New project from Wix for more advanced and responsive sites. Find out how you can embed forms on your :doc:`Editor X website </embed/editor-x>`.
+
+Squarespace
+**********************************
+
+All-in-one solution for anyone looking to create a beautiful website. Find out how you can embed forms on your :doc:`Squarespace website </embed/squarespace>`.
+
+Weebly
+**********************************
+
+Free online web site builder with easy to use drag-and-drop interface and a web store integration. Find out how you can embed forms on your :doc:`Weebly website </embed/weebly>`.
+
+Wordpress
+**********************************
+
+A free and open-source content management system written. Find out how you can embed forms on your :doc:`Wordpress website </embed/wordpress>`.
+
+Joomla!
+**********************************
+
+A free and open-source content management system for publishing web content. Find out how you can embed forms on your :doc:`Joomla! website </embed/joomla>`.
+
+Tilda
+**********************************
+
+An intuitive website builder based on blocks of content. Find out how you can embed forms on your :doc:`Tilda page </embed/tilda>`.
+
+Facebook
+**********************************
+
+One of the most used social media platforms in the world. Find out how you can embed forms on your :doc:`Facebook page </embed/facebook>`.
+
+Custom web site
+**********************************
+
 You can publish Public Web Form to any webpage on your own site or anywhere else on the web, where you can edit the HTML and add our widget.
 
-The widget can be found in Settings → Sharing in the designer where you can copy it to clipboard:
+The widget can be found in Sharing Settings in the designer where you can copy it to clipboard:
 
 |pic18|
 
 .. |pic18| image:: ./images/start/start-copy-snippet.png
-   :alt: Form Widget in General Settings
-
-You can also copy form's widget from Plumsail Account Forms section in |Forms subsection| where all your forms are stored. 
-
-Simply click the copy button next to a form:
-
-|pic19|
-
-.. |pic19| image:: ./images/start/forms-forms.png
-   :alt: Forms Section and Forms Subsection
-
-.. |Forms subsection| raw:: html
-
-   <a href="https://account.plumsail.com/forms/forms-page" target="_blank">Forms subsection</a>
+   :alt: Copy Form Widget snippet in Sharing Settings
 
 After copying the widget, simply insert it as HTML to your page and the form will be published, ready to receive submissions:
 
@@ -109,14 +142,6 @@ After copying the widget, simply insert it as HTML to your page and the form wil
 
 .. |pic20| image:: ./images/start/form-published.png
    :alt: Public Web Form Published
-
-For more examples, please, check our |Integration section| with Wordpress, Joomla, Wix, Squarespace and Facebook cases.
-
-.. |Integration section| raw:: html
-
-   <a href="https://plumsail.com/forms/integration/" target="_blank">Integration section</a>
-
-.. note:: To actually work with the data, please, check out our :doc:`Collecting data from submissions </submissions>` article, or read about handling data in :doc:`MS Power Automate </microsoft-flow>` or :doc:`Zapier </zapier>`.
 
 Access management
 -------------------------------------------------------------
@@ -135,3 +160,27 @@ Here you can configure the following options:
 - Provide access to the form to specific Microsoft 365 groups or users
 
 Find more in :doc:`Authorization for public web forms </authorization>`.
+|script section|
+
+.. |script section| raw:: html
+
+   <script type="text/javascript">
+   window.addEventListener('load', function() {
+      $('#wix a.toc-backref').attr('href', './embed/wix.html');
+      $('#editor-x a.toc-backref').attr('href', './embed/editor-x.html');
+      $('#squarespace a.toc-backref').attr('href', './embed/squarespace.html');
+      $('#weebly a.toc-backref').attr('href', './embed/weebly.html');
+      $('#wordpress a.toc-backref').attr('href', './embed/wordpress.html');
+      $('#joomla a.toc-backref').attr('href', './embed/joomla.html');
+      $('#tilda a.toc-backref').attr('href', './embed/tilda.html');
+      $('#facebook a.toc-backref').attr('href', './embed/facebook.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id3').attr('href', './embed/wix.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id4').attr('href', './embed/editor-x.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id5').attr('href', './embed/squarespace.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id6').attr('href', './embed/weebly.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id7').attr('href', './embed/wordpress.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id8').attr('href', './embed/joomla.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id9').attr('href', './embed/tilda.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id10').attr('href', './embed/facebook.html');
+   })
+   </script>

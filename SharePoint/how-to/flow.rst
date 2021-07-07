@@ -236,7 +236,7 @@ Select 'Enter custom value' from a drop down and paste From ID that can be found
 
 |
 
-To copy Form ID, open the form in the desktop designer, go to Flow settings and do the following:
+To copy Form ID, open the form in the designer, go to Flow settings and do the following:
 
 1. Make sure that 'Trigger MS Flow when the form is submitted' option is turned on.
 2. Click Generate button and copy Form ID.

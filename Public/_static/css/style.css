@@ -1,5 +1,108 @@
 /* В этом файле переопределяются стандартные стили basic-темы Sphinx. В этих стилях есть сомнительные ходы, тк писать поверх темы вообще не очень правильно, а внешний вид изменить нужно */
 
+
+#embedding-forms .section:not(#custom-web-site) img{
+  margin-bottom: 5px;
+  filter: none;
+}
+
+#embedding-forms .section:not(#custom-web-site) .headerlink{
+  display: none;
+}
+
+#embedding-forms h3{
+  display: flex;
+  align-items: center;
+}
+
+#embedding-forms #wix h3:before{
+  background-image: url('../img/embed/embed-wix-logo.svg');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 14px;
+  margin-bottom: 5px;
+}
+
+#embedding-forms #editor-x h3:before{
+  background-image: url('../img/embed/embed-editor-x-logo.svg');
+  background-size: 28px 28px;
+  display: inline-block;
+  width: 28px; 
+  height: 28px;
+  content:"";
+  margin-right: 14px;
+  margin-bottom: 5px;
+}
+
+#embedding-forms #squarespace h3:before{
+  background-image: url('../img/embed/embed-squarespace-logo.svg');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 14px;
+  margin-bottom: 5px;
+}
+
+#embedding-forms #wordpress h3:before{
+  background-image: url('../img/embed/embed-wordpress-logo.svg');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  content:"";
+  margin-right: 13px;
+  margin-bottom: 5px;
+}
+
+#embedding-forms #joomla h3:before{
+  background-image: url('../img/embed/embed-joomla-logo.svg');
+  background-size: 25px 25px;
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  content:"";
+  margin-right: 18px;
+  margin-bottom: 5px;
+}
+
+#embedding-forms #facebook h3:before{
+  background-image: url('../img/embed/embed-facebook-logo.svg');
+  background-size: 26px 26px;
+  display: inline-block;
+  width: 26px; 
+  height: 26px;
+  content:"";
+  margin-right: 17px;
+  margin-bottom: 3px;
+}
+
+#embedding-forms #tilda h3:before{
+  background-image: url('../img/embed/embed-tilda-logo.svg');
+  background-size: 28px 28px;
+  display: inline-block;
+  width: 28px; 
+  height: 28px;
+  content:"";
+  margin-right: 17px;
+  margin-bottom: 3px;
+}
+
+#embedding-forms #weebly h3:before{
+  background-image: url('../img/embed/embed-weebly-logo.svg');
+  background-size: 32px 32px;
+  display: inline-block;
+  width: 32px; 
+  height: 32px;
+  content:"";
+  margin-right: 15px;
+  margin-bottom: 1px;
+}
+
 .img-link.public-integration img{
   filter:none!important;
   margin:0!important;
