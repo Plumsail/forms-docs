@@ -1,10 +1,45 @@
 .. title:: Designing online forms with Plumsail Forms
 
 .. meta::
-   :description: How to create public web forms - learn the basics: add fields, controls and containers, save the form
+   :description: How to start using public web forms - learn the basics: add fields, controls and containers, save the form
 
 Designing web forms with Plumsail Forms
 ==================================================
+
+.. raw:: html
+
+    <div class="video-container">
+      <iframe src="https://www.youtube-nocookie.com/embed/26x25IhUbOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>   
+
+.. contents::
+ :local:
+ :depth: 1
+
+.. important:: If you have any issues, please, contact our |support team| or write us an email to **support@plumsail.com**
+
+.. |support team| raw:: html
+
+   <a href="https://plumsail.com/support/" target="_blank">support team</a>
+
+Register a Plumsail Account
+--------------------------------------------------
+Plumsail Forms product uses our service called Plumsail Account. Using Plumsail Account you can manage your license, 
+and it also stores all your Public Web Forms. All Public Web Forms created by you are tied to your Plumsail Account.
+
+You can register by filling out |location_link|.
+
+.. |location_link| raw:: html
+
+   <a href="https://auth.plumsail.com/account/register?ReturnUrl=http://account.plumsail.com/" target="_blank">Plumsail Account registration form</a>
+
+Sign in to an existing account
+**************************************************
+You can log in by going to the |location_link2| and entering your login and password. Make sure you've registered first.
+
+.. |location_link2| raw:: html
+
+   <a href="https://auth.plumsail.com/account/login" target="_blank">Plumsail Account login page</a>
 
 .. _start-web-designer:
 
@@ -17,7 +52,7 @@ Go to |Plumsail Account|, and navigate to Forms page. Click **Create form**:
 .. |pic-create-form| image:: ./images/start/design-web-create-form.png
    :alt: Create form in web designer
 
-Design the form
+Design a form
 --------------------------------------------------
 When you open the designer, you can start designing the form. Drag and drop Fields, Controls and Containers onto the form: 
 

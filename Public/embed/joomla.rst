@@ -7,6 +7,7 @@ Embed Plumsail web form on a Joomla! site
 ==========================================================
 You can add a Plumsail web form to a Joomla! site in just a couple of easy steps with the help of our Widget:
 
+#. | :doc:`Design a form <../design>` to publish
 #. | Open Joomla! control panel, go to Global settings and select Editor – Code Mirror as the default editor:
    | |editor|
 #. | Copy widget snippet from your form's settings:

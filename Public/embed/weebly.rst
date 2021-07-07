@@ -7,6 +7,7 @@ Embed Plumsail web form on a Weebly site
 ==========================================================
 You can add a custom Plumsail web form to a Weebly site in just a couple of easy steps with the help of our Widget:
 
+#. | :doc:`Design a form <../design>` to publish
 #. | Login to |Weebly| account
 #. | Select the site where you want to publish a form
 #. | Click **Edit site**

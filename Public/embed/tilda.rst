@@ -14,6 +14,7 @@ Regular page
 ---------------
 You can add a custom Plumsail web form to a Tilda site in just a couple of easy steps with the help of our Widget:
 
+#. | :doc:`Design a form <../design>` to publish
 #. | Login to |Tilda| account
 #. | Select the site where you want to publish a form, and select the page
 #. | Find a place to add your form between sections and click the **+** sign
@@ -51,6 +52,7 @@ Pop-up form
 ---------------
 You can also add a custom Plumsail web form to a Tilda site in a pop-up:
 
+#. | :doc:`Design a form <../design>` to publish
 #. | Login to |Tilda| account
 #. | Select the site where you want to publish a form, and select the page
 #. | Find a place to add your form between sections and click the **+** sign

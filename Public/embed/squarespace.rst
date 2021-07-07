@@ -9,6 +9,7 @@ You can add a Plumsail web form to a Squarespace site in just a couple of easy s
 
 .. important:: Squarespace Business and Commerce plans only
 
+#. | :doc:`Design a form <../design>` to publish
 #. | Login to |Squarespace| account
 #. | Select the site where you want to publish a form
 #. | Go to page you want to publish the form on and edit the page:

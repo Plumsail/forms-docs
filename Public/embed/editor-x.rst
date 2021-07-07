@@ -10,6 +10,7 @@ Embed Plumsail web form on an Editor X website
 
 You can add a custom Plumsail web form to an Editor X site in just a couple of easy steps with the help of our Widget:
 
+#. | :doc:`Design a form <../design>` to publish
 #. | Login to your |Editor X| account
 #. | Select the site where you want to publish a form
 #. | Click **Site Actions** → **Edit site**

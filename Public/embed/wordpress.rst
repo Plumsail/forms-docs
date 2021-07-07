@@ -7,6 +7,7 @@ Embed Plumsail web form on a Wordpress site
 ==========================================================
 You can add a Plumsail web form to a Wordpress site in just a couple of easy steps with the help of our Widget:
 
+#. | :doc:`Design a form <../design>` to publish
 #. | Open Wordpress site as an admin and navigate to the page where you want to embed the form.
 #. | Copy widget snippet from your form's settings:
    | |copy|

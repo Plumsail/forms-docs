@@ -17,7 +17,6 @@ Plumsail Forms for public web forms
             :caption: Getting started
             :maxdepth: 1
 
-            Installation <./installation>
             Designing forms <./design>
             Sharing forms <./sharing>
             Collecting form data <./submissions>

@@ -9,6 +9,7 @@ You can add a Plumsail web form to a Facebook page in just a couple of easy step
 
 .. important:: Your page has to have at least 2,000 fans in order to add a custom tab. This is due to |changes to Facebook API|.
 
+#. | :doc:`Design a form <../design>` to publish
 #. | Login to |Facebook| account
 #. | Go to "|Static HTML: iframe tabs|" page
 #. | Select **Add Static HTML to a page**:
