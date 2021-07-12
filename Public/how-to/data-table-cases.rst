@@ -43,7 +43,7 @@ This can be achieved with a simple validator:
     
     //make at least one record required
     fd.rendered(function(){
-        fd.control('DataTable1').validators.push({
+        fd.control('DataTable1').addValidator({
             name: 'DataTable1 validator',
             error: 'Enter at least one record into the table',
             validate: function(value) {
