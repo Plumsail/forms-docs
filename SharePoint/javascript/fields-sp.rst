@@ -765,8 +765,8 @@ Lookup/LookupMulti
             
             .. code-block:: javascript
 
-                fd.field('Lookup').extraFields;
-                fd.field('Lookup').extraFields = ["Category"];
+                fd.field('Lookup').expandFields;
+                fd.field('Lookup').expandFields = ["Category"];
 
     *   -   **filter**
         -   Get or set filter query for the lookup, which will filter the results. 

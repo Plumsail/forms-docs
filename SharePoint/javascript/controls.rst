@@ -975,8 +975,8 @@ Properties
             
             .. code-block:: javascript
 
-                fd.control('Lookup').extraFields;
-                fd.control('Lookup').extraFields = ["Category"];
+                fd.control('Lookup').expandFields;
+                fd.control('Lookup').expandFields = ["Category"];
 
     *   -   **filter**
         -   Get or set filter query for the lookup, which will filter the results. 
