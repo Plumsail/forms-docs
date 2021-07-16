@@ -124,6 +124,11 @@ Facebook
 
 One of the most used social media platforms in the world. Find out how you can embed forms on your :doc:`Facebook page </embed/facebook>`.
 
+Tumblr
+**********************************
+
+A popular platform for microblogging and sharing GIFs. Find out how you can embed forms in your :doc:`Tumblr blog </embed/tumblr>`.
+
 Custom web site
 **********************************
 
@@ -174,6 +179,7 @@ Find more in :doc:`Authorization for public web forms </authorization>`.
       $('#joomla a.toc-backref').attr('href', './embed/joomla.html');
       $('#tilda a.toc-backref').attr('href', './embed/tilda.html');
       $('#facebook a.toc-backref').attr('href', './embed/facebook.html');
+      $('#tumblr a.toc-backref').attr('href', './embed/tumblr.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id3').attr('href', './embed/wix.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id4').attr('href', './embed/editor-x.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id5').attr('href', './embed/squarespace.html');
@@ -182,5 +188,6 @@ Find more in :doc:`Authorization for public web forms </authorization>`.
       $('#sharing-web-forms-created-with-plumsail-forms a#id8').attr('href', './embed/joomla.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id9').attr('href', './embed/tilda.html');
       $('#sharing-web-forms-created-with-plumsail-forms a#id10').attr('href', './embed/facebook.html');
+      $('#sharing-web-forms-created-with-plumsail-forms a#id11').attr('href', './embed/tumblr.html');
    })
    </script>

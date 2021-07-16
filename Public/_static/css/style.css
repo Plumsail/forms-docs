@@ -72,13 +72,24 @@
 
 #embedding-forms #facebook h3:before{
   background-image: url('../img/embed/embed-facebook-logo.svg');
-  background-size: 26px 26px;
+  background-size: 27px 27px;
   display: inline-block;
-  width: 26px; 
-  height: 26px;
+  width: 27px; 
+  height: 27px;
   content:"";
-  margin-right: 17px;
+  margin-right: 11px;
   margin-bottom: 3px;
+}
+
+#embedding-forms #tumblr h3:before{
+  background-image: url('../img/embed/embed-tumblr-logo.svg');
+  background-size: 33px 33px;
+  display: inline-block;
+  width: 33px; 
+  height: 33px;
+  content:"";
+  margin-right: 12px;
+  margin-bottom: 2px;
 }
 
 #embedding-forms #tilda h3:before{
